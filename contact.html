@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Billero</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <img src="img/icons/billero_256.png" alt="Billero logo">
+        <span>Billero</span>
+      </div>
+      <nav>
+        <a href="index.html">Domov</a>
+        <a href="privacy-policy.html">Zasebnost</a>
+      </nav>
+      <div class="lang-links">
+        <a href="contact.html" class="active">SL</a>
+        <span>|</span>
+        <a href="en/contact.html">EN</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Kontakt</h1>
+        <p class="lead">
+          Če imaš vprašanje glede Billera ali želiš preizkusiti aplikacijo,
+          nam pošlji sporočilo. Odgovorili bomo v najkrajšem možnem času.
+        </p>
+
+        <form
+          id="contact-form"
+          action="mailto:info@billero.app"
+          method="post"
+          enctype="text/plain"
+          data-human-answer="7"
+          data-human-error="Prosimo, pravilno odgovori na vprašanje za preverjanje (3 + 4 = 7)."
+        >
+          <div class="field">
+            <label for="name">Ime</label>
+            <input id="name" type="text" name="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+
+          <div class="field">
+            <label for="message">Sporočilo</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="human">Potrditev, da nisi robot</label>
+            <div class="human-check">
+              <span>Koliko je 3 + 4?</span>
+              <input id="human" type="text" name="human" inputmode="numeric" required>
+            </div>
+            <p class="small-text">
+              Preprost vnos pomaga zmanjšati spam brez uporabe sledilnikov ali
+              zunanjih CAPTCHA storitev.
+            </p>
+          </div>
+
+          <button class="button" type="submit">Pošlji sporočilo</button>
+          <p class="small-text" style="margin-top:12px;">
+            Lahko nam pišeš tudi neposredno na
+            <a href="mailto:info@billero.app">info@billero.app</a>.
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>
