@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podpri nas – Billero</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/billero_32.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Domov</a>
+        <a href="donate.html" class="active">Podpri nas</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="privacy-policy.html">Zasebnost</a>
+      </nav>
+      <div class="lang-links">
+        <a href="donate.html" class="active">SL</a>
+        <span>|</span>
+        <a href="en/donate.html">EN</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="donate-hero">
+        <div class="donate-hero-note">Billero je brezplačen</div>
+        <h1>Če ti Billero pomaga, podpri nas s kavo ali donacijo</h1>
+        <p class="lead">
+          Razvijamo aplikacijo v prostem času. Vsaka kava ali majhna donacija pomeni
+          veliko in pomaga, da lahko nadaljujemo z izboljšavami.
+        </p>
+      </section>
+
+      <section class="donate-cta">
+        <div class="donate-card donate-card-primary">
+          <div class="donate-card-icon">☕</div>
+          <h2>Podpri me s kavo</h2>
+          <p>En klik, brez registracije. Hitro in enostavno preko Buy Me a Coffee.</p>
+          <a class="button button-coffee" href="https://buymeacoffee.com/billero" target="_blank" rel="noopener noreferrer">
+            Kupi mi kavo
+          </a>
+        </div>
+
+        <div class="donate-card">
+          <h2>Doniraj s kriptovaluto</h2>
+          <p>Če raje uporabljaš kripto, lahko doniraš na eno od naslednjih naslovov:</p>
+          <div class="crypto-grid">
+            <div class="crypto-item">
+              <span class="crypto-label">Bitcoin (BTC)</span>
+              <code class="crypto-address" id="btc-addr">bc1q...VAŠ_BTC_NASLOV</code>
+              <button class="copy-btn" data-target="btc-addr" type="button">Kopiraj</button>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-label">Ethereum (ETH)</span>
+              <code class="crypto-address" id="eth-addr">0x...VAŠ_ETH_NASLOV</code>
+              <button class="copy-btn" data-target="eth-addr" type="button">Kopiraj</button>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-label">Solana (SOL)</span>
+              <code class="crypto-address" id="sol-addr">VAŠ_SOL_NASLOV</code>
+              <button class="copy-btn" data-target="sol-addr" type="button">Kopiraj</button>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-label">Sui (SUI)</span>
+              <code class="crypto-address" id="sui-addr">0x...VAŠ_SUI_NASLOV</code>
+              <button class="copy-btn" data-target="sui-addr" type="button">Kopiraj</button>
+            </div>
+          </div>
+          <p class="donate-note">
+            <strong>Opomba:</strong> Zamenjaj placeholdere z dejanskimi naslovi v datoteki
+            <code>donate.html</code> (išči »VAŠ_«).
+          </p>
+        </div>
+      </section>
+
+      <section class="donate-footer-cta">
+        <p>Hvala za tvojo podporo. Vsak prispevek pomeni veliko. 🙏</p>
+        <a class="button" href="index.html">Nazaj na domov</a>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Pravilnik o zasebnosti</a>
+        &nbsp; | &nbsp;
+        <a href="contact.html">Kontakt</a>
+        &nbsp; | &nbsp;
+        <a href="donate.html">Podpri nas</a>
+      </div>
+    </footer>
+
+    <script src="js/donate.js"></script>
+  </body>
+</html>

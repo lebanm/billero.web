@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support us – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="donate.html" class="active">Support us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../donate.html">SL</a>
+        <span>|</span>
+        <a href="donate.html" class="active">EN</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="donate-hero">
+        <div class="donate-hero-note">Billero is free</div>
+        <h1>If Billero helps you, support us with a coffee or donation</h1>
+        <p class="lead">
+          We develop the app in our spare time. Every coffee or small donation
+          means a lot and helps us keep improving.
+        </p>
+      </section>
+
+      <section class="donate-cta">
+        <div class="donate-card donate-card-primary">
+          <div class="donate-card-icon">☕</div>
+          <h2>Buy me a coffee</h2>
+          <p>One click, no signup. Quick and easy via Buy Me a Coffee.</p>
+          <a class="button button-coffee" href="https://buymeacoffee.com/billero" target="_blank" rel="noopener noreferrer">
+            Buy me a coffee
+          </a>
+        </div>
+
+        <div class="donate-card">
+          <h2>Donate with crypto</h2>
+          <p>Prefer crypto? You can donate to one of these addresses:</p>
+          <div class="crypto-grid">
+            <div class="crypto-item">
+              <span class="crypto-label">Bitcoin (BTC)</span>
+              <code class="crypto-address" id="btc-addr">bc1q...YOUR_BTC_ADDRESS</code>
+              <button class="copy-btn" data-target="btc-addr" type="button">Copy</button>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-label">Ethereum (ETH)</span>
+              <code class="crypto-address" id="eth-addr">0x...YOUR_ETH_ADDRESS</code>
+              <button class="copy-btn" data-target="eth-addr" type="button">Copy</button>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-label">Solana (SOL)</span>
+              <code class="crypto-address" id="sol-addr">YOUR_SOL_ADDRESS</code>
+              <button class="copy-btn" data-target="sol-addr" type="button">Copy</button>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-label">Sui (SUI)</span>
+              <code class="crypto-address" id="sui-addr">0x...YOUR_SUI_ADDRESS</code>
+              <button class="copy-btn" data-target="sui-addr" type="button">Copy</button>
+            </div>
+          </div>
+          <p class="donate-note">
+            <strong>Note:</strong> Replace placeholders with your real addresses in
+            <code>donate.html</code> (search for "YOUR_" or "VAŠ_").
+          </p>
+        </div>
+      </section>
+
+      <section class="donate-footer-cta">
+        <p>Thank you for your support. Every contribution means a lot. 🙏</p>
+        <a class="button" href="index.html">Back to home</a>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Privacy policy</a>
+        &nbsp; | &nbsp;
+        <a href="contact.html">Contact</a>
+        &nbsp; | &nbsp;
+        <a href="donate.html">Support us</a>
+      </div>
+    </footer>
+
+    <script src="../js/donate.js"></script>
+  </body>
+</html>
