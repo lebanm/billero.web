@@ -1,0 +1,87 @@
+# Billero.web — Cursor Rules
+
+## Project
+
+billero.web is the marketing website for billero.app.
+Technology: HTML, CSS, JavaScript (vanilla, no framework).
+Languages: Slovenian (sl), English (en).
+
+## Critical: Do NOT break the website
+
+Before modifying any file, READ the existing file first.
+NEVER replace an entire file unless you are certain of every line.
+Only change the parts relevant to the task — leave everything else intact.
+
+## Protected files — extra caution required
+
+These files are critical. Do NOT rewrite them from scratch:
+- index.html
+- privacy-policy.html
+- css/ (main styles)
+
+When modifying these, make minimal targeted changes only.
+
+## Project structure
+
+```
+billero.web/
+  index.html              — homepage (Slovenian)
+  contact.html            — contact page
+  donate.html             — donation page
+  privacy-policy.html     — privacy policy
+  en/                     — English versions
+  css/                    — stylesheets
+  js/                     — scripts
+  img/                    — images and assets
+  ai/                     — AI context and rules
+```
+
+## Thinking approach
+
+Think like a SOFTWARE ARCHITECT:
+- How does this change affect the rest of the website?
+- Does it fit the existing visual style and structure?
+- Is the solution maintainable?
+
+Think like a USER (visitor on mobile or desktop):
+- Is the page fast to load?
+- Is the content clear and easy to read?
+- Does it look good on mobile (responsive)?
+- Are CTAs visible and compelling?
+
+## Coding rules
+
+- Semantic HTML5
+- Mobile-first responsive design
+- Keep CSS organized and consistent with existing styles
+- Minimize JavaScript, keep it simple
+- Optimize images (WebP preferred)
+- Slovenian as primary language, English in /en/
+- Preserve existing SEO meta tags
+- Test that existing pages still work after changes
+
+## Documentation — ALWAYS update
+
+When making changes, ALWAYS update related documentation:
+- ai/context.md — if project structure changes
+- .cursorrules — if project conventions change
+
+This is mandatory, not optional.
+
+## Changelog — ALWAYS log changes
+
+After completing any code changes, ALWAYS append a summary to ai/changelog.md.
+
+Format:
+
+```
+## YYYY-MM-DD HH:MM (Cursor)
+
+**Task:** short description of what was done
+
+**Spremenjene datoteke:** file1.html, file2.css
+
+---
+```
+
+This applies to ALL changes — features, fixes, refactors.
