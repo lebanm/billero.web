@@ -1,0 +1,7 @@
+{
+  "allowed_prefixes": ["css/", "js/", "img/", "en/"],
+  "protected_files": [
+    "index.html",
+    "privacy-policy.html"
+  ]
+}
