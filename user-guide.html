@@ -56,6 +56,34 @@
         </ul>
         <p>Enako deluje za podjetja kot za fizične osebe (vključno z Neznanim kupcem).</p>
 
+        <h2>Prejeti računi z AI OCR</h2>
+        <p>Billero zna iz PDF računa samodejno prebrati dobavitelja, številko, datum in znesek z umetno inteligenco (Anthropic Claude). Funkcija je <strong>izbirna</strong> in zahteva lasten API ključ.</p>
+
+        <h3>Pridobitev API ključa</h3>
+        <ol>
+          <li>Odpri <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> in ustvari brezplačen račun.</li>
+          <li>V meniju izberi <strong>API Keys</strong> → <strong>Create Key</strong>.</li>
+          <li>Poimenuj ključ (npr. <em>Billero</em>) in ga kopiraj. Ključ začne z <code>sk-ant-</code>.</li>
+          <li>Na Anthropic konzoli je treba dodati plačilno metodo. Branje enega računa stane manj kot <strong>0,001 €</strong> (Claude Haiku model).</li>
+        </ol>
+
+        <h3>Nastavitev v aplikaciji</h3>
+        <ol>
+          <li>Odpri <strong>Moji podatki</strong> (zavihek ⚙) → razdelek <em>Anthropic API ključ (OCR)</em>.</li>
+          <li>Prilepi ključ v polje in tapni <strong>Shrani</strong>.</li>
+          <li>Ključ je shranjen v varnem delu naprave (Android Keystore) — ni nikoli v datotekah aplikacije.</li>
+        </ol>
+
+        <h3>Uporaba</h3>
+        <ol>
+          <li>V zavihku <strong>Računi</strong> tapni ikono ↑ (uvoz PDF) in izberi PDF prejetega računa.</li>
+          <li>Odpre se forma. Tapni gumb <strong>✨ Analiziraj z AI</strong>.</li>
+          <li>Počakaj sekundo — polja dobavitelja, številke, datuma in zneska se samodejno izpolnijo.</li>
+          <li>Preverite in po potrebi popravite, nato tapnite <strong>Shrani</strong>.</li>
+        </ol>
+
+        <p><strong>Brez API ključa</strong> forma deluje kot prej — vsa polja izpolnite ročno. Gumb AI se ne prikaže.</p>
+
         <h2>Varnostna kopija</h2>
         <p>Vse podatke (račune, stranke, nastavitve in PDF-je) lahko izvozite in obnovite prek zavihka <strong>Moji podatki</strong> → razdelek <em>Varnostna kopija</em>.</p>
         <h3>Izvoz</h3>

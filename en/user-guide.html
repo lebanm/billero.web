@@ -56,6 +56,34 @@
         </ul>
         <p>Works the same for companies and individuals (including the Unknown client).</p>
 
+        <h2>Received invoices with AI OCR</h2>
+        <p>Billero can automatically read the supplier, number, date and amount from a PDF invoice using AI (Anthropic Claude). The feature is <strong>optional</strong> and requires your own API key.</p>
+
+        <h3>Getting an API key</h3>
+        <ol>
+          <li>Go to <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> and create a free account.</li>
+          <li>In the menu select <strong>API Keys</strong> → <strong>Create Key</strong>.</li>
+          <li>Name the key (e.g. <em>Billero</em>) and copy it. The key starts with <code>sk-ant-</code>.</li>
+          <li>You need to add a payment method in the Anthropic console. Reading one invoice costs less than <strong>€0.001</strong> (Claude Haiku model).</li>
+        </ol>
+
+        <h3>Setup in the app</h3>
+        <ol>
+          <li>Open <strong>My details</strong> (⚙ tab) → section <em>Anthropic API key (OCR)</em>.</li>
+          <li>Paste the key into the field and tap <strong>Save</strong>.</li>
+          <li>The key is stored in the secure area of your device (Android Keystore) — it is never written to app files.</li>
+        </ol>
+
+        <h3>Usage</h3>
+        <ol>
+          <li>In the <strong>Invoices</strong> tab tap the ↑ icon (import PDF) and select the PDF of a received invoice.</li>
+          <li>A form opens. Tap the <strong>✨ Analyse with AI</strong> button.</li>
+          <li>Wait a moment — the supplier, number, date and amount fields are filled in automatically.</li>
+          <li>Review and correct if needed, then tap <strong>Save</strong>.</li>
+        </ol>
+
+        <p><strong>Without an API key</strong> the form works as before — fill in all fields manually. The AI button will not appear.</p>
+
         <h2>Backup &amp; restore</h2>
         <p>All your data (invoices, clients, settings and PDFs) can be exported and restored from the <strong>My details</strong> tab → <em>Backup</em> section.</p>
         <h3>Export</h3>
