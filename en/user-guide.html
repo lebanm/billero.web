@@ -101,6 +101,40 @@
           <li>All invoices, clients and settings are restored together with their PDFs.</li>
         </ul>
         <p><strong>Warning:</strong> restoring replaces all existing data. We recommend exporting a backup of your current data before restoring.</p>
+
+        <h2>Recurring invoices</h2>
+        <p>Billero automatically generates regular invoices (weekly, monthly or quarterly) each time the app launches.</p>
+        <ol>
+          <li>In the <strong>Invoices</strong> tab tap the ↻ icon (top right) → <strong>Recurring invoices</strong>.</li>
+          <li>Tap <strong>+</strong> and fill in: template name, client, service description, amount (excl. VAT), VAT rate.</li>
+          <li>Choose frequency: <strong>weekly, monthly</strong> or <strong>quarterly</strong>.</li>
+          <li>For monthly/quarterly choose the day of the month (1–28).</li>
+          <li>On the next app launch on or after the scheduled date the invoice is automatically created with its PDF.</li>
+        </ol>
+        <p>Templates can be disabled with the toggle or edited at any time. Generated invoices appear in the main invoice list.</p>
+
+        <h2>Crypto payments</h2>
+        <p>Billero supports two types of crypto payments: a <strong>static QR address</strong> on the PDF invoice and a <strong>Coingate payment link</strong> for accepting 70+ cryptocurrencies.</p>
+
+        <h3>QR code on PDF invoice</h3>
+        <ol>
+          <li>In <strong>My details → Crypto payment</strong>, select your blockchain (Base, Ethereum, Polygon or Solana).</li>
+          <li>Enter your EURC and/or USDC wallet address.</li>
+          <li>Every PDF invoice will automatically include a crypto payment QR code with the invoice amount pre-filled.</li>
+        </ol>
+        <p>Your customer scans the QR with their crypto wallet (e.g. MetaMask, Phantom) — the amount and address are pre-filled.</p>
+
+        <h3>Coingate payment link (BTC, ETH, SOL and 70+ coins)</h3>
+        <ol>
+          <li>Create an account at <a href="https://coingate.com" target="_blank" rel="noopener">coingate.com</a> and obtain an API key.</li>
+          <li>In <strong>My details → Coingate</strong>, enter your API key. Enable <em>Sandbox mode</em> for testing.</li>
+          <li>In the <strong>Invoices</strong> tab, tap the <strong>₿ icon</strong> next to the invoice.</li>
+          <li>The app creates a payment link — a QR code and an <em>Open in browser</em> button appear.</li>
+          <li>Share the link with your customer. They pay with any cryptocurrency they choose.</li>
+          <li>You receive EUR to your bank account via SEPA (Coingate handles the conversion).</li>
+          <li>Check payment status with the <strong>Check status</strong> button in the app.</li>
+        </ol>
+        <p><strong>Coingate is EU-regulated</strong> (EMI licence, Lithuania) and supports SEPA payouts.</p>
       </div>
     </main>
 

@@ -101,6 +101,40 @@
           <li>Vsi računi, stranke in nastavitve se obnovijo skupaj s PDF-ji.</li>
         </ul>
         <p><strong>Opozorilo:</strong> obnova nadomesti vse obstoječe podatke. Priporočamo, da pred obnovo narediš izvoz obstoječih podatkov.</p>
+
+        <h2>Ponavljajoči računi</h2>
+        <p>Billero samodejno generira redne račune (tedensko, mesečno ali kvartalno) ob zagonu aplikacije.</p>
+        <ol>
+          <li>V zavihku <strong>Računi</strong> tapnite ikono ↻ (zgornji desni kot) → <strong>Ponavljajoči računi</strong>.</li>
+          <li>Tapnite <strong>+</strong> in izpolnite: naziv predloge, stranka, opis storitve, znesek brez DDV, DDV stopnja.</li>
+          <li>Izberite frekvenco: <strong>tedensko, mesečno</strong> ali <strong>kvartalno</strong>.</li>
+          <li>Za mesečno/kvartalno izberite dan v mesecu (1–28).</li>
+          <li>Ob naslednjem zagonu aplikacije na ali po datumu generiranja se račun samodejno ustvari skupaj s PDF.</li>
+        </ol>
+        <p>Predloge lahko kadar koli onemogočite s stikalom ali jih uredite. Generirani računi se pojavijo v glavnem seznamu.</p>
+
+        <h2>Kripto plačila</h2>
+        <p>Billero podpira dve vrsti kripto plačil: <strong>statični QR naslov</strong> na PDF računu in <strong>Coingate payment link</strong> za sprejemanje 70+ kriptovalut.</p>
+
+        <h3>QR koda na PDF računu</h3>
+        <ol>
+          <li>V <strong>Moji podatki → Kripto plačilo</strong> izberite blockchain verigo (Base, Ethereum, Polygon ali Solana).</li>
+          <li>Vnesite EURC in/ali USDC denarniški naslov.</li>
+          <li>Na vsakem naslednjem PDF računu bo avtomatsko prikazana QR koda za kripto plačilo z zneskom računa.</li>
+        </ol>
+        <p>Stranka skenira QR s kripto denarnico (npr. MetaMask, Phantom) — znesek in naslov sta že predizpolnjena.</p>
+
+        <h3>Coingate payment link (BTC, ETH, SOL in 70+ coinov)</h3>
+        <ol>
+          <li>Ustvarite račun na <a href="https://coingate.com" target="_blank" rel="noopener">coingate.com</a> in pridobite API ključ.</li>
+          <li>V <strong>Moji podatki → Coingate</strong> vnesite API ključ. Za testiranje vklopite <em>Sandbox način</em>.</li>
+          <li>V zavihku <strong>Računi</strong> tapnite <strong>₿ ikono</strong> pri željeni računu.</li>
+          <li>Aplikacija ustvari plačilni link — prikažeta se QR koda in gumb <em>Odpri v brskalniku</em>.</li>
+          <li>Delite link s stranko. Stranka plača s katerimkoli coinom po svoji izbiri.</li>
+          <li>Vi prejmete EUR na bančni račun prek SEPA (Coingate opravi konverzijo).</li>
+          <li>Status plačila preverite z gumbom <strong>Preveri status</strong> v aplikaciji.</li>
+        </ol>
+        <p><strong>Coingate je EU reguliran</strong> ponudnik (EMI licenca, Litva) in podpira SEPA izplačila.</p>
       </div>
     </main>
 
