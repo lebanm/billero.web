@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrukcja obsługi – Billero</title>
+    <meta name="description" content="Billero instrukcja obsługi. Szybkie i proste tworzenie faktur PDF, zarządzanie klientami, AI OCR i płatności krypto.">
+    <link rel="canonical" href="https://billero.app/pl/user-guide.html">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="user-guide.html" class="active">Instrukcja</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="privacy-policy.html">Prywatność</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../user-guide.html">SL</a> <span>|</span>
+        <a href="../en/user-guide.html">EN</a> <span>|</span>
+        <a href="../de/user-guide.html">DE</a> <span>|</span>
+        <a href="../hr/user-guide.html">HR</a> <span>|</span>
+        <a href="../sk/user-guide.html">SK</a> <span>|</span>
+        <a href="../cs/user-guide.html">CS</a> <span>|</span>
+        <a href="user-guide.html" class="active">PL</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Instrukcja obsługi</h1>
+        <p class="lead">Krótki przewodnik po aplikacji Billero.</p>
+
+        <h2>Szybki start</h2>
+        <ul>
+          <li>Uzupełnij <strong>Moje dane</strong> (IBAN, adres, NIP …).</li>
+          <li>Dodaj <strong>klientów</strong> (firmy lub osoby fizyczne).</li>
+          <li>Utwórz <strong>nową fakturę</strong> (prostą lub z wieloma pozycjami).</li>
+          <li>PDF możesz udostępniać lub zapisać. Edycja faktury regeneruje PDF.</li>
+        </ul>
+
+        <h2>Otrzymane faktury z AI OCR</h2>
+        <p>Billero potrafi automatycznie odczytać z PDF dostawcę, numer, datę i kwotę za pomocą AI (Anthropic Claude). Funkcja jest <strong>opcjonalna</strong> i wymaga własnego klucza API.</p>
+
+        <h3>Uzyskanie klucza API</h3>
+        <ol>
+          <li>Odwiedź <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> i utwórz bezpłatne konto.</li>
+          <li>W menu wybierz <strong>API Keys</strong> → <strong>Create Key</strong>.</li>
+          <li>Nazwij klucz (np. <em>Billero</em>) i skopiuj go. Zaczyna się od <code>sk-ant-</code>.</li>
+          <li>Dodaj metodę płatności w konsoli Anthropic. Odczytanie jednej faktury kosztuje mniej niż <strong>0,001 €</strong> (model Claude Haiku).</li>
+        </ol>
+
+        <h3>Konfiguracja w aplikacji</h3>
+        <ol>
+          <li>Otwórz <strong>Moje dane</strong> (zakładka ⚙) → sekcja <em>Klucz API Anthropic (OCR)</em>.</li>
+          <li>Wklej klucz w pole i naciśnij <strong>Zapisz</strong>.</li>
+          <li>Klucz jest przechowywany w bezpiecznej części urządzenia — nigdy nie trafia do plików aplikacji.</li>
+        </ol>
+
+        <h2>Kopia zapasowa &amp; przywracanie</h2>
+        <p>Wszystkie dane możesz eksportować i przywracać przez zakładkę <strong>Moje dane</strong> → sekcja <em>Kopia zapasowa</em>.</p>
+        <ul>
+          <li>Naciśnij <strong>Eksportuj kopię zapasową</strong> — aplikacja tworzy plik ZIP.</li>
+          <li>Zapisz plik w iCloud, Google Drive lub gdziekolwiek indziej.</li>
+          <li>Przywracanie: <strong>Moje dane</strong> → <strong>Przywróć z kopii zapasowej</strong> → wybierz ZIP.</li>
+        </ul>
+
+        <h2>Faktury cykliczne</h2>
+        <p>Billero automatycznie generuje regularne faktury (tygodniowo, miesięcznie lub kwartalnie) przy każdym uruchomieniu aplikacji.</p>
+        <ol>
+          <li>W zakładce <strong>Faktury</strong> naciśnij ikonę ↻ (prawy górny róg) → <strong>Faktury cykliczne</strong>.</li>
+          <li>Naciśnij <strong>+</strong> i wypełnij: nazwa szablonu, klient, opis, kwota, stawka VAT.</li>
+          <li>Wybierz częstotliwość: <strong>tygodniowo, miesięcznie</strong> lub <strong>kwartalnie</strong>.</li>
+          <li>Dla miesięcznych/kwartalnych wybierz dzień miesiąca (1–28).</li>
+        </ol>
+
+        <h2>Płatności krypto</h2>
+        <p>Billero obsługuje dwa typy płatności krypto: <strong>statyczne kody QR</strong> na fakturze PDF i <strong>link płatności Coingate</strong> dla 70+ kryptowalut.</p>
+
+        <h3>Kody QR na fakturze PDF</h3>
+        <p>Ustaw adresy portfeli w <strong>Moje dane → Płatność krypto</strong>. Kod QR automatycznie trafia na stronę 2 każdej faktury PDF.</p>
+        <ul>
+          <li><strong>EURC</strong> — 1:1 EUR · Ethereum, Base, Solana</li>
+          <li><strong>USDC</strong> — kurs ECB EUR/USD · Ethereum, Base, Polygon, Solana</li>
+          <li><strong>BTC</strong> — Bitcoin BIP-21 · kurs CoinGecko</li>
+          <li><strong>ETH</strong> — Ethereum native EIP-681 · kurs CoinGecko</li>
+          <li><strong>SOL</strong> — Solana native · kurs CoinGecko</li>
+          <li><strong>Własny token</strong> — podaj nazwę i adres; QR koduje adres</li>
+        </ul>
+        <p>Kurs i czas pobrania są wydrukowane pod każdym kodem QR. <strong>Bez internetu kod QR nie jest wyświetlany.</strong></p>
+
+        <h3>Coingate payment link</h3>
+        <ol>
+          <li>Utwórz konto na <a href="https://coingate.com" target="_blank" rel="noopener">coingate.com</a> i uzyskaj klucz API.</li>
+          <li>W <strong>Moje dane → Coingate</strong> wprowadź klucz API.</li>
+          <li>W zakładce <strong>Faktury</strong> naciśnij <strong>ikonę ₿</strong> przy fakturze.</li>
+          <li>Udostępnij link klientowi — klient płaci dowolną kryptowalutą.</li>
+          <li>Ty otrzymujesz EUR na rachunek bankowy przez SEPA (Coingate dokonuje konwersji).</li>
+        </ol>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Polityka prywatności</a> &nbsp;|&nbsp;
+        <a href="user-guide.html">Instrukcja</a> &nbsp;|&nbsp;
+        <a href="release-notes.html">Release notes</a> &nbsp;|&nbsp;
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+  </body>
+</html>

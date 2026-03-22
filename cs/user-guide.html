@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Návod k použití – Billero</title>
+    <meta name="description" content="Billero návod k použití. Rychlé a jednoduché vytváření PDF faktur, správa zákazníků, AI OCR a krypto platby.">
+    <link rel="canonical" href="https://billero.app/cs/user-guide.html">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Domů</a>
+        <a href="user-guide.html" class="active">Návod</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="privacy-policy.html">Soukromí</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../user-guide.html">SL</a> <span>|</span>
+        <a href="../en/user-guide.html">EN</a> <span>|</span>
+        <a href="../de/user-guide.html">DE</a> <span>|</span>
+        <a href="../hr/user-guide.html">HR</a> <span>|</span>
+        <a href="../sk/user-guide.html">SK</a> <span>|</span>
+        <a href="user-guide.html" class="active">CS</a> <span>|</span>
+        <a href="../pl/user-guide.html">PL</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Návod k použití</h1>
+        <p class="lead">Stručný průvodce používáním aplikace Billero.</p>
+
+        <h2>Rychlý start</h2>
+        <ul>
+          <li>Vyplňte <strong>Moje údaje</strong> (IBAN, adresa, DIČ …).</li>
+          <li>Přidejte <strong>zákazníky</strong> (firmy nebo fyzické osoby).</li>
+          <li>Vytvořte <strong>novou fakturu</strong> (jednoduchou nebo s více položkami).</li>
+          <li>PDF můžete sdílet nebo uložit. Úprava faktury regeneruje PDF.</li>
+        </ul>
+
+        <h2>Přijaté faktury s AI OCR</h2>
+        <p>Billero dokáže z PDF automaticky přečíst dodavatele, číslo, datum a částku pomocí AI (Anthropic Claude). Funkce je <strong>volitelná</strong> a vyžaduje vlastní API klíč.</p>
+
+        <h3>Získání API klíče</h3>
+        <ol>
+          <li>Navštivte <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> a vytvořte bezplatný účet.</li>
+          <li>V menu vyberte <strong>API Keys</strong> → <strong>Create Key</strong>.</li>
+          <li>Pojmenujte klíč (např. <em>Billero</em>) a zkopírujte ho. Začíná <code>sk-ant-</code>.</li>
+          <li>Přidejte platební metodu v Anthropic konzoli. Čtení jedné faktury stojí méně než <strong>0,001 €</strong> (model Claude Haiku).</li>
+        </ol>
+
+        <h3>Nastavení v aplikaci</h3>
+        <ol>
+          <li>Otevřete <strong>Moje údaje</strong> (záložka ⚙) → sekce <em>Anthropic API klíč (OCR)</em>.</li>
+          <li>Vložte klíč do pole a klepněte na <strong>Uložit</strong>.</li>
+          <li>Klíč je uložen v bezpečné části zařízení — nikdy není v souborech aplikace.</li>
+        </ol>
+
+        <h2>Záloha &amp; obnova</h2>
+        <p>Všechna data můžete exportovat a obnovit přes záložku <strong>Moje údaje</strong> → sekce <em>Záloha</em>.</p>
+        <ul>
+          <li>Klepněte na <strong>Exportovat zálohu</strong> — aplikace vytvoří ZIP soubor.</li>
+          <li>Uložte soubor do iCloud, Google Drive nebo kamkoliv jinam.</li>
+          <li>Obnova: <strong>Moje údaje</strong> → <strong>Obnovit ze zálohy</strong> → vyberte ZIP.</li>
+        </ul>
+
+        <h2>Opakované faktury</h2>
+        <p>Billero automaticky generuje pravidelné faktury (týdně, měsíčně nebo čtvrtletně) při každém spuštění aplikace.</p>
+        <ol>
+          <li>V záložce <strong>Faktury</strong> klepněte na ikonu ↻ (vpravo nahoře) → <strong>Opakované faktury</strong>.</li>
+          <li>Klepněte na <strong>+</strong> a vyplňte: název šablony, zákazník, popis, částka, sazba DPH.</li>
+          <li>Zvolte frekvenci: <strong>týdně, měsíčně</strong> nebo <strong>čtvrtletně</strong>.</li>
+          <li>Pro měsíční/čtvrtletní zvolte den v měsíci (1–28).</li>
+        </ol>
+
+        <h2>Krypto platby</h2>
+        <p>Billero podporuje dva typy krypto plateb: <strong>statické QR kódy</strong> na PDF faktuře a <strong>Coingate payment link</strong> pro 70+ kryptoměn.</p>
+
+        <h3>QR kódy na PDF faktuře</h3>
+        <p>Nastavte adresy peněženek v <strong>Moje údaje → Krypto platba</strong>. QR kód se automaticky přidá na stranu 2 každé PDF faktury.</p>
+        <ul>
+          <li><strong>EURC</strong> — 1:1 EUR · Ethereum, Base, Solana</li>
+          <li><strong>USDC</strong> — kurz ECB EUR/USD · Ethereum, Base, Polygon, Solana</li>
+          <li><strong>BTC</strong> — Bitcoin BIP-21 · kurz CoinGecko</li>
+          <li><strong>ETH</strong> — Ethereum native EIP-681 · kurz CoinGecko</li>
+          <li><strong>SOL</strong> — Solana native · kurz CoinGecko</li>
+          <li><strong>Vlastní token</strong> — zadejte název a adresu; QR kóduje adresu</li>
+        </ul>
+        <p>Kurz a čas získání jsou vytištěny pod každým QR kódem. <strong>Bez internetu QR kód není zobrazen.</strong></p>
+
+        <h3>Coingate payment link</h3>
+        <ol>
+          <li>Vytvořte účet na <a href="https://coingate.com" target="_blank" rel="noopener">coingate.com</a> a získejte API klíč.</li>
+          <li>V <strong>Moje údaje → Coingate</strong> zadejte API klíč.</li>
+          <li>V záložce <strong>Faktury</strong> klepněte na <strong>₿ ikonu</strong> u faktury.</li>
+          <li>Sdílejte link se zákazníkem — zákazník zaplatí libovolnou kryptoměnou.</li>
+          <li>Vy dostanete EUR na bankovní účet přes SEPA (Coingate provede konverzi).</li>
+        </ol>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Zásady ochrany osobních údajů</a> &nbsp;|&nbsp;
+        <a href="user-guide.html">Návod</a> &nbsp;|&nbsp;
+        <a href="release-notes.html">Release notes</a> &nbsp;|&nbsp;
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+  </body>
+</html>

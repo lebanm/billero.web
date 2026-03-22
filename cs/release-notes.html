@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release notes – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Domů</a>
+        <a href="user-guide.html">Návod</a>
+        <a href="release-notes.html" class="active">Release notes</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="privacy-policy.html">Soukromí</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../release-notes.html">SL</a> <span>|</span>
+        <a href="../en/release-notes.html">EN</a> <span>|</span>
+        <a href="../de/release-notes.html">DE</a> <span>|</span>
+        <a href="../hr/release-notes.html">HR</a> <span>|</span>
+        <a href="../sk/release-notes.html">SK</a> <span>|</span>
+        <a href="release-notes.html" class="active">CS</a> <span>|</span>
+        <a href="../pl/release-notes.html">PL</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Release notes</h1>
+        <p class="lead">Přehled novinek a oprav podle verzí.</p>
+
+        <h2>1.4.0</h2>
+        <ul>
+          <li><strong>Krypto QR — BTC, ETH, SOL</strong> — kromě EURC/USDC jsou nyní podporeny nativní kryptoměny: Bitcoin (BIP-21), Ethereum (EIP-681) a Solana (Solana Pay). Kurzy z CoinGecko při generování PDF.</li>
+          <li><strong>Vlastní token</strong> — zadejte libovolnou kryptoměnu: QR kóduje adresu; částka po dohodě.</li>
+          <li><strong>Kurz + timestamp pod QR kódem</strong> — zdroj kurzu a přesný čas získání jsou zobrazeny. Bez internetu QR kód není zobrazen.</li>
+          <li><strong>Zobrazení UPN / krypto nastavitelné</strong> — v Moje údaje → Zobrazení na faktuře nezávisle zapněte/vypněte QR kódy.</li>
+          <li><strong>Návod k použití ve 4 jazycích</strong> — in-app průvodce pokrývá SL, EN, DE, HR včetně pokynů pro Anthropic API klíč.</li>
+          <li>Oprava onboardingu: aplikace správně rozpozná nepodporované jazyky zařízení.</li>
+          <li>Oprava Android Auto Backup: onboarding se vždy zobrazí po čisté instalaci.</li>
+        </ul>
+
+        <h2>1.3.1</h2>
+        <ul>
+          <li><strong>Freemium model</strong> — 10 bezplatných faktur + 10 AI OCR skenování. Billero Pro předplatné: 2,99 €/měsíc pro neomezené používání.</li>
+          <li>Oprava: záloha zobrazuje správný název souboru při sdílení.</li>
+          <li>Oprava: CSV export se správnými typy sloupců pro Excel.</li>
+        </ul>
+
+        <h2>1.3.0</h2>
+        <ul>
+          <li><strong>Opakované faktury</strong> — nastavte týdenné, měsíční nebo čtvrtletní šablony faktur. Při každém spuštění aplikace se automaticky generují všechny splatné faktury s PDF.</li>
+          <li><strong>Coingate krypto platby</strong> — přijímejte BTC, ETH a 70+ kryptoměn přes Coingate payment link. Dostanete EUR na bankovní účet (SEPA).</li>
+          <li><strong>Krypto QR na PDF</strong> — nastavte EURC/USDC adresu a QR kód se automaticky přidá na každou PDF fakturu.</li>
+          <li><strong>Vícejazyčnost</strong> — přidána podpora pro Nizozemsko (NL) a Německo (DE).</li>
+        </ul>
+
+        <h2>1.2.0</h2>
+        <ul>
+          <li><strong>Záloha a obnova</strong> — exportujte všechna data do ZIP a obnovte je na novém zařízení.</li>
+          <li><strong>Odeslání faktur zákazníkovi</strong> — vyberte více faktur a sdílejte je najednou.</li>
+          <li><strong>CSV export</strong> — exportujte faktury pro účetního.</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Zásady ochrany osobních údajů</a> &nbsp;|&nbsp;
+        <a href="user-guide.html">Návod</a> &nbsp;|&nbsp;
+        <a href="release-notes.html">Release notes</a> &nbsp;|&nbsp;
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+  </body>
+</html>

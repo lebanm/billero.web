@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release notes – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="user-guide.html">Instrukcja</a>
+        <a href="release-notes.html" class="active">Release notes</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="privacy-policy.html">Prywatność</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../release-notes.html">SL</a> <span>|</span>
+        <a href="../en/release-notes.html">EN</a> <span>|</span>
+        <a href="../de/release-notes.html">DE</a> <span>|</span>
+        <a href="../hr/release-notes.html">HR</a> <span>|</span>
+        <a href="../sk/release-notes.html">SK</a> <span>|</span>
+        <a href="../cs/release-notes.html">CS</a> <span>|</span>
+        <a href="release-notes.html" class="active">PL</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Release notes</h1>
+        <p class="lead">Podsumowanie nowości i poprawek według wersji.</p>
+
+        <h2>1.4.0</h2>
+        <ul>
+          <li><strong>Krypto QR — BTC, ETH, SOL</strong> — oprócz EURC/USDC obsługiwane są teraz kryptowaluty natywne: Bitcoin (BIP-21), Ethereum (EIP-681) i Solana (Solana Pay). Kursy z CoinGecko przy generowaniu PDF.</li>
+          <li><strong>Własny token</strong> — wprowadź dowolną kryptowalutę: QR koduje adres; kwota po uzgodnieniu.</li>
+          <li><strong>Kurs + timestamp pod kodem QR</strong> — źródło kursu i dokładny czas pobrania są wyświetlane. Bez internetu kod QR nie jest wyświetlany.</li>
+          <li><strong>Wyświetlanie UPN / krypto konfigurowalne</strong> — w Moje dane → Wyświetlanie na fakturze niezależnie włącz/wyłącz kody QR.</li>
+          <li><strong>Instrukcja w 4 językach</strong> — przewodnik w aplikacji obejmuje SL, EN, DE, HR wraz z instrukcją klucza API Anthropic.</li>
+          <li>Poprawka onboardingu: aplikacja poprawnie wykrywa nieobsługiwane języki urządzenia.</li>
+          <li>Poprawka Android Auto Backup: onboarding zawsze wyświetla się po czystej instalacji.</li>
+        </ul>
+
+        <h2>1.3.1</h2>
+        <ul>
+          <li><strong>Model Freemium</strong> — 10 bezpłatnych faktur + 10 skanów AI OCR. Subskrypcja Billero Pro: 2,99 €/miesiąc dla nieograniczonego korzystania.</li>
+          <li>Poprawka: kopia zapasowa wyświetla prawidłową nazwę pliku podczas udostępniania.</li>
+          <li>Poprawka: eksport CSV z prawidłowymi typami kolumn dla programu Excel.</li>
+        </ul>
+
+        <h2>1.3.0</h2>
+        <ul>
+          <li><strong>Faktury cykliczne</strong> — ustawiaj tygodniowe, miesięczne lub kwartalne szablony faktur. Przy każdym uruchomieniu aplikacji automatycznie generowane są wszystkie zaległe faktury z PDF.</li>
+          <li><strong>Coingate płatności krypto</strong> — przyjmuj BTC, ETH i 70+ kryptowalut przez link płatności Coingate. Otrzymujesz EUR na rachunek bankowy (SEPA).</li>
+          <li><strong>Krypto QR na PDF</strong> — ustaw adres EURC/USDC i kod QR automatycznie pojawia się na każdej fakturze PDF.</li>
+          <li><strong>Wielojęzyczność</strong> — dodano obsługę Holandii (NL) i Niemiec (DE).</li>
+        </ul>
+
+        <h2>1.2.0</h2>
+        <ul>
+          <li><strong>Kopia zapasowa i przywracanie</strong> — eksportuj wszystkie dane do ZIP i przywróć je na nowym urządzeniu.</li>
+          <li><strong>Wysyłanie faktur do klienta</strong> — wybierz kilka faktur i udostępnij je jednocześnie.</li>
+          <li><strong>Eksport CSV</strong> — eksportuj faktury dla księgowego.</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Polityka prywatności</a> &nbsp;|&nbsp;
+        <a href="user-guide.html">Instrukcja</a> &nbsp;|&nbsp;
+        <a href="release-notes.html">Release notes</a> &nbsp;|&nbsp;
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+  </body>
+</html>
