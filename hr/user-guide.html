@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upute za korištenje – Billero</title>
+    <meta name="description" content="Billero upute za korištenje. Brzo i jednostavno izdavanje PDF računa, upravljanje strankama, AI OCR i kripto plaćanja.">
+    <link rel="canonical" href="https://billero.app/hr/user-guide.html">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/user-guide.html">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide.html">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide.html">
+    <link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide.html">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/billero_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/icons/billero_192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../img/icons/billero_512.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Početna</a>
+        <a href="user-guide.html" class="active">Upute</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="privacy-policy.html">Privatnost</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../user-guide.html">SL</a>
+        <span>|</span>
+        <a href="../en/user-guide.html">EN</a>
+        <span>|</span>
+        <a href="../de/user-guide.html">DE</a>
+        <span>|</span>
+        <a href="user-guide.html" class="active">HR</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Upute za korištenje</h1>
+        <p class="lead">Kratki vodič za korištenje aplikacije Billero.</p>
+
+        <h2>Brzi početak</h2>
+        <ul>
+          <li>Ispunite <strong>Moji podaci</strong> (IBAN, adresa, OIB / porezni broj …).</li>
+          <li>Dodajte <strong>stranke</strong> (tvrtke ili fizičke osobe).</li>
+          <li>Izradite <strong>novi račun</strong> (jednostavan ili s više stavki).</li>
+          <li>PDF možete dijeliti ili pohraniti. Uređivanje računa regenerira PDF.</li>
+        </ul>
+
+        <h2>Slanje računa stranci</h2>
+        <p>Iz kartice stranke možete brzo odabrati i poslati više računa odjednom.</p>
+        <ul>
+          <li>Otvorite karticu <strong>Stranke</strong> i tapnite na stranku.</li>
+          <li><strong>Dugi pritisak</strong> na račun → ulazak u način odabira.</li>
+          <li>Tapnite dodatne račune za odabir ili poništavanje odabira.</li>
+          <li>U naslovnoj traci tapnite <strong>↗</strong> za dijeljenje odabranih PDF-ova.</li>
+          <li>Za izlaz iz načina odabira tapnite <strong>✕</strong> u naslovnoj traci.</li>
+        </ul>
+
+        <h2>Primljeni računi s AI OCR-om</h2>
+        <p>Billero može automatski pročitati dobavljača, broj, datum i iznos iz PDF-a koristeći AI (Anthropic Claude). Funkcija je <strong>neobavezna</strong> i zahtijeva vlastiti API ključ.</p>
+
+        <h3>Dobivanje API ključa</h3>
+        <ol>
+          <li>Posjetite <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> i stvorite besplatan račun.</li>
+          <li>U izborniku odaberite <strong>API Keys</strong> → <strong>Create Key</strong>.</li>
+          <li>Imenujte ključ (npr. <em>Billero</em>) i kopirajte ga. Počinje s <code>sk-ant-</code>.</li>
+          <li>Dodajte način plaćanja u Anthropic konzoli. Čitanje jednog računa košta manje od <strong>0,001 €</strong> (Claude Haiku model).</li>
+        </ol>
+
+        <h3>Postavljanje u aplikaciji</h3>
+        <ol>
+          <li>Otvorite <strong>Moji podaci</strong> (kartica ⚙) → odjeljak <em>Anthropic API ključ (OCR)</em>.</li>
+          <li>Zalijepite ključ u polje i tapnite <strong>Spremi</strong>.</li>
+          <li>Ključ se pohranjuje u sigurnom dijelu uređaja (Android Keystore) — nikada nije u datotekama aplikacije.</li>
+        </ol>
+
+        <h3>Korištenje</h3>
+        <ol>
+          <li>U kartici <strong>Računi</strong> tapnite ikonu ↑ (uvoz PDF-a) i odaberite PDF primljenog računa.</li>
+          <li>Otvori se obrazac. Tapnite gumb <strong>✨ Analiziraj s AI-om</strong>.</li>
+          <li>Pričekajte trenutak — polja dobavljača, broja, datuma i iznosa automatski se popunjavaju.</li>
+          <li>Provjerite i po potrebi ispravite, zatim tapnite <strong>Spremi</strong>.</li>
+        </ol>
+        <p><strong>Bez API ključa</strong> obrazac radi kao i prije — sva polja ispunite ručno. Gumb AI se ne prikazuje.</p>
+
+        <h2>Sigurnosna kopija i obnova</h2>
+        <p>Sve podatke (račune, stranke, postavke i PDF-ove) možete izvesti i obnoviti putem kartice <strong>Moji podaci</strong> → odjeljak <em>Sigurnosna kopija</em>.</p>
+        <h3>Izvoz</h3>
+        <ul>
+          <li>Tapnite <strong>Izvezi sigurnosnu kopiju</strong>.</li>
+          <li>Aplikacija stvara ZIP datoteku (<code>billero_backup_YYYY-MM-DD.zip</code>) i otvara izbornik za dijeljenje.</li>
+          <li>Pohranite datoteku u iCloud, Google Drive, e-mail ili bilo gdje drugdje.</li>
+        </ul>
+        <h3>Obnova (npr. nakon promjene telefona)</h3>
+        <ul>
+          <li>Instalirajte Billero na novi telefon.</li>
+          <li>Otvorite <strong>Moji podaci</strong> → <strong>Obnovi iz sigurnosne kopije</strong>.</li>
+          <li>Potvrdite upozorenje (postojeći podaci bit će zamijenjeni).</li>
+          <li>Odaberite ZIP datoteku s lokacije pohrane.</li>
+          <li>Svi računi, stranke, postavke, PDF-ovi, logo i digitalni potpis se obnavljaju.</li>
+        </ul>
+        <p><strong>Upozorenje:</strong> obnova zamjenjuje sve postojeće podatke. Preporučujemo izvoz sigurnosne kopije trenutnih podataka prije obnove.</p>
+
+        <h2>Ponavljajući računi</h2>
+        <p>Billero automatski generira redovne račune (tjedno, mjesečno ili kvartalno) pri svakom pokretanju aplikacije.</p>
+        <ol>
+          <li>U kartici <strong>Računi</strong> tapnite ikonu ↻ (gore desno) → <strong>Ponavljajući računi</strong>.</li>
+          <li>Tapnite <strong>+</strong> i ispunite: naziv predloška, stranka, opis usluge, iznos (bez PDV-a), stopa PDV-a.</li>
+          <li>Odaberite učestalost: <strong>tjedno, mjesečno</strong> ili <strong>kvartalno</strong>.</li>
+          <li>Za mjesečno/kvartalno odaberite dan u mjesecu (1–28).</li>
+          <li>Sljedeći put kada se aplikacija pokrene na datum generiranja ili nakon njega, račun se automatski izrađuje s PDF-om.</li>
+        </ol>
+        <p>Predloške možete privremeno deaktivirati prekidačem ili ih urediti u bilo kojem trenutku. Generirani računi pojavljuju se na glavnom popisu.</p>
+
+        <h2>Kripto plaćanja</h2>
+        <p>Billero podržava dvije vrste kripto plaćanja: <strong>statičke QR kodove</strong> na PDF računu i <strong>Coingate payment link</strong> za prihvaćanje 70+ kriptovaluta.</p>
+
+        <h3>QR kodovi na PDF računu — podržane kriptovalute</h3>
+        <p>Postavite adrese novčanika u <strong>Moji podaci → Kripto plaćanje</strong>. QR kod automatski se dodaje na stranicu 2 svakog PDF računa.</p>
+        <ul>
+          <li><strong>EURC</strong> — Circle Euro stablecoin na Ethereumu, Baseu ili Solani. Tečaj: 1 EURC = 1 EUR.</li>
+          <li><strong>USDC</strong> — Circle USD stablecoin na Ethereumu, Baseu, Polygonu ili Solani. Tečaj: ECB putem Frankfurter API-ja pri generiranju PDF-a.</li>
+          <li><strong>BTC</strong> — Bitcoin, BIP-21 QR format. Tečaj: CoinGecko pri generiranju PDF-a.</li>
+          <li><strong>ETH</strong> — Ethereum (native), EIP-681 QR format. Tečaj: CoinGecko.</li>
+          <li><strong>SOL</strong> — Solana (native), Solana Pay format. Tečaj: CoinGecko.</li>
+          <li><strong>Vlastiti token</strong> — unesite naziv tokena i adresu novčanika; QR kodira adresu (iznos po dogovoru).</li>
+        </ul>
+        <p>Tečaj i vremenski žig dohvata ispisani su ispod svakog QR koda. <strong>Bez internetske veze QR kod se ne prikazuje</strong> (tečaj mora biti svjež).</p>
+        <p>U <strong>Moji podaci → Prikaz na računu</strong> možete neovisno uključiti ili isključiti UPN QR i kripto QR. UPN ostaje na stranici 1, kripto QR je na stranici 2.</p>
+
+        <h3>Coingate payment link (BTC, ETH, SOL i 70+ coina)</h3>
+        <ol>
+          <li>Stvorite račun na <a href="https://coingate.com" target="_blank" rel="noopener">coingate.com</a> i pribavite API ključ.</li>
+          <li>U <strong>Moji podaci → Coingate</strong> unesite API ključ. Aktivirajte <em>Sandbox način</em> za testiranje.</li>
+          <li>U kartici <strong>Računi</strong> tapnite <strong>₿ ikonu</strong> pored željenog računa.</li>
+          <li>Aplikacija izrađuje payment link — prikazuju se QR kod i gumb <em>Otvori u pregledniku</em>.</li>
+          <li>Podijelite link s kupcem. Plaća s bilo kojom kriptovalutom po svom izboru.</li>
+          <li>Vi primate EUR na bankovni račun putem SEPA-e (Coingate obavlja konverziju).</li>
+          <li>Status plaćanja provjerite gumbom <strong>Provjeri status</strong> u aplikaciji.</li>
+        </ol>
+        <p><strong>Coingate je EU reguliran</strong> (EMI licenca, Litva) i podržava SEPA isplate.</p>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Pravila privatnosti</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">Upute</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Release notes</a>
+        &nbsp; | &nbsp;
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benutzerhandbuch – Billero</title>
+    <meta name="description" content="Billero Benutzerhandbuch. Schnelles und einfaches Erstellen von PDF-Rechnungen, Kundenverwaltung, KI-OCR und Krypto-Zahlungen.">
+    <link rel="canonical" href="https://billero.app/de/user-guide.html">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/user-guide.html">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide.html">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide.html">
+    <link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide.html">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/billero_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/icons/billero_192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../img/icons/billero_512.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="user-guide.html" class="active">Handbuch</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="privacy-policy.html">Datenschutz</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../user-guide.html">SL</a>
+        <span>|</span>
+        <a href="../en/user-guide.html">EN</a>
+        <span>|</span>
+        <a href="user-guide.html" class="active">DE</a>
+        <span>|</span>
+        <a href="../hr/user-guide.html">HR</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Benutzerhandbuch</h1>
+        <p class="lead">Eine kurze Anleitung zur Verwendung von Billero.</p>
+
+        <h2>Schnellstart</h2>
+        <ul>
+          <li>Füllen Sie <strong>Meine Daten</strong> aus (IBAN, Adresse, Steuernummer …).</li>
+          <li>Fügen Sie <strong>Kunden</strong> hinzu (Unternehmen oder Privatpersonen).</li>
+          <li>Erstellen Sie eine <strong>neue Rechnung</strong> (einfach oder mit mehreren Positionen).</li>
+          <li>Sie können das PDF teilen oder speichern. Das Bearbeiten einer Rechnung erstellt das PDF neu.</li>
+        </ul>
+
+        <h2>Rechnungen an Kunden senden</h2>
+        <p>Über die Kundenkarte können Sie schnell mehrere Rechnungen gleichzeitig auswählen und senden.</p>
+        <ul>
+          <li>Öffnen Sie die Registerkarte <strong>Kunden</strong> und tippen Sie auf einen Kunden.</li>
+          <li><strong>Lang drücken</strong> auf eine Rechnung → Auswahlmodus aktivieren.</li>
+          <li>Weitere Rechnungen antippen zum Auswählen oder Abwählen.</li>
+          <li>In der Titelleiste auf <strong>↗</strong> tippen, um die ausgewählten PDFs zu teilen.</li>
+          <li>Zum Beenden des Auswahlmodus auf <strong>✕</strong> in der Titelleiste tippen.</li>
+        </ul>
+
+        <h2>Eingangsrechnungen mit KI-OCR</h2>
+        <p>Billero kann aus einem PDF automatisch Lieferant, Nummer, Datum und Betrag auslesen (Anthropic Claude). Die Funktion ist <strong>optional</strong> und erfordert einen eigenen API-Schlüssel.</p>
+
+        <h3>API-Schlüssel erhalten</h3>
+        <ol>
+          <li>Besuchen Sie <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> und erstellen Sie ein kostenloses Konto.</li>
+          <li>Im Menü <strong>API Keys</strong> → <strong>Create Key</strong> auswählen.</li>
+          <li>Schlüssel benennen (z. B. <em>Billero</em>) und kopieren. Beginnt mit <code>sk-ant-</code>.</li>
+          <li>Fügen Sie in der Anthropic-Konsole eine Zahlungsmethode hinzu. Das Lesen einer Rechnung kostet weniger als <strong>0,001 €</strong> (Claude Haiku-Modell).</li>
+        </ol>
+
+        <h3>Einrichtung in der App</h3>
+        <ol>
+          <li>Öffnen Sie <strong>Meine Daten</strong> (⚙ Registerkarte) → Abschnitt <em>Anthropic API-Schlüssel (OCR)</em>.</li>
+          <li>Schlüssel in das Feld einfügen und auf <strong>Speichern</strong> tippen.</li>
+          <li>Der Schlüssel wird im sicheren Bereich des Geräts gespeichert (Android Keystore) — nie in App-Dateien.</li>
+        </ol>
+
+        <h3>Verwendung</h3>
+        <ol>
+          <li>In der Registerkarte <strong>Rechnungen</strong> auf das ↑-Symbol tippen (PDF importieren) und das PDF einer Eingangsrechnung auswählen.</li>
+          <li>Ein Formular öffnet sich. Auf <strong>✨ Mit KI analysieren</strong> tippen.</li>
+          <li>Kurz warten — Lieferant, Nummer, Datum und Betrag werden automatisch ausgefüllt.</li>
+          <li>Überprüfen, ggf. korrigieren, dann auf <strong>Speichern</strong> tippen.</li>
+        </ol>
+        <p><strong>Ohne API-Schlüssel</strong> funktioniert das Formular wie gewohnt — alle Felder manuell ausfüllen. Die KI-Schaltfläche wird nicht angezeigt.</p>
+
+        <h2>Datensicherung &amp; Wiederherstellung</h2>
+        <p>Alle Daten (Rechnungen, Kunden, Einstellungen und PDFs) können über die Registerkarte <strong>Meine Daten</strong> → Abschnitt <em>Datensicherung</em> exportiert und wiederhergestellt werden.</p>
+        <h3>Export</h3>
+        <ul>
+          <li>Auf <strong>Datensicherung exportieren</strong> tippen.</li>
+          <li>Die App erstellt eine ZIP-Datei (<code>billero_backup_YYYY-MM-DD.zip</code>) und öffnet das Teilen-Menü.</li>
+          <li>Datei in iCloud, Google Drive, E-Mail oder einem anderen Ort speichern.</li>
+        </ul>
+        <h3>Wiederherstellung (z. B. nach Gerätewechsel)</h3>
+        <ul>
+          <li>Billero auf dem neuen Telefon installieren.</li>
+          <li><strong>Meine Daten</strong> → <strong>Aus Datensicherung wiederherstellen</strong> öffnen.</li>
+          <li>Warnung bestätigen (vorhandene Daten werden ersetzt).</li>
+          <li>ZIP-Datei vom Speicherort auswählen.</li>
+          <li>Alle Rechnungen, Kunden, Einstellungen, PDFs, Logo und Unterschrift werden wiederhergestellt.</li>
+        </ul>
+        <p><strong>Achtung:</strong> Die Wiederherstellung ersetzt alle vorhandenen Daten. Wir empfehlen, vor der Wiederherstellung eine Datensicherung der aktuellen Daten zu erstellen.</p>
+
+        <h2>Wiederkehrende Rechnungen</h2>
+        <p>Billero erstellt automatisch regelmäßige Rechnungen (wöchentlich, monatlich oder vierteljährlich) bei jedem App-Start.</p>
+        <ol>
+          <li>In der Registerkarte <strong>Rechnungen</strong> auf das ↻-Symbol tippen (oben rechts) → <strong>Wiederkehrende Rechnungen</strong>.</li>
+          <li>Auf <strong>+</strong> tippen und ausfüllen: Vorlagenname, Kunde, Leistungsbeschreibung, Betrag (netto), MwSt-Satz.</li>
+          <li>Häufigkeit wählen: <strong>wöchentlich, monatlich</strong> oder <strong>vierteljährlich</strong>.</li>
+          <li>Für monatlich/vierteljährlich den Tag des Monats wählen (1–28).</li>
+          <li>Beim nächsten App-Start am oder nach dem geplanten Datum wird die Rechnung automatisch mit PDF erstellt.</li>
+        </ol>
+        <p>Vorlagen können jederzeit mit dem Schalter deaktiviert oder bearbeitet werden. Erstellte Rechnungen erscheinen in der Hauptliste.</p>
+
+        <h2>Krypto-Zahlungen</h2>
+        <p>Billero unterstützt zwei Arten von Krypto-Zahlungen: <strong>statische QR-Codes</strong> auf der PDF-Rechnung und einen <strong>Coingate-Zahlungslink</strong> für 70+ Kryptowährungen.</p>
+
+        <h3>QR-Codes auf der PDF-Rechnung — unterstützte Kryptowährungen</h3>
+        <p>Wallet-Adressen in <strong>Meine Daten → Krypto-Zahlung</strong> eintragen. Der QR-Code wird automatisch auf Seite 2 jeder PDF-Rechnung hinzugefügt.</p>
+        <ul>
+          <li><strong>EURC</strong> — Circle Euro-Stablecoin auf Ethereum, Base oder Solana. Kurs: 1 EURC = 1 EUR.</li>
+          <li><strong>USDC</strong> — Circle USD-Stablecoin auf Ethereum, Base, Polygon oder Solana. Kurs: EZB über Frankfurter API bei PDF-Erstellung.</li>
+          <li><strong>BTC</strong> — Bitcoin, BIP-21 QR-Format. Kurs: CoinGecko bei PDF-Erstellung.</li>
+          <li><strong>ETH</strong> — Ethereum (native), EIP-681 QR-Format. Kurs: CoinGecko.</li>
+          <li><strong>SOL</strong> — Solana (native), Solana Pay Format. Kurs: CoinGecko.</li>
+          <li><strong>Eigener Token</strong> — Token-Name und Wallet-Adresse eingeben; QR kodiert die Adresse (Betrag nach Vereinbarung).</li>
+        </ul>
+        <p>Kurs und Abrufzeitstempel werden unter jedem QR-Code angezeigt. <strong>Ohne Internetverbindung wird kein QR-Code angezeigt</strong> (Kurs muss aktuell sein).</p>
+        <p>Unter <strong>Meine Daten → Anzeige auf Rechnung</strong> können Sie UPN-QR und Krypto-QR unabhängig aktivieren oder deaktivieren. UPN bleibt auf Seite 1, Krypto-QR ist auf Seite 2.</p>
+
+        <h3>Coingate-Zahlungslink (BTC, ETH, SOL und 70+ Coins)</h3>
+        <ol>
+          <li>Konto bei <a href="https://coingate.com" target="_blank" rel="noopener">coingate.com</a> erstellen und API-Schlüssel holen.</li>
+          <li>In <strong>Meine Daten → Coingate</strong> den API-Schlüssel eintragen. Für Tests den <em>Sandbox-Modus</em> aktivieren.</li>
+          <li>In der Registerkarte <strong>Rechnungen</strong> auf das <strong>₿-Symbol</strong> neben der Rechnung tippen.</li>
+          <li>Die App erstellt einen Zahlungslink — QR-Code und Schaltfläche <em>Im Browser öffnen</em> erscheinen.</li>
+          <li>Link an den Kunden weitergeben. Er zahlt mit einer beliebigen Kryptowährung.</li>
+          <li>Sie erhalten EUR auf Ihr Bankkonto per SEPA (Coingate übernimmt die Konvertierung).</li>
+          <li>Zahlungsstatus mit der Schaltfläche <strong>Status prüfen</strong> in der App überprüfen.</li>
+        </ol>
+        <p><strong>Coingate ist EU-reguliert</strong> (EMI-Lizenz, Litauen) und unterstützt SEPA-Auszahlungen.</p>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Datenschutzerklärung</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">Handbuch</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Release notes</a>
+        &nbsp; | &nbsp;
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+  </body>
+</html>

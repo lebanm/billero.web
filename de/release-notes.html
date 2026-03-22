@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release notes – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/billero_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/icons/billero_192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../img/icons/billero_512.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="user-guide.html">Handbuch</a>
+        <a href="release-notes.html" class="active">Release notes</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="privacy-policy.html">Datenschutz</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../release-notes.html">SL</a>
+        <span>|</span>
+        <a href="../en/release-notes.html">EN</a>
+        <span>|</span>
+        <a href="release-notes.html" class="active">DE</a>
+        <span>|</span>
+        <a href="../hr/release-notes.html">HR</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Release notes</h1>
+        <p class="lead">Neuigkeiten und Fehlerbehebungen nach Versionen.</p>
+
+        <h2>1.4.0</h2>
+        <ul>
+          <li><strong>Krypto-QR — BTC, ETH, SOL</strong> — zusätzlich zu EURC/USDC werden jetzt native Kryptowährungen unterstützt: Bitcoin (BIP-21), Ethereum (EIP-681) und Solana (Solana Pay). Kurse von CoinGecko bei PDF-Erstellung.</li>
+          <li><strong>Eigener Token</strong> — beliebige Kryptowährung eingeben: QR kodiert die Adresse; Betrag nach Vereinbarung.</li>
+          <li><strong>Kurs + Zeitstempel unter QR-Code</strong> — Kursquelle und exakter Abrufzeitpunkt werden angezeigt. Ohne Internet kein QR-Code.</li>
+          <li><strong>UPN / Krypto-Anzeige einstellbar</strong> — UPN-QR und Krypto-QR unabhängig in Meine Daten → Anzeige ein-/ausschalten.</li>
+          <li><strong>UPN auf Seite 1, Krypto auf Seite 2</strong> — Krypto-QR-Codes auf eine separate Seite 2 verschoben.</li>
+          <li><strong>Benutzerhandbuch in 4 Sprachen</strong> — In-App-Handbuch deckt SL, EN, DE, HR ab, inkl. Anthropic API-Schlüssel-Anleitung.</li>
+          <li>Korrektur: Onboarding erkennt jetzt nicht unterstützte Gerätesprachen und zeigt die Länderauswahl.</li>
+          <li>Korrektur: Android Auto Backup deaktiviert — Onboarding erscheint immer nach Neuinstallation.</li>
+        </ul>
+
+        <h2>1.3.1</h2>
+        <ul>
+          <li><strong>Freemium-Modell</strong> — 10 kostenlose Rechnungen + 10 KI-OCR-Scans. Billero Pro-Abo: 2,99 €/Monat für unbegrenzte Nutzung.</li>
+          <li>Korrektur: Datensicherung zeigt beim Teilen den richtigen Dateinamen.</li>
+          <li>Korrektur: CSV-Export mit korrekten Spaltentypen für Excel.</li>
+        </ul>
+
+        <h2>1.3.0</h2>
+        <ul>
+          <li><strong>Wiederkehrende Rechnungen</strong> — wöchentliche, monatliche oder vierteljährliche Rechnungsvorlagen. Beim App-Start werden alle fälligen Rechnungen automatisch mit PDF erstellt.</li>
+          <li><strong>Coingate Krypto-Zahlungen</strong> — BTC, ETH und 70+ Kryptowährungen über Coingate-Zahlungslink akzeptieren. Auszahlung in EUR auf das Bankkonto (SEPA).</li>
+          <li><strong>Krypto-QR auf PDF</strong> — EURC/USDC-Adresse (Base, Ethereum, Polygon, Solana) eintragen und QR-Code erscheint automatisch auf jeder PDF-Rechnung.</li>
+          <li><strong>Mehrsprachigkeit</strong> — Unterstützung für Niederlande (NL) und Deutschland (DE) mit korrekten MwSt-Sätzen und Rechnungsregeln.</li>
+          <li>Korrektur: Wechsel zwischen Ländern aktualisiert MwSt-Sätze und Regeln sofort.</li>
+        </ul>
+
+        <h2>1.2.0</h2>
+        <ul>
+          <li><strong>Datensicherung &amp; Wiederherstellung</strong> — alle Daten (Rechnungen, Kunden, Einstellungen, PDFs, Logo, Unterschrift) als ZIP exportieren und auf neuem Gerät wiederherstellen.</li>
+          <li><strong>Rechnungen von Kundenkarte senden</strong> — mehrere Rechnungen auf der Kundenkarte auswählen und per Teilen oder E-Mail versenden.</li>
+          <li><strong>PDF teilen / per E-Mail senden</strong> — beim Senden zwischen Teilen-Menü (WhatsApp, SMS …) oder vorausgefüllter E-Mail wählen.</li>
+          <li><strong>Rechnungsvorschau vom Kunden</strong> — Rechnung in der Kundenliste antippen zum Öffnen und Bearbeiten.</li>
+          <li>Fehlerbereinigung: Rechnungen unter Unbekannter Kunde werden korrekt gruppiert.</li>
+        </ul>
+
+        <h2>1.1.0</h2>
+        <ul>
+          <li><strong>Jahresübersicht</strong> — Rechnungs-Tab zeigt Statistiken pro Jahr: Gesamtzahl, bezahlt, offen, Beträge.</li>
+          <li><strong>Rechnungsfilter</strong> — schnell zwischen allen, bezahlten und offenen Rechnungen filtern.</li>
+          <li><strong>CSV-Export</strong> — aktuelle Rechnungen oder manuelle Auswahl in Excel-kompatible CSV exportieren.</li>
+          <li>Kundenverwaltung verbessert (Formular, Duplikatverhinderung).</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Datenschutzerklärung</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">Handbuch</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Release notes</a>
+        &nbsp; | &nbsp;
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+  </body>
+</html>

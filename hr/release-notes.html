@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release notes – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/billero_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/icons/billero_192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../img/icons/billero_512.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Početna</a>
+        <a href="user-guide.html">Upute</a>
+        <a href="release-notes.html" class="active">Release notes</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="privacy-policy.html">Privatnost</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../release-notes.html">SL</a>
+        <span>|</span>
+        <a href="../en/release-notes.html">EN</a>
+        <span>|</span>
+        <a href="../de/release-notes.html">DE</a>
+        <span>|</span>
+        <a href="release-notes.html" class="active">HR</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Release notes</h1>
+        <p class="lead">Sažetak novosti i ispravaka po verzijama.</p>
+
+        <h2>1.4.0</h2>
+        <ul>
+          <li><strong>Kripto QR — BTC, ETH, SOL</strong> — uz EURC/USDC sada su podržane i native kriptovalute: Bitcoin (BIP-21), Ethereum (EIP-681) i Solana (Solana Pay). Tečajevi dohvaćeni iz CoinGecka pri generiranju PDF-a.</li>
+          <li><strong>Vlastiti token</strong> — unesite bilo koju kriptovalutu: QR kodira adresu; iznos po dogovoru s kupcem.</li>
+          <li><strong>Tečaj + vremenski žig ispod QR koda</strong> — izvor tečaja i točno vrijeme dohvata se prikazuju. Bez interneta nema QR koda.</li>
+          <li><strong>Prikaz UPN-a / kripto nastavljiv</strong> — neovisno uključite ili isključite UPN QR i kripto QR u Moji podaci → Prikaz na računu.</li>
+          <li><strong>UPN na stranici 1, kripto na stranici 2</strong> — kripto QR kodovi premješteni na posebnu stranicu 2.</li>
+          <li><strong>Upute za korištenje u 4 jezika</strong> — vodič u aplikaciji pokriva SL, EN, DE, HR uključujući upute za Anthropic API ključ.</li>
+          <li>Ispravak: onboarding ispravno otkriva nepodržane jezike uređaja i prikazuje odabir države.</li>
+          <li>Ispravak: Android Auto Backup onemogućen — onboarding se uvijek prikazuje nakon svježe instalacije.</li>
+        </ul>
+
+        <h2>1.3.1</h2>
+        <ul>
+          <li><strong>Freemium model</strong> — 10 besplatnih računa + 10 AI OCR skeniranja. Billero Pro pretplata: 2,99 €/mjesec za neograničeno korištenje.</li>
+          <li>Ispravak: sigurnosna kopija prikazuje ispravno ime datoteke pri dijeljenju.</li>
+          <li>Ispravak: CSV izvoz s ispravnim vrstama stupaca za Excel.</li>
+        </ul>
+
+        <h2>1.3.0</h2>
+        <ul>
+          <li><strong>Ponavljajući računi</strong> — postavljajte tjedne, mjesečne ili kvartalne predloške računa. Pri svakom pokretanju aplikacije automatski se generiraju svi dospjeli računi s PDF-om.</li>
+          <li><strong>Coingate kripto plaćanja</strong> — prihvaćajte BTC, ETH i 70+ kriptovaluta putem Coingate payment linka. Primite EUR na bankovni račun (SEPA).</li>
+          <li><strong>Kripto QR na PDF-u</strong> — postavite EURC/USDC adresu (Base, Ethereum, Polygon, Solana) i QR kod automatski se dodaje na svaki PDF račun.</li>
+          <li><strong>Višejezičnost</strong> — dodana podrška za Nizozemsku (NL) i Njemačku (DE) s odgovarajućim stopama PDV-a i pravilima za račune.</li>
+          <li>Ispravak: promjena države odmah ažurira stope PDV-a i pravila.</li>
+        </ul>
+
+        <h2>1.2.0</h2>
+        <ul>
+          <li><strong>Sigurnosna kopija i obnova</strong> — izvezite sve podatke (račune, stranke, postavke, PDF-ove, logo, potpis) u ZIP datoteku i obnovite ih na novom uređaju.</li>
+          <li><strong>Slanje računa s kartice stranke</strong> — odaberite jedan ili više računa na kartici stranke i podijelite ih ili pošaljite e-mailom.</li>
+          <li><strong>Dijeli PDF / Pošalji e-mailom</strong> — pri slanju računa birate između izbornika za dijeljenje (WhatsApp, SMS …) ili unaprijed popunjenog e-maila.</li>
+          <li><strong>Pregled računa iz stranke</strong> — tapnite račun u popisu stranke za otvaranje i uređivanje.</li>
+          <li>Ispravak: računi pod Nepoznatim kupcem pravilno su grupirani.</li>
+        </ul>
+
+        <h2>1.1.0</h2>
+        <ul>
+          <li><strong>Pregled po godinama</strong> — kartica Računi prikazuje statistike po godini: ukupni broj, plaćeni, otvoreni, iznosi.</li>
+          <li><strong>Filter računa</strong> — brzo filtrirajte između svih, plaćenih i otvorenih računa.</li>
+          <li><strong>CSV izvoz</strong> — izvezite račune tekuće godine ili ručni odabir u Excel-kompatibilni CSV.</li>
+          <li>Poboljšanja upravljanja strankama (obrazac, sprječavanje duplikata).</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Pravila privatnosti</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">Upute</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Release notes</a>
+        &nbsp; | &nbsp;
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+  </body>
+</html>
