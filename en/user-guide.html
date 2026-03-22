@@ -114,15 +114,20 @@
         <p>Templates can be disabled with the toggle or edited at any time. Generated invoices appear in the main invoice list.</p>
 
         <h2>Crypto payments</h2>
-        <p>Billero supports two types of crypto payments: a <strong>static QR address</strong> on the PDF invoice and a <strong>Coingate payment link</strong> for accepting 70+ cryptocurrencies.</p>
+        <p>Billero supports two types of crypto payments: <strong>static QR codes</strong> on the PDF invoice and a <strong>Coingate payment link</strong> for accepting 70+ cryptocurrencies.</p>
 
-        <h3>QR code on PDF invoice</h3>
-        <ol>
-          <li>In <strong>My details → Crypto payment</strong>, select your blockchain (Base, Ethereum, Polygon or Solana).</li>
-          <li>Enter your EURC and/or USDC wallet address.</li>
-          <li>Every PDF invoice will automatically include a crypto payment QR code with the invoice amount pre-filled.</li>
-        </ol>
-        <p>Your customer scans the QR with their crypto wallet (e.g. MetaMask, Phantom) — the amount and address are pre-filled.</p>
+        <h3>QR codes on PDF invoice — supported cryptocurrencies</h3>
+        <p>Set your wallet address(es) in <strong>My details → Crypto payment</strong>. The QR code is automatically added to page 2 of every PDF invoice.</p>
+        <ul>
+          <li><strong>EURC</strong> — Circle Euro stablecoin on Ethereum, Base or Solana. Rate: 1 EURC = 1 EUR.</li>
+          <li><strong>USDC</strong> — Circle USD stablecoin on Ethereum, Base, Polygon or Solana. Rate: fetched from ECB via Frankfurter API at PDF generation time.</li>
+          <li><strong>BTC</strong> — Bitcoin, BIP-21 QR format. Rate: fetched from CoinGecko at PDF generation time.</li>
+          <li><strong>ETH</strong> — Ethereum (native), EIP-681 QR format. Rate: CoinGecko.</li>
+          <li><strong>SOL</strong> — Solana (native), Solana Pay format. Rate: CoinGecko.</li>
+          <li><strong>Custom token</strong> — enter the token name and wallet address; the QR encodes the address (amount by agreement).</li>
+        </ul>
+        <p>The rate and fetch timestamp are printed below each QR code. <strong>Without an internet connection the QR code is not shown</strong> (the rate must be fresh).</p>
+        <p>In <strong>My details → Display on invoice</strong> you can independently toggle the UPN QR and the crypto QR. UPN stays on page 1, crypto QR is on page 2.</p>
 
         <h3>Coingate payment link (BTC, ETH, SOL and 70+ coins)</h3>
         <ol>

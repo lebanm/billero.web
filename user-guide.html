@@ -116,13 +116,18 @@
         <h2>Kripto plačila</h2>
         <p>Billero podpira dve vrsti kripto plačil: <strong>statični QR naslov</strong> na PDF računu in <strong>Coingate payment link</strong> za sprejemanje 70+ kriptovalut.</p>
 
-        <h3>QR koda na PDF računu</h3>
-        <ol>
-          <li>V <strong>Moji podatki → Kripto plačilo</strong> izberite blockchain verigo (Base, Ethereum, Polygon ali Solana).</li>
-          <li>Vnesite EURC in/ali USDC denarniški naslov.</li>
-          <li>Na vsakem naslednjem PDF računu bo avtomatsko prikazana QR koda za kripto plačilo z zneskom računa.</li>
-        </ol>
-        <p>Stranka skenira QR s kripto denarnico (npr. MetaMask, Phantom) — znesek in naslov sta že predizpolnjena.</p>
+        <h3>QR kode na PDF računu — podprte kriptovalute</h3>
+        <p>V <strong>Moji podatki → Kripto plačilo</strong> nastavite naslov(e) denarnice. QR se samodejno doda na stran 2 vsakega PDF računa.</p>
+        <ul>
+          <li><strong>EURC</strong> — Circle Euro stablecoin na Ethereum, Base ali Solana. Tečaj: 1 EURC = 1 EUR.</li>
+          <li><strong>USDC</strong> — Circle USD stablecoin na Ethereum, Base, Polygon ali Solana. Tečaj: pridobljen iz ECB prek Frankfurter API ob generiranju PDF.</li>
+          <li><strong>BTC</strong> — Bitcoin, BIP-21 QR format. Tečaj: pridobljen iz CoinGecko ob generiranju PDF.</li>
+          <li><strong>ETH</strong> — Ethereum (native), EIP-681 QR format. Tečaj: CoinGecko.</li>
+          <li><strong>SOL</strong> — Solana (native), Solana Pay format. Tečaj: CoinGecko.</li>
+          <li><strong>Lastni token</strong> — vnesite ime tokena in denarniški naslov; QR kodira naslov (znesek po dogovoru).</li>
+        </ul>
+        <p>Tečaj in čas pridobitve sta izpisana pod vsako QR kodo. <strong>Brez internetne povezave QR koda ni prikazana</strong> (tečaj mora biti svež).</p>
+        <p>V <strong>Moji podatki → Prikaz na računu</strong> lahko vklopite ali izklopite UPN QR in kripto QR neodvisno. UPN ostane na strani 1, kripto QR je na strani 2.</p>
 
         <h3>Coingate payment link (BTC, ETH, SOL in 70+ coinov)</h3>
         <ol>
