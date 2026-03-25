@@ -34,13 +34,12 @@
           nam pošlji sporočilo. Odgovorili bomo v najkrajšem možnem času.
         </p>
 
+        <!-- Formspree endpoint: formspree.io/f/mojkpnvy -->
         <form
           id="contact-form"
-          action="mailto:info@billero.app"
-          method="post"
-          enctype="text/plain"
-          data-human-answer="7"
-          data-human-error="Prosimo, pravilno odgovori na vprašanje za preverjanje (3 + 4 = 7)."
+          action="https://formspree.io/f/mojkpnvy"
+          data-human-error="Prosim, pravilno odgovori na vprašanje za preverjanje."
+          data-send-error="Napaka pri pošiljanju. Poskusi znova ali piši na info@billero.app."
         >
           <div class="field">
             <label for="name">Ime</label>
@@ -60,7 +59,7 @@
           <div class="field">
             <label for="human">Potrditev, da nisi robot</label>
             <div class="human-check">
-              <span>Koliko je 3 + 4?</span>
+              <span id="human-question"></span>
               <input id="human" type="text" name="human" inputmode="numeric" required>
             </div>
             <p class="small-text">
@@ -75,6 +74,11 @@
             <a href="mailto:info@billero.app">info@billero.app</a>.
           </p>
         </form>
+
+        <div id="form-success" style="display:none; margin-top:24px;">
+          <p><strong>Sporočilo je bilo poslano!</strong> Odgovorili bomo v najkrajšem možnem času.</p>
+        </div>
+        <div id="form-error" style="display:none; margin-top:12px; color:#e74c3c;"></div>
       </div>
     </main>
 
