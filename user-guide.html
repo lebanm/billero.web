@@ -150,14 +150,41 @@
           <li>Status plačila preverite z gumbom <strong>Preveri status</strong> v aplikaciji.</li>
         </ol>
         <p><strong>Coingate je EU reguliran</strong> ponudnik (EMI licenca, Litva) in podpira SEPA izplačila.</p>
+
+        <h2>Plačilna povezava (Payment link)</h2>
+        <p>Sprejmite plačila prek kateregakoli ponudnika — <strong>Stripe, PayPal, Revolut, Wise</strong> ali drugega. Billero ne procesira plačil; samo prikaže vašo obstoječo plačilno povezavo kot QR kodo na PDF računu.</p>
+
+        <h3>Nastavitev</h3>
+        <ol>
+          <li>V <strong>Moji podatki → Plačilna povezava</strong> vnesite URL vaše plačilne povezave (npr. <code>https://buy.stripe.com/...</code> ali <code>https://paypal.me/vasusername</code>).</li>
+          <li>Opcijsko vnesite oznako, ki se prikaže nad QR kodo (npr. <em>Plačaj z Revolut</em>).</li>
+          <li>Prepričajte se, da je stikalo <strong>Prikaži plačilno povezavo na PDF</strong> vklopljeno.</li>
+        </ol>
+
+        <h3>Kako deluje</h3>
+        <ul>
+          <li>Na vsakem PDF računu se prikaže QR koda in URL vaše plačilne povezave.</li>
+          <li>Stranka skenira QR ali klikne URL in plača prek ponudnika po vaši izbiri.</li>
+          <li>Znesek, valuta in ostale podrobnosti uredite pri ponudniku (Billero tega ne nastavi).</li>
+          <li>Vklop/izklop prikaza: <strong>Moji podatki → Prikaz na računu → Prikaži plačilno povezavo na PDF</strong>.</li>
+        </ul>
+
+        <h3>Podprti ponudniki (primeri)</h3>
+        <ul>
+          <li><strong>Stripe</strong> — <code>https://buy.stripe.com/...</code> (Payment Link iz Stripe Dashboard)</li>
+          <li><strong>PayPal</strong> — <code>https://paypal.me/vasusername</code></li>
+          <li><strong>Revolut</strong> — <code>https://revolut.me/vasusername</code></li>
+          <li><strong>Wise</strong> — <code>https://wise.com/pay/...</code></li>
+          <li>Katerikoli drug URL za sprejemanje plačil</li>
+        </ul>
       </div>
     </main>
 
     <footer class="container">
       <p>© 2026 Billero</p>
       <div>
-        <a href="privacy-policy.html">Pravilnik o zasebnosti</a>
-        &nbsp; | &nbsp;
+        <a href="privacy-policy.html">Pravilnik o zasebnosti</a>
+        &nbsp; | &nbsp;
         <a href="terms-of-use.html">Pogoji uporabe</a>
         &nbsp; | &nbsp;
         <a href="user-guide.html">Navodila</a>
