@@ -41,6 +41,19 @@
         <h1>Release notes</h1>
         <p class="lead">Povzetek novosti in popravkov po verzijah.</p>
 
+        <h2>1.5.1</h2>
+        <ul>
+          <li><strong>Pošlji neposlane račune računovodji</strong> — nov gumb v seznamu računov neposredno odpre e-poštni odjemalec z vsemi doslej neposlanimi PDF-ji v prilogah in e-naslovom računovodje kot prejemnikom. E-naslov nastavite v Moji podatki → AI ključi.</li>
+          <li><strong>Filter Stornirani</strong> — seznam računov ima zdaj 4 filtre: Vsi / Plačani / Odprti / Stornirani. Filter Odprti ne prikazuje več storniranih računov; analitika strank prav tako ne upošteva storniranih zneskov.</li>
+          <li><strong>Popravek AI branja računov</strong> — storitev Claude pri preobremenitvi (529) samodejno ponovi zahtevo do 2-krat; napaka prikaže ustrezno sporočilo namesto tehničnega opisa.</li>
+        </ul>
+
+        <h2>1.5.0</h2>
+        <ul>
+          <li><strong>Singapur (SG)</strong> — dodana podpora za Singapur z GST 9% (SGD valuta). Računi sledijo GST Act (Chapter 117A); aplikacija samodejno prikaže GST rekapitulacijo in oprostilno izjavo za letni promet pod SGD 1.000.000.</li>
+          <li><strong>Tajska (TH)</strong> — dodana podpora za Tajsko z DDV 7% (THB valuta). PDF račun je <strong>dvojezičen</strong>: tajski in angleški napis vzporedno na isti strani — idealno za lokalne Tajce in mednarodne stranke.</li>
+        </ul>
+
         <h2>1.4.0</h2>
         <ul>
           <li><strong>Kripto QR — BTC, ETH, SOL</strong> — poleg EURC/USDC so zdaj podprte native kriptovalute: Bitcoin (BIP-21), Ethereum (EIP-681) in Solana (Solana Pay). Tečaj pridobljen iz CoinGecko ob generiranju PDF.</li>
@@ -103,8 +116,8 @@
     <footer class="container">
       <p>© 2026 Billero</p>
       <div>
-        <a href="privacy-policy.html">Pravilnik o zasebnosti</a>
-        &nbsp; | &nbsp;
+        <a href="privacy-policy.html">Pravilnik o zasebnosti</a>
+        &nbsp; | &nbsp;
         <a href="terms-of-use.html">Pogoji uporabe</a>
         &nbsp; | &nbsp;
         <a href="user-guide.html">Navodila</a>

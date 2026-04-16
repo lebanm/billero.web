@@ -37,6 +37,19 @@
         <h1>Release notes</h1>
         <p class="lead">Prehľad noviniek a opráv podľa verzií.</p>
 
+        <h2>1.5.1</h2>
+        <ul>
+          <li><strong>Odoslať neodoslané faktúry účtovníkovi</strong> — nové tlačidlo v zozname faktúr otvorí e-mailového klienta s neodoslanými PDF prílohami a e-mailom účtovníka ako príjemcom. E-mail nastavíte v Moje údaje → AI kľúče.</li>
+          <li><strong>Filter Stornované</strong> — zoznam faktúr má teraz 4 filtre: Všetky / Zaplatené / Otvorené / Stornované. Filter Otvorené nezobrazuje stornované faktúry; analýza zákazníkov tiež nezahrňuje stornované sumy.</li>
+          <li><strong>Oprava AI čítania faktúr</strong> — pri preťažení (529) aplikácia automaticky zopakuje požiadavku až 2-krát; pri chybe zobrazí zrozumiteľnú správu.</li>
+        </ul>
+
+        <h2>1.5.0</h2>
+        <ul>
+          <li><strong>Singapur (SG)</strong> — pridaná podpora pre Singapur s GST 9% (mena SGD). Faktúry zodpovedajú GST Act (Chapter 117A); aplikácia automaticky zobrazí rekapituláciu GST a upozornenie pre obrat pod hranicou SGD 1 000 000.</li>
+          <li><strong>Thajsko (TH)</strong> — pridaná podpora pre Thajsko s DPH 7% (mena THB). PDF faktúra je <strong>dvojjazyčná</strong>: thajský a anglický text vedľa seba na jednej strane — vhodné pre miestnych aj medzinárodných klientov.</li>
+        </ul>
+
         <h2>1.4.0</h2>
         <ul>
           <li><strong>Krypto QR — BTC, ETH, SOL</strong> — okrem EURC/USDC sú teraz podporené natívne kryptomeny: Bitcoin (BIP-21), Ethereum (EIP-681) a Solana (Solana Pay). Kurzy z CoinGecko pri generovaní PDF.</li>
@@ -75,8 +88,8 @@
     <footer class="container">
       <p>© 2026 Billero</p>
       <div>
-        <a href="privacy-policy.html">Zásady ochrany súkromia</a>
-        &nbsp; | &nbsp;
+        <a href="privacy-policy.html">Zásady ochrany súkromia</a>
+        &nbsp; | &nbsp;
         <a href="terms-of-use.html">Podmienky</a> &nbsp;|&nbsp;
         <a href="user-guide.html">Návod</a> &nbsp;|&nbsp;
         <a href="release-notes.html">Release notes</a> &nbsp;|&nbsp;

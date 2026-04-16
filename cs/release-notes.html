@@ -37,6 +37,19 @@
         <h1>Release notes</h1>
         <p class="lead">Přehled novinek a oprav podle verzí.</p>
 
+        <h2>1.5.1</h2>
+        <ul>
+          <li><strong>Odeslat neodeslané faktury účetnímu</strong> — nové tlačítko v seznamu faktur otevře e-mailového klienta s neposlanými PDF přílohami a e-mailem účetního jako příjemcem. E-mail nastavíte v Moje údaje → AI klíče.</li>
+          <li><strong>Filtr Stornované</strong> — seznam faktur má nyní 4 filtry: Vše / Zaplaceno / Otevřené / Stornované. Filtr Otevřené nezobrazuje stornované faktury; analýza zákazníků také nezahrnuje stornované částky.</li>
+          <li><strong>Oprava AI čtení faktur</strong> — při přetížení (529) aplikace automaticky zopakuje požadavek až 2×; při chybě zobrazí srozumitelnou zprávu.</li>
+        </ul>
+
+        <h2>1.5.0</h2>
+        <ul>
+          <li><strong>Singapur (SG)</strong> — přidána podpora pro Singapur s GST 9% (měna SGD). Faktury jsou v souladu s GST Act (Chapter 117A); aplikace automaticky zobrazí rekapitulaci GST a upozornění pro obrat pod hranicí SGD 1 000 000.</li>
+          <li><strong>Thajsko (TH)</strong> — přidána podpora pro Thajsko s DPH 7% (měna THB). PDF faktura je <strong>dvojjazyčná</strong>: thajský a anglický text vedle sebe na jedné stránce — vhodné pro místní i mezinárodní klienty.</li>
+        </ul>
+
         <h2>1.4.0</h2>
         <ul>
           <li><strong>Krypto QR — BTC, ETH, SOL</strong> — kromě EURC/USDC jsou nyní podporeny nativní kryptoměny: Bitcoin (BIP-21), Ethereum (EIP-681) a Solana (Solana Pay). Kurzy z CoinGecko při generování PDF.</li>
@@ -75,8 +88,8 @@
     <footer class="container">
       <p>© 2026 Billero</p>
       <div>
-        <a href="privacy-policy.html">Zásady ochrany osobních údajů</a>
-        &nbsp; | &nbsp;
+        <a href="privacy-policy.html">Zásady ochrany osobních údajů</a>
+        &nbsp; | &nbsp;
         <a href="terms-of-use.html">Podmínky</a> &nbsp;|&nbsp;
         <a href="user-guide.html">Návod</a> &nbsp;|&nbsp;
         <a href="release-notes.html">Release notes</a> &nbsp;|&nbsp;

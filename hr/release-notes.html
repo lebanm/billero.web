@@ -46,6 +46,19 @@
         <h1>Release notes</h1>
         <p class="lead">Sažetak novosti i ispravaka po verzijama.</p>
 
+        <h2>1.5.1</h2>
+        <ul>
+          <li><strong>Pošalji neposlane račune računovođi</strong> — novi gumb u popisu računa izravno otvara e-mail klijent s neposlanim PDF-ovima kao privicima i e-adresom računovođe kao primateljem. Adresu postavite u Moji podaci → AI ključevi.</li>
+          <li><strong>Filter Stornirani</strong> — popis računa sada ima 4 filtera: Svi / Plaćeni / Otvoreni / Stornirani. Otvoreni više ne prikazuje stornirane račune; analitika stranaka ne uračunava stornirane iznose.</li>
+          <li><strong>Ispravak AI čitanja računa</strong> — Claude servis pri preopterećenju (529) automatski ponavlja zahtjev do 2 puta; greška prikazuje razumljivu poruku umjesto tehničkog opisa.</li>
+        </ul>
+
+        <h2>1.5.0</h2>
+        <ul>
+          <li><strong>Singapur (SG)</strong> — dodana podrška za Singapur s GST 9% (SGD valuta). Računi su sukladni GST Act-u (Chapter 117A); aplikacija automatski prikazuje GST rekapitulaciju i izjavu za prihode ispod praga SGD 1.000.000.</li>
+          <li><strong>Tajland (TH)</strong> — dodana podrška za Tajland s PDV-om 7% (THB valuta). PDF račun je <strong>dvojezičan</strong>: tajski i engleski tekst usporedno na istoj stranici — idealno za lokalne i međunarodne klijente.</li>
+        </ul>
+
         <h2>1.4.0</h2>
         <ul>
           <li><strong>Kripto QR — BTC, ETH, SOL</strong> — uz EURC/USDC sada su podržane i native kriptovalute: Bitcoin (BIP-21), Ethereum (EIP-681) i Solana (Solana Pay). Tečajevi dohvaćeni iz CoinGecka pri generiranju PDF-a.</li>
@@ -96,8 +109,8 @@
     <footer class="container">
       <p>© 2026 Billero</p>
       <div>
-        <a href="privacy-policy.html">Pravila privatnosti</a>
-        &nbsp; | &nbsp;
+        <a href="privacy-policy.html">Pravila privatnosti</a>
+        &nbsp; | &nbsp;
         <a href="terms-of-use.html">Uvjeti korištenja</a>
         &nbsp; | &nbsp;
         <a href="user-guide.html">Upute</a>

@@ -37,6 +37,19 @@
         <h1>Release notes</h1>
         <p class="lead">Podsumowanie nowości i poprawek według wersji.</p>
 
+        <h2>1.5.1</h2>
+        <ul>
+          <li><strong>Wyślij niewysłane faktury do księgowego</strong> — nowy przycisk na liście faktur otwiera klienta poczty z niewysłanymi PDF-ami jako załącznikami i adresem księgowego jako odbiorcą. Adres ustaw w Moje dane → Klucze AI.</li>
+          <li><strong>Filtr Anulowane</strong> — lista faktur ma teraz 4 filtry: Wszystkie / Opłacone / Otwarte / Anulowane. Filtr Otwarte nie pokazuje już anulowanych faktur; analityka klientów nie uwzględnia anulowanych kwot.</li>
+          <li><strong>Poprawka odczytu faktur AI</strong> — przy przeciążeniu (529) aplikacja automatycznie ponawia żądanie do 2 razy; w przypadku błędu wyświetla czytelny komunikat.</li>
+        </ul>
+
+        <h2>1.5.0</h2>
+        <ul>
+          <li><strong>Singapur (SG)</strong> — dodano obsługę Singapuru z GST 9% (waluta SGD). Faktury są zgodne z GST Act (Chapter 117A); aplikacja automatycznie wyświetla zestawienie GST i zastrzeżenie dla obrotów poniżej SGD 1 000 000.</li>
+          <li><strong>Tajlandia (TH)</strong> — dodano obsługę Tajlandii z VAT 7% (waluta THB). Faktura PDF jest <strong>dwujęzyczna</strong>: tajski i angielski tekst obok siebie na tej samej stronie — idealne dla lokalnych i międzynarodowych klientów.</li>
+        </ul>
+
         <h2>1.4.0</h2>
         <ul>
           <li><strong>Krypto QR — BTC, ETH, SOL</strong> — oprócz EURC/USDC obsługiwane są teraz kryptowaluty natywne: Bitcoin (BIP-21), Ethereum (EIP-681) i Solana (Solana Pay). Kursy z CoinGecko przy generowaniu PDF.</li>
@@ -75,8 +88,8 @@
     <footer class="container">
       <p>© 2026 Billero</p>
       <div>
-        <a href="privacy-policy.html">Polityka prywatności</a>
-        &nbsp; | &nbsp;
+        <a href="privacy-policy.html">Polityka prywatności</a>
+        &nbsp; | &nbsp;
         <a href="terms-of-use.html">Warunki</a> &nbsp;|&nbsp;
         <a href="user-guide.html">Instrukcja</a> &nbsp;|&nbsp;
         <a href="release-notes.html">Release notes</a> &nbsp;|&nbsp;

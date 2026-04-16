@@ -33,6 +33,10 @@
         <a href="../cs/release-notes.html">CS</a>
         <span>|</span>
         <a href="../pl/release-notes.html">PL</a>
+        <span>|</span>
+        <a href="../nl/release-notes.html">NL</a>
+        <span>|</span>
+        <a href="../th/release-notes.html">TH</a>
       </div>
     </header>
 
@@ -40,6 +44,19 @@
       <div class="page-card">
         <h1>Release notes</h1>
         <p class="lead">What’s new and what’s fixed in recent versions.</p>
+
+        <h2>1.5.1</h2>
+        <ul>
+          <li><strong>Send unsent invoices to accountant</strong> — a new button in the invoice list opens the email client with all unsent PDFs as attachments and the accountant's address pre-filled. Set the address in My details → AI keys.</li>
+          <li><strong>Cancelled filter</strong> — the invoice list now has 4 filters: All / Paid / Open / Cancelled. The Open filter no longer shows cancelled invoices; customer analytics also excludes cancelled amounts.</li>
+          <li><strong>AI invoice reading fix</strong> — when Claude returns a 529 overload error, the app automatically retries up to 2 times; on failure a clear message is shown instead of a raw error code.</li>
+        </ul>
+
+        <h2>1.5.0</h2>
+        <ul>
+          <li><strong>Singapore (SG)</strong> — Added Singapore support with GST 9% (SGD currency). Invoices comply with the GST Act (Chapter 117A); the app automatically shows GST breakdown and the below-threshold disclaimer for turnover under SGD 1,000,000.</li>
+          <li><strong>Thailand (TH)</strong> — Added Thailand support with VAT 7% (THB currency). Invoice PDF is <strong>bilingual</strong>: Thai script and English text printed side by side on the same page — perfect for local Thai clients and international customers alike.</li>
+        </ul>
 
         <h2>1.4.0</h2>
         <ul>
@@ -103,8 +120,8 @@
     <footer class="container">
       <p>© 2026 Billero</p>
       <div>
-        <a href="privacy-policy.html">Privacy policy</a>
-        &nbsp; | &nbsp;
+        <a href="privacy-policy.html">Privacy policy</a>
+        &nbsp; | &nbsp;
         <a href="terms-of-use.html">Terms of Use</a>
         &nbsp; | &nbsp;
         <a href="user-guide.html">User guide</a>
