@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billero – Simple invoicing for freelancers</title>
-    <meta name="description" content="Billero is a simple mobile invoicing app for freelancers, coaches and small businesses. Create professional PDF invoices in seconds. Supports Netherlands (BTW/KVK) and Slovenia.">
+    <meta name="description" content="Billero is a simple mobile invoicing app for freelancers, coaches and small businesses. Create professional PDF invoices in seconds. Works in 37 countries — EU VAT, GST, sales tax.">
     <meta property="og:title" content="Billero – Simple invoicing for freelancers">
-    <meta property="og:description" content="Create professional invoices in seconds. No registration, no server. Supports Netherlands BTW/KVK and Slovenia UPN QR. For freelancers and small businesses.">
+    <meta property="og:description" content="Create professional invoices in seconds. No registration, no server. Works in 37 countries with locally compliant VAT, GST and sales tax rules.">
     <meta property="og:image" content="https://billero.app/img/icons/billero_512.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://billero.app/en/">
@@ -16,6 +16,8 @@
     <link rel="alternate" hreflang="en" href="https://billero.app/en/">
     <link rel="alternate" hreflang="x-default" href="https://billero.app/en/">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/billero_16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
@@ -39,6 +41,10 @@
         <a href="../index.html">SL</a>
         <span>|</span>
         <a href="index.html" class="active">EN</a>
+        <span>|</span>
+        <a href="../nl/index.html">NL</a>
+        <span>|</span>
+        <a href="../th/index.html">TH</a>
       </div>
     </header>
 
@@ -137,25 +143,13 @@
     </section>
 
     <section class="container section-block">
-      <h2>Built for Dutch freelancers</h2>
-      <p>
-        Billero supports the Netherlands out of the box. Enter your BTW number and KVK registration once,
-        and every invoice will include the legally required information automatically.
-      </p>
-      <div class="features">
-        <div class="feature">
-          <h3>BTW &amp; KVK</h3>
-          <p>Your BTW number and KVK registration number appear on every invoice — as required by Dutch law.</p>
-        </div>
-        <div class="feature">
-          <h3>SWIFT/BIC</h3>
-          <p>Add your IBAN and SWIFT/BIC once. Both appear on every invoice for easy international payments.</p>
-        </div>
-        <div class="feature">
-          <h3>30-day payment terms</h3>
-          <p>Default 30-day due date, standard for Dutch freelance invoices. No VAT invoices (Wet OB art. 25) also supported.</p>
-        </div>
+      <h2>Works in 37 countries</h2>
+      <p>Locally compliant tax rates and invoicing rules for every supported country — EU VAT, GST, sales tax. Billero adapts automatically.</p>
+      <div class="map-wrap">
+        <div id="world-map"></div>
+        <div id="flag-overlay" aria-hidden="true"></div>
       </div>
+      <p class="country-more">Highlighted = supported. Hover for details. More countries added regularly.</p>
     </section>
 
     <section class="container section-block">
@@ -185,8 +179,8 @@
     <footer class="container">
       <p>© 2026 Billero</p>
       <div>
-        <a href="privacy-policy.html">Privacy Policy</a>
-        &nbsp; | &nbsp;
+        <a href="privacy-policy.html">Privacy Policy</a>
+        &nbsp; | &nbsp;
         <a href="terms-of-use.html">Terms of Use</a>
         &nbsp; | &nbsp;
         <a href="user-guide.html">User guide</a>
@@ -196,5 +190,77 @@
         <a href="contact.html">Contact</a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+    <script>
+    (function () {
+      var countries = {
+        SI:['Slovenia','VAT 22%'], AT:['Austria','MwSt 20%'], BE:['Belgium','BTW 21%'],
+        BG:['Bulgaria','VAT 20%'], BA:['Bosnia & Herz.','PDV 17%'], CY:['Cyprus','VAT 19%'],
+        CZ:['Czech Republic','DPH 21%'], DK:['Denmark','MOMS 25%'], EE:['Estonia','KM 22%'],
+        FI:['Finland','ALV 25.5%'], FR:['France','TVA 20%'], DE:['Germany','MwSt 19%'],
+        GR:['Greece','VAT 24%'], HR:['Croatia','PDV 25%'], HU:['Hungary','VAT 27%'],
+        IE:['Ireland','VAT 23%'], IT:['Italy','IVA 22%'], LV:['Latvia','PVN 21%'],
+        LT:['Lithuania','PVM 21%'], LU:['Luxembourg','TVA 17%'], MT:['Malta','VAT 18%'],
+        NL:['Netherlands','BTW 21%'], NO:['Norway','MVA 25%'], PL:['Poland','VAT 23%'],
+        PT:['Portugal','IVA 23%'], RO:['Romania','TVA 19%'], RS:['Serbia','PDV 20%'],
+        SK:['Slovakia','DPH 23%'], ES:['Spain','IVA 21%'], SE:['Sweden','MOMS 25%'],
+        UA:['Ukraine','VAT 20%'], GB:['United Kingdom','VAT 20%'], US:['United States','Sales tax'],
+        CA:['Canada','GST 5%'], AU:['Australia','GST 10%'], SG:['Singapore','GST 9%'],
+        TH:['Thailand','VAT 7%']
+      };
+
+      new jsVectorMap({
+        selector: '#world-map',
+        map: 'world',
+        backgroundColor: 'transparent',
+        zoomOnScroll: false,
+        zoomButtons: false,
+        regionStyle: {
+          initial: { fill: '#1f3a4f', stroke: '#254563', strokeWidth: 0.5, strokeOpacity: 1 },
+          hover:   { fill: '#0e7490', cursor: 'pointer' },
+          selected: { fill: '#22d3ee' },
+          selectedHover: { fill: '#06b6d4' }
+        },
+        selectedRegions: Object.keys(countries),
+        onRegionTooltipShow: function (event, tooltip, code) {
+          var c = countries[code];
+          if (c) {
+            tooltip.text(
+              '<span class="fi fi-' + code.toLowerCase() + ' fis" style="width:14px;height:14px;border-radius:2px;display:inline-block;vertical-align:middle;margin-right:6px;"></span>' +
+              c[0] + ' <span style="color:#94a3b8;margin-left:4px;">' + c[1] + '</span>',
+              true
+            );
+          } else {
+            event.preventDefault();
+          }
+        }
+      });
+
+      requestAnimationFrame(function placeFlags() {
+        var svg = document.querySelector('#world-map svg');
+        if (!svg) { requestAnimationFrame(placeFlags); return; }
+        var vb = svg.viewBox.baseVal;
+        if (!vb || vb.width === 0) { requestAnimationFrame(placeFlags); return; }
+        var overlay = document.getElementById('flag-overlay');
+        Object.keys(countries).forEach(function (code) {
+          var path = svg.querySelector('[data-code="' + code + '"]');
+          if (!path) return;
+          try {
+            var bb = path.getBBox();
+            if (bb.width === 0 && bb.height === 0) return;
+            var cx = (bb.x + bb.width / 2) / vb.width * 100;
+            var cy = (bb.y + bb.height / 2) / vb.height * 100;
+            var el = document.createElement('span');
+            el.className = 'fi fi-' + code.toLowerCase() + ' country-map-flag';
+            el.style.left = cx + '%';
+            el.style.top = cy + '%';
+            el.title = countries[code][0];
+            overlay.appendChild(el);
+          } catch (e) {}
+        });
+      });
+    })();
+    </script>
   </body>
 </html>

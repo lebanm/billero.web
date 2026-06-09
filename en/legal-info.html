@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal information – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="user-guide.html">User guide</a>
+        <a href="legal-info.html" class="active">Legal info</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../legal-info.html">SL</a>
+        <span>|</span>
+        <a href="legal-info.html" class="active">EN</a>
+        <span>|</span>
+        <a href="../de/legal-info.html">DE</a>
+        <span>|</span>
+        <a href="../hr/legal-info.html">HR</a>
+        <span>|</span>
+        <a href="../sk/legal-info.html">SK</a>
+        <span>|</span>
+        <a href="../cs/legal-info.html">CS</a>
+        <span>|</span>
+        <a href="../pl/legal-info.html">PL</a>
+        <span>|</span>
+        <a href="../nl/legal-info.html">NL</a>
+        <span>|</span>
+        <a href="../th/legal-info.html">TH</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Legal information by country</h1>
+        <p class="lead">Overview of invoicing legislation, tax authorities, VAT rates and mandatory invoice items for 31 countries. For reference only — always verify with your local tax authority.</p>
+
+        <div id="world-map" style="height:340px;margin-bottom:28px;border-radius:10px;overflow:hidden;"></div>
+
+        <div class="li-search-wrap">
+          <input class="li-search" type="search" id="searchInput" placeholder="Search country …" oninput="filterCards()">
+        </div>
+
+        <div class="li-grid" id="countryGrid"></div>
+        <p class="li-none" id="noResults" style="display:none">No results.</p>
+
+        <p class="li-disclaimer">
+          <strong>Disclaimer:</strong> This information is for reference only and may not reflect the latest changes in legislation. Always verify with the local tax authority or a qualified accountant before issuing invoices. VAT rates and thresholds change regularly.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Billero · <a href="privacy-policy.html">Privacy</a> · <a href="terms-of-use.html">Terms</a></p>
+    </footer>
+
+    <script src="../js/legal-info-data.js"></script>
+    <script>
+      const L = {
+        taxAuthority: 'Tax authority',
+        law: 'Legislation',
+        currency: 'Currency',
+        vat: 'VAT rates',
+        threshold: 'VAT threshold',
+        retention: 'Record retention',
+        years: 'years',
+        notes: 'Notes',
+        lastVerified: 'Last verified',
+        mandatoryItems: 'Mandatory items',
+        showItems: '▸ Show mandatory invoice items',
+        hideItems: '▾ Hide mandatory invoice items',
+        miDateOfIssue: 'Date of issue',
+        miInvoiceNumber: 'Sequential invoice number',
+        miSellerInfo: 'Seller name, address and VAT ID',
+        miBuyerInfo: 'Buyer name and address',
+        miBuyerVatId: 'Buyer VAT ID',
+        miDescription: 'Description of goods or services',
+        miDateOfSupply: 'Date of supply',
+        miNetAmount: 'Net amount (taxable base)',
+        miVatRate: 'VAT rate',
+        miVatAmount: 'VAT amount',
+        miTotalAmount: 'Total amount (gross)',
+        miUsSellerInfo: 'Seller name, address and EIN',
+        miAmountDue: 'Amount due',
+        miPaymentTerms: 'Payment terms',
+        miSalesTaxIfApplicable: 'Sales tax (if applicable)',
+        miAuTaxInvoiceWords: 'Words "Tax Invoice"',
+        miAuSellerAbn: 'Seller ABN',
+        miAuGstAmount: 'GST amount',
+        miAuBuyerAbn: 'Buyer ABN (for transactions ≥ AUD 1,000)',
+        miCaSellerBn: 'Seller Business Number (BN)',
+        miCaGstHstAmount: 'GST/HST amount',
+        miCaGstHstNumber: 'GST/HST registration number',
+      };
+    </script>
+    <script src="../js/legal-info.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+    <script>
+      new jsVectorMap({
+        selector: '#world-map',
+        map: 'world',
+        backgroundColor: '#0b1120',
+        series: {
+          regions: [{
+            attribute: 'fill',
+            values: {
+              MX:'#eab308',CL:'#eab308',CO:'#eab308',PE:'#eab308',
+              ID:'#eab308',PH:'#eab308',VN:'#eab308',IL:'#eab308',
+              AE:'#eab308',NZ:'#eab308',ZA:'#eab308',KE:'#eab308',
+              GH:'#eab308',
+              IN:'#a855f7'
+            }
+          }]
+        },
+        regionStyle: {
+          initial:{fill:'#1e293b',stroke:'#0f172a',strokeWidth:0.3},
+          hover:{fillOpacity:0.75}
+        },
+        zoomOnScroll: false,
+      });
+    </script>
+  </body>
+</html>

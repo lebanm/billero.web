@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Právní informace – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Domů</a>
+        <a href="user-guide.html">Návod</a>
+        <a href="legal-info.html" class="active">Legislativa</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../legal-info.html">SL</a>
+        <span>|</span>
+        <a href="../en/legal-info.html">EN</a>
+        <span>|</span>
+        <a href="../de/legal-info.html">DE</a>
+        <span>|</span>
+        <a href="../hr/legal-info.html">HR</a>
+        <span>|</span>
+        <a href="../sk/legal-info.html">SK</a>
+        <span>|</span>
+        <a href="legal-info.html" class="active">CS</a>
+        <span>|</span>
+        <a href="../pl/legal-info.html">PL</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Právní informace podle země</h1>
+        <p class="lead">Přehled legislativy o fakturaci, finančních úřadů, sazeb DPH a povinných náležitostí pro 31 zemí. Pouze informativní — vždy ověřte u příslušného finančního úřadu.</p>
+
+        <div id="world-map" style="height:340px;margin-bottom:28px;border-radius:10px;overflow:hidden;"></div>
+
+        <div class="li-search-wrap">
+          <input class="li-search" type="search" id="searchInput" placeholder="Hledat zemi …" oninput="filterCards()">
+        </div>
+
+        <div class="li-grid" id="countryGrid"></div>
+        <p class="li-none" id="noResults" style="display:none">Žádné výsledky.</p>
+
+        <p class="li-disclaimer">
+          <strong>Upozornění:</strong> Tyto informace slouží pouze jako referenční a nemusí odrážet nejnovější změny v legislativě. Před vystavením faktur vždy ověřte aktuální stav u místního finančního úřadu nebo kvalifikovaného účetního. Sazby DPH a prahy se pravidelně mění.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Billero · <a href="privacy-policy.html">Ochrana údajů</a> · <a href="terms-of-use.html">Podmínky</a></p>
+    </footer>
+
+    <script src="../js/legal-info-data.js"></script>
+    <script>
+      const L = {
+        taxAuthority: 'Finanční úřad',
+        law: 'Legislativa',
+        currency: 'Měna',
+        vat: 'Sazby DPH',
+        threshold: 'Práh DPH',
+        retention: 'Archivace',
+        years: 'let',
+        notes: 'Poznámky',
+        lastVerified: 'Naposledy ověřeno',
+        mandatoryItems: 'Povinné náležitosti',
+        showItems: '▸ Zobrazit povinné náležitosti faktury',
+        hideItems: '▾ Skrýt povinné náležitosti faktury',
+        miDateOfIssue: 'Datum vystavení',
+        miInvoiceNumber: 'Pořadové číslo faktury',
+        miSellerInfo: 'Název, adresa a DIČ prodávajícího',
+        miBuyerInfo: 'Název a adresa kupujícího',
+        miBuyerVatId: 'DIČ kupujícího',
+        miDescription: 'Popis zboží nebo služby',
+        miDateOfSupply: 'Datum dodání',
+        miNetAmount: 'Základ daně (čistá částka)',
+        miVatRate: 'Sazba DPH',
+        miVatAmount: 'Výše DPH',
+        miTotalAmount: 'Celková částka (s DPH)',
+        miUsSellerInfo: 'Název, adresa a EIN prodávajícího',
+        miAmountDue: 'Částka k úhradě',
+        miPaymentTerms: 'Platební podmínky',
+        miSalesTaxIfApplicable: 'Daň z prodeje (pokud se uplatňuje)',
+        miAuTaxInvoiceWords: 'Text „Tax Invoice"',
+        miAuSellerAbn: 'ABN prodávajícího',
+        miAuGstAmount: 'Výše GST',
+        miAuBuyerAbn: 'ABN kupujícího (pro transakce ≥ AUD 1 000)',
+        miCaSellerBn: 'Business Number (BN) prodávajícího',
+        miCaGstHstAmount: 'Výše GST/HST',
+        miCaGstHstNumber: 'Registrační číslo GST/HST',
+      };
+    </script>
+    <script src="../js/legal-info.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+    <script>
+      new jsVectorMap({
+        selector: '#world-map',
+        map: 'world',
+        backgroundColor: '#0b1120',
+        series: {
+          regions: [{
+            attribute: 'fill',
+            values: {
+              MX:'#eab308',CL:'#eab308',CO:'#eab308',PE:'#eab308',
+              ID:'#eab308',PH:'#eab308',VN:'#eab308',IL:'#eab308',
+              AE:'#eab308',NZ:'#eab308',ZA:'#eab308',KE:'#eab308',
+              GH:'#eab308',
+              IN:'#a855f7'
+            }
+          }]
+        },
+        regionStyle: {
+          initial:{fill:'#1e293b',stroke:'#0f172a',strokeWidth:0.3},
+          hover:{fillOpacity:0.75}
+        },
+        zoomOnScroll: false,
+      });
+    </script>
+  </body>
+</html>

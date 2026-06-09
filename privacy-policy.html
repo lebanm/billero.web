@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billero – Pravilnik o zasebnosti</title>
-    <meta name="description" content="Billero pravilnik o zasebnosti. Vse podatke hranimo izključno na vaši napravi. Nimamo strežnika in ne zbiramo osebnih podatkov.">
+    <meta name="description" content="Billero pravilnik o zasebnosti. Lokalno shranjevanje podatkov, omejena uporaba storitev za poročanje napak in preverjanje naročnin.">
     <link rel="canonical" href="https://billero.app/privacy-policy.html">
     <link rel="alternate" hreflang="sl" href="https://billero.app/privacy-policy.html">
     <link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy.html">
@@ -47,47 +47,85 @@
 
     <div class="container section-block">
       <h1>Billero – Pravilnik o zasebnosti</h1>
-      <p><strong>Zadnja posodobitev:</strong> marec 2026</p>
+      <p><strong>Zadnja posodobitev:</strong> junij 2026</p>
 
-      <p>Aplikacija Billero spoštuje vašo zasebnost. Vse podatke hranimo izključno na vaši napravi. Nimamo strežnika in ne zbiramo osebnih podatkov.</p>
+      <p>Billero je local-first aplikacija za izdajanje računov. Vaši poslovni podatki (računi, stranke, slike) so shranjeni samo na vaši napravi in se nikoli ne nalagajo na naše strežnike. V tem pravilniku opisujemo, kateri omejeni tehnični podatki se obdelujejo za stabilno delovanje aplikacije in delovanje naročnin.</p>
 
-      <h2>1. Lokalno shranjevanje podatkov</h2>
-      <p>Vsi vaši podatki (računi, stranke, slike računov) se hranijo samo na vaši napravi v lokalni bazi podatkov. Podatki nikoli ne zapustijo vaše naprave in se ne pošiljajo na noben zunanji strežnik.</p>
-
-      <h2>2. Pristopi, ki jih aplikacija potrebuje</h2>
+      <h2>1. Podatki shranjeni lokalno na vaši napravi</h2>
+      <p>Naslednji podatki so shranjeni izključno na vaši napravi v lokalni bazi (SQLite) in se ne prenašajo na noben naš strežnik:</p>
       <ul>
-        <li>Kamera – za skeniranje računov</li>
-        <li>Fotogalerija – za izbiro slik računov</li>
-        <li>Face ID / Touch ID – za zaklepanje in odklepanje aplikacije (opcijsko)</li>
-        <li>Datoteke – za shranjevanje PDF-jev in izvoz podatkov</li>
-        <li>Deljenje – za deljenje računov (samo ko vi to zaženete)</li>
+        <li>Izdani in prejeti računi, predračuni in povezani dokumenti</li>
+        <li>Podatki o strankah (imena, naslovi, davčne številke, ki jih vnesete)</li>
+        <li>Slike računov in PDF-ji, ki jih ustvarite</li>
+        <li>Nastavitve aplikacije</li>
       </ul>
-      <p>Aplikacija uporablja te pristope samo za opisan namen. Ni zunanjih strežnikov, analitičnih orodij ali oglaševalskih SDK-jev.</p>
+      <p>Če aplikacijo odinstalirate, se ti podatki trajno izbrišejo z vaše naprave. Mi nimamo kopije.</p>
 
-      <h2>3. Zbiranje podatkov</h2>
-      <p>Aplikacija ne zbira, ne beleži in ne pošilja nobenih osebnih podatkov. Ni registracije, prijave ali računov. Vse ostane na vaši napravi.</p>
+      <h2>2. Podatki, ki jih obdelujejo storitve tretjih oseb</h2>
+      <p>Za stabilno delovanje in preverjanje nakupov se omejen obseg tehničnih podatkov obdeluje pri naslednjih storitvah:</p>
 
-      <h2>4. Podatki tretjih oseb</h2>
-      <p>Podatki, ki jih vnesete (npr. imena strank, zneski na računih), se shranjujejo lokalno. Ko uporabite funkcijo »deli«, aplikacija le omogoči deljenje z vašo izbiro (npr. e-pošta, sporočila). Te storitve uporabljate po lastni presoji in veljajo njihovi pravilniki.</p>
+      <h3>2.1 Firebase Crashlytics (Google LLC)</h3>
+      <p>Uporabljamo Firebase Crashlytics za samodejno odkrivanje napak v aplikaciji. Ob zrušitvi se Googlu pošljejo:</p>
+      <ul>
+        <li>Stack trace zrušitve in detajli izjeme</li>
+        <li>Model naprave, različica OS, različica aplikacije</li>
+        <li>Anonimni identifikator namestitve (Firebase Installation ID)</li>
+        <li>Neosebne metrike zmogljivosti</li>
+      </ul>
+      <p>Ti podatki niso povezani z vašo identiteto in se ne uporabljajo za oglaševanje. Velja Googlov pravilnik o zasebnosti: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
-      <h2>5. Varnost</h2>
-      <p>Podatki na napravi so zaščiteni z varnostnimi mehanizmi operacijskega sistema (Android / iOS). Opcijsko lahko aplikacijo dodatno zaklenete z Face ID ali Touch ID.</p>
+      <h3>2.2 Preverjanje naročnin (Cloudflare Workers)</h3>
+      <p>Ko kupite naročnino Billero prek Apple App Store ali Google Play, se potrdilo o nakupu pošlje našemu varnemu Cloudflare Worker-ju za potrditev pri Apple ali Google. Worker shrani:</p>
+      <ul>
+        <li>Anonimizirane identifikatorje potrdil o naročnini</li>
+        <li>Tier naročnine in datum poteka</li>
+        <li>Brez osebnih podatkov (brez imena, e-pošte, naslova ali vsebine računov)</li>
+      </ul>
+      <p>To je zahteva Apple in Google za preprečevanje zlorab. Podatki se hranijo, dokler je naročnina aktivna, plus 24 mesecev davčno-pravne hrambe. Cloudflare pravilnik: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">https://www.cloudflare.com/privacypolicy/</a></p>
 
-      <h2>6. Izbris podatkov</h2>
-      <p>Če odinstalirate aplikacijo, se vsi podatki trajno izbrišejo z vaše naprave.</p>
+      <h3>2.3 Apple App Store / Google Play</h3>
+      <p>Plačila naročnin obdelujeta Apple in Google. Oni upravljajo z vašim plačilnim sredstvom, naslovom za zaračunavanje ter Apple ID / Google računom. Mi teh podatkov ne prejmemo in ne shranjujemo.</p>
 
-      <h2>7. Spremembe pravilnika</h2>
-      <p>Ob morebitnih spremembah pravilnika bomo posodobili to stran in datum zadnje posodobitve. Priporočamo občasen pregled.</p>
+      <h2>3. Dovoljenja aplikacije</h2>
+      <ul>
+        <li><strong>Kamera</strong> – za skeniranje prejetih računov</li>
+        <li><strong>Fotogalerija</strong> – za izbiro slik računov</li>
+        <li><strong>Face ID / Touch ID</strong> – za zaklepanje aplikacije (opcijsko)</li>
+        <li><strong>Datoteke</strong> – za shranjevanje PDF-jev in izvoz varnostnih kopij</li>
+        <li><strong>Deljenje</strong> – za pošiljanje računov prek sistemskega share sheet (samo ko vi to zaženete)</li>
+        <li><strong>Obvestila</strong> – za opomnike (samo če jih omogočite)</li>
+      </ul>
+      <p>Dovoljenja se uporabljajo izključno za opisane namene. Ne uporabljamo oglaševalskih SDK-jev.</p>
 
-      <h2>8. Stik</h2>
-      <p>Za vprašanja glede zasebnosti nam lahko pišete na <a href="mailto:info@billero.app">info@billero.app</a>.</p>
+      <h2>4. Varnostne kopije in izvoz</h2>
+      <p>Aplikacija omogoča ustvarjanje šifriranih varnostnih kopij (ZIP). Kopije so šifrirane z AES-256 in shranjene na izbrano lokacijo. Mi do njih nimamo dostopa. Če varnostno kopijo delite prek sistemskega share sheet (npr. e-pošta, oblak), je destinacija pod vašim nadzorom in veljajo njeni pravilniki.</p>
+
+      <h2>5. Vaše pravice (GDPR)</h2>
+      <p>Ker vaši poslovni podatki ostanejo na vaši napravi, imate poln nadzor: lahko jih kadarkoli pregledate, urejate, izvozite ali izbrišete neposredno v aplikaciji.</p>
+      <p>Za podatke, ki jih obdeluje Firebase Crashlytics ali naš Cloudflare Worker (potrdila o naročninah), lahko zahtevate dostop, popravek ali izbris prek <a href="mailto:info@billero.app">info@billero.app</a>. Identifikacijo opravite s prikazom originalne številke nakupa iz Apple/Google potrdila.</p>
+
+      <h2>6. Otroci</h2>
+      <p>Billero je poslovno orodje, namenjeno uporabnikom, starejšim od 18 let. Namerno ne zbiramo podatkov o otrocih, mlajših od 13 let.</p>
+
+      <h2>7. Mednarodni prenosi</h2>
+      <p>Firebase Crashlytics (Google) in Cloudflare lahko obdelujeta podatke na strežnikih v EU, ZDA ali drugih državah. Oba ponudnika sta certificirana po EU-US Data Privacy Framework ali uporabljata ustrezne mehanizme (Standard Contractual Clauses).</p>
+
+      <h2>8. Varnost</h2>
+      <p>Podatki na napravi so zaščiteni z varnostnimi mehanizmi OS (Android, iOS). Opcijsko lahko aplikacijo dodatno zaklenete z Face ID / Touch ID. Potrdila o naročninah v prenosu do našega Worker-ja so šifrirana s HTTPS / TLS 1.3.</p>
+
+      <h2>9. Spremembe pravilnika</h2>
+      <p>Ob bistvenih spremembah pravilnika bomo posodobili to stran in datum zgoraj. Nadaljnja uporaba aplikacije po spremembi pomeni strinjanje.</p>
+
+      <h2>10. Stik</h2>
+      <p>Vprašanja o zasebnosti in zahteve za podatke: <a href="mailto:info@billero.app">info@billero.app</a></p>
+      <p>Upravljavec podatkov: Matej Leban (s.p.), Slovenija.</p>
     </div>
 
     <footer class="container">
       <p>© 2026 Billero</p>
       <div>
-        <a href="privacy-policy.html">Pravilnik o zasebnosti</a>
-        &nbsp; | &nbsp;
+        <a href="privacy-policy.html">Pravilnik o zasebnosti</a>
+        &nbsp; | &nbsp;
         <a href="terms-of-use.html">Pogoji uporabe</a>
         &nbsp; | &nbsp;
         <a href="user-guide.html">Navodila</a>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravne informacije – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Početna</a>
+        <a href="user-guide.html">Upute</a>
+        <a href="legal-info.html" class="active">Zakonodaja</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../legal-info.html">SL</a>
+        <span>|</span>
+        <a href="../en/legal-info.html">EN</a>
+        <span>|</span>
+        <a href="../de/legal-info.html">DE</a>
+        <span>|</span>
+        <a href="legal-info.html" class="active">HR</a>
+        <span>|</span>
+        <a href="../sk/legal-info.html">SK</a>
+        <span>|</span>
+        <a href="../cs/legal-info.html">CS</a>
+        <span>|</span>
+        <a href="../pl/legal-info.html">PL</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Pravne informacije po zemljama</h1>
+        <p class="lead">Pregled zakonodaje o izdavanju računa, poreznih tijela, stopa PDV-a i obveznih elemenata za 31 zemlju. Samo informativno — uvijek provjerite s nadležnim poreznim tijelom.</p>
+
+        <div id="world-map" style="height:340px;margin-bottom:28px;border-radius:10px;overflow:hidden;"></div>
+
+        <div class="li-search-wrap">
+          <input class="li-search" type="search" id="searchInput" placeholder="Pretraži zemlju …" oninput="filterCards()">
+        </div>
+
+        <div class="li-grid" id="countryGrid"></div>
+        <p class="li-none" id="noResults" style="display:none">Nema rezultata.</p>
+
+        <p class="li-disclaimer">
+          <strong>Napomena:</strong> Ove informacije su samo informativne i možda ne odražavaju najnovije promjene zakonodaje. Uvijek provjerite s lokalnim poreznim organom ili kvalificiranim računovođom prije izdavanja računa. Stope PDV-a i pragovi se redovito mijenjaju.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Billero · <a href="privacy-policy.html">Privatnost</a> · <a href="terms-of-use.html">Uvjeti</a></p>
+    </footer>
+
+    <script src="../js/legal-info-data.js"></script>
+    <script>
+      const L = {
+        taxAuthority: 'Porezno tijelo',
+        law: 'Zakonodaja',
+        currency: 'Valuta',
+        vat: 'Stope PDV-a',
+        threshold: 'Prag PDV-a',
+        retention: 'Čuvanje dokumenata',
+        years: 'god.',
+        notes: 'Napomene',
+        lastVerified: 'Zadnja provjera',
+        mandatoryItems: 'Obvezni elementi',
+        showItems: '▸ Prikaži obvezne elemente računa',
+        hideItems: '▾ Sakrij obvezne elemente računa',
+        miDateOfIssue: 'Datum izdavanja',
+        miInvoiceNumber: 'Redni broj računa',
+        miSellerInfo: 'Naziv, adresa i PDV broj prodavatelja',
+        miBuyerInfo: 'Naziv i adresa kupca',
+        miBuyerVatId: 'PDV broj kupca',
+        miDescription: 'Opis robe ili usluge',
+        miDateOfSupply: 'Datum isporuke',
+        miNetAmount: 'Neto iznos (porezna osnovica)',
+        miVatRate: 'Stopa PDV-a',
+        miVatAmount: 'Iznos PDV-a',
+        miTotalAmount: 'Ukupni iznos (bruto)',
+        miUsSellerInfo: 'Naziv, adresa i EIN prodavatelja',
+        miAmountDue: 'Iznos za plaćanje',
+        miPaymentTerms: 'Uvjeti plaćanja',
+        miSalesTaxIfApplicable: 'Porez na promet (ako se primjenjuje)',
+        miAuTaxInvoiceWords: 'Riječi "Tax Invoice"',
+        miAuSellerAbn: 'ABN prodavatelja',
+        miAuGstAmount: 'Iznos GST-a',
+        miAuBuyerAbn: 'ABN kupca (za transakcije ≥ AUD 1.000)',
+        miCaSellerBn: 'Business Number (BN) prodavatelja',
+        miCaGstHstAmount: 'Iznos GST/HST-a',
+        miCaGstHstNumber: 'GST/HST registracijski broj',
+      };
+    </script>
+    <script src="../js/legal-info.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+    <script>
+      new jsVectorMap({
+        selector: '#world-map',
+        map: 'world',
+        backgroundColor: '#0b1120',
+        series: {
+          regions: [{
+            attribute: 'fill',
+            values: {
+              MX:'#eab308',CL:'#eab308',CO:'#eab308',PE:'#eab308',
+              ID:'#eab308',PH:'#eab308',VN:'#eab308',IL:'#eab308',
+              AE:'#eab308',NZ:'#eab308',ZA:'#eab308',KE:'#eab308',
+              GH:'#eab308',
+              IN:'#a855f7'
+            }
+          }]
+        },
+        regionStyle: {
+          initial:{fill:'#1e293b',stroke:'#0f172a',strokeWidth:0.3},
+          hover:{fillOpacity:0.75}
+        },
+        zoomOnScroll: false,
+      });
+    </script>
+  </body>
+</html>

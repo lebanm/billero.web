@@ -16,6 +16,7 @@
     <link rel="alternate" hreflang="en" href="https://billero.app/en/">
     <link rel="alternate" hreflang="x-default" href="https://billero.app/en/">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/billero_16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/billero_32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/icons/billero_180.png">
@@ -39,6 +40,10 @@
         <a href="index.html" class="active">SL</a>
         <span>|</span>
         <a href="en/index.html">EN</a>
+        <span>|</span>
+        <a href="nl/index.html">NL</a>
+        <span>|</span>
+        <a href="th/index.html">TH</a>
       </div>
     </header>
 
@@ -144,6 +149,54 @@
     </section>
 
     <section class="container section-block">
+      <h2>Deluje v 37 državah · v razvoju: 13 · wish list: 3</h2>
+      <p>Lokalno skladne davčne stopnje in pravila izdajanja računov za vsako podprto državo — EU DDV, GST, prodajni davek. Billero se prilagodi samodejno.</p>
+      <div class="map-wrap">
+        <div id="world-map"></div>
+        <div id="flag-overlay" aria-hidden="true"></div>
+      </div>
+      <p class="country-more">
+        <span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#22d3ee;vertical-align:middle;margin-right:4px;"></span> Podprto &nbsp;
+        <span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#3b82f6;vertical-align:middle;margin-right:4px;margin-left:12px;"></span> V razvoju &nbsp;
+        <span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#a855f7;vertical-align:middle;margin-right:4px;margin-left:12px;"></span> Wish list &nbsp;
+        · Premakni miško za podrobnosti.
+      </p>
+
+      <!-- Tržni potencial @ 1% pokritosti, realne cene po državah -->
+      <div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;font-size:0.85rem;">
+        <div style="background:#0b1120;border:1px solid #1f2937;border-radius:10px;padding:14px 16px;">
+          <div style="color:#22d3ee;font-weight:700;margin-bottom:6px;">🟦 Podprto · 37 držav</div>
+          <div style="color:#94a3b8;">Mali podjetniki</div>
+          <div style="font-size:1.1rem;font-weight:600;">~50 mio</div>
+          <div style="color:#94a3b8;margin-top:6px;">1% = ~500k strank</div>
+          <div style="color:#22d3ee;font-weight:700;font-size:1rem;margin-top:4px;">MRR ~€2,9M</div>
+        </div>
+        <div style="background:#0b1120;border:1px solid #1f2937;border-radius:10px;padding:14px 16px;">
+          <div style="color:#3b82f6;font-weight:700;margin-bottom:6px;">🟨 V razvoju · 13 držav</div>
+          <div style="color:#94a3b8;">Mali podjetniki</div>
+          <div style="font-size:1.1rem;font-weight:600;">~90 mio</div>
+          <div style="color:#94a3b8;margin-top:6px;">1% = ~900k strank</div>
+          <div style="color:#3b82f6;font-weight:700;font-size:1rem;margin-top:4px;">MRR ~€2,3M</div>
+        </div>
+        <div style="background:#0b1120;border:1px solid #1f2937;border-radius:10px;padding:14px 16px;">
+          <div style="color:#a855f7;font-weight:700;margin-bottom:6px;">🟣 Wish list · 3 države</div>
+          <div style="color:#94a3b8;">Mali podjetniki</div>
+          <div style="font-size:1.1rem;font-weight:600;">~75 mio</div>
+          <div style="color:#94a3b8;margin-top:6px;">1% = ~750k strank</div>
+          <div style="color:#a855f7;font-weight:700;font-size:1rem;margin-top:4px;">MRR ~€1,5M</div>
+        </div>
+        <div style="background:#111827;border:1px solid #374151;border-radius:10px;padding:14px 16px;">
+          <div style="color:#f9fafb;font-weight:700;margin-bottom:6px;">⚡ SKUPAJ · 53 držav</div>
+          <div style="color:#94a3b8;">Mali podjetniki</div>
+          <div style="font-size:1.1rem;font-weight:600;">~215 mio</div>
+          <div style="color:#94a3b8;margin-top:6px;">1% = ~2,15M strank</div>
+          <div style="color:#f9fafb;font-weight:700;font-size:1.1rem;margin-top:4px;">MRR ~€6,8M</div>
+          <div style="color:#6b7280;font-size:0.75rem;margin-top:4px;">realne cene po državah</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-block">
       <h2>Opis za App Store</h2>
       <div class="feature">
         <p>
@@ -184,5 +237,139 @@
         <a href="donate.html">Podpri nas</a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+    <script>
+      // [ime, mali podjetniki, cena €/mes]
+      var DATA = {
+        SI:['Slovenija',           80000, 3.99],
+        AT:['Avstrija',           500000, 4.99],
+        BE:['Belgija',           1000000, 4.49],
+        BG:['Bolgarija',          400000, 2.49],
+        BA:['Bosna in Hercegovina',150000, 2.49],
+        CY:['Ciper',               60000, 3.99],
+        CZ:['Češka',              900000, 2.99],
+        DK:['Danska',             350000, 5.49],
+        EE:['Estonija',            75000, 3.49],
+        FI:['Finska',             250000, 4.99],
+        FR:['Francija',          3500000, 4.49],
+        DE:['Nemčija',           4300000, 4.99],
+        GR:['Grčija',             700000, 2.99],
+        HR:['Hrvaška',            200000, 2.99],
+        HU:['Madžarska',          700000, 2.99],
+        IE:['Irska',              350000, 4.99],
+        IT:['Italija',           4000000, 3.99],
+        LV:['Latvija',            130000, 2.99],
+        LT:['Litva',              180000, 2.99],
+        LU:['Luksemburg',          50000, 5.49],
+        MT:['Malta',               25000, 3.99],
+        NL:['Nizozemska',        1500000, 5.49],
+        NO:['Norveška',           330000, 5.99],
+        PL:['Poljska',           2900000, 2.99],
+        PT:['Portugalska',        700000, 3.49],
+        RO:['Romunija',          1500000, 2.49],
+        RS:['Srbija',             400000, 2.49],
+        SK:['Slovaška',           450000, 2.99],
+        ES:['Španija',           3100000, 3.99],
+        SE:['Švedska',            700000, 5.49],
+        UA:['Ukrajina',          1800000, 2.49],
+        GB:['Velika Britanija',  4500000, 6.99],
+        US:['ZDA',              16000000, 7.99],
+        CA:['Kanada',            2700000, 6.99],
+        AU:['Avstralija',        2100000, 5.99],
+        SG:['Singapur',           280000, 5.99],
+        TH:['Tajska',            3000000, 3.49],
+        // GO
+        MX:['Mehika',           12000000, 2.99],
+        CL:['Čile',              1500000, 3.49],
+        CO:['Kolumbija',         3500000, 2.49],
+        PE:['Peru',              2500000, 2.49],
+        ID:['Indonezija',       55000000, 2.49],
+        PH:['Filipini',          4000000, 2.49],
+        VN:['Vietnam',           5000000, 2.49],
+        IL:['Izrael',             450000, 4.99],
+        AE:['UAE',                200000, 5.99],
+        NZ:['Nova Zelandija',     330000, 5.99],
+        ZA:['Južna Afrika',      2000000, 2.99],
+        KE:['Kenija',            1500000, 2.49],
+        GH:['Gana',              1000000, 2.49],
+        // WISH
+        IN:['Indija',           63000000, 1.29],
+        JP:['Japonska',          6500000, 5.99],
+        KR:['Koreja',            5500000, 5.99],
+      };
+
+      var GO   = ['MX','CL','CO','PE','ID','PH','VN','IL','AE','NZ','ZA','KE','GH'];
+      var WISH = ['IN','JP','KR'];
+
+      function fmt(n) {
+        if (n >= 1000000) return (n/1000000).toFixed(1).replace('.',',') + ' mio';
+        if (n >= 1000)    return Math.round(n/1000) + 'k';
+        return n.toString();
+      }
+
+      new jsVectorMap({
+        selector: '#world-map',
+        map: 'world',
+        backgroundColor: '#0b1120',
+        zoomOnScroll: false,
+        zoomButtons: false,
+        regionStyle: {
+          initial:       { fill:'#1e293b', stroke:'#0f172a', strokeWidth:0.3 },
+          hover:         { fillOpacity:0.75 },
+          selected:      { fill:'#22d3ee' },
+          selectedHover: { fillOpacity:0.75 }
+        },
+        selectedRegions: [
+          'SI','AT','BE','BG','BA','CY','CZ','DK','EE','FI',
+          'FR','DE','GR','HR','HU','IE','IT','LV','LT','LU',
+          'MT','NL','NO','PL','PT','RO','RS','SK','ES','SE',
+          'UA','GB','US','CA','AU','SG','TH'
+        ],
+        onRegionTooltipShow: function(event, tooltip, code) {
+          var d = DATA[code];
+          if (!d) { event.preventDefault(); return; }
+          var total = d[1], price = d[2];
+          var pct1  = Math.round(total * 0.01);
+          var mrr   = Math.round(pct1 * price);
+          var isGO   = GO.indexOf(code)   !== -1;
+          var isWISH = WISH.indexOf(code) !== -1;
+          var color  = isWISH ? '#a855f7' : isGO ? '#3b82f6' : '#22d3ee';
+          tooltip.text(
+            '<strong>' + d[0] + '</strong><br>' +
+            'Cena: <span style="color:' + color + '">€' + price.toFixed(2) + '/mes.</span><br>' +
+            'Mali podjetniki: ~' + fmt(total) + '<br>' +
+            '1% = ~' + fmt(pct1) + ' strank<br>' +
+            'MRR: <span style="color:' + color + ';font-weight:700">~€' + fmt(mrr) + '</span>',
+            true
+          );
+        },
+      });
+
+      function setCustomColors(svg) {
+        GO.forEach(function(c) {
+          var p = svg.querySelector('[data-code="' + c + '"]');
+          if (p) p.setAttribute('fill', '#3b82f6');
+        });
+        WISH.forEach(function(c) {
+          var p = svg.querySelector('[data-code="' + c + '"]');
+          if (p) p.setAttribute('fill', '#a855f7');
+        });
+      }
+
+      (function paint() {
+        var svg = document.querySelector('#world-map svg');
+        if (!svg) { requestAnimationFrame(paint); return; }
+        setCustomColors(svg);
+        svg.addEventListener('mouseleave', function(e) {
+          var path = e.target.closest ? e.target.closest('[data-code]') : e.target;
+          if (!path) return;
+          var code = path.getAttribute('data-code');
+          if (!code) return;
+          if (GO.indexOf(code)   !== -1) path.setAttribute('fill', '#3b82f6');
+          if (WISH.indexOf(code) !== -1) path.setAttribute('fill', '#a855f7');
+        }, true);
+      })();
+    </script>
   </body>
 </html>

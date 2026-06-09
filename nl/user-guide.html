@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handleiding – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="user-guide.html" class="active">Handleiding</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../user-guide.html">SL</a>
+        <span>|</span>
+        <a href="../en/user-guide.html">EN</a>
+        <span>|</span>
+        <a href="../de/user-guide.html">DE</a>
+        <span>|</span>
+        <a href="../hr/user-guide.html">HR</a>
+        <span>|</span>
+        <a href="../sk/user-guide.html">SK</a>
+        <span>|</span>
+        <a href="../cs/user-guide.html">CS</a>
+        <span>|</span>
+        <a href="../pl/user-guide.html">PL</a>
+        <span>|</span>
+        <a href="user-guide.html" class="active">NL</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Handleiding</h1>
+        <p class="lead">Een korte gids voor het gebruik van Billero.</p>
+
+        <h2>Snel starten</h2>
+        <ul>
+          <li>Vul <strong>Mijn gegevens</strong> in (IBAN, adres, btw-nummer …).</li>
+          <li>Voeg <strong>klanten</strong> toe (bedrijven of particulieren).</li>
+          <li>Maak een <strong>nieuwe factuur</strong> (eenvoudig of meerdere posten).</li>
+          <li>Je kunt de PDF delen of opslaan. Het bewerken van een factuur genereert de PDF opnieuw.</li>
+        </ul>
+
+        <h2>Factuur met meerdere posten</h2>
+        <ul>
+          <li>Elke post heeft een beschrijving, hoeveelheid, eenheid, prijs en btw-tarief.</li>
+          <li>Op kleinere schermen worden velden automatisch verdeeld over twee rijen voor betere leesbaarheid.</li>
+        </ul>
+
+        <h2>Facturen naar een klant sturen</h2>
+        <p>Vanuit een klantenkaart kun je snel meerdere facturen tegelijk selecteren en versturen.</p>
+        <ul>
+          <li>Open het tabblad <strong>Klanten</strong> en tik op een klant.</li>
+          <li><strong>Houd ingedrukt</strong> op een factuur → selectiemodus wordt geactiveerd.</li>
+          <li>Tik op andere facturen om ze te selecteren of deselecteren.</li>
+          <li>Tik in de titelbalk op <strong>↗</strong> om de geselecteerde PDF's te delen.</li>
+          <li>Om de selectiemodus af te sluiten, tik je op <strong>✕</strong> in de titelbalk.</li>
+        </ul>
+        <p>Werkt hetzelfde voor bedrijven en particulieren (inclusief onbekende klanten).</p>
+
+        <h2>Ontvangen facturen met AI OCR</h2>
+        <p>Billero kan automatisch de leverancier, nummer, datum en bedrag uit een PDF-factuur lezen met behulp van AI (Anthropic Claude). De functie is <strong>optioneel</strong> en vereist je eigen API-sleutel.</p>
+
+        <h3>Een API-sleutel krijgen</h3>
+        <ol>
+          <li>Ga naar <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> en maak een gratis account.</li>
+          <li>Selecteer in het menu <strong>API Keys</strong> → <strong>Create Key</strong>.</li>
+          <li>Geef de sleutel een naam (bijv. <em>Billero</em>) en kopieer deze. De sleutel begint met <code>sk-ant-</code>.</li>
+          <li>Je moet een betalingsmethode toevoegen in de Anthropic-console. Het lezen van één factuur kost minder dan <strong>€0,001</strong> (Claude Haiku model).</li>
+        </ol>
+
+        <h3>Instellingen in de app</h3>
+        <ol>
+          <li>Open <strong>Mijn gegevens</strong> (⚙ tabblad) → sectie <em>Anthropic API-sleutel (OCR)</em>.</li>
+          <li>Plak de sleutel in het veld en tik op <strong>Opslaan</strong>.</li>
+          <li>De sleutel wordt opgeslagen in het beveiligde gebied van je apparaat (Android Keystore) — deze wordt nooit naar app-bestanden geschreven.</li>
+        </ol>
+
+        <h3>Gebruik</h3>
+        <ol>
+          <li>Tik in het tabblad <strong>Facturen</strong> op het ↑ pictogram (PDF importeren) en selecteer de PDF van een ontvangen factuur.</li>
+          <li>Een formulier wordt geopend. Tik op de knop <strong>✨ Analyseer met AI</strong>.</li>
+          <li>Wacht even — de velden voor leverancier, nummer, datum en bedrag worden automatisch ingevuld.</li>
+          <li>Controleer en corrigeer indien nodig, en tik vervolgens op <strong>Opslaan</strong>.</li>
+        </ol>
+
+        <p><strong>Zonder API-sleutel</strong> werkt het formulier als altijd — vul alle velden handmatig in. De AI-knop verschijnt niet.</p>
+
+        <h2>Back-up &amp; herstellen</h2>
+        <p>Al je gegevens (facturen, klanten, instellingen en PDF's) kunnen worden geëxporteerd en teruggezet vanuit het tabblad <strong>Mijn gegevens</strong> → sectie <em>Back-up</em>.</p>
+        <h3>Exporteren</h3>
+        <ul>
+          <li>Tik op <strong>Back-up exporteren</strong>.</li>
+          <li>De app maakt een ZIP-bestand (<code>billero_backup_YYYY-MM-DD.zip</code>) en opent het delen-scherm.</li>
+          <li>Sla het bestand op in iCloud, Google Drive, e-mail of waar je maar wilt.</li>
+        </ul>
+        <h3>Herstellen (bijv. na het wisselen van telefoon)</h3>
+        <ul>
+          <li>Installeer Billero op de nieuwe telefoon.</li>
+          <li>Open <strong>Mijn gegevens</strong> → <strong>Herstellen van back-up</strong>.</li>
+          <li>Bevestig de waarschuwing (bestaande gegevens worden vervangen).</li>
+          <li>Selecteer het ZIP-bestand van je opslaglocatie.</li>
+          <li>Alle facturen, klanten, instellingen, PDF's, logo en digitale handtekening worden hersteld.</li>
+        </ul>
+        <p><strong>Waarschuwing:</strong> het herstellen vervangt alle bestaande gegevens. We raden aan een back-up van je huidige gegevens te exporteren voordat je herstelt.</p>
+
+        <h2>Terugkerende facturen</h2>
+        <p>Billero genereert automatisch regelmatige facturen (wekelijks, maandelijks of driemaandelijks) telkens wanneer de app wordt geopend.</p>
+        <ol>
+          <li>Tik in het tabblad <strong>Facturen</strong> op het ↻ pictogram (rechtsboven) → <strong>Terugkerende facturen</strong>.</li>
+          <li>Tik op <strong>+</strong> en vul in: sjabloonnaam, klant, servicebeschrijving, bedrag (excl. btw), btw-tarief.</li>
+          <li>Kies frequentie: <strong>wekelijks, maandelijks</strong> of <strong>driemaandelijks</strong>.</li>
+          <li>Kies voor maandelijks/driemaandelijks de dag van de maand (1–28).</li>
+          <li>Bij de volgende app-start op of na de geplande datum wordt de factuur automatisch aangemaakt met de PDF ervan.</li>
+        </ol>
+        <p>Sjablonen kunnen met de schakelaar worden uitgeschakeld of op elk moment worden bewerkt. Gegenereerde facturen verschijnen in de hoofd facturenlijst.</p>
+
+        <h2>Crypto-betalingen</h2>
+        <p>Billero ondersteunt twee soorten crypto-betalingen: <strong>statische QR-codes</strong> op de PDF-factuur en een <strong>Coingate betaalkoppeling</strong> voor 70+ cryptocurrencies.</p>
+
+        <h3>QR-codes op PDF-factuur — ondersteunde cryptocurrencies</h3>
+        <p>Stel je portefeuille adres(sen) in onder <strong>Mijn gegevens → Crypto-betaling</strong>. De QR-code wordt automatisch aan pagina 2 van elke PDF-factuur toegevoegd.</p>
+        <ul>
+          <li><strong>EURC</strong> — Circle Euro stablecoin op Ethereum, Base of Solana. Koers: 1 EURC = 1 EUR.</li>
+          <li><strong>USDC</strong> — Circle USD stablecoin op Ethereum, Base, Polygon of Solana. Koers: opgehaald van ECB via Frankfurter API op het moment van PDF-generering.</li>
+          <li><strong>BTC</strong> — Bitcoin, BIP-21 QR-indeling. Koers: opgehaald van CoinGecko op het moment van PDF-generering.</li>
+          <li><strong>ETH</strong> — Ethereum (native), EIP-681 QR-indeling. Koers: CoinGecko.</li>
+          <li><strong>SOL</strong> — Solana (native), Solana Pay-indeling. Koers: CoinGecko.</li>
+          <li><strong>Aangepast token</strong> — voer de tokennaam en portefeuille adres in; de QR codeert het adres (bedrag bij overeenkomst).</li>
+        </ul>
+        <p>De koers en ophaal-timestamp worden onder elke QR-code afgedrukt. <strong>Zonder internetverbinding wordt de QR-code niet weergegeven</strong> (de koers moet actueel zijn).</p>
+        <p>In <strong>Mijn gegevens → Weergave op factuur</strong> kunt je de UPN QR en de crypto QR onafhankelijk in-/uitschakelen. UPN blijft op pagina 1, crypto QR is op pagina 2.</p>
+
+        <h3>Coingate betaalkoppeling (BTC, ETH, SOL en 70+ munten)</h3>
+        <ol>
+          <li>Maak een account aan op <a href="https://coingate.com" target="_blank" rel="noopener">coingate.com</a> en verkrijg een API-sleutel.</li>
+          <li>Voer in <strong>Mijn gegevens → Coingate</strong> je API-sleutel in. Schakel <em>Sandbox-modus</em> in voor testen.</li>
+          <li>Tik in het tabblad <strong>Facturen</strong> op het <strong>₿ pictogram</strong> naast de factuur.</li>
+          <li>De app maakt een betaalkoppeling — een QR-code en een knop <em>Openen in browser</em> verschijnen.</li>
+          <li>Deel de koppeling met je klant. Deze betaalt met elke cryptocurrency naar keuze.</li>
+          <li>Je ontvangt EUR op je bankrekening via SEPA (Coingate verwerkt de conversie).</li>
+          <li>Controleer de betalingsstatus met de knop <strong>Status controleren</strong> in de app.</li>
+        </ol>
+        <p><strong>Coingate is in de EU gereglementeerd</strong> (EMI-licentie, Litouwen) en ondersteunt SEPA-uitbetalingen.</p>
+
+        <h2>Thailand — tweetalig PDF (Thai + Engels)</h2>
+        <p>Wanneer je profiel is ingesteld op <strong>Thailand (TH)</strong>, genereert Billero automatisch een <strong>tweetalig PDF-factuur</strong>: elke label wordt afgedrukt in Thai schrift (boven) en Engels (onder) naast elkaar op dezelfde pagina.</p>
+        <ul>
+          <li>Thai font (Noto Sans Thai) is in de app gebundeld — geen installatie nodig.</li>
+          <li>Werkt voor lokale Thai klanten en voor internationale klanten die geen Thai lezen.</li>
+          <li>Btw-tarief: 7% (Revenue Code, Section 77). Registratiedrempel: THB 1.800.000/jaar.</li>
+        </ul>
+
+        <h2>Singapore — GST-factuur</h2>
+        <p>Wanneer je profiel is ingesteld op <strong>Singapore (SG)</strong>, past Billero automatisch GST-regels toe:</p>
+        <ul>
+          <li>GST-tarief: 9% (GST Act, Chapter 117A).</li>
+          <li>Registratiedrempel: SGD 1.000.000/jaar — onder de drempel wordt een disclaimer afgedrukt.</li>
+          <li>Valuta: SGD ($). Betalingstermijn: 30 dagen.</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Privacybeleid</a>
+        &nbsp; | &nbsp;
+        <a href="terms-of-use.html">Gebruiksvoorwaarden</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">Handleiding</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Release notes</a>
+        &nbsp; | &nbsp;
+        <a href="contact.html">Contact</a>
+        &nbsp; | &nbsp;
+        <a href="donate.html">Steun ons</a>
+      </div>
+    </footer>
+  </body>
+</html>

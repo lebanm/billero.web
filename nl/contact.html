@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +14,17 @@
       </div>
       <nav>
         <a href="index.html">Home</a>
-        <a href="donate.html">Support us</a>
-        <a href="user-guide.html">User guide</a>
+        <a href="donate.html">Steun ons</a>
+        <a href="user-guide.html">Handleiding</a>
         <a href="release-notes.html">Release notes</a>
         <a href="privacy-policy.html">Privacy</a>
       </nav>
       <div class="lang-links">
         <a href="../contact.html">SL</a>
         <span>|</span>
-        <a href="contact.html" class="active">EN</a>
+        <a href="../en/contact.html">EN</a>
         <span>|</span>
-        <a href="../nl/contact.html">NL</a>
-        <span>|</span>
-        <a href="../th/contact.html">TH</a>
+        <a href="contact.html" class="active">NL</a>
       </div>
     </header>
 
@@ -34,53 +32,53 @@
       <div class="page-card">
         <h1>Contact</h1>
         <p class="lead">
-          If you have a question about Billero or would like to try the app,
-          send us a message and we will get back to you as soon as possible.
+          Heb je een vraag over Billero of wil je de app uitproberen?
+          Stuur ons een bericht en we reageren zo snel mogelijk.
         </p>
 
         <!-- Formspree endpoint: formspree.io/f/mojkpnvy -->
         <form
           id="contact-form"
           action="https://formspree.io/f/mojkpnvy"
-          data-human-error="Please answer the human verification question correctly."
-          data-send-error="Failed to send. Please try again or email us at info@billero.app."
+          data-human-error="Beantwoord alstublieft de verificatievraag correct."
+          data-send-error="Verzenden mislukt. Probeer het opnieuw of stuur een e-mail naar info@billero.app."
         >
           <div class="field">
-            <label for="name">Name</label>
+            <label for="name">Naam</label>
             <input id="name" type="text" name="name" required>
           </div>
 
           <div class="field">
-            <label for="email">Email</label>
+            <label for="email">E-mailadres</label>
             <input id="email" type="email" name="email" required>
           </div>
 
           <div class="field">
-            <label for="message">Message</label>
+            <label for="message">Bericht</label>
             <textarea id="message" name="message" rows="6" required></textarea>
           </div>
 
           <div class="field">
-            <label for="human">Human verification</label>
+            <label for="human">Verificatie</label>
             <div class="human-check">
               <span id="human-question"></span>
               <input id="human" type="text" name="human" inputmode="numeric" required>
             </div>
             <p class="small-text">
-              This simple check helps reduce spam without trackers or external
-              CAPTCHA services.
+              Deze eenvoudige controle helpt spam te voorkomen zonder trackers of externe
+              CAPTCHA-services.
             </p>
           </div>
 
-          <button class="button" type="submit">Send message</button>
+          <button class="button" type="submit">Bericht verzenden</button>
           <p class="small-text" style="margin-top:12px;">
-            You can also email us directly at
+            Je kunt ons ook rechtstreeks een e-mail sturen op
             <a href="mailto:info@billero.app">info@billero.app</a>.
           </p>
         </form>
 
         <div id="form-success" style="display:none; margin-top:24px;">
-          <p><strong>Message sent!</strong> We will get back to you as soon as possible.</p>
+          <p><strong>Bericht verzonden!</strong> We reageren zo snel mogelijk.</p>
         </div>
         <div id="form-error" style="display:none; margin-top:12px; color:#e74c3c;"></div>
       </div>
