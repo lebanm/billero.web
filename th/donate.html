@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สนับสนุนเรา – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="donate.html" class="active">สนับสนุนเรา</a>
+        <a href="contact.html">ติดต่อ</a>
+        <a href="user-guide.html">คู่มือผู้ใช้</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="privacy-policy.html">ความเป็นส่วนตัว</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../donate.html">SL</a>
+        <span>|</span>
+        <a href="../en/donate.html">EN</a>
+        <span>|</span>
+        <a href="../nl/donate.html">NL</a>
+        <span>|</span>
+        <a href="donate.html" class="active">TH</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="donate-hero">
+        <div class="donate-hero-note">Billero ฟรี</div>
+        <h1>หากบิลเลโรช่วยคุณ โปรดสนับสนุนเราด้วยกาแฟหรือการบริจาค</h1>
+        <p class="lead">
+          เราพัฒนาแอปในเวลาว่าง การบริจาคหรือกาแฟที่เล็กน้อยแต่ละครั้ง
+          มีความหมายมากและช่วยให้เราปรับปรุงต่อไป
+        </p>
+      </section>
+
+      <section class="donate-cta">
+        <div class="donate-card donate-card-primary">
+          <div class="donate-card-icon">☕</div>
+          <h2>ซื้อกาแฟให้เรา</h2>
+          <p>คลิกเดียว ไม่ต้องสมัครสมาชิก รวดเร็วและง่ายผ่าน Buy Me a Coffee</p>
+          <a class="button button-coffee" href="https://buymeacoffee.com/billero" target="_blank" rel="noopener noreferrer">
+            ซื้อกาแฟให้เรา
+          </a>
+        </div>
+
+        <div class="donate-card">
+          <h2>บริจาคด้วยการเข้ารหัส</h2>
+          <p>ต้องการสกุลเงินดิจิทัล? คุณสามารถบริจาคไปยังที่อยู่เหล่านี้:</p>
+          <div class="crypto-grid">
+            <div class="crypto-item">
+              <span class="crypto-label">Bitcoin (BTC)</span>
+              <code class="crypto-address" id="btc-addr">bc1q...YOUR_BTC_ADDRESS</code>
+              <button class="copy-btn" data-target="btc-addr" type="button">คัดลอก</button>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-label">Ethereum (ETH)</span>
+              <code class="crypto-address" id="eth-addr">0x...YOUR_ETH_ADDRESS</code>
+              <button class="copy-btn" data-target="eth-addr" type="button">คัดลอก</button>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-label">Solana (SOL)</span>
+              <code class="crypto-address" id="sol-addr">YOUR_SOL_ADDRESS</code>
+              <button class="copy-btn" data-target="sol-addr" type="button">คัดลอก</button>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-label">Sui (SUI)</span>
+              <code class="crypto-address" id="sui-addr">0x...YOUR_SUI_ADDRESS</code>
+              <button class="copy-btn" data-target="sui-addr" type="button">คัดลอก</button>
+            </div>
+          </div>
+          <p class="donate-note">
+            <strong>หมายเหตุ:</strong> แทนที่ placeholder ด้วยที่อยู่จริงของคุณใน
+            <code>donate.html</code> (ค้นหา "YOUR_" หรือ "VAŠ_")
+          </p>
+        </div>
+      </section>
+
+      <section class="donate-footer-cta">
+        <p>ขอบคุณสำหรับการสนับสนุนของคุณ ทุกสิ่งมีความหมายมากมาย 🙏</p>
+        <a class="button" href="index.html">กลับไปหน้าแรก</a>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">นโยบายความเป็นส่วนตัว</a>
+        &nbsp; | &nbsp;
+        <a href="terms-of-use.html">เงื่อนไขการใช้</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">คู่มือผู้ใช้</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Release notes</a>
+        &nbsp; | &nbsp;
+        <a href="contact.html">ติดต่อ</a>
+        &nbsp; | &nbsp;
+        <a href="donate.html">สนับสนุนเรา</a>
+      </div>
+    </footer>
+
+    <script src="../js/donate.js"></script>
+  </body>
+</html>

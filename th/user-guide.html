@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คู่มือผู้ใช้ – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="user-guide.html" class="active">คู่มือผู้ใช้</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="contact.html">ติดต่อ</a>
+        <a href="privacy-policy.html">ความเป็นส่วนตัว</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../user-guide.html">SL</a>
+        <span>|</span>
+        <a href="../en/user-guide.html">EN</a>
+        <span>|</span>
+        <a href="../de/user-guide.html">DE</a>
+        <span>|</span>
+        <a href="../hr/user-guide.html">HR</a>
+        <span>|</span>
+        <a href="../sk/user-guide.html">SK</a>
+        <span>|</span>
+        <a href="../cs/user-guide.html">CS</a>
+        <span>|</span>
+        <a href="../pl/user-guide.html">PL</a>
+        <span>|</span>
+        <a href="../nl/user-guide.html">NL</a>
+        <span>|</span>
+        <a href="user-guide.html" class="active">TH</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>คู่มือผู้ใช้</h1>
+        <p class="lead">คำแนะนำสั้น ๆ สำหรับการใช้ Billero</p>
+
+        <h2>เริ่มต้นอย่างรวดเร็ว</h2>
+        <ul>
+          <li>กรอกข้อมูล <strong>รายละเอียดของฉัน</strong> (IBAN ที่อยู่ หมายเลขภาษี …)</li>
+          <li>เพิ่ม <strong>ลูกค้า</strong> (บริษัทหรือบุคคล)</li>
+          <li>สร้าง <strong>ใบแจ้งหนี้ใหม่</strong> (ปกติหรือหลายรายการ)</li>
+          <li>คุณสามารถแบ่งปันหรือบันทึก PDF ได้ การแก้ไขใบแจ้งหนี้จะสร้าง PDF ใหม่</li>
+        </ul>
+
+        <h2>ใบแจ้งหนี้หลายรายการ</h2>
+        <ul>
+          <li>แต่ละรายการมีคำอธิบาย จำนวน หน่วย ราคา และอัตราภาษีมูลค่าเพิ่ม</li>
+          <li>บนหน้าจอที่เล็กกว่า ฟิลด์จะโยงไปมาอย่างอัตโนมัติเพื่อให้อ่านได้ง่ายขึ้น</li>
+        </ul>
+
+        <h2>การส่งใบแจ้งหนี้ไปยังลูกค้า</h2>
+        <p>จากการ์ดรายละเอียดลูกค้า คุณสามารถเลือกและส่งใบแจ้งหนี้หลายใบพร้อมกันได้อย่างรวดเร็ว</p>
+        <ul>
+          <li>เปิดแท็บ <strong>ลูกค้า</strong> แล้วแตะลูกค้า</li>
+          <li><strong>กดค้าง</strong> ใบแจ้งหนี้ → เข้าสู่โหมดการเลือก</li>
+          <li>แตะใบแจ้งหนี้เพิ่มเติมเพื่อเลือกหรือยกเลิกการเลือก</li>
+          <li>ในแถบชื่อเรื่อง แตะ <strong>↗</strong> เพื่อแบ่งปัน PDF ที่เลือก</li>
+          <li>เพื่อออกจากโหมดการเลือก แตะ <strong>✕</strong> ในแถบชื่อเรื่อง</li>
+        </ul>
+        <p>ใช้งานเหมือนกันสำหรับบริษัทและบุคคล (รวมถึงลูกค้าที่ไม่รู้จัก)</p>
+
+        <h2>ใบแจ้งหนี้ที่ได้รับพร้อม AI OCR</h2>
+        <p>Billero สามารถอ่านผู้จัดจำหน่าย หมายเลข วันที่ และจำนวนเงินจากใบแจ้งหนี้ PDF โดยอัตโนมัติโดยใช้ AI (Anthropic Claude) คุณสมบัติน้ำหนักแบบทำให้มีนัยสำคัญและต้องใช้ API key ของคุณเอง</p>
+
+        <h3>รับ API key</h3>
+        <ol>
+          <li>ไปที่ <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> และสร้างบัญชี</li>
+          <li>ในเมนู เลือก <strong>API Keys</strong> → <strong>Create Key</strong></li>
+          <li>ตั้งชื่อคีย์ (เช่น <em>Billero</em>) แล้วคัดลอก คีย์เริ่มต้นด้วย <code>sk-ant-</code></li>
+          <li>คุณต้องเพิ่มวิธีการชำระเงินในคอนโซล Anthropic การอ่านใบแจ้งหนี้หนึ่งใบราคา <strong>น้อยกว่า €0.001</strong> (รุ่น Claude Haiku)</li>
+        </ol>
+
+        <h3>การตั้งค่าในแอป</h3>
+        <ol>
+          <li>เปิด <strong>รายละเอียดของฉัน</strong> (⚙ tab) → ส่วน <em>Anthropic API key (OCR)</em></li>
+          <li>วางคีย์ในฟิลด์แล้วแตะ <strong>บันทึก</strong></li>
+          <li>คีย์จะถูกเก็บไว้ในพื้นที่ปลอดภัยของอุปกรณ์ของคุณ — ไม่เคยเขียนลงในไฟล์แอป</li>
+        </ol>
+
+        <h3>การใช้งาน</h3>
+        <ol>
+          <li>ในแท็บ <strong>ใบแจ้งหนี้</strong> แตะไอคอน ↑ (นำเข้า PDF) แล้วเลือก PDF ของใบแจ้งหนี้ที่ได้รับ</li>
+          <li>แบบฟอร์มจะเปิดขึ้น แตะปุ่ม <strong>✨ วิเคราะห์ด้วย AI</strong></li>
+          <li>รอสักครู่ — ฟิลด์ผู้จัดจำหน่าย หมายเลข วันที่ และจำนวนเงินจะถูกกรอกโดยอัตโนมัติ</li>
+          <li>ตรวจสอบและแก้ไขหากจำเป็น จากนั้นแตะ <strong>บันทึก</strong></li>
+        </ol>
+
+        <p><strong>หากไม่มี API key</strong> แบบฟอร์มจะทำงานเหมือนเดิม — กรอกฟิลด์ทั้งหมดด้วยตนเอง ปุ่ม AI จะไม่ปรากฏ</p>
+
+        <h2>การสำรองข้อมูลและการคืนค่า</h2>
+        <p>ข้อมูลทั้งหมดของคุณ (ใบแจ้งหนี้ ลูกค้า การตั้งค่า และ PDF) สามารถส่งออกและคืนค่าได้จากแท็บ <strong>รายละเอียดของฉัน</strong> → ส่วน <em>Backup</em></p>
+        <h3>ส่งออก</h3>
+        <ul>
+          <li>แตะ <strong>ส่งออก Backup</strong></li>
+          <li>แอปสร้างไฟล์ ZIP (<code>billero_backup_YYYY-MM-DD.zip</code>) และเปิดแผ่นการแบ่งปัน</li>
+          <li>บันทึกไฟล์ไป iCloud Google Drive อีเมล หรือที่ไหนก็ได้ที่คุณต้องการ</li>
+        </ul>
+        <h3>คืนค่า (เช่น หลังจากเปลี่ยนโทรศัพท์)</h3>
+        <ul>
+          <li>ติดตั้ง Billero บนโทรศัพท์เครื่องใหม่</li>
+          <li>เปิด <strong>รายละเอียดของฉัน</strong> → <strong>คืนค่าจาก Backup</strong></li>
+          <li>ยืนยันคำเตือน (ข้อมูลที่มีอยู่จะถูกแทนที่)</li>
+          <li>เลือกไฟล์ ZIP จากตำแหน่งจัดเก็บข้อมูลของคุณ</li>
+          <li>ใบแจ้งหนี้ ลูกค้า การตั้งค่า PDF โลโก้ และลายเซ็นดิจิทัลทั้งหมดจะถูกคืนค่า</li>
+        </ul>
+        <p><strong>คำเตือน:</strong> การคืนค่าจะแทนที่ข้อมูลที่มีอยู่ทั้งหมด เราขอแนะนำให้ส่งออก Backup ของข้อมูลปัจจุบันของคุณก่อนการคืนค่า</p>
+
+        <h2>ใบแจ้งหนี้ที่เกิดซ้ำ</h2>
+        <p>Billero สร้างใบแจ้งหนี้ปกติ (รายสัปดาห์ รายเดือน หรือรายไตรมาส) โดยอัตโนมัติทุกครั้งที่แอปเปิดใช้งาน</p>
+        <ol>
+          <li>ในแท็บ <strong>ใบแจ้งหนี้</strong> แตะไอคอน ↻ (มุมขวาบน) → <strong>ใบแจ้งหนี้ที่เกิดซ้ำ</strong></li>
+          <li>แตะ <strong>+</strong> แล้วกรอก: ชื่อเทมเพลต ลูกค้า คำอธิบายบริการ จำนวนเงิน (ไม่รวมภาษี) อัตราภาษี</li>
+          <li>เลือกความถี่: <strong>รายสัปดาห์ รายเดือน</strong> หรือ <strong>รายไตรมาส</strong></li>
+          <li>สำหรับรายเดือน/รายไตรมาส เลือกวันของเดือน (1–28)</li>
+          <li>เมื่อแอปเปิดใช้งานครั้งต่อไปในหรือหลังวันที่กำหนดไว้ ใบแจ้งหนี้จะถูกสร้างขึ้นโดยอัตโนมัติพร้อมกับ PDF</li>
+        </ol>
+        <p>เทมเพลตสามารถปิดใช้งานด้วยการสลับหรือแก้ไขได้ตลอดเวลา ใบแจ้งหนี้ที่สร้างขึ้นจะปรากฏในรายชื่อใบแจ้งหนี้หลัก</p>
+
+        <h2>Thailand — ใบแจ้งหนี้แบบทวิภาษี (ไทย + ภาษาอังกฤษ)</h2>
+        <p>เมื่อโปรไฟล์ของคุณตั้งค่าเป็น <strong>Thailand (TH)</strong> Billero จะสร้างใบแจ้งหนี้ PDF <strong>แบบทวิภาษี</strong> โดยอัตโนมัติ: ป้ายชื่อทุกรายการจะพิมพ์ในไทย (ด้านบน) และภาษาอังกฤษ (ด้านล่าง) ด้านข้างกันบนหน้าเดียวกัน</p>
+        <ul>
+          <li>ฟอนต์ไทย (Noto Sans Thai) รวมอยู่ในแอป — ไม่จำเป็นต้องติดตั้ง</li>
+          <li>ใช้ได้สำหรับลูกค้าไทยท้องถิ่นและลูกค้าต่างประเทศที่ไม่อ่านไทย</li>
+          <li>อัตราภาษี: 7% (Revenue Code Section 77) เกณฑ์การลงทะเบียน: THB 1800000/ปี</li>
+        </ul>
+
+        <h2>Singapore — ใบแจ้งหนี้ GST</h2>
+        <p>เมื่อโปรไฟล์ของคุณตั้งค่าเป็น <strong>Singapore (SG)</strong> Billero จะใช้กฎ GST โดยอัตโนมัติ:</p>
+        <ul>
+          <li>อัตรา GST: 9% (GST Act Chapter 117A)</li>
+          <li>เกณฑ์การลงทะเบียน: SGD 1000000/ปี — ต่ำกว่าเกณฑ์จะพิมพ์ข้อปฏิเสธ</li>
+          <li>สกุลเงิน: SGD ($) เงื่อนไขการชำระเงิน: 30 วัน</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">นโยบายความเป็นส่วนตัว</a>
+        &nbsp; | &nbsp;
+        <a href="terms-of-use.html">เงื่อนไขการใช้</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">คู่มือผู้ใช้</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Release notes</a>
+        &nbsp; | &nbsp;
+        <a href="contact.html">ติดต่อ</a>
+        &nbsp; | &nbsp;
+        <a href="donate.html">สนับสนุนเรา</a>
+      </div>
+    </footer>
+  </body>
+</html>

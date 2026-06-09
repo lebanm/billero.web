@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release notes – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="user-guide.html">คู่มือผู้ใช้</a>
+        <a href="release-notes.html" class="active">Release notes</a>
+        <a href="contact.html">ติดต่อ</a>
+        <a href="privacy-policy.html">ความเป็นส่วนตัว</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../release-notes.html">SL</a>
+        <span>|</span>
+        <a href="../en/release-notes.html">EN</a>
+        <span>|</span>
+        <a href="../de/release-notes.html">DE</a>
+        <span>|</span>
+        <a href="../hr/release-notes.html">HR</a>
+        <span>|</span>
+        <a href="../sk/release-notes.html">SK</a>
+        <span>|</span>
+        <a href="../cs/release-notes.html">CS</a>
+        <span>|</span>
+        <a href="../pl/release-notes.html">PL</a>
+        <span>|</span>
+        <a href="../nl/release-notes.html">NL</a>
+        <span>|</span>
+        <a href="release-notes.html" class="active">TH</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Release notes</h1>
+        <p class="lead">มีอะไรใหม่และแก้ไขแล้วในเวอร์ชันล่าสุด</p>
+
+        <h2>1.5.0</h2>
+        <ul>
+          <li><strong>Singapore (SG)</strong> — เพิ่มการสนับสนุน Singapore พร้อม GST 9% (สกุลเงิน SGD) ใบแจ้งหนี้ปฏิบัติตามกฎหมาย GST Act (Chapter 117A) แอปจะแสดงการแบ่งแยก GST และข้อปฏิเสธเกณฑ์ขั้นต่ำสำหรับมูลค่า SGD 1000000</li>
+          <li><strong>Thailand (TH)</strong> — เพิ่มการสนับสนุน Thailand พร้อม VAT 7% (สกุลเงิน THB) ใบแจ้งหนี้ PDF <strong>แบบทวิภาษี</strong>: ตัวอักษรไทยและข้อความภาษาอังกฤษพิมพ์ด้านข้างบนหน้าเดียวกัน — ยอดเยี่ยมสำหรับลูกค้าไทยท้องถิ่นและลูกค้าต่างประเทศ</li>
+        </ul>
+
+        <h2>1.4.0</h2>
+        <ul>
+          <li><strong>Crypto QR — BTC, ETH, SOL</strong> — นอกจาก EURC/USDC ขณะนี้รองรับสกุลเงินดิจิทัลแบบดั้งเดิม: Bitcoin (BIP-21), Ethereum (EIP-681) และ Solana (Solana Pay) อัตราการแลกเปลี่ยนดึงจาก CoinGecko ในเวลาสร้าง PDF</li>
+          <li><strong>โทเคนแบบกำหนดเอง</strong> — ป้อนสกุลเงินดิจิทัลใด ๆ: QR เข้ารหัสที่อยู่; จำนวนเงินตามความสอดคล้องกับลูกค้า</li>
+          <li><strong>อัตราและเวลาประทับด้านล่าง QR code แต่ละรายการ</strong> — แหล่งอัตราและเวลาดึงที่แน่นอนจะพิมพ์ใต้ QR แต่ละรายการ หากไม่มีอินเทอร์เน็ต QR จะไม่แสดง</li>
+          <li><strong>สลับการแสดงผล UPN / crypto</strong> — เปิดใช้งานหรือปิดใช้งาน QR ของ UPN และ QR ของ crypto อย่างอิสระในรายละเอียดของฉัน → แสดงบนใบแจ้งหนี้</li>
+          <li><strong>UPN บนหน้า 1 crypto บนหน้า 2</strong> — QR code ของ crypto ย้ายไปยังหน้า 2 ที่อุทิศให้กับใบแจ้งหนี้</li>
+          <li><strong>คู่มือผู้ใช้ใน 4 ภาษา</strong> — คู่มือในแอปครอบคลุม SL EN DE HR รวมถึงคำแนะนำทีละขั้นตอนของ Anthropic API key</li>
+          <li>แก้ไข: onboarding ตรวจจับภาษาอุปกรณ์ที่ไม่รองรับและแสดง country picker</li>
+          <li>แก้ไข: ปิดใช้งาน Android Auto Backup — onboarding จะแสดงทุกครั้งหลังจากติดตั้งใหม่</li>
+        </ul>
+
+        <h2>1.3.1</h2>
+        <ul>
+          <li><strong>โมเดล Freemium</strong> — 10 ใบแจ้งหนี้ฟรี + 10 AI OCR scans Billero Pro subscription: €2.99/เดือนสำหรับการใช้งานไม่จำกัด</li>
+          <li>แก้ไข: ไฟล์สำรองข้อมูลแสดงชื่อไฟล์ที่ถูกต้องเมื่อแบ่งปัน</li>
+          <li>แก้ไข: ส่งออก CSV พร้อมประเภทคอลัมน์ที่ถูกต้องสำหรับ Excel</li>
+        </ul>
+
+        <h2>1.3.0</h2>
+        <ul>
+          <li><strong>ใบแจ้งหนี้ที่เกิดซ้ำ</strong> — ตั้งค่าเทมเพลตใบแจ้งหนี้รายสัปดาห์ รายเดือน หรือรายไตรมาส ทุกครั้งที่แอปเปิดใช้งาน ใบแจ้งหนี้ที่ครบกำหนดทั้งหมดจะถูกสร้างโดยอัตโนมัติพร้อมกับ PDF</li>
+          <li><strong>การชำระเงินด้วย Crypto ของ Coingate</strong> — ยอมรับ BTC ETH และ 70+ สกุลเงินดิจิทัลผ่านลิงก์การชำระเงิน Coingate คุณจะได้รับ EUR ไปยังบัญชีธนาคารของคุณ (SEPA)</li>
+          <li><strong>QR code ของ Crypto บน PDF</strong> — ตั้งค่าที่อยู่กระเป๋าเงิน EURC/USDC (Base Ethereum Polygon Solana) และ QR code จะถูกเพิ่มลงในใบแจ้งหนี้ PDF ทุกรายการโดยอัตโนมัติ</li>
+          <li><strong>รองรับหลายประเทศ</strong> — เพิ่ม Netherlands (NL) และ Germany (DE) พร้อมอัตราภาษีมูลค่าเพิ่มและกฎใบแจ้งหนี้ที่ถูกต้อง</li>
+          <li>แก้ไข: การสลับประเทศจะอัปเดตอัตราภาษีมูลค่าเพิ่มและกฎใบแจ้งหนี้ทันที</li>
+        </ul>
+
+        <h2>1.2.0</h2>
+        <ul>
+          <li><strong>สำรองข้อมูลและคืนค่า</strong> — ส่งออกข้อมูลทั้งหมด (ใบแจ้งหนี้ ลูกค้า การตั้งค่า PDF โลโก้ ลายเซ็น) ไปยังไฟล์ ZIP จากรายละเอียดของฉัน และคืนค่าบนอุปกรณ์ใหม่</li>
+          <li><strong>ส่งใบแจ้งหนี้จากการ์ดลูกค้า</strong> — เลือกใบแจ้งหนี้หนึ่งรายการหรือมากกว่าบนหน้าจอรายละเอียดลูกค้าและแบ่งปันผ่านแผ่นแบ่งปันหรืออีเมล</li>
+          <li><strong>แบ่งปัน PDF / ส่งโดยอีเมล</strong> — เมื่อแบ่งปันใบแจ้งหนี้ คุณเลือกระหว่างแผ่นแบ่งปัน (WhatsApp SMS …) หรืออีเมลที่เติมไว้ล่วงหน้าพร้อมเรื่องและเนื้อหา</li>
+          <li><strong>ตัวอย่างใบแจ้งหนี้จากการ์ดลูกค้า</strong> — แตะใบแจ้งหนี้ในรายชื่อใบแจ้งหนี้ของลูกค้าเพื่อเปิดและแก้ไข</li>
+          <li><strong>การเติมข้อมูลลูกค้าโดยอัตโนมัติเมื่อนำเข้าใบแจ้งหนี้</strong> — เมื่อนำเข้าใบแจ้งหนี้ PDF เลือกลูกค้าจากรายชื่อหรือพิมพ์ชื่อใหม่ที่บันทึกโดยอัตโนมัติ</li>
+          <li>การจัดกลุ่มใบแจ้งหนี้ที่แก้ไขแล้วภายใต้ลูกค้าที่ไม่รู้จัก — ตัวแปรทั้งหมด (มีหรือไม่มีชื่อ) ได้รับการรวมเข้าด้วยกันอย่างถูกต้อง</li>
+          <li>การคืนค่าฟิลด์ชื่อ/นามสกุลที่แก้ไขแล้วเมื่อแก้ไขใบแจ้งหนี้ลูกค้าที่ไม่รู้จัก</li>
+        </ul>
+
+        <h2>1.1.0</h2>
+        <ul>
+          <li><strong>ภาพรวมปีต่อปี</strong> — แท็บ Invoices ตอนนี้แสดงสถิติสำหรับแต่ละปี: ใบแจ้งหนี้รวม จ่ายแล้ว เปิด และรวมทั้งหมด</li>
+          <li><strong>ตัวกรองใบแจ้งหนี้</strong> — กรองได้อย่างรวดเร็วระหว่างใบแจ้งหนี้ทั้งหมด จ่ายแล้ว และเปิด</li>
+          <li><strong>ส่งออก CSV</strong> — ส่งออกใบแจ้งหนี้ของปีนี้หรือการเลือกข้อมูลด้วยตนเองไปยังไฟล์ CSV ที่เข้ากันได้กับ Excel</li>
+          <li><strong>รวมทั้งหมดในโหมดการเลือก</strong> — เมื่อเลือกใบแจ้งหนี้ แถบแอปจะแสดงจำนวนเงินรวมทันที</li>
+          <li><strong>วันที่บริการที่อ่านได้มากขึ้นบน PDF</strong> — วันที่แสดงเป็น เช่น "15 January 2025" แทน "15.01.2025"</li>
+          <li>การปรับปรุงแบบฟอร์มลูกค้าและการป้องกันการซ้ำซ้อน</li>
+          <li>การวิเคราะห์ขนาดเล็กบนการ์ดลูกค้า (จำนวนใบแจ้งหนี้ จ่ายแล้ว เปิด จำนวนเงิน)</li>
+        </ul>
+
+        <h2>1.0.x</h2>
+        <ul>
+          <li>การปรับปรุงใบแจ้งหนี้ PDF (เค้าโครง UPN / VAT recap)</li>
+          <li>การแก้ไขเส้นทางไฟล์ PDF หลังจากอัปเกรดแอป</li>
+          <li>การปรับปรุง UX สำหรับรายการใบแจ้งหนี้หลายรายการ</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">นโยบายความเป็นส่วนตัว</a>
+        &nbsp; | &nbsp;
+        <a href="terms-of-use.html">เงื่อนไขการใช้</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">คู่มือผู้ใช้</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Release notes</a>
+        &nbsp; | &nbsp;
+        <a href="contact.html">ติดต่อ</a>
+        &nbsp; | &nbsp;
+        <a href="donate.html">สนับสนุนเรา</a>
+      </div>
+    </footer>
+  </body>
+</html>

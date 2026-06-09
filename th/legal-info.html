@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลกฎหมายตามประเทศ – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="user-guide.html">คู่มือผู้ใช้</a>
+        <a href="legal-info.html" class="active">ข้อมูลกฎหมาย</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="contact.html">ติดต่อ</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../legal-info.html">SL</a>
+        <span>|</span>
+        <a href="../en/legal-info.html">EN</a>
+        <span>|</span>
+        <a href="../de/legal-info.html">DE</a>
+        <span>|</span>
+        <a href="../hr/legal-info.html">HR</a>
+        <span>|</span>
+        <a href="../sk/legal-info.html">SK</a>
+        <span>|</span>
+        <a href="../cs/legal-info.html">CS</a>
+        <span>|</span>
+        <a href="../pl/legal-info.html">PL</a>
+        <span>|</span>
+        <a href="../nl/legal-info.html">NL</a>
+        <span>|</span>
+        <a href="legal-info.html" class="active">TH</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>ข้อมูลกฎหมายตามประเทศ</h1>
+        <p class="lead">ภาพรวมของกฎหมายการออกใบแจ้งหนี้ หน่วยงานภาษี อัตราภาษีมูลค่าเพิ่ม และรายการใบแจ้งหนี้บังคับสำหรับ 31 ประเทศ สำหรับการอ้างอิงเท่านั้น — ตรวจสอบเสมอกับหน่วยงานภาษีท้องถิ่นของคุณ</p>
+
+        <div id="world-map" style="height:340px;margin-bottom:28px;border-radius:10px;overflow:hidden;"></div>
+
+        <div class="li-search-wrap">
+          <input class="li-search" type="search" id="searchInput" placeholder="ค้นหาประเทศ …" oninput="filterCards()">
+        </div>
+
+        <div class="li-grid" id="countryGrid"></div>
+        <p class="li-none" id="noResults" style="display:none">ไม่พบผลลัพธ์</p>
+
+        <p class="li-disclaimer">
+          <strong>ข้อปฏิเสธ:</strong> ข้อมูลนี้เป็นการอ้างอิงเท่านั้นและอาจไม่สะท้อนการเปลี่ยนแปลงล่าสุดในกฎหมาย ตรวจสอบเสมอกับหน่วยงานภาษีท้องถิ่นหรือบัญชีตรวจสอบที่มีคุณวุฒิก่อนออกใบแจ้งหนี้ อัตราภาษีมูลค่าเพิ่มและเกณฑ์เปลี่ยนแปลงเป็นประจำ
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Billero · <a href="privacy-policy.html">ความเป็นส่วนตัว</a> · <a href="terms-of-use.html">เงื่อนไข</a></p>
+    </footer>
+
+    <script src="../js/legal-info-data.js"></script>
+    <script>
+      const L = {
+        taxAuthority: 'หน่วยงานภาษี',
+        law: 'กฎหมาย',
+        currency: 'สกุลเงิน',
+        vat: 'อัตราภาษีมูลค่าเพิ่ม',
+        threshold: 'เกณฑ์ภาษีมูลค่าเพิ่ม',
+        retention: 'การเก็บรักษาบันทึก',
+        years: 'ปี',
+        notes: 'หมายเหตุ',
+        lastVerified: 'ตรวจสอบครั้งล่าสุด',
+        mandatoryItems: 'รายการบังคับ',
+        showItems: '▸ แสดงรายการใบแจ้งหนี้บังคับ',
+        hideItems: '▾ ซ่อนรายการใบแจ้งหนี้บังคับ',
+        miDateOfIssue: 'วันที่ออกใบแจ้งหนี้',
+        miInvoiceNumber: 'หมายเลขใบแจ้งหนี้ตามลำดับ',
+        miSellerInfo: 'ชื่อ ที่อยู่ และหมายเลขประจำตัวผู้เสียภาษีอากร ของผู้ขาย',
+        miBuyerInfo: 'ชื่อและที่อยู่ของผู้ซื้อ',
+        miBuyerVatId: 'หมายเลขประจำตัวผู้เสียภาษีอากรของผู้ซื้อ',
+        miDescription: 'คำอธิบายสินค้าหรือบริการ',
+        miDateOfSupply: 'วันที่จัดส่ง',
+        miNetAmount: 'จำนวนเงินสุทธิ (ฐานหมวดอากร)',
+        miVatRate: 'อัตราภาษีมูลค่าเพิ่ม',
+        miVatAmount: 'จำนวนเงินภาษีมูลค่าเพิ่ม',
+        miTotalAmount: 'จำนวนเงินรวม (รวม)',
+        miUsSellerInfo: 'ชื่อ ที่อยู่ และ EIN ของผู้ขาย',
+        miAmountDue: 'จำนวนเงินที่ต้องจ่าย',
+        miPaymentTerms: 'เงื่อนไขการชำระเงิน',
+        miSalesTaxIfApplicable: 'ภาษีการขาย (ถ้ามี)',
+        miAuTaxInvoiceWords: 'คำว่า "Tax Invoice"',
+        miAuSellerAbn: 'ABN ผู้ขาย',
+        miAuGstAmount: 'จำนวนเงิน GST',
+        miAuBuyerAbn: 'ABN ผู้ซื้อ (สำหรับธุรกรรม ≥ AUD 1000)',
+        miCaSellerBn: 'หมายเลขธุรกิจของผู้ขาย (BN)',
+        miCaGstHstAmount: 'จำนวนเงิน GST/HST',
+        miCaGstHstNumber: 'หมายเลขลงทะเบียน GST/HST',
+      };
+    </script>
+    <script src="../js/legal-info.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+    <script>
+      new jsVectorMap({
+        selector: '#world-map',
+        map: 'world',
+        backgroundColor: '#0b1120',
+        series: {
+          regions: [{
+            attribute: 'fill',
+            values: {
+              MX:'#eab308',CL:'#eab308',CO:'#eab308',PE:'#eab308',
+              ID:'#eab308',PH:'#eab308',VN:'#eab308',IL:'#eab308',
+              AE:'#eab308',NZ:'#eab308',ZA:'#eab308',KE:'#eab308',
+              GH:'#eab308',
+              IN:'#a855f7'
+            }
+          }]
+        },
+        regionStyle: {
+          initial:{fill:'#1e293b',stroke:'#0f172a',strokeWidth:0.3},
+          hover:{fillOpacity:0.75}
+        },
+        zoomOnScroll: false,
+      });
+    </script>
+  </body>
+</html>

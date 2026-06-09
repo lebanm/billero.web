@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billero – Simple invoicing for freelancers</title>
-    <meta name="description" content="Billero is a simple mobile invoicing app for freelancers, coaches and small businesses. Create professional PDF invoices in seconds. Works in 37 countries — EU VAT, GST, sales tax.">
+    <meta name="description" content="Billero is a simple mobile invoicing app for freelancers, coaches and small businesses. Create professional PDF invoices in seconds. Works in 47 countries — EU VAT, GST, sales tax.">
     <meta property="og:title" content="Billero – Simple invoicing for freelancers">
-    <meta property="og:description" content="Create professional invoices in seconds. No registration, no server. Works in 37 countries with locally compliant VAT, GST and sales tax rules.">
+    <meta property="og:description" content="Create professional invoices in seconds. No registration, no server. Works in 47 countries with locally compliant VAT, GST and sales tax rules.">
     <meta property="og:image" content="https://billero.app/img/icons/billero_512.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://billero.app/en/">
@@ -143,7 +143,7 @@
     </section>
 
     <section class="container section-block">
-      <h2>Works in 37 countries</h2>
+      <h2>Works in 47 countries</h2>
       <p>Locally compliant tax rates and invoicing rules for every supported country — EU VAT, GST, sales tax. Billero adapts automatically.</p>
       <div class="map-wrap">
         <div id="world-map"></div>
@@ -196,18 +196,23 @@
     (function () {
       var countries = {
         SI:['Slovenia','VAT 22%'], AT:['Austria','MwSt 20%'], BE:['Belgium','BTW 21%'],
-        BG:['Bulgaria','VAT 20%'], BA:['Bosnia & Herz.','PDV 17%'], CY:['Cyprus','VAT 19%'],
+        BA:['Bosnia & Herz.','PDV 17%'], CY:['Cyprus','VAT 19%'],
         CZ:['Czech Republic','DPH 21%'], DK:['Denmark','MOMS 25%'], EE:['Estonia','KM 22%'],
-        FI:['Finland','ALV 25.5%'], FR:['France','TVA 20%'], DE:['Germany','MwSt 19%'],
+        FI:['Finland','ALV 25.5%'], DE:['Germany','MwSt 19%'],
         GR:['Greece','VAT 24%'], HR:['Croatia','PDV 25%'], HU:['Hungary','VAT 27%'],
-        IE:['Ireland','VAT 23%'], IT:['Italy','IVA 22%'], LV:['Latvia','PVN 21%'],
+        IE:['Ireland','VAT 23%'], LV:['Latvia','PVN 21%'],
         LT:['Lithuania','PVM 21%'], LU:['Luxembourg','TVA 17%'], MT:['Malta','VAT 18%'],
         NL:['Netherlands','BTW 21%'], NO:['Norway','MVA 25%'], PL:['Poland','VAT 23%'],
         PT:['Portugal','IVA 23%'], RO:['Romania','TVA 19%'], RS:['Serbia','PDV 20%'],
         SK:['Slovakia','DPH 23%'], ES:['Spain','IVA 21%'], SE:['Sweden','MOMS 25%'],
-        UA:['Ukraine','VAT 20%'], GB:['United Kingdom','VAT 20%'], US:['United States','Sales tax'],
+        GB:['United Kingdom','VAT 20%'], US:['United States','Sales tax'],
         CA:['Canada','GST 5%'], AU:['Australia','GST 10%'], SG:['Singapore','GST 9%'],
-        TH:['Thailand','VAT 7%']
+        TH:['Thailand','VAT 7%'],
+        MX:['Mexico','IVA 16%'], CL:['Chile','IVA 19%'], CO:['Colombia','IVA 19%'],
+        PE:['Peru','IGV 18%'], ID:['Indonesia','PPN 11%'], PH:['Philippines','VAT 12%'],
+        VN:['Vietnam','VAT 10%'], IL:['Israel','VAT 17%'], AE:['UAE','VAT 5%'],
+        HK:['Hong Kong','No VAT'], NZ:['New Zealand','GST 15%'], ZA:['South Africa','VAT 15%'],
+        KE:['Kenya','VAT 16%'], GH:['Ghana','VAT 15%']
       };
 
       new jsVectorMap({

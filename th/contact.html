@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อ – Billero</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <img src="../img/icons/billero_256.png" alt="Billero logo">
+        <span>Billero</span>
+      </div>
+      <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="donate.html">สนับสนุนเรา</a>
+        <a href="user-guide.html">คู่มือผู้ใช้</a>
+        <a href="release-notes.html">Release notes</a>
+        <a href="privacy-policy.html">ความเป็นส่วนตัว</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../contact.html">SL</a>
+        <span>|</span>
+        <a href="../en/contact.html">EN</a>
+        <span>|</span>
+        <a href="../nl/contact.html">NL</a>
+        <span>|</span>
+        <a href="contact.html" class="active">TH</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>ติดต่อ</h1>
+        <p class="lead">
+          หากคุณมีคำถามเกี่ยวกับ Billero หรือต้องการลองใช้แอป
+          ส่งข้อความให้เรา เราจะติดต่อคุณกลับโดยเร็วที่สุด
+        </p>
+
+        <!-- Formspree endpoint: formspree.io/f/mojkpnvy -->
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/mojkpnvy"
+          data-human-error="กรุณาตอบคำถามการยืนยันความเป็นมนุษย์อย่างถูกต้อง"
+          data-send-error="ไม่สามารถส่งได้ กรุณาลองใหม่หรือส่งอีเมลถึง info@billero.app"
+        >
+          <div class="field">
+            <label for="name">ชื่อ</label>
+            <input id="name" type="text" name="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">อีเมล</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+
+          <div class="field">
+            <label for="message">ข้อความ</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="human">การยืนยันตัวตน</label>
+            <div class="human-check">
+              <span id="human-question"></span>
+              <input id="human" type="text" name="human" inputmode="numeric" required>
+            </div>
+            <p class="small-text">
+              การตรวจสอบง่าย ๆ นี้ช่วยลดสแปมโดยไม่ต้องใช้ตัวติดตามหรือบริการ
+              CAPTCHA ภายนอก
+            </p>
+          </div>
+
+          <button class="button" type="submit">ส่งข้อความ</button>
+          <p class="small-text" style="margin-top:12px;">
+            คุณยังสามารถส่งอีเมลถึงเราได้ที่
+            <a href="mailto:info@billero.app">info@billero.app</a>
+          </p>
+        </form>
+
+        <div id="form-success" style="display:none; margin-top:24px;">
+          <p><strong>ส่งข้อความแล้ว!</strong> เราจะติดต่อคุณกลับโดยเร็วที่สุด</p>
+        </div>
+        <div id="form-error" style="display:none; margin-top:12px; color:#e74c3c;"></div>
+      </div>
+    </main>
+
+    <script src="../js/contact.js"></script>
+  </body>
+</html>
