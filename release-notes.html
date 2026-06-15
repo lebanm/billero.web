@@ -1,135 +1,112 @@
 <!DOCTYPE html>
 <html lang="sl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Release notes – Billero</title>
-    <meta name="description" content="Novosti in posodobitve aplikacije Billero – seznam sprememb po različicah.">
-    <link rel="canonical" href="https://billero.app/release-notes.html">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="container">
-      <div class="logo">
-        <a href="index.html"><img src="img/icons/billero_256.png" alt="Billero logo"></a>
-        <a href="index.html"><span>Billero</span></a>
-      </div>
-      <nav>
-        <a href="index.html">Domov</a>
-        <a href="user-guide.html">Navodila</a>
-        <a href="release-notes.html" class="active">Release notes</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="privacy-policy.html">Zasebnost</a>
-      </nav>
-      <div class="lang-links">
-        <a href="release-notes.html" class="active">SL</a>
-        <span>|</span>
-        <a href="en/release-notes.html">EN</a>
-        <span>|</span>
-        <a href="de/release-notes.html">DE</a>
-        <span>|</span>
-        <a href="hr/release-notes.html">HR</a>
-        <span>|</span>
-        <a href="sk/release-notes.html">SK</a>
-        <span>|</span>
-        <a href="cs/release-notes.html">CS</a>
-        <span>|</span>
-        <a href="pl/release-notes.html">PL</a>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Release notes – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+    code { background: #f5f5f5; padding: 0.1rem 0.25rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Billero – Release notes</h1>
+  <p class="updated">Zadnja posodobitev: junij 2026</p>
 
-    <main class="container">
-      <div class="page-card">
-        <h1>Release notes</h1>
-        <p class="lead">Povzetek novosti in popravkov po verzijah.</p>
+  <p>Tu objavljamo povzetek novosti in popravkov po verzijah.</p>
 
-        <h2>1.5.1</h2>
-        <ul>
-          <li><strong>Pošlji neposlane račune računovodji</strong> — nov gumb v seznamu računov neposredno odpre e-poštni odjemalec z vsemi doslej neposlanimi PDF-ji v prilogah in e-naslovom računovodje kot prejemnikom. E-naslov nastavite v Moji podatki → AI ključi.</li>
-          <li><strong>Filter Stornirani</strong> — seznam računov ima zdaj 4 filtre: Vsi / Plačani / Odprti / Stornirani. Filter Odprti ne prikazuje več storniranih računov; analitika strank prav tako ne upošteva storniranih zneskov.</li>
-          <li><strong>Popravek AI branja računov</strong> — storitev Claude pri preobremenitvi (529) samodejno ponovi zahtevo do 2-krat; napaka prikaže ustrezno sporočilo namesto tehničnega opisa.</li>
-        </ul>
+  <hr>
 
-        <h2>1.5.0</h2>
-        <ul>
-          <li><strong>Singapur (SG)</strong> — dodana podpora za Singapur z GST 9% (SGD valuta). Računi sledijo GST Act (Chapter 117A); aplikacija samodejno prikaže GST rekapitulacijo in oprostilno izjavo za letni promet pod SGD 1.000.000.</li>
-          <li><strong>Tajska (TH)</strong> — dodana podpora za Tajsko z DDV 7% (THB valuta). PDF račun je <strong>dvojezičen</strong>: tajski in angleški napis vzporedno na isti strani — idealno za lokalne Tajce in mednarodne stranke.</li>
-        </ul>
+  <h2>1.6.1 (junij 2026)</h2>
+  <ul>
+    <li><strong>Zanesljivejši nakup naročnine</strong> — odpravljen obtičal nalagalni zaslon ob nakupu in obnovi naročnine (30-sekundni timeout + dodatni varnostni watchdog + jasna napaka).</li>
+    <li><strong>Varnostne kopije s prejetimi računi</strong> — backup zdaj vključuje tudi datoteke prejetih računov (popravek za iOS po nadgradnji).</li>
+    <li><strong>Lokalizirana stena naročnine</strong> — paywall (Mesečno / Letno / POPULARNO / opisi paketov) zdaj preveden v vse jezike vmesnika (13 jezikov).</li>
+    <li><strong>Release notes v jeziku uporabnika</strong> — gumb »Release notes« zdaj odpre opombe k izdaji v jeziku aplikacije.</li>
+  </ul>
 
-        <h2>1.4.0</h2>
-        <ul>
-          <li><strong>Kripto QR — BTC, ETH, SOL</strong> — poleg EURC/USDC so zdaj podprte native kriptovalute: Bitcoin (BIP-21), Ethereum (EIP-681) in Solana (Solana Pay). Tečaj pridobljen iz CoinGecko ob generiranju PDF.</li>
-          <li><strong>Lastni token</strong> — vnesite katerokoli kripto žeton: QR kodira naslov, znesek po dogovoru s stranko.</li>
-          <li><strong>Tečaj + timestamp pod QR kodo</strong> — izpisana metoda pridobitve tečaja in točen čas poizvedbe. Brez interneta QR ni prikazan.</li>
-          <li><strong>Prikaz UPN / kripto nastavljiv</strong> — v Moji podatki → Prikaz na računu neodvisno vklopite ali izklopite UPN QR in kripto QR.</li>
-          <li><strong>UPN na strani 1, kripto na strani 2</strong> — kripto QR kode so na ločeni strani 2 računa.</li>
-          <li><strong>Navodila za uporabo v 4 jezikih</strong> — in-app vodič pokriva SL, EN, DE, HR z navodili za Anthropic API ključ.</li>
-          <li>Popravek onboardinga: aplikacija pravilno zazna nepodprt jezik in prikaže zaslon za izbiro države.</li>
-          <li>Popravek Android Auto Backup: po ponovni namestitvi se onboarding vedno prikaže.</li>
-        </ul>
+  <hr>
 
-        <h2>1.3.1</h2>
-        <ul>
-          <li><strong>Freemium model</strong> — 10 brezplačnih računov na leto + 5 AI OCR skeniranj na mesec. Naročnina Billero Plus od 3,99 €/mesec za neomejeno uporabo.</li>
-          <li>Popravek: ob deljenju varnostne kopije prikazano pravilno ime datoteke.</li>
-          <li>Popravek: CSV izvoz s pravilnimi tipi stolpcev za Excel.</li>
-        </ul>
+  <h2>1.6.0 (maj 2026)</h2>
+  <p class="updated"><em>Velika verzija s freemium modelom in stabilnostnimi izboljšavami.</em></p>
 
-        <h2>1.3.0</h2>
-        <ul>
-          <li><strong>Ponavljajoči računi</strong> — nastavite tedensko, mesečno ali kvartalno predlogo računa. Ob vsakem zagonu aplikacije se samodejno generirajo vsi zapadli računi skupaj s PDF.</li>
-          <li><strong>Coingate kripto plačila</strong> — sprejmite BTC, ETH in 70+ kriptovalut prek Coingate payment linka. Prejmete EUR na bančni račun (SEPA).</li>
-          <li><strong>Kripto QR koda na PDF</strong> — nastavite EURC/USDC naslov (Base, Ethereum, Polygon, Solana) in QR koda se samodejno doda na vsak PDF račun.</li>
-          <li><strong>Večjezičnost</strong> — dodana podpora za Nizozemsko (NL) in Nemčijo (DE) z ustreznimi DDV stopnjami in pravili za račune.</li>
-          <li>Popravek: ob prehodu med državami se DDV stopnje in pravila takoj prilagodijo.</li>
-        </ul>
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Naročnine — 2 nova paketa (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (€3,99/mes ali €29/leto) — neomejeno računov, brez "Created with Billero" oznake, multi-language PDF, ARES/VIES auto-fill, popusti, ponavljajoči računi, auto-backup, 50 OCR scanov/mes</li>
+    <li><strong>Pro</strong> (€7,99/mes ali €59/leto) — vse iz Plus + Predračun, avto-spomniki za neplačnike, Dashboard, neomejeni OCR scani</li>
+    <li><strong>Trenutni naročniki</strong> dobijo <strong>Pro lifetime brezplačno</strong> kot kompenzacijo</li>
+    <li><strong>Vsi obstoječi userji</strong> dobijo <strong>3-mesečni Plus trial</strong> ob nadgradnji</li>
+  </ul>
 
-        <h2>1.2.0</h2>
-        <ul>
-          <li><strong>Varnostna kopija</strong> — v zavihku Moji podatki lahko izvozite vse podatke (računi, stranke, nastavitve, PDF-ji, logo, podpis) v ZIP datoteko in jih obnovite na novi napravi.</li>
-          <li><strong>Pošiljanje računov stranki</strong> — iz kartice stranke označite enega ali več računov in jih pošljite prek deljenja ali e-pošte.</li>
-          <li><strong>Deli PDF / Pošlji po e-pošti</strong> — pri pošiljanju računa izberete med share sheetom (WhatsApp, SMS …) ali e-pošto s predizpolnjenim zadevo in telesom.</li>
-          <li><strong>Pregled računa iz stranke</strong> — v seznamu računov pri stranki tapnite račun, da ga odprete in uredite.</li>
-          <li><strong>Uvoz stranke pri uvozu računa</strong> — ob uvozu tujega PDF računa stranko izberete iz seznama ali vpišete novo, ki se avtomatsko shrani.</li>
-          <li>Popravek grupacije računov pri Neznanem kupcu — vsi računi (z imenom ali brez) so pravilno združeni.</li>
-          <li>Popravek obnavljanja polja Ime/Priimek pri urejanju računa Neznanega kupca.</li>
-        </ul>
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 Varnost in stabilnost</h3>
+  <ul>
+    <li><strong>Šifriran backup</strong> — varnostne kopije so zdaj lahko AES-256 zaščitene z geslom (priporočeno ob deljenju). Brez gesla ostane backup nešifriran (kompatibilno s starimi).</li>
+    <li><strong>Opt-in API ključi v backupu</strong> — API ključi tretjih oseb (npr. Anthropic) privzeto NISO vključeni v backup (zaščita pred slučajnim leak-om). Eksplicitno checkbox-aš pri izvozu.</li>
+    <li><strong>Crash reporting</strong> — Firebase Crashlytics integriran (samo v release buildu). Napake na napravah so zdaj vidne razvijalcu.</li>
+    <li><strong>Hitrejša baza</strong> — dodanih 14 indeksov za pogoste poizvedbe (seznami računov, dashboard, audit log). Pri 1000+ računih opazno hitrejši odziv.</li>
+    <li><strong>Foreign key zaščita</strong> — DB zdaj enforce-a referenčno integriteto (ni več orphan postavk po brisanju računa).</li>
+  </ul>
 
-        <h2>1.1.0</h2>
-        <ul>
-          <li><strong>Pregled po letih</strong> — zavihek Računi zdaj prikazuje statistiko za vsako leto: skupno število računov, plačani in odprti, ter skupni zneski.</li>
-          <li><strong>Filter računov</strong> — hitro filtriraj med vsemi, plačanimi in odprtimi računi.</li>
-          <li><strong>Izvoz v CSV</strong> — izvozi letošnje račune ali ročno izbrane v Excel-združljivo CSV datoteko.</li>
-          <li><strong>Skupni znesek pri izbiri</strong> — ko označiš račune, AppBar takoj pokaže skupni znesek izbranih.</li>
-          <li><strong>Berljivejši datum storitve na PDF</strong> — datum se zdaj prikaže kot npr. "15. januar 2025" namesto "15.01.2025".</li>
-          <li>Izboljšave pri upravljanju s strankami (forma, preprečevanje podvajanja).</li>
-          <li>Mini analitika na kartici stranke (skupaj računov, plačani, odprti, zneski).</li>
-        </ul>
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Pod motorjem (za razvijalce)</h3>
+  <ul>
+    <li><strong>GitHub Actions CI</strong> — vsak commit gre skozi flutter analyze + test + Android debug build</li>
+    <li><strong>473→487 testov</strong> — dodani migration framework, backup round-trip, entitlement service testi</li>
+    <li><strong>Cloudflare Worker</strong> — server-side IAP receipt validation za zaščito pred bypass-om</li>
+    <li><strong>Migration v37 → v39</strong> — z avtomatskim cleanup-om orphan zapisov pred FK enable-om</li>
+  </ul>
 
-        <h2>1.0.x</h2>
-        <ul>
-          <li>Izboljšave pri generiranju PDF računov (UPN / rekapitulacija DDV).</li>
-          <li>Popravki shranjevanja PDF poti po nadgradnji aplikacije.</li>
-          <li>UX izboljšave obrazca za račun z več postavkami.</li>
-        </ul>
-      </div>
-    </main>
+  <hr>
 
-    <footer class="container">
-      <p>© 2026 Billero</p>
-      <div>
-        <a href="privacy-policy.html">Pravilnik o zasebnosti</a>
-        &nbsp; | &nbsp;
-        <a href="terms-of-use.html">Pogoji uporabe</a>
-        &nbsp; | &nbsp;
-        <a href="user-guide.html">Navodila</a>
-        &nbsp; | &nbsp;
-        <a href="release-notes.html">Release notes</a>
-        &nbsp; | &nbsp;
-        <a href="contact.html">Kontakt</a>
-        &nbsp; | &nbsp;
-        <a href="donate.html">Podpri nas</a>
-      </div>
-    </footer>
-  </body>
+  <h2>1.5.1 (april 2026)</h2>
+  <ul>
+    <li><strong>Razdelek Računovodja</strong> — e-mail računovodje je zdaj v svojem razdelku v Moji podatki (ni več skupaj z AI ključi). Naslov preveden v vseh 12 jezikov.</li>
+    <li><strong>Pošlji računovodji</strong> — gumb ✉↑ zdaj v eni pošti pošlje tako neposlane izdane račune kot neposlane prejete račune.</li>
+    <li><strong>Navodila za uporabo</strong> — dodan zavihek »Računovodja« z navodili v vseh 12 jezikih.</li>
+    <li><strong>OCR popravek</strong> — pri skeniranju izdanega računa (PDF) se zdaj pravilno zaznava kupec (ne dobavitelj).</li>
+    <li><strong>Varnostna kopija</strong> — backup zdaj vključuje tudi nastavitev jezika aplikacije.</li>
+    <li><strong>Obrezovanje slik</strong> — pri uvozu prejetih računov (kamera ali galerija) je zdaj na voljo obrezovanje slike pred shranjevanjem.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.5.0 (april 2026)</h2>
+  <ul>
+    <li><strong>Izbira jezika aplikacije</strong> — v Moji podatki lahko ročno izbereš jezik vmesnika (neodvisno od sistemskega).</li>
+    <li><strong>Privzeti jezik PDF računa</strong> — račun se privzeto generira v primarnem jeziku države podjetja.</li>
+    <li><strong>Boljše napake Anthropic API</strong> — ob preobremenjenosti strežnika (HTTP 529) se prikaže razumljivo sporočilo in samodejni ponovni poskus.</li>
+    <li><strong>Filter »Stornirani«</strong> — v seznamu računov dodan filter za stornirane račune.</li>
+    <li><strong>Pošlji neposlane računovodji</strong> — hitra akcija za serijski pošiljanje vseh neposlanih računov računovodji.</li>
+    <li><strong>Analitika strank</strong> — popravek: stornirani računi se pravilno izključijo iz seštevkov.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.0.x</h2>
+  <ul>
+    <li>Izboljšave pri generiranju PDF računov (UPN / rekapitulacija DDV).</li>
+    <li>Popravki shranjevanja PDF poti po nadgradnji aplikacije.</li>
+    <li>UX izboljšave obrazca za račun z več postavkami.</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. Vse pravice pridržane.</p>
+</body>
 </html>

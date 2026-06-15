@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/nl/release-notes.html">
-    <link rel="canonical" href="https://billero.app/nl/release-notes.html">
-    <title>Billero – Release notes</title>
-  </head>
-  <body>
-    <p>Redirecting to <a href="/nl/release-notes.html">Billero release notes</a>…</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Release notes – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Billero – Release notes</h1>
+  <p class="updated">Laatst bijgewerkt: juni 2026</p>
+
+  <p>Overzicht van nieuwe functies en correcties per versie.</p>
+
+  <hr>
+
+  <h2>1.6.1 (juni 2026)</h2>
+  <ul>
+    <li><strong>Betrouwbaardere abonnement-aankoop</strong> — het eindeloos draaiende laadwieltje bij aankoop en herstel opgelost (30-seconden timeout plus een extra veiligheids-watchdog en duidelijke foutmelding).</li>
+    <li><strong>Back-ups met ontvangen facturen</strong> — de back-up bevat nu ook de bestanden van ontvangen facturen (oplossing voor iOS na de upgrade).</li>
+    <li><strong>Gelokaliseerde paywall</strong> — paywall (Maandelijks / Jaarlijks / POPULAIR / pakketbeschrijvingen) nu vertaald naar alle interface-talen (13 talen).</li>
+    <li><strong>Release notes in uw taal</strong> — de knop "Release notes" opent nu notities in de app-taal.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.0 (mei 2026)</h2>
+  <p class="updated"><em>Grote release met freemium-model en stabiliteitsverbeteringen.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Abonnementen — 2 nieuwe pakketten (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (€3,99/mnd of €29/jr) — onbeperkt facturen, geen "Created with Billero"-label, meertalige PDF, ARES/VIES auto-fill, kortingen, terugkerende facturen, auto-back-up, 50 OCR-scans/mnd</li>
+    <li><strong>Pro</strong> (€7,99/mnd of €59/jr) — alles uit Plus + Offerte, herinneringen, Dashboard, onbeperkt OCR</li>
+    <li><strong>Bestaande abonnees</strong> krijgen <strong>Pro lifetime gratis</strong> als compensatie</li>
+    <li><strong>Alle bestaande gebruikers</strong> krijgen <strong>3-maanden Plus-proef</strong> bij upgrade</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 Beveiliging en stabiliteit</h3>
+  <ul>
+    <li><strong>Versleutelde back-up</strong> — back-ups kunnen nu met AES-256-wachtwoord beveiligd worden.</li>
+    <li><strong>Opt-in API-sleutels in back-up</strong> — API-sleutels van derden (bijv. Anthropic) zijn standaard NIET opgenomen.</li>
+    <li><strong>Crash-rapportage</strong> — Firebase Crashlytics geïntegreerd (alleen release-builds).</li>
+    <li><strong>Snellere database</strong> — 14 nieuwe indexen voor veelgebruikte queries.</li>
+    <li><strong>Foreign key bescherming</strong> — DB handhaaft nu referentiële integriteit.</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. Alle rechten voorbehouden.</p>
+</body>
 </html>

@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/pl/release-notes.html">
-    <link rel="canonical" href="https://billero.app/pl/release-notes.html">
-    <title>Billero – Release notes</title>
-  </head>
-  <body>
-    <p>Redirecting to <a href="/pl/release-notes.html">Billero release notes</a>…</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informacje o wersji – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Billero – Informacje o wersji</h1>
+  <p class="updated">Ostatnia aktualizacja: czerwiec 2026</p>
+
+  <p>Podsumowanie nowości i poprawek według wersji.</p>
+
+  <hr>
+
+  <h2>1.6.1 (czerwiec 2026)</h2>
+  <ul>
+    <li><strong>Bardziej niezawodny zakup subskrypcji</strong> — naprawiono nieskończone ładowanie podczas zakupu i przywracania (30-sekundowy timeout oraz dodatkowy watchdog bezpieczeństwa i jasny komunikat błędu).</li>
+    <li><strong>Kopie zapasowe z otrzymanymi fakturami</strong> — kopia zawiera teraz także pliki otrzymanych faktur (poprawka dla iOS po aktualizacji).</li>
+    <li><strong>Zlokalizowany paywall</strong> — paywall (Miesięcznie / Rocznie / POPULARNE / opisy planów) przetłumaczony na wszystkie języki interfejsu (13 języków).</li>
+    <li><strong>Informacje o wersji w Twoim języku</strong> — przycisk "Informacje o wersji" otwiera teraz notatki w języku aplikacji.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.0 (maj 2026)</h2>
+  <p class="updated"><em>Duże wydanie z modelem freemium i ulepszeniami stabilności.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Subskrypcje — 2 nowe plany (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (€3,99/mies. lub €29/rok) — nieograniczone faktury, bez oznaczenia "Created with Billero", PDF wielojęzyczne, ARES/VIES auto-fill, rabaty, faktury cykliczne, auto-kopia, 50 skanów OCR/mies.</li>
+    <li><strong>Pro</strong> (€7,99/mies. lub €59/rok) — wszystko z Plus + Oferta, przypomnienia, Dashboard, nieograniczone OCR</li>
+    <li><strong>Obecni subskrybenci</strong> otrzymują <strong>Pro lifetime za darmo</strong> jako rekompensatę</li>
+    <li><strong>Wszyscy obecni użytkownicy</strong> otrzymują <strong>3-miesięczny okres próbny Plus</strong> przy aktualizacji</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 Bezpieczeństwo i stabilność</h3>
+  <ul>
+    <li><strong>Szyfrowana kopia zapasowa</strong> — kopie mogą być chronione hasłem AES-256.</li>
+    <li><strong>Opt-in klucze API w kopii</strong> — klucze API stron trzecich (np. Anthropic) NIE są domyślnie w kopii.</li>
+    <li><strong>Raportowanie awarii</strong> — Firebase Crashlytics zintegrowany (tylko release).</li>
+    <li><strong>Szybsza baza danych</strong> — 14 nowych indeksów dla częstych zapytań.</li>
+    <li><strong>Ochrona Foreign key</strong> — DB wymusza teraz integralność referencyjną.</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. Wszelkie prawa zastrzeżone.</p>
+</body>
 </html>

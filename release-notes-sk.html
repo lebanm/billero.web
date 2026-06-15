@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="sk">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/sk/release-notes.html">
-    <link rel="canonical" href="https://billero.app/sk/release-notes.html">
-    <title>Billero – Release notes</title>
-  </head>
-  <body>
-    <p>Redirecting to <a href="/sk/release-notes.html">Billero release notes</a>…</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poznámky k verzii – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Billero – Poznámky k verzii</h1>
+  <p class="updated">Posledná aktualizácia: jún 2026</p>
+
+  <p>Súhrn noviniek a opráv podľa verzií.</p>
+
+  <hr>
+
+  <h2>1.6.1 (jún 2026)</h2>
+  <ul>
+    <li><strong>Spoľahlivejší nákup predplatného</strong> — opravené nekonečné načítavanie pri nákupe a obnovení (30-sekundový timeout plus pridaný bezpečnostný watchdog a jasná chybová správa).</li>
+    <li><strong>Zálohy s prijatými faktúrami</strong> — záloha teraz obsahuje aj súbory prijatých faktúr (oprava pre iOS po aktualizácii).</li>
+    <li><strong>Lokalizovaný paywall</strong> — paywall (Mesačne / Ročne / OBĽÚBENÉ / popisy balíkov) teraz preložený do všetkých jazykov rozhrania (13 jazykov).</li>
+    <li><strong>Poznámky k verzii vo vašom jazyku</strong> — tlačidlo "Poznámky k verzii" teraz otvorí poznámky v jazyku aplikácie.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.0 (máj 2026)</h2>
+  <p class="updated"><em>Veľké vydanie s freemium modelom a vylepšeniami stability.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Predplatné — 2 nové balíky (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (€3,99/mes alebo €29/rok) — neobmedzené faktúry, bez označenia "Created with Billero", viacjazyčné PDF, ARES/VIES auto-fill, zľavy, opakujúce sa faktúry, auto-záloha, 50 OCR skenov/mes</li>
+    <li><strong>Pro</strong> (€7,99/mes alebo €59/rok) — všetko z Plus + Cenová ponuka, pripomienky, Dashboard, neobmedzené OCR</li>
+    <li><strong>Existujúci predplatitelia</strong> dostanú <strong>Pro lifetime zadarmo</strong> ako kompenzáciu</li>
+    <li><strong>Všetci existujúci používatelia</strong> dostanú <strong>3-mesačnú skúšobnú verziu Plus</strong> pri upgrade</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 Bezpečnosť a stabilita</h3>
+  <ul>
+    <li><strong>Šifrovaná záloha</strong> — zálohy môžu byť chránené heslom AES-256.</li>
+    <li><strong>Opt-in API kľúče v zálohe</strong> — API kľúče tretích strán (napr. Anthropic) NIE SÚ v zálohe predvolene.</li>
+    <li><strong>Hlásenie pádov</strong> — Firebase Crashlytics integrovaný (iba release buildy).</li>
+    <li><strong>Rýchlejšia databáza</strong> — 14 nových indexov pre časté dopyty.</li>
+    <li><strong>Foreign key ochrana</strong> — DB teraz vynucuje referenčnú integritu.</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. Všetky práva vyhradené.</p>
+</body>
 </html>

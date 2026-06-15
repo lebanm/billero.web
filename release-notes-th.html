@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="th">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/th/release-notes.html">
-    <link rel="canonical" href="https://billero.app/th/release-notes.html">
-    <title>Billero – Release notes</title>
-  </head>
-  <body>
-    <p>Redirecting to <a href="/th/release-notes.html">Billero release notes</a>…</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บันทึกการอัปเดต – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Billero – บันทึกการอัปเดต</h1>
+  <p class="updated">อัปเดตล่าสุด: มิถุนายน 2026</p>
+
+  <p>สรุปฟีเจอร์ใหม่และการแก้ไขแยกตามเวอร์ชัน</p>
+
+  <hr>
+
+  <h2>1.6.1 (มิถุนายน 2026)</h2>
+  <ul>
+    <li><strong>การซื้อแพ็กเกจสมาชิกที่เชื่อถือได้มากขึ้น</strong> — แก้ไขการโหลดที่ค้างไม่หยุดขณะซื้อและกู้คืน (เพิ่ม timeout 30 วินาที พร้อม watchdog เพื่อความปลอดภัย และข้อความข้อผิดพลาดที่ชัดเจน)</li>
+    <li><strong>การสำรองข้อมูลรวมใบแจ้งหนี้ที่ได้รับ</strong> — การสำรองข้อมูลจะรวมไฟล์ใบแจ้งหนี้ที่ได้รับด้วย (แก้ไขสำหรับ iOS หลังอัปเกรด)</li>
+    <li><strong>Paywall ที่แปลภาษาแล้ว</strong> — Paywall (รายเดือน / รายปี / ยอดนิยม / รายละเอียดแพ็กเกจ) แปลเป็นทุกภาษาของอินเตอร์เฟซ (13 ภาษา)</li>
+    <li><strong>บันทึกการอัปเดตในภาษาของคุณ</strong> — ปุ่ม "บันทึกการอัปเดต" จะเปิดบันทึกในภาษาของแอป</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.0 (พฤษภาคม 2026)</h2>
+  <p class="updated"><em>รุ่นใหญ่พร้อมโมเดล freemium และการปรับปรุงความเสถียร</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 แพ็กเกจสมาชิก — 2 แพ็กเกจใหม่ (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (€3.99/เดือน หรือ €29/ปี) — ใบแจ้งหนี้ไม่จำกัด ไม่มีป้าย "Created with Billero" PDF หลายภาษา ARES/VIES auto-fill ส่วนลด ใบแจ้งหนี้ซ้ำ สำรองอัตโนมัติ OCR 50 ครั้ง/เดือน</li>
+    <li><strong>Pro</strong> (€7.99/เดือน หรือ €59/ปี) — ทุกอย่างจาก Plus + ใบเสนอราคา เตือนความจำ Dashboard OCR ไม่จำกัด</li>
+    <li><strong>สมาชิกปัจจุบัน</strong>ได้รับ <strong>Pro lifetime ฟรี</strong>เป็นค่าชดเชย</li>
+    <li><strong>ผู้ใช้ปัจจุบันทุกคน</strong>ได้รับ <strong>ทดลอง Plus 3 เดือน</strong>เมื่ออัปเกรด</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 ความปลอดภัยและความเสถียร</h3>
+  <ul>
+    <li><strong>สำรองข้อมูลแบบเข้ารหัส</strong> — สำรองข้อมูลสามารถป้องกันด้วยรหัสผ่าน AES-256</li>
+    <li><strong>คีย์ API แบบ opt-in ในสำรอง</strong> — คีย์ API ของผู้ให้บริการภายนอก (เช่น Anthropic) ไม่อยู่ในสำรองโดยค่าเริ่มต้น</li>
+    <li><strong>รายงานข้อขัดข้อง</strong> — รวม Firebase Crashlytics (เฉพาะ release)</li>
+    <li><strong>ฐานข้อมูลเร็วขึ้น</strong> — 14 ดัชนีใหม่สำหรับการสอบถามทั่วไป</li>
+    <li><strong>การป้องกัน Foreign key</strong> — DB บังคับใช้ความสมบูรณ์ของการอ้างอิง</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. สงวนลิขสิทธิ์</p>
+</body>
 </html>

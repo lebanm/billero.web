@@ -29,9 +29,11 @@ echo  %FTP_HOST%:%FTP_PORT%
 echo ===================================
 echo.
 
+:: -filemask izkljucuje obcutljive / interne datoteke iz uploada.
+:: POZOR: ze nalozene datoteke na serverju to NE pobrise — odstrani jih rocno.
 %WINSCP% /command ^
     "open ftp://%FTP_USER%:%FTP_PASS%@%FTP_HOST%:%FTP_PORT%/" ^
-    "synchronize remote . %REMOTE_PATH% -delete -criteria=size" ^
+    "synchronize remote . %REMOTE_PATH% -delete -criteria=size -filemask=""| .env; .git/; .gitignore; .claude/; .cursorrules; *.bat; dillero-concept.html; ai/; .idea/; .vscode/""" ^
     "exit"
 
 if %errorlevel% neq 0 (

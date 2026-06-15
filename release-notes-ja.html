@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/ja/release-notes.html">
-    <link rel="canonical" href="https://billero.app/ja/release-notes.html">
-    <title>Billero – Release notes</title>
-  </head>
-  <body>
-    <p>Redirecting to <a href="/ja/release-notes.html">Billero release notes</a>…</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リリースノート – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Billero – リリースノート</h1>
+  <p class="updated">最終更新: 2026年6月</p>
+
+  <p>バージョンごとの新機能と修正の概要。</p>
+
+  <hr>
+
+  <h2>1.6.1 (2026年6月)</h2>
+  <ul>
+    <li><strong>より確実なサブスクリプション購入</strong> — 購入および復元時にローディングが止まらない問題を修正（30秒のタイムアウトに加え、安全のためのウォッチドッグと明確なエラーメッセージを追加）。</li>
+    <li><strong>受領請求書を含むバックアップ</strong> — バックアップに受領請求書のファイルも含まれるようになりました（アップグレード後のiOS向けの修正）。</li>
+    <li><strong>ローカライズされたペイウォール</strong> — ペイウォール（月額 / 年額 / 人気 / プラン説明）がすべてのインターフェース言語（13言語）に翻訳されました。</li>
+    <li><strong>あなたの言語でリリースノート</strong> — 「リリースノート」ボタンがアプリの言語でノートを開きます。</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.0 (2026年5月)</h2>
+  <p class="updated"><em>フリーミアムモデルと安定性改善を含む大型リリース。</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 サブスクリプション — 2つの新プラン (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (月€3.99または年€29) — 請求書無制限、「Created with Billero」表示なし、多言語PDF、ARES/VIES自動入力、割引、定期請求書、自動バックアップ、月50回OCRスキャン</li>
+    <li><strong>Pro</strong> (月€7.99または年€59) — Plusの全機能 + 見積書、リマインダー、ダッシュボード、OCRスキャン無制限</li>
+    <li><strong>既存サブスクライバー</strong>は補償として<strong>Pro lifetime無料</strong>を受け取ります</li>
+    <li><strong>全既存ユーザー</strong>はアップグレード時に<strong>Plus 3ヶ月トライアル</strong>を受け取ります</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 セキュリティと安定性</h3>
+  <ul>
+    <li><strong>暗号化バックアップ</strong> — バックアップはAES-256パスワードで保護可能。</li>
+    <li><strong>バックアップのAPIキー オプトイン</strong> — サードパーティAPIキー（Anthropicなど）はデフォルトでバックアップに含まれません。</li>
+    <li><strong>クラッシュレポート</strong> — Firebase Crashlytics統合（リリースビルドのみ）。</li>
+    <li><strong>高速化されたデータベース</strong> — 一般的なクエリ向けに14個の新規インデックス。</li>
+    <li><strong>外部キー保護</strong> — DBが参照整合性を強制するようになりました。</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. All rights reserved.</p>
+</body>
 </html>

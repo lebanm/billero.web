@@ -20,12 +20,6 @@
   </url>
 
   <url>
-    <loc>https://billero.app/cs/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://billero.app/cs/terms-of-use.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -47,12 +41,6 @@
     <loc>https://billero.app/de/privacy-policy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/de/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <url>
@@ -104,12 +92,6 @@
   </url>
 
   <url>
-    <loc>https://billero.app/en/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://billero.app/en/terms-of-use.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -134,12 +116,6 @@
   </url>
 
   <url>
-    <loc>https://billero.app/es/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://billero.app/es/terms-of-use.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -161,12 +137,6 @@
     <loc>https://billero.app/hr/privacy-policy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/hr/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <url>
@@ -197,12 +167,6 @@
     <loc>https://billero.app/ja/privacy-policy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/ja/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <url>
@@ -254,12 +218,6 @@
   </url>
 
   <url>
-    <loc>https://billero.app/nl/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://billero.app/nl/terms-of-use.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -281,12 +239,6 @@
     <loc>https://billero.app/pl/privacy-policy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/pl/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <url>
@@ -320,12 +272,6 @@
   </url>
 
   <url>
-    <loc>https://billero.app/pt/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://billero.app/pt/terms-of-use.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -335,6 +281,72 @@
     <loc>https://billero.app/pt/user-guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-cs.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-de.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-en.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-es.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-hr.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-ja.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-nl.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-pl.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-pt.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-sk.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://billero.app/release-notes-th.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
@@ -353,12 +365,6 @@
     <loc>https://billero.app/sk/privacy-policy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/sk/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <url>
@@ -407,12 +413,6 @@
     <loc>https://billero.app/th/privacy-policy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/th/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <url>

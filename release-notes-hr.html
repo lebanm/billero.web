@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="hr">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/hr/release-notes.html">
-    <link rel="canonical" href="https://billero.app/hr/release-notes.html">
-    <title>Billero – Release notes</title>
-  </head>
-  <body>
-    <p>Redirecting to <a href="/hr/release-notes.html">Billero release notes</a>…</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilješke o izdanju – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Billero – Bilješke o izdanju</h1>
+  <p class="updated">Posljednje ažuriranje: lipanj 2026.</p>
+
+  <p>Sažetak novosti i ispravaka po verzijama.</p>
+
+  <hr>
+
+  <h2>1.6.1 (lipanj 2026.)</h2>
+  <ul>
+    <li><strong>Pouzdanija kupovina pretplate</strong> — uklonjeno beskonačno učitavanje pri kupovini i obnovi (30-sekundni timeout plus dodatni sigurnosni watchdog i jasna poruka greške).</li>
+    <li><strong>Sigurnosne kopije s primljenim računima</strong> — backup sada uključuje i datoteke primljenih računa (ispravak za iOS nakon nadogradnje).</li>
+    <li><strong>Lokalizirani paywall</strong> — paywall (Mjesečno / Godišnje / POPULARNO / opisi paketa) sada preveden na sve jezike sučelja (13 jezika).</li>
+    <li><strong>Bilješke o izdanju na vašem jeziku</strong> — gumb "Bilješke o izdanju" sada otvara bilješke na jeziku aplikacije.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.0 (svibanj 2026.)</h2>
+  <p class="updated"><em>Veliko izdanje s freemium modelom i poboljšanjima stabilnosti.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Pretplate — 2 nova paketa (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (€3,99/mj. ili €29/god.) — neograničeno računa, bez oznake "Created with Billero", višejezični PDF, ARES/VIES auto-fill, popusti, ponavljajući računi, auto-backup, 50 OCR skeniranja/mjesec</li>
+    <li><strong>Pro</strong> (€7,99/mj. ili €59/god.) — sve iz Plus + Predračun, podsjetnici, Dashboard, neograničena OCR skeniranja</li>
+    <li><strong>Postojeći pretplatnici</strong> dobivaju <strong>Pro lifetime besplatno</strong> kao kompenzaciju</li>
+    <li><strong>Svi postojeći korisnici</strong> dobivaju <strong>3-mjesečni Plus probni period</strong> pri nadogradnji</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 Sigurnost i stabilnost</h3>
+  <ul>
+    <li><strong>Šifrirani backup</strong> — sigurnosne kopije sada mogu biti AES-256 zaštićene lozinkom.</li>
+    <li><strong>Opt-in API ključevi u backupu</strong> — API ključevi trećih strana (npr. Anthropic) NISU uključeni u backup po defaultu.</li>
+    <li><strong>Crash reporting</strong> — Firebase Crashlytics integriran (samo u release buildu).</li>
+    <li><strong>Brža baza</strong> — 14 novih indeksa za česte upite.</li>
+    <li><strong>Foreign key zaštita</strong> — DB sada osigurava referencijalni integritet.</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. Sva prava pridržana.</p>
+</body>
 </html>
