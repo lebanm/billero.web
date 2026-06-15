@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法的情報 – Billero</title>
+    <meta name="description" content="Billeroユーザー向けの国別の請求書および税率に関する法的情報。">
+    <link rel="canonical" href="https://billero.app/ja/legal-info.html">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="../en/index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="../en/index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="../en/index.html">ホーム</a>
+        <a href="user-guide.html">ユーザーガイド</a>
+        <a href="legal-info.html" class="active">法的情報</a>
+        <a href="release-notes.html">リリースノート</a>
+        <a href="../en/contact.html">お問い合わせ</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../legal-info.html">SL</a>
+        <span>|</span>
+        <a href="../en/legal-info.html">EN</a>
+        <span>|</span>
+        <a href="../de/legal-info.html">DE</a>
+        <span>|</span>
+        <a href="../hr/legal-info.html">HR</a>
+        <span>|</span>
+        <a href="../sk/legal-info.html">SK</a>
+        <span>|</span>
+        <a href="../cs/legal-info.html">CS</a>
+        <span>|</span>
+        <a href="../pl/legal-info.html">PL</a>
+        <span>|</span>
+        <a href="../nl/legal-info.html">NL</a>
+        <span>|</span>
+        <a href="../th/legal-info.html">TH</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>国別の法的情報</h1>
+        <p class="lead">31か国における請求書関連の法令、税務当局、VAT税率、および請求書の必須記載事項の概要。参考情報のみです — 必ず現地の税務当局にご確認ください。</p>
+
+        <div id="world-map" style="height:340px;margin-bottom:28px;border-radius:10px;overflow:hidden;"></div>
+
+        <div class="li-search-wrap">
+          <input class="li-search" type="search" id="searchInput" placeholder="国を検索 …" oninput="filterCards()">
+        </div>
+
+        <div class="li-grid" id="countryGrid"></div>
+        <p class="li-none" id="noResults" style="display:none">結果がありません。</p>
+
+        <p class="li-disclaimer">
+          <strong>免責事項:</strong> この情報は参考のためのものであり、最新の法令改正を反映していない場合があります。請求書を発行する前に、必ず現地の税務当局または有資格の会計士にご確認ください。VAT税率と閾値は定期的に変更されます。
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Billero · <a href="privacy-policy.html">プライバシー</a> · <a href="terms-of-use.html">利用規約</a></p>
+    </footer>
+
+    <script src="../js/legal-info-data.js"></script>
+    <script>
+      const L = {
+        taxAuthority: '税務当局',
+        law: '法令',
+        currency: '通貨',
+        vat: 'VAT税率',
+        threshold: 'VAT登録閾値',
+        retention: '記録の保存期間',
+        years: '年',
+        notes: '備考',
+        lastVerified: '最終確認日',
+        mandatoryItems: '必須記載事項',
+        showItems: '▸ 請求書の必須記載事項を表示',
+        hideItems: '▾ 請求書の必須記載事項を非表示',
+        miDateOfIssue: '発行日',
+        miInvoiceNumber: '連番の請求書番号',
+        miSellerInfo: '売主の名称、住所、VAT番号',
+        miBuyerInfo: '買主の名称および住所',
+        miBuyerVatId: '買主のVAT番号',
+        miDescription: '商品またはサービスの説明',
+        miDateOfSupply: '供給日',
+        miNetAmount: '正味金額（課税標準）',
+        miVatRate: 'VAT税率',
+        miVatAmount: 'VAT額',
+        miTotalAmount: '合計金額（総額）',
+        miUsSellerInfo: '売主の名称、住所、EIN',
+        miAmountDue: '支払金額',
+        miPaymentTerms: '支払い条件',
+        miSalesTaxIfApplicable: '売上税（該当する場合）',
+        miAuTaxInvoiceWords: '「Tax Invoice」の文言',
+        miAuSellerAbn: '売主のABN',
+        miAuGstAmount: 'GST額',
+        miAuBuyerAbn: '買主のABN（AUD 1,000以上の取引の場合）',
+        miCaSellerBn: '売主の事業番号（BN）',
+        miCaGstHstAmount: 'GST/HST額',
+        miCaGstHstNumber: 'GST/HST登録番号',
+      };
+    </script>
+    <script src="../js/legal-info.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+    <script>
+      new jsVectorMap({
+        selector: '#world-map',
+        map: 'world',
+        backgroundColor: '#0b1120',
+        series: {
+          regions: [{
+            attribute: 'fill',
+            values: {
+              MX:'#eab308',CL:'#eab308',CO:'#eab308',PE:'#eab308',
+              ID:'#eab308',PH:'#eab308',VN:'#eab308',IL:'#eab308',
+              AE:'#eab308',NZ:'#eab308',ZA:'#eab308',KE:'#eab308',
+              GH:'#eab308',
+              IN:'#a855f7'
+            }
+          }]
+        },
+        regionStyle: {
+          initial:{fill:'#1e293b',stroke:'#0f172a',strokeWidth:0.3},
+          hover:{fillOpacity:0.75}
+        },
+        zoomOnScroll: false,
+      });
+    </script>
+  </body>
+</html>

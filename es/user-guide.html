@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de usuario – Billero</title>
+    <meta name="description" content="Guía de usuario de Billero: cómo crear una factura, código QR UPN, escanear facturas y hacer copias de seguridad de tus datos.">
+    <link rel="canonical" href="https://billero.app/es/user-guide.html">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="../en/index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="../en/index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="../en/index.html">Inicio</a>
+        <a href="user-guide.html" class="active">Guía de usuario</a>
+        <a href="release-notes.html">Notas de versión</a>
+        <a href="../en/contact.html">Contacto</a>
+        <a href="privacy-policy.html">Privacidad</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../user-guide.html">SL</a>
+        <span>|</span>
+        <a href="../en/user-guide.html">EN</a>
+        <span>|</span>
+        <a href="../de/user-guide.html">DE</a>
+        <span>|</span>
+        <a href="../hr/user-guide.html">HR</a>
+        <span>|</span>
+        <a href="../sk/user-guide.html">SK</a>
+        <span>|</span>
+        <a href="../cs/user-guide.html">CS</a>
+        <span>|</span>
+        <a href="../pl/user-guide.html">PL</a>
+        <span>|</span>
+        <a href="../nl/user-guide.html">NL</a>
+        <span>|</span>
+        <a href="../th/user-guide.html">TH</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Guía de usuario</h1>
+        <p class="lead">Una breve guía para usar Billero.</p>
+
+        <h2>Inicio rápido</h2>
+        <ul>
+          <li>Rellena <strong>Mis datos</strong> (IBAN, dirección, número fiscal …).</li>
+          <li>Añade <strong>clientes</strong> (empresas o particulares).</li>
+          <li>Crea una <strong>nueva factura</strong> (simple o con varios artículos).</li>
+          <li>Puedes compartir o guardar el PDF. Al editar una factura se regenera el PDF.</li>
+        </ul>
+
+        <h2>Factura con varios artículos</h2>
+        <ul>
+          <li>Cada artículo tiene una descripción, cantidad, unidad, precio y tipo de IVA.</li>
+          <li>En pantallas más pequeñas, los campos se reorganizan automáticamente en dos filas para mejorar la legibilidad.</li>
+        </ul>
+
+        <h2>Enviar facturas a un cliente</h2>
+        <p>Desde la ficha de detalle de un cliente puedes seleccionar y enviar rápidamente varias facturas a la vez.</p>
+        <ul>
+          <li>Abre la pestaña <strong>Clientes</strong> y toca un cliente.</li>
+          <li><strong>Mantén pulsada</strong> una factura → entra en modo de selección.</li>
+          <li>Toca facturas adicionales para seleccionarlas o deseleccionarlas.</li>
+          <li>En la barra de título toca <strong>↗</strong> para compartir los PDF seleccionados.</li>
+          <li>Para salir del modo de selección toca <strong>✕</strong> en la barra de título.</li>
+        </ul>
+        <p>Funciona igual para empresas y particulares (incluido el cliente Desconocido).</p>
+
+        <h2>Facturas recibidas con OCR por IA</h2>
+        <p>Billero puede leer automáticamente el proveedor, el número, la fecha y el importe de una factura en PDF usando IA (Anthropic Claude). La función es <strong>opcional</strong> y requiere tu propia clave de API.</p>
+
+        <h3>Obtener una clave de API</h3>
+        <ol>
+          <li>Ve a <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> y crea una cuenta gratuita.</li>
+          <li>En el menú selecciona <strong>API Keys</strong> → <strong>Create Key</strong>.</li>
+          <li>Asigna un nombre a la clave (p. ej. <em>Billero</em>) y cópiala. La clave empieza por <code>sk-ant-</code>.</li>
+          <li>Debes añadir un método de pago en la consola de Anthropic. Leer una factura cuesta menos de <strong>0,001 €</strong> (modelo Claude Haiku).</li>
+        </ol>
+
+        <h3>Configuración en la aplicación</h3>
+        <ol>
+          <li>Abre <strong>Mis datos</strong> (pestaña ⚙) → sección <em>Clave de API de Anthropic (OCR)</em>.</li>
+          <li>Pega la clave en el campo y toca <strong>Guardar</strong>.</li>
+          <li>La clave se almacena en el área segura de tu dispositivo (Android Keystore); nunca se escribe en archivos de la aplicación.</li>
+        </ol>
+
+        <h3>Uso</h3>
+        <ol>
+          <li>En la pestaña <strong>Facturas</strong> toca el icono ↑ (importar PDF) y selecciona el PDF de una factura recibida.</li>
+          <li>Se abre un formulario. Toca el botón <strong>✨ Analizar con IA</strong>.</li>
+          <li>Espera un momento: los campos de proveedor, número, fecha e importe se rellenan automáticamente.</li>
+          <li>Revísalos y corrígelos si es necesario, luego toca <strong>Guardar</strong>.</li>
+        </ol>
+
+        <p><strong>Sin una clave de API</strong> el formulario funciona como antes: rellena todos los campos manualmente. El botón de IA no aparecerá.</p>
+
+        <h2>Copia de seguridad y restauración</h2>
+        <p>Todos tus datos (facturas, clientes, ajustes y PDF) pueden exportarse y restaurarse desde la pestaña <strong>Mis datos</strong> → sección <em>Copia de seguridad</em>.</p>
+        <h3>Exportar</h3>
+        <ul>
+          <li>Toca <strong>Exportar copia de seguridad</strong>.</li>
+          <li>La aplicación crea un archivo ZIP (<code>billero_backup_YYYY-MM-DD.zip</code>) y abre la hoja de compartir.</li>
+          <li>Guarda el archivo en iCloud, Google Drive, correo electrónico o donde prefieras.</li>
+        </ul>
+        <h3>Restaurar (p. ej. tras cambiar de teléfono)</h3>
+        <ul>
+          <li>Instala Billero en el nuevo teléfono.</li>
+          <li>Abre <strong>Mis datos</strong> → <strong>Restaurar desde copia de seguridad</strong>.</li>
+          <li>Confirma la advertencia (los datos existentes serán reemplazados).</li>
+          <li>Selecciona el archivo ZIP de tu ubicación de almacenamiento.</li>
+          <li>Se restauran todas las facturas, clientes, ajustes, PDF, logotipo y firma digital.</li>
+        </ul>
+        <p><strong>Advertencia:</strong> la restauración reemplaza todos los datos existentes. Recomendamos exportar una copia de seguridad de tus datos actuales antes de restaurar.</p>
+
+        <h2>Facturas recurrentes</h2>
+        <p>Billero genera automáticamente facturas periódicas (semanales, mensuales o trimestrales) cada vez que se inicia la aplicación.</p>
+        <ol>
+          <li>En la pestaña <strong>Facturas</strong> toca el icono ↻ (arriba a la derecha) → <strong>Facturas recurrentes</strong>.</li>
+          <li>Toca <strong>+</strong> y rellena: nombre de la plantilla, cliente, descripción del servicio, importe (sin IVA), tipo de IVA.</li>
+          <li>Elige la frecuencia: <strong>semanal, mensual</strong> o <strong>trimestral</strong>.</li>
+          <li>Para mensual/trimestral elige el día del mes (1–28).</li>
+          <li>En el siguiente inicio de la aplicación en o después de la fecha programada, la factura se crea automáticamente con su PDF.</li>
+        </ol>
+        <p>Las plantillas pueden desactivarse con el interruptor o editarse en cualquier momento. Las facturas generadas aparecen en la lista principal de facturas.</p>
+
+        <h2>Pagos cripto</h2>
+        <p>Billero admite dos tipos de pagos cripto: <strong>códigos QR estáticos</strong> en la factura en PDF y un <strong>enlace de pago de Coingate</strong> para aceptar más de 70 criptomonedas.</p>
+
+        <h3>Códigos QR en la factura en PDF — criptomonedas admitidas</h3>
+        <p>Configura la dirección o direcciones de tu monedero en <strong>Mis datos → Pago cripto</strong>. El código QR se añade automáticamente a la página 2 de cada factura en PDF.</p>
+        <ul>
+          <li><strong>EURC</strong> — stablecoin en euros de Circle en Ethereum, Base o Solana. Cotización: 1 EURC = 1 EUR.</li>
+          <li><strong>USDC</strong> — stablecoin en dólares de Circle en Ethereum, Base, Polygon o Solana. Cotización: obtenida del BCE mediante la API de Frankfurter en el momento de generar el PDF.</li>
+          <li><strong>BTC</strong> — Bitcoin, formato QR BIP-21. Cotización: obtenida de CoinGecko en el momento de generar el PDF.</li>
+          <li><strong>ETH</strong> — Ethereum (nativo), formato QR EIP-681. Cotización: CoinGecko.</li>
+          <li><strong>SOL</strong> — Solana (nativo), formato Solana Pay. Cotización: CoinGecko.</li>
+          <li><strong>Token personalizado</strong> — introduce el nombre del token y la dirección del monedero; el QR codifica la dirección (importe por acuerdo).</li>
+        </ul>
+        <p>La cotización y la marca de tiempo de obtención se imprimen bajo cada código QR. <strong>Sin conexión a internet el código QR no se muestra</strong> (la cotización debe estar actualizada).</p>
+        <p>En <strong>Mis datos → Mostrar en la factura</strong> puedes activar o desactivar de forma independiente el QR UPN y el QR cripto. El UPN permanece en la página 1, el QR cripto está en la página 2.</p>
+
+        <h3>Enlace de pago de Coingate (BTC, ETH, SOL y más de 70 monedas)</h3>
+        <ol>
+          <li>Crea una cuenta en <a href="https://coingate.com" target="_blank" rel="noopener">coingate.com</a> y obtén una clave de API.</li>
+          <li>En <strong>Mis datos → Coingate</strong>, introduce tu clave de API. Activa el <em>modo Sandbox</em> para pruebas.</li>
+          <li>En la pestaña <strong>Facturas</strong>, toca el <strong>icono ₿</strong> junto a la factura.</li>
+          <li>La aplicación crea un enlace de pago: aparecen un código QR y un botón <em>Abrir en el navegador</em>.</li>
+          <li>Comparte el enlace con tu cliente. Paga con cualquier criptomoneda que elija.</li>
+          <li>Recibes EUR en tu cuenta bancaria a través de SEPA (Coingate se encarga de la conversión).</li>
+          <li>Comprueba el estado del pago con el botón <strong>Comprobar estado</strong> de la aplicación.</li>
+        </ol>
+        <p><strong>Coingate está regulado en la UE</strong> (licencia EMI, Lituania) y admite pagos SEPA.</p>
+
+        <h2>Tailandia — PDF bilingüe (tailandés + inglés)</h2>
+        <p>Cuando tu perfil está configurado como <strong>Tailandia (TH)</strong>, Billero genera automáticamente una <strong>factura en PDF bilingüe</strong>: cada etiqueta se imprime en escritura tailandesa (arriba) e inglés (abajo) una junto a la otra en la misma página.</p>
+        <ul>
+          <li>La fuente tailandesa (Noto Sans Thai) viene incluida con la aplicación; no se necesita instalación.</li>
+          <li>Funciona para clientes locales tailandeses y para clientes internacionales que no leen tailandés.</li>
+          <li>Tipo de IVA: 7 % (Código de Rentas, sección 77). Umbral de registro: 1 800 000 THB/año.</li>
+        </ul>
+
+        <h2>Singapur — factura con GST</h2>
+        <p>Cuando tu perfil está configurado como <strong>Singapur (SG)</strong>, Billero aplica automáticamente las normas del GST:</p>
+        <ul>
+          <li>Tipo de GST: 9 % (GST Act, capítulo 117A).</li>
+          <li>Umbral de registro: 1 000 000 SGD/año; por debajo del umbral se imprime una cláusula de exención.</li>
+          <li>Moneda: SGD ($). Condiciones de pago: 30 días.</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Política de privacidad</a>
+        &nbsp; | &nbsp;
+        <a href="terms-of-use.html">Condiciones de uso</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">Guía de usuario</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Notas de versión</a>
+        &nbsp; | &nbsp;
+        <a href="../en/contact.html">Contacto</a>
+        &nbsp; | &nbsp;
+        <a href="../en/donate.html">Apóyanos</a>
+      </div>
+    </footer>
+  </body>
+</html>

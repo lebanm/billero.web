@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザーガイド – Billero</title>
+    <meta name="description" content="Billeroユーザーガイド – 請求書の作成方法、UPN QRコード、請求書のスキャン、データのバックアップについて。">
+    <link rel="canonical" href="https://billero.app/ja/user-guide.html">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="../en/index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="../en/index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="../en/index.html">ホーム</a>
+        <a href="user-guide.html" class="active">ユーザーガイド</a>
+        <a href="release-notes.html">リリースノート</a>
+        <a href="../en/contact.html">お問い合わせ</a>
+        <a href="privacy-policy.html">プライバシー</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../user-guide.html">SL</a>
+        <span>|</span>
+        <a href="../en/user-guide.html">EN</a>
+        <span>|</span>
+        <a href="../de/user-guide.html">DE</a>
+        <span>|</span>
+        <a href="../hr/user-guide.html">HR</a>
+        <span>|</span>
+        <a href="../sk/user-guide.html">SK</a>
+        <span>|</span>
+        <a href="../cs/user-guide.html">CS</a>
+        <span>|</span>
+        <a href="../pl/user-guide.html">PL</a>
+        <span>|</span>
+        <a href="../nl/user-guide.html">NL</a>
+        <span>|</span>
+        <a href="../th/user-guide.html">TH</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>ユーザーガイド</h1>
+        <p class="lead">Billeroの使い方の簡単なガイドです。</p>
+
+        <h2>クイックスタート</h2>
+        <ul>
+          <li><strong>マイ情報</strong>（IBAN、住所、税務番号など）を入力します。</li>
+          <li><strong>取引先</strong>（会社または個人）を追加します。</li>
+          <li><strong>新しい請求書</strong>（シンプルまたは複数項目）を作成します。</li>
+          <li>PDFを共有または保存できます。請求書を編集するとPDFが再生成されます。</li>
+        </ul>
+
+        <h2>複数項目の請求書</h2>
+        <ul>
+          <li>各項目には、説明、数量、単位、価格、VAT税率があります。</li>
+          <li>小さい画面では、読みやすさのためにフィールドが自動的に2行に折り返されます。</li>
+        </ul>
+
+        <h2>取引先への請求書の送信</h2>
+        <p>取引先の詳細カードから、複数の請求書をすばやく選択して一度に送信できます。</p>
+        <ul>
+          <li><strong>取引先</strong>タブを開き、取引先をタップします。</li>
+          <li>請求書を<strong>長押し</strong>すると、選択モードに入ります。</li>
+          <li>他の請求書をタップして選択または選択解除します。</li>
+          <li>タイトルバーで<strong>↗</strong>をタップすると、選択したPDFを共有できます。</li>
+          <li>選択モードを終了するには、タイトルバーで<strong>✕</strong>をタップします。</li>
+        </ul>
+        <p>会社にも個人にも（不明な取引先を含む）同じように機能します。</p>
+
+        <h2>AI OCRによる受領請求書</h2>
+        <p>Billeroは、AI（Anthropic Claude）を使用して、PDF請求書から供給者、番号、日付、金額を自動的に読み取ることができます。この機能は<strong>任意</strong>であり、お客様ご自身のAPIキーが必要です。</p>
+
+        <h3>APIキーの取得</h3>
+        <ol>
+          <li><a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> にアクセスし、無料アカウントを作成します。</li>
+          <li>メニューで<strong>API Keys</strong> → <strong>Create Key</strong>を選択します。</li>
+          <li>キーに名前を付け（例: <em>Billero</em>）、コピーします。キーは<code>sk-ant-</code>で始まります。</li>
+          <li>Anthropicコンソールで支払い方法を追加する必要があります。請求書1件の読み取りコストは<strong>€0.001</strong>未満です（Claude Haikuモデル）。</li>
+        </ol>
+
+        <h3>アプリでの設定</h3>
+        <ol>
+          <li><strong>マイ情報</strong>（⚙タブ） → <em>Anthropic APIキー（OCR）</em>のセクションを開きます。</li>
+          <li>フィールドにキーを貼り付け、<strong>保存</strong>をタップします。</li>
+          <li>キーはお客様の端末の安全な領域（Android Keystore）に保存され、アプリのファイルに書き込まれることはありません。</li>
+        </ol>
+
+        <h3>使い方</h3>
+        <ol>
+          <li><strong>請求書</strong>タブで↑アイコン（PDFインポート）をタップし、受領した請求書のPDFを選択します。</li>
+          <li>フォームが開きます。<strong>✨ AIで分析</strong>ボタンをタップします。</li>
+          <li>少しお待ちください — 供給者、番号、日付、金額のフィールドが自動的に入力されます。</li>
+          <li>必要に応じて確認・修正し、<strong>保存</strong>をタップします。</li>
+        </ol>
+
+        <p><strong>APIキーがない場合</strong>、フォームは従来どおり機能します — すべてのフィールドを手動で入力してください。AIボタンは表示されません。</p>
+
+        <h2>バックアップと復元</h2>
+        <p>すべてのデータ（請求書、取引先、設定、PDF）は、<strong>マイ情報</strong>タブ → <em>バックアップ</em>セクションからエクスポートおよび復元できます。</p>
+        <h3>エクスポート</h3>
+        <ul>
+          <li><strong>バックアップをエクスポート</strong>をタップします。</li>
+          <li>アプリがZIPファイル（<code>billero_backup_YYYY-MM-DD.zip</code>）を作成し、共有シートを開きます。</li>
+          <li>iCloud、Google Drive、メール、またはお好みの場所にファイルを保存します。</li>
+        </ul>
+        <h3>復元（例: 機種変更後）</h3>
+        <ul>
+          <li>新しいスマートフォンにBilleroをインストールします。</li>
+          <li><strong>マイ情報</strong> → <strong>バックアップから復元</strong>を開きます。</li>
+          <li>警告を確認します（既存のデータは置き換えられます）。</li>
+          <li>保存場所からZIPファイルを選択します。</li>
+          <li>すべての請求書、取引先、設定、PDF、ロゴ、デジタル署名が復元されます。</li>
+        </ul>
+        <p><strong>警告:</strong> 復元すると既存のすべてのデータが置き換えられます。復元する前に、現在のデータのバックアップをエクスポートすることをお勧めします。</p>
+
+        <h2>定期請求書</h2>
+        <p>Billeroは、アプリを起動するたびに、定期的な請求書（週次、月次、または四半期）を自動的に生成します。</p>
+        <ol>
+          <li><strong>請求書</strong>タブで↻アイコン（右上） → <strong>定期請求書</strong>をタップします。</li>
+          <li><strong>+</strong>をタップし、テンプレート名、取引先、サービスの説明、金額（VAT抜き）、VAT税率を入力します。</li>
+          <li>頻度を選択します: <strong>週次、月次</strong>、または<strong>四半期</strong>。</li>
+          <li>月次／四半期の場合は、月の日付（1〜28）を選択します。</li>
+          <li>予定日以降の次回のアプリ起動時に、請求書がPDF付きで自動的に作成されます。</li>
+        </ol>
+        <p>テンプレートはトグルで無効にしたり、いつでも編集したりできます。生成された請求書はメインの請求書リストに表示されます。</p>
+
+        <h2>暗号通貨決済</h2>
+        <p>Billeroは2種類の暗号通貨決済に対応しています: PDF請求書上の<strong>静的QRコード</strong>と、70種類以上の暗号通貨を受け取るための<strong>Coingate決済リンク</strong>です。</p>
+
+        <h3>PDF請求書上のQRコード — 対応する暗号通貨</h3>
+        <p><strong>マイ情報 → 暗号通貨決済</strong>でウォレットアドレスを設定します。QRコードはすべてのPDF請求書の2ページ目に自動的に追加されます。</p>
+        <ul>
+          <li><strong>EURC</strong> — Ethereum、Base、またはSolana上のCircle Euroステーブルコイン。レート: 1 EURC = 1 EUR。</li>
+          <li><strong>USDC</strong> — Ethereum、Base、Polygon、またはSolana上のCircle USDステーブルコイン。レート: PDF生成時にFrankfurter API経由でECBから取得されます。</li>
+          <li><strong>BTC</strong> — Bitcoin、BIP-21 QR形式。レート: PDF生成時にCoinGeckoから取得されます。</li>
+          <li><strong>ETH</strong> — Ethereum（ネイティブ）、EIP-681 QR形式。レート: CoinGecko。</li>
+          <li><strong>SOL</strong> — Solana（ネイティブ）、Solana Pay形式。レート: CoinGecko。</li>
+          <li><strong>カスタムトークン</strong> — トークン名とウォレットアドレスを入力します。QRにはアドレスがエンコードされます（金額は合意による）。</li>
+        </ul>
+        <p>レートと取得タイムスタンプが各QRコードの下に印刷されます。<strong>インターネット接続がない場合、QRコードは表示されません</strong>（レートは最新である必要があります）。</p>
+        <p><strong>マイ情報 → 請求書に表示</strong>で、UPN QRと暗号通貨QRを個別に切り替えられます。UPNは1ページ目に残り、暗号通貨QRは2ページ目に表示されます。</p>
+
+        <h3>Coingate決済リンク（BTC、ETH、SOL、および70種類以上のコイン）</h3>
+        <ol>
+          <li><a href="https://coingate.com" target="_blank" rel="noopener">coingate.com</a> でアカウントを作成し、APIキーを取得します。</li>
+          <li><strong>マイ情報 → Coingate</strong>でAPIキーを入力します。テスト用には<em>サンドボックスモード</em>を有効にします。</li>
+          <li><strong>請求書</strong>タブで、請求書の横にある<strong>₿アイコン</strong>をタップします。</li>
+          <li>アプリが決済リンクを作成します — QRコードと<em>ブラウザで開く</em>ボタンが表示されます。</li>
+          <li>リンクを顧客と共有します。顧客は好きな暗号通貨で支払います。</li>
+          <li>EURがSEPA経由で銀行口座に振り込まれます（Coingateが変換を処理します）。</li>
+          <li>アプリ内の<strong>ステータスを確認</strong>ボタンで支払い状況を確認します。</li>
+        </ol>
+        <p><strong>CoingateはEUで規制されており</strong>（EMIライセンス、リトアニア）、SEPAでの振込に対応しています。</p>
+
+        <h2>タイ — 2言語対応PDF（タイ語 + 英語）</h2>
+        <p>プロフィールが<strong>タイ（TH）</strong>に設定されている場合、Billeroは自動的に<strong>2言語対応のPDF請求書</strong>を生成します: すべてのラベルがタイ文字（上）と英語（下）で同じページに並べて印刷されます。</p>
+        <ul>
+          <li>タイ語フォント（Noto Sans Thai）はアプリに同梱されており、インストールは不要です。</li>
+          <li>現地のタイの取引先にも、タイ語を読まない海外の取引先にも対応します。</li>
+          <li>VAT税率: 7%（歳入法典 第77条）。登録閾値: 年間THB 1,800,000。</li>
+        </ul>
+
+        <h2>シンガポール — GST請求書</h2>
+        <p>プロフィールが<strong>シンガポール（SG）</strong>に設定されている場合、Billeroは自動的にGSTルールを適用します:</p>
+        <ul>
+          <li>GST税率: 9%（GST法、第117A章）。</li>
+          <li>登録閾値: 年間SGD 1,000,000 — 閾値未満の場合は免責事項が印刷されます。</li>
+          <li>通貨: SGD（$）。支払い条件: 30日。</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">プライバシーポリシー</a>
+        &nbsp; | &nbsp;
+        <a href="terms-of-use.html">利用規約</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">ユーザーガイド</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">リリースノート</a>
+        &nbsp; | &nbsp;
+        <a href="../en/contact.html">お問い合わせ</a>
+        &nbsp; | &nbsp;
+        <a href="../en/donate.html">応援する</a>
+      </div>
+    </footer>
+  </body>
+</html>

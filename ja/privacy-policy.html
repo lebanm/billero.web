@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billero – プライバシーポリシー</title>
+    <meta name="description" content="Billeroのプライバシーポリシー。ローカルファースト型の請求書アプリ。クラッシュレポートとサブスクリプションの検証のために限定的なデータのみが処理されます。">
+    <link rel="canonical" href="https://billero.app/ja/privacy-policy.html">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/privacy-policy.html">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy.html">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/billero_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/icons/billero_192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../img/icons/billero_512.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <img src="../img/icons/billero_256.png" alt="Billero logo">
+        <span>Billero</span>
+      </div>
+      <nav>
+        <a href="../en/contact.html">お問い合わせ</a>
+        <a href="../en/donate.html">応援する</a>
+        <a href="user-guide.html">ユーザーガイド</a>
+        <a href="release-notes.html">リリースノート</a>
+        <a href="privacy-policy.html" class="active">プライバシー</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../privacy-policy.html">SL</a>
+        <span>|</span>
+        <a href="../en/privacy-policy.html">EN</a>
+        <span>|</span>
+        <a href="../de/privacy-policy.html">DE</a>
+        <span>|</span>
+        <a href="../hr/privacy-policy.html">HR</a>
+        <span>|</span>
+        <a href="../sk/privacy-policy.html">SK</a>
+        <span>|</span>
+        <a href="../cs/privacy-policy.html">CS</a>
+        <span>|</span>
+        <a href="../pl/privacy-policy.html">PL</a>
+        <span>|</span>
+        <a href="../nl/privacy-policy.html">NL</a>
+        <span>|</span>
+        <a href="../th/privacy-policy.html">TH</a>
+      </div>
+    </header>
+
+    <div class="container section-block">
+      <h1>Billero – プライバシーポリシー</h1>
+      <p><strong>最終更新日:</strong> 2026年6月</p>
+
+      <p>Billeroはローカルファースト型の請求書アプリです。お客様のビジネスデータ（請求書、取引先、請求書画像）はお客様の端末内にのみ保存され、当社のサーバーにアップロードされることはありません。本ポリシーでは、アプリの安定性とサブスクリプション機能のために処理される限定的なデータについて説明します。</p>
+
+      <h2>1. お客様の端末内にローカル保存されるデータ</h2>
+      <p>以下のデータはお客様の端末内のローカルデータベース（SQLite）にのみ保存され、当社が運用するいかなるサーバーにも送信されません:</p>
+      <ul>
+        <li>発行および受領した請求書、見積書、および関連書類</li>
+        <li>取引先情報（お客様が入力した名称、住所、税務番号）</li>
+        <li>お客様が作成した請求書の写真およびPDF</li>
+        <li>アプリの設定および環境設定</li>
+      </ul>
+      <p>アプリをアンインストールすると、これらのデータはお客様の端末から完全に削除されます。当社は一切のコピーを保持しません。</p>
+
+      <h2>2. 第三者サービスによって処理されるデータ</h2>
+      <p>アプリを安定して動作させ、購入を検証するために、以下のサービスによって限定的な技術データが処理されます:</p>
+
+      <h3>2.1 Firebase Crashlytics（Google LLC）</h3>
+      <p>当社はアプリのクラッシュを自動的に検出し診断するためにFirebase Crashlyticsを使用しています。アプリがクラッシュした際、以下のデータがGoogleに送信されます:</p>
+      <ul>
+        <li>クラッシュのスタックトレースおよび例外の詳細</li>
+        <li>端末モデル、OSバージョン、アプリバージョン</li>
+        <li>匿名のインストール識別子（Firebase Installation ID）</li>
+        <li>個人を特定しないパフォーマンス指標</li>
+      </ul>
+      <p>このデータはお客様の身元と紐づけられることはなく、広告に使用されることもありません。Googleのプライバシーポリシーが適用されます: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+      <h3>2.2 サブスクリプションのレシート検証（Cloudflare Workers）</h3>
+      <p>Apple App StoreまたはGoogle Play経由でBilleroのサブスクリプションを購入すると、取引をAppleまたはGoogleと照合して検証するため、購入レシートが当社の安全なCloudflare Workerに送信されます。Workerは以下を保存します:</p>
+      <ul>
+        <li>匿名化されたサブスクリプションレシート識別子</li>
+        <li>サブスクリプションのプランと有効期限のステータス</li>
+        <li>個人情報は一切なし（氏名、メールアドレス、住所、請求書の内容は含まれません）</li>
+      </ul>
+      <p>これはサブスクリプションの不正利用を防止するためにAppleおよびGoogleによって要求されています。データはお客様のサブスクリプションが有効な期間に加え、24か月間の税務コンプライアンス期間の間のみ保持されます。Cloudflareのプライバシーポリシー: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">https://www.cloudflare.com/privacypolicy/</a></p>
+
+      <h3>2.3 AIによる請求書スキャン（Anthropic）</h3>
+      <p>AI/OCR請求書スキャン機能は<strong>任意</strong>であり、<strong>お客様の明示的なリクエストがあった場合にのみ</strong>実行されます。請求書をスキャンすると、画像またはPDFがアメリカ合衆国のAIプロバイダーである<strong>Anthropic PBC（Claudeモデル）</strong>に送信され、書類からデータ（供給者／購入者、番号、日付、金額）が抽出されます。これらの書類には個人情報および財務情報が含まれる場合があります。Anthropicは<strong>このデータを長期的に保持せず、モデルの学習にも使用しません</strong>。この機能を使用しない場合、何も送信されません。Anthropicのポリシー: <a href="https://www.anthropic.com/legal/privacy" target="_blank">anthropic.com/legal/privacy</a></p>
+
+      <h3>2.4 Apple App Store／Google Play</h3>
+      <p>サブスクリプションの購入はAppleまたはGoogleによって処理されます。これらの事業者がお客様の支払い方法、請求先住所、Apple ID／Googleアカウント情報を取り扱います。当社はこれらのデータを受領または保存しません。</p>
+
+      <h2>3. アプリが要求する権限</h2>
+      <ul>
+        <li><strong>カメラ</strong> – 受領した請求書をスキャンするため</li>
+        <li><strong>フォトライブラリ</strong> – 請求書の画像を選択するため</li>
+        <li><strong>Face ID／Touch ID</strong> – アプリをロックおよびロック解除するため（任意）</li>
+        <li><strong>ファイル</strong> – PDFを保存しバックアップをエクスポートするため</li>
+        <li><strong>共有</strong> – システムの共有シートを通じて請求書を共有するため（お客様が操作した場合のみ）</li>
+        <li><strong>通知</strong> – 請求書のリマインダーのため（お客様が有効にした場合のみ）</li>
+      </ul>
+      <p>これらの権限は記載された目的のためにのみ使用されます。当社は第三者の広告SDKを一切使用していません。</p>
+
+      <h2>4. バックアップとエクスポート</h2>
+      <p>本アプリでは、お客様のデータの暗号化されたバックアップZIPファイルを作成できます。バックアップはAES-256で暗号化され、お客様が選択した場所に保存されます。当社がお客様のバックアップにアクセスすることは一切ありません。システムの共有シートを通じてバックアップを共有した場合、その送信先（メール、クラウドドライブなど）はお客様のみの管理下にあり、その提供事業者のポリシーが適用されます。</p>
+
+      <h2>5. お客様の権利（GDPR／CCPA）</h2>
+      <p>お客様のビジネスデータは端末内に保持されるため、お客様は完全な管理権を有します。アプリ内でいつでも直接、データを閲覧、編集、エクスポート、または削除できます。</p>
+      <p>Firebase Crashlyticsまたは当社のCloudflare Worker（サブスクリプションレシート）によって処理されるデータについては、<a href="mailto:info@billero.app">info@billero.app</a> までご連絡いただくことで、アクセス、訂正、または削除をリクエストできます。App StoreまたはGoogle Playのレシートに記載された元の注文IDを提示してご本人確認を行ってください。</p>
+
+      <h2>6. 児童について</h2>
+      <p>Billeroは18歳以上のユーザーを対象としたビジネスツールです。当社は13歳未満の児童から意図的にデータを収集することはありません。</p>
+
+      <h2>7. 国際的なデータ移転</h2>
+      <p>Firebase Crashlytics（Google）、Cloudflare、およびAnthropic（AIスキャン）は、欧州連合、アメリカ合衆国、またはその他の法域に所在するサーバーでデータを処理する場合があります。これらの提供事業者はEU-USデータプライバシーフレームワークの認証を受けているか、または同等の保護措置（標準契約条項）を使用しています。</p>
+
+      <h2>8. セキュリティ</h2>
+      <p>お客様の端末内のデータは、オペレーティングシステム（Android、iOS）のセキュリティ機構によって保護されています。任意でFace ID／Touch IDによるロックを追加できます。当社のWorkerに送信されるサブスクリプションレシートは、HTTPS／TLS 1.3により暗号化されています。</p>
+
+      <h2>9. 本ポリシーの変更</h2>
+      <p>本ポリシーを重要な点で変更する場合、当社はこのページおよび上記の「最終更新日」を更新します。重要な変更後も引き続きアプリをご利用いただくことは、変更への同意とみなされます。</p>
+
+      <h2>10. お問い合わせ</h2>
+      <p>プライバシーに関するご質問またはデータ主体からのリクエスト: <a href="mailto:info@billero.app">info@billero.app</a></p>
+      <p>データ管理者: B-DataFit, Matej Leban s.p., スロベニア。</p>
+    </div>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">プライバシーポリシー</a>
+        &nbsp; | &nbsp;
+        <a href="terms-of-use.html">利用規約</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">ユーザーガイド</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">リリースノート</a>
+        &nbsp; | &nbsp;
+        <a href="../en/contact.html">お問い合わせ</a>
+        &nbsp; | &nbsp;
+        <a href="../en/donate.html">応援する</a>
+      </div>
+    </footer>
+  </body>
+</html>

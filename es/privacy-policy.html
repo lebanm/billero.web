@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billero – Política de privacidad</title>
+    <meta name="description" content="Política de privacidad de Billero. Aplicación de facturación local-first. Se procesan datos limitados para informes de errores y validación de suscripciones.">
+    <link rel="canonical" href="https://billero.app/es/privacy-policy.html">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/privacy-policy.html">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy.html">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/billero_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/icons/billero_192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../img/icons/billero_512.png">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <img src="../img/icons/billero_256.png" alt="Billero logo">
+        <span>Billero</span>
+      </div>
+      <nav>
+        <a href="../en/contact.html">Contacto</a>
+        <a href="../en/donate.html">Apóyanos</a>
+        <a href="user-guide.html">Guía de usuario</a>
+        <a href="release-notes.html">Notas de versión</a>
+        <a href="privacy-policy.html" class="active">Privacidad</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../privacy-policy.html">SL</a>
+        <span>|</span>
+        <a href="../en/privacy-policy.html">EN</a>
+        <span>|</span>
+        <a href="../de/privacy-policy.html">DE</a>
+        <span>|</span>
+        <a href="../hr/privacy-policy.html">HR</a>
+        <span>|</span>
+        <a href="../sk/privacy-policy.html">SK</a>
+        <span>|</span>
+        <a href="../cs/privacy-policy.html">CS</a>
+        <span>|</span>
+        <a href="../pl/privacy-policy.html">PL</a>
+        <span>|</span>
+        <a href="../nl/privacy-policy.html">NL</a>
+        <span>|</span>
+        <a href="../th/privacy-policy.html">TH</a>
+      </div>
+    </header>
+
+    <div class="container section-block">
+      <h1>Billero – Política de privacidad</h1>
+      <p><strong>Última actualización:</strong> junio de 2026</p>
+
+      <p>Billero es una aplicación de facturación local-first. Tus datos comerciales (facturas, clientes, imágenes de facturas) se almacenan únicamente en tu dispositivo y nunca se cargan en nuestros servidores. Esta política describe los datos limitados que se procesan para la estabilidad de la aplicación y la funcionalidad de las suscripciones.</p>
+
+      <h2>1. Datos almacenados localmente en tu dispositivo</h2>
+      <p>Los siguientes datos se almacenan exclusivamente en tu dispositivo en una base de datos local (SQLite) y nunca se transmiten a ningún servidor operado por nosotros:</p>
+      <ul>
+        <li>Facturas emitidas y recibidas, presupuestos y documentos relacionados</li>
+        <li>Información de clientes (nombres, direcciones, números de identificación fiscal que introduces)</li>
+        <li>Fotos y PDF de facturas que creas</li>
+        <li>Ajustes y preferencias de la aplicación</li>
+      </ul>
+      <p>Si desinstalas la aplicación, estos datos se eliminan permanentemente de tu dispositivo. No conservamos ninguna copia.</p>
+
+      <h2>2. Datos procesados por servicios de terceros</h2>
+      <p>Para mantener la aplicación estable y validar las compras, una cantidad limitada de datos técnicos es procesada por los siguientes servicios:</p>
+
+      <h3>2.1 Firebase Crashlytics (Google LLC)</h3>
+      <p>Utilizamos Firebase Crashlytics para detectar y diagnosticar automáticamente los fallos de la aplicación. Cuando la aplicación falla, se envían los siguientes datos a Google:</p>
+      <ul>
+        <li>Traza de la pila del fallo y detalles de la excepción</li>
+        <li>Modelo del dispositivo, versión del sistema operativo, versión de la aplicación</li>
+        <li>Identificador anónimo de instalación (Firebase Installation ID)</li>
+        <li>Métricas de rendimiento no personales</li>
+      </ul>
+      <p>Estos datos no están vinculados a tu identidad y no se utilizan para publicidad. Se aplica la política de privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+      <h3>2.2 Validación de recibos de suscripción (Cloudflare Workers)</h3>
+      <p>Cuando compras una suscripción de Billero a través de Apple App Store o Google Play, el recibo de compra se envía a nuestro Cloudflare Worker seguro para validar la transacción con Apple o Google. El Worker almacena:</p>
+      <ul>
+        <li>Identificadores anonimizados de recibos de suscripción</li>
+        <li>Nivel de suscripción y estado de caducidad</li>
+        <li>Ninguna información personal (sin nombre, correo electrónico, dirección ni contenido de facturas)</li>
+      </ul>
+      <p>Esto es requerido por Apple y Google para prevenir el fraude en las suscripciones. Los datos se conservan únicamente mientras tu suscripción esté activa, más un periodo de 24 meses por cumplimiento fiscal. Política de privacidad de Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">https://www.cloudflare.com/privacypolicy/</a></p>
+
+      <h3>2.3 Escaneo de facturas con IA (Anthropic)</h3>
+      <p>La función de escaneo de facturas con IA/OCR es <strong>opcional</strong> y se ejecuta <strong>únicamente a petición explícita tuya</strong>. Cuando escaneas una factura, la imagen o el PDF se envía al proveedor de IA <strong>Anthropic PBC (modelo Claude)</strong> en los Estados Unidos, que extrae los datos del documento (proveedor/comprador, número, fecha, importe). Estos documentos pueden contener datos personales y financieros. Anthropic <strong>no conserva estos datos a largo plazo ni los utiliza para entrenar modelos</strong>. Si no utilizas la función, no se envía nada. Política de Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank">anthropic.com/legal/privacy</a></p>
+
+      <h3>2.4 Apple App Store / Google Play</h3>
+      <p>Las compras de suscripciones son procesadas por Apple o Google. Ellos gestionan tu método de pago, dirección de facturación e información de tu cuenta de Apple ID / Google. Nosotros no recibimos ni almacenamos estos datos.</p>
+
+      <h2>3. Permisos que solicita la aplicación</h2>
+      <ul>
+        <li><strong>Cámara</strong> – para escanear facturas recibidas</li>
+        <li><strong>Galería de fotos</strong> – para seleccionar imágenes de facturas</li>
+        <li><strong>Face ID / Touch ID</strong> – para bloquear y desbloquear la aplicación (opcional)</li>
+        <li><strong>Archivos</strong> – para guardar PDF y exportar copias de seguridad</li>
+        <li><strong>Compartir</strong> – para compartir facturas mediante la hoja de compartir del sistema (solo cuando tú lo inicias)</li>
+        <li><strong>Notificaciones</strong> – para recordatorios de facturas (solo si las activas)</li>
+      </ul>
+      <p>Estos permisos se utilizan únicamente para los fines descritos. No ejecutamos ningún SDK publicitario de terceros.</p>
+
+      <h2>4. Copia de seguridad y exportación</h2>
+      <p>La aplicación te permite crear archivos ZIP de copia de seguridad cifrados de tus datos. Las copias de seguridad están cifradas con AES-256 y se guardan en la ubicación que elijas. Nunca tenemos acceso a tus copias de seguridad. Si compartes una copia de seguridad mediante la hoja de compartir del sistema, ese destino (por ejemplo, correo electrónico, almacenamiento en la nube) está bajo tu control exclusivo y se aplican las políticas de su proveedor.</p>
+
+      <h2>5. Tus derechos (RGPD / CCPA)</h2>
+      <p>Como tus datos comerciales permanecen en tu dispositivo, tienes control total: puedes verlos, editarlos, exportarlos o eliminarlos en cualquier momento directamente en la aplicación.</p>
+      <p>Para los datos procesados por Firebase Crashlytics o nuestro Cloudflare Worker (recibos de suscripción), puedes solicitar acceso, rectificación o eliminación poniéndote en contacto con <a href="mailto:info@billero.app">info@billero.app</a>. Identifícate proporcionando el ID de pedido original de tu recibo de App Store o Google Play.</p>
+
+      <h2>6. Menores</h2>
+      <p>Billero es una herramienta empresarial destinada a usuarios mayores de 18 años. No recopilamos conscientemente datos de menores de 13 años.</p>
+
+      <h2>7. Transferencias internacionales</h2>
+      <p>Firebase Crashlytics (Google), Cloudflare y Anthropic (escaneo con IA) pueden procesar datos en servidores ubicados en la Unión Europea, los Estados Unidos u otras jurisdicciones. Estos proveedores están certificados conforme al Marco de Privacidad de Datos UE-EE. UU. o utilizan salvaguardas equivalentes (Cláusulas Contractuales Tipo).</p>
+
+      <h2>8. Seguridad</h2>
+      <p>Los datos de tu dispositivo están protegidos por los mecanismos de seguridad del sistema operativo (Android, iOS). Puedes añadir un bloqueo opcional con Face ID / Touch ID. Los recibos de suscripción en tránsito hacia nuestro Worker se cifran con HTTPS / TLS 1.3.</p>
+
+      <h2>9. Cambios en esta política</h2>
+      <p>Si modificamos esta política de forma sustancial, actualizaremos esta página y la fecha de "Última actualización" indicada arriba. El uso continuado de la aplicación tras un cambio sustancial constituye su aceptación.</p>
+
+      <h2>10. Contacto</h2>
+      <p>Preguntas sobre privacidad o solicitudes de los interesados: <a href="mailto:info@billero.app">info@billero.app</a></p>
+      <p>Responsable del tratamiento: B-DataFit, Matej Leban s.p., Eslovenia.</p>
+    </div>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Política de privacidad</a>
+        &nbsp; | &nbsp;
+        <a href="terms-of-use.html">Condiciones de uso</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">Guía de usuario</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Notas de versión</a>
+        &nbsp; | &nbsp;
+        <a href="../en/contact.html">Contacto</a>
+        &nbsp; | &nbsp;
+        <a href="../en/donate.html">Apóyanos</a>
+      </div>
+    </footer>
+  </body>
+</html>

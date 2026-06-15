@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informação legal – Billero</title>
+    <meta name="description" content="Informação legal sobre faturação e taxas de imposto por país para os utilizadores da Billero.">
+    <link rel="canonical" href="https://billero.app/pt/legal-info.html">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="../en/index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="../en/index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="../en/index.html">Início</a>
+        <a href="user-guide.html">Guia do utilizador</a>
+        <a href="legal-info.html" class="active">Informação legal</a>
+        <a href="release-notes.html">Notas de versão</a>
+        <a href="../en/contact.html">Contacto</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../legal-info.html">SL</a>
+        <span>|</span>
+        <a href="../en/legal-info.html">EN</a>
+        <span>|</span>
+        <a href="../de/legal-info.html">DE</a>
+        <span>|</span>
+        <a href="../hr/legal-info.html">HR</a>
+        <span>|</span>
+        <a href="../sk/legal-info.html">SK</a>
+        <span>|</span>
+        <a href="../cs/legal-info.html">CS</a>
+        <span>|</span>
+        <a href="../pl/legal-info.html">PL</a>
+        <span>|</span>
+        <a href="../nl/legal-info.html">NL</a>
+        <span>|</span>
+        <a href="../th/legal-info.html">TH</a>
+        <span>|</span>
+        <a href="legal-info.html" class="active">PT</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Informação legal por país</h1>
+        <p class="lead">Resumo da legislação de faturação, autoridades fiscais, taxas de IVA e elementos obrigatórios das faturas para 31 países. Apenas para referência — confirme sempre junto da sua autoridade fiscal local.</p>
+
+        <div id="world-map" style="height:340px;margin-bottom:28px;border-radius:10px;overflow:hidden;"></div>
+
+        <div class="li-search-wrap">
+          <input class="li-search" type="search" id="searchInput" placeholder="Pesquisar país …" oninput="filterCards()">
+        </div>
+
+        <div class="li-grid" id="countryGrid"></div>
+        <p class="li-none" id="noResults" style="display:none">Sem resultados.</p>
+
+        <p class="li-disclaimer">
+          <strong>Aviso legal:</strong> Esta informação é apenas para referência e pode não refletir as alterações mais recentes na legislação. Confirme sempre junto da autoridade fiscal local ou de um contabilista qualificado antes de emitir faturas. As taxas de IVA e os limiares mudam regularmente.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Billero · <a href="privacy-policy.html">Privacidade</a> · <a href="terms-of-use.html">Termos</a></p>
+    </footer>
+
+    <script src="../js/legal-info-data.js"></script>
+    <script>
+      const L = {
+        taxAuthority: 'Autoridade fiscal',
+        law: 'Legislação',
+        currency: 'Moeda',
+        vat: 'Taxas de IVA',
+        threshold: 'Limiar de IVA',
+        retention: 'Conservação de registos',
+        years: 'anos',
+        notes: 'Notas',
+        lastVerified: 'Última verificação',
+        mandatoryItems: 'Elementos obrigatórios',
+        showItems: '▸ Mostrar elementos obrigatórios da fatura',
+        hideItems: '▾ Ocultar elementos obrigatórios da fatura',
+        miDateOfIssue: 'Data de emissão',
+        miInvoiceNumber: 'Número sequencial da fatura',
+        miSellerInfo: 'Nome, morada e número de IVA do vendedor',
+        miBuyerInfo: 'Nome e morada do comprador',
+        miBuyerVatId: 'Número de IVA do comprador',
+        miDescription: 'Descrição dos bens ou serviços',
+        miDateOfSupply: 'Data de fornecimento',
+        miNetAmount: 'Valor líquido (base tributável)',
+        miVatRate: 'Taxa de IVA',
+        miVatAmount: 'Montante do IVA',
+        miTotalAmount: 'Valor total (com IVA)',
+        miUsSellerInfo: 'Nome, morada e EIN do vendedor',
+        miAmountDue: 'Montante a pagar',
+        miPaymentTerms: 'Condições de pagamento',
+        miSalesTaxIfApplicable: 'Imposto sobre vendas (se aplicável)',
+        miAuTaxInvoiceWords: 'Expressão "Tax Invoice"',
+        miAuSellerAbn: 'ABN do vendedor',
+        miAuGstAmount: 'Montante do GST',
+        miAuBuyerAbn: 'ABN do comprador (para transações ≥ AUD 1 000)',
+        miCaSellerBn: 'Número de empresa do vendedor (BN)',
+        miCaGstHstAmount: 'Montante de GST/HST',
+        miCaGstHstNumber: 'Número de registo de GST/HST',
+      };
+    </script>
+    <script src="../js/legal-info.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+    <script>
+      new jsVectorMap({
+        selector: '#world-map',
+        map: 'world',
+        backgroundColor: '#0b1120',
+        series: {
+          regions: [{
+            attribute: 'fill',
+            values: {
+              MX:'#eab308',CL:'#eab308',CO:'#eab308',PE:'#eab308',
+              ID:'#eab308',PH:'#eab308',VN:'#eab308',IL:'#eab308',
+              AE:'#eab308',NZ:'#eab308',ZA:'#eab308',KE:'#eab308',
+              GH:'#eab308',
+              IN:'#a855f7'
+            }
+          }]
+        },
+        regionStyle: {
+          initial:{fill:'#1e293b',stroke:'#0f172a',strokeWidth:0.3},
+          hover:{fillOpacity:0.75}
+        },
+        zoomOnScroll: false,
+      });
+    </script>
+  </body>
+</html>

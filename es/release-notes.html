@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas de versión – Billero</title>
+    <meta name="description" content="Novedades de Billero: registro de cambios de las actualizaciones y mejoras de Billero por versión.">
+    <link rel="canonical" href="https://billero.app/es/release-notes.html">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="../en/index.html"><img src="../img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="../en/index.html"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="../en/index.html">Inicio</a>
+        <a href="user-guide.html">Guía de usuario</a>
+        <a href="release-notes.html" class="active">Notas de versión</a>
+        <a href="../en/contact.html">Contacto</a>
+        <a href="privacy-policy.html">Privacidad</a>
+      </nav>
+      <div class="lang-links">
+        <a href="../release-notes.html">SL</a>
+        <span>|</span>
+        <a href="../en/release-notes.html">EN</a>
+        <span>|</span>
+        <a href="../de/release-notes.html">DE</a>
+        <span>|</span>
+        <a href="../hr/release-notes.html">HR</a>
+        <span>|</span>
+        <a href="../sk/release-notes.html">SK</a>
+        <span>|</span>
+        <a href="../cs/release-notes.html">CS</a>
+        <span>|</span>
+        <a href="../pl/release-notes.html">PL</a>
+        <span>|</span>
+        <a href="../nl/release-notes.html">NL</a>
+        <span>|</span>
+        <a href="../th/release-notes.html">TH</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Notas de versión</h1>
+        <p class="lead">Novedades y correcciones de las versiones recientes.</p>
+
+        <h2>1.5.1</h2>
+        <ul>
+          <li><strong>Enviar facturas no enviadas al contable</strong> — un nuevo botón en la lista de facturas abre el cliente de correo con todos los PDF no enviados como adjuntos y la dirección del contable ya rellenada. Configura la dirección en Mis datos → Claves de IA.</li>
+          <li><strong>Filtro Anuladas</strong> — la lista de facturas ahora tiene 4 filtros: Todas / Pagadas / Abiertas / Anuladas. El filtro Abiertas ya no muestra las facturas anuladas; las analíticas de clientes también excluyen los importes anulados.</li>
+          <li><strong>Corrección de la lectura de facturas con IA</strong> — cuando Claude devuelve un error de sobrecarga 529, la aplicación reintenta automáticamente hasta 2 veces; en caso de fallo se muestra un mensaje claro en lugar de un código de error sin procesar.</li>
+        </ul>
+
+        <h2>1.5.0</h2>
+        <ul>
+          <li><strong>Singapur (SG)</strong> — Se ha añadido compatibilidad con Singapur con GST del 9 % (moneda SGD). Las facturas cumplen con la GST Act (capítulo 117A); la aplicación muestra automáticamente el desglose del GST y la cláusula de exención para volúmenes de negocio inferiores a 1 000 000 SGD.</li>
+          <li><strong>Tailandia (TH)</strong> — Se ha añadido compatibilidad con Tailandia con IVA del 7 % (moneda THB). El PDF de la factura es <strong>bilingüe</strong>: texto en escritura tailandesa e inglés impresos uno junto al otro en la misma página, perfecto tanto para clientes locales tailandeses como para clientes internacionales.</li>
+        </ul>
+
+        <h2>1.4.0</h2>
+        <ul>
+          <li><strong>QR cripto — BTC, ETH, SOL</strong> — además de EURC/USDC, ahora se admiten criptomonedas nativas: Bitcoin (BIP-21), Ethereum (EIP-681) y Solana (Solana Pay). Las cotizaciones se obtienen de CoinGecko en el momento de generar el PDF.</li>
+          <li><strong>Token personalizado</strong> — introduce cualquier token cripto: el QR codifica la dirección; el importe se acuerda con el cliente.</li>
+          <li><strong>Cotización + marca de tiempo bajo cada código QR</strong> — la fuente de la cotización y la hora exacta de obtención se imprimen bajo cada QR. Sin conexión a internet, el QR no se muestra.</li>
+          <li><strong>Mostrar/ocultar UPN / cripto</strong> — activa o desactiva de forma independiente el QR UPN y el QR cripto en Mis datos → Mostrar en la factura.</li>
+          <li><strong>UPN en la página 1, cripto en la página 2</strong> — los códigos QR cripto se han trasladado a una página 2 dedicada de la factura.</li>
+          <li><strong>Guía de usuario en 4 idiomas</strong> — la guía dentro de la aplicación cubre SL, EN, DE, HR, incluidas instrucciones paso a paso para la clave de API de Anthropic.</li>
+          <li>Corrección: la incorporación ahora detecta correctamente los idiomas de dispositivo no compatibles y muestra el selector de país.</li>
+          <li>Corrección: se ha desactivado Android Auto Backup; la incorporación siempre se muestra tras una instalación nueva.</li>
+        </ul>
+
+        <h2>1.3.1</h2>
+        <ul>
+          <li><strong>Modelo freemium</strong> — 10 facturas gratuitas al año + 5 escaneos OCR con IA al mes. Suscripción Billero Plus desde 3,99 €/mes para uso ilimitado.</li>
+          <li>Corrección: el archivo de copia de seguridad ahora muestra el nombre de archivo correcto al compartir.</li>
+          <li>Corrección: exportación CSV con los tipos de columna correctos para Excel.</li>
+        </ul>
+
+        <h2>1.3.0</h2>
+        <ul>
+          <li><strong>Facturas recurrentes</strong> — configura plantillas de factura semanales, mensuales o trimestrales. Cada vez que se inicia la aplicación, todas las facturas vencidas se generan automáticamente con sus PDF.</li>
+          <li><strong>Pagos cripto con Coingate</strong> — acepta BTC, ETH y más de 70 criptomonedas mediante un enlace de pago de Coingate. Recibes EUR en tu cuenta bancaria (SEPA).</li>
+          <li><strong>Código QR cripto en el PDF</strong> — configura la dirección de tu monedero EURC/USDC (Base, Ethereum, Polygon, Solana) y el código QR se añade automáticamente a cada factura en PDF.</li>
+          <li><strong>Compatibilidad con varios países</strong> — se han añadido los Países Bajos (NL) y Alemania (DE) con tipos de IVA y normas de facturación correctos.</li>
+          <li>Corrección: cambiar de país ahora actualiza inmediatamente los tipos de IVA y las normas de facturación.</li>
+        </ul>
+
+        <h2>1.2.0</h2>
+        <ul>
+          <li><strong>Copia de seguridad y restauración</strong> — exporta todos tus datos (facturas, clientes, ajustes, PDF, logotipo, firma) a un archivo ZIP desde Mis datos y restáuralos en un nuevo dispositivo.</li>
+          <li><strong>Enviar facturas desde la ficha del cliente</strong> — selecciona una o varias facturas en la pantalla de detalle de un cliente y compártelas mediante la hoja de compartir o por correo electrónico.</li>
+          <li><strong>Compartir PDF / Enviar por correo</strong> — al compartir una factura ahora eliges entre la hoja de compartir (WhatsApp, SMS …) o un correo prerrellenado con asunto y cuerpo.</li>
+          <li><strong>Vista previa de factura desde el cliente</strong> — toca una factura en la lista de facturas del cliente para abrirla y editarla.</li>
+          <li><strong>Autocompletado de cliente al importar factura</strong> — al importar una factura en PDF, elige un cliente de la lista o escribe un nombre nuevo que se guarda automáticamente.</li>
+          <li>Se ha corregido la agrupación de facturas bajo Cliente desconocido: todas las variantes (con o sin nombre) ahora se combinan correctamente.</li>
+          <li>Se ha corregido la restauración del campo Nombre/Apellido al editar una factura de Cliente desconocido.</li>
+        </ul>
+
+        <h2>1.1.0</h2>
+        <ul>
+          <li><strong>Resumen año por año</strong> — la pestaña Facturas ahora muestra estadísticas de cada año: total de facturas, pagadas, abiertas y totales.</li>
+          <li><strong>Filtro de facturas</strong> — filtra rápidamente entre todas, pagadas y abiertas.</li>
+          <li><strong>Exportación CSV</strong> — exporta las facturas de este año o una selección manual a un archivo CSV compatible con Excel.</li>
+          <li><strong>Total en modo de selección</strong> — al seleccionar facturas, la barra de la aplicación muestra inmediatamente el importe combinado.</li>
+          <li><strong>Fecha de servicio más legible en el PDF</strong> — la fecha ahora se muestra como, por ejemplo, "15 de enero de 2025" en lugar de "15.01.2025".</li>
+          <li>Mejoras en el formulario de clientes y prevención de duplicados.</li>
+          <li>Minianalíticas en la ficha del cliente (número de facturas, pagadas, abiertas, importes).</li>
+        </ul>
+
+        <h2>1.0.x</h2>
+        <ul>
+          <li>Mejoras en las facturas en PDF (diseño UPN / resumen de IVA).</li>
+          <li>Correcciones de las rutas de archivos PDF tras las actualizaciones de la aplicación.</li>
+          <li>Mejoras de UX para la introducción de facturas con varios artículos.</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="privacy-policy.html">Política de privacidad</a>
+        &nbsp; | &nbsp;
+        <a href="terms-of-use.html">Condiciones de uso</a>
+        &nbsp; | &nbsp;
+        <a href="user-guide.html">Guía de usuario</a>
+        &nbsp; | &nbsp;
+        <a href="release-notes.html">Notas de versión</a>
+        &nbsp; | &nbsp;
+        <a href="../en/contact.html">Contacto</a>
+        &nbsp; | &nbsp;
+        <a href="../en/donate.html">Apóyanos</a>
+      </div>
+    </footer>
+  </body>
+</html>
