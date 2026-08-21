@@ -8,89 +8,153 @@
   --accent: #22d3ee;
   --accent-soft: rgba(34, 211, 238, 0.12);
   --accent-strong: #06b6d4;
-  --text: #f9fafb;
+  --text: #f8fafc;
   --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  /* Vzporedna imena, ki jih uporablja naslovnica — da je en slovar za oboje. */
+  --brand: #22d3ee;
+  --brand-hi: #67e8f9;
+  --brand-ink: #04252b;
+  --surface: #0b1120;
+  --surface-2: #111a2e;
+  --line: #1e293b;
+  --line-hi: #334155;
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --bad: #f87171;
+
+  --radius: 14px;
+  --f-h1: clamp(1.75rem, 1.3rem + 2vw, 2.6rem);
+  --f-h2: clamp(1.35rem, 1.15rem + 0.9vw, 1.75rem);
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: radial-gradient(circle at top, #0b1120 0, #020617 55%, #000 100%);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
   color: var(--text);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
   color: inherit;
 }
 
-.container {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 32px 20px;
+:focus-visible {
+  outline: 2px solid var(--brand-hi);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tajski zapis ima tonske znake nad in pod vrstico in rabi vec zraka. */
+html[lang="th"] body { line-height: 1.85; }
+html[lang="th"] h1,
+html[lang="th"] h2 { line-height: 1.4; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+/* Glava je enaka kot na naslovnici: logotip levo, povezave in jeziki desno,
+   crta pod njimi. Podstrani imajo <header class="container">, zato je crta
+   sirine vsebine in ne celega okna. */
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 24px;
-  padding-top: 4px;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #e0f2fe;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-right: auto;
 }
 
 .logo img {
-  width: 36px;
-  height: 36px;
-  border-radius: 14px;
-  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.9);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav a {
-  margin-left: 16px;
   text-decoration: none;
   color: var(--text-muted);
-  font-size: 14px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  font-size: 0.92rem;
+  white-space: nowrap;
+  transition: color 0.15s ease;
 }
 
 nav a:hover {
   color: var(--text);
-  border-color: rgba(148, 163, 184, 0.5);
-  background: rgba(15, 23, 42, 0.9);
 }
 
 .lang-links {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  color: var(--text-muted);
+  gap: 2px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-dim);
+}
+
+/* Loceval jih je znak | med povezavami; zdaj so gumbki, zato ga skrijemo. */
+.lang-links > span {
+  display: none;
 }
 
 .lang-links a {
   text-decoration: none;
-  color: var(--text-muted);
+  color: var(--text-dim);
+  padding: 5px 8px;
+  border-radius: 7px;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
-.lang-links a:hover,
-.lang-links a.active {
+.lang-links a:hover {
   color: var(--text);
+}
+
+.lang-links a.active {
+  background: var(--surface-2);
+  color: var(--brand);
 }
 
 .hero {
@@ -173,48 +237,51 @@ nav a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-  color: #02131a;
-  padding: 11px 24px;
-  border-radius: 999px;
+  gap: 8px;
+  background: var(--brand);
+  color: var(--brand-ink);
+  padding: 13px 24px;
+  border-radius: 11px;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  border: none;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.98rem;
+  border: 1px solid transparent;
   cursor: pointer;
-  box-shadow: 0 18px 40px rgba(8, 47, 73, 0.7);
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 22px 50px rgba(8, 47, 73, 0.9);
+  background: var(--brand-hi);
+}
+
+.button:active {
+  transform: translateY(1px);
 }
 
 .features {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 28px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 32px;
 }
 
 .feature {
-  background: var(--card-soft);
-  padding: 20px 20px 18px;
-  border-radius: 14px;
-  border: 1px solid var(--border-subtle);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
+  background: var(--surface);
+  padding: 24px 22px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
 }
 
 .feature h3 {
   margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 18px;
+  margin-bottom: 6px;
+  font-size: 1.05rem;
 }
 
 .feature p {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.93rem;
   color: var(--text-muted);
 }
 
@@ -229,9 +296,18 @@ nav a:hover {
   margin-top: 6px;
 }
 
+h1 {
+  font-size: var(--f-h1);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+h2,
 section h2 {
-  font-size: 26px;
-  letter-spacing: -0.03em;
+  font-size: var(--f-h2);
+  font-weight: 800;
+  letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
 
@@ -241,11 +317,37 @@ section p {
 }
 
 footer {
-  margin-top: 72px;
-  text-align: center;
-  color: var(--text-muted);
+  margin-top: 64px;
+  padding-top: 26px;
   padding-bottom: 32px;
-  font-size: 13px;
+  border-top: 1px solid var(--line);
+  color: var(--text-dim);
+  font-size: 0.86rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+footer a:hover {
+  color: var(--text);
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .screenshots {
@@ -272,16 +374,24 @@ footer {
 }
 
 .page-card {
-  background: var(--card-soft);
+  background: var(--surface);
   border-radius: 18px;
-  padding: 28px 24px 24px;
-  border: 1px solid var(--border-subtle);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
+  padding: 30px 26px;
+  border: 1px solid var(--line);
 }
 
 .page-card h1 {
   margin-top: 0;
   margin-bottom: 8px;
+}
+
+/* Vrstica cez celo sirino 1060 px je predolga za branje. Naslovi ostanejo
+   siroki, tekoce besedilo pa se ustavi pri ~76 znakih. */
+.page-card p,
+.page-card li,
+.page-card .lead,
+.section-block p {
+  max-width: 76ch;
 }
 
 .page-card .lead {
@@ -316,6 +426,28 @@ textarea {
 }
 
 input:focus,
+/* Dolg naslov brez presledkov (URL davcnega urada, povezava do Play Store,
+   kripto naslov) je na telefonu raztegnil celo stran v vodoravno drsenje. */
+.page-card a,
+.section-block a,
+.li-value,
+.li-value a,
+.crypto-address {
+  overflow-wrap: anywhere;
+}
+
+.page-card p,
+.page-card li,
+.li-notes,
+.li-disclaimer {
+  overflow-wrap: break-word;
+}
+
+.field input,
+.field textarea {
+  max-width: 680px;
+}
+
 textarea:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.35);
@@ -397,7 +529,8 @@ hr {
 }
 .donate-cta {
   display: grid;
-  grid-template-columns: minmax(300px, 1fr) minmax(320px, 1.2fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 460px));
+  justify-content: center;
   gap: 24px;
   margin-top: 24px;
 }
@@ -514,11 +647,40 @@ hr {
   gap: 10px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 760px) {
+  /* Enako kot na naslovnici: logotip in jeziki v prvi vrstici,
+     povezave pa v svoji, ki se po potrebi vodoravno drsi. */
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    gap: 8px 14px;
   }
+
+  nav {
+    order: 3;
+    width: 100%;
+    gap: 18px;
+    font-size: 0.86rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .lang-links {
+    gap: 0;
+  }
+
+  .lang-links a {
+    padding: 5px 6px;
+  }
+}
+
+@media (max-width: 720px) {
 
   .hero {
     padding-top: 56px;

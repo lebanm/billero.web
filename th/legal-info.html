@@ -115,6 +115,11 @@
     <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
     <script>
+      // Ce je CDN nedosegljiv, skrij okvir namesto da skripta pade z napako.
+      if (typeof jsVectorMap !== 'function') {
+        var mapBox = document.getElementById('world-map');
+        if (mapBox) mapBox.style.display = 'none';
+      } else {
       new jsVectorMap({
         selector: '#world-map',
         map: 'world',
@@ -137,6 +142,7 @@
         },
         zoomOnScroll: false,
       });
+      }
     </script>
   </body>
 </html>
