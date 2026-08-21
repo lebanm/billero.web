@@ -1,283 +1,743 @@
 <!DOCTYPE html>
+<!-- Zgrajeno iz /index.html. Besedilo popravi tam in
+     v ai/i18n/strings.py, nato pozeni ai/i18n/gen_langs.py. -->
 <html lang="th">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Billero – การออกใบแจ้งหนี้ที่เรียบง่ายสำหรับอิสระ</title>
-    <meta name="description" content="Billero เป็นแอปการออกใบแจ้งหนี้ที่เรียบง่ายสำหรับอิสระ โค้ช และธุรกิจเล็ก ๆ สร้างใบแจ้งหนี้ PDF อย่างมืออาชีพในไม่กี่วินาที ทำงานใน 47 ประเทศ — ภาษีมูลค่าเพิ่ม GST ภาษีการขาย">
-    <meta property="og:title" content="Billero – การออกใบแจ้งหนี้ที่เรียบง่ายสำหรับอิสระ">
-    <meta property="og:description" content="สร้างใบแจ้งหนี้อย่างมืออาชีพในไม่กี่วินาที ไม่ต้องสมัครสมาชิก ไม่มีเซิร์ฟเวอร์ ทำงานใน 47 ประเทศ มีภาษีมูลค่าเพิ่ม GST และภาษีการขายที่เป็นไปตามกฎหมายในท้องถิ่น">
-    <meta property="og:image" content="https://billero.app/img/billero_og.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://billero.app/img/billero_og.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://billero.app/th/">
-    <meta property="og:locale" content="th_TH">
-    <link rel="canonical" href="https://billero.app/th/">
-    <link rel="alternate" hreflang="sl" href="https://billero.app/">
-    <link rel="alternate" hreflang="en" href="https://billero.app/en/">
-    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/">
-    <link rel="alternate" hreflang="th" href="https://billero.app/th/">
-    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
-    <link rel="icon" href="/favicon.ico" sizes="48x48">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/billero_16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/billero_32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/img/icons/billero_192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/billero_180.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#020617">
-  </head>
-  <body>
-    <header class="container">
-      <div class="logo">
-        <img src="../img/icons/billero_256.png" alt="Billero logo">
-        <span>Billero</span>
-      </div>
-      <nav>
-        <a href="contact.html">ติดต่อ</a>
-        <a href="donate.html">สนับสนุนเรา</a>
-        <a href="user-guide.html">คู่มือผู้ใช้</a>
-        <a href="../release-notes-th.html">Release notes</a>
-        <a href="privacy-policy.html">ความเป็นส่วนตัว</a>
-      </nav>
-      <div class="lang-links">
-        <a href="../index.html">SL</a>
-        <span>|</span>
-        <a href="../en/index.html">EN</a>
-        <span>|</span>
-        <a href="../nl/index.html">NL</a>
-        <span>|</span>
-        <a href="index.html" class="active">TH</a>
-      </div>
-    </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Billero — ออกใบแจ้งหนี้ในหนึ่งนาที รับเงินด้วย QR code</title>
+<meta name="description" content="แอปออกใบแจ้งหนี้ที่ใช้ง่ายสำหรับฟรีแลนซ์และธุรกิจขนาดเล็ก ใบแจ้งหนี้ PDF พร้อม QR code ชำระเงิน คำนวณภาษีอัตโนมัติ ส่งให้นักบัญชีได้ในแตะเดียว รองรับ 47 ประเทศ ไม่ต้องสมัครสมาชิก">
 
-    <section class="hero container">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <div class="hero-note">การออกใบแจ้งหนี้ที่เรียบง่ายและการชำระเงินที่เร็วขึ้น</div>
-          <h1>สร้างใบแจ้งหนี้อย่างรวดเร็ว ไม่ต้องใช้ซอฟต์แวร์บัญชีที่ซับซ้อน</h1>
-          <p>
-            Billero เป็นแอปการออกใบแจ้งหนี้ที่ออกแบบมาสำหรับอิสระ โค้ช
-            ผู้สอน ที่ปรึกษา และธุรกิจเล็ก ๆ ที่ต้องการวิธีที่สะอาดและใช้งานได้จริง
-            ในการออกใบแจ้งหนี้
-          </p>
-          <p>
-            สร้างใบแจ้งหนี้อย่างมืออาชีพในไม่กี่วินาที ส่งไปยังลูกค้าหรือ
-            บัญชีตรวจสอบโดยตรง และเปิดใช้งานการชำระเงินที่เร็วขึ้นด้วย QR code
-          </p>
-          <br>
-          <a class="button" href="#screenshots">ดูแอป</a>
-          <div class="store-badges" style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
-            <a href="https://apps.apple.com/si/app/billero/id6760204857" target="_blank" rel="noopener"
-               style="display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;border:1px solid #333;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;"> App Store</a>
-            <a href="https://play.google.com/store/apps/details?id=com.billero.app" target="_blank" rel="noopener"
-               style="display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;border:1px solid #333;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;">▶ Google Play</a>
-          </div>
-        </div>
-        <aside class="hero-panel">
-          <h3>Billero สั้น ๆ</h3>
-          <p>
-            ออกแบบสำหรับผู้ใช้ที่ต้องการใบแจ้งหนี้อย่างมืออาชีพโดยไม่มีการตั้งค่าที่ซับซ้อน
-            โมดูลที่ไม่จำเป็น หรือชุดบัญชีที่สมบูรณ์
-          </p>
-          <ul>
-            <li>การสร้างใบแจ้งหนี้ที่รวดเร็ว</li>
-            <li>การคำนวณภาษีมูลค่าเพิ่มโดยอัตโนมัติ</li>
-            <li>ใบแจ้งหนี้ PDF และการชำระเงิน QR</li>
-            <li>การแบ่งปันโดยตรงกับลูกค้าหรือบัญชีตรวจสอบ</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
+<link rel="canonical" href="https://billero.app/th/">
+<link rel="alternate" hreflang="sl" href="https://billero.app/">
+<link rel="alternate" hreflang="en" href="https://billero.app/en/">
+<link rel="alternate" hreflang="nl" href="https://billero.app/nl/">
+<link rel="alternate" hreflang="th" href="https://billero.app/th/">
+<link rel="alternate" hreflang="x-default" href="https://billero.app/en/">
 
-    <section class="container features">
-      <div class="feature">
-        <h3>สร้างใบแจ้งหนี้ในไม่กี่วินาที</h3>
-        <p>
-          ป้อนลูกค้า บริการ และจำนวนเงิน Billero เตรียมใบแจ้งหนี้อย่างมืออาชีพ
-          โดยไม่ต้องกรอกแบบฟอร์มที่ยาวและงานจัดเก็บข้อมูลที่ไม่จำเป็น
-        </p>
-      </div>
-      <div class="feature">
-        <h3>ภาษีมูลค่าเพิ่มอัตโนมัติและการชำระเงิน QR</h3>
-        <p>
-          แอปจะคำนวณภาษีมูลค่าเพิ่มโดยอัตโนมัติและเตรียม QR code
-          สำหรับการโอนเงินทางธนาคารที่เร็วขึ้น
-        </p>
-      </div>
-      <div class="feature">
-        <h3>ออกแบบมาสำหรับผู้ประกอบการอิสระ</h3>
-        <p>
-          Billero สร้างมาสำหรับผู้ที่ต้องการเครื่องมือการออกใบแจ้งหนี้ที่ใช้งานได้จริง
-          และการไหลการทำงานที่เรียบง่ายกับบัญชีตรวจสอบของพวกเขา
-        </p>
-      </div>
-    </section>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://billero.app/th/">
+<meta property="og:site_name" content="Billero">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="Billero — ออกใบแจ้งหนี้ในหนึ่งนาที รับเงินด้วย QR code">
+<meta property="og:description" content="แอปออกใบแจ้งหนี้ที่ใช้ง่าย ใบแจ้งหนี้ PDF พร้อม QR code ชำระเงิน คำนวณภาษีอัตโนมัติ ส่งให้นักบัญชีได้ในแตะเดียว ไม่ต้องสมัครสมาชิก">
+<meta property="og:image" content="https://billero.app/img/billero_og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Billero — ออกใบแจ้งหนี้ในหนึ่งนาที">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Billero — ออกใบแจ้งหนี้ในหนึ่งนาที รับเงินด้วย QR code">
+<meta name="twitter:description" content="แอปออกใบแจ้งหนี้ที่ใช้ง่าย ใบแจ้งหนี้ PDF พร้อม QR code ชำระเงิน คำนวณภาษีอัตโนมัติ ส่งให้นักบัญชี">
+<meta name="twitter:image" content="https://billero.app/img/billero_og.png">
 
-    <section class="container section-block">
-      <h2>Billero เหมาะสำหรับใคร</h2>
-      <p>
-        Billero เหมาะสำหรับครูสอนโยคะ โค้ชว่ายน้ำ ผู้ฝึกส่วนตัว
-        อิสระ ที่ปรึกษา นักบำบัด และเจ้าของธุรกิจเล็ก ๆ
-      </p>
-      <div class="features">
-        <div class="feature">
-          <h3>สร้างใบแจ้งหนี้</h3>
-          <p>ป้อนลูกค้า รายละเอียดบริการ และจำนวนเงินในไม่กี่ขั้นตอน</p>
-        </div>
-        <div class="feature">
-          <h3>ส่งเอกสาร</h3>
-          <p>แบ่งปันใบแจ้งหนี้โดยตรงกับลูกค้าหรือบัญชีตรวจสอบของคุณ</p>
-        </div>
-        <div class="feature">
-          <h3>รับชำระเงิน</h3>
-          <p>ลูกค้าของคุณสามารถชำระเงินได้เร็วขึ้นโดยใช้ QR code</p>
-        </div>
-      </div>
-    </section>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
 
-    <section class="container" id="screenshots">
-      <h2>Billero ในการใช้งาน</h2>
-      <p>
-        หน้าจอแอปจริงแสดงรายละเอียดบริษัท การสร้างใบแจ้งหนี้ การเพิ่มลูกค้า
-        QR การชำระเงิน และภาพรวมใบแจ้งหนี้
-      </p>
-      <div class="screenshots">
-        <img src="../img/screenshots/moji_podatki.png" alt="Billero – รายละเอียดบริษัท" loading="lazy" decoding="async">
-        <img src="../img/screenshots/nov_racun_ddv.png" alt="Billero – สร้างใบแจ้งหนี้ใหม่" loading="lazy" decoding="async">
-        <img src="../img/screenshots/dodaj_stranko.png" alt="Billero – เพิ่มลูกค้า" loading="lazy" decoding="async">
-        <img src="../img/screenshots/qr.png" alt="Billero – QR การชำระเงิน" loading="lazy" decoding="async">
-        <img src="../img/screenshots/racuni_racunovodji.png" alt="Billero – ภาพรวมใบแจ้งหนี้" loading="lazy" decoding="async">
-      </div>
-    </section>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/billero_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/billero_32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icons/billero_192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/billero_180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#020617">
 
-    <section class="container section-block">
-      <h2>ทำงานใน 47 ประเทศ</h2>
-      <p>อัตราภาษีและกฎการออกใบแจ้งหนี้ที่เป็นไปตามกฎหมายในท้องถิ่นสำหรับแต่ละประเทศที่สนับสนุน — ภาษีมูลค่าเพิ่ม GST ภาษีการขาย Billero ปรับตัวโดยอัตโนมัติ</p>
-      <div class="map-wrap">
-        <div id="world-map"></div>
-        <div id="flag-overlay" aria-hidden="true"></div>
-      </div>
-      <p class="country-more">ไฮไลต์ = สนับสนุน วางเคอร์เซอร์ไว้เหนือรายละเอียด เพิ่มประเทศใหม่เป็นระยะ ๆ</p>
-    </section>
+<style>
+  :root{
+    --brand:#22D3EE; --brand-hi:#67E8F9; --brand-deep:#0891B2; --brand-ink:#04252B;
+    --ok:#34D399; --warn:#FBBF24; --bad:#F87171;
 
-    <section class="container section-block">
-      <h2>คำอธิบายสำหรับ App Store</h2>
-      <div class="feature">
-        <p>
-          Billero เป็นแอปการออกใบแจ้งหนี้ที่เรียบง่ายออกแบบมาสำหรับอิสระ
-          โค้ช ผู้สอน และที่ปรึกษา ที่ต้องการสร้างใบแจ้งหนี้อย่างรวดเร็ว
-          และรับชำระเงินโดยไม่ต้องใช้ซอฟต์แวร์บัญชีที่ซับซ้อน
-        </p>
-        <p>
-          สร้างใบแจ้งหนี้อย่างมืออาชีพในไม่กี่วินาที และส่งไปยัง
-          ลูกค้าหรือบัญชีตรวจสอบของคุณโดยตรง
-        </p>
+    --bg:#020617; --surface:#0B1120; --surface-2:#111A2E;
+    --line:#1E293B; --line-hi:#334155;
+    --tx:#F8FAFC; --soft:#94A3B8; --dim:#64748B;
+
+    --wrap:1060px; --r:14px;
+    --f-h1:clamp(2rem, 1.35rem + 2.9vw, 3.35rem);
+    --f-h2:clamp(1.5rem, 1.2rem + 1.4vw, 2.1rem);
+    --f-lead:clamp(1.02rem, 0.97rem + 0.3vw, 1.2rem);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);color:var(--tx);line-height:1.62;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;height:auto;display:block}
+  :focus-visible{outline:2px solid var(--brand-hi);outline-offset:3px;border-radius:4px}
+
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:var(--brand-ink);
+    padding:10px 16px;font-weight:700;border-radius:0 0 10px 0;z-index:100}
+  .skip:focus{left:0}
+
+  /* ── gumbi ── */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    background:var(--brand);color:var(--brand-ink);padding:13px 24px;border-radius:11px;
+    font:inherit;font-weight:700;font-size:.98rem;border:1px solid transparent;cursor:pointer;
+    transition:background .15s,transform .15s,border-color .15s}
+  .btn:hover{background:var(--brand-hi)}
+  .btn:active{transform:translateY(1px)}
+  .btn.lg{padding:16px 28px;font-size:1.04rem}
+  .btn.ghost{background:transparent;color:var(--tx);border-color:var(--line-hi)}
+  .btn.ghost:hover{background:var(--surface-2);border-color:var(--brand)}
+
+  /* trgovinski gumb: ime trgovine je pomembnejse od "ดาวน์โหลดบน" */
+  .store{display:inline-flex;align-items:center;gap:11px;background:#000;color:#fff;
+    border:1px solid #2B3B4E;border-radius:12px;padding:11px 20px;
+    transition:border-color .15s,background .15s}
+  .store:hover{border-color:var(--brand);background:#050B14}
+  .store svg{flex-shrink:0;fill:currentColor}
+  .store .s1{display:block;font-size:.68rem;color:#94A3B8;line-height:1.2}
+  .store .s2{display:block;font-size:.98rem;font-weight:700;line-height:1.25}
+
+  /* ── navigacija ── */
+  nav{position:sticky;top:0;z-index:50;background:rgba(2,6,23,.86);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:10px 20px;min-height:64px;flex-wrap:wrap}
+  .logo{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:800;
+    letter-spacing:-.02em;margin-right:auto}
+  .logo img{width:30px;height:30px;border-radius:8px}
+  .navlinks{display:flex;gap:20px;font-size:.92rem;color:var(--soft)}
+  .navlinks a:hover{color:var(--tx)}
+  .langs{display:flex;gap:2px;font-size:.78rem;font-weight:700}
+  .langs a{padding:5px 8px;border-radius:7px;color:var(--dim)}
+  .langs a:hover{color:var(--tx)}
+  .langs a[aria-current]{background:var(--surface-2);color:var(--brand)}
+
+  /* ── hero ── */
+  .hero{position:relative;padding:70px 0 58px;text-align:center;overflow:hidden}
+  .hero::before{content:'';position:absolute;inset:-40% 0 auto;height:720px;
+    background:radial-gradient(ellipse 60% 50% at 50% 40%, rgba(34,211,238,.14), transparent 70%);
+    pointer-events:none}
+  .hero .wrap{position:relative}
+  .badge{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:700;
+    color:var(--brand-hi);background:rgba(34,211,238,.09);
+    border:1px solid rgba(34,211,238,.28);border-radius:999px;padding:6px 15px;margin-bottom:22px}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--brand);
+    box-shadow:0 0 0 4px rgba(34,211,238,.18)}
+  h1{font-size:var(--f-h1);line-height:1.1;font-weight:800;letter-spacing:-.025em;
+    max-width:16ch;margin:0 auto 18px}
+  h1 .g{color:var(--brand)}
+  .lead{font-size:var(--f-lead);color:var(--soft);max-width:60ch;margin:0 auto 30px}
+  .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .micro{font-size:.85rem;color:var(--dim);margin-top:18px}
+
+  /* ── sekcije ── */
+  section{padding:60px 0;scroll-margin-top:72px}
+  .alt{background:var(--surface);border-block:1px solid var(--line)}
+  .sec-tag{color:var(--brand);font-weight:700;font-size:.8rem;letter-spacing:.09em;
+    text-transform:uppercase;text-align:center;margin-bottom:10px}
+  h2{font-size:var(--f-h2);font-weight:800;letter-spacing:-.02em;text-align:center;
+    max-width:24ch;margin:0 auto 12px}
+  .sub{text-align:center;color:var(--soft);max-width:62ch;margin:0 auto 42px}
+
+  /* ── problem / resitev ── */
+  .prob{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:820px;margin:0 auto}
+  .prob .col{padding:24px;border-radius:var(--r);border:1px solid}
+  .prob .bad{background:rgba(248,113,113,.06);border-color:rgba(248,113,113,.22)}
+  .prob .good{background:rgba(52,211,153,.06);border-color:rgba(52,211,153,.22)}
+  .prob h3{font-size:1rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .prob ul{list-style:none;font-size:.95rem}
+  .prob li{padding:6px 0 6px 26px;position:relative;color:var(--soft)}
+  .prob li::before{position:absolute;left:0;font-weight:800}
+  .prob .bad li::before{content:'✕';color:var(--bad)}
+  .prob .good li::before{content:'✓';color:var(--ok)}
+
+  /* ── demo kartica ── */
+  .demo{max-width:430px;margin:0 auto;background:var(--surface);border:1px solid var(--line);
+    border-radius:18px;overflow:hidden;box-shadow:0 24px 60px -24px rgba(0,0,0,.9)}
+  .demo .top{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:14px 18px;background:linear-gradient(180deg,#0F2430,#0A1523);
+    border-bottom:1px solid var(--line)}
+  .demo .top strong{display:flex;align-items:center;gap:8px;font-size:.98rem}
+  .demo .top img{width:20px;height:20px;border-radius:6px}
+  .demo .top span{font-size:.8rem;color:var(--dim)}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:14px 18px;border-bottom:1px solid var(--line);border-left:3px solid transparent}
+  .row:last-child{border-bottom:none}
+  .row.s{border-left-color:var(--ok)}
+  .row.w{border-left-color:var(--warn)}
+  .row.d{border-left-color:var(--bad)}
+  .row .nm{font-weight:600;font-size:.95rem}
+  .row .mt{font-size:.82rem;color:var(--dim)}
+  .pill{flex-shrink:0;font-size:.75rem;font-weight:700;padding:4px 11px;border-radius:999px;white-space:nowrap}
+  .pill.s{background:rgba(52,211,153,.14);color:#6EE7B7}
+  .pill.w{background:rgba(251,191,36,.14);color:#FCD34D}
+  .pill.d{background:rgba(248,113,113,.14);color:#FCA5A5}
+  .demo .foot{display:flex;gap:10px;align-items:center;padding:13px 18px;font-size:.82rem;
+    background:rgba(34,211,238,.07);border-top:1px solid rgba(34,211,238,.2);color:var(--brand-hi)}
+  .demo-note{text-align:center;font-size:.84rem;color:var(--dim);margin-top:18px}
+
+  /* ── mreze ── */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px}
+  .alt .card{background:var(--surface-2)}
+  .card .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+    font-size:1.35rem;background:rgba(34,211,238,.09);border:1px solid rgba(34,211,238,.2);
+    margin-bottom:14px}
+  .card h3{font-size:1.05rem;margin-bottom:6px}
+  .card p{color:var(--soft);font-size:.93rem}
+  .card .tag{display:inline-block;margin-top:10px;font-size:.72rem;font-weight:700;
+    letter-spacing:.04em;text-transform:uppercase;color:var(--brand-hi);
+    background:rgba(34,211,238,.10);border-radius:999px;padding:3px 9px}
+
+  /* ── zaslonske slike ── */
+  .shots{display:flex;gap:16px;overflow-x:auto;padding:4px 20px 18px;
+    scroll-snap-type:x mandatory;scrollbar-width:thin}
+  .shots img{width:230px;aspect-ratio:1242/2688;flex-shrink:0;border-radius:16px;
+    border:1px solid var(--line);scroll-snap-align:center;background:var(--surface)}
+
+  /* ── zemljevid ── */
+  .map-wrap{position:relative;background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--r);padding:10px;overflow:hidden}
+  #world-map{height:clamp(260px,42vw,440px)}
+  .jvm-tooltip{background:#0F172A!important;border:1px solid var(--line-hi)!important;
+    color:var(--tx)!important;border-radius:8px!important;font-size:.85rem!important}
+  #flag-overlay{position:absolute;inset:0;pointer-events:none}
+  .country-map-flag{position:absolute;transform:translate(-50%,-50%);width:16px;height:11px;
+    border-radius:2px;box-shadow:0 1px 4px rgba(0,0,0,.7);opacity:.92;background-size:cover}
+  @media (max-width:720px){.country-map-flag{width:11px;height:8px}}
+  .legend{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;
+    font-size:.85rem;color:var(--dim);margin-top:18px}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;
+    margin-right:7px;vertical-align:baseline}
+
+  /* ── zasebnost ── */
+  .privacy{max-width:820px;margin:0 auto;background:var(--surface-2);
+    border:1px solid var(--line);border-radius:18px;padding:32px 28px}
+  .privacy ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:10px 24px}
+  .privacy li{position:relative;padding-left:26px;color:var(--soft);font-size:.95rem}
+  .privacy li::before{content:'✓';position:absolute;left:0;color:var(--ok);font-weight:800}
+
+  /* ── cene ── */
+  .price{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;align-items:start}
+  .tier{position:relative;background:var(--surface);border:1px solid var(--line);
+    border-radius:16px;padding:26px 22px}
+  .tier.hot{border-color:var(--brand);background:var(--surface-2)}
+  .tier .pop{position:absolute;top:-11px;left:22px;background:var(--brand);color:var(--brand-ink);
+    font-size:.7rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;
+    padding:3px 11px;border-radius:999px}
+  .tier .nm{font-size:.92rem;font-weight:700;color:var(--soft)}
+  .tier .amt{font-size:1.85rem;font-weight:800;letter-spacing:-.02em;margin:8px 0 2px}
+  .tier .amt small{font-size:.86rem;font-weight:500;color:var(--dim)}
+  .tier .anchor{font-size:.83rem;color:var(--dim);margin-bottom:16px}
+  .tier ul{list-style:none;font-size:.9rem}
+  .tier li{padding:5px 0 5px 24px;position:relative;color:var(--soft)}
+  .tier li::before{content:'✓';position:absolute;left:0;color:var(--ok);font-weight:800}
+  .tier li.no{color:var(--dim)}
+  .tier li.no::before{content:'–';color:var(--dim)}
+  .price-note{text-align:center;font-size:.82rem;color:var(--dim);margin-top:24px}
+
+  /* ── zakljucni poziv ── */
+  .final{max-width:660px;margin:0 auto;text-align:center;
+    background:linear-gradient(160deg,#0D2A33,#08121F);
+    border:1px solid rgba(34,211,238,.26);border-radius:20px;padding:42px 30px}
+  .final h2{max-width:none;margin-bottom:10px}
+  .final p{color:var(--soft);margin-bottom:24px}
+  .final .cta-row{margin-bottom:14px}
+
+  /* ── FAQ ── */
+  .faq{max-width:740px;margin:0 auto}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq summary{list-style:none;cursor:pointer;padding:18px 34px 18px 0;position:relative;
+    font-size:1.02rem;font-weight:600}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:'+';position:absolute;right:6px;top:16px;font-size:1.4rem;
+    font-weight:400;color:var(--brand);transition:transform .2s}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq p{color:var(--soft);font-size:.95rem;padding:0 34px 20px 0;margin-top:-4px}
+
+  /* ── noga ── */
+  footer{border-top:1px solid var(--line);background:var(--surface);
+    padding:34px 0;font-size:.86rem;color:var(--dim)}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+  footer .links{display:flex;gap:16px;flex-wrap:wrap}
+  footer .links a:hover{color:var(--tx)}
+  footer .fam{width:100%;padding-top:18px;border-top:1px solid var(--line);font-size:.82rem}
+
+  /* Tajski zapis ima tonske znake nad in pod vrstico — rabi vec zraka,
+     sicer se pri tesnem line-heightu odrezejo. Velja samo za /th/. */
+  html[lang="th"] body{line-height:1.85}
+  html[lang="th"] h1{line-height:1.4}
+  html[lang="th"] h2{line-height:1.45}
+  html[lang="th"] .badge,html[lang="th"] .pill{line-height:1.7}
+
+  @media (max-width:760px){
+    nav .wrap{padding-block:10px;min-height:0}
+    .navlinks{order:3;width:100%;gap:18px;font-size:.86rem;overflow-x:auto;padding-bottom:2px}
+    .navlinks a{white-space:nowrap}
+    .navlinks::-webkit-scrollbar{display:none}
+    /* Gumb v glavi je odvec: v naslovu sta dva vecja, 40 px nizje. */
+    nav .btn{display:none}
+    .prob{grid-template-columns:1fr}
+    .hero{padding-top:50px}
+    section{padding:48px 0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">ข้ามไปที่เนื้อหา</a>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top"><img src="../img/icons/billero_192.png" alt="" width="30" height="30">Billero</a>
+    <div class="navlinks">
+      <a href="#zakaj">ทำไม</a>
+      <a href="#kako">วิธีใช้งาน</a>
+      <a href="#funkcije">ฟีเจอร์</a>
+      <a href="#drzave">ประเทศ</a>
+      <a href="#cene">ราคา</a>
+      <a href="user-guide.html">คู่มือ</a>
+    </div>
+    <div class="langs">
+      <a href="../index.html">SL</a>
+      <a href="../en/index.html">EN</a>
+      <a href="../nl/index.html">NL</a>
+      <a href="index.html" aria-current="page">TH</a>
+    </div>
+    <a href="#prenos" class="btn">ดาวน์โหลด</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="badge"><span class="dot" aria-hidden="true"></span> iOS และ Android · 47 ประเทศ</p>
+    <h1>ออกใบแจ้งหนี้ในหนึ่งนาที <span class="g">รับเงินด้วย QR code</span></h1>
+    <p class="lead">
+      Billero คือแอปออกใบแจ้งหนี้สำหรับฟรีแลนซ์ เจ้าของกิจการคนเดียว และธุรกิจขนาดเล็ก กรอกชื่อลูกค้าและจำนวนเงิน แล้วรับไฟล์ PDF พร้อม QR code สำหรับชำระเงิน พร้อมส่งให้ลูกค้าและนักบัญชีของคุณ
+    </p>
+    <div class="cta-row">
+      <a class="store" href="https://apps.apple.com/app/id6760204857" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8c-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.3-2.5 1.3-2.6 0 0-2.5-1-2.5-3.5zM14.2 5.9c.6-.8 1-1.9.9-3-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.8-1.3z"/></svg>
+        <span><span class="s1">ดาวน์โหลดบน</span><span class="s2">App Store</span></span>
+      </a>
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.billero.app" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.2c-.3.3-.5.8-.5 1.4v16.8c0 .6.2 1.1.5 1.4l.1.1 9.4-9.4v-.2L3.6 2.2zM16.5 15 13.8 12.3v-.2l2.7-2.7.1.1 3.3 1.9c.9.5.9 1.4 0 1.9L16.6 15h-.1zM15.7 15.8 12.9 13 3.5 22.4c.3.3.8.4 1.4.1l10.8-6.7M15.7 8.2 4.9 1.5c-.6-.3-1.1-.3-1.4.1L12.9 11l2.8-2.8z"/></svg>
+        <span><span class="s1">ดาวน์โหลดได้ที่</span><span class="s2">Google Play</span></span>
+      </a>
+    </div>
+    <p class="micro">ไม่ต้องสมัครสมาชิก ข้อมูลอยู่บนเครื่องของคุณ</p>
+  </div>
+</header>
+
+<section id="zakaj">
+  <div class="wrap">
+    <p class="sec-tag">ทำไมต้อง Billero</p>
+    <h2>ออกใบแจ้งหนี้ใบเดียว ไม่ต้องใช้โปรแกรมบัญชี</h2>
+    <p class="sub">
+      โปรแกรมออกใบแจ้งหนี้ส่วนใหญ่ออกแบบมาสำหรับบริษัทที่มีแผนกบัญชี ถ้าคุณออกใบแจ้งหนี้เดือนละห้าใบ นั่นคือค่าใช้จ่าย บัญชีผู้ใช้ และเวลาเรียนรู้ครึ่งชั่วโมง สำหรับงานที่ควรใช้เวลาแค่นาทีเดียว
+    </p>
+    <div class="prob">
+      <div class="col bad">
+        <h3><span aria-hidden="true">😤</span> เทมเพลต Word กับ Excel</h3>
         <ul>
-          <li>สร้างใบแจ้งหนี้ในไม่กี่วินาที</li>
-          <li>การคำนวณภาษีมูลค่าเพิ่มโดยอัตโนมัติ</li>
-          <li>QR การชำระเงินสำหรับการโอนเงินทางธนาคารที่รวดเร็ว</li>
-          <li>การจัดการลูกค้าที่เรียบง่าย</li>
-          <li>ใบแจ้งหนี้ PDF อย่างมืออาชีพ</li>
-          <li>ส่งใบแจ้งหนี้ไปยังบัญชีตรวจสอบของคุณโดยตรง</li>
-          <li>ออกแบบมาสำหรับอิสระและธุรกิจเล็ก ๆ</li>
+          <li>ต้องเปิดใบเก่าเพื่อดูเลขที่ถัดไป</li>
+          <li>คำนวณภาษีเองและบางครั้งปัดเศษผิด</li>
+          <li>ลูกค้าต้องพิมพ์ข้อมูลการชำระเงินเอง</li>
+          <li>สิ้นเดือนต้องตามหาไฟล์ให้นักบัญชี</li>
+          <li>รู้ว่าใครยังไม่จ่ายก็ต่อเมื่อเปิดดูรายการเดินบัญชี</li>
         </ul>
       </div>
-    </section>
-
-    <footer class="container">
-      <p>© 2026 Billero</p>
-      <div>
-        <a href="privacy-policy.html">นโยบายความเป็นส่วนตัว</a>
-        &nbsp; | &nbsp;
-        <a href="terms-of-use.html">เงื่อนไขการใช้</a>
-        &nbsp; | &nbsp;
-        <a href="user-guide.html">คู่มือผู้ใช้</a>
-        &nbsp; | &nbsp;
-        <a href="../release-notes-th.html">Release notes</a>
-        &nbsp; | &nbsp;
-        <a href="contact.html">ติดต่อ</a>
+      <div class="col good">
+        <h3><span aria-hidden="true">🧾</span> เมื่อใช้ Billero</h3>
+        <ul>
+          <li>เลขที่เอกสารเรียงอัตโนมัติตามรูปแบบของคุณ</li>
+          <li>คำนวณภาษีตามกฎของประเทศคุณ</li>
+          <li>QR code สำหรับชำระเงิน ลูกค้าสแกนแล้วจ่ายได้เลย</li>
+          <li>ส่งใบแจ้งหนี้ทั้งหมดให้นักบัญชีได้ในแตะเดียว</li>
+          <li>ใบที่เลยกำหนดถูกทำเครื่องหมายไว้ พร้อมข้อความแจ้งเตือน</li>
+        </ul>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
-    <script>
-    (function () {
-      var countries = {
-        SI:['โซโลเวเนีย','ภาษีมูลค่าเพิ่ม 22%'], AT:['ออสเตรีย','MwSt 20%'], BE:['เบลเยียม','BTW 21%'],
-        BA:['บอสเนีย & เฮิร์ซ.','PDV 17%'], CY:['ไซปรัส','ภาษีมูลค่าเพิ่ม 19%'], CZ:['เช็กโกสโลวะเกีย','DPH 21%'],
-        DK:['เดนมาร์ก','MOMS 25%'], EE:['เอสโตเนีย','KM 22%'], FI:['ฟินแลนด์','ALV 25.5%'],
-        DE:['เยอรมนี','MwSt 19%'], GR:['กรีซ','ΦΠΑ 24%'], HR:['โครเอเชีย','PDV 25%'],
-        HU:['ฮังการี','ÁFA 27%'], IE:['ไอร์แลนด์','ภาษีมูลค่าเพิ่ม 23%'], LV:['ลัตเวีย','PVN 21%'],
-        LT:['ลิทัวเนีย','PVM 21%'], LU:['ลักเซมเบิร์ก','TVA 17%'], MT:['มอลตา','ภาษีมูลค่าเพิ่ม 18%'],
-        NL:['เนเธอร์แลนด์','BTW 21%'], NO:['นอร์เวย์','MVA 25%'], PL:['โปแลนด์','ภาษีมูลค่าเพิ่ม 23%'],
-        PT:['โปรตุเกส','IVA 23%'], RO:['โรมาเนีย','TVA 19%'], RS:['เซอร์เบีย','PDV 20%'],
-        SK:['สโลวะเกีย','DPH 23%'], ES:['สเปน','IVA 21%'], SE:['สวีเดน','MOMS 25%'],
-        GB:['สหราชอาณาจักร','ภาษีมูลค่าเพิ่ม 20%'], US:['สหรัฐอเมริกา','ภาษีการขาย'], CA:['แคนาดา','GST 5%'],
-        AU:['ออสเตรเลีย','GST 10%'], SG:['สิงคโปร์','GST 9%'], TH:['ไทย','ภาษีมูลค่าเพิ่ม 7%'],
-        MX:['เม็กซิโก','IVA 16%'], CL:['ชิลี','IVA 19%'], CO:['โคลอมเบีย','IVA 19%'],
-        PE:['เปรู','IGV 18%'], ID:['อินโดนีเซีย','PPN 11%'], PH:['ฟิลิปปินส์','VAT 12%'],
-        VN:['เวียดนาม','VAT 10%'], IL:['อิสราเอล','VAT 17%'], AE:['สหรัฐอาหรับเอมิเรตส์','VAT 5%'],
-        HK:['ฮ่องกง','ไม่มี VAT'], NZ:['นิวซีแลนด์','GST 15%'], ZA:['แอฟริกาใต้','VAT 15%'],
-        KE:['เคนยา','VAT 16%'], GH:['กานา','VAT 15%']
-      };
+    </div>
+  </div>
+</section>
 
-      new jsVectorMap({
-        selector: '#world-map',
-        map: 'world',
-        backgroundColor: 'transparent',
-        zoomOnScroll: false,
-        zoomButtons: false,
-        regionStyle: {
-          initial: { fill: '#1f3a4f', stroke: '#254563', strokeWidth: 0.5, strokeOpacity: 1 },
-          hover:   { fill: '#0e7490', cursor: 'pointer' },
-          selected: { fill: '#22d3ee' },
-          selectedHover: { fill: '#06b6d4' }
-        },
-        selectedRegions: Object.keys(countries),
-        onRegionTooltipShow: function (event, tooltip, code) {
-          var c = countries[code];
-          if (c) {
-            tooltip.text(
-              '<span class="fi fi-' + code.toLowerCase() + ' fis" style="width:14px;height:14px;border-radius:2px;display:inline-block;vertical-align:middle;margin-right:6px;"></span>' +
-              c[0] + ' <span style="color:#94a3b8;margin-left:4px;">' + c[1] + '</span>',
-              true
-            );
-          } else {
-            event.preventDefault();
-          }
-        }
-      });
+<section class="alt" id="kako">
+  <div class="wrap">
+    <p class="sec-tag">วิธีใช้งาน</p>
+    <h2>“ใครยังไม่จ่าย” — เห็นได้ในพริบตา</h2>
+    <p class="sub">
+      ใบแจ้งหนี้ทุกใบมีสถานะ เขียว = จ่ายแล้ว ส้ม = ใกล้ครบกำหนด แดง = เลยกำหนด และส่งการแจ้งเตือนได้ทันที
+    </p>
 
-      requestAnimationFrame(function placeFlags() {
-        var svg = document.querySelector('#world-map svg');
-        if (!svg) { requestAnimationFrame(placeFlags); return; }
-        var vb = svg.viewBox.baseVal;
-        if (!vb || vb.width === 0) { requestAnimationFrame(placeFlags); return; }
-        var overlay = document.getElementById('flag-overlay');
-        Object.keys(countries).forEach(function (code) {
-          var path = svg.querySelector('[data-code="' + code + '"]');
-          if (!path) return;
-          try {
-            var bb = path.getBBox();
-            if (bb.width === 0 && bb.height === 0) return;
-            var cx = (bb.x + bb.width / 2) / vb.width * 100;
-            var cy = (bb.y + bb.height / 2) / vb.height * 100;
-            var el = document.createElement('span');
-            el.className = 'fi fi-' + code.toLowerCase() + ' country-map-flag';
-            el.style.left = cx + '%';
-            el.style.top = cy + '%';
-            el.title = countries[code][0];
-            overlay.appendChild(el);
-          } catch (e) {}
-        });
-      });
-    })();
-    </script>
-  </body>
+    <div class="demo">
+      <div class="top">
+        <strong><img src="../img/icons/billero_192.png" alt="" width="20" height="20"> ใบแจ้งหนี้ของฉัน</strong>
+        <span>สิงหาคม 2026</span>
+      </div>
+      <div class="row s">
+        <div><div class="nm">2026-084 · Studio Vita</div><div class="mt">€480.00 · จ่ายแล้ว 12 ส.ค. 2026</div></div>
+        <span class="pill s">จ่ายแล้ว</span>
+      </div>
+      <div class="row w">
+        <div><div class="nm">2026-085 · Kavarna Lipa</div><div class="mt">€1,220.00 · ครบกำหนด 24 ส.ค. 2026</div></div>
+        <span class="pill w">เหลือ 3 วัน</span>
+      </div>
+      <div class="row d">
+        <div><div class="nm">2026-081 · Gradnje d.o.o.</div><div class="mt">€640.00 · เลยกำหนด 2 ส.ค. 2026</div></div>
+        <span class="pill d">ช้า 19 วัน</span>
+      </div>
+      <p class="foot"><span aria-hidden="true">🔔</span> ส่งการแจ้งเตือนใบที่เลยกำหนดได้ในแตะเดียว</p>
+    </div>
+    <p class="demo-note">ภาพหน้าจอพร้อมข้อมูลตัวอย่าง</p>
+
+    <div class="grid" style="margin-top:42px">
+      <div class="card">
+        <div class="ic" aria-hidden="true">✍️</div>
+        <h3>1 · สร้าง</h3>
+        <p>เลือกลูกค้า กรอกบริการและจำนวนเงิน เลขที่ วันที่ และภาษีถูกกรอกให้อัตโนมัติ</p>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">📤</div>
+        <h3>2 · ส่ง</h3>
+        <p>ส่ง PDF ให้ลูกค้าทางอีเมลหรือข้อความ และส่งใบเดียวกันให้นักบัญชีได้ในแตะเดียว</p>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">💸</div>
+        <h3>3 · รับเงิน</h3>
+        <p>ลูกค้าสแกน QR code ในแอปธนาคาร ไม่ต้องพิมพ์ ไม่มีพิมพ์ผิด</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funkcije">
+  <div class="wrap">
+    <p class="sec-tag">ทำอะไรได้บ้าง</p>
+    <h2>ครบพอสำหรับการออกใบแจ้งหนี้ทั้งปี</h2>
+    <p class="sub">ไม่มีเมนูที่คุณไม่เคยเปิดใช้</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic" aria-hidden="true">🧾</div>
+        <h3>ใบแจ้งหนี้ PDF พร้อม QR</h3>
+        <p>รูปลักษณ์มืออาชีพพร้อมโลโก้และลายเซ็นของคุณ มี QR code สำหรับโอนเงินทันที</p>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">🧮</div>
+        <h3>คำนวณภาษีอัตโนมัติ</h3>
+        <p>อัตราภาษีและกฎการออกใบแจ้งหนี้ของ 47 ประเทศ — VAT ในสหภาพยุโรป GST และภาษีขาย รวมถึงกรณีได้รับยกเว้นภาษี</p>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">🔗</div>
+        <h3>ลิงก์ชำระเงิน</h3>
+        <p>ใส่ QR code ของ Stripe, PayPal, Revolut หรือ Wise ลงบนใบแจ้งหนี้ ลูกค้าสแกนแล้วจ่ายด้วยบัตร</p>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">🔔</div>
+        <h3>แจ้งเตือนลูกค้าที่ค้างชำระ</h3>
+        <p>ใบที่เลยกำหนดถูกทำเครื่องหมายและร่างข้อความแจ้งเตือนให้ พร้อมใบเสนอราคา ใบลดหนี้ และใบแจ้งหนี้แบบเกิดซ้ำ</p>
+        <span class="tag">Pro</span>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">📊</div>
+        <h3>แดชบอร์ด</h3>
+        <p>ยอดขายรายเดือน ยอดค้างชำระตามอายุหนี้ และลูกค้าที่ดีที่สุด โดยไม่ต้องส่งออกไป Excel</p>
+        <span class="tag">Pro</span>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">🏢</div>
+        <h3>ค้นหาข้อมูลบริษัทและ VIES</h3>
+        <p>พิมพ์เลขประจำตัวผู้เสียภาษี แล้วข้อมูลบริษัทจะถูกกรอกให้อัตโนมัติ พร้อมตรวจสอบความถูกต้องของเลข VAT</p>
+        <span class="tag">Plus</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="sec-tag">Billero ในการใช้งานจริง</p>
+    <h2>หน้าจอจริงจากแอป</h2>
+    <p class="sub">ข้อมูลบริษัท ใบแจ้งหนี้ใหม่พร้อมภาษี การเพิ่มลูกค้า QR code ชำระเงิน และการส่งให้นักบัญชี</p>
+  </div>
+  <div class="shots">
+    <img src="../img/screenshots/moji_podatki.png" alt="Billero — ข้อมูลบริษัท" width="230" height="498" loading="lazy" decoding="async">
+    <img src="../img/screenshots/nov_racun_ddv.png" alt="Billero — ใบแจ้งหนี้ใหม่พร้อมภาษีที่คำนวณแล้ว" width="230" height="498" loading="lazy" decoding="async">
+    <img src="../img/screenshots/dodaj_stranko.png" alt="Billero — การเพิ่มลูกค้า" width="230" height="498" loading="lazy" decoding="async">
+    <img src="../img/screenshots/qr.png" alt="Billero — QR code สำหรับชำระเงิน" width="230" height="498" loading="lazy" decoding="async">
+    <img src="../img/screenshots/racuni_racunovodji.png" alt="Billero — การส่งใบแจ้งหนี้ให้นักบัญชี" width="230" height="498" loading="lazy" decoding="async">
+  </div>
+</section>
+
+<section id="drzave">
+  <div class="wrap">
+    <p class="sec-tag">การปรับตามท้องถิ่น</p>
+    <h2>ใบแจ้งหนี้ที่สอดคล้องกับกฎท้องถิ่นใน 47 ประเทศ</h2>
+    <p class="sub">
+      อัตราภาษี ข้อมูลที่ต้องมีบนใบแจ้งหนี้ และรูปแบบเลขที่เอกสาร จะปรับตามประเทศที่คุณเลือกเมื่อเปิดแอปครั้งแรก
+    </p>
+    <div class="map-wrap">
+      <div id="world-map"></div>
+      <div id="flag-overlay" aria-hidden="true"></div>
+    </div>
+    <p class="legend">
+      <span><i style="background:#22D3EE"></i>ประเทศที่รองรับ</span>
+      <span>วางเมาส์บนประเทศเพื่อดูอัตราภาษี</span>
+    </p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="sec-tag">ความเป็นส่วนตัว</p>
+    <h2>ลูกค้าของคุณยังเป็นของคุณ</h2>
+    <p class="sub">Billero ไม่มีระบบบัญชีผู้ใช้เพราะไม่จำเป็นต้องมี ข้อมูลของคุณเก็บอยู่ในฐานข้อมูลบนเครื่องของคุณ</p>
+    <div class="privacy">
+      <ul>
+        <li>ไม่ต้องสมัครและไม่ต้องเข้าสู่ระบบ</li>
+        <li>ข้อมูลลูกค้าและใบแจ้งหนี้อยู่บนเครื่อง</li>
+        <li>สำรองข้อมูลเข้ารหัสด้วย AES-256</li>
+        <li>คีย์ API ไม่ถูกรวมในไฟล์สำรองโดยค่าเริ่มต้น</li>
+        <li>ใช้งานได้โดยไม่ต้องต่ออินเทอร์เน็ต</li>
+        <li>ส่งออกข้อมูลทั้งหมดได้ทุกเมื่อ</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="cene">
+  <div class="wrap">
+    <p class="sec-tag">ราคา</p>
+    <h2>เริ่มใช้ฟรี จ่ายเมื่อใบแจ้งหนี้ไม่พอ</h2>
+    <p class="sub">ใบแจ้งหนี้ที่ได้รับชำระตรงเวลาเพียงใบเดียว ก็คุ้มค่าสมาชิกทั้งปี</p>
+    <div class="price">
+      <div class="tier">
+        <div class="nm">ฟรี</div>
+        <div class="amt">0 €</div>
+        <p class="anchor">สำหรับเริ่มต้น</p>
+        <ul>
+          <li>ใบแจ้งหนี้ 10 ใบต่อปี</li>
+          <li>PDF พร้อม QR code ชำระเงิน</li>
+          <li>คำนวณภาษีอัตโนมัติ</li>
+          <li class="no">มีข้อความ “Created with Billero”</li>
+        </ul>
+      </div>
+      <div class="tier hot">
+        <div class="pop">ยอดนิยม</div>
+        <div class="nm">Plus</div>
+        <div class="amt">3,99 €<small>/เดือน</small></div>
+        <p class="anchor">หรือ €29 ต่อปี</p>
+        <ul>
+          <li>ใบแจ้งหนี้ไม่จำกัด ไม่มีข้อความกำกับ</li>
+          <li>กรอกข้อมูลบริษัทและ VIES อัตโนมัติ</li>
+          <li>ใบแจ้งหนี้แบบเกิดซ้ำและส่วนลด</li>
+          <li>PDF หลายภาษา และสำรองข้อมูลอัตโนมัติ</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <div class="nm">Pro</div>
+        <div class="amt">7,99 €<small>/เดือน</small></div>
+        <p class="anchor">หรือ €59 ต่อปี</p>
+        <ul>
+          <li>ทุกอย่างในแพ็กเกจ Plus</li>
+          <li>ใบเสนอราคาและใบลดหนี้</li>
+          <li>แจ้งเตือนลูกค้าค้างชำระอัตโนมัติ</li>
+          <li>แดชบอร์ดและสแกน OCR ไม่จำกัด</li>
+        </ul>
+      </div>
+    </div>
+    <p class="price-note">
+      ระบบต่ออายุสมาชิกอัตโนมัติ ยกเลิกได้ใน App Store หรือ Google Play ราคาสุดท้ายในสกุลเงินของคุณกำหนดโดยร้านค้าแอป
+    </p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="sec-tag">คำถามที่พบบ่อย</p>
+    <h2>ทุกเรื่องที่คุณอยากรู้</h2>
+    <div class="faq" style="margin-top:28px">
+      <details open>
+        <summary>ต้องมีบัญชีผู้ใช้ไหม</summary>
+        <p>ไม่ต้อง ไม่มีการสมัครและไม่มีการเข้าสู่ระบบ ข้อมูลลูกค้าและใบแจ้งหนี้เก็บไว้บนเครื่องของคุณ</p>
+      </details>
+      <details>
+        <summary>Billero เหมาะกับเจ้าของกิจการคนเดียวและบริษัทจำกัดไหม</summary>
+        <p>ใช่ รองรับทั้งผู้จดทะเบียนภาษีมูลค่าเพิ่มและไม่จดทะเบียน ข้อความยกเว้นภาษี บัญชีธนาคารหลายบัญชี และรูปแบบเลขที่ของคุณเอง ส่วนงานบัญชีเต็มรูปแบบยังเป็นหน้าที่ของนักบัญชี</p>
+      </details>
+      <details>
+        <summary>QR code ชำระเงินคืออะไร ธนาคารรองรับหรือไม่</summary>
+        <p>เป็นรหัสมาตรฐานสำหรับคำสั่งชำระเงิน ลูกค้าสแกนในแอปธนาคารแล้วข้อมูลการชำระเงินจะถูกกรอกให้อัตโนมัติ ในประเทศอื่น Billero จะใช้มาตรฐานท้องถิ่นหรือลิงก์ชำระเงินแทน</p>
+      </details>
+      <details>
+        <summary>ส่งใบแจ้งหนี้ให้นักบัญชีอย่างไร</summary>
+        <p>ในรายการใบแจ้งหนี้ ให้เลือกช่วงเวลาแล้วส่งทั้งหมดในข้อความเดียว ทั้งไฟล์ PDF และไฟล์สรุป</p>
+      </details>
+      <details>
+        <summary>ถ้าเปลี่ยนโทรศัพท์จะเป็นอย่างไร</summary>
+        <p>คุณสร้างไฟล์สำรองข้อมูล ซึ่งตั้งรหัสผ่านได้ (AES-256) แล้วกู้คืนบนเครื่องใหม่ โดยรวมโลโก้ ลายเซ็น และใบแจ้งหนี้ที่ได้รับไว้ด้วย</p>
+      </details>
+      <details>
+        <summary>ใช้งานออฟไลน์ได้ไหม</summary>
+        <p>ได้ การออกใบแจ้งหนี้ไม่ต้องใช้อินเทอร์เน็ต จะใช้เน็ตเฉพาะตอนค้นหาข้อมูลบริษัท ตรวจสอบ VIES สแกนใบเสร็จด้วย AI และการส่งเอกสาร</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="prenos">
+  <div class="wrap">
+    <div class="final">
+      <h2>ออกใบแจ้งหนี้ใบถัดไปในหนึ่งนาที</h2>
+      <p>ดาวน์โหลด Billero แล้วลองใช้กับใบแจ้งหนี้จริง ไม่ต้องสมัคร ไม่ต้องใช้บัตร</p>
+      <div class="cta-row">
+        <a class="store" href="https://apps.apple.com/app/id6760204857" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8c-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.3-2.5 1.3-2.6 0 0-2.5-1-2.5-3.5zM14.2 5.9c.6-.8 1-1.9.9-3-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.8-1.3z"/></svg>
+          <span><span class="s1">ดาวน์โหลดบน</span><span class="s2">App Store</span></span>
+        </a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.billero.app" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.2c-.3.3-.5.8-.5 1.4v16.8c0 .6.2 1.1.5 1.4l.1.1 9.4-9.4v-.2L3.6 2.2zM16.5 15 13.8 12.3v-.2l2.7-2.7.1.1 3.3 1.9c.9.5.9 1.4 0 1.9L16.6 15h-.1zM15.7 15.8 12.9 13 3.5 22.4c.3.3.8.4 1.4.1l10.8-6.7M15.7 8.2 4.9 1.5c-.6-.3-1.1-.3-1.4.1L12.9 11l2.8-2.8z"/></svg>
+          <span><span class="s1">ดาวน์โหลดได้ที่</span><span class="s2">Google Play</span></span>
+        </a>
+      </div>
+      <p class="micro">มีคำถามก่อนดาวน์โหลดไหม <a href="contact.html" style="color:var(--brand-hi)">ติดต่อเรา</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Billero</strong> · ระบบออกใบแจ้งหนี้สำหรับผู้ประกอบอาชีพอิสระ</p>
+    <div class="links">
+      <a href="user-guide.html">คู่มือ</a>
+      <a href="../release-notes-th.html">สิ่งที่อัปเดต</a>
+      <a href="privacy-policy.html">ความเป็นส่วนตัว</a>
+      <a href="terms-of-use.html">เงื่อนไขการใช้งาน</a>
+      <a href="legal-info.html">ข้อมูลทางกฎหมาย</a>
+      <a href="contact.html">ติดต่อ</a>
+      <a href="donate.html">สนับสนุนเรา</a>
+    </div>
+    <p class="fam">© 2026 B-DataFit, Matej Leban s.p. · Billero</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Billero",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "iOS, Android",
+      "description": "แอปออกใบแจ้งหนี้สำหรับฟรีแลนซ์และธุรกิจขนาดเล็ก ใบแจ้งหนี้ PDF พร้อม QR code ชำระเงิน คำนวณภาษีอัตโนมัติ และส่งให้นักบัญชี",
+      "url": "https://billero.app/",
+      "image": "https://billero.app/img/billero_og.png",
+      "inLanguage": "sl",
+      "author": { "@type": "Organization", "name": "B-DataFit, Matej Leban s.p." },
+      "offers": [
+        { "@type": "Offer", "name": "ฟรี", "price": "0", "priceCurrency": "EUR" },
+        { "@type": "Offer", "name": "Plus", "price": "3.99", "priceCurrency": "EUR" },
+        { "@type": "Offer", "name": "Pro", "price": "7.99", "priceCurrency": "EUR" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "ต้องมีบัญชีผู้ใช้ไหม",
+          "acceptedAnswer": { "@type": "Answer", "text": "ไม่ต้อง ไม่มีการสมัครและไม่มีการเข้าสู่ระบบ ข้อมูลลูกค้าและใบแจ้งหนี้เก็บไว้บนเครื่องของคุณ" } },
+        { "@type": "Question", "name": "Billero เหมาะกับเจ้าของกิจการคนเดียวและบริษัทจำกัดไหม",
+          "acceptedAnswer": { "@type": "Answer", "text": "ใช่ รองรับทั้งผู้จดทะเบียนภาษีมูลค่าเพิ่มและไม่จดทะเบียน ข้อความยกเว้นภาษี บัญชีธนาคารหลายบัญชี และรูปแบบเลขที่ของคุณเอง" } },
+        { "@type": "Question", "name": "QR code ชำระเงินคืออะไร ธนาคารรองรับหรือไม่",
+          "acceptedAnswer": { "@type": "Answer", "text": "เป็นรหัสมาตรฐานสำหรับคำสั่งชำระเงิน ลูกค้าสแกนในแอปธนาคารแล้วข้อมูลการชำระเงินจะถูกกรอกให้อัตโนมัติ" } },
+        { "@type": "Question", "name": "ส่งใบแจ้งหนี้ให้นักบัญชีอย่างไร",
+          "acceptedAnswer": { "@type": "Answer", "text": "ในรายการใบแจ้งหนี้ ให้เลือกช่วงเวลาแล้วส่งทั้งหมดในข้อความเดียว ทั้งไฟล์ PDF และไฟล์สรุป" } },
+        { "@type": "Question", "name": "ถ้าเปลี่ยนโทรศัพท์จะเป็นอย่างไร",
+          "acceptedAnswer": { "@type": "Answer", "text": "คุณสร้างไฟล์สำรองข้อมูล ซึ่งตั้งรหัสผ่านได้ (AES-256) แล้วกู้คืนบนเครื่องใหม่" } },
+        { "@type": "Question", "name": "ใช้งานออฟไลน์ได้ไหม",
+          "acceptedAnswer": { "@type": "Answer", "text": "ได้ การออกใบแจ้งหนี้ไม่ต้องใช้อินเทอร์เน็ต จะใช้เน็ตเฉพาะตอนค้นหาข้อมูลบริษัท ตรวจสอบ VIES สแกนใบเสร็จด้วย AI และการส่งเอกสาร" } }
+      ]
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js" defer></script>
+<script defer>
+window.addEventListener('load', function () {
+  if (typeof jsVectorMap !== 'function') return;   // CDN nedosegljiv — sekcija ostane prazna
+
+  // Ime drzave in davcna oznaka za namig. Seznam usklajen z onboardingom
+  // (country_legal_data.dart) — 47 drzav.
+  var countries = {
+    SI:['โซโลเวเนีย','ภาษีมูลค่าเพิ่ม 22%'], AT:['ออสเตรีย','MwSt 20%'], BE:['เบลเยียม','BTW 21%'],
+    BA:['บอสเนีย & เฮิร์ซ.','PDV 17%'], CY:['ไซปรัส','ภาษีมูลค่าเพิ่ม 19%'], CZ:['เช็กโกสโลวะเกีย','DPH 21%'],
+    DK:['เดนมาร์ก','MOMS 25%'], EE:['เอสโตเนีย','KM 22%'], FI:['ฟินแลนด์','ALV 25.5%'],
+    DE:['เยอรมนี','MwSt 19%'], GR:['กรีซ','ΦΠΑ 24%'], HR:['โครเอเชีย','PDV 25%'],
+    HU:['ฮังการี','ÁFA 27%'], IE:['ไอร์แลนด์','ภาษีมูลค่าเพิ่ม 23%'], LV:['ลัตเวีย','PVN 21%'],
+    LT:['ลิทัวเนีย','PVM 21%'], LU:['ลักเซมเบิร์ก','TVA 17%'], MT:['มอลตา','ภาษีมูลค่าเพิ่ม 18%'],
+    NL:['เนเธอร์แลนด์','BTW 21%'], NO:['นอร์เวย์','MVA 25%'], PL:['โปแลนด์','ภาษีมูลค่าเพิ่ม 23%'],
+    PT:['โปรตุเกส','IVA 23%'], RO:['โรมาเนีย','TVA 19%'], RS:['เซอร์เบีย','PDV 20%'],
+    SK:['สโลวะเกีย','DPH 23%'], ES:['สเปน','IVA 21%'], SE:['สวีเดน','MOMS 25%'],
+    GB:['สหราชอาณาจักร','ภาษีมูลค่าเพิ่ม 20%'], US:['สหรัฐอเมริกา','ภาษีการขาย'], CA:['แคนาดา','GST 5%'],
+    AU:['ออสเตรเลีย','GST 10%'], SG:['สิงคโปร์','GST 9%'], TH:['ไทย','ภาษีมูลค่าเพิ่ม 7%'],
+    MX:['เม็กซิโก','IVA 16%'], CL:['ชิลี','IVA 19%'], CO:['โคลอมเบีย','IVA 19%'],
+    PE:['เปรู','IGV 18%'], ID:['อินโดนีเซีย','PPN 11%'], PH:['ฟิลิปปินส์','VAT 12%'],
+    VN:['เวียดนาม','VAT 10%'], IL:['อิสราเอล','VAT 17%'], AE:['สหรัฐอาหรับเอมิเรตส์','VAT 5%'],
+    HK:['ฮ่องกง','ไม่มี VAT'], NZ:['นิวซีแลนด์','GST 15%'], ZA:['แอฟริกาใต้','VAT 15%'],
+    KE:['เคนยา','VAT 16%'], GH:['กานา','VAT 15%']
+  };
+
+  new jsVectorMap({
+    selector: '#world-map',
+    map: 'world',
+    backgroundColor: '#0B1120',
+    zoomOnScroll: false,
+    zoomButtons: false,
+    regionStyle: {
+      initial:       { fill: '#1E293B', stroke: '#020617', strokeWidth: 0.4 },
+      hover:         { fill: '#0E7490', cursor: 'pointer' },
+      selected:      { fill: '#22D3EE' },
+      selectedHover: { fill: '#06B6D4' }
+    },
+    selectedRegions: Object.keys(countries),
+    onRegionTooltipShow: function (event, tooltip, code) {
+      var c = countries[code];
+      if (!c) { event.preventDefault(); return; }
+      tooltip.text(
+        '<span class="fi fi-' + code.toLowerCase() + ' fis" style="width:14px;height:14px;' +
+        'border-radius:2px;display:inline-block;vertical-align:middle;margin-right:6px"></span>' +
+        c[0] + ' <span style="color:#94A3B8;margin-left:4px">' + c[1] + '</span>', true);
+    }
+  });
+
+  // Zastavice lezijo cez SVG, zato jih postavimo sele, ko zemljevid pozna svoje mere.
+  requestAnimationFrame(function placeFlags() {
+    var svg = document.querySelector('#world-map svg');
+    if (!svg) { requestAnimationFrame(placeFlags); return; }
+    var vb = svg.viewBox.baseVal;
+    if (!vb || !vb.width) { requestAnimationFrame(placeFlags); return; }
+    var overlay = document.getElementById('flag-overlay');
+    if (!overlay) return;
+    Object.keys(countries).forEach(function (code) {
+      var path = svg.querySelector('[data-code="' + code + '"]');
+      if (!path) return;
+      try {
+        var bb = path.getBBox();
+        if (!bb.width && !bb.height) return;
+        var flag = document.createElement('span');
+        flag.className = 'fi fi-' + code.toLowerCase() + ' country-map-flag';
+        flag.style.left = (bb.x + bb.width / 2) / vb.width * 100 + '%';
+        flag.style.top = (bb.y + bb.height / 2) / vb.height * 100 + '%';
+        flag.title = countries[code][0];
+        overlay.appendChild(flag);
+      } catch (e) {}
+    });
+  });
+});
+</script>
+
+</body>
 </html>

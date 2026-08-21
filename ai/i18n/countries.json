@@ -1,0 +1,762 @@
+{
+ "en": {
+  "SI": [
+   "Slovenia",
+   "VAT 22%"
+  ],
+  "AT": [
+   "Austria",
+   "MwSt 20%"
+  ],
+  "BE": [
+   "Belgium",
+   "BTW 21%"
+  ],
+  "BA": [
+   "Bosnia & Herz.",
+   "PDV 17%"
+  ],
+  "CY": [
+   "Cyprus",
+   "VAT 19%"
+  ],
+  "CZ": [
+   "Czech Republic",
+   "DPH 21%"
+  ],
+  "DK": [
+   "Denmark",
+   "MOMS 25%"
+  ],
+  "EE": [
+   "Estonia",
+   "KM 22%"
+  ],
+  "FI": [
+   "Finland",
+   "ALV 25.5%"
+  ],
+  "DE": [
+   "Germany",
+   "MwSt 19%"
+  ],
+  "GR": [
+   "Greece",
+   "VAT 24%"
+  ],
+  "HR": [
+   "Croatia",
+   "PDV 25%"
+  ],
+  "HU": [
+   "Hungary",
+   "VAT 27%"
+  ],
+  "IE": [
+   "Ireland",
+   "VAT 23%"
+  ],
+  "LV": [
+   "Latvia",
+   "PVN 21%"
+  ],
+  "LT": [
+   "Lithuania",
+   "PVM 21%"
+  ],
+  "LU": [
+   "Luxembourg",
+   "TVA 17%"
+  ],
+  "MT": [
+   "Malta",
+   "VAT 18%"
+  ],
+  "NL": [
+   "Netherlands",
+   "BTW 21%"
+  ],
+  "NO": [
+   "Norway",
+   "MVA 25%"
+  ],
+  "PL": [
+   "Poland",
+   "VAT 23%"
+  ],
+  "PT": [
+   "Portugal",
+   "IVA 23%"
+  ],
+  "RO": [
+   "Romania",
+   "TVA 19%"
+  ],
+  "RS": [
+   "Serbia",
+   "PDV 20%"
+  ],
+  "SK": [
+   "Slovakia",
+   "DPH 23%"
+  ],
+  "ES": [
+   "Spain",
+   "IVA 21%"
+  ],
+  "SE": [
+   "Sweden",
+   "MOMS 25%"
+  ],
+  "GB": [
+   "United Kingdom",
+   "VAT 20%"
+  ],
+  "US": [
+   "United States",
+   "Sales tax"
+  ],
+  "CA": [
+   "Canada",
+   "GST 5%"
+  ],
+  "AU": [
+   "Australia",
+   "GST 10%"
+  ],
+  "SG": [
+   "Singapore",
+   "GST 9%"
+  ],
+  "TH": [
+   "Thailand",
+   "VAT 7%"
+  ],
+  "MX": [
+   "Mexico",
+   "IVA 16%"
+  ],
+  "CL": [
+   "Chile",
+   "IVA 19%"
+  ],
+  "CO": [
+   "Colombia",
+   "IVA 19%"
+  ],
+  "PE": [
+   "Peru",
+   "IGV 18%"
+  ],
+  "ID": [
+   "Indonesia",
+   "PPN 11%"
+  ],
+  "PH": [
+   "Philippines",
+   "VAT 12%"
+  ],
+  "VN": [
+   "Vietnam",
+   "VAT 10%"
+  ],
+  "IL": [
+   "Israel",
+   "VAT 17%"
+  ],
+  "AE": [
+   "UAE",
+   "VAT 5%"
+  ],
+  "HK": [
+   "Hong Kong",
+   "No VAT"
+  ],
+  "NZ": [
+   "New Zealand",
+   "GST 15%"
+  ],
+  "ZA": [
+   "South Africa",
+   "VAT 15%"
+  ],
+  "KE": [
+   "Kenya",
+   "VAT 16%"
+  ],
+  "GH": [
+   "Ghana",
+   "VAT 15%"
+  ]
+ },
+ "nl": {
+  "SI": [
+   "Slovenië",
+   "Btw 22%"
+  ],
+  "AT": [
+   "Oostenrijk",
+   "MwSt 20%"
+  ],
+  "BE": [
+   "België",
+   "Btw 21%"
+  ],
+  "BA": [
+   "Bosnië & Herz.",
+   "PDV 17%"
+  ],
+  "CY": [
+   "Cyprus",
+   "Btw 19%"
+  ],
+  "CZ": [
+   "Tsjechië",
+   "DPH 21%"
+  ],
+  "DK": [
+   "Denemarken",
+   "MOMS 25%"
+  ],
+  "EE": [
+   "Estland",
+   "KM 22%"
+  ],
+  "FI": [
+   "Finland",
+   "ALV 25,5%"
+  ],
+  "DE": [
+   "Duitsland",
+   "MwSt 19%"
+  ],
+  "GR": [
+   "Griekenland",
+   "ΦΠΑ 24%"
+  ],
+  "HR": [
+   "Kroatië",
+   "PDV 25%"
+  ],
+  "HU": [
+   "Hongarije",
+   "ÁFA 27%"
+  ],
+  "IE": [
+   "Ierland",
+   "Btw 23%"
+  ],
+  "LV": [
+   "Letland",
+   "PVN 21%"
+  ],
+  "LT": [
+   "Litouwen",
+   "PVM 21%"
+  ],
+  "LU": [
+   "Luxemburg",
+   "TVA 17%"
+  ],
+  "MT": [
+   "Malta",
+   "Btw 18%"
+  ],
+  "NL": [
+   "Nederland",
+   "Btw 21%"
+  ],
+  "NO": [
+   "Noorwegen",
+   "MVA 25%"
+  ],
+  "PL": [
+   "Polen",
+   "Btw 23%"
+  ],
+  "PT": [
+   "Portugal",
+   "IVA 23%"
+  ],
+  "RO": [
+   "Roemenië",
+   "TVA 19%"
+  ],
+  "RS": [
+   "Servië",
+   "PDV 20%"
+  ],
+  "SK": [
+   "Slowakije",
+   "DPH 23%"
+  ],
+  "ES": [
+   "Spanje",
+   "IVA 21%"
+  ],
+  "SE": [
+   "Zweden",
+   "MOMS 25%"
+  ],
+  "GB": [
+   "Verenigd Koninkrijk",
+   "Btw 20%"
+  ],
+  "US": [
+   "Verenigde Staten",
+   "Verkoopsbelasting"
+  ],
+  "CA": [
+   "Canada",
+   "GST 5%"
+  ],
+  "AU": [
+   "Australië",
+   "GST 10%"
+  ],
+  "SG": [
+   "Singapore",
+   "GST 9%"
+  ],
+  "TH": [
+   "Thailand",
+   "Btw 7%"
+  ],
+  "MX": [
+   "Mexico",
+   "IVA 16%"
+  ],
+  "CL": [
+   "Chili",
+   "IVA 19%"
+  ],
+  "CO": [
+   "Colombia",
+   "IVA 19%"
+  ],
+  "PE": [
+   "Peru",
+   "IGV 18%"
+  ],
+  "ID": [
+   "Indonesië",
+   "PPN 11%"
+  ],
+  "PH": [
+   "Filipijnen",
+   "VAT 12%"
+  ],
+  "VN": [
+   "Vietnam",
+   "VAT 10%"
+  ],
+  "IL": [
+   "Israël",
+   "VAT 17%"
+  ],
+  "AE": [
+   "VAE",
+   "VAT 5%"
+  ],
+  "HK": [
+   "Hongkong",
+   "Geen Btw"
+  ],
+  "NZ": [
+   "Nieuw-Zeeland",
+   "GST 15%"
+  ],
+  "ZA": [
+   "Zuid-Afrika",
+   "VAT 15%"
+  ],
+  "KE": [
+   "Kenia",
+   "VAT 16%"
+  ],
+  "GH": [
+   "Ghana",
+   "VAT 15%"
+  ]
+ },
+ "th": {
+  "SI": [
+   "โซโลเวเนีย",
+   "ภาษีมูลค่าเพิ่ม 22%"
+  ],
+  "AT": [
+   "ออสเตรีย",
+   "MwSt 20%"
+  ],
+  "BE": [
+   "เบลเยียม",
+   "BTW 21%"
+  ],
+  "BA": [
+   "บอสเนีย & เฮิร์ซ.",
+   "PDV 17%"
+  ],
+  "CY": [
+   "ไซปรัส",
+   "ภาษีมูลค่าเพิ่ม 19%"
+  ],
+  "CZ": [
+   "เช็กโกสโลวะเกีย",
+   "DPH 21%"
+  ],
+  "DK": [
+   "เดนมาร์ก",
+   "MOMS 25%"
+  ],
+  "EE": [
+   "เอสโตเนีย",
+   "KM 22%"
+  ],
+  "FI": [
+   "ฟินแลนด์",
+   "ALV 25.5%"
+  ],
+  "DE": [
+   "เยอรมนี",
+   "MwSt 19%"
+  ],
+  "GR": [
+   "กรีซ",
+   "ΦΠΑ 24%"
+  ],
+  "HR": [
+   "โครเอเชีย",
+   "PDV 25%"
+  ],
+  "HU": [
+   "ฮังการี",
+   "ÁFA 27%"
+  ],
+  "IE": [
+   "ไอร์แลนด์",
+   "ภาษีมูลค่าเพิ่ม 23%"
+  ],
+  "LV": [
+   "ลัตเวีย",
+   "PVN 21%"
+  ],
+  "LT": [
+   "ลิทัวเนีย",
+   "PVM 21%"
+  ],
+  "LU": [
+   "ลักเซมเบิร์ก",
+   "TVA 17%"
+  ],
+  "MT": [
+   "มอลตา",
+   "ภาษีมูลค่าเพิ่ม 18%"
+  ],
+  "NL": [
+   "เนเธอร์แลนด์",
+   "BTW 21%"
+  ],
+  "NO": [
+   "นอร์เวย์",
+   "MVA 25%"
+  ],
+  "PL": [
+   "โปแลนด์",
+   "ภาษีมูลค่าเพิ่ม 23%"
+  ],
+  "PT": [
+   "โปรตุเกส",
+   "IVA 23%"
+  ],
+  "RO": [
+   "โรมาเนีย",
+   "TVA 19%"
+  ],
+  "RS": [
+   "เซอร์เบีย",
+   "PDV 20%"
+  ],
+  "SK": [
+   "สโลวะเกีย",
+   "DPH 23%"
+  ],
+  "ES": [
+   "สเปน",
+   "IVA 21%"
+  ],
+  "SE": [
+   "สวีเดน",
+   "MOMS 25%"
+  ],
+  "GB": [
+   "สหราชอาณาจักร",
+   "ภาษีมูลค่าเพิ่ม 20%"
+  ],
+  "US": [
+   "สหรัฐอเมริกา",
+   "ภาษีการขาย"
+  ],
+  "CA": [
+   "แคนาดา",
+   "GST 5%"
+  ],
+  "AU": [
+   "ออสเตรเลีย",
+   "GST 10%"
+  ],
+  "SG": [
+   "สิงคโปร์",
+   "GST 9%"
+  ],
+  "TH": [
+   "ไทย",
+   "ภาษีมูลค่าเพิ่ม 7%"
+  ],
+  "MX": [
+   "เม็กซิโก",
+   "IVA 16%"
+  ],
+  "CL": [
+   "ชิลี",
+   "IVA 19%"
+  ],
+  "CO": [
+   "โคลอมเบีย",
+   "IVA 19%"
+  ],
+  "PE": [
+   "เปรู",
+   "IGV 18%"
+  ],
+  "ID": [
+   "อินโดนีเซีย",
+   "PPN 11%"
+  ],
+  "PH": [
+   "ฟิลิปปินส์",
+   "VAT 12%"
+  ],
+  "VN": [
+   "เวียดนาม",
+   "VAT 10%"
+  ],
+  "IL": [
+   "อิสราเอล",
+   "VAT 17%"
+  ],
+  "AE": [
+   "สหรัฐอาหรับเอมิเรตส์",
+   "VAT 5%"
+  ],
+  "HK": [
+   "ฮ่องกง",
+   "ไม่มี VAT"
+  ],
+  "NZ": [
+   "นิวซีแลนด์",
+   "GST 15%"
+  ],
+  "ZA": [
+   "แอฟริกาใต้",
+   "VAT 15%"
+  ],
+  "KE": [
+   "เคนยา",
+   "VAT 16%"
+  ],
+  "GH": [
+   "กานา",
+   "VAT 15%"
+  ]
+ },
+ "sl": {
+  "SI": [
+   "Slovenija",
+   "DDV 22%"
+  ],
+  "AT": [
+   "Avstrija",
+   "MwSt 20%"
+  ],
+  "BE": [
+   "Belgija",
+   "BTW 21%"
+  ],
+  "BA": [
+   "Bosna in Hercegovina",
+   "PDV 17%"
+  ],
+  "CY": [
+   "Ciper",
+   "DDV 19%"
+  ],
+  "CZ": [
+   "Češka",
+   "DPH 21%"
+  ],
+  "DK": [
+   "Danska",
+   "MOMS 25%"
+  ],
+  "EE": [
+   "Estonija",
+   "KM 22%"
+  ],
+  "FI": [
+   "Finska",
+   "ALV 25.5%"
+  ],
+  "DE": [
+   "Nemčija",
+   "MwSt 19%"
+  ],
+  "GR": [
+   "Grčija",
+   "DDV 24%"
+  ],
+  "HR": [
+   "Hrvaška",
+   "PDV 25%"
+  ],
+  "HU": [
+   "Madžarska",
+   "DDV 27%"
+  ],
+  "IE": [
+   "Irska",
+   "DDV 23%"
+  ],
+  "LV": [
+   "Latvija",
+   "PVN 21%"
+  ],
+  "LT": [
+   "Litva",
+   "PVM 21%"
+  ],
+  "LU": [
+   "Luksemburg",
+   "TVA 17%"
+  ],
+  "MT": [
+   "Malta",
+   "DDV 18%"
+  ],
+  "NL": [
+   "Nizozemska",
+   "BTW 21%"
+  ],
+  "NO": [
+   "Norveška",
+   "MVA 25%"
+  ],
+  "PL": [
+   "Poljska",
+   "DDV 23%"
+  ],
+  "PT": [
+   "Portugalska",
+   "IVA 23%"
+  ],
+  "RO": [
+   "Romunija",
+   "TVA 19%"
+  ],
+  "RS": [
+   "Srbija",
+   "PDV 20%"
+  ],
+  "SK": [
+   "Slovaška",
+   "DPH 23%"
+  ],
+  "ES": [
+   "Španija",
+   "IVA 21%"
+  ],
+  "SE": [
+   "Švedska",
+   "MOMS 25%"
+  ],
+  "GB": [
+   "Velika Britanija",
+   "DDV 20%"
+  ],
+  "US": [
+   "ZDA",
+   "prodajni davek"
+  ],
+  "CA": [
+   "Kanada",
+   "GST 5%"
+  ],
+  "AU": [
+   "Avstralija",
+   "GST 10%"
+  ],
+  "SG": [
+   "Singapur",
+   "GST 9%"
+  ],
+  "TH": [
+   "Tajska",
+   "DDV 7%"
+  ],
+  "MX": [
+   "Mehika",
+   "IVA 16%"
+  ],
+  "CL": [
+   "Čile",
+   "IVA 19%"
+  ],
+  "CO": [
+   "Kolumbija",
+   "IVA 19%"
+  ],
+  "PE": [
+   "Peru",
+   "IGV 18%"
+  ],
+  "ID": [
+   "Indonezija",
+   "PPN 11%"
+  ],
+  "PH": [
+   "Filipini",
+   "DDV 12%"
+  ],
+  "VN": [
+   "Vietnam",
+   "DDV 10%"
+  ],
+  "IL": [
+   "Izrael",
+   "DDV 17%"
+  ],
+  "AE": [
+   "ZAE",
+   "DDV 5%"
+  ],
+  "HK": [
+   "Hongkong",
+   "brez DDV"
+  ],
+  "NZ": [
+   "Nova Zelandija",
+   "GST 15%"
+  ],
+  "ZA": [
+   "Južna Afrika",
+   "DDV 15%"
+  ],
+  "KE": [
+   "Kenija",
+   "DDV 16%"
+  ],
+  "GH": [
+   "Gana",
+   "DDV 15%"
+  ]
+ }
+}

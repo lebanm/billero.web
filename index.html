@@ -28,6 +28,7 @@
 <meta name="twitter:description" content="Preprosta aplikacija za izdajanje računov. PDF z UPN QR kodo, samodejni DDV, pošiljanje računovodji.">
 <meta name="twitter:image" content="https://billero.app/img/billero_og.png">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
 
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -191,6 +192,10 @@
   #world-map{height:clamp(260px,42vw,440px)}
   .jvm-tooltip{background:#0F172A!important;border:1px solid var(--line-hi)!important;
     color:var(--tx)!important;border-radius:8px!important;font-size:.85rem!important}
+  #flag-overlay{position:absolute;inset:0;pointer-events:none}
+  .country-map-flag{position:absolute;transform:translate(-50%,-50%);width:16px;height:11px;
+    border-radius:2px;box-shadow:0 1px 4px rgba(0,0,0,.7);opacity:.92;background-size:cover}
+  @media (max-width:720px){.country-map-flag{width:11px;height:8px}}
   .legend{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;
     font-size:.85rem;color:var(--dim);margin-top:18px}
   .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;
@@ -249,6 +254,13 @@
   footer .links{display:flex;gap:16px;flex-wrap:wrap}
   footer .links a:hover{color:var(--tx)}
   footer .fam{width:100%;padding-top:18px;border-top:1px solid var(--line);font-size:.82rem}
+
+  /* Tajski zapis ima tonske znake nad in pod vrstico — rabi vec zraka,
+     sicer se pri tesnem line-heightu odrezejo. Velja samo za /th/. */
+  html[lang="th"] body{line-height:1.85}
+  html[lang="th"] h1{line-height:1.4}
+  html[lang="th"] h2{line-height:1.45}
+  html[lang="th"] .badge,html[lang="th"] .pill{line-height:1.7}
 
   @media (max-width:760px){
     nav .wrap{padding-block:10px;min-height:0}
@@ -469,11 +481,11 @@
     </p>
     <div class="map-wrap">
       <div id="world-map"></div>
+      <div id="flag-overlay" aria-hidden="true"></div>
     </div>
     <p class="legend">
-      <span><i style="background:#22D3EE"></i>EU in razviti trgi</span>
-      <span><i style="background:#3B82F6"></i>Globalni trgi</span>
-      <span>Za podrobnosti se ustavi na državi.</span>
+      <span><i style="background:#22D3EE"></i>Podprte države</span>
+      <span>Ustavi se na državi za davčno stopnjo.</span>
     </p>
   </div>
 </section>
@@ -662,22 +674,26 @@
 window.addEventListener('load', function () {
   if (typeof jsVectorMap !== 'function') return;   // CDN nedosegljiv — sekcija ostane prazna
 
-  // Imena drzav za namig. Seznam usklajen z onboardingom (country_legal_data.dart) — 47 drzav.
-  var DATA = {
-    SI:'Slovenija', AT:'Avstrija', BE:'Belgija', BA:'Bosna in Hercegovina',
-    CY:'Ciper', CZ:'Češka', DK:'Danska', EE:'Estonija', FI:'Finska',
-    DE:'Nemčija', GR:'Grčija', HR:'Hrvaška', HU:'Madžarska', IE:'Irska',
-    LV:'Latvija', LT:'Litva', LU:'Luksemburg', MT:'Malta', NL:'Nizozemska',
-    NO:'Norveška', PL:'Poljska', PT:'Portugalska', RO:'Romunija', RS:'Srbija',
-    SK:'Slovaška', ES:'Španija', SE:'Švedska', GB:'Velika Britanija', US:'ZDA',
-    CA:'Kanada', AU:'Avstralija', SG:'Singapur', TH:'Tajska',
-    MX:'Mehika', CL:'Čile', CO:'Kolumbija', PE:'Peru', ID:'Indonezija',
-    PH:'Filipini', VN:'Vietnam', IL:'Izrael', AE:'ZAE', HK:'Hongkong',
-    NZ:'Nova Zelandija', ZA:'Južna Afrika', KE:'Kenija', GH:'Gana'
+  // Ime drzave in davcna oznaka za namig. Seznam usklajen z onboardingom
+  // (country_legal_data.dart) — 47 drzav.
+  var countries = {
+    SI:['Slovenija','DDV 22%'], AT:['Avstrija','MwSt 20%'], BE:['Belgija','BTW 21%'],
+    BA:['Bosna in Hercegovina','PDV 17%'], CY:['Ciper','DDV 19%'], CZ:['Češka','DPH 21%'],
+    DK:['Danska','MOMS 25%'], EE:['Estonija','KM 22%'], FI:['Finska','ALV 25.5%'],
+    DE:['Nemčija','MwSt 19%'], GR:['Grčija','DDV 24%'], HR:['Hrvaška','PDV 25%'],
+    HU:['Madžarska','DDV 27%'], IE:['Irska','DDV 23%'], LV:['Latvija','PVN 21%'],
+    LT:['Litva','PVM 21%'], LU:['Luksemburg','TVA 17%'], MT:['Malta','DDV 18%'],
+    NL:['Nizozemska','BTW 21%'], NO:['Norveška','MVA 25%'], PL:['Poljska','DDV 23%'],
+    PT:['Portugalska','IVA 23%'], RO:['Romunija','TVA 19%'], RS:['Srbija','PDV 20%'],
+    SK:['Slovaška','DPH 23%'], ES:['Španija','IVA 21%'], SE:['Švedska','MOMS 25%'],
+    GB:['Velika Britanija','DDV 20%'], US:['ZDA','prodajni davek'], CA:['Kanada','GST 5%'],
+    AU:['Avstralija','GST 10%'], SG:['Singapur','GST 9%'], TH:['Tajska','DDV 7%'],
+    MX:['Mehika','IVA 16%'], CL:['Čile','IVA 19%'], CO:['Kolumbija','IVA 19%'],
+    PE:['Peru','IGV 18%'], ID:['Indonezija','PPN 11%'], PH:['Filipini','DDV 12%'],
+    VN:['Vietnam','DDV 10%'], IL:['Izrael','DDV 17%'], AE:['ZAE','DDV 5%'],
+    HK:['Hongkong','brez DDV'], NZ:['Nova Zelandija','GST 15%'], ZA:['Južna Afrika','DDV 15%'],
+    KE:['Kenija','DDV 16%'], GH:['Gana','DDV 15%']
   };
-  var EU = ['SI','AT','BE','BA','CY','CZ','DK','EE','FI','DE','GR','HR','HU','IE','LV','LT',
-            'LU','MT','NL','NO','PL','PT','RO','RS','SK','ES','SE','GB','US','CA','AU','SG','TH'];
-  var GO = ['MX','CL','CO','PE','ID','PH','VN','IL','AE','HK','NZ','ZA','KE','GH'];
 
   new jsVectorMap({
     selector: '#world-map',
@@ -686,37 +702,45 @@ window.addEventListener('load', function () {
     zoomOnScroll: false,
     zoomButtons: false,
     regionStyle: {
-      initial:       { fill:'#1E293B', stroke:'#020617', strokeWidth:0.3 },
-      hover:         { fillOpacity:0.75 },
-      selected:      { fill:'#22D3EE' },
-      selectedHover: { fillOpacity:0.75 }
+      initial:       { fill: '#1E293B', stroke: '#020617', strokeWidth: 0.4 },
+      hover:         { fill: '#0E7490', cursor: 'pointer' },
+      selected:      { fill: '#22D3EE' },
+      selectedHover: { fill: '#06B6D4' }
     },
-    selectedRegions: EU,
+    selectedRegions: Object.keys(countries),
     onRegionTooltipShow: function (event, tooltip, code) {
-      var name = DATA[code];
-      if (!name) { event.preventDefault(); return; }
-      var color = GO.indexOf(code) !== -1 ? '#3B82F6' : '#22D3EE';
-      tooltip.text('<strong>' + name + '</strong><br><span style="color:' + color +
-                   '">Lokalno skladni računi</span>', true);
+      var c = countries[code];
+      if (!c) { event.preventDefault(); return; }
+      tooltip.text(
+        '<span class="fi fi-' + code.toLowerCase() + ' fis" style="width:14px;height:14px;' +
+        'border-radius:2px;display:inline-block;vertical-align:middle;margin-right:6px"></span>' +
+        c[0] + ' <span style="color:#94A3B8;margin-left:4px">' + c[1] + '</span>', true);
     }
   });
 
-  // Globalni trgi dobijo svojo barvo; jsvectormap pozna samo eno "selected"
-  // barvo, zato jih pobarvamo neposredno v SVG in barvo vrnemo, ko miska odide.
-  (function paint() {
+  // Zastavice lezijo cez SVG, zato jih postavimo sele, ko zemljevid pozna svoje mere.
+  requestAnimationFrame(function placeFlags() {
     var svg = document.querySelector('#world-map svg');
-    if (!svg) { requestAnimationFrame(paint); return; }
-    GO.forEach(function (c) {
-      var path = svg.querySelector('[data-code="' + c + '"]');
-      if (path) path.setAttribute('fill', '#3B82F6');
+    if (!svg) { requestAnimationFrame(placeFlags); return; }
+    var vb = svg.viewBox.baseVal;
+    if (!vb || !vb.width) { requestAnimationFrame(placeFlags); return; }
+    var overlay = document.getElementById('flag-overlay');
+    if (!overlay) return;
+    Object.keys(countries).forEach(function (code) {
+      var path = svg.querySelector('[data-code="' + code + '"]');
+      if (!path) return;
+      try {
+        var bb = path.getBBox();
+        if (!bb.width && !bb.height) return;
+        var flag = document.createElement('span');
+        flag.className = 'fi fi-' + code.toLowerCase() + ' country-map-flag';
+        flag.style.left = (bb.x + bb.width / 2) / vb.width * 100 + '%';
+        flag.style.top = (bb.y + bb.height / 2) / vb.height * 100 + '%';
+        flag.title = countries[code][0];
+        overlay.appendChild(flag);
+      } catch (e) {}
     });
-    svg.addEventListener('mouseleave', function (e) {
-      var path = e.target.closest ? e.target.closest('[data-code]') : null;
-      if (path && GO.indexOf(path.getAttribute('data-code')) !== -1) {
-        path.setAttribute('fill', '#3B82F6');
-      }
-    }, true);
-  })();
+  });
 });
 </script>
 
