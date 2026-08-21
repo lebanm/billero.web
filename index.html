@@ -1,297 +1,724 @@
 <!DOCTYPE html>
 <html lang="sl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Billero – Enostavno izdajanje računov</title>
-    <meta name="description" content="Billero je preprosta mobilna aplikacija za izdajanje računov. Ustvari PDF račun z UPN QR kodo v sekundi. Za freelancerje, inštruktorje in mala podjetja.">
-    <meta property="og:title" content="Billero – Enostavno izdajanje računov">
-    <meta property="og:description" content="Ustvari profesionalen PDF račun z UPN QR kodo v sekundi. Brez registracije, brez strežnika. Za freelancerje in mala podjetja.">
-    <meta property="og:image" content="https://billero.app/img/icons/billero_512.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://billero.app/">
-    <meta property="og:locale" content="sl_SI">
-    <link rel="canonical" href="https://billero.app/">
-    <link rel="alternate" hreflang="sl" href="https://billero.app/">
-    <link rel="alternate" hreflang="en" href="https://billero.app/en/">
-    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/">
-    <link rel="alternate" hreflang="th" href="https://billero.app/th/">
-    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
-    <link rel="icon" href="/favicon.ico" sizes="48x48">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/billero_16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/billero_32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/img/icons/billero_192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/billero_180.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#020617">
-  </head>
-  <body>
-    <header class="container">
-      <div class="logo">
-        <img src="img/icons/billero_256.png" alt="Billero logo">
-        <span>Billero</span>
-      </div>
-      <nav>
-        <a href="contact.html">Kontakt</a>
-        <a href="donate.html">Podpri nas</a>
-        <a href="user-guide.html">Navodila</a>
-        <a href="release-notes.html">Release notes</a>
-        <a href="privacy-policy.html">Zasebnost</a>
-      </nav>
-      <div class="lang-links">
-        <a href="index.html" class="active">SL</a>
-        <span>|</span>
-        <a href="en/index.html">EN</a>
-        <span>|</span>
-        <a href="nl/index.html">NL</a>
-        <span>|</span>
-        <a href="th/index.html">TH</a>
-      </div>
-    </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Billero — račun izdaš v minuti, plačilo dobiš z QR kodo</title>
+<meta name="description" content="Preprosta aplikacija za izdajanje računov za samostojne podjetnike in mala podjetja. PDF račun z UPN QR kodo, samodejni DDV, pošiljanje računovodji. 47 držav, brez registracije.">
 
-    <section class="hero container">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <div class="hero-note">Preprosta aplikacija za račune in hitra plačila</div>
-          <h1>Račune izdelaš hitro. Brez zapletenega računovodskega programa.</h1>
-          <p>
-            Billero je preprosta aplikacija za izdajanje računov, namenjena
-            freelancerjem, coachem, inštruktorjem, svetovalcem in malim
-            podjetjem, ki želijo račune pripraviti hitro in profesionalno.
-          </p>
-          <p>
-            V nekaj sekundah ustvariš račun, ga pošlješ stranki ali
-            računovodji in omogočiš hitro plačilo prek UPN QR kode.
-          </p>
-          <br>
-          <a class="button" href="#screenshots">Poglej aplikacijo</a>
-          <div class="store-badges" style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
-            <a href="https://apps.apple.com/si/app/billero/id6760204857" target="_blank" rel="noopener"
-               style="display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;border:1px solid #333;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;">
-               App Store</a>
-            <a href="https://play.google.com/store/apps/details?id=com.billero.app" target="_blank" rel="noopener"
-               style="display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;border:1px solid #333;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;">
-               ▶ Google Play</a>
-          </div>
-        </div>
-        <aside class="hero-panel">
-          <h3>Billero na kratko</h3>
-          <p>
-            Zasnovan je za uporabnike, ki potrebujejo jasen in enostaven način
-            za izdajanje računov, brez nepotrebnih modulov in zahtevnih nastavitev.
-          </p>
-          <ul>
-            <li>hiter vnos računa</li>
-            <li>samodejni izračun DDV</li>
-            <li>PDF račun in UPN QR</li>
-            <li>pošiljanje stranki ali računovodji</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
+<link rel="canonical" href="https://billero.app/">
+<link rel="alternate" hreflang="sl" href="https://billero.app/">
+<link rel="alternate" hreflang="en" href="https://billero.app/en/">
+<link rel="alternate" hreflang="nl" href="https://billero.app/nl/">
+<link rel="alternate" hreflang="th" href="https://billero.app/th/">
+<link rel="alternate" hreflang="x-default" href="https://billero.app/en/">
 
-    <section class="container features">
-      <div class="feature">
-        <h3>Račun v nekaj korakih</h3>
-        <p>
-          Vnesi stranko, storitev in znesek. Billero pripravi profesionalen
-          račun brez dolgotrajnega izpolnjevanja obrazcev.
-        </p>
-      </div>
-      <div class="feature">
-        <h3>Samodejni DDV in QR plačilo</h3>
-        <p>
-          Aplikacija samodejno izračuna DDV in pripravi UPN QR kodo za hitro
-          bančno nakazilo.
-        </p>
-      </div>
-      <div class="feature">
-        <h3>Primerno za samostojne podjetnike</h3>
-        <p>
-          Billero je prilagojen uporabnikom, ki potrebujejo preprosto orodje za
-          dnevno izdajanje računov in sodelovanje z računovodjo.
-        </p>
-      </div>
-      <div class="feature">
-        <h3>Plačilna povezava na PDF</h3>
-        <p>
-          Dodajte Stripe, PayPal, Revolut ali Wise QR kodo na vsak račun. Stranka skenira in plača — brez nastavitev na vaši strani.
-        </p>
-      </div>
-    </section>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://billero.app/">
+<meta property="og:site_name" content="Billero">
+<meta property="og:locale" content="sl_SI">
+<meta property="og:title" content="Billero — račun izdaš v minuti, plačilo dobiš z QR kodo">
+<meta property="og:description" content="Preprosta aplikacija za izdajanje računov. PDF z UPN QR kodo, samodejni DDV, pošiljanje računovodji. Brez registracije.">
+<meta property="og:image" content="https://billero.app/img/billero_og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Billero — račune izdaš v minuti">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Billero — račun izdaš v minuti, plačilo dobiš z QR kodo">
+<meta name="twitter:description" content="Preprosta aplikacija za izdajanje računov. PDF z UPN QR kodo, samodejni DDV, pošiljanje računovodji.">
+<meta name="twitter:image" content="https://billero.app/img/billero_og.png">
 
-    <section class="container section-block">
-      <h2>Komu je Billero namenjen</h2>
-      <p>
-        Billero je primeren za inštruktorje joge, trenerje plavanja, osebne
-        trenerje, freelancerje, svetovalce, terapevte in lastnike malih
-        podjetij, ki želijo izdajanje računov poenostaviti.
-      </p>
-      <div class="features">
-        <div class="feature">
-          <h3>Ustvari račun</h3>
-          <p>V nekaj sekundah vneseš stranko, storitev in znesek.</p>
-        </div>
-        <div class="feature">
-          <h3>Pošlji dokument</h3>
-          <p>Račun lahko pošlješ neposredno stranki ali računovodji.</p>
-        </div>
-        <div class="feature">
-          <h3>Prejmi plačilo</h3>
-          <p>Stranka lahko z UPN QR kodo hitreje izvede bančno plačilo.</p>
-        </div>
-      </div>
-    </section>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
 
-    <section class="container" id="screenshots">
-      <h2>Billero v praksi</h2>
-      <p>
-        Pregled resničnih zaslonov aplikacije: podatki podjetja, nov račun,
-        dodajanje stranke, UPN QR koda in seznam računov.
-      </p>
-      <div class="screenshots">
-        <img src="img/screenshots/moji_podatki.png" alt="Billero – podatki podjetja" loading="lazy" decoding="async">
-        <img src="img/screenshots/nov_racun_ddv.png" alt="Billero – nov račun" loading="lazy" decoding="async">
-        <img src="img/screenshots/dodaj_stranko.png" alt="Billero – dodaj stranko" loading="lazy" decoding="async">
-        <img src="img/screenshots/qr.png" alt="Billero – UPN QR koda" loading="lazy" decoding="async">
-        <img src="img/screenshots/racuni_racunovodji.png" alt="Billero – seznam računov" loading="lazy" decoding="async">
-      </div>
-    </section>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/billero_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/billero_32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icons/billero_192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/billero_180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#020617">
 
-    <section class="container section-block">
-      <h2>Lokalizirano v 47 državah · EU + globalni trgi</h2>
-      <p>Lokalno skladne davčne stopnje in pravila izdajanja računov za vsako podprto državo — EU DDV, GST, prodajni davek. Billero se prilagodi samodejno.</p>
-      <div class="map-wrap">
-        <div id="world-map"></div>
-        <div id="flag-overlay" aria-hidden="true"></div>
-      </div>
-      <p class="country-more">
-        <span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#22d3ee;vertical-align:middle;margin-right:4px;"></span> EU + razviti trgi &nbsp;
-        <span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#3b82f6;vertical-align:middle;margin-right:4px;margin-left:12px;"></span> Globalni trgi &nbsp;
-        · Premakni miško za podrobnosti.
-      </p>
-    </section>
+<style>
+  :root{
+    --brand:#22D3EE; --brand-hi:#67E8F9; --brand-deep:#0891B2; --brand-ink:#04252B;
+    --ok:#34D399; --warn:#FBBF24; --bad:#F87171;
 
-    <section class="container section-block">
-      <h2>Opis za App Store</h2>
-      <div class="feature">
-        <p>
-          Billero je preprosta aplikacija za izdajanje računov, namenjena
-          freelancerjem, coachem, inštruktorjem in svetovalcem, ki želijo
-          račune ustvariti hitro in biti plačani brez zapletenega
-          računovodskega programa.
-        </p>
-        <p>
-          V nekaj sekundah ustvari profesionalen račun in ga pošlji neposredno
-          svoji stranki ali računovodji.
-        </p>
+    --bg:#020617; --surface:#0B1120; --surface-2:#111A2E;
+    --line:#1E293B; --line-hi:#334155;
+    --tx:#F8FAFC; --soft:#94A3B8; --dim:#64748B;
+
+    --wrap:1060px; --r:14px;
+    --f-h1:clamp(2rem, 1.35rem + 2.9vw, 3.35rem);
+    --f-h2:clamp(1.5rem, 1.2rem + 1.4vw, 2.1rem);
+    --f-lead:clamp(1.02rem, 0.97rem + 0.3vw, 1.2rem);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);color:var(--tx);line-height:1.62;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;height:auto;display:block}
+  :focus-visible{outline:2px solid var(--brand-hi);outline-offset:3px;border-radius:4px}
+
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:var(--brand-ink);
+    padding:10px 16px;font-weight:700;border-radius:0 0 10px 0;z-index:100}
+  .skip:focus{left:0}
+
+  /* ── gumbi ── */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    background:var(--brand);color:var(--brand-ink);padding:13px 24px;border-radius:11px;
+    font:inherit;font-weight:700;font-size:.98rem;border:1px solid transparent;cursor:pointer;
+    transition:background .15s,transform .15s,border-color .15s}
+  .btn:hover{background:var(--brand-hi)}
+  .btn:active{transform:translateY(1px)}
+  .btn.lg{padding:16px 28px;font-size:1.04rem}
+  .btn.ghost{background:transparent;color:var(--tx);border-color:var(--line-hi)}
+  .btn.ghost:hover{background:var(--surface-2);border-color:var(--brand)}
+
+  /* trgovinski gumb: ime trgovine je pomembnejse od "Prenesi na" */
+  .store{display:inline-flex;align-items:center;gap:11px;background:#000;color:#fff;
+    border:1px solid #2B3B4E;border-radius:12px;padding:11px 20px;
+    transition:border-color .15s,background .15s}
+  .store:hover{border-color:var(--brand);background:#050B14}
+  .store svg{flex-shrink:0;fill:currentColor}
+  .store .s1{display:block;font-size:.68rem;color:#94A3B8;line-height:1.2}
+  .store .s2{display:block;font-size:.98rem;font-weight:700;line-height:1.25}
+
+  /* ── navigacija ── */
+  nav{position:sticky;top:0;z-index:50;background:rgba(2,6,23,.86);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:10px 20px;min-height:64px;flex-wrap:wrap}
+  .logo{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:800;
+    letter-spacing:-.02em;margin-right:auto}
+  .logo img{width:30px;height:30px;border-radius:8px}
+  .navlinks{display:flex;gap:20px;font-size:.92rem;color:var(--soft)}
+  .navlinks a:hover{color:var(--tx)}
+  .langs{display:flex;gap:2px;font-size:.78rem;font-weight:700}
+  .langs a{padding:5px 8px;border-radius:7px;color:var(--dim)}
+  .langs a:hover{color:var(--tx)}
+  .langs a[aria-current]{background:var(--surface-2);color:var(--brand)}
+
+  /* ── hero ── */
+  .hero{position:relative;padding:70px 0 58px;text-align:center;overflow:hidden}
+  .hero::before{content:'';position:absolute;inset:-40% 0 auto;height:720px;
+    background:radial-gradient(ellipse 60% 50% at 50% 40%, rgba(34,211,238,.14), transparent 70%);
+    pointer-events:none}
+  .hero .wrap{position:relative}
+  .badge{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:700;
+    color:var(--brand-hi);background:rgba(34,211,238,.09);
+    border:1px solid rgba(34,211,238,.28);border-radius:999px;padding:6px 15px;margin-bottom:22px}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--brand);
+    box-shadow:0 0 0 4px rgba(34,211,238,.18)}
+  h1{font-size:var(--f-h1);line-height:1.1;font-weight:800;letter-spacing:-.025em;
+    max-width:16ch;margin:0 auto 18px}
+  h1 .g{color:var(--brand)}
+  .lead{font-size:var(--f-lead);color:var(--soft);max-width:60ch;margin:0 auto 30px}
+  .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .micro{font-size:.85rem;color:var(--dim);margin-top:18px}
+
+  /* ── sekcije ── */
+  section{padding:60px 0;scroll-margin-top:72px}
+  .alt{background:var(--surface);border-block:1px solid var(--line)}
+  .sec-tag{color:var(--brand);font-weight:700;font-size:.8rem;letter-spacing:.09em;
+    text-transform:uppercase;text-align:center;margin-bottom:10px}
+  h2{font-size:var(--f-h2);font-weight:800;letter-spacing:-.02em;text-align:center;
+    max-width:24ch;margin:0 auto 12px}
+  .sub{text-align:center;color:var(--soft);max-width:62ch;margin:0 auto 42px}
+
+  /* ── problem / resitev ── */
+  .prob{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:820px;margin:0 auto}
+  .prob .col{padding:24px;border-radius:var(--r);border:1px solid}
+  .prob .bad{background:rgba(248,113,113,.06);border-color:rgba(248,113,113,.22)}
+  .prob .good{background:rgba(52,211,153,.06);border-color:rgba(52,211,153,.22)}
+  .prob h3{font-size:1rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .prob ul{list-style:none;font-size:.95rem}
+  .prob li{padding:6px 0 6px 26px;position:relative;color:var(--soft)}
+  .prob li::before{position:absolute;left:0;font-weight:800}
+  .prob .bad li::before{content:'✕';color:var(--bad)}
+  .prob .good li::before{content:'✓';color:var(--ok)}
+
+  /* ── demo kartica ── */
+  .demo{max-width:430px;margin:0 auto;background:var(--surface);border:1px solid var(--line);
+    border-radius:18px;overflow:hidden;box-shadow:0 24px 60px -24px rgba(0,0,0,.9)}
+  .demo .top{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:14px 18px;background:linear-gradient(180deg,#0F2430,#0A1523);
+    border-bottom:1px solid var(--line)}
+  .demo .top strong{display:flex;align-items:center;gap:8px;font-size:.98rem}
+  .demo .top img{width:20px;height:20px;border-radius:6px}
+  .demo .top span{font-size:.8rem;color:var(--dim)}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:14px 18px;border-bottom:1px solid var(--line);border-left:3px solid transparent}
+  .row:last-child{border-bottom:none}
+  .row.s{border-left-color:var(--ok)}
+  .row.w{border-left-color:var(--warn)}
+  .row.d{border-left-color:var(--bad)}
+  .row .nm{font-weight:600;font-size:.95rem}
+  .row .mt{font-size:.82rem;color:var(--dim)}
+  .pill{flex-shrink:0;font-size:.75rem;font-weight:700;padding:4px 11px;border-radius:999px;white-space:nowrap}
+  .pill.s{background:rgba(52,211,153,.14);color:#6EE7B7}
+  .pill.w{background:rgba(251,191,36,.14);color:#FCD34D}
+  .pill.d{background:rgba(248,113,113,.14);color:#FCA5A5}
+  .demo .foot{display:flex;gap:10px;align-items:center;padding:13px 18px;font-size:.82rem;
+    background:rgba(34,211,238,.07);border-top:1px solid rgba(34,211,238,.2);color:var(--brand-hi)}
+  .demo-note{text-align:center;font-size:.84rem;color:var(--dim);margin-top:18px}
+
+  /* ── mreze ── */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px}
+  .alt .card{background:var(--surface-2)}
+  .card .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+    font-size:1.35rem;background:rgba(34,211,238,.09);border:1px solid rgba(34,211,238,.2);
+    margin-bottom:14px}
+  .card h3{font-size:1.05rem;margin-bottom:6px}
+  .card p{color:var(--soft);font-size:.93rem}
+  .card .tag{display:inline-block;margin-top:10px;font-size:.72rem;font-weight:700;
+    letter-spacing:.04em;text-transform:uppercase;color:var(--brand-hi);
+    background:rgba(34,211,238,.10);border-radius:999px;padding:3px 9px}
+
+  /* ── zaslonske slike ── */
+  .shots{display:flex;gap:16px;overflow-x:auto;padding:4px 20px 18px;
+    scroll-snap-type:x mandatory;scrollbar-width:thin}
+  .shots img{width:230px;aspect-ratio:1242/2688;flex-shrink:0;border-radius:16px;
+    border:1px solid var(--line);scroll-snap-align:center;background:var(--surface)}
+
+  /* ── zemljevid ── */
+  .map-wrap{position:relative;background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--r);padding:10px;overflow:hidden}
+  #world-map{height:clamp(260px,42vw,440px)}
+  .jvm-tooltip{background:#0F172A!important;border:1px solid var(--line-hi)!important;
+    color:var(--tx)!important;border-radius:8px!important;font-size:.85rem!important}
+  .legend{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;
+    font-size:.85rem;color:var(--dim);margin-top:18px}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;
+    margin-right:7px;vertical-align:baseline}
+
+  /* ── zasebnost ── */
+  .privacy{max-width:820px;margin:0 auto;background:var(--surface-2);
+    border:1px solid var(--line);border-radius:18px;padding:32px 28px}
+  .privacy ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:10px 24px}
+  .privacy li{position:relative;padding-left:26px;color:var(--soft);font-size:.95rem}
+  .privacy li::before{content:'✓';position:absolute;left:0;color:var(--ok);font-weight:800}
+
+  /* ── cene ── */
+  .price{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;align-items:start}
+  .tier{position:relative;background:var(--surface);border:1px solid var(--line);
+    border-radius:16px;padding:26px 22px}
+  .tier.hot{border-color:var(--brand);background:var(--surface-2)}
+  .tier .pop{position:absolute;top:-11px;left:22px;background:var(--brand);color:var(--brand-ink);
+    font-size:.7rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;
+    padding:3px 11px;border-radius:999px}
+  .tier .nm{font-size:.92rem;font-weight:700;color:var(--soft)}
+  .tier .amt{font-size:1.85rem;font-weight:800;letter-spacing:-.02em;margin:8px 0 2px}
+  .tier .amt small{font-size:.86rem;font-weight:500;color:var(--dim)}
+  .tier .anchor{font-size:.83rem;color:var(--dim);margin-bottom:16px}
+  .tier ul{list-style:none;font-size:.9rem}
+  .tier li{padding:5px 0 5px 24px;position:relative;color:var(--soft)}
+  .tier li::before{content:'✓';position:absolute;left:0;color:var(--ok);font-weight:800}
+  .tier li.no{color:var(--dim)}
+  .tier li.no::before{content:'–';color:var(--dim)}
+  .price-note{text-align:center;font-size:.82rem;color:var(--dim);margin-top:24px}
+
+  /* ── zakljucni poziv ── */
+  .final{max-width:660px;margin:0 auto;text-align:center;
+    background:linear-gradient(160deg,#0D2A33,#08121F);
+    border:1px solid rgba(34,211,238,.26);border-radius:20px;padding:42px 30px}
+  .final h2{max-width:none;margin-bottom:10px}
+  .final p{color:var(--soft);margin-bottom:24px}
+  .final .cta-row{margin-bottom:14px}
+
+  /* ── FAQ ── */
+  .faq{max-width:740px;margin:0 auto}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq summary{list-style:none;cursor:pointer;padding:18px 34px 18px 0;position:relative;
+    font-size:1.02rem;font-weight:600}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:'+';position:absolute;right:6px;top:16px;font-size:1.4rem;
+    font-weight:400;color:var(--brand);transition:transform .2s}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq p{color:var(--soft);font-size:.95rem;padding:0 34px 20px 0;margin-top:-4px}
+
+  /* ── noga ── */
+  footer{border-top:1px solid var(--line);background:var(--surface);
+    padding:34px 0;font-size:.86rem;color:var(--dim)}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+  footer .links{display:flex;gap:16px;flex-wrap:wrap}
+  footer .links a:hover{color:var(--tx)}
+  footer .fam{width:100%;padding-top:18px;border-top:1px solid var(--line);font-size:.82rem}
+
+  @media (max-width:760px){
+    nav .wrap{padding-block:10px;min-height:0}
+    .navlinks{order:3;width:100%;gap:18px;font-size:.86rem;overflow-x:auto;padding-bottom:2px}
+    .navlinks a{white-space:nowrap}
+    .navlinks::-webkit-scrollbar{display:none}
+    /* Gumb v glavi je odvec: v naslovu sta dva vecja, 40 px nizje. */
+    nav .btn{display:none}
+    .prob{grid-template-columns:1fr}
+    .hero{padding-top:50px}
+    section{padding:48px 0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Preskoči na vsebino</a>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top"><img src="img/icons/billero_192.png" alt="" width="30" height="30">Billero</a>
+    <div class="navlinks">
+      <a href="#zakaj">Zakaj</a>
+      <a href="#kako">Kako deluje</a>
+      <a href="#funkcije">Funkcije</a>
+      <a href="#drzave">Države</a>
+      <a href="#cene">Cene</a>
+      <a href="user-guide.html">Navodila</a>
+    </div>
+    <div class="langs">
+      <a href="index.html" aria-current="page">SL</a>
+      <a href="en/index.html">EN</a>
+      <a href="nl/index.html">NL</a>
+      <a href="th/index.html">TH</a>
+    </div>
+    <a href="#prenos" class="btn">Prenesi</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="badge"><span class="dot" aria-hidden="true"></span> iOS in Android · 47 držav</p>
+    <h1>Račun izdaš v minuti. <span class="g">Plačilo dobiš z QR kodo.</span></h1>
+    <p class="lead">
+      Billero je aplikacija za izdajanje računov za samostojne podjetnike, freelancerje
+      in mala podjetja. Vneseš stranko in znesek, ven pride profesionalen PDF z UPN QR
+      kodo — pripravljen za stranko in za računovodjo.
+    </p>
+    <div class="cta-row">
+      <a class="store" href="https://apps.apple.com/si/app/billero/id6760204857" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8c-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.3-2.5 1.3-2.6 0 0-2.5-1-2.5-3.5zM14.2 5.9c.6-.8 1-1.9.9-3-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.8-1.3z"/></svg>
+        <span><span class="s1">Prenesi na</span><span class="s2">App Store</span></span>
+      </a>
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.billero.app" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.2c-.3.3-.5.8-.5 1.4v16.8c0 .6.2 1.1.5 1.4l.1.1 9.4-9.4v-.2L3.6 2.2zM16.5 15 13.8 12.3v-.2l2.7-2.7.1.1 3.3 1.9c.9.5.9 1.4 0 1.9L16.6 15h-.1zM15.7 15.8 12.9 13 3.5 22.4c.3.3.8.4 1.4.1l10.8-6.7M15.7 8.2 4.9 1.5c-.6-.3-1.1-.3-1.4.1L12.9 11l2.8-2.8z"/></svg>
+        <span><span class="s1">Na voljo na</span><span class="s2">Google Play</span></span>
+      </a>
+    </div>
+    <p class="micro">Brez registracije. Podatki ostanejo na tvoji napravi.</p>
+  </div>
+</header>
+
+<section id="zakaj">
+  <div class="wrap">
+    <p class="sec-tag">Zakaj Billero</p>
+    <h2>Za en račun ne rabiš računovodskega programa</h2>
+    <p class="sub">
+      Večina orodij za izdajanje računov je narejena za podjetja s knjigovodstvom.
+      Če izdaš pet računov na mesec, je to strošek, prijava in pol ure učenja za nekaj,
+      kar bi moralo trajati minuto.
+    </p>
+    <div class="prob">
+      <div class="col bad">
+        <h3><span aria-hidden="true">😤</span> Word predloga in Excel</h3>
         <ul>
-          <li>ustvarjanje računov v nekaj sekundah</li>
-          <li>samodejni izračun DDV</li>
-          <li>QR plačilo za hitro bančno nakazilo</li>
-          <li>preprosto upravljanje strank</li>
-          <li>profesionalni PDF računi</li>
-          <li>pošiljanje računov neposredno računovodji</li>
-          <li>zasnovano za samostojne podjetnike in mala podjetja</li>
+          <li>Zaporedno številko iščeš v prejšnjem računu</li>
+          <li>DDV računaš na roko in ga včasih zaokrožiš narobe</li>
+          <li>Stranka mora podatke za plačilo prepisovati</li>
+          <li>Ob koncu meseca zbiraš datoteke za računovodjo</li>
+          <li>Kdo ni plačal, veš šele, ko pogledaš izpisek</li>
         </ul>
       </div>
-    </section>
-
-    <footer class="container">
-      <p>© 2026 Billero</p>
-      <div>
-        <a href="privacy-policy.html">Pravilnik o zasebnosti</a>
-        &nbsp; | &nbsp;
-        <a href="terms-of-use.html">Pogoji uporabe</a>
-        &nbsp; | &nbsp;
-        <a href="user-guide.html">Navodila</a>
-        &nbsp; | &nbsp;
-        <a href="release-notes.html">Release notes</a>
-        &nbsp; | &nbsp;
-        <a href="contact.html">Kontakt</a>
-        &nbsp; | &nbsp;
-        <a href="donate.html">Podpri nas</a>
+      <div class="col good">
+        <h3><span aria-hidden="true">🧾</span> Z Billerom</h3>
+        <ul>
+          <li>Številčenje teče samo, po tvojem vzorcu</li>
+          <li>DDV se izračuna po pravilih tvoje države</li>
+          <li>UPN QR koda — stranka skenira in plača</li>
+          <li>Vse račune pošlješ računovodji z enim dotikom</li>
+          <li>Zapadli računi so označeni, spomnik gre sam</li>
+        </ul>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
-    <script>
-      // Imena držav za tooltip. Seznam ujemen z onboarding (country_legal_data.dart) — 47 držav.
-      var DATA = {
-        SI:'Slovenija', AT:'Avstrija', BE:'Belgija', BA:'Bosna in Hercegovina',
-        CY:'Ciper', CZ:'Češka', DK:'Danska', EE:'Estonija', FI:'Finska',
-        DE:'Nemčija', GR:'Grčija', HR:'Hrvaška', HU:'Madžarska', IE:'Irska',
-        LV:'Latvija', LT:'Litva', LU:'Luksemburg', MT:'Malta', NL:'Nizozemska',
-        NO:'Norveška', PL:'Poljska', PT:'Portugalska', RO:'Romunija', RS:'Srbija',
-        SK:'Slovaška', ES:'Španija', SE:'Švedska', GB:'Velika Britanija', US:'ZDA',
-        CA:'Kanada', AU:'Avstralija', SG:'Singapur', TH:'Tajska',
-        // Globalni trgi (GO)
-        MX:'Mehika', CL:'Čile', CO:'Kolumbija', PE:'Peru', ID:'Indonezija',
-        PH:'Filipini', VN:'Vietnam', IL:'Izrael', AE:'UAE', HK:'Hong Kong',
-        NZ:'Nova Zelandija', ZA:'Južna Afrika', KE:'Kenija', GH:'Gana',
-      };
+    </div>
+  </div>
+</section>
 
-      var GO   = ['MX','CL','CO','PE','ID','PH','VN','IL','AE','HK','NZ','ZA','KE','GH'];
-      var WISH = [];
+<section class="alt" id="kako">
+  <div class="wrap">
+    <p class="sec-tag">Kako deluje</p>
+    <h2>»Kdo mi še ni plačal?« — na prvi pogled</h2>
+    <p class="sub">
+      Vsak račun ima svoj status. Zeleno = plačano. Oranžno = rok se izteka.
+      Rdeče = zapadlo, spomnik gre lahko sam.
+    </p>
 
-      new jsVectorMap({
-        selector: '#world-map',
-        map: 'world',
-        backgroundColor: '#0b1120',
-        zoomOnScroll: false,
-        zoomButtons: false,
-        regionStyle: {
-          initial:       { fill:'#1e293b', stroke:'#0f172a', strokeWidth:0.3 },
-          hover:         { fillOpacity:0.75 },
-          selected:      { fill:'#22d3ee' },
-          selectedHover: { fillOpacity:0.75 }
-        },
-        selectedRegions: [
-          'SI','AT','BE','BA','CY','CZ','DK','EE','FI','DE',
-          'GR','HR','HU','IE','LV','LT','LU','MT','NL','NO',
-          'PL','PT','RO','RS','SK','ES','SE','GB','US','CA',
-          'AU','SG','TH'
-        ],
-        onRegionTooltipShow: function(event, tooltip, code) {
-          var name = DATA[code];
-          if (!name) { event.preventDefault(); return; }
-          var isGO   = GO.indexOf(code)   !== -1;
-          var isWISH = WISH.indexOf(code) !== -1;
-          var color  = isWISH ? '#a855f7' : isGO ? '#3b82f6' : '#22d3ee';
-          tooltip.text(
-            '<strong>' + name + '</strong><br>' +
-            '<span style="color:' + color + '">Lokalno skladni računi</span>',
-            true
-          );
-        },
-      });
+    <div class="demo">
+      <div class="top">
+        <strong><img src="img/icons/billero_192.png" alt="" width="20" height="20"> Moji računi</strong>
+        <span>avgust 2026</span>
+      </div>
+      <div class="row s">
+        <div><div class="nm">2026-084 · Studio Vita</div><div class="mt">480,00 € · plačano 12. 8. 2026</div></div>
+        <span class="pill s">plačano</span>
+      </div>
+      <div class="row w">
+        <div><div class="nm">2026-085 · Kavarna Lipa</div><div class="mt">1.220,00 € · rok 24. 8. 2026</div></div>
+        <span class="pill w">še 3 dni</span>
+      </div>
+      <div class="row d">
+        <div><div class="nm">2026-081 · Gradnje d.o.o.</div><div class="mt">640,00 € · zapadlo 2. 8. 2026</div></div>
+        <span class="pill d">19 dni zamude</span>
+      </div>
+      <p class="foot"><span aria-hidden="true">🔔</span> Spomnik za zapadle račune pošlji z enim dotikom.</p>
+    </div>
+    <p class="demo-note">Prikaz vmesnika s primeri podatkov.</p>
 
-      function setCustomColors(svg) {
-        GO.forEach(function(c) {
-          var p = svg.querySelector('[data-code="' + c + '"]');
-          if (p) p.setAttribute('fill', '#3b82f6');
-        });
-        WISH.forEach(function(c) {
-          var p = svg.querySelector('[data-code="' + c + '"]');
-          if (p) p.setAttribute('fill', '#a855f7');
-        });
+    <div class="grid" style="margin-top:42px">
+      <div class="card">
+        <div class="ic" aria-hidden="true">✍️</div>
+        <h3>1 · Ustvari</h3>
+        <p>Izbereš stranko, vpišeš storitev in znesek. Številka, datumi in DDV se izpolnijo sami.</p>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">📤</div>
+        <h3>2 · Pošlji</h3>
+        <p>PDF gre stranki po e-pošti ali sporočilu. Isti račun z enim dotikom tudi računovodji.</p>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">💸</div>
+        <h3>3 · Prejmi plačilo</h3>
+        <p>Stranka skenira UPN QR kodo v svoji banki. Nič prepisovanja, nič tipkarskih napak.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funkcije">
+  <div class="wrap">
+    <p class="sec-tag">Kaj vse zna</p>
+    <h2>Dovolj, da pokriješ celo leto računov</h2>
+    <p class="sub">Brez modulov, ki jih ne boš nikoli odprl.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic" aria-hidden="true">🧾</div>
+        <h3>PDF račun z UPN QR</h3>
+        <p>Profesionalen izgled z lastnim logotipom in podpisom. QR koda za takojšnje bančno plačilo.</p>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">🧮</div>
+        <h3>Samodejni DDV</h3>
+        <p>Stopnje in pravila izdajanja za 47 držav — EU DDV, GST in prodajni davek. Tudi oproščeni po 94. členu.</p>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">🔗</div>
+        <h3>Plačilna povezava</h3>
+        <p>Stripe, PayPal, Revolut ali Wise QR koda na računu. Stranka skenira in plača s kartico.</p>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">🔔</div>
+        <h3>Spomniki za neplačnike</h3>
+        <p>Zapadli računi so označeni, opomin se pripravi sam. Predračun, dobropis in ponavljajoči računi.</p>
+        <span class="tag">Pro</span>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">📊</div>
+        <h3>Nadzorna plošča</h3>
+        <p>Promet po mesecih, odprte terjatve po starosti, najboljše stranke. Brez izvoza v Excel.</p>
+        <span class="tag">Pro</span>
+      </div>
+      <div class="card">
+        <div class="ic" aria-hidden="true">🏢</div>
+        <h3>ARES in VIES</h3>
+        <p>Vpišeš davčno številko, podatki podjetja se izpolnijo sami. Veljavnost ID za DDV preverjena.</p>
+        <span class="tag">Plus</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="sec-tag">Billero v praksi</p>
+    <h2>Pravi zasloni iz aplikacije</h2>
+    <p class="sub">Podatki podjetja, nov račun z DDV, dodajanje stranke, UPN QR koda in pošiljanje računovodji.</p>
+  </div>
+  <div class="shots">
+    <img src="img/screenshots/moji_podatki.png" alt="Billero — podatki podjetja" width="230" height="498" loading="lazy" decoding="async">
+    <img src="img/screenshots/nov_racun_ddv.png" alt="Billero — nov račun z obračunanim DDV" width="230" height="498" loading="lazy" decoding="async">
+    <img src="img/screenshots/dodaj_stranko.png" alt="Billero — dodajanje stranke" width="230" height="498" loading="lazy" decoding="async">
+    <img src="img/screenshots/qr.png" alt="Billero — UPN QR koda za plačilo" width="230" height="498" loading="lazy" decoding="async">
+    <img src="img/screenshots/racuni_racunovodji.png" alt="Billero — pošiljanje računov računovodji" width="230" height="498" loading="lazy" decoding="async">
+  </div>
+</section>
+
+<section id="drzave">
+  <div class="wrap">
+    <p class="sec-tag">Lokalizacija</p>
+    <h2>Lokalno skladni računi v 47 državah</h2>
+    <p class="sub">
+      Davčne stopnje, obvezni podatki na računu in oblika številčenja se prilagodijo državi,
+      ki jo izbereš ob prvem zagonu.
+    </p>
+    <div class="map-wrap">
+      <div id="world-map"></div>
+    </div>
+    <p class="legend">
+      <span><i style="background:#22D3EE"></i>EU in razviti trgi</span>
+      <span><i style="background:#3B82F6"></i>Globalni trgi</span>
+      <span>Za podrobnosti se ustavi na državi.</span>
+    </p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="sec-tag">Zasebnost</p>
+    <h2>Tvoje stranke ostanejo tvoje</h2>
+    <p class="sub">Billero nima uporabniških računov, ker jih ne potrebuje. Podatki so v bazi na tvoji napravi.</p>
+    <div class="privacy">
+      <ul>
+        <li>Brez registracije in brez prijave</li>
+        <li>Baza strank in računov ostane na napravi</li>
+        <li>Varnostna kopija šifrirana z AES-256</li>
+        <li>API ključi privzeto niso v varnostni kopiji</li>
+        <li>Deluje brez internetne povezave</li>
+        <li>Izvoz vseh podatkov, kadar hočeš</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="cene">
+  <div class="wrap">
+    <p class="sec-tag">Cene</p>
+    <h2>Začni brezplačno, plačaj šele, ko ti zmanjka računov</h2>
+    <p class="sub">En pravočasno plačan račun povrne celoletno naročnino.</p>
+    <div class="price">
+      <div class="tier">
+        <div class="nm">Brezplačno</div>
+        <div class="amt">0 €</div>
+        <p class="anchor">za začetek</p>
+        <ul>
+          <li>10 računov na leto</li>
+          <li>PDF z UPN QR kodo</li>
+          <li>Samodejni DDV</li>
+          <li class="no">Oznaka »Created with Billero«</li>
+        </ul>
+      </div>
+      <div class="tier hot">
+        <div class="pop">Najbolj priljubljeno</div>
+        <div class="nm">Plus</div>
+        <div class="amt">3,99 €<small>/mesec</small></div>
+        <p class="anchor">ali 29 € na leto</p>
+        <ul>
+          <li>Neomejeno računov, brez oznake</li>
+          <li>ARES in VIES samodejno izpolnjevanje</li>
+          <li>Ponavljajoči računi in popusti</li>
+          <li>Večjezični PDF, samodejna varnostna kopija</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <div class="nm">Pro</div>
+        <div class="amt">7,99 €<small>/mesec</small></div>
+        <p class="anchor">ali 59 € na leto</p>
+        <ul>
+          <li>Vse iz Plus</li>
+          <li>Predračun in dobropis</li>
+          <li>Samodejni spomniki za neplačnike</li>
+          <li>Nadzorna plošča in neomejeno OCR branje</li>
+        </ul>
+      </div>
+    </div>
+    <p class="price-note">
+      Naročnina se obnavlja samodejno, prekličeš jo v App Store ali Google Play.
+      Končno ceno v tvoji valuti določi trgovina.
+    </p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="sec-tag">Pogosta vprašanja</p>
+    <h2>Vse, kar te zanima</h2>
+    <div class="faq" style="margin-top:28px">
+      <details open>
+        <summary>Ali rabim uporabniški račun?</summary>
+        <p>Ne. Ni registracije in ni prijave. Podatki o strankah in računih so shranjeni lokalno na tvoji napravi.</p>
+      </details>
+      <details>
+        <summary>Ali je Billero primeren za s.p. in d.o.o.?</summary>
+        <p>Da. Podpira zavezance za DDV in tiste, ki niso, oprostitve po 94. členu ZDDV-1, več plačilnih računov in lastno oštevilčenje. Za polno knjigovodstvo ostaja tvoj računovodja.</p>
+      </details>
+      <details>
+        <summary>Kaj je UPN QR koda in ali jo banke sprejmejo?</summary>
+        <p>To je standardna slovenska koda za plačilni nalog. Stranka jo skenira v svoji mobilni banki in vsi podatki za plačilo se izpolnijo sami. V drugih državah Billero uporabi lokalno ustaljeno obliko oziroma plačilno povezavo.</p>
+      </details>
+      <details>
+        <summary>Kako pošljem račune računovodji?</summary>
+        <p>V seznamu računov izbereš obdobje in vse pošlješ v enem sporočilu — PDF-ji in zbirna datoteka skupaj.</p>
+      </details>
+      <details>
+        <summary>Kaj se zgodi, če zamenjam telefon?</summary>
+        <p>Narediš varnostno kopijo, ki jo lahko zaščitiš z geslom (AES-256), in jo na novi napravi obnoviš. Vključeni so logotip, podpis in prejeti računi.</p>
+      </details>
+      <details>
+        <summary>Deluje brez interneta?</summary>
+        <p>Da. Za izdajanje računov povezave ne potrebuješ. Internet rabijo samo ARES in VIES poizvedbe, AI branje računov in pošiljanje.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="prenos">
+  <div class="wrap">
+    <div class="final">
+      <h2>Naslednji račun izdaj v minuti</h2>
+      <p>Prenesi Billero in ga preizkusi na pravem računu. Brez registracije, brez kartice.</p>
+      <div class="cta-row">
+        <a class="store" href="https://apps.apple.com/si/app/billero/id6760204857" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8c-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.3-2.5 1.3-2.6 0 0-2.5-1-2.5-3.5zM14.2 5.9c.6-.8 1-1.9.9-3-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.8-1.3z"/></svg>
+          <span><span class="s1">Prenesi na</span><span class="s2">App Store</span></span>
+        </a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.billero.app" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.2c-.3.3-.5.8-.5 1.4v16.8c0 .6.2 1.1.5 1.4l.1.1 9.4-9.4v-.2L3.6 2.2zM16.5 15 13.8 12.3v-.2l2.7-2.7.1.1 3.3 1.9c.9.5.9 1.4 0 1.9L16.6 15h-.1zM15.7 15.8 12.9 13 3.5 22.4c.3.3.8.4 1.4.1l10.8-6.7M15.7 8.2 4.9 1.5c-.6-.3-1.1-.3-1.4.1L12.9 11l2.8-2.8z"/></svg>
+          <span><span class="s1">Na voljo na</span><span class="s2">Google Play</span></span>
+        </a>
+      </div>
+      <p class="micro">Vprašanje pred prenosom? <a href="contact.html" style="color:var(--brand-hi)">Piši nam</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Billero</strong> · računi za samostojne podjetnike</p>
+    <div class="links">
+      <a href="user-guide.html">Navodila</a>
+      <a href="release-notes.html">Novosti</a>
+      <a href="privacy-policy.html">Zasebnost</a>
+      <a href="terms-of-use.html">Pogoji uporabe</a>
+      <a href="legal-info.html">Pravne informacije</a>
+      <a href="contact.html">Kontakt</a>
+      <a href="donate.html">Podpri nas</a>
+    </div>
+    <p class="fam">© 2026 B-DataFit, Matej Leban s.p. · Billero</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Billero",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "iOS, Android",
+      "description": "Aplikacija za izdajanje računov za samostojne podjetnike in mala podjetja. PDF račun z UPN QR kodo, samodejni obračun DDV, pošiljanje računovodji.",
+      "url": "https://billero.app/",
+      "image": "https://billero.app/img/billero_og.png",
+      "inLanguage": "sl",
+      "author": { "@type": "Organization", "name": "B-DataFit, Matej Leban s.p." },
+      "offers": [
+        { "@type": "Offer", "name": "Brezplačno", "price": "0", "priceCurrency": "EUR" },
+        { "@type": "Offer", "name": "Plus", "price": "3.99", "priceCurrency": "EUR" },
+        { "@type": "Offer", "name": "Pro", "price": "7.99", "priceCurrency": "EUR" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Ali rabim uporabniški račun?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ne. Ni registracije in ni prijave. Podatki o strankah in računih so shranjeni lokalno na tvoji napravi." } },
+        { "@type": "Question", "name": "Ali je Billero primeren za s.p. in d.o.o.?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Da. Podpira zavezance za DDV in tiste, ki niso, oprostitve po 94. členu ZDDV-1, več plačilnih računov in lastno oštevilčenje." } },
+        { "@type": "Question", "name": "Kaj je UPN QR koda in ali jo banke sprejmejo?",
+          "acceptedAnswer": { "@type": "Answer", "text": "To je standardna slovenska koda za plačilni nalog. Stranka jo skenira v mobilni banki in podatki za plačilo se izpolnijo sami." } },
+        { "@type": "Question", "name": "Kako pošljem račune računovodji?",
+          "acceptedAnswer": { "@type": "Answer", "text": "V seznamu računov izbereš obdobje in vse pošlješ v enem sporočilu — PDF-ji in zbirna datoteka skupaj." } },
+        { "@type": "Question", "name": "Kaj se zgodi, če zamenjam telefon?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Narediš varnostno kopijo, ki jo lahko zaščitiš z geslom (AES-256), in jo na novi napravi obnoviš." } },
+        { "@type": "Question", "name": "Deluje brez interneta?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Da. Za izdajanje računov povezave ne potrebuješ. Internet rabijo samo ARES in VIES poizvedbe, AI branje računov in pošiljanje." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js" defer></script>
+<script defer>
+window.addEventListener('load', function () {
+  if (typeof jsVectorMap !== 'function') return;   // CDN nedosegljiv — sekcija ostane prazna
+
+  // Imena drzav za namig. Seznam usklajen z onboardingom (country_legal_data.dart) — 47 drzav.
+  var DATA = {
+    SI:'Slovenija', AT:'Avstrija', BE:'Belgija', BA:'Bosna in Hercegovina',
+    CY:'Ciper', CZ:'Češka', DK:'Danska', EE:'Estonija', FI:'Finska',
+    DE:'Nemčija', GR:'Grčija', HR:'Hrvaška', HU:'Madžarska', IE:'Irska',
+    LV:'Latvija', LT:'Litva', LU:'Luksemburg', MT:'Malta', NL:'Nizozemska',
+    NO:'Norveška', PL:'Poljska', PT:'Portugalska', RO:'Romunija', RS:'Srbija',
+    SK:'Slovaška', ES:'Španija', SE:'Švedska', GB:'Velika Britanija', US:'ZDA',
+    CA:'Kanada', AU:'Avstralija', SG:'Singapur', TH:'Tajska',
+    MX:'Mehika', CL:'Čile', CO:'Kolumbija', PE:'Peru', ID:'Indonezija',
+    PH:'Filipini', VN:'Vietnam', IL:'Izrael', AE:'ZAE', HK:'Hongkong',
+    NZ:'Nova Zelandija', ZA:'Južna Afrika', KE:'Kenija', GH:'Gana'
+  };
+  var EU = ['SI','AT','BE','BA','CY','CZ','DK','EE','FI','DE','GR','HR','HU','IE','LV','LT',
+            'LU','MT','NL','NO','PL','PT','RO','RS','SK','ES','SE','GB','US','CA','AU','SG','TH'];
+  var GO = ['MX','CL','CO','PE','ID','PH','VN','IL','AE','HK','NZ','ZA','KE','GH'];
+
+  new jsVectorMap({
+    selector: '#world-map',
+    map: 'world',
+    backgroundColor: '#0B1120',
+    zoomOnScroll: false,
+    zoomButtons: false,
+    regionStyle: {
+      initial:       { fill:'#1E293B', stroke:'#020617', strokeWidth:0.3 },
+      hover:         { fillOpacity:0.75 },
+      selected:      { fill:'#22D3EE' },
+      selectedHover: { fillOpacity:0.75 }
+    },
+    selectedRegions: EU,
+    onRegionTooltipShow: function (event, tooltip, code) {
+      var name = DATA[code];
+      if (!name) { event.preventDefault(); return; }
+      var color = GO.indexOf(code) !== -1 ? '#3B82F6' : '#22D3EE';
+      tooltip.text('<strong>' + name + '</strong><br><span style="color:' + color +
+                   '">Lokalno skladni računi</span>', true);
+    }
+  });
+
+  // Globalni trgi dobijo svojo barvo; jsvectormap pozna samo eno "selected"
+  // barvo, zato jih pobarvamo neposredno v SVG in barvo vrnemo, ko miska odide.
+  (function paint() {
+    var svg = document.querySelector('#world-map svg');
+    if (!svg) { requestAnimationFrame(paint); return; }
+    GO.forEach(function (c) {
+      var path = svg.querySelector('[data-code="' + c + '"]');
+      if (path) path.setAttribute('fill', '#3B82F6');
+    });
+    svg.addEventListener('mouseleave', function (e) {
+      var path = e.target.closest ? e.target.closest('[data-code]') : null;
+      if (path && GO.indexOf(path.getAttribute('data-code')) !== -1) {
+        path.setAttribute('fill', '#3B82F6');
       }
+    }, true);
+  })();
+});
+</script>
 
-      (function paint() {
-        var svg = document.querySelector('#world-map svg');
-        if (!svg) { requestAnimationFrame(paint); return; }
-        setCustomColors(svg);
-        svg.addEventListener('mouseleave', function(e) {
-          var path = e.target.closest ? e.target.closest('[data-code]') : e.target;
-          if (!path) return;
-          var code = path.getAttribute('data-code');
-          if (!code) return;
-          if (GO.indexOf(code)   !== -1) path.setAttribute('fill', '#3b82f6');
-          if (WISH.indexOf(code) !== -1) path.setAttribute('fill', '#a855f7');
-        }, true);
-      })();
-    </script>
-  </body>
+</body>
 </html>
