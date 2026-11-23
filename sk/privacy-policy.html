@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billero – Zásady ochrany súkromia</title>
-    <meta name="description" content="Billero zásady ochrany súkromia. Všetky dáta ukladáme výlučne na vašom zariadení. Neprevádzkujeme žiadne servery a nezbierame osobné dáta.">
+    <meta name="description" content="Billero zásady ochrany súkromia. Aplikácia na vystavovanie faktúr, ktorá uchováva údaje lokálne (local-first). Čo opúšťa vaše zariadenie, kedy a komu.">
     <link rel="canonical" href="https://billero.app/sk/privacy-policy.html">
     <link rel="alternate" hreflang="sl" href="https://billero.app/privacy-policy.html">
     <link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy.html">
@@ -44,49 +44,82 @@
 
     <div class="container section-block">
       <h1>Billero – Zásady ochrany súkromia</h1>
-      <p><strong>Posledná aktualizácia:</strong> marec 2026</p>
-      <p>Billero rešpektuje vaše súkromie. Všetky dáta ukladáme výlučne na vašom zariadení. Neprevádzkujeme žiadne servery a nezbierame osobné dáta.</p>
+      <p><strong>Posledná aktualizácia:</strong> november 2026 (verzia aplikácie 1.8.1)</p>
 
-      <h2>1. Lokálne ukladanie dát</h2>
-      <p>Všetky vaše dáta (faktúry, zákazníci, obrázky faktúr) sú uložené lokálne na vašom zariadení v lokálnej databáze. Dáta nikdy neopustia vaše zariadenie a nie sú prenášané na žiadny externý server.</p>
+      <p>Billero je aplikácia na vystavovanie faktúr, ktorá uchováva údaje lokálne (local-first). Vo vašom zariadení sú uložené vaše faktúry, ponuky, zákazníci a firemný profil. Neexistuje žiadny účet Billero ani prihlásenie, neprevádzkujeme servery, ktoré by prijímali vaše obchodné údaje, a nemáme ich kópiu. Tieto zásady vysvetľujú, ktoré obmedzené údaje opúšťajú vaše zariadenie, kedy a komu.</p>
 
-      <h2>2. Povolenia aplikácie</h2>
+      <h2>1. Údaje uložené vo vašom zariadení</h2>
+      <p>Nasledujúce údaje sú uložené iba vo vašom zariadení, v lokálnej databáze (SQLite) a v súboroch aplikácie:</p>
       <ul>
-        <li>Kamera – na skenovanie faktúr</li>
-        <li>Fotogaléria – na výber obrázkov faktúr</li>
-        <li>Face ID / Touch ID – na zamykanie a odomykanie aplikácie (voliteľné)</li>
-        <li>Súbory – na ukladanie PDF a export dát</li>
-        <li>Zdieľanie – na zdieľanie faktúr (len keď to sami spustíte)</li>
+        <li>Vystavené a prijaté faktúry, ponuky a súvisiace dokumenty (PDF, fotografie)</li>
+        <li>Údaje o zákazníkoch, ktoré zadáte (mená, adresy, daňové identifikačné čísla, e-mailové adresy)</li>
+        <li>Váš firemný profil (údaje o firme, daňové čísla, bankový účet, platobný odkaz, adresy kryptopeňaženiek, logo, podpis)</li>
+        <li>Nastavenia a predvoľby aplikácie</li>
       </ul>
-      <p>Aplikácia používa tieto povolenia výlučne na opísané účely. Žiadne externé servery, analytické nástroje ani reklamné SDK.</p>
+      <p>Ak aplikáciu odinštalujete, tieto údaje sa z vášho zariadenia vymažú. Nemôžeme ich obnoviť, preto si uchovávajte zálohu (časť 4).</p>
 
-      <h2>3. Zhromažďovanie dát</h2>
-      <p>Aplikácia nezhromažďuje, nezaznamenáva ani neposiela žiadne osobné dáta. Žiadna registrácia, prihlásenie ani systém účtov. Všetko zostáva na vašom zariadení.</p>
+      <h2>2. Kedy údaje opúšťajú vaše zariadenie</h2>
 
-      <h2>4. Dáta tretích strán</h2>
-      <p>Dáta, ktoré zadáte (napr. mená zákazníkov, sumy faktúr), sú uložené lokálne. Keď použijete funkciu „Zdieľať", aplikácia len umožní zdieľanie prostredníctvom vami zvolenej služby (napr. e-mail, správy). Tieto služby sa riadia vlastnými zásadami ochrany súkromia.</p>
+      <h3>2.1 Hlásenia o pádoch a chybách – Firebase Crashlytics (Google LLC)</h3>
+      <p>Vo verziách zverejnených v obchodoch aplikácia používa Firebase Crashlytics na zisťovanie a odstraňovanie pádov. Keď aplikácia spadne alebo zaznamená určité chyby, Google dostane:</p>
+      <ul>
+        <li>Výpis zásobníka (stack trace) a chybové hlásenie (môže obsahovať technické podrobnosti operácie, ktorá zlyhala)</li>
+        <li>Model zariadenia, verziu operačného systému a verziu aplikácie</li>
+        <li>Náhodný identifikátor inštalácie (Firebase Installation ID)</li>
+        <li>Krátke technické riadky záznamu o nákupoch (produkt a stav nákupu, nikdy platobné údaje)</li>
+      </ul>
+      <p>K týmto hláseniam nepripájame vaše meno, e-mailovú adresu ani obsah faktúr a nepoužívajú sa na reklamu. Google uchováva hlásenia o pádoch počas obmedzeného obdobia podľa podmienok Firebase. Zásady ochrany súkromia spoločnosti Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
-      <h2>5. Skenovanie faktúr pomocou AI (Anthropic)</h2>
-      <p>Funkcia skenovania faktúr pomocou AI/OCR je <strong>voliteľná</strong> a spúšťa sa <strong>výlučne na váš výslovný pokyn</strong>. Keď naskenujete faktúru, obrázok alebo PDF sa odošle poskytovateľovi AI <strong>Anthropic PBC (model Claude)</strong> v Spojených štátoch, ktorý z dokumentu extrahuje údaje (dodávateľ/odberateľ, číslo, dátum, suma). Tieto dokumenty môžu obsahovať osobné a finančné údaje. Anthropic <strong>tieto údaje dlhodobo neuchováva a nepoužíva ich na trénovanie modelov</strong>. Ak funkciu nepoužijete, nič sa neodosiela. Zásady Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank">anthropic.com/legal/privacy</a></p>
+      <h3>2.2 Načítanie prijatých faktúr pomocou AI – Anthropic PBC (USA)</h3>
+      <p>Načítanie pomocou AI je voliteľné. Nič sa neodošle, kým v aplikácii neudelíte súhlas, a aj potom iba vtedy, keď spustíte načítanie dokumentu. Vybraný alebo odfotografovaný dokument (obrázok alebo PDF) sa celý odošle spoločnosti Anthropic, ktorá z neho vyčíta dodávateľa alebo odberateľa, číslo, dátum, sumu a popis; výsledok sa uloží vo vašom zariadení. Dokument môže obsahovať osobné a finančné údaje. Podľa komerčných podmienok spoločnosti Anthropic sa údaje odoslané cez jej API nepoužívajú na trénovanie modelov; Anthropic ich môže uchovávať počas obmedzeného obdobia podľa svojich zásad uchovávania údajov. Ak zadáte vlastný API kľúč Anthropic, platí vaša vlastná zmluva so spoločnosťou Anthropic. Súhlas môžete kedykoľvek odvolať v aplikácii (Firma). Zásady ochrany súkromia spoločnosti Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank">https://www.anthropic.com/legal/privacy</a></p>
 
-      <h2>6. Apple App Store / Google Play</h2>
-      <p>Nákupy predplatného spracúva Apple alebo Google. Tí spravujú váš spôsob platby, fakturačnú adresu a údaje Apple ID / Google účtu. Tieto údaje nedostávame ani neukladáme.</p>
+      <h3>2.3 Výmenné kurzy pre platobné QR kódy v kryptomenách – Frankfurter a CoinGecko</h3>
+      <p>Iba ak do svojho profilu pridáte adresy kryptopeňaženiek, aplikácia načíta výmenné kurzy, keď vytvára PDF faktúry s platobnými QR kódmi pre kryptomeny: z api.frankfurter.app (kurzy mien) a api.coingecko.com (ceny kryptomien). Požiadavka obsahuje iba kódy mien (napríklad USD alebo EUR), žiadne údaje o faktúrach ani zákazníkoch. Ako pri každej požiadavke cez internet, poskytovateľ vidí vašu IP adresu.</p>
+
+      <h3>2.4 Správa pri spustení – billero.app</h3>
+      <p>Pri spustení môže aplikácia načítať krátky text správy z billero.app. Neodosielajú sa žiadne údaje o vás ani o vašich faktúrach; náš poskytovateľ webhostingu môže uchovávať bežné serverové záznamy (napríklad IP adresu a čas požiadavky).</p>
+
+      <h3>2.5 Nákupy – Apple App Store a Google Play</h3>
+      <p>Predplatné sa kupuje a platí cez Apple alebo Google, ktoré spravujú váš spôsob platby a účet. Vaše platobné údaje nedostávame. Aplikácia vo vašom zariadení dostane potvrdenie o vašom nákupe od obchodu. V súčasnosti neprevádzkujeme server na overovanie potvrdení o nákupe; ak ho zavedieme, aktualizujeme tieto zásady ešte pred jeho zapnutím.</p>
+
+      <h3>2.6 Údaje, ktoré zdieľate sami</h3>
+      <p>Keď odošlete faktúru, exportujete súbor CSV alebo zdieľate zálohu, aplikácia použije panel zdieľania vášho zariadenia alebo e-mailovú aplikáciu. Príjemcu alebo cieľ si vyberáte vy a platia podmienky danej služby. Kópiu nedostávame.</p>
+
+      <h2>3. Povolenia a sledovanie</h2>
+      <ul>
+        <li>Fotoaparát a fotografie – na skenovanie alebo výber prijatých faktúr, vášho loga a podpisu</li>
+        <li>Biometria alebo PIN zariadenia – pre voliteľný zámok aplikácie</li>
+        <li>Upozornenia – na pripomienky splatných faktúr; vytvárajú sa vo vašom zariadení a nikdy sa nám neodosielajú</li>
+        <li>Internet – pre služby uvedené v časti 2</li>
+      </ul>
+      <p>Aplikácia neobsahuje žiadne reklamné SDK ani SDK na analytiku či sledovanie, nepoužíva reklamný identifikátor a nesleduje vás naprieč aplikáciami ani webovými stránkami. Osobné údaje nepredávame ani ich nezdieľame na účely behaviorálnej reklamy naprieč kontextmi (cross-context behavioral advertising).</p>
+
+      <h2>4. Zálohy</h2>
+      <ul>
+        <li><strong>Automatická záloha</strong> (Plus a Pro, keď ju zapnete): vždy šifrovaná heslom, ktoré nastavíte (AES-256, formát ZIP AES). Bez hesla sa automatická záloha nevytvorí.</li>
+        <li><strong>Ručný export</strong> (Firma): heslo je voliteľné. S heslom je súbor ZIP šifrovaný pomocou AES-256; bez hesla <strong>nie je šifrovaný</strong>, preto ho uchovávajte a zdieľajte opatrne.</li>
+        <li><strong>Export z obrazovky s balíkmi</strong> (pred nákupom): súbor ZIP nie je šifrovaný.</li>
+      </ul>
+      <p>Názvy súborov v súbore ZIP nie sú šifrované, iba ich obsah. Vaše vlastné API kľúče sú v zálohe zahrnuté iba vtedy, ak to zapnete (predvolene vypnuté). Zálohy sa ukladajú tam, kam si vyberiete; nikdy ich nedostávame.</p>
+
+      <h2>5. Vaše práva (GDPR, CCPA/CPRA a podobné zákony)</h2>
+      <p>Vaše obchodné údaje sú vo vašom zariadení, takže ich môžete kedykoľvek v aplikácii zobraziť, opraviť, exportovať alebo vymazať, prípadne ich všetky vymazať odinštalovaním aplikácie. V súvislosti s hláseniami o pádoch (časť 2.1) a s ďalšími otázkami píšte na <a href="mailto:info@billero.app">info@billero.app</a>; hlásenia o pádoch sú prepojené iba s náhodným identifikátorom inštalácie, nie s vašou identitou, preto nám napíšte, čo potrebujete, a pomôžeme vám, nakoľko je možné údaje identifikovať. Máte tiež právo podať sťažnosť svojmu úradu na ochranu osobných údajov.</p>
+
+      <h2>6. Deti</h2>
+      <p>Billero je obchodný nástroj pre používateľov vo veku od 18 rokov. Nie je určený deťom a vedome nezbierame údaje od detí.</p>
 
       <h2>7. Medzinárodné prenosy</h2>
-      <p>Anthropic (skenovanie pomocou AI) a ďalší poskytovatelia služieb tretích strán môžu spracúvať dáta na serveroch nachádzajúcich sa v Európskej únii, Spojených štátoch alebo iných jurisdikciách. Títo poskytovatelia sú certifikovaní podľa EU-US Data Privacy Framework alebo používajú rovnocenné záruky (Standard Contractual Clauses).</p>
+      <p>Google (Firebase Crashlytics) a Anthropic môžu spracúvať údaje v Spojených štátoch alebo v iných krajinách. Títo poskytovatelia sa spoliehajú na EU-US Data Privacy Framework alebo na štandardné zmluvné doložky (Standard Contractual Clauses).</p>
 
       <h2>8. Bezpečnosť</h2>
-      <p>Dáta na zariadení sú chránené bezpečnostnými mechanizmami operačného systému (Android / iOS). Voliteľne môžete aplikáciu dodatočne zabezpečiť pomocou Face ID alebo Touch ID.</p>
+      <p>Údaje vo vašom zariadení chráni zabezpečenie vášho operačného systému (Android, iOS) a, ak ho zapnete, zámok aplikácie. Všetky pripojenia opísané v časti 2 používajú HTTPS.</p>
 
-      <h2>9. Vymazanie dát</h2>
-      <p>Ak odinštalujete aplikáciu, všetky uložené dáta sa natrvalo vymažú z vášho zariadenia.</p>
+      <h2>9. Zmeny týchto zásad</h2>
+      <p>Ak zmeníme spôsob, akým aplikácia narába s údajmi, aktualizujeme túto stránku a dátum „Posledná aktualizácia“ ešte predtým, ako zmena nadobudne účinnosť.</p>
 
-      <h2>10. Zmeny zásad</h2>
-      <p>Pri prípadných zmenách aktualizujeme túto stránku a dátum poslednej aktualizácie. Odporúčame príležitostné skontrolovanie.</p>
+      <h2>10. Kontakt a prevádzkovateľ údajov</h2>
+      <p>B-DataFit, Matej Leban s.p., Slovinsko. Otázky a žiadosti týkajúce sa súkromia: <a href="mailto:info@billero.app">info@billero.app</a></p>
 
-      <h2>11. Kontakt</h2>
-      <p>Pre otázky týkajúce sa súkromia nás kontaktujte na <a href="mailto:info@billero.app">info@billero.app</a>.</p>
-      <p>Prevádzkovateľ údajov: B-DataFit, Matej Leban s.p., Slovinsko.</p>
     </div>
 
     <footer class="container">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billero – Privacybeleid</title>
-    <meta name="description" content="Billero privacybeleid. Alle gegevens worden uitsluitend op je apparaat opgeslagen. We beheren geen servers en verzamelen geen persoonlijke gegevens.">
+    <meta name="description" content="Privacybeleid van Billero. Local-first facturatie-app. Wat uw apparaat verlaat, wanneer en naar wie.">
     <link rel="canonical" href="https://billero.app/nl/privacy-policy.html">
     <link rel="alternate" hreflang="sl" href="https://billero.app/privacy-policy.html">
     <link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy.html">
@@ -50,47 +50,82 @@
 
     <div class="container section-block">
       <h1>Billero – Privacybeleid</h1>
-      <p><strong>Laatste update:</strong> Maart 2026</p>
+      <p><strong>Laatst bijgewerkt:</strong> november 2026 (appversie 1.8.1)</p>
 
-      <p>Billero respecteert je privacy. Alle gegevens worden uitsluitend op je apparaat opgeslagen. We beheren geen servers en verzamelen geen persoonlijke gegevens.</p>
+      <p>Billero is een local-first facturatie-app. Uw facturen, offertes, klanten en bedrijfsprofiel worden op uw apparaat opgeslagen. Er is geen Billero-account of aanmelding, wij beheren geen servers die uw bedrijfsgegevens ontvangen en wij hebben er geen kopie van. Dit beleid legt uit welke beperkte gegevens uw apparaat verlaten, wanneer en naar wie.</p>
 
-      <h2>1. Lokale gegevensopslag</h2>
-      <p>Al je gegevens (facturen, klanten, factuurafbeeldingen) worden lokaal op je apparaat opgeslagen in een lokale database. Gegevens verlaten je apparaat nooit en worden niet naar een externe server verzonden.</p>
-
-      <h2>2. App-machtigingen</h2>
+      <h2>1. Gegevens die op uw apparaat worden opgeslagen</h2>
+      <p>De volgende gegevens worden alleen op uw apparaat opgeslagen, in een lokale database (SQLite) en in de bestanden van de app:</p>
       <ul>
-        <li>Camera – om facturen te scannen</li>
-        <li>Fotobibliotheek – om factuurafbeeldingen te selecteren</li>
-        <li>Face ID / Touch ID – om de app te vergrendelen en ontgrendelen (optioneel)</li>
-        <li>Bestanden – om PDF's op te slaan en gegevens te exporteren</li>
-        <li>Delen – om facturen te delen (alleen op uw initiatief)</li>
+        <li>Uitgegeven en ontvangen facturen, offertes en bijbehorende documenten (pdf's, foto's)</li>
+        <li>Klantgegevens die u invoert (namen, adressen, fiscale identificatienummers, e-mailadressen)</li>
+        <li>Uw bedrijfsprofiel (bedrijfsgegevens, belastingnummers, bankrekening, betaallink, adressen van cryptowallets, logo, handtekening)</li>
+        <li>Instellingen en voorkeuren van de app</li>
       </ul>
-      <p>De app gebruikt deze machtigingen uitsluitend voor de beschreven doeleinden. Er zijn geen externe servers, analyticstools of advertentie-SDK's.</p>
+      <p>Als u de app verwijdert, worden deze gegevens van uw apparaat gewist. Wij kunnen ze niet herstellen, dus bewaar een back-up (sectie 4).</p>
 
-      <h2>3. Gegevensverzameling</h2>
-      <p>De app verzamelt, registreert of verzendt geen persoonlijke gegevens. Er is geen registratie-, aanmeldings- of accountsysteem. Alles blijft op je apparaat.</p>
+      <h2>2. Wanneer gegevens uw apparaat verlaten</h2>
 
-      <h2>4. Gegevens van derden</h2>
-      <p>Alle gegevens die je invoert (bijv. klantnamen, factuurbedragen) worden lokaal opgeslagen. Wanneer je de "deel"-functie gebruikt, stelt de app je alleen in staat om te delen via services die je kiest (bijv. e-mail, messaging-apps). Deze services zijn onderworpen aan hun eigen privacybeleid.</p>
+      <h3>2.1 Crash- en foutrapporten – Firebase Crashlytics (Google LLC)</h3>
+      <p>In de versies die in de stores zijn gepubliceerd, gebruikt de app Firebase Crashlytics om crashes op te sporen en te verhelpen. Wanneer de app crasht of bepaalde fouten registreert, ontvangt Google:</p>
+      <ul>
+        <li>De stacktrace en de foutmelding (deze kan technische details bevatten van de bewerking die is mislukt)</li>
+        <li>Apparaatmodel, versie van het besturingssysteem en appversie</li>
+        <li>Een willekeurige installatie-ID (Firebase Installation ID)</li>
+        <li>Korte technische logregels over aankopen (product en aankoopstatus, nooit betaalgegevens)</li>
+      </ul>
+      <p>Wij voegen uw naam, e-mailadres of factuurinhoud niet toe aan deze rapporten, en ze worden niet voor advertenties gebruikt. Google bewaart crashrapporten gedurende een beperkte periode volgens de Firebase-voorwaarden. Privacybeleid van Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
-      <h3>4.1 AI-factuurscannen (Anthropic)</h3>
-      <p>De AI/OCR-functie voor het scannen van facturen is <strong>optioneel</strong> en wordt <strong>alleen op je uitdrukkelijke verzoek</strong> uitgevoerd. Wanneer je een factuur scant, wordt de afbeelding of PDF verzonden naar de AI-aanbieder <strong>Anthropic PBC (Claude-model)</strong> in de Verenigde Staten, die gegevens uit het document haalt (leverancier/koper, nummer, datum, bedrag). Deze documenten kunnen persoonsgegevens en financiële gegevens bevatten. Anthropic <strong>bewaart deze gegevens niet voor de lange termijn en gebruikt ze niet om modellen te trainen</strong>. Als je de functie niet gebruikt, wordt er niets verzonden. Anthropic-beleid: <a href="https://www.anthropic.com/legal/privacy" target="_blank">anthropic.com/legal/privacy</a></p>
+      <h3>2.2 Uitlezen van ontvangen facturen met AI – Anthropic PBC (VS)</h3>
+      <p>Uitlezen met AI is optioneel. Er wordt niets verzonden totdat u in de app toestemming geeft, en daarna alleen wanneer u het uitlezen van een document start. Het gekozen of gefotografeerde document (afbeelding of pdf) wordt volledig naar Anthropic verzonden, dat de leverancier of koper, het nummer, de datum, het bedrag en de omschrijving eruit haalt; het resultaat wordt op uw apparaat opgeslagen. Het document kan persoonsgegevens en financiële gegevens bevatten. Volgens de commerciële voorwaarden van Anthropic worden gegevens die via de API van Anthropic worden verzonden niet gebruikt om modellen te trainen; Anthropic kan ze gedurende een beperkte periode bewaren volgens zijn beleid voor gegevensbewaring. Als u uw eigen Anthropic-API-sleutel invoert, geldt uw eigen overeenkomst met Anthropic. U kunt uw toestemming op elk moment intrekken in de app (scherm Bedrijf). Privacybeleid van Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank">https://www.anthropic.com/legal/privacy</a></p>
 
-      <h2>5. Internationale doorgifte</h2>
-      <p>Anthropic (AI-scannen) kan gegevens verwerken op servers in de Verenigde Staten of andere rechtsgebieden. Deze aanbieder is gecertificeerd onder het EU-US Data Privacy Framework of gebruikt gelijkwaardige waarborgen (modelcontractbepalingen / Standard Contractual Clauses).</p>
+      <h3>2.3 Wisselkoersen voor QR-codes voor cryptobetalingen – Frankfurter en CoinGecko</h3>
+      <p>Alleen als u adressen van cryptowallets aan uw profiel toevoegt, haalt de app wisselkoersen op wanneer zij een factuur-pdf met QR-codes voor cryptobetalingen aanmaakt: van api.frankfurter.app (valutakoersen) en api.coingecko.com (cryptoprijzen). Het verzoek bevat alleen valutacodes (bijvoorbeeld USD of EUR), geen factuur- of klantgegevens. Zoals bij elk internetverzoek ziet de aanbieder uw IP-adres.</p>
 
-      <h2>6. Beveiliging</h2>
-      <p>Gegevens opgeslagen op je apparaat worden beschermd door beveiligingsmechanismen van het besturingssysteem (Android / iOS). Je kunt de app optioneel beveiligen met Face ID of Touch ID.</p>
+      <h3>2.4 Opstartbericht – billero.app</h3>
+      <p>Wanneer de app start, kan zij een korte berichttekst van billero.app laden. Er worden geen gegevens over u of uw facturen verzonden; onze webhostingprovider kan standaard serverlogs bewaren (zoals IP-adres en tijdstip van het verzoek).</p>
 
-      <h2>7. Gegevenswissing</h2>
-      <p>Als je de app verwijdert, worden alle opgeslagen gegevens permanent van je apparaat verwijderd.</p>
+      <h3>2.5 Aankopen – Apple App Store en Google Play</h3>
+      <p>Abonnementen worden gekocht en betaald via Apple of Google, die uw betaalmethode en account beheren. Wij ontvangen uw betaalgegevens niet. De app ontvangt de bevestiging van uw aankoop van de store op uw apparaat. Momenteel hebben wij geen server voor het controleren van aankoopbewijzen; als wij die invoeren, werken wij dit beleid bij voordat die wordt ingeschakeld.</p>
 
-      <h2>8. Beleidswijzigingen</h2>
-      <p>Als dit beleid verandert, zullen we deze pagina en de datum van de laatste update bijwerken. We raden je aan om het regelmatig te controleren.</p>
+      <h3>2.6 Gegevens die u zelf deelt</h3>
+      <p>Wanneer u een factuur verstuurt, een CSV-bestand exporteert of een back-up deelt, gebruikt de app het deelmenu of de e-mailapp van uw apparaat. U kiest de ontvanger of bestemming, en de voorwaarden van die dienst zijn van toepassing. Wij ontvangen geen kopie.</p>
 
-      <h2>9. Contact</h2>
-      <p>Voor vragen over privacy, stuur ons een e-mail op <a href="mailto:info@billero.app">info@billero.app</a>.</p>
-      <p>Verwerkingsverantwoordelijke: B-DataFit, Matej Leban s.p., Slovenië.</p>
+      <h2>3. Machtigingen en tracking</h2>
+      <ul>
+        <li>Camera en foto's – om ontvangen facturen, uw logo en handtekening te scannen of te selecteren</li>
+        <li>Biometrie of apparaat-pincode – voor de optionele app-vergrendeling</li>
+        <li>Meldingen – voor herinneringen over vervallende facturen; ze worden op uw apparaat aangemaakt en nooit naar ons verzonden</li>
+        <li>Internet – voor de diensten in sectie 2</li>
+      </ul>
+      <p>De app bevat geen advertentie-SDK's en geen analyse- of tracking-SDK's, gebruikt de advertentie-ID niet en volgt u niet in andere apps of op andere websites. Wij verkopen geen persoonsgegevens en delen ze niet voor contextoverschrijdende gedragsgerichte advertenties.</p>
+
+      <h2>4. Back-ups</h2>
+      <ul>
+        <li><strong>Automatische back-up</strong> (Plus en Pro, wanneer u deze inschakelt): altijd versleuteld met het wachtwoord dat u instelt (AES-256, ZIP-AES-formaat). Zonder wachtwoord wordt er geen automatische back-up gemaakt.</li>
+        <li><strong>Handmatige export</strong> (scherm Bedrijf): het wachtwoord is optioneel. Met een wachtwoord wordt het ZIP-bestand versleuteld met AES-256; zonder wachtwoord is het <strong>niet versleuteld</strong>, dus bewaar en deel het zorgvuldig.</li>
+        <li><strong>Export vanuit het scherm met pakketten</strong> (vóór een aankoop): het ZIP-bestand is niet versleuteld.</li>
+      </ul>
+      <p>Bestandsnamen in een ZIP-bestand worden niet versleuteld, alleen hun inhoud. Uw eigen API-sleutels worden alleen in een back-up opgenomen als u dit inschakelt (standaard uit). Back-ups worden opgeslagen waar u kiest; wij ontvangen ze nooit.</p>
+
+      <h2>5. Uw rechten (GDPR/AVG, CCPA/CPRA en vergelijkbare wetgeving)</h2>
+      <p>Uw bedrijfsgegevens staan op uw apparaat, dus u kunt ze op elk moment in de app bekijken, corrigeren, exporteren of verwijderen, of ze allemaal verwijderen door de app te verwijderen. Voor crashrapporten (sectie 2.1) en andere vragen kunt u schrijven naar <a href="mailto:info@billero.app">info@billero.app</a>; crashrapporten zijn alleen gekoppeld aan een willekeurige installatie-ID, niet aan uw identiteit, dus laat ons weten wat u nodig hebt en wij helpen u voor zover de gegevens kunnen worden geïdentificeerd. U hebt ook het recht een klacht in te dienen bij uw gegevensbeschermingsautoriteit.</p>
+
+      <h2>6. Kinderen</h2>
+      <p>Billero is een zakelijke tool voor gebruikers van 18 jaar en ouder. De app is niet gericht op kinderen en wij verzamelen niet bewust gegevens van kinderen.</p>
+
+      <h2>7. Internationale doorgifte</h2>
+      <p>Google (Firebase Crashlytics) en Anthropic kunnen gegevens verwerken in de Verenigde Staten of andere landen. Deze aanbieders baseren zich op het EU-US Data Privacy Framework of op modelcontractbepalingen (Standard Contractual Clauses).</p>
+
+      <h2>8. Beveiliging</h2>
+      <p>Gegevens op uw apparaat worden beschermd door de beveiliging van uw besturingssysteem (Android, iOS) en, als u deze inschakelt, door de app-vergrendeling. Alle verbindingen die in sectie 2 worden beschreven, gebruiken HTTPS.</p>
+
+      <h2>9. Wijzigingen in dit beleid</h2>
+      <p>Als wij wijzigen hoe de app met gegevens omgaat, werken wij deze pagina en de datum onder "Laatst bijgewerkt" bij voordat de wijziging van kracht wordt.</p>
+
+      <h2>10. Contact en verwerkingsverantwoordelijke</h2>
+      <p>B-DataFit, Matej Leban s.p., Slovenië. Vragen en verzoeken over privacy: <a href="mailto:info@billero.app">info@billero.app</a></p>
+
     </div>
 
     <footer class="container">

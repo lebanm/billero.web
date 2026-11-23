@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billero – Privacy Policy</title>
-    <meta name="description" content="Billero privacy policy. Local-first invoicing app. Limited data is processed for crash reporting and subscription validation.">
+    <meta name="description" content="Billero privacy policy. Local-first invoicing app: what leaves your device, when and to whom.">
     <link rel="canonical" href="https://billero.app/en/privacy-policy.html">
     <link rel="alternate" hreflang="sl" href="https://billero.app/privacy-policy.html">
     <link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy.html">
@@ -51,81 +51,82 @@
 
     <div class="container section-block">
       <h1>Billero – Privacy Policy</h1>
-      <p><strong>Last updated:</strong> June 2026</p>
+      <p><strong>Last updated:</strong> November 2026 (app version 1.8.1)</p>
 
-      <p>Billero is a local-first invoicing application. Your business data (invoices, clients, invoice images) is stored only on your device and is never uploaded to our servers. This policy describes the limited data that is processed for app stability and subscription functionality.</p>
+      <p>Billero is a local-first invoicing app. Your invoices, quotes, customers and business profile are stored on your device. There is no Billero account or login, we do not run servers that receive your business data, and we have no copy of it. This policy explains which limited data leaves your device, when, and to whom.</p>
 
-      <h2>1. Data Stored Locally on Your Device</h2>
-      <p>The following data is stored exclusively on your device in a local database (SQLite) and never transmitted to any server operated by us:</p>
+      <h2>1. Data Stored on Your Device</h2>
+      <p>The following data is stored only on your device, in a local database (SQLite) and in the app's files:</p>
       <ul>
-        <li>Issued and received invoices, quotes, and related documents</li>
-        <li>Client information (names, addresses, tax IDs you enter)</li>
-        <li>Invoice photos and PDFs you create</li>
+        <li>Issued and received invoices, quotes and related documents (PDFs, photos)</li>
+        <li>Customer information you enter (names, addresses, tax IDs, email addresses)</li>
+        <li>Your business profile (company details, tax numbers, bank account, payment link, crypto wallet addresses, logo, signature)</li>
         <li>App settings and preferences</li>
       </ul>
-      <p>If you uninstall the app, this data is permanently deleted from your device. We have no copy.</p>
+      <p>If you uninstall the app, this data is deleted from your device. We cannot restore it, so keep a backup (section 4).</p>
 
-      <h2>2. Data Processed by Third-Party Services</h2>
-      <p>To keep the app stable and to validate purchases, a limited amount of technical data is processed by the following services:</p>
+      <h2>2. When Data Leaves Your Device</h2>
 
-      <h3>2.1 Firebase Crashlytics (Google LLC)</h3>
-      <p>We use Firebase Crashlytics to automatically detect and diagnose app crashes. When the app crashes, the following data is sent to Google:</p>
+      <h3>2.1 Crash and error reports – Firebase Crashlytics (Google LLC)</h3>
+      <p>In the versions published in the stores, the app uses Firebase Crashlytics to detect and fix crashes. When the app crashes or records certain errors, Google receives:</p>
       <ul>
-        <li>Crash stack trace and exception details</li>
-        <li>Device model, OS version, app version</li>
-        <li>Anonymous installation identifier (Firebase Installation ID)</li>
-        <li>Non-personal performance metrics</li>
+        <li>The stack trace and the error message (it may contain technical details of the operation that failed)</li>
+        <li>Device model, operating system version and app version</li>
+        <li>A random installation identifier (Firebase Installation ID)</li>
+        <li>Short technical log lines about purchases (product and purchase state, never payment details)</li>
       </ul>
-      <p>This data is not linked to your identity and is not used for advertising. Google's privacy policy applies: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+      <p>We do not attach your name, email address or invoice content to these reports, and they are not used for advertising. Google keeps crash reports for a limited period under the Firebase terms. Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
-      <h3>2.2 Subscription Receipt Validation (Cloudflare Workers)</h3>
-      <p>When you purchase a Billero subscription via Apple App Store or Google Play, the purchase receipt is sent to our secure Cloudflare Worker to validate the transaction with Apple or Google. The Worker stores:</p>
+      <h3>2.2 AI reading of received invoices – Anthropic PBC (USA)</h3>
+      <p>AI reading is optional. Nothing is sent until you give consent in the app, and then only when you start reading a document. The selected or photographed document (image or PDF) is sent in full to Anthropic, which extracts the supplier or buyer, number, date, amount and description; the result is saved on your device. The document may contain personal and financial data. Under Anthropic's commercial terms, data sent through its API is not used to train models; Anthropic may keep it for a limited period under its data retention policy. If you enter your own Anthropic API key, your own agreement with Anthropic applies. You can withdraw consent at any time in the app (Business tab). Anthropic's privacy policy: <a href="https://www.anthropic.com/legal/privacy" target="_blank">https://www.anthropic.com/legal/privacy</a></p>
+
+      <h3>2.3 Exchange rates for crypto payment QR codes – Frankfurter and CoinGecko</h3>
+      <p>Only if you add crypto wallet addresses to your profile, the app fetches exchange rates when it builds an invoice PDF with crypto payment QR codes: from api.frankfurter.app (currency rates) and api.coingecko.com (crypto prices). The request contains only currency codes (for example USD or EUR), no invoice or customer data. As with any internet request, the provider sees your IP address.</p>
+
+      <h3>2.4 Start-up message – billero.app</h3>
+      <p>When the app starts, it may load a short message text from billero.app. No data about you or your invoices is sent; our web hosting provider may keep standard server logs (such as IP address and time of the request).</p>
+
+      <h3>2.5 Purchases – Apple App Store and Google Play</h3>
+      <p>Subscriptions are bought and paid through Apple or Google, who handle your payment method and account. We do not receive your payment details. The app receives the confirmation of your purchase from the store on your device. We currently do not operate a server for checking purchase receipts; if we introduce one, we will update this policy before it is enabled.</p>
+
+      <h3>2.6 Data you share yourself</h3>
+      <p>When you send an invoice, export a CSV file or share a backup, the app uses your device's share sheet or email app. You choose the recipient or destination, and that service's terms apply. We do not receive a copy.</p>
+
+      <h2>3. Permissions and Tracking</h2>
       <ul>
-        <li>Anonymized subscription receipt identifiers</li>
-        <li>Subscription tier and expiry status</li>
-        <li>No personal information (no name, email, address, or invoice content)</li>
+        <li>Camera and photos – to scan or select received invoices, your logo and signature</li>
+        <li>Biometrics or device PIN – for the optional app lock</li>
+        <li>Notifications – for reminders about due invoices; they are created on your device and never sent to us</li>
+        <li>Internet – for the services in section 2</li>
       </ul>
-      <p>This is required by Apple and Google to prevent subscription fraud. Data is retained only as long as your subscription is active plus a 24-month tax-compliance window. Cloudflare's privacy policy: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">https://www.cloudflare.com/privacypolicy/</a></p>
+      <p>The app contains no advertising SDKs and no analytics or tracking SDKs, does not use the advertising ID, and does not track you across apps or websites. We do not sell personal information and do not share it for cross-context behavioral advertising.</p>
 
-      <h3>2.3 AI invoice scanning (Anthropic)</h3>
-      <p>The AI/OCR invoice scanning feature is <strong>optional</strong> and runs <strong>only at your explicit request</strong>. When you scan an invoice, the image or PDF is sent to the AI provider <strong>Anthropic PBC (Claude model)</strong> in the United States, which extracts data from the document (supplier/buyer, number, date, amount). These documents may contain personal and financial data. Anthropic <strong>does not retain this data long-term and does not use it to train models</strong>. If you do not use the feature, nothing is sent. Anthropic policy: <a href="https://www.anthropic.com/legal/privacy" target="_blank">anthropic.com/legal/privacy</a></p>
-
-      <h3>2.4 Apple App Store / Google Play</h3>
-      <p>Subscription purchases are processed by Apple or Google. They handle your payment method, billing address, and Apple ID / Google account information. We do not receive or store this data.</p>
-
-      <h2>3. Permissions the App Requests</h2>
+      <h2>4. Backups</h2>
       <ul>
-        <li><strong>Camera</strong> – to scan received invoices</li>
-        <li><strong>Photo Library</strong> – to select invoice images</li>
-        <li><strong>Face ID / Touch ID</strong> – to lock and unlock the app (optional)</li>
-        <li><strong>Files</strong> – to save PDFs and export backups</li>
-        <li><strong>Sharing</strong> – to share invoices via system share sheet (only when you initiate it)</li>
-        <li><strong>Notifications</strong> – for invoice reminders (only if you enable them)</li>
+        <li><strong>Automatic backup</strong> (Plus and Pro, when you turn it on): always encrypted with the password you set (AES-256, ZIP AES format). Without a password, no automatic backup is created.</li>
+        <li><strong>Manual export</strong> (Business tab): the password is optional. With a password the ZIP file is encrypted with AES-256; without a password it is <strong>not encrypted</strong>, so store and share it carefully.</li>
+        <li><strong>Export from the plans screen</strong> (before a purchase): the ZIP file is not encrypted.</li>
       </ul>
-      <p>These permissions are used solely for the described purposes. We do not run any third-party advertising SDKs.</p>
+      <p>File names inside a ZIP file are not encrypted, only their content. Your own API keys are included in a backup only if you switch this on (off by default). Backups are saved where you choose; we never receive them.</p>
 
-      <h2>4. Backup and Export</h2>
-      <p>The app allows you to create encrypted backup ZIP files of your data. Backups are AES-256 encrypted and saved to a location you choose. We never have access to your backups. If you share a backup via the system share sheet, that destination (e.g. email, cloud drive) is solely under your control and its provider's policies apply.</p>
-
-      <h2>5. Your Rights (GDPR / CCPA)</h2>
-      <p>Because your business data stays on your device, you have full control: you can view, edit, export, or delete it at any time directly in the app.</p>
-      <p>For data processed by Firebase Crashlytics or our Cloudflare Worker (subscription receipts), you may request access, correction, or deletion by contacting <a href="mailto:info@billero.app">info@billero.app</a>. Identify yourself by providing the original purchase order ID from your App Store or Google Play receipt.</p>
+      <h2>5. Your Rights (GDPR, CCPA/CPRA and Similar Laws)</h2>
+      <p>Your business data is on your device, so you can view, correct, export or delete it at any time in the app, or delete all of it by uninstalling the app. For crash reports (section 2.1) and other questions, write to <a href="mailto:info@billero.app">info@billero.app</a>; crash reports are linked only to a random installation identifier, not to your identity, so tell us what you need and we will help as far as the data can be identified. You also have the right to lodge a complaint with your data protection authority.</p>
 
       <h2>6. Children</h2>
-      <p>Billero is a business tool intended for users aged 18 and older. We do not knowingly collect data from children under 13.</p>
+      <p>Billero is a business tool for users aged 18 and older. It is not directed at children, and we do not knowingly collect data from children.</p>
 
       <h2>7. International Transfers</h2>
-      <p>Firebase Crashlytics (Google), Cloudflare, and Anthropic (AI scanning) may process data on servers located in the European Union, the United States, or other jurisdictions. These providers are certified under the EU-US Data Privacy Framework or use equivalent safeguards (Standard Contractual Clauses).</p>
+      <p>Google (Firebase Crashlytics) and Anthropic may process data in the United States or other countries. These providers rely on the EU-US Data Privacy Framework or on Standard Contractual Clauses.</p>
 
       <h2>8. Security</h2>
-      <p>Data on your device is protected by the operating system's security mechanisms (Android, iOS). You may add an optional Face ID / Touch ID lock. Subscription receipts in transit to our Worker are encrypted with HTTPS / TLS 1.3.</p>
+      <p>Data on your device is protected by the security of your operating system (Android, iOS) and, if you turn it on, by the app lock. All connections described in section 2 use HTTPS.</p>
 
       <h2>9. Changes to This Policy</h2>
-      <p>If we materially change this policy, we will update this page and the "Last updated" date above. Continued use of the app after a material change constitutes acceptance.</p>
+      <p>If we change how the app handles data, we will update this page and the "Last updated" date before the change takes effect.</p>
 
-      <h2>10. Contact</h2>
-      <p>Privacy questions or data subject requests: <a href="mailto:info@billero.app">info@billero.app</a></p>
-      <p>Data Controller: B-DataFit, Matej Leban s.p., Slovenia.</p>
+      <h2>10. Contact and Data Controller</h2>
+      <p>B-DataFit, Matej Leban s.p., Slovenia. Privacy questions and requests: <a href="mailto:info@billero.app">info@billero.app</a></p>
+
     </div>
 
     <footer class="container">

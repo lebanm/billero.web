@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billero – Polityka prywatności</title>
-    <meta name="description" content="Billero polityka prywatności. Wszystkie dane przechowujemy wyłącznie na Twoim urządzeniu. Nie prowadzimy żadnych serwerów i nie zbieramy danych osobowych.">
+    <meta name="description" content="Polityka prywatności Billero. Aplikacja do wystawiania faktur działająca lokalnie (local-first). Jakie dane opuszczają urządzenie, kiedy i do kogo.">
     <link rel="canonical" href="https://billero.app/pl/privacy-policy.html">
     <link rel="alternate" hreflang="sl" href="https://billero.app/privacy-policy.html">
     <link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy.html">
@@ -44,46 +44,82 @@
 
     <div class="container section-block">
       <h1>Billero – Polityka prywatności</h1>
-      <p><strong>Ostatnia aktualizacja:</strong> marzec 2026</p>
-      <p>Billero szanuje Twoją prywatność. Twoje dane biznesowe (faktury, klienci, obrazy faktur) są przechowywane wyłącznie na Twoim urządzeniu i nigdy nie są przesyłane na nasze serwery. Jedynym wyjątkiem jest opcjonalna funkcja skanowania faktur AI/OCR, która działa wyłącznie na Twoje wyraźne żądanie (zob. sekcja 4).</p>
+      <p><strong>Ostatnia aktualizacja:</strong> listopad 2026 (wersja aplikacji 1.8.1)</p>
 
-      <h2>1. Lokalne przechowywanie danych</h2>
-      <p>Wszystkie Twoje dane (faktury, klienci, obrazy faktur) są przechowywane lokalnie na Twoim urządzeniu w lokalnej bazie danych. Dane nigdy nie opuszczają Twojego urządzenia i nie są przesyłane na żaden zewnętrzny serwer.</p>
+      <p>Billero to aplikacja do wystawiania faktur działająca lokalnie (local-first). Państwa faktury, oferty, dane klientów i profil firmy są przechowywane na Państwa urządzeniu. W Billero nie ma konta ani logowania, nie prowadzimy serwerów, które odbierają Państwa dane firmowe, i nie mamy ich kopii. Niniejsza polityka wyjaśnia, jakie ograniczone dane opuszczają Państwa urządzenie, kiedy i do kogo trafiają.</p>
 
-      <h2>2. Uprawnienia aplikacji</h2>
+      <h2>1. Dane przechowywane na Państwa urządzeniu</h2>
+      <p>Następujące dane są przechowywane wyłącznie na Państwa urządzeniu, w lokalnej bazie danych (SQLite) i w plikach aplikacji:</p>
       <ul>
-        <li>Aparat – do skanowania faktur</li>
-        <li>Galeria zdjęć – do wyboru obrazów faktur</li>
-        <li>Face ID / Touch ID – do blokowania i odblokowywania aplikacji (opcjonalne)</li>
-        <li>Pliki – do zapisywania PDF i eksportowania danych</li>
-        <li>Udostępnianie – do udostępniania faktur (tylko gdy sam to inicjujesz)</li>
+        <li>Wystawione i odebrane faktury, oferty oraz powiązane dokumenty (pliki PDF, zdjęcia)</li>
+        <li>Wprowadzane przez Państwa dane klientów (nazwy, adresy, numery identyfikacji podatkowej, adresy e-mail)</li>
+        <li>Państwa profil firmy (dane firmy, numery podatkowe, rachunek bankowy, link do płatności, adresy portfeli kryptowalutowych, logo, podpis)</li>
+        <li>Ustawienia i preferencje aplikacji</li>
       </ul>
-      <p>Aplikacja używa tych uprawnień wyłącznie do opisanych celów. Brak zewnętrznych serwerów, narzędzi analitycznych ani reklamowych SDK.</p>
+      <p>Po odinstalowaniu aplikacji dane te zostają usunięte z Państwa urządzenia. Nie możemy ich przywrócić, dlatego należy przechowywać kopię zapasową (sekcja 4).</p>
 
-      <h2>3. Zbieranie danych</h2>
-      <p>Aplikacja nie zbiera, nie rejestruje ani nie przesyła żadnych danych osobowych. Brak rejestracji, logowania ani systemu kont. Wszystko pozostaje na Twoim urządzeniu.</p>
+      <h2>2. Kiedy dane opuszczają Państwa urządzenie</h2>
 
-      <h2>4. Skanowanie faktur przez AI (Anthropic)</h2>
-      <p>Funkcja skanowania faktur AI/OCR jest <strong>opcjonalna</strong> i działa <strong>wyłącznie na Twoje wyraźne żądanie</strong>. Gdy skanujesz fakturę, obraz lub plik PDF jest wysyłany do dostawcy AI <strong>Anthropic PBC (model Claude)</strong> w Stanach Zjednoczonych, który wyodrębnia dane z dokumentu (dostawca/nabywca, numer, data, kwota). Dokumenty te mogą zawierać dane osobowe i finansowe. Anthropic <strong>nie przechowuje tych danych długoterminowo i nie wykorzystuje ich do trenowania modeli</strong>. Jeśli nie korzystasz z tej funkcji, nic nie jest wysyłane. Polityka Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank">anthropic.com/legal/privacy</a></p>
+      <h3>2.1 Raporty o awariach i błędach – Firebase Crashlytics (Google LLC)</h3>
+      <p>W wersjach opublikowanych w sklepach aplikacja korzysta z Firebase Crashlytics, aby wykrywać i usuwać awarie. Gdy aplikacja ulegnie awarii lub zarejestruje określone błędy, Google otrzymuje:</p>
+      <ul>
+        <li>Ślad stosu (stack trace) i komunikat o błędzie (może zawierać szczegóły techniczne operacji, która się nie powiodła)</li>
+        <li>Model urządzenia, wersję systemu operacyjnego i wersję aplikacji</li>
+        <li>Losowy identyfikator instalacji (Firebase Installation ID)</li>
+        <li>Krótkie techniczne wpisy dziennika dotyczące zakupów (produkt i stan zakupu, nigdy dane płatnicze)</li>
+      </ul>
+      <p>Do tych raportów nie dołączamy Państwa imienia i nazwiska, adresu e-mail ani treści faktur, a raporty nie są wykorzystywane do celów reklamowych. Google przechowuje raporty o awariach przez ograniczony czas zgodnie z warunkami Firebase. Polityka prywatności Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
-      <h2>5. Dane stron trzecich</h2>
-      <p>Dane, które wprowadzasz (np. nazwy klientów, kwoty faktur), są przechowywane lokalnie. Gdy używasz funkcji „Udostępnij", aplikacja jedynie umożliwia udostępnianie przez wybraną przez Ciebie usługę (np. e-mail, komunikatory). Te usługi podlegają własnym politykom prywatności.</p>
+      <h3>2.2 Odczyt odebranych faktur przez AI – Anthropic PBC (USA)</h3>
+      <p>Odczyt przez AI jest opcjonalny. Nic nie jest wysyłane, dopóki nie wyrażą Państwo zgody w aplikacji, a potem tylko wtedy, gdy rozpoczną Państwo odczyt dokumentu. Wybrany lub sfotografowany dokument (obraz lub PDF) jest w całości wysyłany do Anthropic, który wyodrębnia dostawcę lub nabywcę, numer, datę, kwotę i opis; wynik jest zapisywany na Państwa urządzeniu. Dokument może zawierać dane osobowe i finansowe. Zgodnie z warunkami komercyjnymi Anthropic dane przesyłane przez jego API nie są wykorzystywane do trenowania modeli; Anthropic może je przechowywać przez ograniczony czas zgodnie ze swoją polityką przechowywania danych. Jeśli wprowadzą Państwo własny klucz API Anthropic, obowiązuje Państwa własna umowa z Anthropic. Zgodę można w każdej chwili wycofać w aplikacji (ekran „Firma”). Polityka prywatności Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank">https://www.anthropic.com/legal/privacy</a></p>
 
-      <h2>6. Transfery międzynarodowe</h2>
-      <p>Anthropic (skanowanie AI) może przetwarzać dane na serwerach znajdujących się w Stanach Zjednoczonych lub innych jurysdykcjach. Dostawca ten posiada certyfikat zgodności z ramami EU-US Data Privacy Framework (DPF) lub stosuje równoważne zabezpieczenia (Standardowe Klauzule Umowne, SCC).</p>
+      <h3>2.3 Kursy wymiany dla kodów QR płatności kryptowalutami – Frankfurter i CoinGecko</h3>
+      <p>Wyłącznie wtedy, gdy dodadzą Państwo do profilu adresy portfeli kryptowalutowych, aplikacja pobiera kursy wymiany podczas tworzenia pliku PDF faktury z kodami QR płatności kryptowalutami: z api.frankfurter.app (kursy walut) i api.coingecko.com (ceny kryptowalut). Zapytanie zawiera wyłącznie kody walut (na przykład USD lub EUR), bez danych faktur ani klientów. Jak przy każdym zapytaniu internetowym, dostawca widzi Państwa adres IP.</p>
 
-      <h2>7. Bezpieczeństwo</h2>
-      <p>Dane na urządzeniu są chronione mechanizmami bezpieczeństwa systemu operacyjnego (Android / iOS). Opcjonalnie możesz dodatkowo zabezpieczyć aplikację za pomocą Face ID lub Touch ID.</p>
+      <h3>2.4 Komunikat przy uruchomieniu – billero.app</h3>
+      <p>Podczas uruchamiania aplikacja może pobrać z billero.app krótki tekst komunikatu. Nie są wysyłane żadne dane o Państwu ani o Państwa fakturach; nasz dostawca hostingu może przechowywać standardowe dzienniki serwera (takie jak adres IP i czas zapytania).</p>
 
-      <h2>8. Usuwanie danych</h2>
-      <p>Jeśli odinstalowujesz aplikację, wszystkie przechowywane dane są trwale usuwane z Twojego urządzenia.</p>
+      <h3>2.5 Zakupy – Apple App Store i Google Play</h3>
+      <p>Subskrypcje są kupowane i opłacane za pośrednictwem Apple lub Google, które obsługują Państwa metodę płatności i konto. Nie otrzymujemy Państwa danych płatniczych. Aplikacja otrzymuje potwierdzenie zakupu ze sklepu na Państwa urządzeniu. Obecnie nie prowadzimy serwera do weryfikacji dowodów zakupu; jeśli go wprowadzimy, zaktualizujemy niniejszą politykę przed jego włączeniem.</p>
 
-      <h2>9. Zmiany polityki</h2>
-      <p>W przypadku zmian zaktualizujemy tę stronę i datę ostatniej aktualizacji. Zalecamy okresowe sprawdzanie.</p>
+      <h3>2.6 Dane udostępniane przez Państwa</h3>
+      <p>Gdy wysyłają Państwo fakturę, eksportują plik CSV lub udostępniają kopię zapasową, aplikacja korzysta z systemowego menu udostępniania lub aplikacji poczty e-mail na Państwa urządzeniu. To Państwo wybierają odbiorcę lub miejsce docelowe i obowiązują warunki danej usługi. Nie otrzymujemy kopii.</p>
 
-      <h2>10. Kontakt</h2>
-      <p>W przypadku pytań dotyczących prywatności skontaktuj się z nami pod adresem <a href="mailto:info@billero.app">info@billero.app</a>.</p>
-      <p>Administrator danych: B-DataFit, Matej Leban s.p., Słowenia.</p>
+      <h2>3. Uprawnienia i śledzenie</h2>
+      <ul>
+        <li>Aparat i zdjęcia – do skanowania lub wybierania odebranych faktur, Państwa logo i podpisu</li>
+        <li>Biometria lub PIN urządzenia – do opcjonalnej blokady aplikacji</li>
+        <li>Powiadomienia – do przypomnień o fakturach, których termin płatności upływa; są tworzone na Państwa urządzeniu i nigdy nie są do nas wysyłane</li>
+        <li>Internet – do usług opisanych w sekcji 2</li>
+      </ul>
+      <p>Aplikacja nie zawiera SDK reklamowych ani SDK analitycznych lub śledzących, nie korzysta z identyfikatora reklamowego i nie śledzi Państwa w innych aplikacjach ani na stronach internetowych. Nie sprzedajemy danych osobowych i nie udostępniamy ich na potrzeby międzykontekstowej reklamy behawioralnej.</p>
+
+      <h2>4. Kopie zapasowe</h2>
+      <ul>
+        <li><strong>Automatyczna kopia zapasowa</strong> (Plus i Pro, po jej włączeniu): zawsze szyfrowana ustawionym przez Państwa hasłem (AES-256, format ZIP AES). Bez hasła automatyczna kopia zapasowa nie powstaje.</li>
+        <li><strong>Ręczny eksport</strong> (ekran „Firma”): hasło jest opcjonalne. Z hasłem plik ZIP jest szyfrowany AES-256; bez hasła <strong>nie jest szyfrowany</strong>, dlatego należy go ostrożnie przechowywać i udostępniać.</li>
+        <li><strong>Eksport z ekranu planów</strong> (przed zakupem): plik ZIP nie jest szyfrowany.</li>
+      </ul>
+      <p>Nazwy plików wewnątrz pliku ZIP nie są szyfrowane, jedynie ich zawartość. Państwa własne klucze API są dołączane do kopii zapasowej tylko wtedy, gdy włączą Państwo tę opcję (domyślnie wyłączona). Kopie zapasowe są zapisywane w wybranym przez Państwa miejscu; nigdy ich nie otrzymujemy.</p>
+
+      <h2>5. Państwa prawa (GDPR/RODO, CCPA/CPRA i podobne przepisy)</h2>
+      <p>Państwa dane firmowe znajdują się na Państwa urządzeniu, więc mogą je Państwo w każdej chwili przeglądać, poprawiać, eksportować lub usuwać w aplikacji albo usunąć je wszystkie, odinstalowując aplikację. W sprawie raportów o awariach (sekcja 2.1) i innych pytań prosimy pisać na adres <a href="mailto:info@billero.app">info@billero.app</a>; raporty o awariach są powiązane wyłącznie z losowym identyfikatorem instalacji, a nie z Państwa tożsamością, dlatego prosimy napisać, czego Państwo potrzebują, a pomożemy w zakresie, w jakim dane można zidentyfikować. Przysługuje Państwu również prawo wniesienia skargi do właściwego organu ochrony danych.</p>
+
+      <h2>6. Dzieci</h2>
+      <p>Billero jest narzędziem biznesowym dla użytkowników w wieku 18 lat i starszych. Nie jest skierowane do dzieci i nie zbieramy świadomie danych od dzieci.</p>
+
+      <h2>7. Transfery międzynarodowe</h2>
+      <p>Google (Firebase Crashlytics) i Anthropic mogą przetwarzać dane w Stanach Zjednoczonych lub innych krajach. Dostawcy ci opierają się na EU-US Data Privacy Framework lub na standardowych klauzulach umownych (Standard Contractual Clauses).</p>
+
+      <h2>8. Bezpieczeństwo</h2>
+      <p>Dane na Państwa urządzeniu są chronione przez zabezpieczenia systemu operacyjnego (Android, iOS), a jeśli ją Państwo włączą – także przez blokadę aplikacji. Wszystkie połączenia opisane w sekcji 2 korzystają z HTTPS.</p>
+
+      <h2>9. Zmiany niniejszej polityki</h2>
+      <p>Jeśli zmienimy sposób, w jaki aplikacja obsługuje dane, zaktualizujemy tę stronę i datę „Ostatnia aktualizacja” przed wejściem zmiany w życie.</p>
+
+      <h2>10. Kontakt i administrator danych</h2>
+      <p>B-DataFit, Matej Leban s.p., Słowenia. Pytania i wnioski dotyczące prywatności: <a href="mailto:info@billero.app">info@billero.app</a></p>
+
     </div>
 
     <footer class="container">

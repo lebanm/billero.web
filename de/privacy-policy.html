@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billero – Datenschutzerklärung</title>
-    <meta name="description" content="Billero Datenschutzerklärung. Alle Daten werden ausschließlich auf Ihrem Gerät gespeichert. Wir betreiben keine Server und erheben keine personenbezogenen Daten.">
+    <meta name="description" content="Billero Datenschutzerklärung. Rechnungs-App nach dem Local-first-Prinzip. Was Ihr Gerät verlässt, wann und an wen.">
     <link rel="canonical" href="https://billero.app/de/privacy-policy.html">
     <link rel="alternate" hreflang="sl" href="https://billero.app/privacy-policy.html">
     <link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy.html">
@@ -49,47 +49,82 @@
 
     <div class="container section-block">
       <h1>Billero – Datenschutzerklärung</h1>
-      <p><strong>Letzte Aktualisierung:</strong> März 2026</p>
+      <p><strong>Letzte Aktualisierung:</strong> November 2026 (App-Version 1.8.1)</p>
 
-      <p>Billero respektiert Ihre Privatsphäre. Alle Daten werden ausschließlich auf Ihrem Gerät gespeichert. Wir betreiben keine Server und erheben keine personenbezogenen Daten.</p>
+      <p>Billero ist eine Rechnungs-App nach dem Local-first-Prinzip. Ihre Rechnungen, Angebote, Kunden und Ihr Unternehmensprofil werden auf Ihrem Gerät gespeichert. Es gibt kein Billero-Konto und keine Anmeldung, wir betreiben keine Server, die Ihre Geschäftsdaten empfangen, und wir haben keine Kopie davon. Diese Datenschutzerklärung erläutert, welche begrenzten Daten Ihr Gerät verlassen, wann und an wen.</p>
 
-      <h2>1. Lokale Datenspeicherung</h2>
-      <p>Alle Ihre Daten (Rechnungen, Kunden, Rechnungsbilder) werden lokal auf Ihrem Gerät in einer lokalen Datenbank gespeichert. Die Daten verlassen Ihr Gerät nicht und werden nicht an externe Server übertragen.</p>
-
-      <h2>2. App-Berechtigungen</h2>
+      <h2>1. Auf Ihrem Gerät gespeicherte Daten</h2>
+      <p>Die folgenden Daten werden nur auf Ihrem Gerät gespeichert, in einer lokalen Datenbank (SQLite) und in den Dateien der App:</p>
       <ul>
-        <li>Kamera – zum Scannen von Rechnungen</li>
-        <li>Fotobibliothek – zur Auswahl von Rechnungsbildern</li>
-        <li>Face ID / Touch ID – zum Sperren und Entsperren der App (optional)</li>
-        <li>Dateien – zum Speichern von PDFs und zum Exportieren von Daten</li>
-        <li>Teilen – zum Teilen von Rechnungen (nur wenn Sie es initiieren)</li>
+        <li>Ausgestellte und empfangene Rechnungen, Angebote und zugehörige Dokumente (PDFs, Fotos)</li>
+        <li>Von Ihnen eingegebene Kundendaten (Namen, Adressen, Steuernummern, E-Mail-Adressen)</li>
+        <li>Ihr Unternehmensprofil (Unternehmensdaten, Steuernummern, Bankkonto, Zahlungslink, Krypto-Wallet-Adressen, Logo, Unterschrift)</li>
+        <li>App-Einstellungen und Präferenzen</li>
       </ul>
-      <p>Die App verwendet diese Berechtigungen ausschließlich für die beschriebenen Zwecke. Es gibt keine externen Server, Analysetools oder Werbe-SDKs.</p>
+      <p>Wenn Sie die App deinstallieren, werden diese Daten von Ihrem Gerät gelöscht. Wir können sie nicht wiederherstellen; bewahren Sie daher eine Datensicherung auf (Abschnitt 4).</p>
 
-      <h2>3. Datenerhebung</h2>
-      <p>Die App erfasst, protokolliert oder überträgt keine personenbezogenen Daten. Es gibt keine Registrierung, Anmeldung oder Kontosystem. Alles bleibt auf Ihrem Gerät.</p>
+      <h2>2. Wann Daten Ihr Gerät verlassen</h2>
 
-      <h2>4. Daten Dritter</h2>
-      <p>Alle Daten, die Sie eingeben (z. B. Kundennamen, Rechnungsbeträge), werden lokal gespeichert. Wenn Sie die Funktion „Teilen" verwenden, ermöglicht die App nur das Teilen über von Ihnen gewählte Dienste (z. B. E-Mail, Messaging-Apps). Diese Dienste unterliegen ihren eigenen Datenschutzrichtlinien.</p>
+      <h3>2.1 Absturz- und Fehlerberichte – Firebase Crashlytics (Google LLC)</h3>
+      <p>In den in den Stores veröffentlichten Versionen verwendet die App Firebase Crashlytics, um Abstürze zu erkennen und zu beheben. Wenn die App abstürzt oder bestimmte Fehler aufzeichnet, erhält Google:</p>
+      <ul>
+        <li>Den Stacktrace und die Fehlermeldung (sie kann technische Details des fehlgeschlagenen Vorgangs enthalten)</li>
+        <li>Gerätemodell, Version des Betriebssystems und App-Version</li>
+        <li>Eine zufällige Installationskennung (Firebase Installation ID)</li>
+        <li>Kurze technische Protokollzeilen zu Käufen (Produkt und Kaufstatus, niemals Zahlungsdaten)</li>
+      </ul>
+      <p>Wir fügen diesen Berichten weder Ihren Namen noch Ihre E-Mail-Adresse noch Rechnungsinhalte hinzu, und sie werden nicht für Werbung verwendet. Google speichert Absturzberichte für einen begrenzten Zeitraum gemäß den Firebase-Bedingungen. Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
-      <h2>5. KI-Rechnungserkennung (Anthropic)</h2>
-      <p>Die KI/OCR-Funktion zum Scannen von Rechnungen ist <strong>optional</strong> und wird <strong>nur auf Ihre ausdrückliche Anforderung</strong> ausgeführt. Wenn Sie eine Rechnung scannen, wird das Bild oder PDF an den KI-Anbieter <strong>Anthropic PBC (Claude-Modell)</strong> in den Vereinigten Staaten gesendet, der Daten aus dem Dokument extrahiert (Lieferant/Käufer, Nummer, Datum, Betrag). Diese Dokumente können personenbezogene und finanzielle Daten enthalten. Anthropic <strong>bewahrt diese Daten nicht langfristig auf und verwendet sie nicht zum Training von Modellen</strong>. Wenn Sie die Funktion nicht nutzen, wird nichts gesendet. Die Datenübermittlung in die USA ist durch das EU-US Data Privacy Framework (DPF) bzw. Standardvertragsklauseln (SCC) abgesichert. Anthropic-Richtlinie: <a href="https://www.anthropic.com/legal/privacy" target="_blank">anthropic.com/legal/privacy</a></p>
+      <h3>2.2 KI-Erkennung empfangener Rechnungen – Anthropic PBC (USA)</h3>
+      <p>Die KI-Erkennung ist optional. Es wird nichts gesendet, bevor Sie in der App Ihre Einwilligung erteilen, und auch dann nur, wenn Sie die Erkennung eines Dokuments starten. Das ausgewählte oder fotografierte Dokument (Bild oder PDF) wird vollständig an Anthropic gesendet, das daraus Lieferant oder Käufer, Nummer, Datum, Betrag und Beschreibung ausliest; das Ergebnis wird auf Ihrem Gerät gespeichert. Das Dokument kann personenbezogene und finanzielle Daten enthalten. Gemäß den kommerziellen Bedingungen von Anthropic werden über seine API gesendete Daten nicht zum Training von Modellen verwendet; Anthropic kann sie gemäß seiner Richtlinie zur Datenaufbewahrung für einen begrenzten Zeitraum aufbewahren. Wenn Sie Ihren eigenen Anthropic-API-Schlüssel eingeben, gilt Ihre eigene Vereinbarung mit Anthropic. Sie können Ihre Einwilligung jederzeit in der App widerrufen (Unternehmen). Datenschutzerklärung von Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank">https://www.anthropic.com/legal/privacy</a></p>
 
-      <h2>6. Sicherheit</h2>
-      <p>Die auf Ihrem Gerät gespeicherten Daten sind durch die Sicherheitsmechanismen des Betriebssystems (Android / iOS) geschützt. Optional können Sie die App zusätzlich mit Face ID oder Touch ID sichern.</p>
+      <h3>2.3 Wechselkurse für Krypto-Zahlungs-QR-Codes – Frankfurter und CoinGecko</h3>
+      <p>Nur wenn Sie Ihrem Profil Krypto-Wallet-Adressen hinzufügen, ruft die App Wechselkurse ab, wenn sie ein Rechnungs-PDF mit QR-Codes für Kryptozahlungen erstellt: von api.frankfurter.app (Währungskurse) und api.coingecko.com (Kryptopreise). Die Anfrage enthält nur Währungscodes (zum Beispiel USD oder EUR), keine Rechnungs- oder Kundendaten. Wie bei jeder Anfrage über das Internet sieht der Anbieter Ihre IP-Adresse.</p>
 
-      <h2>7. Internationale Datenübermittlung</h2>
-      <p>Anthropic (KI-Scannen) sowie gegebenenfalls Google und Cloudflare können Daten auf Servern in der Europäischen Union, den Vereinigten Staaten oder anderen Rechtsräumen verarbeiten. Diese Anbieter sind nach dem EU-US Data Privacy Framework zertifiziert oder verwenden gleichwertige Schutzmaßnahmen (Standardvertragsklauseln).</p>
+      <h3>2.4 Startnachricht – billero.app</h3>
+      <p>Beim Start kann die App einen kurzen Nachrichtentext von billero.app laden. Es werden keine Daten über Sie oder Ihre Rechnungen gesendet; unser Webhosting-Anbieter kann übliche Server-Logs speichern (etwa IP-Adresse und Zeitpunkt der Anfrage).</p>
 
-      <h2>8. Datenlöschung</h2>
-      <p>Wenn Sie die App deinstallieren, werden alle gespeicherten Daten dauerhaft von Ihrem Gerät gelöscht.</p>
+      <h3>2.5 Käufe – Apple App Store und Google Play</h3>
+      <p>Abonnements werden über Apple oder Google gekauft und bezahlt, die Ihre Zahlungsmethode und Ihr Konto verwalten. Wir erhalten Ihre Zahlungsdaten nicht. Die App auf Ihrem Gerät erhält die Bestätigung Ihres Kaufs vom Store. Derzeit betreiben wir keinen Server zur Prüfung von Kaufbelegen; falls wir einen einführen, aktualisieren wir diese Datenschutzerklärung, bevor er aktiviert wird.</p>
 
-      <h2>9. Änderungen der Richtlinie</h2>
-      <p>Wenn sich diese Richtlinie ändert, aktualisieren wir diese Seite und das Datum der letzten Aktualisierung. Wir empfehlen eine gelegentliche Überprüfung.</p>
+      <h3>2.6 Daten, die Sie selbst teilen</h3>
+      <p>Wenn Sie eine Rechnung senden, eine CSV-Datei exportieren oder eine Datensicherung teilen, verwendet die App das Teilen-Menü Ihres Geräts oder Ihre E-Mail-App. Sie wählen den Empfänger oder das Ziel, und es gelten die Bedingungen dieses Dienstes. Wir erhalten keine Kopie.</p>
 
-      <h2>10. Kontakt</h2>
-      <p>Bei Fragen zum Datenschutz kontaktieren Sie uns unter <a href="mailto:info@billero.app">info@billero.app</a>.</p>
-      <p>Verantwortlicher: B-DataFit, Matej Leban s.p., Slowenien.</p>
+      <h2>3. Berechtigungen und Tracking</h2>
+      <ul>
+        <li>Kamera und Fotos – zum Scannen oder Auswählen empfangener Rechnungen, Ihres Logos und Ihrer Unterschrift</li>
+        <li>Biometrie oder Geräte-PIN – für die optionale App-Sperre</li>
+        <li>Benachrichtigungen – für Erinnerungen an fällige Rechnungen; sie werden auf Ihrem Gerät erstellt und nie an uns gesendet</li>
+        <li>Internet – für die Dienste in Abschnitt 2</li>
+      </ul>
+      <p>Die App enthält keine Werbe-SDKs und keine Analyse- oder Tracking-SDKs, verwendet nicht die Werbe-ID und verfolgt Sie nicht über Apps oder Websites hinweg. Wir verkaufen keine personenbezogenen Daten und geben sie nicht für kontextübergreifende verhaltensbezogene Werbung (cross-context behavioral advertising) weiter.</p>
+
+      <h2>4. Datensicherungen</h2>
+      <ul>
+        <li><strong>Automatische Datensicherung</strong> (Plus und Pro, wenn Sie sie einschalten): immer mit dem von Ihnen festgelegten Passwort verschlüsselt (AES-256, Format ZIP AES). Ohne Passwort wird keine automatische Datensicherung erstellt.</li>
+        <li><strong>Manueller Export</strong> (Unternehmen): Das Passwort ist optional. Mit Passwort wird die ZIP-Datei mit AES-256 verschlüsselt; ohne Passwort ist sie <strong>nicht verschlüsselt</strong>, bewahren und teilen Sie sie daher sorgfältig.</li>
+        <li><strong>Export aus der Paketübersicht</strong> (vor einem Kauf): Die ZIP-Datei ist nicht verschlüsselt.</li>
+      </ul>
+      <p>Dateinamen in einer ZIP-Datei werden nicht verschlüsselt, nur deren Inhalt. Ihre eigenen API-Schlüssel sind nur dann in einer Datensicherung enthalten, wenn Sie dies einschalten (standardmäßig aus). Datensicherungen werden dort gespeichert, wo Sie es wählen; wir erhalten sie nie.</p>
+
+      <h2>5. Ihre Rechte (DSGVO (GDPR), CCPA/CPRA und ähnliche Gesetze)</h2>
+      <p>Ihre Geschäftsdaten befinden sich auf Ihrem Gerät, sodass Sie sie jederzeit in der App einsehen, berichtigen, exportieren oder löschen oder durch Deinstallation der App vollständig löschen können. Für Absturzberichte (Abschnitt 2.1) und andere Fragen schreiben Sie an <a href="mailto:info@billero.app">info@billero.app</a>; Absturzberichte sind nur mit einer zufälligen Installationskennung verknüpft, nicht mit Ihrer Identität. Teilen Sie uns daher mit, was Sie benötigen, und wir helfen Ihnen, soweit sich die Daten zuordnen lassen. Sie haben außerdem das Recht, Beschwerde bei Ihrer Datenschutzaufsichtsbehörde einzulegen.</p>
+
+      <h2>6. Kinder</h2>
+      <p>Billero ist ein Geschäftswerkzeug für Nutzer ab 18 Jahren. Es richtet sich nicht an Kinder, und wir erheben wissentlich keine Daten von Kindern.</p>
+
+      <h2>7. Internationale Datenübermittlungen</h2>
+      <p>Google (Firebase Crashlytics) und Anthropic können Daten in den Vereinigten Staaten oder anderen Ländern verarbeiten. Diese Anbieter stützen sich auf das EU-US Data Privacy Framework oder auf Standardvertragsklauseln (Standard Contractual Clauses).</p>
+
+      <h2>8. Sicherheit</h2>
+      <p>Die Daten auf Ihrem Gerät sind durch die Sicherheit Ihres Betriebssystems (Android, iOS) und, wenn Sie sie einschalten, durch die App-Sperre geschützt. Alle in Abschnitt 2 beschriebenen Verbindungen verwenden HTTPS.</p>
+
+      <h2>9. Änderungen dieser Datenschutzerklärung</h2>
+      <p>Wenn wir ändern, wie die App mit Daten umgeht, aktualisieren wir diese Seite und das Datum „Letzte Aktualisierung“, bevor die Änderung wirksam wird.</p>
+
+      <h2>10. Kontakt und Verantwortlicher</h2>
+      <p>B-DataFit, Matej Leban s.p., Slowenien. Fragen und Anfragen zum Datenschutz: <a href="mailto:info@billero.app">info@billero.app</a></p>
+
     </div>
 
     <footer class="container">
