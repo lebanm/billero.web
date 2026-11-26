@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Release notes – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+    code { background: #f5f5f5; padding: 0.1rem 0.25rem; border-radius: 4px; }
+  </style>
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+    <link rel="canonical" href="https://billero.app/sl/release-notes">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes">
+    <link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes">
+    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes">
+    <link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes">
+    <link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes">
+    <link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes">
+    <link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes">
+    <link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes">
+    <link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes">
+    <link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes">
+  </head>
+<body>
+<nav class="locale-nav" aria-label="Izberi jezik">
+<a href="/sl/release-notes" lang="sl" hreflang="sl" data-lang="sl" aria-current="page">SL</a>
+<a href="/en/release-notes" lang="en" hreflang="en" data-lang="en">EN</a>
+<a href="/de/release-notes" lang="de" hreflang="de" data-lang="de">DE</a>
+<a href="/es/release-notes" lang="es" hreflang="es" data-lang="es">ES</a>
+<a href="/nl/release-notes" lang="nl" hreflang="nl" data-lang="nl">NL</a>
+<a href="/th/release-notes" lang="th" hreflang="th" data-lang="th">TH</a>
+<a href="/cs/release-notes" lang="cs" hreflang="cs" data-lang="cs">CS</a>
+<a href="/hr/release-notes" lang="hr" hreflang="hr" data-lang="hr">HR</a>
+<a href="/ja/release-notes" lang="ja" hreflang="ja" data-lang="ja">JA</a>
+<a href="/pl/release-notes" lang="pl" hreflang="pl" data-lang="pl">PL</a>
+<a href="/pt/release-notes" lang="pt" hreflang="pt" data-lang="pt">PT</a>
+<a href="/sk/release-notes" lang="sk" hreflang="sk" data-lang="sk">SK</a>
+</nav>
+  <h1>Billero – Release notes</h1>
+  <p class="updated">Zadnja posodobitev: junij 2026</p>
+
+  <p>Tu objavljamo povzetek novosti in popravkov po verzijah.</p>
+
+  <hr>
+
+  <h2>Različica 1.8.0 (november 2026)</h2>
+  <p class="updated"><em>Več podjetij v eni aplikaciji, šifrirana samodejna kopija in popravek dokumentov starejših računov po nadgradnji.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Novo</h3>
+  <ul>
+    <li><strong>Več podjetij v eni aplikaciji (paket Pro)</strong> — v Podjetje → Podjetja dodate novo podjetje (ime in država; valuta in DDV se nastavita po državi); med podjetji preklapljate s čipom na Pregledu ali na seznamu Podjetja. Vsako podjetje ima svoje račune, stranke, predračune, številčenje, dokumente in profil; na Pregledu in v obrazcu novega računa čip pokaže, kot katero podjetje izdajate. Pregled vseh podjetij pokaže odprte in zapadle zneske po valutah (brez pretvorbe), kartico za vsako podjetje in skupni seznam odprtih računov po roku plačila. Paket, zaklep aplikacije in brezplačna meja veljajo za napravo: prvih 10 računov se šteje skupaj za vsa podjetja. Brez paketa Pro lahko nove račune izdaja samo eno podjetje, druga ostanejo dostopna za ogled, deljenje, izvoz in storno. Pri več podjetjih samodejna kopija zajame vsa podjetja; ob obnovi aplikacija pokaže, katero podjetje gre kam. Kopija drugega podjetja zamenja podatke izbranega podjetja šele, ko v oknu z imenoma obeh podjetij potrdite »Zamenjaj vse«; izbrano podjetje ostane isto podjetje, zato mu pripadajo tudi poznejše kopije. Kopije, ki pripada drugemu podjetju na tej napravi, v izbrano podjetje ni mogoče obnoviti: aplikacija ponudi »Obnovi v …« podjetje, ki mu kopija pripada. Če je bila obnova podjetja prekinjena in je ni bilo mogoče dokončati, je podjetje na seznamu Podjetja označeno »Prekinjena obnova ni urejena«: dokler tega ne uredite, podatkov tega podjetja ni mogoče spreminjati, druga podjetja delujejo naprej. Izberete »Poskusi znova« ali »Obnovi iz varnostne kopije«; če ni nobenega podjetja, ki bi ga lahko uporabljali, se ta zaslon pokaže že ob zagonu, pred Pregledom. Podatki se ne izgubijo: če se prekine tudi ta obnova, jo aplikacija ob naslednjem zagonu vrne v stanje pred njo (baza in dokumenti), zato kopijo in geslo izberete znova; obnovo, ki je bila že potrjena, dokonča. Za obstoječe uporabnike se nič ne premakne: dosedanji podatki ostanejo prvo podjetje.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Izboljšave</h3>
+  <ul>
+    <li><strong>Samodejna kopija je šifrirana</strong> — samodejna kopija je odslej šifrirana z geslom, ki ga nastavite ob vklopu v Podjetje → Varnostna kopija; brez gesla ne nastane. Če ste samodejno kopijo uporabljali že doslej, vas aplikacija enkrat na dan prosi, da geslo nastavite, pod stikalom pa pove, da kopija čaka na geslo. Geslo je shranjeno samo na tem telefonu, ne v kopiji; po potrditvi z zaklepom telefona ga lahko pokažete ali spremenite (starejše kopije še vedno potrebujejo staro geslo). Pri ročnem izvozu in obnovi lahko izberete »Uporabi geslo samodejnih kopij«. Izvoz z zaslona s paketi pred nakupom ostane brez gesla.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Popravki</h3>
+  <ul>
+    <li><strong>Dokumenti starejših računov, ki se po nadgradnji niso odprli</strong> — na iPhonu in iPadu lahko sistem ob nadgradnji zamenja notranjo pot do datotek, zato aplikacija dokument poišče po imenu datoteke. Če sta dva starejša računa nosila dokument z istim imenom (na primer številki 2026/001 in 2026-001), se ni odprl nobeden — vsak je bil videti kot dokument drugega — in pisalo je »PDF datoteka ne obstaja več«, čeprav je bil dokument na napravi. Dokumentov, ki so jih starejše različice hranile v drugi mapi, aplikacija sploh ni iskala. Pošiljanje računovodji, pošiljanje računov stranki v razdelku Stranke in arhiviranje dokumenta niso iskali: pošiljanje je javilo »Napaka: PDF datoteke ne obstajajo« ali dokumenta ni priložilo, arhiviranje je javilo »Računi so arhivirani«, a dokumenta ni premaknilo. Zdaj aplikacija išče tudi v mapi starejših različic, pošiljanje in arhiviranje pa dokument poiščeta na enak način. Kadar najdeni dokument lahko pripada več računom, ga dobi račun, katerega številka je na dokumentu, ne glede na to, kateri račun odprete prvi; če sta računa imela enako številko (na primer preden je eden dobil pripono -1), ga dobi tisti, katerega kupec je na dokumentu. Če tega iz dokumenta ni mogoče ugotoviti (na primer pri enaki številki in istem kupcu ali pri uvoženem računu), ga aplikacija ne dodeli nobenemu od njiju. Račun, ki je doslej po nadgradnji odprl dokument drugega računa, ga na iPhonu in iPadu ne odpre več, ko sistem notranjo pot znova zamenja. Na seznamu računov račun brez dokumenta še vedno pokaže »PDF datoteka ne obstaja več«.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Različica 1.7.1 (oktober 2026)</h2>
+  <p class="updated"><em>Popravki po izdaji 1.7.0: jasnejša sporočila, kadar AI-branje ni na voljo, predračuni v jeziku dokumenta, tajske in avstrijske oznake na dokumentih, zanesljivejša obnova varnostne kopije in enolične številke računov tudi v bazi (podvojene številke aplikacija preštevilči sama).</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Izboljšave</h3>
+  <ul>
+    <li><strong>Jasno sporočilo, ko AI-branje ni na voljo</strong> — namesto splošnega sporočila, da računa ni bilo mogoče prebrati, aplikacija zdaj pove, kaj se dogaja: AI-branje trenutno ni na voljo (ključ, vgrajen v aplikacijo, je bil zavrnjen ali je potekel ali pa ponudnik modela te različice ne ponuja več; posodobitev aplikacije ga lahko znova omogoči), vaš lasten API ključ je bil zavrnjen (preverite ga v Podjetje → AI ključi), zahtev je preveč ali je dosežena meja porabe (poskusite znova pozneje) ali pa je datoteka prevelika za AI-branje. Obrazec ostane odprt, podatke pa vedno lahko vnesete ročno.</li>
+    <li><strong>Predračun v jeziku dokumenta, tajske in avstrijske oznake</strong> — predračun in račun, ki ga ustvarite iz predračuna, sta zdaj v jeziku dokumenta po istem pravilu kot računi, ki jih aplikacija izda sama (ponavljajoči računi): če je jezik aplikacije eden od jezikov dokumenta države izdajatelja (jezik države ali angleščina), je dokument v jeziku aplikacije, sicer v jeziku dokumenta države; kjer aplikacija za državo nima lokalnega jezika dokumenta, je to angleščina. Slovenski izdajatelj z aplikacijo v nemščini tako dobi slovenski predračun, z aplikacijo v angleščini angleškega, izdajatelj iz ZDA z aplikacijo v slovenščini pa angleškega. Pri tajskem izdajatelju imajo predračun, račun iz predračuna in ponavljajoči račun tajske oznake; z aplikacijo v angleščini so oznake angleške, nekatere (na primer naslov, prejemnik in datum izdaje) imajo nad seboj tajsko vrstico. Na dokumentih avstrijskega izdajatelja v nemščini (računi, ponavljajoči računi, predračuni) sta identifikacijska številka za DDV in matična številka označeni z »UID-Nr.« in »FN«: oznaki določa država izdajatelja, ne jezik aplikacije; izdajatelj iz Nemčije obdrži »USt-IdNr.« in »HR-Nr.«. Na računu iz obrazca je vrstica z datumom ali obdobjem opravljene storitve (»Datum opravljene storitve«) zdaj prav tako v jeziku dokumenta; doslej je bila v jeziku aplikacije. Naslov (»Predračun št.«) in oznaka veljavnosti (»Veljavnost do:«) sta prevedena v vseh 13 jezikih; doslej sta bila vedno v slovenščini. Jezika posameznega predračuna ni mogoče izbrati; v obrazcu računa je jezik na začetku jezik države, za posamezen račun pa ga lahko spremenite. Ko nastavite ali spremenite državo podjetja, obrazec računa takoj uporabi jezik dokumenta te države; doslej šele po ponovnem zagonu aplikacije. Že poslan predračun se ob ponovnem deljenju pripravi znova v jeziku dokumenta; zadeva in besedilo e-pošte ostaneta v jeziku aplikacije. PDF dokumenti računov, ki ste jih že izdali, se ne spremenijo; ko uredite neplačan račun, aplikacija pripravi nov PDF po teh pravilih.</li>
+    <li><strong>Obnova kopije ne zamenja vaših ključev brez izbire</strong> — ključa za AI-branje in CoinGate, ki ju naprava že ima, obnova ne prepiše sama. Če kopija vsebuje drugačen ključ, vas aplikacija pred obnovo vpraša (»Ključi v varnostni kopiji«), ali naj obdrži ključe naprave ali uporabi ključe iz kopije. Naprava brez ključa ga dobi iz kopije; kopija brez ključev ključev naprave ne izbriše. Paket in zaklep aplikacije ostaneta od naprave, kot doslej (izjema je trajni paket Pro starih naročnikov).</li>
+    <li><strong>Obnova, ki jo ustavi sistem</strong> — če sistem med obnovo ustavi aplikacijo, ob naslednjem zagonu aplikacija podatke vrne v stanje pred obnovo (ali dokonča obnovo, ki jo je baza že potrdila), da baza in dokumenti vedno ostanejo iz istega stanja. Če je bila obnova razveljavljena, vas razdelek Podjetje opozori, da jo ponovite. Kopijo z napačno obliko podatkov aplikacija zavrne, še preden se karkoli spremeni.</li>
+    <li><strong>Stanje varnostne kopije v razdelku Podjetje</strong> — pod stikalom za samodejno kopijo aplikacija loči kopijo, ki je bila samo pripravljena, od kopije, ki ste jo predali (delili ali shranili). Pokaže, ali je zadnja kopija zaščitena z vašim geslom ali ni šifrirana, ali je bila nepopolna (manjkala je datoteka dokumenta), ali zadnji poskus ni uspel in ali pripravljena kopija ni bila predana.</li>
+    <li><strong>Jasno o šifriranju in samodejni kopiji</strong> — samodejna kopija in izvoz pred nakupom na zaslonu paketov nista šifrirana; kopijo z geslom izvozite v razdelku Podjetje → Varnostna kopija. Samodejna kopija se pripravi, ko odprete aplikacijo (največ enkrat na teden), in se ponudi v deljenje; v ozadju se ne izvaja. Na voljo je od paketa Plus naprej: v paketu Free se ne pripravlja, tudi če je stikalo vklopljeno.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Popravki</h3>
+  <ul>
+    <li><strong>Številke računov so enolične tudi v bazi, podvojene pa se preštevilčijo</strong> — poleg preverbe v aplikaciji številko računa zdaj varuje tudi baza podatkov: drugega računa z isto številko ne sprejme. Če je bilo v vaši evidenci več računov z enako številko (iz starejših različic ali obnovljene kopije), jih aplikacija preštevilči: eden obdrži številko, ostali dobijo pripono -1, -2 in tako naprej. Spremeni se samo številka, vsaka sprememba pa je zapisana v revizijski sledi. To se zgodi ob prvem zagonu po nadgradnji in po obnovi varnostne kopije, ki vsebuje take račune; če preštevilčenje ne uspe, se nič ne spremeni in aplikacija poskusi znova ob naslednjem zagonu. V pogovornem oknu vam aplikacija pokaže, katerim računom je spremenila številko (gumb »Razumem«). Že izdani PDF dokumenti teh računov še vedno nosijo prejšnjo številko: kjer je to pomembno, stranki pošljite popravljen dokument ali ji sporočite novo številko. Seznam preštevilčenih računov ostane na voljo v Dokumenti → Izdani računi → »Več možnosti« → »Preveri številke računov« (razdelek »Preštevilčeni računi«). Če računov z enako številko nimate, ne opazite nobene spremembe.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Različica 1.7.0 (oktober 2026)</h2>
+  <p class="updated"><em>Velika posodobitev: nova navigacija, zanesljivejša izdaja računov in varnostna kopija ter dostop do računov tudi po izrabljenih brezplačnih računih.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Novo</h3>
+  <ul>
+    <li><strong>Nova navigacija</strong> — štirje razdelki Pregled, Dokumenti, Stranke in Podjetje. Ob vstopu vidite kratek pregled z gumbom »Nov račun« namesto obrazca; izdani in prejeti računi, predračuni ter ponavljajoči računi so v razdelku Dokumenti. Nekdanji »Moji podatki« so zdaj Podjetje.</li>
+    <li><strong>Izdaja računa v treh korakih</strong> — nov račun vodi skozi tri korake: najprej stranka, nato postavke, na koncu pregled z gumbom za izdajo. Izbrani prejemnik ostane viden med vnosom, manjkajoči podatki pa se javijo v svojem koraku in ne šele ob izdaji. Vrnitev nazaj ne izbriše vnosa. Urejanje že izdanega računa ostane na enem zaslonu.</li>
+    <li><strong>Potrditev po izdaji in ločeno deljenje</strong> — po izdaji se pokaže zaslon »Račun je izdan« s številko, prejemnikom in zneskom. Deljenje PDF je zdaj ločeno dejanje: če ga prekličete, račun ostane izdan in ga lahko delite znova. Račun se trajno shrani, preden gre karkoli v deljenje, dvojni pritisk pa ne ustvari dveh računov.</li>
+    <li><strong>Dostop do računov tudi po brezplačni meji</strong> — v paketu Free je brezplačnih prvih 10 izdanih računov skupaj, ne na leto; stornirani in uvoženi računi se ne štejejo. Ko jih porabite ali se konča preskusno obdobje, aplikacija ostane dostopna: obstoječe račune še vedno odpirate, delite, izvažate in stornirate, urejati pa jih ne morete. Za urejanje in za izdajo novega računa, tudi iz predračuna, izberete naročnino.</li>
+    <li><strong>Soglasje pred AI-branjem računov</strong> — pred prvim branjem računa z AI vas aplikacija vpraša za soglasje. Izbrani ali fotografirani dokument se v celoti pošlje ponudniku Anthropic (ZDA). Brez soglasja se ne pošlje nič, podatke pa še vedno vnesete ročno. Soglasje lahko umaknete v razdelku Podjetje → AI-branje dokumentov.</li>
+    <li><strong>Ponavljajoči računi s pravim kupcem</strong> — ponavljajoči račun zdaj nosi polne podatke kupca (naziv, naslov, davčno številko) in je izpisan v jeziku dokumenta vaše države. Zaslon je preveden v vse jezike aplikacije. Ponavljajoči računi se izdajajo v paketu Plus ali višjem; brez njega zapadli račun počaka v čakalni vrsti. Obvestilo o zapadlem računu se pokaže ob odprtju seznama računov in ob vrnitvi v aplikacijo.</li>
+    <li><strong>Opomniki o zapadlih računih</strong> — račun velja za zapadlega dan po roku plačila, ki je izpisan na njem. Plačani, stornirani in uvoženi računi se ne štejejo. Obvestila vklopite v razdelku Podjetje → Nastavitve ali na zaslonu Ponavljajoči računi; aplikacija za dovoljenje ne vpraša več ob zagonu.</li>
+    <li><strong>Zaslon Podjetje v vašem jeziku</strong> — zaslon je v celoti preveden. Jezik aplikacije lahko zdaj izberete tudi v španščini, portugalščini in japonščini.</li>
+    <li><strong>Navodila za uporabo v nizozemščini</strong> — nizozemski uporabniki so doslej dobivali hrvaška navodila.</li>
+    <li><strong>Država podjetja ob prvem zagonu</strong> — ob prvem zagonu državo podjetja izberete sami: aplikacija, kadar je to mogoče, predlaga državo iz nastavitev telefona, ki jo potrdite z enim dotikom, ali pa izberete drugo s seznama. Od države so odvisni stopnje DDV, plačilna koda in rok plačila na računih. Prej se je država ob podprtem jeziku telefona tiho nastavila na Slovenijo. Če vaše države ni na seznamu, jo izberete v razdelku Podjetje.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Izboljšave</h3>
+  <ul>
+    <li><strong>Razumljivejši obrazec za nov račun</strong> — pod stikalom »Znesek vključuje DDV« je pojasnilo, ali je davek že vštet. Pri več postavkah obrazec pove, da je cena na enoto brez davka. Če kaj manjka, obrazec sam skoči na prvo polje z napako. Gumb »Izdaj račun« je bolje berljiv v svetli in temni temi.</li>
+    <li><strong>Varnejši zaklep aplikacije</strong> — zaklep se vklopi šele po uspešni potrditvi z biometrijo ali PIN-om naprave. Če naprava preverjanja ne zmore, na primer ker nima zaklepa zaslona, vas aplikacija opozori. Ob vklopu pojasni posledice in ponudi izvoz varnostne kopije.</li>
+    <li><strong>Varnejša varnostna kopija</strong> — obnova ne spremeni paketa in zaklepa na napravi; izjema je trajni paket Pro starih naročnikov, ki potuje s kopijo. Poškodovane, prevelike ali sumljive kopije aplikacija zavrne, obstoječi podatki pa ostanejo nespremenjeni. Ključ za AI-branje, ki je vgrajen v aplikacijo, ni nikoli v kopiji. Pred deljenjem vas aplikacija opozori, če kopija ni popolna; izberete »Vseeno deli« ali »Prekliči«, tudi pri izvozu z zaslona paketov. Samodejna tedenska kopija (Plus) šteje za opravljeno šele, ko jo shranite ali delite; če obvestilo zaprete, jo aplikacija ponudi znova čez teden dni.</li>
+    <li><strong>Zanesljivejša varnostna kopija</strong> — kopija zdaj vsebuje tudi predračune, zanesljivo pa tudi logotip, podpis in vse datoteke prejetih računov (prej so lahko manjkali). Neuspela obnova ne spremeni obstoječih podatkov, kopija iz novejše različice aplikacije pa se obnovi brez izgube računov. Prejeti računi po posodobitvi aplikacije znova najdejo svoje datoteke.</li>
+    <li><strong>Hitrejše delo s strankami in seznami</strong> — stranke lahko iščete po imenu, kraju, davčni številki ali e-pošti, iz stranke pa z enim dotikom začnete račun z že izpolnjenim prejemnikom. Seznami zdaj ločijo nalaganje, napako, prazno evidenco in iskanje brez zadetka. Izvoz v CSV, uvoz PDF-jev in ponavljajoči računi so v meniju »Več možnosti«. Računov v različnih valutah aplikacija ne sešteva več v en znesek.</li>
+    <li><strong>Zaslon paketov in pogoji uporabe</strong> — ob vsaki ceni je prikazano obračunsko obdobje. Zaslon pojasni samodejno podaljšanje in odpoved v trgovini ter ima povezavi na pravilnik o zasebnosti in pogoje uporabe v jeziku aplikacije. Pogoji uporabe v aplikaciji so posodobljeni: paketa Plus in Pro, prvih 10 računov brezplačno, vključeno AI-branje in natančen opis, kateri podatki zapustijo napravo.</li>
+    <li><strong>Zaslon Podjetje brez prelivanja</strong> — besedilo se na ožjih telefonih in pri povečani pisavi ne preliva in se ne reže. Gumb »Oceni aplikacijo« odpre pravo trgovino tudi na iOS, povezava do pravilnika o zasebnosti pa stran v jeziku aplikacije.</li>
+    <li><strong>Storniranje v vseh jezikih</strong> — pogovorno okno, oznake in sporočila ob storniranju računa ter zadeva izvoza CSV so prevedeni v vse jezike aplikacije.</li>
+    <li><strong>Manjše varnostne kopije</strong> — fotografije prejetih računov se shranijo pomanjšane (daljša stranica največ 2400 točk), zato so kopije manjše.</li>
+    <li><strong>Zanesljivejši zagon</strong> — jezik, ki ga izberete ob prvem zagonu, ostane tudi po ponovnem zagonu. Če ste ga izbrali že prej in je aplikacija ostala v jeziku države (na primer v angleščini na Nizozemskem, v Španiji ali na Portugalskem), po posodobitvi preklopi na izbrani jezik. Če aplikacija ob zagonu ne more prebrati podatkov, namesto neskončnega nalaganja pokaže sporočilo z gumbom »Poskusi znova«. Zagon se ne ustavi več, če varna shramba naprave ni dosegljiva.</li>
+    <li><strong>AI-branje računov</strong> — če branje ne uspe, vam aplikacija svetuje, da poskusite znova ali vnesete podatke ročno. Klic ima časovno omejitev, zato aplikacija ne čaka v nedogled.</li>
+    <li><strong>Predračuni v vseh jezikih</strong> — seznam in obrazec predračuna, meniji, sporočila, pogovorna okna ter zadeva in besedilo e-pošte so prevedeni v vse jezike aplikacije. Naslov in oznaka veljavnosti na PDF-ju predračuna sta za zdaj še v slovenščini.</li>
+    <li><strong>Brez prelivanja tudi na ostalih zaslonih</strong> — na ožjih telefonih in pri večji pisavi besedilo ni več odrezano ali se preliva v obrazcu za nov račun, na zaslonu izdanega računa, v seznamih računov, prejetih računov, strank in predračunov, pri ponavljajočih računih, na zaslonu paketov, v pravnih informacijah ter na zaslonih dobrodošlice, zagona in zaklepa. Seštevki izbranih računov so zdaj v vrstici pod orodno vrstico, pod koncem seznamov je prostor za plavajoči gumb, pogostost ponavljajočega računa pa izberete z žetoni.</li>
+    <li><strong>Posodobljena navodila v aplikaciji</strong> — navodila za uporabo so v vseh 12 jezikih usklajena z različico 1.7.0: meja brezplačnih računov in dostop po njej, soglasje za AI-branje, varnostna kopija, opomniki, ponavljajoči računi, država podjetja in zaklep. Popravljen je tudi vnos za različico 1.6.0: novi paketi so samo Plus in Pro.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Popravki</h3>
+  <ul>
+    <li><strong>Država podjetja določa pravila računa</strong> — država, izbrana v razdelku Podjetje, zdaj za vse podprte države pravilno določa plačilno kodo, rok plačila, ime davka in stopnje. Prej so nekatere države, na primer Nizozemska, Poljska, Španija, Francija in Japonska, dobile slovenska pravila. Jezik vmesnika države ne spreminja več, izrecno izbrana Slovenija pa ostane izbrana. Državo, ki je ni na seznamu, zaslon ne zamenja več tiho z Avstralijo, ampak zahteva izbiro. Če je starejša različica ob preklopu jezika spremenila vašo državo v Nizozemsko ali Nemčijo, vas po nadgradnji razdelek Podjetje opozori, naj državo preverite; potrdite jo z gumbom »Država je pravilna«. Pri slovenskem IBAN-u ali davčni številki aplikacija državo prej sama vrne na Slovenijo, opozorilo pa ostane. Pri že izdanih računih se rok v opomnikih lahko razlikuje od roka na dokumentu.</li>
+    <li><strong>Klavzula o neobračunanem DDV</strong> — klavzula na računu zdaj sledi državi izdajatelja, ne jeziku dokumenta. Slovenski izdajatelj, ki ni zavezanec za DDV, ima tudi na angleškem računu navedbo 94. člena ZDDV-1; države brez posebnega besedila (na primer ZDA in Kanada) imajo splošen stavek. Že izdani računi se ne spremenijo.</li>
+    <li><strong>Brez podvojenih številk računov</strong> — aplikacija ne sprejme številke, ki v njej že obstaja: ne pri ročnem vnosu, ne pri uvozu računa (PDF ali fotografija) in ne pri nastavitvi naslednje številke (Podjetje → »Nastavi številčenje računov«). Pretvorba predračuna in ponavljajoči računi gredo skozi isto preverbo: če računa ni mogoče izdati, se predračun ne spremeni, ponavljajoči račun pa ostane na vrsti. Pri tem ob zasedeni številki ne prepišeta več PDF-ja že izdanega računa. Po obnovi varnostne kopije se naslednja številka po potrebi zviša, nikoli zniža. Obstoječe dvojnike poiščete v Dokumenti → Izdani računi → »Več možnosti« → »Preveri številke računov«.</li>
+    <li><strong>Dokument računa se ne prepiše več</strong> — računa s podobno številko (npr. 2026/001 in 2026-001) imata vsak svoj PDF; drugi dobi pripono, npr. racun_2026_001-2.pdf. Urejanje izdanega računa ohrani prejšnji dokument in shrani novo različico (-v2). Arhiviranje, obnova varnostne kopije in zavrnjena izdaja ne prepišejo več drugega dokumenta, prekinitev med shranjevanjem pa ne pusti okrnjenega PDF-ja. Dokumentov, ki jih je napaka prepisala že prej, ta sprememba ne vrne.</li>
+    <li><strong>Arhivirani računi so zdaj v varnostni kopiji</strong> — računi, ki ste jih po pošiljanju računovodji arhivirali, doslej niso bili del kopije. Ob zamenjavi telefona ali ponovni namestitvi so se njihovi PDF-ji izgubili, čeprav so računi ostali na seznamu. Zdaj so v kopiji in se ob obnovi vrnejo v arhiv.</li>
+    <li><strong>Zanesljivejša oznaka za računovodjo</strong> — če pošiljanje prekličete, račun ostane med neposlanimi; prej je dobil oznako, kot da je bil poslan, in je tiho izpadel iz naslednjih pošiljanj. Napačno oznako lahko zdaj odstranite (izberite račune → meni → »Označi kot neoddano«). Arhiviranje je ločeno dejanje in ne premakne več datotek samo zato, ker ste odprli pošiljanje. Aplikacija ne trdi več, da je bil račun dostavljen — pove le, da je bil oddan v pošiljanje.</li>
+    <li><strong>Mesečna kvota AI-branja</strong> — kvota se vsak mesec začne znova (Free 5, Plus 50, Pro brez omejitve). Prej je lahko ostala trajno izčrpana, tudi pri naročnikih Plus.</li>
+    <li><strong>DDV pri računu fizični osebi</strong> — odpravljena je napaka, zaradi katere je drugi zaporedni račun fizični osebi dobil DDV, prišteven k vnesenemu znesku.</li>
+    <li><strong>Zaklep na Androidu</strong> — popravljena je napaka, zaradi katere poziv za odklep na Androidu ni deloval. Če preverjanje ne uspe, vsebina ostane skrita.</li>
+    <li><strong>Višji paket ostane</strong> — nakup nižjega paketa ne zniža več višjega, ki ga že imate, na primer trajnega paketa Pro starega naročnika.</li>
+    <li><strong>Ponavljajoči računi brez dvojnikov</strong> — če po izdaji ponavljajočega računa datuma naslednjega ni mogoče premakniti, aplikacija pove, da je račun izdan, in ga za isto obdobje ne izda dvakrat.</li>
+    <li><strong>PDF z več pisavami</strong> — znak, ki ga osnovna pisava nima, zdaj izpiše druga pisava. Pri japonskem izdajatelju je na angleškem računu zdaj izpisana klavzula o neobračunanem DDV; dokument z japonsko pisavo ne izgubi več črk č, š in ž; tajske oznake na tajskih dokumentih so bile prej prazni kvadratki, zdaj so izpisane (brez krepke pisave). Običajen slovenski dokument ostane enak.</li>
+    <li><strong>Jezik aplikacije v razdelku Podjetje</strong> — polje »Jezik aplikacije« zdaj kaže jezik, v katerem aplikacija dejansko teče, tudi če ga niste izbrali izrecno; prej je lahko kazalo angleščino, čeprav je aplikacija tekla v drugem jeziku.</li>
+    <li><strong>Pravne informacije za Singapur in Novo Zelandijo</strong> — dve točki v seznamu obveznih podatkov na računu sta namesto besedila kazali interno oznako; zdaj sta izpisani v jeziku aplikacije.</li>
+    <li><strong>Račun nosi datum in številko trenutka izdaje</strong> — obrazec za nov račun ostane odprt, dokler aplikacije ne zaprete, zato je račun, izdan dan ali več pozneje, lahko nosil datum in številko iz trenutka, ko ste obrazec odprli, v bazi pa je bil zapisan današnji datum (vrzel v seriji). Zdaj PDF, zapis in števec dobijo isti trenutek izdaje: obrazec datum in predlagano številko osveži ob prikazu in ob vrnitvi v aplikacijo, tik pred izdajo pa številko preveri še enkrat. Če se je spremenila (novo obdobje ali jo je medtem porabila druga pot izdaje), jo zamenja, pokaže obvestilo in račun izdate znova. Številke, ki ste jo vnesli sami, obrazec ne spreminja.</li>
+    <li><strong>Izdajatelj brez DDV ne obračuna DDV</strong> — postavke, predračuni, pretvorbe predračuna v račun in ponavljajoči računi so pri izdajatelju, ki ni zavezanec za DDV, lahko dobili privzeto stopnjo DDV ob klavzuli »DDV ni obračunan«. Zdaj je stopnja 0 in izbire stopnje ni. Urejanje že izdanega računa ohrani davčno obravnavo, s katero je bil izdan.</li>
+    <li><strong>Neznan kupec, urejanje in meja strank</strong> — pri računu neznanemu kupcu PDF zdaj izpiše vneseno ime z oznako v jeziku dokumenta (prej vgrajeno slovensko oznako brez imena). Urejanje računa ohrani kupca: najde ga po stranki, imenu ali oznaki v katerem koli jeziku aplikacije, sicer kupec ostane, kot je zapisan na računu. Meja 5 strank v paketu Free velja tudi za »Nova stranka« v obrazcu za račun.</li>
+    <li><strong>Država ob prvem zagonu nastavi tudi valuto</strong> — država, ki jo izberete ob prvem zagonu, zdaj nastavi še valuto in privzeto stopnjo DDV. Prej so izdajatelji iz Poljske, Češke, ZDA, Velike Britanije, Japonske, Tajske in drugih držav zunaj evrskega območja izdajali račune v evrih. Obstoječi profili z državo zunaj evrskega območja in evrom kot privzeto valuto se po posodobitvi popravijo (popravek se zapiše v revizijsko sled); že izdani računi in predračuni obdržijo svojo valuto, tudi pri urejanju. Če izberete »Moje države ni na seznamu«, zaslon Podjetje pokaže prazno obvezno polje države namesto Slovenije.</li>
+    <li><strong>Bolgarija v evrih</strong> — Bolgarija je 1. 1. 2026 prešla na evro: račune bolgarskih izdajateljev aplikacija zdaj izdaja v EUR (prej v BGN). Že izdani računi ostanejo, kot so.</li>
+    <li><strong>Brez nadomestne kripto strani</strong> — nov profil nima več nadomestnih kripto naslovov in kripto strani; star nadomestni naslov se po posodobitvi počisti in ga račun nikoli ne natisne. Kripto stran se na računu pojavi šele, ko vnesete lasten naslov denarnice (Podjetje → Kripto plačilo) in vklopite »Prikaži kripto plačila« (Podjetje → Prikaz na računu).</li>
+    <li><strong>Zaslon paketov se da zapreti</strong> — zaslon paketov ima zdaj viden izhod (gumb ✕ »Zapri« ali puščica nazaj) in se po uspešnem nakupu ali obnovitvi nakupa zapre sam; prej na iPhonu izhoda iz njega ni bilo. Opisi paketov ne obljubljajo več »PDF v jeziku kupca (12 jezikov)« in pro-forma računa: PDF je v jeziku države izdajatelja ali v angleščini, predračuni pa se pretvorijo v račun.</li>
+    <li><strong>Obnova kopije: opozorilo, dokument in številčenje</strong> — pred obnovo vas aplikacija opozori, koliko izdanih računov z naprave kopija ne vsebuje (z obnovo bodo odstranjeni); obnovo potrdite z »Obnovi« ali prekličete. Obnova ne priveže več dokumenta drugega računa: če dokumenta obnovljenega računa v kopiji ni, vrstica pokaže manjkajoč PDF (prej je račun ene stranke lahko pokazal ali poslal dokument druge). Obnova starejše kopije številčenja ne vrne nazaj, zato naprava ne izda številke, ki jo stranke že imajo.</li>
+  </ul>
+
+  <hr>
+  <h2>1.6.2 (september 2026)</h2>
+  <ul>
+    <li><strong>Posodobljen plačilni sistem</strong> — aplikacija uporablja Google Play Billing Library 8, kar Google od 31. avgusta 2026 zahteva za vse posodobitve.</li>
+    <li><strong>Uvodni zaslon v vašem jeziku</strong> — pozdravni zaslon in oznaki zavihkov Računi / Predračuni so bili prej vedno v slovenščini.</li>
+    <li><strong>Berljivejše oznake stanja</strong> — oznaki STORNO in UVOZENO na seznamu računov imata zdaj dovolj kontrasta tudi na soncu.</li>
+    <li><strong>Razločnejše ikone v navigaciji</strong> — zavihka Stranke in Moji podatki sta imela skoraj enaki ikoni.</li>
+    <li><strong>Manjkajoči podatki podjetja</strong> — namesto sporočila, ki izgine, dobite gumb, ki vas odpelje naravnost v Moji podatki.</li>
+    <li><strong>Aplikacija je manjša za 1,7 MB</strong> — hitrejši prenos in namestitev.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.1 (junij 2026)</h2>
+  <ul>
+    <li><strong>Zanesljivejši nakup naročnine</strong> — odpravljen obtičal nalagalni zaslon ob nakupu in obnovi naročnine (30-sekundni timeout + dodatni varnostni watchdog + jasna napaka).</li>
+    <li><strong>Varnostne kopije s prejetimi računi</strong> — backup zdaj vključuje tudi datoteke prejetih računov (popravek za iOS po nadgradnji).</li>
+    <li><strong>Lokalizirana stena naročnine</strong> — paywall (Mesečno / Letno / POPULARNO / opisi paketov) zdaj preveden v vse jezike vmesnika (13 jezikov).</li>
+    <li><strong>Release notes v jeziku uporabnika</strong> — gumb »Release notes« zdaj odpre opombe k izdaji v jeziku aplikacije.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.0 (maj 2026)</h2>
+  <p class="updated"><em>Velika verzija s freemium modelom in stabilnostnimi izboljšavami.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Naročnine — 2 nova paketa (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (€3,99/mes ali €29/leto) — neomejeno računov, brez "Created with Billero" oznake, multi-language PDF, ARES/VIES auto-fill, popusti, ponavljajoči računi, auto-backup, 50 OCR scanov/mes</li>
+    <li><strong>Pro</strong> (€7,99/mes ali €59/leto) — vse iz Plus + Predračun, avto-spomniki za neplačnike, Dashboard, neomejeni OCR scani</li>
+    <li><strong>Trenutni naročniki</strong> dobijo <strong>Pro lifetime brezplačno</strong> kot kompenzacijo</li>
+    <li><strong>Vsi obstoječi userji</strong> dobijo <strong>3-mesečni Plus trial</strong> ob nadgradnji</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 Varnost in stabilnost</h3>
+  <ul>
+    <li><strong>Šifriran backup</strong> — varnostne kopije so zdaj lahko AES-256 zaščitene z geslom (priporočeno ob deljenju). Brez gesla ostane backup nešifriran (kompatibilno s starimi).</li>
+    <li><strong>Opt-in API ključi v backupu</strong> — API ključi tretjih oseb (npr. Anthropic) privzeto NISO vključeni v backup (zaščita pred slučajnim leak-om). Eksplicitno checkbox-aš pri izvozu.</li>
+    <li><strong>Crash reporting</strong> — Firebase Crashlytics integriran (samo v release buildu). Napake na napravah so zdaj vidne razvijalcu.</li>
+    <li><strong>Hitrejša baza</strong> — dodanih 14 indeksov za pogoste poizvedbe (seznami računov, dashboard, audit log). Pri 1000+ računih opazno hitrejši odziv.</li>
+    <li><strong>Foreign key zaščita</strong> — DB zdaj enforce-a referenčno integriteto (ni več orphan postavk po brisanju računa).</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Pod motorjem (za razvijalce)</h3>
+  <ul>
+    <li><strong>GitHub Actions CI</strong> — vsak commit gre skozi flutter analyze + test + Android debug build</li>
+    <li><strong>473→487 testov</strong> — dodani migration framework, backup round-trip, entitlement service testi</li>
+    <li><strong>Cloudflare Worker</strong> — server-side IAP receipt validation za zaščito pred bypass-om</li>
+    <li><strong>Migration v37 → v39</strong> — z avtomatskim cleanup-om orphan zapisov pred FK enable-om</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.5.1 (april 2026)</h2>
+  <ul>
+    <li><strong>Razdelek Računovodja</strong> — e-mail računovodje je zdaj v svojem razdelku v Moji podatki (ni več skupaj z AI ključi). Naslov preveden v vseh 12 jezikov.</li>
+    <li><strong>Pošlji računovodji</strong> — gumb ✉↑ zdaj v eni pošti pošlje tako neposlane izdane račune kot neposlane prejete račune.</li>
+    <li><strong>Navodila za uporabo</strong> — dodan zavihek »Računovodja« z navodili v vseh 12 jezikih.</li>
+    <li><strong>OCR popravek</strong> — pri skeniranju izdanega računa (PDF) se zdaj pravilno zaznava kupec (ne dobavitelj).</li>
+    <li><strong>Varnostna kopija</strong> — backup zdaj vključuje tudi nastavitev jezika aplikacije.</li>
+    <li><strong>Obrezovanje slik</strong> — pri uvozu prejetih računov (kamera ali galerija) je zdaj na voljo obrezovanje slike pred shranjevanjem.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.5.0 (april 2026)</h2>
+  <ul>
+    <li><strong>Izbira jezika aplikacije</strong> — v Moji podatki lahko ročno izbereš jezik vmesnika (neodvisno od sistemskega).</li>
+    <li><strong>Privzeti jezik PDF računa</strong> — račun se privzeto generira v primarnem jeziku države podjetja.</li>
+    <li><strong>Boljše napake Anthropic API</strong> — ob preobremenjenosti strežnika (HTTP 529) se prikaže razumljivo sporočilo in samodejni ponovni poskus.</li>
+    <li><strong>Filter »Stornirani«</strong> — v seznamu računov dodan filter za stornirane račune.</li>
+    <li><strong>Pošlji neposlane računovodji</strong> — hitra akcija za serijski pošiljanje vseh neposlanih računov računovodji.</li>
+    <li><strong>Analitika strank</strong> — popravek: stornirani računi se pravilno izključijo iz seštevkov.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.0.x</h2>
+  <ul>
+    <li>Izboljšave pri generiranju PDF računov (UPN / rekapitulacija DDV).</li>
+    <li>Popravki shranjevanja PDF poti po nadgradnji aplikacije.</li>
+    <li>UX izboljšave obrazca za račun z več postavkami.</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. Vse pravice pridržane.</p>
+</body>
+</html>

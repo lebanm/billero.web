@@ -1,0 +1,17 @@
+{
+  "name": "billero-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "preview": "node scripts/preview.mjs",
+    "check:site": "python scripts/check-site.py",
+    "check:worker": "wrangler deploy --dry-run --config edge/wrangler.jsonc --outdir .worker-check"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261123.1",
+    "lighthouse": "^13.6.0",
+    "playwright": "^1.65.1",
+    "wrangler": "^4.166.0"
+  }
+}

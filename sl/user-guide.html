@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navodila za uporabo – Billero</title>
+    <meta name="description" content="Navodila za uporabo Billero – kako ustvariti račun, UPN QR kodo, skeniranje računov in varnostno kopijo.">
+    <link rel="stylesheet" href="/css/style.css">
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+    <link rel="canonical" href="https://billero.app/sl/user-guide">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide">
+    <link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide">
+    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide">
+    <link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide">
+    <link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide">
+    <link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide">
+    <link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide">
+    <link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide">
+    <link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide">
+    <link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="/sl/"><img src="/img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="/sl/"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="/sl/">Domov</a>
+        <a href="/sl/user-guide" class="active">Navodila</a>
+        <a href="/sl/release-notes">Release notes</a>
+        <a href="/sl/contact">Kontakt</a>
+        <a href="/sl/privacy-policy">Zasebnost</a>
+      </nav>
+      <nav class="locale-nav" aria-label="Izberi jezik">
+<a href="/sl/user-guide" lang="sl" hreflang="sl" data-lang="sl" aria-current="page">SL</a>
+<a href="/en/user-guide" lang="en" hreflang="en" data-lang="en">EN</a>
+<a href="/de/user-guide" lang="de" hreflang="de" data-lang="de">DE</a>
+<a href="/es/user-guide" lang="es" hreflang="es" data-lang="es">ES</a>
+<a href="/nl/user-guide" lang="nl" hreflang="nl" data-lang="nl">NL</a>
+<a href="/th/user-guide" lang="th" hreflang="th" data-lang="th">TH</a>
+<a href="/cs/user-guide" lang="cs" hreflang="cs" data-lang="cs">CS</a>
+<a href="/hr/user-guide" lang="hr" hreflang="hr" data-lang="hr">HR</a>
+<a href="/ja/user-guide" lang="ja" hreflang="ja" data-lang="ja">JA</a>
+<a href="/pl/user-guide" lang="pl" hreflang="pl" data-lang="pl">PL</a>
+<a href="/pt/user-guide" lang="pt" hreflang="pt" data-lang="pt">PT</a>
+<a href="/sk/user-guide" lang="sk" hreflang="sk" data-lang="sk">SK</a>
+</nav>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Navodila za uporabo</h1>
+        <p class="lead">Kratek vodič za uporabo aplikacije Billero.</p>
+
+        <h2>Hitri začetek</h2>
+        <ul>
+          <li>Izpolni <strong>Moji podatki</strong> (IBAN, naslov, davčna številka …).</li>
+          <li>Dodaj <strong>stranke</strong> (podjetja ali fizične osebe).</li>
+          <li>Ustvari <strong>nov račun</strong> (enostaven ali z več postavkami).</li>
+          <li>PDF lahko deliš ali shraniš. Če račun urediš, se PDF regenerira.</li>
+        </ul>
+
+        <h2>Račun z več postavkami</h2>
+        <ul>
+          <li>Vsaka postavka ima opis, količino, enoto, ceno in DDV stopnjo.</li>
+          <li>Na manjših zaslonih se polja samodejno prelomijo v dve vrstici za boljšo berljivost.</li>
+        </ul>
+
+        <h2>Pošiljanje računov stranki</h2>
+        <p>Iz kartice posamezne stranke lahko hitro izbereš in pošlješ več računov naenkrat.</p>
+        <ul>
+          <li>Odpri zavihek <strong>Stranke</strong> in tapni stranko.</li>
+          <li><strong>Dolg pritisk</strong> na račun → vstopi v način izbire.</li>
+          <li>Tapni dodatne račune za oznako / odznako.</li>
+          <li>V vrstici z naslovom tapni <strong>↗</strong> za pošiljanje izbranih PDF-jev.</li>
+          <li>Za izhod iz načina izbire tapni <strong>✕</strong> v vrstici z naslovom.</li>
+        </ul>
+        <p>Enako deluje za podjetja kot za fizične osebe (vključno z Neznanim kupcem).</p>
+
+        <h2>Prejeti računi z AI OCR</h2>
+        <p>Billero zna iz PDF računa samodejno prebrati dobavitelja, številko, datum in znesek z umetno inteligenco (Anthropic Claude). Funkcija je <strong>izbirna</strong> in zahteva lasten API ključ.</p>
+
+        <h3>Pridobitev API ključa</h3>
+        <ol>
+          <li>Odpri <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a> in ustvari brezplačen račun.</li>
+          <li>V meniju izberi <strong>API Keys</strong> → <strong>Create Key</strong>.</li>
+          <li>Poimenuj ključ (npr. <em>Billero</em>) in ga kopiraj. Ključ začne z <code>sk-ant-</code>.</li>
+          <li>Na Anthropic konzoli je treba dodati plačilno metodo. Branje enega računa stane manj kot <strong>0,001 €</strong> (Claude Haiku model).</li>
+        </ol>
+
+        <h3>Nastavitev v aplikaciji</h3>
+        <ol>
+          <li>Odpri <strong>Moji podatki</strong> (zavihek ⚙) → razdelek <em>Anthropic API ključ (OCR)</em>.</li>
+          <li>Prilepi ključ v polje in tapni <strong>Shrani</strong>.</li>
+          <li>Ključ je shranjen v varnem delu naprave (Android Keystore) — ni nikoli v datotekah aplikacije.</li>
+        </ol>
+
+        <h3>Uporaba</h3>
+        <ol>
+          <li>V zavihku <strong>Računi</strong> tapni ikono ↑ (uvoz PDF) in izberi PDF prejetega računa.</li>
+          <li>Odpre se forma. Tapni gumb <strong>✨ Analiziraj z AI</strong>.</li>
+          <li>Počakaj sekundo — polja dobavitelja, številke, datuma in zneska se samodejno izpolnijo.</li>
+          <li>Preverite in po potrebi popravite, nato tapnite <strong>Shrani</strong>.</li>
+        </ol>
+
+        <p><strong>Brez API ključa</strong> forma deluje kot prej — vsa polja izpolnite ročno. Gumb AI se ne prikaže.</p>
+
+        <h2>Varnostna kopija</h2>
+        <p>Vse podatke (račune, stranke, nastavitve in PDF-je) lahko izvozite in obnovite prek zavihka <strong>Moji podatki</strong> → razdelek <em>Varnostna kopija</em>.</p>
+        <h3>Izvoz</h3>
+        <ul>
+          <li>Tapni <strong>Izvozi varnostno kopijo</strong>.</li>
+          <li>App ustvari ZIP datoteko (<code>billero_backup_YYYY-MM-DD.zip</code>) in odpre Share meni.</li>
+          <li>Datoteko shrani v iCloud, Google Drive, e-pošto ali kjer koli drugje.</li>
+        </ul>
+        <h3>Obnova (npr. po menjavi telefona)</h3>
+        <ul>
+          <li>Namesti Billero na nov telefon.</li>
+          <li>Odpri <strong>Moji podatki</strong> → <strong>Obnovi iz varnostne kopije</strong>.</li>
+          <li>Potrdi opozorilo (obstoječi podatki bodo nadomeščeni).</li>
+          <li>Izberi ZIP datoteko iz shrambene lokacije.</li>
+          <li>Vsi računi, stranke, nastavitve, PDF-ji, logotip in digitalni podpis se obnovijo.</li>
+        </ul>
+        <p><strong>Opozorilo:</strong> obnova nadomesti vse obstoječe podatke. Priporočamo, da pred obnovo narediš izvoz obstoječih podatkov.</p>
+
+        <h2>Ponavljajoči računi</h2>
+        <p>Billero samodejno generira redne račune (tedensko, mesečno ali kvartalno) ob zagonu aplikacije.</p>
+        <ol>
+          <li>V zavihku <strong>Računi</strong> tapnite ikono ↻ (zgornji desni kot) → <strong>Ponavljajoči računi</strong>.</li>
+          <li>Tapnite <strong>+</strong> in izpolnite: naziv predloge, stranka, opis storitve, znesek brez DDV, DDV stopnja.</li>
+          <li>Izberite frekvenco: <strong>tedensko, mesečno</strong> ali <strong>kvartalno</strong>.</li>
+          <li>Za mesečno/kvartalno izberite dan v mesecu (1–28).</li>
+          <li>Ob naslednjem zagonu aplikacije na ali po datumu generiranja se račun samodejno ustvari skupaj s PDF.</li>
+        </ol>
+        <p>Predloge lahko kadar koli onemogočite s stikalom ali jih uredite. Generirani računi se pojavijo v glavnem seznamu.</p>
+
+        <h2>Kripto plačila</h2>
+        <p>Billero podpira dve vrsti kripto plačil: <strong>statični QR naslov</strong> na PDF računu in <strong>Coingate payment link</strong> za sprejemanje 70+ kriptovalut.</p>
+
+        <h3>QR kode na PDF računu — podprte kriptovalute</h3>
+        <p>V <strong>Moji podatki → Kripto plačilo</strong> nastavite naslov(e) denarnice. QR se samodejno doda na stran 2 vsakega PDF računa.</p>
+        <ul>
+          <li><strong>EURC</strong> — Circle Euro stablecoin na Ethereum, Base ali Solana. Tečaj: 1 EURC = 1 EUR.</li>
+          <li><strong>USDC</strong> — Circle USD stablecoin na Ethereum, Base, Polygon ali Solana. Tečaj: pridobljen iz ECB prek Frankfurter API ob generiranju PDF.</li>
+          <li><strong>BTC</strong> — Bitcoin, BIP-21 QR format. Tečaj: pridobljen iz CoinGecko ob generiranju PDF.</li>
+          <li><strong>ETH</strong> — Ethereum (native), EIP-681 QR format. Tečaj: CoinGecko.</li>
+          <li><strong>SOL</strong> — Solana (native), Solana Pay format. Tečaj: CoinGecko.</li>
+          <li><strong>Lastni token</strong> — vnesite ime tokena in denarniški naslov; QR kodira naslov (znesek po dogovoru).</li>
+        </ul>
+        <p>Tečaj in čas pridobitve sta izpisana pod vsako QR kodo. <strong>Brez internetne povezave QR koda ni prikazana</strong> (tečaj mora biti svež).</p>
+        <p>V <strong>Moji podatki → Prikaz na računu</strong> lahko vklopite ali izklopite UPN QR in kripto QR neodvisno. UPN ostane na strani 1, kripto QR je na strani 2.</p>
+
+        <h3>Coingate payment link (BTC, ETH, SOL in 70+ coinov)</h3>
+        <ol>
+          <li>Ustvarite račun na <a href="https://coingate.com" target="_blank" rel="noopener">coingate.com</a> in pridobite API ključ.</li>
+          <li>V <strong>Moji podatki → Coingate</strong> vnesite API ključ. Za testiranje vklopite <em>Sandbox način</em>.</li>
+          <li>V zavihku <strong>Računi</strong> tapnite <strong>₿ ikono</strong> pri željeni računu.</li>
+          <li>Aplikacija ustvari plačilni link — prikažeta se QR koda in gumb <em>Odpri v brskalniku</em>.</li>
+          <li>Delite link s stranko. Stranka plača s katerimkoli coinom po svoji izbiri.</li>
+          <li>Vi prejmete EUR na bančni račun prek SEPA (Coingate opravi konverzijo).</li>
+          <li>Status plačila preverite z gumbom <strong>Preveri status</strong> v aplikaciji.</li>
+        </ol>
+        <p><strong>Coingate je EU reguliran</strong> ponudnik (EMI licenca, Litva) in podpira SEPA izplačila.</p>
+
+        <h2>Plačilna povezava (Payment link)</h2>
+        <p>Sprejmite plačila prek kateregakoli ponudnika — <strong>Stripe, PayPal, Revolut, Wise</strong> ali drugega. Billero ne procesira plačil; samo prikaže vašo obstoječo plačilno povezavo kot QR kodo na PDF računu.</p>
+
+        <h3>Nastavitev</h3>
+        <ol>
+          <li>V <strong>Moji podatki → Plačilna povezava</strong> vnesite URL vaše plačilne povezave (npr. <code>https://buy.stripe.com/...</code> ali <code>https://paypal.me/vasusername</code>).</li>
+          <li>Opcijsko vnesite oznako, ki se prikaže nad QR kodo (npr. <em>Plačaj z Revolut</em>).</li>
+          <li>Prepričajte se, da je stikalo <strong>Prikaži plačilno povezavo na PDF</strong> vklopljeno.</li>
+        </ol>
+
+        <h3>Kako deluje</h3>
+        <ul>
+          <li>Na vsakem PDF računu se prikaže QR koda in URL vaše plačilne povezave.</li>
+          <li>Stranka skenira QR ali klikne URL in plača prek ponudnika po vaši izbiri.</li>
+          <li>Znesek, valuta in ostale podrobnosti uredite pri ponudniku (Billero tega ne nastavi).</li>
+          <li>Vklop/izklop prikaza: <strong>Moji podatki → Prikaz na računu → Prikaži plačilno povezavo na PDF</strong>.</li>
+        </ul>
+
+        <h3>Podprti ponudniki (primeri)</h3>
+        <ul>
+          <li><strong>Stripe</strong> — <code>https://buy.stripe.com/...</code> (Payment Link iz Stripe Dashboard)</li>
+          <li><strong>PayPal</strong> — <code>https://paypal.me/vasusername</code></li>
+          <li><strong>Revolut</strong> — <code>https://revolut.me/vasusername</code></li>
+          <li><strong>Wise</strong> — <code>https://wise.com/pay/...</code></li>
+          <li>Katerikoli drug URL za sprejemanje plačil</li>
+        </ul>
+
+        <h2>Tajska — dvojezični PDF (tajski + angleščina)</h2>
+        <p>Ko je vaš profil nastavljen na <strong>Tajsko (TH)</strong>, Billero samodejno generira <strong>dvojezični PDF račun</strong>: vsak napis je izpisan v tajskem pismu (zgoraj) in angleščini (spodaj) vzporedno na isti strani.</p>
+        <ul>
+          <li>Tajski font (Noto Sans Thai) je vgrajen v aplikacijo — ni potrebna namestitev.</li>
+          <li>Deluje za lokalne tajske stranke in za mednarodne stranke, ki ne berejo tajsko.</li>
+          <li>DDV stopnja: 7% (Revenue Code, Section 77). Prag registracije: THB 1.800.000/leto.</li>
+        </ul>
+
+        <h2>Singapur — GST račun</h2>
+        <p>Ko je vaš profil nastavljen na <strong>Singapur (SG)</strong>, Billero samodejno upošteva pravila GST:</p>
+        <ul>
+          <li>GST stopnja: 9% (GST Act, Chapter 117A).</li>
+          <li>Prag registracije: SGD 1.000.000/leto — pod pragom se izpiše oprostilna izjava.</li>
+          <li>Valuta: SGD ($). Plačilni rok: 30 dni.</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="/sl/privacy-policy">Pravilnik o zasebnosti</a>
+        &nbsp; | &nbsp;
+        <a href="/sl/terms-of-use">Pogoji uporabe</a>
+        &nbsp; | &nbsp;
+        <a href="/sl/user-guide">Navodila</a>
+        &nbsp; | &nbsp;
+        <a href="/sl/release-notes">Release notes</a>
+        &nbsp; | &nbsp;
+        <a href="/sl/contact">Kontakt</a>
+        &nbsp; | &nbsp;
+        <a href="/sl/donate">Podpri nas</a>
+      </div>
+    </footer>
+  </body>
+</html>

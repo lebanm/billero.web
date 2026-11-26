@@ -25,12 +25,156 @@
     ul { margin: 0.5rem 0; padding-left: 1.5rem; }
     hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
   </style>
-</head>
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+    <link rel="canonical" href="https://billero.app/cs/release-notes">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes">
+    <link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes">
+    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes">
+    <link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes">
+    <link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes">
+    <link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes">
+    <link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes">
+    <link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes">
+    <link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes">
+    <link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes">
+  </head>
 <body>
+<nav class="locale-nav" aria-label="Vybrat jazyk">
+<a href="/sl/release-notes" lang="sl" hreflang="sl" data-lang="sl">SL</a>
+<a href="/en/release-notes" lang="en" hreflang="en" data-lang="en">EN</a>
+<a href="/de/release-notes" lang="de" hreflang="de" data-lang="de">DE</a>
+<a href="/es/release-notes" lang="es" hreflang="es" data-lang="es">ES</a>
+<a href="/nl/release-notes" lang="nl" hreflang="nl" data-lang="nl">NL</a>
+<a href="/th/release-notes" lang="th" hreflang="th" data-lang="th">TH</a>
+<a href="/cs/release-notes" lang="cs" hreflang="cs" data-lang="cs" aria-current="page">CS</a>
+<a href="/hr/release-notes" lang="hr" hreflang="hr" data-lang="hr">HR</a>
+<a href="/ja/release-notes" lang="ja" hreflang="ja" data-lang="ja">JA</a>
+<a href="/pl/release-notes" lang="pl" hreflang="pl" data-lang="pl">PL</a>
+<a href="/pt/release-notes" lang="pt" hreflang="pt" data-lang="pt">PT</a>
+<a href="/sk/release-notes" lang="sk" hreflang="sk" data-lang="sk">SK</a>
+</nav>
   <h1>Billero – Poznámky k vydání</h1>
   <p class="updated">Naposledy aktualizováno: červen 2026</p>
 
   <p>Souhrn novinek a oprav podle verzí.</p>
+
+  <hr>
+
+  <h2>Verze 1.8.0 (listopad 2026)</h2>
+  <p class="updated"><em>Více firem v jedné aplikaci, šifrovaná automatická záloha a oprava dokumentů starších faktur po aktualizaci.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Novinky</h3>
+  <ul>
+    <li><strong>Více firem v jedné aplikaci (balíček Pro)</strong> — v části Firma → Firmy přidáte novou firmu (název a země; měna a DPH se řídí zemí); mezi firmami přepínáte čipem na Přehledu nebo v seznamu Firmy. Každá firma má vlastní faktury, zákazníky, nabídky, číslování, dokumenty a profil; na Přehledu a ve formuláři nové faktury čip ukazuje, za kterou firmu vystavujete. Přehled všech firem ukazuje otevřené a splatné částky podle měn (bez převodu), kartu pro každou firmu a společný seznam otevřených faktur podle splatnosti. Balíček, zámek aplikace a bezplatný limit platí pro zařízení: prvních 10 faktur se počítá společně za všechny firmy. Bez balíčku Pro může nové faktury vystavovat jen jedna firma, ostatní zůstanou dostupné k zobrazení, sdílení, exportu a stornu. Při více firmách automatická záloha zahrne všechny; při obnově aplikace ukáže, která firma kam patří. Záloha jiné firmy nahradí data zvolené firmy až poté, co v okně s názvy obou firem potvrdíte „Nahradit vše“; zvolená firma zůstane stejnou firmou, takže i pozdější zálohy patří jí. Zálohu, která patří jiné firmě na tomto zařízení, nelze obnovit do zvolené firmy: aplikace nabídne „Obnovit do …“ firmy, které záloha patří. Pokud byla obnova firmy přerušena a nepodařilo se ji dokončit, je firma v seznamu Firmy označena „Přerušená obnova není vyřešena“: dokud to nevyřešíte, její data nelze měnit, ostatní firmy fungují dál. Můžete zvolit „Zkusit znovu“ nebo „Obnovit ze zálohy“; pokud nelze použít žádnou firmu, zobrazí se tato obrazovka už při spuštění, před Přehledem. Data se neztratí: pokud se přeruší i tato obnova, aplikace ji při dalším spuštění vrátí do stavu před ní (databáze a dokumenty), takže zálohu a heslo zvolíte znovu; již potvrzenou obnovu dokončí. Stávajícím uživatelům se nic nepřesouvá: dosavadní data zůstanou první firmou.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Vylepšení</h3>
+  <ul>
+    <li><strong>Automatická záloha je šifrovaná</strong> — automatická záloha je nyní šifrována heslem, které nastavíte při zapnutí v části Firma → Záloha; bez hesla nevznikne. Pokud jste automatickou zálohu používali už dříve, aplikace vás jednou denně požádá o nastavení hesla a pod přepínačem ukáže, že záloha čeká na heslo. Heslo je uloženo jen v tomto telefonu, ne v záloze; po ověření zámkem telefonu ho můžete zobrazit nebo změnit (starší zálohy stále potřebují staré heslo). Při ručním exportu a obnově můžete zvolit „Použít heslo automatických záloh“. Export z obrazovky s balíčky před nákupem zůstává bez hesla.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Opravy</h3>
+  <ul>
+    <li><strong>Dokumenty starších faktur, které se po aktualizaci neotevřely</strong> — na iPhonu a iPadu může systém při aktualizaci změnit interní cestu k souborům, proto aplikace dokument hledá podle názvu souboru. Pokud dvě starší faktury nesly dokument se stejným názvem (například čísla 2026/001 a 2026-001), neotevřel se ani jeden — každý vypadal jako dokument té druhé — a aplikace hlásila „Soubor PDF již neexistuje“, přestože byl dokument v zařízení. Dokumenty, které starší verze ukládaly do jiné složky, aplikace vůbec nehledala. Odeslání účetnímu, odeslání faktur zákazníkovi v části Zákazníci a archivace dokument nehledaly: odeslání hlásilo „Chyba: soubory PDF neexistují“ nebo dokument nepřiložilo a archivace hlásila „Faktury byly archivovány“, dokument však nepřesunula. Nyní aplikace hledá i ve složce starších verzí a odeslání i archivace hledají dokument stejným způsobem. Pokud nalezený dokument může patřit více fakturám, dostane ho faktura, jejíž číslo je na dokumentu, bez ohledu na to, kterou fakturu otevřete jako první; pokud faktury měly stejné číslo (například předtím, než jedna z nich dostala příponu -1), dostane ho ta, jejíž zákazník je na dokumentu. Pokud to z dokumentu nelze zjistit (například při stejném čísle a stejném zákazníkovi nebo u importované faktury), aplikace ho nepřiřadí žádné z nich. Faktura, která dosud po aktualizaci otevírala dokument jiné faktury, ho na iPhonu a iPadu už neotevře, jakmile systém interní cestu znovu změní. V seznamu faktur faktura bez dokumentu stále zobrazí „Soubor PDF již neexistuje“.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Verze 1.7.1 (říjen 2026)</h2>
+  <p class="updated"><em>Opravy po verzi 1.7.0: srozumitelnější hlášení, když AI načítání není dostupné, nabídky v jazyce dokumentu, thajské a rakouské popisky na dokumentech, spolehlivější obnovení zálohy a čísla faktur, která jsou jedinečná i v databázi (duplicitní čísla aplikace přečísluje sama).</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Vylepšení</h3>
+  <ul>
+    <li><strong>Jasné hlášení, když AI načítání není dostupné</strong> — místo obecného hlášení, že fakturu se nepodařilo přečíst, aplikace nyní řekne, co se děje: AI načítání teď není dostupné (klíč vložený do aplikace byl odmítnut nebo vypršel, nebo poskytovatel už model této verze nenabízí; aktualizace aplikace ho může znovu zpřístupnit), váš vlastní API klíč byl odmítnut (zkontrolujte ho v části Firma → AI klíče), je příliš mnoho požadavků nebo byl dosažen limit využití (zkuste to později), nebo je soubor pro AI načítání příliš velký. Formulář zůstane otevřený a údaje můžete vždy zadat ručně.</li>
+    <li><strong>Nabídka v jazyce dokumentu, thajské a rakouské popisky</strong> — nabídka a faktura, kterou z nabídky vytvoříte, jsou nyní v jazyce dokumentu podle stejného pravidla jako faktury, které aplikace vystavuje sama (opakované faktury): pokud je jazyk aplikace jedním z jazyků dokumentu země vystavitele (jazyk země nebo angličtina), je dokument v jazyce aplikace, jinak v jazyce dokumentu země; kde aplikace pro zemi nemá místní jazyk dokumentu, je to angličtina. Slovinský vystavitel s aplikací v němčině tak dostane slovinskou nabídku, s aplikací v angličtině anglickou a vystavitel z USA s aplikací ve slovinštině anglickou. U thajského vystavitele mají nabídka, faktura vytvořená z nabídky a opakovaná faktura thajské popisky; s aplikací v angličtině jsou popisky anglické a některé z nich (například název, příjemce a datum vystavení) mají nad sebou thajský řádek. Na dokumentech rakouského vystavitele v němčině (faktury, opakované faktury, nabídky) jsou identifikační číslo k DPH a registrační číslo označena „UID-Nr.“ a „FN“: tyto dva popisky určuje země vystavitele, ne jazyk aplikace; vystaviteli z Německa zůstávají „USt-IdNr.“ a „HR-Nr.“. Na faktuře z formuláře faktury je řádek s datem nebo obdobím plnění („Datum plnění“) nyní také v jazyce dokumentu; dříve byl v jazyce aplikace. Název („Nabídka č.“) a popisek platnosti („Platnost do:“) jsou přeložené do všech 13 jazyků; dříve byly vždy ve slovinštině. Jazyk jednotlivé nabídky nelze zvolit; ve formuláři faktury je jazyk zpočátku jazykem země a pro jednotlivou fakturu jej můžete změnit. Když nastavíte nebo změníte zemi firmy, formulář faktury hned použije jazyk dokumentu této země; dříve až po opětovném spuštění aplikace. Nabídka, kterou jste již odeslali, se při dalším sdílení vytvoří znovu v jazyce dokumentu; předmět a text e-mailu zůstávají v jazyce aplikace. PDF faktur, které jste již vystavili, se nemění; když upravíte neuhrazenou fakturu, aplikace vytvoří nové PDF podle těchto pravidel.</li>
+    <li><strong>Obnovení nenahradí vaše klíče bez vaší volby</strong> — klíče pro AI načítání a CoinGate, které zařízení už má, obnovení samo nepřepíše. Pokud záloha obsahuje jiný klíč, aplikace se před obnovením zeptá („Klíče v záloze“), zda má ponechat klíče zařízení, nebo použít klíče ze zálohy. Zařízení bez klíče ho dostane ze zálohy; záloha bez klíčů klíče zařízení nesmaže. Tarif a zámek aplikace zůstávají v zařízení jako dosud (výjimkou je trvalý tarif Pro dřívějších předplatitelů).</li>
+    <li><strong>Obnovení, které přeruší systém</strong> — pokud systém během obnovení aplikaci zastaví, při dalším spuštění aplikace vrátí data do stavu před obnovením (nebo dokončí obnovení, které databáze už potvrdila), takže databáze a dokumenty vždy patří ke stejnému stavu. Pokud bylo obnovení vráceno zpět, část Firma vás upozorní, abyste ho zopakovali. Zálohu s nesprávnou strukturou dat aplikace odmítne dřív, než se cokoli změní.</li>
+    <li><strong>Stav zálohy v části Firma</strong> — pod přepínačem automatické zálohy aplikace rozlišuje zálohu, která byla jen připravena, od zálohy, kterou jste předali (sdíleli nebo uložili). Ukáže, zda je poslední záloha chráněna vaším heslem, nebo není šifrovaná, zda byla neúplná (chyběl soubor dokumentu), zda poslední pokus selhal a zda připravená záloha nebyla předána.</li>
+    <li><strong>Jasně o šifrování a automatické záloze</strong> — automatická záloha a export nabízený před nákupem na obrazovce tarifů nejsou šifrované; zálohu s heslem exportujte v části Firma → Záloha. Automatická záloha se připraví při otevření aplikace (nejvýše jednou týdně) a nabídne se ke sdílení; na pozadí neběží. Je dostupná od tarifu Plus: v tarifu Free se nepřipravuje, ani když je přepínač zapnutý.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Opravy</h3>
+  <ul>
+    <li><strong>Čísla faktur jsou jedinečná i v databázi, duplicitní se přečíslují</strong> — vedle kontroly v aplikaci číslo faktury nyní chrání i databáze: druhou fakturu se stejným číslem nepřijme. Pokud mělo ve vašich záznamech stejné číslo více faktur (ze starších verzí nebo z obnovené zálohy), aplikace je přečísluje: jedna si číslo ponechá a ostatní dostanou příponu -1, -2 a tak dále. Mění se jen číslo a každá změna se zapíše do auditního protokolu. Stane se to při prvním spuštění po aktualizaci a po obnovení zálohy, která takové faktury obsahuje; pokud přečíslování selže, nic se nezmění a aplikace to zkusí znovu při dalším spuštění. V dialogu vám aplikace ukáže, kterým fakturám změnila číslo (tlačítko „Rozumím“). Již vystavené PDF doklady těchto faktur stále nesou původní číslo: kde na tom záleží, pošlete zákazníkovi opravený doklad nebo mu sdělte nové číslo. Seznam přečíslovaných faktur zůstává k dispozici v části Dokumenty → Vystavené faktury → „Další možnosti“ → „Zkontrolovat čísla faktur“ (oddíl „Přečíslované faktury“). Kdo nemá faktury se stejným číslem, žádnou změnu nepozná.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Verze 1.7.0 (říjen 2026)</h2>
+  <p class="updated"><em>Velká aktualizace: nová navigace, spolehlivější vystavování faktur a zálohování a přístup k fakturám i po vyčerpání bezplatných faktur.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Novinky</h3>
+  <ul>
+    <li><strong>Nová navigace</strong> — čtyři části: Přehled, Dokumenty, Zákazníci a Firma. Po spuštění uvidíte krátký přehled s tlačítkem „Nová faktura“ místo formuláře; vydané a přijaté faktury, cenové nabídky a opakované faktury najdete v části Dokumenty. Dřívější „Můj profil“ je nyní Firma.</li>
+    <li><strong>Vystavení faktury ve třech krocích</strong> — nová faktura vzniká ve třech krocích: nejprve zákazník, pak položky a nakonec kontrola s tlačítkem pro vystavení. Zvolený příjemce zůstává během zadávání viditelný a chybějící údaje se hlásí ve svém kroku, ne až na konci. Návrat zpět zadané údaje nesmaže. Úprava vystavené faktury zůstává na jedné obrazovce.</li>
+    <li><strong>Potvrzení po vystavení a oddělené sdílení</strong> — po vystavení se zobrazí obrazovka „Faktura vystavena“ s číslem, příjemcem a částkou. Sdílení PDF je nyní samostatná akce: když ji zrušíte, faktura zůstane vystavená a můžete ji sdílet znovu. Faktura se trvale uloží dříve, než se cokoli sdílí, a dvojí stisknutí nevytvoří dvě faktury.</li>
+    <li><strong>Přístup k fakturám i po bezplatném limitu</strong> — v tarifu Free je zdarma prvních 10 vystavených faktur celkem, ne 10 za rok; stornované a importované faktury se nepočítají. Když je vyčerpáte nebo skončí zkušební období, aplikace zůstane přístupná: stávající faktury můžete dál otevírat, sdílet, exportovat a stornovat, ale už je nemůžete upravovat. Pro úpravu a pro vystavení nové faktury, i z nabídky, zvolíte předplatné.</li>
+    <li><strong>Souhlas před čtením faktur pomocí AI</strong> — před prvním čtením faktury pomocí AI se vás aplikace zeptá na souhlas. Vybraný nebo vyfotografovaný dokument se celý odešle poskytovateli Anthropic (USA). Bez souhlasu se nic neodešle a údaje můžete dál zadat ručně. Souhlas můžete odvolat v části Firma → Načítání dokumentů pomocí AI.</li>
+    <li><strong>Opakované faktury se skutečným zákazníkem</strong> — opakovaná faktura nyní nese úplné údaje zákazníka (název, adresa, DIČ) a je vystavena v jazyce dokumentu vaší země. Obrazovka je přeložena do všech jazyků aplikace. Opakované faktury se vystavují v tarifu Plus nebo vyšším; bez něj splatná faktura čeká ve frontě. Upozornění na splatnou opakovanou fakturu se zobrazí při otevření seznamu faktur a při návratu do aplikace.</li>
+    <li><strong>Připomenutí faktur po splatnosti</strong> — faktura je po splatnosti den po lhůtě splatnosti uvedené na ní. Zaplacené, stornované a importované faktury se nepočítají. Oznámení zapnete v části Firma → Nastavení nebo na obrazovce Opakované faktury; aplikace se už při spuštění na oprávnění neptá.</li>
+    <li><strong>Obrazovka Firma ve vašem jazyce</strong> — obrazovka je plně přeložena. Jazyk aplikace nyní můžete zvolit i španělsky, portugalsky a japonsky.</li>
+    <li><strong>Návod k použití v nizozemštině</strong> — nizozemští uživatelé dosud dostávali chorvatský návod.</li>
+    <li><strong>Země firmy při prvním spuštění</strong> — při prvním spuštění zemi firmy zvolíte sami: aplikace, je-li to možné, navrhne zemi podle nastavení telefonu, kterou potvrdíte jedním klepnutím, nebo vyberete jinou ze seznamu. Na zemi závisejí sazby daně, platební kód a lhůta splatnosti na fakturách. Dříve se při podporovaném jazyce telefonu země tiše nastavila na Slovinsko. Pokud vaše země v seznamu není, zvolíte ji v části Firma.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Vylepšení</h3>
+  <ul>
+    <li><strong>Srozumitelnější formulář nové faktury</strong> — pod přepínačem „Částka zahrnuje DPH“ je poznámka, zda je daň již započtena. U více položek formulář uvádí, že cena za jednotku je bez daně. Pokud něco chybí, formulář sám přeskočí na první pole s chybou. Tlačítko „Vystavit fakturu“ je lépe čitelné ve světlém i tmavém motivu.</li>
+    <li><strong>Bezpečnější zámek aplikace</strong> — zámek se zapne až po úspěšném potvrzení biometrikou nebo PIN kódem zařízení. Pokud zařízení ověření nezvládne, například nemá zámek obrazovky, aplikace na to upozorní. Při zapnutí vysvětlí důsledky a nabídne export zálohy.</li>
+    <li><strong>Bezpečnější záloha</strong> — obnova nemění tarif ani zámek v zařízení; výjimkou je trvalý tarif Pro dřívějších předplatitelů, který se zálohou putuje. Poškozené, příliš velké nebo podezřelé zálohy aplikace odmítne a stávající data zůstanou beze změny. Klíč pro čtení pomocí AI zabudovaný v aplikaci není nikdy v záloze. Před sdílením vás aplikace upozorní, pokud záloha není úplná; zvolíte „Přesto sdílet“ nebo „Zrušit“, i při exportu z obrazovky tarifů. Automatická týdenní záloha (Plus) se počítá jako hotová až po uložení nebo sdílení; když oznámení zavřete, aplikace ji nabídne znovu za týden.</li>
+    <li><strong>Spolehlivější záloha</strong> — záloha nyní obsahuje i nabídky a spolehlivě také logo, podpis a všechny soubory přijatých faktur (dříve mohly chybět). Neúspěšná obnova nezmění stávající data a záloha z novější verze aplikace se obnoví bez ztráty faktur. Přijaté faktury po aktualizaci aplikace opět najdou své soubory.</li>
+    <li><strong>Rychlejší práce se zákazníky a seznamy</strong> — zákazníky najdete podle jména, města, DIČ nebo e-mailu a ze zákazníka jedním klepnutím začnete fakturu s již vyplněným příjemcem. Seznamy nyní rozlišují načítání, chybu, prázdnou evidenci a hledání bez výsledku. Export do CSV, import PDF a opakované faktury jsou v nabídce „Další možnosti“. Faktury v různých měnách se už nesčítají do jedné částky.</li>
+    <li><strong>Obrazovka tarifů a podmínky použití</strong> — u každé ceny je uvedeno fakturační období. Obrazovka vysvětluje automatické prodloužení a zrušení v obchodě a obsahuje odkazy na zásady ochrany osobních údajů a podmínky použití v jazyce aplikace. Podmínky použití v aplikaci jsou aktualizované: tarify Plus a Pro, prvních 10 faktur zdarma, čtení pomocí AI v ceně a přesný popis, jaká data opouštějí zařízení.</li>
+    <li><strong>Obrazovka Firma bez přetékání</strong> — na užších telefonech a při větším písmu text už nepřetéká ani se neořezává. Tlačítko „Ohodnotit aplikaci“ otevře správný obchod i na iOS a odkaz na zásady ochrany osobních údajů otevře stránku v jazyce aplikace.</li>
+    <li><strong>Storno ve všech jazycích</strong> — Dialog, popisky a zprávy při stornování faktury i předmět exportu do CSV jsou přeloženy do všech jazyků aplikace.</li>
+    <li><strong>Menší zálohy</strong> — fotografie přijatých faktur se ukládají zmenšené (delší strana nejvýše 2400 px), proto jsou zálohy menší.</li>
+    <li><strong>Spolehlivější spuštění</strong> — jazyk zvolený při prvním spuštění zůstane i po restartu. Pokud jste jej zvolili dříve a aplikace zůstala v jazyce země (například v angličtině v Nizozemsku, Španělsku nebo Portugalsku), po aktualizaci přepne na zvolený jazyk. Pokud aplikace při spuštění nemůže načíst data, místo nekonečného načítání zobrazí zprávu s tlačítkem „Zkusit znovu“. Spuštění se také už nezastaví, když je zabezpečené úložiště zařízení nedostupné.</li>
+    <li><strong>Čtení faktur pomocí AI</strong> — pokud čtení selže, aplikace doporučí zkusit to znovu nebo zadat údaje ručně. Požadavek má časový limit, takže aplikace nečeká donekonečna.</li>
+    <li><strong>Nabídky ve všech jazycích</strong> — seznam a formulář nabídek, jejich menu, zprávy, dialogová okna i předmět a text e-mailu jsou přeloženy do všech jazyků aplikace. Název a popisek platnosti na PDF nabídky jsou zatím stále ve slovinštině.</li>
+    <li><strong>Bez přetékání i na dalších obrazovkách</strong> — na užších telefonech a při větším písmu už text není ořezaný ani nepřetéká ve formuláři nové faktury, na obrazovce vystavené faktury, v seznamech faktur, přijatých faktur, zákazníků a nabídek, u opakovaných faktur, na obrazovce tarifů, v právních informacích a na obrazovkách uvítání, spuštění a zámku. Součty vybraných faktur jsou nově v řádku pod lištou nástrojů, pod koncem seznamů je místo pro plovoucí tlačítko a četnost opakované faktury volíte pomocí čipů.</li>
+    <li><strong>Aktualizovaný návod v aplikaci</strong> — návod k použití odpovídá ve všech 12 jazycích verzi 1.7.0: limit bezplatných faktur a přístup po něm, souhlas se čtením pomocí AI, záloha, připomenutí, opakované faktury, země firmy a zámek aplikace. Opraven je také záznam pro verzi 1.6.0: nové tarify jsou pouze Plus a Pro.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Opravy</h3>
+  <ul>
+    <li><strong>Země firmy určuje pravidla faktury</strong> — země zvolená v části Firma nyní u všech podporovaných zemí správně určuje platební kód, lhůtu splatnosti, název daně a sazby. Dříve některé země, například Nizozemsko, Polsko, Španělsko, Francie a Japonsko, dostaly slovinská pravidla. Jazyk rozhraní už zemi nemění a výslovně zvolené Slovinsko zůstane zvoleno. Uloženou zemi, která v seznamu není, už obrazovka tiše nenahradí Austrálií, ale vyžádá si výběr. Pokud starší verze při přepnutí jazyka změnila vaši zemi na Nizozemsko nebo Německo, obrazovka Firma vás po aktualizaci vyzve, abyste zemi zkontrolovali; potvrdíte ji tlačítkem „Stát je správný“. U slovinského IBAN nebo DIČ aplikace zemi nejdřív sama vrátí na Slovinsko, upozornění zůstane. U již vystavených faktur se lhůta v připomenutích může lišit od lhůty na dokumentu.</li>
+    <li><strong>Doložka o nevyměřené dani</strong> — doložka na faktuře se nyní řídí zemí vystavitele, nikoli jazykem dokumentu. Slovinský vystavitel, který není plátcem DPH, má doložku s odkazem na čl. 94 ZDDV-1 i na anglické faktuře; země bez vlastního znění (například USA a Kanada) mají obecnou větu. Již vystavené faktury se nemění.</li>
+    <li><strong>Bez duplicitních čísel faktur</strong> — aplikace nepřijme číslo, které v ní již existuje: ani při ručním zadání, ani při importu faktury (PDF nebo fotografie), ani při nastavení čísla příští faktury (Firma → „Nastavit číslování faktur“). Převod cenové nabídky a opakované faktury procházejí stejnou kontrolou: pokud fakturu nelze vystavit, nabídka se nezmění a opakovaná faktura zůstane na řadě. Přitom už při obsazeném čísle nepřepíší PDF již vystavené faktury. Po obnově zálohy se číslo příští faktury podle potřeby zvýší, nikdy nesníží. Existující duplicitní čísla najdete v části Dokumenty → Vystavené faktury → „Další možnosti“ → „Zkontrolovat čísla faktur“.</li>
+    <li><strong>Dokument faktury se už nepřepíše</strong> — dvě faktury s podobným číslem (např. 2026/001 a 2026-001) mají každá své PDF; druhá dostane k názvu příponu, např. racun_2026_001-2.pdf. Úprava vystavené faktury zachová předchozí dokument a uloží novou verzi (-v2). Archivace, obnova zálohy a zamítnuté vystavení už nepřepíší jiný dokument a přerušení během ukládání nezanechá neúplné PDF. Dokumenty, které chyba přepsala již dříve, tato změna nevrátí.</li>
+    <li><strong>Archivované faktury jsou nyní v záloze</strong> — faktury, které jste po odeslání účetnímu archivovali, dosud nebyly součástí zálohy. Při výměně telefonu nebo přeinstalaci se jejich soubory PDF ztratily, přestože faktury zůstaly v seznamu. Nyní jsou v záloze a při obnově se vrátí do archivu.</li>
+    <li><strong>Spolehlivější označení pro účetní</strong> — když odeslání zrušíte, faktura zůstane neodeslaná; dříve dostala označení, jako by byla odeslána, a tiše vypadla z dalších dávek. Nesprávné označení lze nyní odstranit (vyberte faktury → nabídka → „Označit jako nepředané“). Archivace je samostatná akce a už nepřesouvá soubory jen proto, že jste otevřeli sdílení. Aplikace už netvrdí doručení.</li>
+    <li><strong>Měsíční limit čtení pomocí AI</strong> — limit začíná každý měsíc znovu (Free 5, Plus 50, Pro bez omezení). Dříve mohl zůstat trvale vyčerpaný, i u předplatitelů Plus.</li>
+    <li><strong>DPH u faktury soukromé osobě</strong> — opravena chyba, kvůli které druhá faktura soukromé osobě v řadě dostala DPH připočtené k zadané částce.</li>
+    <li><strong>Zámek aplikace v Androidu</strong> — opravena chyba, kvůli které výzva k odemknutí v Androidu nefungovala. Pokud ověření selže, obsah zůstane skrytý.</li>
+    <li><strong>Vyšší tarif zůstane</strong> — koupě nižšího tarifu už nesníží vyšší tarif, který již máte, například trvalý tarif Pro dřívějšího předplatitele.</li>
+    <li><strong>Opakované faktury bez duplicit</strong> — pokud po vystavení opakované faktury nelze posunout datum další, aplikace řekne, že faktura byla vystavena, a za stejné období ji nevystaví dvakrát.</li>
+    <li><strong>PDF s více písmy</strong> — znak, který základní písmo nemá, nyní vykreslí jiné písmo. U japonského vystavitele je na anglické faktuře nyní vykreslena doložka o nevyměřené dani; dokument s japonským písmem už neztrácí písmena č, š a ž; thajské popisky na thajských dokumentech byly dříve prázdné čtverečky, nyní se vykreslují (bez tučného písma). Běžný slovinský dokument zůstává stejný.</li>
+    <li><strong>Jazyk aplikace v části Firma</strong> — pole „Jazyk aplikace“ nyní ukazuje jazyk, ve kterém aplikace skutečně běží, i když jste žádný výslovně nevybrali; dříve mohlo ukazovat angličtinu, ačkoli aplikace běžela v jiném jazyce.</li>
+    <li><strong>Právní informace pro Singapur a Nový Zéland</strong> — dvě položky v seznamu povinných údajů na faktuře místo textu ukazovaly interní označení; nyní jsou vypsány v jazyce aplikace.</li>
+    <li><strong>Faktura nese datum a číslo okamžiku vystavení</strong> — formulář nové faktury zůstává otevřený, dokud aplikaci nezavřete, takže faktura vystavená o den či více později mohla nést datum a číslo z okamžiku, kdy jste formulář otevřeli, zatímco v databázi bylo dnešní datum (mezera v řadě). Nyní PDF, záznam i počítadlo dostanou stejný okamžik vystavení: formulář datum a navržené číslo obnoví při zobrazení a při návratu do aplikace a těsně před vystavením číslo ještě jednou ověří. Pokud se změnilo (nové období nebo ho mezitím využil jiný způsob vystavení), číslo nahradí, zobrazí upozornění a fakturu vystavíte znovu. Číslo, které jste zadali sami, formulář nemění.</li>
+    <li><strong>Vystavitel bez DPH neúčtuje DPH</strong> — položky, nabídky, převody nabídky na fakturu a opakované faktury mohly u vystavitele, který není plátcem DPH, dostat výchozí sazbu DPH vedle doložky „DPH neúčtováno“. Nyní platí sazba 0 a výběr sazby se nenabízí. Úprava již vystavené faktury ponechá daňové zacházení, s nímž byla vystavena.</li>
+    <li><strong>Neznámý zákazník, úpravy a limit zákazníků</strong> — u faktury neznámému zákazníkovi PDF nyní vytiskne zadané jméno s označením v jazyce dokumentu (dříve vestavěné slovinské označení bez jména). Úprava faktury ponechá zákazníka: najde ho podle zákazníka, jména nebo označení v kterémkoli jazyce aplikace, jinak zůstane zákazník tak, jak je zapsán na faktuře. Limit 5 zákazníků v tarifu Free platí i pro „Nový zákazník“ ve formuláři faktury.</li>
+    <li><strong>Stát při prvním spuštění nastaví i měnu</strong> — stát, který zvolíte při prvním spuštění, nyní nastaví také měnu a výchozí sazbu DPH. Dříve vystavovali faktury v eurech i vystavitelé z Polska, Česka, USA, Velké Británie, Japonska, Thajska a dalších zemí mimo eurozónu. Stávající profily se státem mimo eurozónu a eurem jako výchozí měnou se po aktualizaci opraví (oprava se zapíše do auditního protokolu); již vystavené faktury a nabídky si ponechají svou měnu, i při úpravě. Pokud zvolíte „Můj stát v seznamu není“, obrazovka Firma místo Slovinska ukáže prázdné povinné pole státu.</li>
+    <li><strong>Bulharsko v eurech</strong> — Bulharsko přešlo 1. 1. 2026 na euro: faktury bulharských vystavitelů se nyní vystavují v EUR (dříve v BGN). Již vystavené faktury zůstávají beze změny.</li>
+    <li><strong>Žádná náhradní kryptostránka</strong> — nový profil už nemá náhradní krypto adresy ani kryptostránku; stará náhradní adresa se po aktualizaci vymaže a faktura ji nikdy nevytiskne. Kryptostránka se na faktuře objeví, až když zadáte vlastní adresu peněženky (Firma → Kryptoplatba) a zapnete „Zobrazit krypto platby“ (Firma → Zobrazení na faktuře).</li>
+    <li><strong>Obrazovku s balíčky lze zavřít</strong> — obrazovka s balíčky má nyní viditelný východ (tlačítko ✕ „Zavřít“ nebo šipka zpět) a po úspěšném nákupu či obnovení se zavře sama; dříve na iPhonu východ nebyl. Popisy balíčků už neslibují „PDF v jazyce zákazníka (12 jazyků)“ ani proforma fakturu: PDF je v jazyce země vystavitele nebo v angličtině a nabídky se převádějí na fakturu.</li>
+    <li><strong>Obnovení zálohy: upozornění, dokument a číslování</strong> — před obnovením vás aplikace upozorní, kolik vystavených faktur v zařízení záloha neobsahuje (obnovení je odstraní); obnovení potvrdíte tlačítkem „Obnovit“ nebo zrušíte. Obnovení už k obnovené faktuře nepřipojí dokument jiné faktury: pokud dokument v záloze chybí, řádek ukáže chybějící PDF (dříve mohla faktura jednoho zákazníka ukázat či odeslat dokument jiného). Obnovení starší zálohy číslování nevrací zpět, takže zařízení nevystaví číslo, které už vaši zákazníci mají.</li>
+  </ul>
+
+  <hr>
+  <h2>1.6.2 (září 2026)</h2>
+  <ul>
+    <li><strong>Aktualizovaný platební systém</strong> — aplikace nyní používá Google Play Billing Library 8, kterou Google od 31. srpna 2026 vyžaduje pro všechny aktualizace.</li>
+    <li><strong>Úvodní obrazovka ve vašem jazyce</strong> — uvítací obrazovka a názvy záložek Faktury / Nabídky byly dosud vždy ve slovinštině.</li>
+    <li><strong>Čitelnější označení stavu</strong> — označení STORNO a IMPORTOVÁNO v seznamu faktur mají nyní dostatečný kontrast i na slunci.</li>
+    <li><strong>Jasnější ikony navigace</strong> — záložky Zákazníci a Můj profil měly téměř shodné ikony.</li>
+    <li><strong>Chybějící údaje o firmě</strong> — místo zprávy, která zmizí, nyní dostanete tlačítko vedoucí přímo do Můj profil.</li>
+    <li><strong>Aplikace je menší o 1,7 MB</strong> — rychlejší stažení a instalace.</li>
+  </ul>
 
   <hr>
 

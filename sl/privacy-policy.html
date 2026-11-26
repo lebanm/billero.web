@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billero – Pravilnik o zasebnosti</title>
+    <meta name="description" content="Billero pravilnik o zasebnosti. Aplikacija za izdajanje računov, ki podatke hrani lokalno (local-first). Kaj zapusti vašo napravo, kdaj in komu.">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/billero_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/billero_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/icons/billero_192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/img/icons/billero_512.png">
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+    <link rel="canonical" href="https://billero.app/sl/privacy-policy">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy">
+    <link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy">
+    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy">
+    <link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy">
+    <link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy">
+    <link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy">
+    <link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy">
+    <link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy">
+    <link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy">
+    <link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <img src="/img/icons/billero_256.png" alt="Billero logo">
+        <span>Billero</span>
+      </div>
+      <nav>
+        <a href="/sl/contact">Kontakt</a>
+        <a href="/sl/donate">Podpri nas</a>
+        <a href="/sl/user-guide">Navodila</a>
+        <a href="/sl/release-notes">Release notes</a>
+        <a href="/sl/privacy-policy" class="active">Zasebnost</a>
+      </nav>
+      <nav class="locale-nav" aria-label="Izberi jezik">
+<a href="/sl/privacy-policy" lang="sl" hreflang="sl" data-lang="sl" aria-current="page">SL</a>
+<a href="/en/privacy-policy" lang="en" hreflang="en" data-lang="en">EN</a>
+<a href="/de/privacy-policy" lang="de" hreflang="de" data-lang="de">DE</a>
+<a href="/es/privacy-policy" lang="es" hreflang="es" data-lang="es">ES</a>
+<a href="/nl/privacy-policy" lang="nl" hreflang="nl" data-lang="nl">NL</a>
+<a href="/th/privacy-policy" lang="th" hreflang="th" data-lang="th">TH</a>
+<a href="/cs/privacy-policy" lang="cs" hreflang="cs" data-lang="cs">CS</a>
+<a href="/hr/privacy-policy" lang="hr" hreflang="hr" data-lang="hr">HR</a>
+<a href="/ja/privacy-policy" lang="ja" hreflang="ja" data-lang="ja">JA</a>
+<a href="/pl/privacy-policy" lang="pl" hreflang="pl" data-lang="pl">PL</a>
+<a href="/pt/privacy-policy" lang="pt" hreflang="pt" data-lang="pt">PT</a>
+<a href="/sk/privacy-policy" lang="sk" hreflang="sk" data-lang="sk">SK</a>
+</nav>
+    </header>
+
+    <div class="container section-block">
+      <h1>Billero – Pravilnik o zasebnosti</h1>
+      <p><strong>Zadnja posodobitev:</strong> november 2026 (različica aplikacije 1.8.1)</p>
+
+      <p>Billero je aplikacija za izdajanje računov, ki podatke hrani lokalno (local-first). Vaši računi, predračuni, stranke in profil podjetja so shranjeni na vaši napravi. Uporabniškega računa Billero in prijave ni, ne upravljamo strežnikov, ki bi prejemali vaše poslovne podatke, in nimamo njihove kopije. Ta pravilnik pojasnjuje, kateri omejeni podatki zapustijo vašo napravo, kdaj in komu.</p>
+
+      <h2>1. Podatki, shranjeni na vaši napravi</h2>
+      <p>Naslednji podatki so shranjeni samo na vaši napravi, v lokalni bazi podatkov (SQLite) in v datotekah aplikacije:</p>
+      <ul>
+        <li>Izdani in prejeti računi, predračuni in povezani dokumenti (PDF-ji, fotografije)</li>
+        <li>Podatki o strankah, ki jih vnesete (imena, naslovi, davčne številke, e-poštni naslovi)</li>
+        <li>Vaš profil podjetja (podatki o podjetju, davčne številke, bančni račun, povezava za plačilo, naslovi kripto denarnic, logotip, podpis)</li>
+        <li>Nastavitve in izbire aplikacije</li>
+      </ul>
+      <p>Če aplikacijo odstranite, se ti podatki izbrišejo z vaše naprave. Ne moremo jih obnoviti, zato hranite varnostno kopijo (razdelek 4).</p>
+
+      <h2>2. Kdaj podatki zapustijo vašo napravo</h2>
+
+      <h3>2.1 Poročila o zrušitvah in napakah – Firebase Crashlytics (Google LLC)</h3>
+      <p>V različicah, objavljenih v trgovinah, aplikacija uporablja Firebase Crashlytics za odkrivanje in odpravljanje zrušitev. Ko se aplikacija zruši ali zabeleži določene napake, Google prejme:</p>
+      <ul>
+        <li>Sled sklada (stack trace) in sporočilo o napaki (lahko vsebuje tehnične podrobnosti operacije, ki ni uspela)</li>
+        <li>Model naprave, različico operacijskega sistema in različico aplikacije</li>
+        <li>Naključni identifikator namestitve (Firebase Installation ID)</li>
+        <li>Kratke tehnične vrstice dnevnika o nakupih (izdelek in stanje nakupa, nikoli podatki o plačilu)</li>
+      </ul>
+      <p>Tem poročilom ne dodajamo vašega imena, e-poštnega naslova ali vsebine računov in se ne uporabljajo za oglaševanje. Google poročila o zrušitvah hrani omejeno obdobje v skladu s pogoji Firebase. Googlov pravilnik o zasebnosti: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+      <h3>2.2 AI-branje prejetih računov – Anthropic PBC (ZDA)</h3>
+      <p>AI-branje je neobvezno. Nič se ne pošlje, dokler v aplikaciji ne date soglasja, in tudi takrat samo, ko začnete branje dokumenta. Izbrani ali fotografirani dokument (slika ali PDF) se v celoti pošlje družbi Anthropic, ki iz njega razbere dobavitelja ali kupca, številko, datum, znesek in opis; rezultat se shrani na vaši napravi. Dokument lahko vsebuje osebne in finančne podatke. Po komercialnih pogojih družbe Anthropic se podatki, poslani prek njenega API, ne uporabljajo za učenje modelov; Anthropic jih lahko hrani omejeno obdobje v skladu s svojo politiko hrambe podatkov. Če vnesete svoj ključ za Anthropic API, velja vaša lastna pogodba z družbo Anthropic. Soglasje lahko kadar koli prekličete v aplikaciji (Podjetje). Pravilnik o zasebnosti družbe Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank">https://www.anthropic.com/legal/privacy</a></p>
+
+      <h3>2.3 Menjalni tečaji za plačilne kode QR v kriptovalutah – Frankfurter in CoinGecko</h3>
+      <p>Samo če v profil dodate naslove kripto denarnic, aplikacija pridobi menjalne tečaje, ko ustvari PDF računa s plačilnimi kodami QR za kriptovalute: z api.frankfurter.app (tečaji valut) in api.coingecko.com (cene kriptovalut). Zahteva vsebuje samo oznake valut (na primer USD ali EUR), nobenih podatkov o računih ali strankah. Kot pri vsaki zahtevi prek interneta ponudnik vidi vaš naslov IP.</p>
+
+      <h3>2.4 Sporočilo ob zagonu – billero.app</h3>
+      <p>Ob zagonu lahko aplikacija z billero.app naloži kratko besedilo sporočila. Nobeni podatki o vas ali vaših računih se ne pošljejo; naš ponudnik spletnega gostovanja lahko hrani običajne strežniške dnevnike (na primer naslov IP in čas zahteve).</p>
+
+      <h3>2.5 Nakupi – Apple App Store in Google Play</h3>
+      <p>Naročnine se kupijo in plačajo prek družbe Apple ali Google, ki upravljata vaše plačilno sredstvo in uporabniški račun. Vaših podatkov o plačilu ne prejmemo. Aplikacija na vaši napravi od trgovine prejme potrditev vašega nakupa. Trenutno ne upravljamo strežnika za preverjanje potrdil o nakupu; če ga uvedemo, bomo ta pravilnik posodobili, preden ga vklopimo.</p>
+
+      <h3>2.6 Podatki, ki jih delite sami</h3>
+      <p>Ko pošljete račun, izvozite datoteko CSV ali delite varnostno kopijo, aplikacija uporabi meni za deljenje vaše naprave ali aplikacijo za e-pošto. Prejemnika ali cilj izberete vi in veljajo pogoji te storitve. Kopije ne prejmemo.</p>
+
+      <h2>3. Dovoljenja in sledenje</h2>
+      <ul>
+        <li>Kamera in fotografije – za skeniranje ali izbiro prejetih računov, vašega logotipa in podpisa</li>
+        <li>Biometrija ali PIN naprave – za neobvezni zaklep aplikacije</li>
+        <li>Obvestila – za opomnike o zapadlih računih; nastanejo na vaši napravi in se nam nikoli ne pošljejo</li>
+        <li>Internet – za storitve iz razdelka 2</li>
+      </ul>
+      <p>Aplikacija ne vsebuje oglaševalskih SDK-jev niti SDK-jev za analitiko ali sledenje, ne uporablja oglaševalskega ID-ja in vam ne sledi med aplikacijami ali spletnimi mesti. Osebnih podatkov ne prodajamo in jih ne delimo za vedenjsko oglaševanje med konteksti (cross-context behavioral advertising).</p>
+
+      <h2>4. Varnostne kopije</h2>
+      <ul>
+        <li><strong>Samodejna kopija</strong> (Plus in Pro, ko jo vklopite): vedno šifrirana z geslom, ki ga nastavite (AES-256, format ZIP AES). Brez gesla samodejna kopija ne nastane.</li>
+        <li><strong>Ročni izvoz</strong> (Podjetje): geslo je neobvezno. Z geslom je datoteka ZIP šifrirana z AES-256; brez gesla <strong>ni šifrirana</strong>, zato jo hranite in delite previdno.</li>
+        <li><strong>Izvoz z zaslona s paketi</strong> (pred nakupom): datoteka ZIP ni šifrirana.</li>
+      </ul>
+      <p>Imena datotek v datoteki ZIP niso šifrirana, šifrirana je samo njihova vsebina. Vaši lastni ključi API so v varnostni kopiji samo, če to vklopite (privzeto izklopljeno). Varnostne kopije se shranijo tja, kamor izberete; nikoli jih ne prejmemo.</p>
+
+      <h2>5. Vaše pravice (GDPR, CCPA/CPRA in podobni zakoni)</h2>
+      <p>Vaši poslovni podatki so na vaši napravi, zato jih lahko kadar koli pregledate, popravite, izvozite ali izbrišete v aplikaciji, vse pa izbrišete tako, da aplikacijo odstranite. Za poročila o zrušitvah (razdelek 2.1) in druga vprašanja pišite na <a href="mailto:info@billero.app">info@billero.app</a>; poročila o zrušitvah so povezana samo z naključnim identifikatorjem namestitve, ne z vašo identiteto, zato nam sporočite, kaj potrebujete, in pomagali vam bomo, kolikor je podatke mogoče prepoznati. Imate tudi pravico vložiti pritožbo pri svojem organu za varstvo osebnih podatkov.</p>
+
+      <h2>6. Otroci</h2>
+      <p>Billero je poslovno orodje za uporabnike, stare 18 let ali več. Ni namenjen otrokom in podatkov od otrok zavestno ne zbiramo.</p>
+
+      <h2>7. Mednarodni prenosi</h2>
+      <p>Google (Firebase Crashlytics) in Anthropic lahko podatke obdelujeta v Združenih državah Amerike ali drugih državah. Ta ponudnika se opirata na EU-US Data Privacy Framework ali na standardne pogodbene klavzule (Standard Contractual Clauses).</p>
+
+      <h2>8. Varnost</h2>
+      <p>Podatke na vaši napravi ščitita varnost vašega operacijskega sistema (Android, iOS) in, če ga vklopite, zaklep aplikacije. Vse povezave, opisane v razdelku 2, uporabljajo HTTPS.</p>
+
+      <h2>9. Spremembe tega pravilnika</h2>
+      <p>Če spremenimo, kako aplikacija ravna s podatki, bomo to stran in datum »Zadnja posodobitev« posodobili, preden sprememba začne veljati.</p>
+
+      <h2>10. Stik in upravljavec podatkov</h2>
+      <p>B-DataFit, Matej Leban s.p., Slovenija. Vprašanja in zahteve glede zasebnosti: <a href="mailto:info@billero.app">info@billero.app</a></p>
+
+    </div>
+
+    <footer class="container">
+      <p>© 2026 Billero</p>
+      <div>
+        <a href="/sl/privacy-policy">Pravilnik o zasebnosti</a>
+        &nbsp; | &nbsp;
+        <a href="/sl/terms-of-use">Pogoji uporabe</a>
+        &nbsp; | &nbsp;
+        <a href="/sl/user-guide">Navodila</a>
+        &nbsp; | &nbsp;
+        <a href="/sl/release-notes">Release notes</a>
+        &nbsp; | &nbsp;
+        <a href="/sl/contact">Kontakt</a>
+        &nbsp; | &nbsp;
+        <a href="/sl/donate">Podpri nas</a>
+      </div>
+    </footer>
+  </body>
+</html>

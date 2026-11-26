@@ -1,0 +1,402 @@
+{
+  "sl/contact.html": {
+    "lang": "sl",
+    "family": "contact",
+    "url": "/sl/contact"
+  },
+  "sl/donate.html": {
+    "lang": "sl",
+    "family": "donate",
+    "url": "/sl/donate"
+  },
+  "sl/index.html": {
+    "lang": "sl",
+    "family": "index",
+    "url": "/sl/"
+  },
+  "sl/legal-info.html": {
+    "lang": "sl",
+    "family": "legal-info",
+    "url": "/sl/legal-info"
+  },
+  "sl/privacy-policy.html": {
+    "lang": "sl",
+    "family": "privacy-policy",
+    "url": "/sl/privacy-policy"
+  },
+  "sl/racun-vsebina.html": {
+    "lang": "sl",
+    "family": "invoice-requirements-slovenia",
+    "url": "/sl/racun-vsebina"
+  },
+  "sl/release-notes.html": {
+    "lang": "sl",
+    "family": "release-notes",
+    "url": "/sl/release-notes"
+  },
+  "sl/terms-of-use.html": {
+    "lang": "sl",
+    "family": "terms-of-use",
+    "url": "/sl/terms-of-use"
+  },
+  "sl/user-guide.html": {
+    "lang": "sl",
+    "family": "user-guide",
+    "url": "/sl/user-guide"
+  },
+  "en/contact.html": {
+    "lang": "en",
+    "family": "contact",
+    "url": "/en/contact"
+  },
+  "en/donate.html": {
+    "lang": "en",
+    "family": "donate",
+    "url": "/en/donate"
+  },
+  "en/index.html": {
+    "lang": "en",
+    "family": "index",
+    "url": "/en/"
+  },
+  "en/invoice-requirements/germany.html": {
+    "lang": "en",
+    "family": "invoice-requirements-germany",
+    "url": "/en/invoice-requirements/germany"
+  },
+  "en/invoice-requirements/slovenia.html": {
+    "lang": "en",
+    "family": "invoice-requirements-slovenia",
+    "url": "/en/invoice-requirements/slovenia"
+  },
+  "en/invoice-requirements/united-states.html": {
+    "lang": "en",
+    "family": "invoice-requirements-united-states",
+    "url": "/en/invoice-requirements/united-states"
+  },
+  "en/legal-info.html": {
+    "lang": "en",
+    "family": "legal-info",
+    "url": "/en/legal-info"
+  },
+  "en/privacy-policy.html": {
+    "lang": "en",
+    "family": "privacy-policy",
+    "url": "/en/privacy-policy"
+  },
+  "en/release-notes.html": {
+    "lang": "en",
+    "family": "release-notes",
+    "url": "/en/release-notes"
+  },
+  "en/terms-of-use.html": {
+    "lang": "en",
+    "family": "terms-of-use",
+    "url": "/en/terms-of-use"
+  },
+  "en/user-guide.html": {
+    "lang": "en",
+    "family": "user-guide",
+    "url": "/en/user-guide"
+  },
+  "de/index.html": {
+    "lang": "de",
+    "family": "index",
+    "url": "/de/"
+  },
+  "de/legal-info.html": {
+    "lang": "de",
+    "family": "legal-info",
+    "url": "/de/legal-info"
+  },
+  "de/privacy-policy.html": {
+    "lang": "de",
+    "family": "privacy-policy",
+    "url": "/de/privacy-policy"
+  },
+  "de/rechnung-pflichtangaben.html": {
+    "lang": "de",
+    "family": "invoice-requirements-germany",
+    "url": "/de/rechnung-pflichtangaben"
+  },
+  "de/release-notes.html": {
+    "lang": "de",
+    "family": "release-notes",
+    "url": "/de/release-notes"
+  },
+  "de/terms-of-use.html": {
+    "lang": "de",
+    "family": "terms-of-use",
+    "url": "/de/terms-of-use"
+  },
+  "de/user-guide.html": {
+    "lang": "de",
+    "family": "user-guide",
+    "url": "/de/user-guide"
+  },
+  "es/factura-requisitos/estados-unidos.html": {
+    "lang": "es",
+    "family": "invoice-requirements-united-states",
+    "url": "/es/factura-requisitos/estados-unidos"
+  },
+  "es/index.html": {
+    "lang": "es",
+    "family": "index",
+    "url": "/es/"
+  },
+  "es/legal-info.html": {
+    "lang": "es",
+    "family": "legal-info",
+    "url": "/es/legal-info"
+  },
+  "es/privacy-policy.html": {
+    "lang": "es",
+    "family": "privacy-policy",
+    "url": "/es/privacy-policy"
+  },
+  "es/release-notes.html": {
+    "lang": "es",
+    "family": "release-notes",
+    "url": "/es/release-notes"
+  },
+  "es/terms-of-use.html": {
+    "lang": "es",
+    "family": "terms-of-use",
+    "url": "/es/terms-of-use"
+  },
+  "es/user-guide.html": {
+    "lang": "es",
+    "family": "user-guide",
+    "url": "/es/user-guide"
+  },
+  "nl/contact.html": {
+    "lang": "nl",
+    "family": "contact",
+    "url": "/nl/contact"
+  },
+  "nl/donate.html": {
+    "lang": "nl",
+    "family": "donate",
+    "url": "/nl/donate"
+  },
+  "nl/index.html": {
+    "lang": "nl",
+    "family": "index",
+    "url": "/nl/"
+  },
+  "nl/legal-info.html": {
+    "lang": "nl",
+    "family": "legal-info",
+    "url": "/nl/legal-info"
+  },
+  "nl/privacy-policy.html": {
+    "lang": "nl",
+    "family": "privacy-policy",
+    "url": "/nl/privacy-policy"
+  },
+  "nl/release-notes.html": {
+    "lang": "nl",
+    "family": "release-notes",
+    "url": "/nl/release-notes"
+  },
+  "nl/terms-of-use.html": {
+    "lang": "nl",
+    "family": "terms-of-use",
+    "url": "/nl/terms-of-use"
+  },
+  "nl/user-guide.html": {
+    "lang": "nl",
+    "family": "user-guide",
+    "url": "/nl/user-guide"
+  },
+  "th/contact.html": {
+    "lang": "th",
+    "family": "contact",
+    "url": "/th/contact"
+  },
+  "th/donate.html": {
+    "lang": "th",
+    "family": "donate",
+    "url": "/th/donate"
+  },
+  "th/index.html": {
+    "lang": "th",
+    "family": "index",
+    "url": "/th/"
+  },
+  "th/legal-info.html": {
+    "lang": "th",
+    "family": "legal-info",
+    "url": "/th/legal-info"
+  },
+  "th/privacy-policy.html": {
+    "lang": "th",
+    "family": "privacy-policy",
+    "url": "/th/privacy-policy"
+  },
+  "th/release-notes.html": {
+    "lang": "th",
+    "family": "release-notes",
+    "url": "/th/release-notes"
+  },
+  "th/terms-of-use.html": {
+    "lang": "th",
+    "family": "terms-of-use",
+    "url": "/th/terms-of-use"
+  },
+  "th/user-guide.html": {
+    "lang": "th",
+    "family": "user-guide",
+    "url": "/th/user-guide"
+  },
+  "cs/legal-info.html": {
+    "lang": "cs",
+    "family": "legal-info",
+    "url": "/cs/legal-info"
+  },
+  "cs/privacy-policy.html": {
+    "lang": "cs",
+    "family": "privacy-policy",
+    "url": "/cs/privacy-policy"
+  },
+  "cs/release-notes.html": {
+    "lang": "cs",
+    "family": "release-notes",
+    "url": "/cs/release-notes"
+  },
+  "cs/terms-of-use.html": {
+    "lang": "cs",
+    "family": "terms-of-use",
+    "url": "/cs/terms-of-use"
+  },
+  "cs/user-guide.html": {
+    "lang": "cs",
+    "family": "user-guide",
+    "url": "/cs/user-guide"
+  },
+  "hr/legal-info.html": {
+    "lang": "hr",
+    "family": "legal-info",
+    "url": "/hr/legal-info"
+  },
+  "hr/privacy-policy.html": {
+    "lang": "hr",
+    "family": "privacy-policy",
+    "url": "/hr/privacy-policy"
+  },
+  "hr/release-notes.html": {
+    "lang": "hr",
+    "family": "release-notes",
+    "url": "/hr/release-notes"
+  },
+  "hr/terms-of-use.html": {
+    "lang": "hr",
+    "family": "terms-of-use",
+    "url": "/hr/terms-of-use"
+  },
+  "hr/user-guide.html": {
+    "lang": "hr",
+    "family": "user-guide",
+    "url": "/hr/user-guide"
+  },
+  "ja/legal-info.html": {
+    "lang": "ja",
+    "family": "legal-info",
+    "url": "/ja/legal-info"
+  },
+  "ja/privacy-policy.html": {
+    "lang": "ja",
+    "family": "privacy-policy",
+    "url": "/ja/privacy-policy"
+  },
+  "ja/release-notes.html": {
+    "lang": "ja",
+    "family": "release-notes",
+    "url": "/ja/release-notes"
+  },
+  "ja/terms-of-use.html": {
+    "lang": "ja",
+    "family": "terms-of-use",
+    "url": "/ja/terms-of-use"
+  },
+  "ja/user-guide.html": {
+    "lang": "ja",
+    "family": "user-guide",
+    "url": "/ja/user-guide"
+  },
+  "pl/legal-info.html": {
+    "lang": "pl",
+    "family": "legal-info",
+    "url": "/pl/legal-info"
+  },
+  "pl/privacy-policy.html": {
+    "lang": "pl",
+    "family": "privacy-policy",
+    "url": "/pl/privacy-policy"
+  },
+  "pl/release-notes.html": {
+    "lang": "pl",
+    "family": "release-notes",
+    "url": "/pl/release-notes"
+  },
+  "pl/terms-of-use.html": {
+    "lang": "pl",
+    "family": "terms-of-use",
+    "url": "/pl/terms-of-use"
+  },
+  "pl/user-guide.html": {
+    "lang": "pl",
+    "family": "user-guide",
+    "url": "/pl/user-guide"
+  },
+  "pt/legal-info.html": {
+    "lang": "pt",
+    "family": "legal-info",
+    "url": "/pt/legal-info"
+  },
+  "pt/privacy-policy.html": {
+    "lang": "pt",
+    "family": "privacy-policy",
+    "url": "/pt/privacy-policy"
+  },
+  "pt/release-notes.html": {
+    "lang": "pt",
+    "family": "release-notes",
+    "url": "/pt/release-notes"
+  },
+  "pt/terms-of-use.html": {
+    "lang": "pt",
+    "family": "terms-of-use",
+    "url": "/pt/terms-of-use"
+  },
+  "pt/user-guide.html": {
+    "lang": "pt",
+    "family": "user-guide",
+    "url": "/pt/user-guide"
+  },
+  "sk/legal-info.html": {
+    "lang": "sk",
+    "family": "legal-info",
+    "url": "/sk/legal-info"
+  },
+  "sk/privacy-policy.html": {
+    "lang": "sk",
+    "family": "privacy-policy",
+    "url": "/sk/privacy-policy"
+  },
+  "sk/release-notes.html": {
+    "lang": "sk",
+    "family": "release-notes",
+    "url": "/sk/release-notes"
+  },
+  "sk/terms-of-use.html": {
+    "lang": "sk",
+    "family": "terms-of-use",
+    "url": "/sk/terms-of-use"
+  },
+  "sk/user-guide.html": {
+    "lang": "sk",
+    "family": "user-guide",
+    "url": "/sk/user-guide"
+  }
+}

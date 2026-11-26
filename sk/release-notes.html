@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poznámky k verzii – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+  </style>
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+    <link rel="canonical" href="https://billero.app/sk/release-notes">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes">
+    <link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes">
+    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes">
+    <link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes">
+    <link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes">
+    <link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes">
+    <link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes">
+    <link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes">
+    <link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes">
+    <link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes">
+  </head>
+<body>
+<nav class="locale-nav" aria-label="Vybrať jazyk">
+<a href="/sl/release-notes" lang="sl" hreflang="sl" data-lang="sl">SL</a>
+<a href="/en/release-notes" lang="en" hreflang="en" data-lang="en">EN</a>
+<a href="/de/release-notes" lang="de" hreflang="de" data-lang="de">DE</a>
+<a href="/es/release-notes" lang="es" hreflang="es" data-lang="es">ES</a>
+<a href="/nl/release-notes" lang="nl" hreflang="nl" data-lang="nl">NL</a>
+<a href="/th/release-notes" lang="th" hreflang="th" data-lang="th">TH</a>
+<a href="/cs/release-notes" lang="cs" hreflang="cs" data-lang="cs">CS</a>
+<a href="/hr/release-notes" lang="hr" hreflang="hr" data-lang="hr">HR</a>
+<a href="/ja/release-notes" lang="ja" hreflang="ja" data-lang="ja">JA</a>
+<a href="/pl/release-notes" lang="pl" hreflang="pl" data-lang="pl">PL</a>
+<a href="/pt/release-notes" lang="pt" hreflang="pt" data-lang="pt">PT</a>
+<a href="/sk/release-notes" lang="sk" hreflang="sk" data-lang="sk" aria-current="page">SK</a>
+</nav>
+  <h1>Billero – Poznámky k verzii</h1>
+  <p class="updated">Posledná aktualizácia: jún 2026</p>
+
+  <p>Súhrn noviniek a opráv podľa verzií.</p>
+
+  <hr>
+
+  <h2>Verzia 1.8.0 (november 2026)</h2>
+  <p class="updated"><em>Viac firiem v jednej aplikácii, šifrovaná automatická záloha a oprava dokumentov starších faktúr po aktualizácii.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Novinky</h3>
+  <ul>
+    <li><strong>Viac firiem v jednej aplikácii (balík Pro)</strong> — vo Firma → Firmy pridáte novú firmu (názov a krajina; mena a DPH sa riadia krajinou); medzi firmami prepínate čipom na Prehľade alebo v zozname Firmy. Každá firma má vlastné faktúry, zákazníkov, ponuky, číslovanie, dokumenty a profil; na Prehľade a vo formulári novej faktúry čip ukazuje, za ktorú firmu vystavujete. Prehľad všetkých firiem ukazuje otvorené a splatné sumy podľa mien (bez prepočtu), kartu pre každú firmu a spoločný zoznam otvorených faktúr podľa splatnosti. Balík, zámka aplikácie a bezplatný limit platia pre zariadenie: prvých 10 faktúr sa počíta spolu za všetky firmy. Bez balíka Pro môže nové faktúry vystavovať len jedna firma, ostatné zostanú dostupné na zobrazenie, zdieľanie, export a storno. Pri viacerých firmách automatická záloha zahrnie všetky; pri obnove aplikácia ukáže, ktorá firma kam patrí. Záloha inej firmy nahradí údaje zvolenej firmy až potom, ako v okne s názvami oboch firiem potvrdíte „Nahradiť všetko“; zvolená firma zostane tou istou firmou, takže aj neskoršie zálohy patria jej. Zálohu, ktorá patrí inej firme na tomto zariadení, nie je možné obnoviť do zvolenej firmy: aplikácia ponúkne „Obnoviť do …“ firmy, ktorej záloha patrí. Ak bola obnova firmy prerušená a nepodarilo sa ju dokončiť, firma je v zozname Firmy označená „Prerušená obnova nie je vyriešená“: kým to nevyriešite, jej údaje nie je možné meniť, ostatné firmy fungujú ďalej. Môžete zvoliť „Skúsiť znova“ alebo „Obnoviť zo zálohy“; ak nie je možné použiť žiadnu firmu, táto obrazovka sa zobrazí už pri spustení, pred Prehľadom. Údaje sa nestratia: ak sa preruší aj táto obnova, aplikácia ju pri ďalšom spustení vráti do stavu pred ňou (databáza a dokumenty), takže zálohu a heslo zvolíte znova; už potvrdenú obnovu dokončí. Existujúcim používateľom sa nič nepresúva: doterajšie údaje zostanú prvou firmou.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Vylepšenia</h3>
+  <ul>
+    <li><strong>Automatická záloha je šifrovaná</strong> — automatická záloha je teraz šifrovaná heslom, ktoré nastavíte pri zapnutí vo Firma → Záloha dát; bez hesla nevznikne. Ak ste automatickú zálohu používali už doteraz, aplikácia vás raz denne požiada o nastavenie hesla a pod prepínačom ukáže, že záloha čaká na heslo. Heslo je uložené len v tomto telefóne, nie v zálohe; po overení zámkou telefónu ho môžete zobraziť alebo zmeniť (staršie zálohy stále potrebujú staré heslo). Pri ručnom exporte a obnove môžete zvoliť „Použiť heslo automatických záloh“. Export z obrazovky s balíkmi pred nákupom zostáva bez hesla.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Opravy</h3>
+  <ul>
+    <li><strong>Dokumenty starších faktúr, ktoré sa po aktualizácii neotvorili</strong> — na iPhone a iPade môže systém pri aktualizácii zmeniť internú cestu k súborom, preto aplikácia dokument hľadá podľa názvu súboru. Ak dve staršie faktúry niesli dokument s rovnakým názvom (napríklad čísla 2026/001 a 2026-001), neotvoril sa ani jeden — každý vyzeral ako dokument tej druhej — a aplikácia hlásila „Súbor PDF už neexistuje“, hoci bol dokument v zariadení. Dokumenty, ktoré staršie verzie ukladali do inej zložky, aplikácia vôbec nehľadala. Odoslanie účtovníkovi, odoslanie faktúr zákazníkovi v časti Zákazníci a archivácia dokument nehľadali: odoslanie hlásilo „Chyba: Súbory PDF neexistujú“ alebo dokument nepriložilo a archivácia hlásila „Faktúry boli archivované“, dokument však nepresunula. Teraz aplikácia hľadá aj v zložke starších verzií a odoslanie aj archivácia hľadajú dokument rovnakým spôsobom. Ak nájdený dokument môže patriť viacerým faktúram, dostane ho faktúra, ktorej číslo je na dokumente, bez ohľadu na to, ktorú faktúru otvoríte ako prvú; ak faktúry mali rovnaké číslo (napríklad predtým, ako jedna z nich dostala príponu -1), dostane ho tá, ktorej zákazník je na dokumente. Ak sa to z dokumentu nedá zistiť (napríklad pri rovnakom čísle a rovnakom zákazníkovi alebo pri importovanej faktúre), aplikácia ho nepriradí žiadnej z nich. Faktúra, ktorá doteraz po aktualizácii otvárala dokument inej faktúry, ho na iPhone a iPade už neotvorí, keď systém internú cestu znova zmení. V zozname faktúr faktúra bez dokumentu stále zobrazí „Súbor PDF už neexistuje“.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Verzia 1.7.1 (október 2026)</h2>
+  <p class="updated"><em>Opravy po verzii 1.7.0: zrozumiteľnejšie hlásenia, keď AI načítanie nie je dostupné, ponuky v jazyku dokumentu, thajské a rakúske označenia na dokumentoch, spoľahlivejšie obnovenie zálohy a čísla faktúr, ktoré sú jedinečné aj v databáze (duplicitné čísla aplikácia prečísluje sama).</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Vylepšenia</h3>
+  <ul>
+    <li><strong>Jasné hlásenie, keď AI načítanie nie je dostupné</strong> — namiesto všeobecného hlásenia, že faktúru sa nepodarilo prečítať, aplikácia teraz povie, čo sa deje: AI načítanie teraz nie je dostupné (kľúč vložený do aplikácie bol odmietnutý alebo vypršal, alebo poskytovateľ už model tejto verzie neponúka; aktualizácia aplikácie ho môže znova sprístupniť), váš vlastný API kľúč bol odmietnutý (skontrolujte ho vo Firma → AI kľúče), je príliš veľa požiadaviek alebo bol dosiahnutý limit využitia (skúste to neskôr), alebo je súbor na AI načítanie príliš veľký. Formulár zostane otvorený a údaje môžete vždy zadať ručne.</li>
+    <li><strong>Ponuka v jazyku dokumentu, thajské a rakúske označenia</strong> — ponuka a faktúra, ktorú z ponuky vytvoríte, sú teraz v jazyku dokumentu podľa rovnakého pravidla ako faktúry, ktoré aplikácia vystavuje sama (opakované faktúry): ak je jazyk aplikácie jedným z jazykov dokumentu krajiny vystaviteľa (jazyk krajiny alebo angličtina), je dokument v jazyku aplikácie, inak v jazyku dokumentu krajiny; kde aplikácia pre krajinu nemá miestny jazyk dokumentu, je to angličtina. Slovinský vystaviteľ s aplikáciou v nemčine tak dostane slovinskú ponuku, s aplikáciou v angličtine anglickú a vystaviteľ z USA s aplikáciou v slovinčine anglickú. Pri thajskom vystaviteľovi majú ponuka, faktúra vytvorená z ponuky a opakovaná faktúra thajské označenia; s aplikáciou v angličtine sú označenia anglické a niektoré z nich (napríklad názov, príjemca a dátum vystavenia) majú nad sebou thajský riadok. Na dokumentoch rakúskeho vystaviteľa v nemčine (faktúry, opakované faktúry, ponuky) sú identifikačné číslo pre DPH a registračné číslo označené „UID-Nr.“ a „FN“: tieto dve označenia určuje krajina vystaviteľa, nie jazyk aplikácie; vystaviteľovi z Nemecka zostávajú „USt-IdNr.“ a „HR-Nr.“. Na faktúre z formulára faktúry je riadok s dátumom alebo obdobím služby („Dátum služby“) teraz tiež v jazyku dokumentu; predtým bol v jazyku aplikácie. Názov („Ponuka č.“) a popisok platnosti („Platnosť do:“) sú preložené do všetkých 13 jazykov; predtým boli vždy po slovinsky. Jazyk jednotlivej ponuky nemožno zvoliť; vo formulári faktúry je jazyk spočiatku jazykom krajiny a pre jednotlivú faktúru ho môžete zmeniť. Keď nastavíte alebo zmeníte krajinu firmy, formulár faktúry hneď použije jazyk dokumentu tejto krajiny; predtým až po opätovnom spustení aplikácie. Ponuka, ktorú ste už odoslali, sa pri ďalšom zdieľaní vytvorí znova v jazyku dokumentu; predmet a text e-mailu zostávajú v jazyku aplikácie. PDF faktúr, ktoré ste už vystavili, sa nemenia; keď upravíte neuhradenú faktúru, aplikácia vytvorí nové PDF podľa týchto pravidiel.</li>
+    <li><strong>Obnovenie nenahradí vaše kľúče bez vášho výberu</strong> — kľúče na AI načítanie a CoinGate, ktoré zariadenie už má, obnovenie samo neprepíše. Ak záloha obsahuje iný kľúč, aplikácia sa pred obnovením opýta („Kľúče v zálohe“), či má ponechať kľúče zariadenia, alebo použiť kľúče zo zálohy. Zariadenie bez kľúča ho dostane zo zálohy; záloha bez kľúčov kľúče zariadenia nevymaže. Balík a zámok aplikácie zostávajú v zariadení ako doteraz (výnimkou je trvalý balík Pro skorších predplatiteľov).</li>
+    <li><strong>Obnovenie, ktoré preruší systém</strong> — ak systém počas obnovenia aplikáciu zastaví, pri ďalšom spustení aplikácia vráti údaje do stavu pred obnovením (alebo dokončí obnovenie, ktoré databáza už potvrdila), takže databáza a dokumenty vždy patria k tomu istému stavu. Ak bolo obnovenie vrátené späť, časť Firma vás upozorní, aby ste ho zopakovali. Zálohu s nesprávnou štruktúrou údajov aplikácia odmietne skôr, než sa čokoľvek zmení.</li>
+    <li><strong>Stav zálohy v časti Firma</strong> — pod prepínačom automatickej zálohy aplikácia rozlišuje zálohu, ktorá bola len pripravená, od zálohy, ktorú ste odovzdali (zdieľali alebo uložili). Ukáže, či je posledná záloha chránená vaším heslom alebo nie je šifrovaná, či bola neúplná (chýbal súbor dokumentu), či posledný pokus zlyhal a či pripravená záloha nebola odovzdaná.</li>
+    <li><strong>Jasne o šifrovaní a automatickej zálohe</strong> — automatická záloha a export ponúkaný pred nákupom na obrazovke balíkov nie sú šifrované; zálohu s heslom exportujte vo Firma → Záloha dát. Automatická záloha sa pripraví pri otvorení aplikácie (najviac raz za týždeň) a ponúkne sa na zdieľanie; na pozadí nebeží. Je dostupná od balíka Plus: v balíku Free sa nepripravuje, ani keď je prepínač zapnutý.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Opravy</h3>
+  <ul>
+    <li><strong>Čísla faktúr sú jedinečné aj v databáze, duplicitné sa prečíslujú</strong> — popri kontrole v aplikácii číslo faktúry teraz chráni aj databáza: druhú faktúru s rovnakým číslom neprijme. Ak malo vo vašich záznamoch rovnaké číslo viac faktúr (zo starších verzií alebo z obnovenej zálohy), aplikácia ich prečísluje: jedna si číslo ponechá a ostatné dostanú príponu -1, -2 a tak ďalej. Mení sa len číslo a každá zmena sa zapíše do auditného záznamu. Stane sa to pri prvom spustení po aktualizácii a po obnovení zálohy, ktorá takéto faktúry obsahuje; ak prečíslovanie zlyhá, nič sa nezmení a aplikácia to skúsi znova pri ďalšom spustení. V dialógu vám aplikácia ukáže, ktorým faktúram zmenila číslo (tlačidlo „Rozumiem“). Už vystavené PDF doklady týchto faktúr stále nesú pôvodné číslo: kde na tom záleží, pošlite zákazníkovi opravený doklad alebo mu oznámte nové číslo. Zoznam prečíslovaných faktúr zostáva k dispozícii v časti Dokumenty → Vystavené faktúry → „Ďalšie možnosti“ → „Skontrolovať čísla faktúr“ (oddiel „Prečíslované faktúry“). Kto nemá faktúry s rovnakým číslom, žiadnu zmenu nespozoruje.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Verzia 1.7.0 (október 2026)</h2>
+  <p class="updated"><em>Veľká aktualizácia: nová navigácia, spoľahlivejšie vystavovanie faktúr a zálohovanie a prístup k faktúram aj po vyčerpaní bezplatných faktúr.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Novinky</h3>
+  <ul>
+    <li><strong>Nová navigácia</strong> — štyri časti: Prehľad, Dokumenty, Zákazníci a Firma. Po spustení uvidíte krátky prehľad s tlačidlom „Nová faktúra“ namiesto formulára; vydané a prijaté faktúry, cenové ponuky a opakované faktúry nájdete v časti Dokumenty. Bývalý „Môj profil“ je teraz Firma.</li>
+    <li><strong>Vystavenie faktúry v troch krokoch</strong> — nová faktúra vzniká v troch krokoch: najprv zákazník, potom položky a nakoniec kontrola s tlačidlom na vystavenie. Zvolený príjemca zostáva počas zadávania viditeľný a chýbajúce údaje sa hlásia vo svojom kroku, nie až na konci. Návrat späť zadané údaje nevymaže. Úprava vystavenej faktúry zostáva na jednej obrazovke.</li>
+    <li><strong>Potvrdenie po vystavení a oddelené zdieľanie</strong> — po vystavení sa zobrazí obrazovka „Faktúra vystavená“ s číslom, príjemcom a sumou. Zdieľanie PDF je teraz samostatná akcia: ak ju zrušíte, faktúra zostane vystavená a môžete ju zdieľať znova. Faktúra sa trvalo uloží skôr, než sa čokoľvek zdieľa, a dvojité stlačenie nevytvorí dve faktúry.</li>
+    <li><strong>Prístup k faktúram aj po bezplatnom limite</strong> — v balíku Free je zadarmo prvých 10 vystavených faktúr spolu, nie 10 ročne; stornované a importované faktúry sa nepočítajú. Keď ich vyčerpáte alebo sa skončí skúšobné obdobie, aplikácia zostane prístupná: existujúce faktúry môžete aj naďalej otvárať, zdieľať, exportovať a stornovať, ale už ich nemôžete upravovať. Na úpravu a na vystavenie novej faktúry, aj z ponuky, zvolíte predplatné.</li>
+    <li><strong>Súhlas pred čítaním faktúr pomocou AI</strong> — pred prvým čítaním faktúry pomocou AI sa vás aplikácia opýta na súhlas. Vybraný alebo odfotografovaný dokument sa celý odošle poskytovateľovi Anthropic (USA). Bez súhlasu sa nič neodošle a údaje môžete naďalej zadať ručne. Súhlas môžete odvolať v časti Firma → Načítanie dokumentov pomocou AI.</li>
+    <li><strong>Opakované faktúry so skutočným zákazníkom</strong> — opakovaná faktúra teraz nesie úplné údaje zákazníka (názov, adresa, DIČ) a je vystavená v jazyku dokumentu vašej krajiny. Obrazovka je preložená do všetkých jazykov aplikácie. Opakované faktúry sa vystavujú v balíku Plus alebo vyššom; bez neho splatná faktúra čaká vo fronte. Upozornenie na splatnú opakovanú faktúru sa zobrazí pri otvorení zoznamu faktúr a pri návrate do aplikácie.</li>
+    <li><strong>Pripomienky faktúr po splatnosti</strong> — faktúra je po splatnosti deň po lehote splatnosti uvedenej na nej. Zaplatené, stornované a importované faktúry sa nepočítajú. Upozornenia zapnete v časti Firma → Nastavenia alebo na obrazovke Opakované faktúry; aplikácia sa už pri spustení na povolenie nepýta.</li>
+    <li><strong>Obrazovka Firma vo vašom jazyku</strong> — obrazovka je úplne preložená. Jazyk aplikácie teraz môžete zvoliť aj španielsky, portugalsky a japonsky.</li>
+    <li><strong>Návod na používanie v holandčine</strong> — holandskí používatelia doteraz dostávali chorvátsky návod.</li>
+    <li><strong>Krajina firmy pri prvom spustení</strong> — pri prvom spustení krajinu firmy zvolíte sami: aplikácia, ak je to možné, navrhne krajinu podľa nastavení telefónu, ktorú potvrdíte jedným ťuknutím, alebo vyberiete inú zo zoznamu. Od krajiny závisia sadzby dane, platobný kód a lehota splatnosti na faktúrach. Predtým sa pri podporovanom jazyku telefónu krajina potichu nastavila na Slovinsko. Ak vašej krajiny v zozname nie je, zvolíte ju v časti Firma.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Vylepšenia</h3>
+  <ul>
+    <li><strong>Zrozumiteľnejší formulár novej faktúry</strong> — pod prepínačom „Suma vrátane DPH“ je poznámka, či je daň už započítaná. Pri viacerých položkách formulár uvádza, že cena za jednotku je bez dane. Ak niečo chýba, formulár sám preskočí na prvé pole s chybou. Tlačidlo „Vystaviť faktúru“ je lepšie čitateľné vo svetlej aj tmavej téme.</li>
+    <li><strong>Bezpečnejší zámok aplikácie</strong> — zámok sa zapne až po úspešnom potvrdení biometriou alebo PIN kódom zariadenia. Ak zariadenie overenie nezvládne, napríklad nemá zámok obrazovky, aplikácia na to upozorní. Pri zapnutí vysvetlí dôsledky a ponúkne export zálohy.</li>
+    <li><strong>Bezpečnejšia záloha</strong> — obnova nemení balík ani zámok v zariadení; výnimkou je trvalý balík Pro skorších predplatiteľov, ktorý putuje so zálohou. Poškodené, príliš veľké alebo podozrivé zálohy aplikácia odmietne a existujúce údaje zostanú bezo zmeny. Kľúč na čítanie pomocou AI zabudovaný v aplikácii nikdy nie je v zálohe. Pred zdieľaním vás aplikácia upozorní, ak záloha nie je úplná; zvolíte „Napriek tomu zdieľať“ alebo „Zrušiť“, aj pri exporte z obrazovky balíkov. Automatická týždenná záloha (Plus) sa počíta ako hotová až po uložení alebo zdieľaní; keď upozornenie zatvoríte, aplikácia ju ponúkne znova o týždeň.</li>
+    <li><strong>Spoľahlivejšia záloha</strong> — záloha teraz obsahuje aj ponuky a spoľahlivo aj logo, podpis a všetky súbory prijatých faktúr (predtým mohli chýbať). Neúspešná obnova nezmení existujúce údaje a záloha z novšej verzie aplikácie sa obnoví bez straty faktúr. Prijaté faktúry po aktualizácii aplikácie opäť nájdu svoje súbory.</li>
+    <li><strong>Rýchlejšia práca so zákazníkmi a zoznamami</strong> — zákazníkov nájdete podľa mena, mesta, DIČ alebo e-mailu a zo zákazníka jedným ťuknutím začnete faktúru s už vyplneným príjemcom. Zoznamy teraz rozlišujú načítavanie, chybu, prázdnu evidenciu a hľadanie bez výsledku. Export do CSV, import PDF a opakované faktúry sú v ponuke „Ďalšie možnosti“. Faktúry v rôznych menách sa už nesčítavajú do jednej sumy.</li>
+    <li><strong>Obrazovka balíkov a podmienky používania</strong> — pri každej cene je uvedené fakturačné obdobie. Obrazovka vysvetľuje automatické predĺženie a zrušenie v obchode a obsahuje odkazy na zásady ochrany osobných údajov a podmienky používania v jazyku aplikácie. Podmienky používania v aplikácii sú aktualizované: balíky Plus a Pro, prvých 10 faktúr zadarmo, čítanie pomocou AI v cene a presný popis, ktoré údaje opúšťajú zariadenie.</li>
+    <li><strong>Obrazovka Firma bez pretekania</strong> — na užších telefónoch a pri väčšom písme text už nepreteká ani sa neorezáva. Tlačidlo „Ohodnotiť aplikáciu“ otvorí správny obchod aj na iOS a odkaz na zásady ochrany osobných údajov otvorí stránku v jazyku aplikácie.</li>
+    <li><strong>Storno vo všetkých jazykoch</strong> — dialóg, popisky a správy pri stornovaní faktúr aj predmet exportu do CSV sú preložené do všetkých jazykov aplikácie.</li>
+    <li><strong>Menšie zálohy</strong> — fotografie prijatých faktúr sa ukladajú zmenšené (dlhšia strana najviac 2400 px), preto sú zálohy menšie.</li>
+    <li><strong>Spoľahlivejšie spustenie</strong> — jazyk zvolený pri prvom spustení zostane aj po reštarte. Ak ste ho zvolili skôr a aplikácia zostala v jazyku krajiny (napríklad v angličtine v Holandsku, Španielsku alebo Portugalsku), po aktualizácii prepne na zvolený jazyk. Ak aplikácia pri spustení nemôže načítať údaje, namiesto nekonečného načítavania zobrazí správu s tlačidlom „Skúsiť znova“. Spustenie sa tiež už nezastaví, keď je zabezpečené úložisko zariadenia nedostupné.</li>
+    <li><strong>Čítanie faktúr pomocou AI</strong> — ak čítanie zlyhá, aplikácia odporučí skúsiť to znova alebo zadať údaje ručne. Požiadavka má časový limit, takže aplikácia nečaká donekonečna.</li>
+    <li><strong>Ponuky vo všetkých jazykoch</strong> — zoznam a formulár ponúk, ich menu, správy, dialógy aj predmet a text e-mailu sú preložené do všetkých jazykov aplikácie. Názov a popisok platnosti na PDF ponuky sú zatiaľ stále v slovinčine.</li>
+    <li><strong>Bez pretekania aj na ďalších obrazovkách</strong> — na užších telefónoch a pri väčšom písme text už nie je orezaný ani nepreteká vo formulári novej faktúry, na obrazovke vystavenej faktúry, v zoznamoch faktúr, prijatých faktúr, zákazníkov a ponúk, pri opakovaných faktúrach, na obrazovke balíkov, v právnych informáciách a na obrazovkách uvítania, spustenia a zámku. Súčty vybraných faktúr sú teraz v riadku pod panelom nástrojov, pod koncom zoznamov je miesto pre plávajúce tlačidlo a frekvenciu opakovanej faktúry vyberáte pomocou čipov.</li>
+    <li><strong>Aktualizovaný návod v aplikácii</strong> — návod na používanie zodpovedá vo všetkých 12 jazykoch verzii 1.7.0: limit bezplatných faktúr a prístup po ňom, súhlas s čítaním pomocou AI, záloha, pripomienky, opakované faktúry, krajina firmy a zámok aplikácie. Opravený je aj záznam pre verziu 1.6.0: nové balíky sú iba Plus a Pro.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Opravy</h3>
+  <ul>
+    <li><strong>Krajina firmy určuje pravidlá faktúry</strong> — krajina zvolená v časti Firma teraz pri všetkých podporovaných krajinách správne určuje platobný kód, lehotu splatnosti, názov dane a sadzby. Predtým niektoré krajiny, napríklad Holandsko, Poľsko, Španielsko, Francúzsko a Japonsko, dostali slovinské pravidlá. Jazyk rozhrania už krajinu nemení a výslovne zvolené Slovinsko zostane zvolené. Uloženú krajinu, ktorá nie je v zozname, obrazovka už potichu nenahradí Austráliou, ale vyžiada si výber. Ak staršia verzia pri prepnutí jazyka zmenila vašu krajinu na Holandsko alebo Nemecko, obrazovka Firma vás po aktualizácii vyzve, aby ste krajinu skontrolovali; potvrdíte ju tlačidlom „Krajina je správna“. Pri slovinskom IBAN alebo DIČ aplikácia krajinu najprv sama vráti na Slovinsko, upozornenie zostane. Pri už vystavených faktúrach sa lehota v pripomienkach môže líšiť od lehoty na dokumente.</li>
+    <li><strong>Doložka o nevyrubenej dani</strong> — doložka na faktúre sa teraz riadi krajinou vystaviteľa, nie jazykom dokumentu. Slovinský vystaviteľ, ktorý nie je platiteľom DPH, má odkaz na čl. 94 ZDDV-1 aj na anglickej faktúre; krajiny bez vlastného znenia (napríklad USA a Kanada) majú všeobecnú vetu. Už vystavené faktúry sa nemenia.</li>
+    <li><strong>Bez duplicitných čísel faktúr</strong> — aplikácia neprijme číslo, ktoré v nej už existuje: ani pri ručnom zadaní, ani pri importe faktúry (PDF alebo fotografia), ani pri nastavení nasledujúceho čísla (Firma → „Nastaviť číslovanie faktúr“). Premena ponuky na faktúru a opakované faktúry prechádzajú rovnakou kontrolou: ak faktúru nie je možné vystaviť, ponuka sa nezmení a opakovaná faktúra zostane vo fronte. Pri obsadenom čísle pritom už neprepisujú PDF skôr vystavenej faktúry. Po obnovení zálohy sa nasledujúce číslo podľa potreby zvýši, nikdy nezníži. Existujúce duplicity nájdete v časti Dokumenty → Vystavené faktúry → „Ďalšie možnosti“ → „Skontrolovať čísla faktúr“.</li>
+    <li><strong>Dokument faktúry sa už neprepisuje</strong> — každá z dvoch faktúr s podobným číslom (napr. 2026/001 a 2026-001) má vlastné PDF; druhá dostane k názvu dodatok, napr. racun_2026_001-2.pdf. Úprava vystavenej faktúry zachová predchádzajúci dokument a uloží novú verziu (-v2). Archivácia, obnovenie zálohy a zamietnuté vystavenie už neprepíšu iný dokument a prerušenie počas ukladania nezanechá neúplné PDF. Dokumenty, ktoré chyba prepísala už predtým, táto zmena nevráti.</li>
+    <li><strong>Archivované faktúry sú teraz v zálohe</strong> — faktúry, ktoré ste po odoslaní účtovníkovi archivovali, doteraz neboli súčasťou zálohy. Pri výmene telefónu alebo opätovnej inštalácii sa ich súbory PDF stratili, hoci faktúry zostali v zozname. Teraz sú v zálohe a pri obnove sa vrátia do archívu.</li>
+    <li><strong>Spoľahlivejšie označenie pre účtovníka</strong> — ak odoslanie zrušíte, faktúra zostane neodoslaná; predtým dostala označenie, akoby bola odoslaná, a ticho vypadla z ďalších dávok. Nesprávne označenie teraz môžete odstrániť (vyberte faktúry → ponuka → „Označiť ako neodovzdané“). Archivácia je samostatná akcia. Aplikácia už netvrdí doručenie.</li>
+    <li><strong>Mesačný limit čítania pomocou AI</strong> — limit začína každý mesiac odznova (Free 5, Plus 50, Pro bez obmedzenia). Predtým mohol zostať trvalo vyčerpaný, aj u predplatiteľov Plus.</li>
+    <li><strong>DPH pri faktúre súkromnej osobe</strong> — opravená chyba, kvôli ktorej druhá faktúra súkromnej osobe v rade dostala DPH pripočítané k zadanej sume.</li>
+    <li><strong>Zámok aplikácie v Androide</strong> — opravená chyba, kvôli ktorej výzva na odomknutie v Androide nefungovala. Ak overenie zlyhá, obsah zostane skrytý.</li>
+    <li><strong>Vyšší balík zostane</strong> — kúpa nižšieho balíka už nezníži vyšší balík, ktorý už máte, napríklad trvalý balík Pro skoršieho predplatiteľa.</li>
+    <li><strong>Opakované faktúry bez duplicít</strong> — ak po vystavení opakovanej faktúry nemožno posunúť dátum ďalšej, aplikácia povie, že faktúra bola vystavená, a za rovnaké obdobie ju nevystaví dvakrát.</li>
+    <li><strong>PDF s viacerými písmami</strong> — znak, ktorý základné písmo nemá, teraz vykreslí iné písmo. Pri japonskom vystaviteľovi je na anglickej faktúre teraz vykreslená doložka o nevyrubenej dani; dokument s japonským písmom už nestráca písmená č, š a ž; thajské popisky na thajských dokumentoch boli predtým prázdne štvorčeky, teraz sa vykresľujú (bez tučného písma). Bežný slovinský dokument zostáva rovnaký.</li>
+    <li><strong>Jazyk aplikácie v časti Firma</strong> — pole „Jazyk aplikácie“ teraz ukazuje jazyk, v ktorom aplikácia skutočne beží, aj keď ste žiadny výslovne nevybrali; predtým mohlo ukazovať angličtinu, hoci aplikácia bežala v inom jazyku.</li>
+    <li><strong>Právne informácie pre Singapur a Nový Zéland</strong> — dve položky v zozname povinných údajov na faktúre namiesto textu ukazovali interné označenie; teraz sú vypísané v jazyku aplikácie.</li>
+    <li><strong>Faktúra nesie dátum a číslo okamihu vystavenia</strong> — formulár novej faktúry zostáva otvorený, kým aplikáciu nezavriete, takže faktúra vystavená o deň či viac neskôr mohla niesť dátum a číslo z okamihu, keď ste formulár otvorili, kým v databáze bol dnešný dátum (medzera v rade). Teraz PDF, záznam aj počítadlo dostanú ten istý okamih vystavenia: formulár dátum a navrhnuté číslo obnoví pri zobrazení a pri návrate do aplikácie a tesne pred vystavením číslo ešte raz overí. Ak sa zmenilo (nové obdobie alebo ho medzitým využil iný spôsob vystavenia), číslo nahradí, zobrazí upozornenie a faktúru vystavíte znova. Číslo, ktoré ste zadali sami, formulár nemení.</li>
+    <li><strong>Vystaviteľ bez DPH neúčtuje DPH</strong> — položky, ponuky, premeny ponuky na faktúru a opakované faktúry mohli pri vystaviteľovi, ktorý nie je platiteľom DPH, dostať predvolenú sadzbu DPH popri doložke „DPH sa neúčtuje“. Teraz platí sadzba 0 a výber sadzby sa neponúka. Úprava už vystavenej faktúry ponechá daňové zaobchádzanie, s ktorým bola vystavená.</li>
+    <li><strong>Neznámy zákazník, úpravy a limit zákazníkov</strong> — pri faktúre neznámemu zákazníkovi PDF teraz vytlačí zadané meno s označením v jazyku dokumentu (predtým vstavané slovinské označenie bez mena). Úprava faktúry ponechá zákazníka: nájde ho podľa zákazníka, mena alebo označenia v ktoromkoľvek jazyku aplikácie, inak zostane zákazník tak, ako je zapísaný na faktúre. Limit 5 zákazníkov v balíku Free platí aj pre „Nový zákazník“ vo formulári faktúry.</li>
+    <li><strong>Krajina pri prvom spustení nastaví aj menu</strong> — krajina, ktorú zvolíte pri prvom spustení, teraz nastaví aj menu a predvolenú sadzbu DPH. Predtým vystavovali faktúry v eurách aj vystavitelia z Poľska, Česka, USA, Spojeného kráľovstva, Japonska, Thajska a ďalších krajín mimo eurozóny. Existujúce profily s krajinou mimo eurozóny a eurom ako predvolenou menou sa po aktualizácii opravia (oprava sa zapíše do auditného záznamu); už vystavené faktúry a ponuky si ponechajú svoju menu, aj pri úprave. Ak zvolíte „Moja krajina v zozname nie je“, obrazovka Firma namiesto Slovinska ukáže prázdne povinné pole krajiny.</li>
+    <li><strong>Bulharsko v eurách</strong> — Bulharsko prešlo 1. 1. 2026 na euro: faktúry bulharských vystaviteľov sa teraz vystavujú v EUR (predtým v BGN). Už vystavené faktúry zostávajú bez zmeny.</li>
+    <li><strong>Žiadna náhradná krypto strana</strong> — nový profil už nemá náhradné krypto adresy ani krypto stranu; stará náhradná adresa sa po aktualizácii vymaže a faktúra ju nikdy nevytlačí. Krypto strana sa na faktúre objaví, až keď zadáte vlastnú adresu peňaženky (Firma → Krypto platba) a zapnete „Zobraziť krypto platby“ (Firma → Zobrazenie na faktúre).</li>
+    <li><strong>Obrazovku s balíkmi možno zavrieť</strong> — obrazovka s balíkmi má teraz viditeľný východ (tlačidlo ✕ „Zavrieť“ alebo šípka späť) a po úspešnom nákupe či obnovení sa zavrie sama; predtým na iPhone východ nebol. Popisy balíkov už neslúbujú „PDF v jazyku zákazníka (12 jazykov)“ ani proforma faktúru: PDF je v jazyku krajiny vystaviteľa alebo v angličtine a ponuky sa premieňajú na faktúru.</li>
+    <li><strong>Obnovenie zálohy: upozornenie, dokument a číslovanie</strong> — pred obnovením vás aplikácia upozorní, koľko vystavených faktúr v zariadení záloha neobsahuje (obnovenie ich odstráni); obnovenie potvrdíte tlačidlom „Obnoviť“ alebo zrušíte. Obnovenie už k obnovenej faktúre nepripojí dokument inej faktúry: ak dokument v zálohe chýba, riadok ukáže chýbajúce PDF (predtým mohla faktúra jedného zákazníka ukázať či odoslať dokument iného). Obnovenie staršej zálohy číslovanie nevracia späť, takže zariadenie nevystaví číslo, ktoré už vaši zákazníci majú.</li>
+  </ul>
+
+  <hr>
+  <h2>1.6.2 (september 2026)</h2>
+  <ul>
+    <li><strong>Aktualizovaný platobný systém</strong> — aplikácia teraz používa Google Play Billing Library 8, ktorú Google od 31. augusta 2026 vyžaduje pre všetky aktualizácie.</li>
+    <li><strong>Úvodná obrazovka vo vašom jazyku</strong> — uvítacia obrazovka a názvy záložiek Faktúry / Ponuky boli doteraz vždy v slovinčine.</li>
+    <li><strong>Čitateľnejšie označenia stavu</strong> — označenia STORNO a IMPORTOVANÉ v zozname faktúr majú teraz dostatočný kontrast aj na slnku.</li>
+    <li><strong>Jasnejšie ikony navigácie</strong> — záložky Zákazníci a Môj profil mali takmer rovnaké ikony.</li>
+    <li><strong>Chýbajúce údaje o firme</strong> — namiesto správy, ktorá zmizne, teraz dostanete tlačidlo vedúce priamo do Môj profil.</li>
+    <li><strong>Aplikácia je menšia o 1,7 MB</strong> — rýchlejšie stiahnutie a inštalácia.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.1 (jún 2026)</h2>
+  <ul>
+    <li><strong>Spoľahlivejší nákup predplatného</strong> — opravené nekonečné načítavanie pri nákupe a obnovení (30-sekundový timeout plus pridaný bezpečnostný watchdog a jasná chybová správa).</li>
+    <li><strong>Zálohy s prijatými faktúrami</strong> — záloha teraz obsahuje aj súbory prijatých faktúr (oprava pre iOS po aktualizácii).</li>
+    <li><strong>Lokalizovaný paywall</strong> — paywall (Mesačne / Ročne / OBĽÚBENÉ / popisy balíkov) teraz preložený do všetkých jazykov rozhrania (13 jazykov).</li>
+    <li><strong>Poznámky k verzii vo vašom jazyku</strong> — tlačidlo "Poznámky k verzii" teraz otvorí poznámky v jazyku aplikácie.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.0 (máj 2026)</h2>
+  <p class="updated"><em>Veľké vydanie s freemium modelom a vylepšeniami stability.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Predplatné — 2 nové balíky (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (€3,99/mes alebo €29/rok) — neobmedzené faktúry, bez označenia "Created with Billero", viacjazyčné PDF, ARES/VIES auto-fill, zľavy, opakujúce sa faktúry, auto-záloha, 50 OCR skenov/mes</li>
+    <li><strong>Pro</strong> (€7,99/mes alebo €59/rok) — všetko z Plus + Cenová ponuka, pripomienky, Dashboard, neobmedzené OCR</li>
+    <li><strong>Existujúci predplatitelia</strong> dostanú <strong>Pro lifetime zadarmo</strong> ako kompenzáciu</li>
+    <li><strong>Všetci existujúci používatelia</strong> dostanú <strong>3-mesačnú skúšobnú verziu Plus</strong> pri upgrade</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 Bezpečnosť a stabilita</h3>
+  <ul>
+    <li><strong>Šifrovaná záloha</strong> — zálohy môžu byť chránené heslom AES-256.</li>
+    <li><strong>Opt-in API kľúče v zálohe</strong> — API kľúče tretích strán (napr. Anthropic) NIE SÚ v zálohe predvolene.</li>
+    <li><strong>Hlásenie pádov</strong> — Firebase Crashlytics integrovaný (iba release buildy).</li>
+    <li><strong>Rýchlejšia databáza</strong> — 14 nových indexov pre časté dopyty.</li>
+    <li><strong>Foreign key ochrana</strong> — DB teraz vynucuje referenčnú integritu.</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. Všetky práva vyhradené.</p>
+</body>
+</html>

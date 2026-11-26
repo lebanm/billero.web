@@ -3,273 +3,202 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Billero – Eenvoudig factureren voor zzp'ers</title>
-    <meta name="description" content="Billero is een eenvoudige factuurapp voor zzp'ers, coaches en kleine bedrijven. Maak in seconden professionele PDF-facturen. Werkt in 47 landen — EU btw, GST, verkoopsbelasting.">
-    <meta property="og:title" content="Billero – Eenvoudig factureren voor zzp'ers">
-    <meta property="og:description" content="Maak in seconden professionele facturen. Geen registratie, geen server. Werkt in 47 landen met lokaal nalevingsconforme btw, GST en verkoopsbelasting.">
-    <meta property="og:image" content="https://billero.app/img/icons/billero_512.png">
+    <title>Billero – Facturen vanaf je telefoon voor zzp’ers</title>
+    <meta name="description" content="Facturen en offertes voor zzp’ers en eenpersoonsbedrijven. PDF’s op je telefoon, zonder registratie, met lokale gegevens en betaal-QR-opties.">
+    <meta name="theme-color" content="#050b18">
+    <meta property="og:title" content="Billero – Facturen vanaf je telefoon voor zzp’ers">
+    <meta property="og:description" content="Facturen en offertes voor zzp’ers en eenpersoonsbedrijven. PDF’s op je telefoon, zonder registratie, met lokale gegevens en betaal-QR-opties.">
+    <meta property="og:image" content="https://billero.app/img/web008/og-nl.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://billero.app/nl/">
     <meta property="og:locale" content="nl_NL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Billero – Facturen vanaf je telefoon voor zzp’ers">
+    <meta name="twitter:description" content="Facturen en offertes voor zzp’ers en eenpersoonsbedrijven. PDF’s op je telefoon, zonder registratie, met lokale gegevens en betaal-QR-opties.">
+    <meta name="twitter:image" content="https://billero.app/img/web008/og-nl.jpg">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/landing.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/billero_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/billero_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/icons/billero_192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/img/icons/billero_512.png">
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://billero.app/#organization",
+      "name": "B-DataFit, Matej Leban s.p.",
+      "url": "https://billero.app/",
+      "logo": "https://billero.app/img/icons/billero_512.png"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://billero.app/#app",
+      "name": "Billero",
+      "url": "https://billero.app/nl/",
+      "description": "Facturen en offertes voor zzp’ers en eenpersoonsbedrijven. PDF’s op je telefoon, zonder registratie, met lokale gegevens en betaal-QR-opties.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "iOS, Android",
+      "image": "https://billero.app/img/web008/og-nl.jpg",
+      "downloadUrl": [
+        "https://apps.apple.com/app/billero/id6760204857",
+        "https://play.google.com/store/apps/details?id=com.billero.app"
+      ],
+      "publisher": {
+        "@id": "https://billero.app/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Free",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://billero.app/nl/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hoe maak ik een factuur op mijn telefoon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vul je bedrijfsgegevens in, kies een klant en voeg de dienst en het bedrag toe. Billero maakt een PDF die je via de deelopties van je telefoon verstuurt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Heb ik een account of registratie nodig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nee. Je kunt de basisfuncties gebruiken zonder een gebruikersaccount te maken."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Waar staan mijn gegevens?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facturen, klanten en instellingen staan lokaal op je apparaat. Optionele OCR verstuurt het gekozen document naar een externe aanbieder; het privacybeleid beschrijft diagnostiek en aankopen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoeveel documenten zijn gratis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In versie 1.8.1 omvat Free de eerste 10 facturen en offertes samen, maximaal 5 klanten en 5 OCR-scans per maand. Een offerte omzetten naar een factuur kost geen extra plaats; PDF’s hebben het watermerk Created with Billero."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Verstuurt Billero facturen naar de belastingdienst?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nee. Billero maakt PDF’s en biedt geen fiscale registratie of gestructureerde e-facturatie. Je blijft verantwoordelijk voor de verplichtingen van je bedrijf."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoe werkt een betaal-QR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UPN QR is beschikbaar voor Slovenië en SEPA EPC QR voor ondersteunde Europese overschrijvingen. Je kunt ook een QR naar je eigen betaallink toevoegen; de gekozen aanbieder verwerkt de betaling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan ik meerdere bedrijven beheren?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Pro houdt de gegevens per bedrijf gescheiden en laat je ertussen wisselen. Begin voor één bedrijf met Free of kies Plus voor onbeperkte documenten."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
     <link rel="canonical" href="https://billero.app/nl/">
-    <link rel="alternate" hreflang="sl" href="https://billero.app/">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/">
     <link rel="alternate" hreflang="en" href="https://billero.app/en/">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/">
+    <link rel="alternate" hreflang="es" href="https://billero.app/es/">
     <link rel="alternate" hreflang="nl" href="https://billero.app/nl/">
-    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/billero_16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../img/icons/billero_192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="../img/icons/billero_512.png">
+    <link rel="alternate" hreflang="th" href="https://billero.app/th/">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/">
   </head>
-  <body>
-    <header class="container">
-      <div class="logo">
-        <img src="../img/icons/billero_256.png" alt="Billero logo">
-        <span>Billero</span>
-      </div>
-      <nav>
-        <a href="contact.html">Contact</a>
-        <a href="donate.html">Steun ons</a>
-        <a href="user-guide.html">Handleiding</a>
-        <a href="../release-notes-nl.html">Release notes</a>
-        <a href="privacy-policy.html">Privacy</a>
-      </nav>
-      <div class="lang-links">
-        <a href="../index.html">SL</a>
-        <span>|</span>
-        <a href="../en/index.html">EN</a>
-        <span>|</span>
-        <a href="index.html" class="active">NL</a>
+  <body class="landing">
+    <a class="skip-link" href="#main">Ga naar de inhoud</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/nl/" aria-label="Billero startpagina"><img src="/img/icons/billero_256.png" alt="" width="256" height="256"><span>Billero</span></a>
+        <nav class="primary-nav" id="primary-nav" aria-label="Hoofdnavigatie"><a href="#features">Functies</a><a href="#how">Hoe het werkt</a><a href="#pricing">Prijzen</a><a href="#security">Privacy</a><a href="#faq">FAQ</a></nav>
+        <div class="header-actions"><details class="language-picker"><summary aria-label="Kies taal">NL</summary><div class="language-menu">
+<a href="/sl/" lang="sl" hreflang="sl" data-lang="sl">Slovenščina</a>
+<a href="/en/" lang="en" hreflang="en" data-lang="en">English</a>
+<a href="/de/" lang="de" hreflang="de" data-lang="de">Deutsch</a>
+<a href="/es/" lang="es" hreflang="es" data-lang="es">Español</a>
+<a href="/nl/" lang="nl" hreflang="nl" data-lang="nl" aria-current="page">Nederlands</a>
+<a href="/th/" lang="th" hreflang="th" data-lang="th">ไทย</a>
+</div></details><a class="button button-small" href="#download">Download</a></div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Navigatie openen"><span></span></button>
       </div>
     </header>
 
+    <main id="main">
     <section class="hero container">
-      <div class="hero-grid">
+      <div class="hero-layout">
         <div class="hero-copy">
-          <div class="hero-note">Eenvoudig factureren en snellere betalingen</div>
-          <h1>Maak snel facturen. Zonder ingewikkelde boekhoudingssoftware.</h1>
-          <p>
-            Billero is een eenvoudige factuurapp ontworpen voor zzp'ers, coaches,
-            instructeurs, consultants en kleine bedrijven die een schoon en
-            praktisch systeem nodig hebben om facturen uit te stellen.
-          </p>
-          <p>
-            Maak in enkele seconden een professionele factuur, stuur deze
-            rechtstreeks naar je klant of accountant, en maak snellere
-            betalingen mogelijk met een QR-code.
-          </p>
-          <br>
-          <a class="button" href="#screenshots">Bekijk de app</a>
-          <div class="store-badges" style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
-            <a href="https://apps.apple.com/si/app/billero/id6760204857" target="_blank" rel="noopener"
-               style="display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;border:1px solid #333;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;"> App Store</a>
-            <a href="https://play.google.com/store/apps/details?id=com.billero.app" target="_blank" rel="noopener"
-               style="display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;border:1px solid #333;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;">▶ Google Play</a>
-          </div>
+          <span class="eyebrow">Maak. Verstuur. Word betaald.</span>
+          <h1>Jouw bedrijf. Jouw factuur. Vanaf je telefoon.</h1>
+          <p class="hero-lead">Voor zzp’ers en eenpersoonsbedrijven: kies een klant, voeg je dienst toe en deel de PDF. Zonder registratie, met gegevens op je telefoon en een betaal-QR voor je land of eigen betaallink.</p>
+          <div class="hero-actions"><a class="button" href="#download">Download Billero gratis</a><a class="button button-secondary" href="#how">Bekijk hoe het werkt</a></div>
+          <div class="store-badges" aria-label="Download de app"><a class="store-link" href="https://apps.apple.com/app/apple-store/id6760204857" target="_blank" rel="noopener"><span class="store-mark" aria-hidden="true">●</span> App Store</a><a class="store-link" href="https://play.google.com/store/apps/details?id=com.billero.app" target="_blank" rel="noopener"><span class="store-mark" aria-hidden="true">▶</span> Google Play</a></div>
+          <p class="hero-microcopy">Gratis pakket · geen gebruikersaccount nodig</p>
         </div>
-        <aside class="hero-panel">
-          <h3>Billero in een notendop</h3>
-          <p>
-            Ontworpen voor gebruikers die professionele facturen nodig hebben
-            zonder complexe setup, onnodige modules of volledige boekhoudsuites.
-          </p>
-          <ul>
-            <li>snelle factuuraanmaak</li>
-            <li>automatische btw-berekening</li>
-            <li>PDF-facturen en QR-betalingen</li>
-            <li>rechtstreeks delen met klanten of accountants</li>
-          </ul>
-        </aside>
+        <div class="hero-visual" aria-label="Factuur maken in Billero"><div class="hero-glow" aria-hidden="true"></div><div class="phone-stage"><img src="/img/screenshots/nov_racun_ddv.png" alt="Een nieuwe factuur maken in Billero" width="1242" height="2688" fetchpriority="high" decoding="async"></div><span class="floating-pill floating-pill-top">UPN &amp; SEPA QR</span><span class="floating-pill floating-pill-bottom">PDF klaar om te versturen</span></div>
       </div>
+      <ul class="trust-strip" aria-label="Belangrijkste voordelen"><li>Geen registratie</li><li>Facturen en klanten blijven op je apparaat</li><li>UPN en SEPA QR</li><li>53 landen in de catalogus. 12 interfacetalen.</li></ul>
     </section>
 
-    <section class="container features">
-      <div class="feature">
-        <h3>Facturen in seconden maken</h3>
-        <p>
-          Voer de klant, service en bedrag in. Billero bereidt een professionele
-          factuur voor zonder lange formulieren en onnodige administratie.
-        </p>
-      </div>
-      <div class="feature">
-        <h3>Automatische btw en QR-betaling</h3>
-        <p>
-          De app berekent btw automatisch en bereidt een QR-code voor
-          snellere bankoverschrijvingen.
-        </p>
-      </div>
-      <div class="feature">
-        <h3>Ontworpen voor zelfstandige professionals</h3>
-        <p>
-          Billero is gemaakt voor mensen die een praktisch facturaatwerk nodig hebben
-          en een eenvoudige workflow met hun accountant.
-        </p>
-      </div>
-    </section>
+    <section class="container landing-section" id="how"><div class="section-heading"><span class="section-kicker">Hoe het werkt</span><h2>Van gegevens naar betaling in drie duidelijke stappen.</h2><p class="section-intro">Geen lange onboarding en geen modules die je niet nodig hebt voor je dagelijkse facturatie.</p></div><div class="steps-grid"><article class="step-card"><span class="step-number">01</span><h3>Maak de factuur</h3><p>Kies de klant, voeg de dienst en het bedrag toe. Billero maakt een overzichtelijke PDF-factuur.</p></article><article class="step-card"><span class="step-number">02</span><h3>Verstuur de PDF</h3><p>Deel het document met je klant of stuur het rechtstreeks naar je accountant.</p></article><article class="step-card"><span class="step-number">03</span><h3>Ontvang betaling</h3><p>Je klant scant de UPN- of SEPA-QR en de overschrijvingsgegevens staan klaar.</p></article></div></section>
 
-    <section class="container section-block">
-      <h2>Voor wie is Billero geschikt</h2>
-      <p>
-        Billero is geschikt voor yogaleraren, zwemtrainers, personal trainers,
-        zzp'ers, consultants, therapeuten en eigenaren van kleine bedrijven.
-      </p>
-      <div class="features">
-        <div class="feature">
-          <h3>Maak de factuur</h3>
-          <p>Voer in een paar stappen de klant, servicedetails en bedrag in.</p>
-        </div>
-        <div class="feature">
-          <h3>Stuur het document</h3>
-          <p>Deel de factuur rechtstreeks met je klant of accountant.</p>
-        </div>
-        <div class="feature">
-          <h3>Ontvang betaling</h3>
-          <p>Je klant kan sneller betalen met behulp van de QR-code.</p>
-        </div>
-      </div>
-    </section>
+    <section class="container landing-section showcase-section" id="screenshots"><div class="section-heading"><span class="section-kicker">Billero in de praktijk</span><h2>Alles voor je volgende factuur.</h2><p class="section-intro">Echte app-schermen, van bedrijfsgegevens tot een document dat klaar is om te versturen.</p></div><div class="screenshot-rail" aria-label="Schermafbeeldingen van Billero"><figure><img src="/img/screenshots/moji_podatki.png" alt="Bedrijfsgegevens in Billero" width="1242" height="2688" loading="lazy" decoding="async"><figcaption>Bedrijfsgegevens</figcaption></figure><figure><img src="/img/screenshots/nov_racun_ddv.png" alt="Een nieuwe factuur maken in Billero" width="1242" height="2688" loading="lazy" decoding="async"><figcaption>Nieuwe factuur</figcaption></figure><figure><img src="/img/screenshots/dodaj_stranko.png" alt="Een klant toevoegen in Billero" width="1242" height="2688" loading="lazy" decoding="async"><figcaption>Klant toevoegen</figcaption></figure><figure><img src="/img/screenshots/qr.png" alt="QR-code voor betaling in Billero" width="1242" height="2688" loading="lazy" decoding="async"><figcaption>QR-betaling</figcaption></figure><figure><img src="/img/screenshots/racuni_racunovodji.png" alt="Factuuroverzicht in Billero" width="1242" height="2688" loading="lazy" decoding="async"><figcaption>Factuuroverzicht</figcaption></figure></div></section>
 
-    <section class="container" id="screenshots">
-      <h2>Billero in praktijk</h2>
-      <p>
-        Echte app-schermen met bedrijfsgegevens, factuuraanmaak, klantinvoer,
-        QR-betaling en factuuroverzicht.
-      </p>
-      <div class="screenshots">
-        <img src="../img/screenshots/moji_podatki.png" alt="Billero – bedrijfsgegevens" loading="lazy" decoding="async">
-        <img src="../img/screenshots/nov_racun_ddv.png" alt="Billero – nieuwe factuuraanmaak" loading="lazy" decoding="async">
-        <img src="../img/screenshots/dodaj_stranko.png" alt="Billero – klant toevoegen" loading="lazy" decoding="async">
-        <img src="../img/screenshots/qr.png" alt="Billero – QR-betaling" loading="lazy" decoding="async">
-        <img src="../img/screenshots/racuni_racunovodji.png" alt="Billero – factuuroverzicht" loading="lazy" decoding="async">
-      </div>
-    </section>
+    <section class="container landing-section" id="features"><div class="section-heading centered"><span class="section-kicker">Functies</span><h2>Minder administratie. Meer gedaan.</h2><p class="section-intro">Billero is gemaakt voor zzp'ers en kleine ondernemers die snel en professioneel willen factureren.</p></div><div class="feature-grid">
+      <article class="feature-card"><span class="feature-index">01</span><h3>Snel facturen maken</h3><p>Voer klant, regels en bedrag in zonder lange formulieren.</p></article><article class="feature-card"><span class="feature-index">02</span><h3>Btw-berekening</h3><p>De belasting wordt berekend op basis van het gekozen tarief en je factuurinstellingen.</p></article><article class="feature-card"><span class="feature-index">03</span><h3>UPN en SEPA QR</h3><p>UPN QR voor Slovenië en SEPA EPC GiroCode voor ondersteunde Europese overschrijvingen.</p></article><article class="feature-card"><span class="feature-index">04</span><h3>Meertalige PDF's</h3><p>Met Plus en Pro kies je uit de documenttalen van het land van de afzender en Engels.</p></article><article class="feature-card"><span class="feature-index">05</span><h3>Klantenbeheer</h3><p>Bewaar klantgegevens lokaal en gebruik ze opnieuw bij de volgende factuur.</p></article><article class="feature-card"><span class="feature-index">06</span><h3>Delen met je accountant</h3><p>Deel uitgegeven en ontvangen documenten met je accountant.</p></article><article class="feature-card payment-card"><div><span class="feature-index">EXTRA</span><h3>QR-link naar de betaalmethode</h3><p>Voeg aan de PDF een QR-link toe. Je klant scant hem en gaat verder bij de betaalprovider.</p></div><div class="payment-brands" aria-label="Ondersteunde betaallinks"><span>Stripe</span><span>PayPal</span><span>Revolut</span><span>Wise</span></div></article>
+    </div></section>
 
-    <section class="container section-block">
-      <h2>Werkt in 47 landen</h2>
-      <p>Lokaal nalevingsconforme belastingtarieven en factuurregels voor elk ondersteund land — EU btw, GST, verkoopsbelasting. Billero past zich automatisch aan.</p>
-      <div class="map-wrap">
-        <div id="world-map"></div>
-        <div id="flag-overlay" aria-hidden="true"></div>
-      </div>
-      <p class="country-more">Gemarkeerd = ondersteund. Beweeg de muis voor details. Regelmatig worden nieuwe landen toegevoegd.</p>
-    </section>
+    <section class="container landing-section" id="pricing"><div class="section-heading centered"><span class="section-kicker">Prijzen</span><h2>Begin gratis. Upgrade wanneer je meer nodig hebt.</h2><p class="section-intro">Drie duidelijke pakketten. Je beheert je abonnement in je appstore.</p></div><div class="pricing-grid">
+      <article class="pricing-card"><h3>Free</h3><div class="plan-price">Gratis</div><p class="plan-note">Bekijk de prijs en betaalperiode in je appstore.</p><ul class="check-list"><li>De eerste 10 documenten samen: facturen en offertes</li><li>Offertes omzetten naar facturen</li><li>Maximaal 5 klanten</li><li>5 OCR-scans per maand</li><li>“Created with Billero” op PDF&#x27;s</li></ul><a class="button button-secondary" href="#download">Probeer gratis</a></article>
+      <article class="pricing-card recommended"><span class="plan-badge">Aanbevolen</span><h3>Plus</h3><div class="plan-price">Abonnement</div><p class="plan-note">Bekijk de prijs en betaalperiode in je appstore.</p><ul class="check-list"><li>Onbeperkt facturen, offertes en klanten</li><li>Geen watermerk op PDF’s</li><li>PDF-taal volgens het land van de afzender, plus Engels</li><li>Terugkerende facturen</li><li>50 OCR-scans per maand</li><li>Wekelijkse automatische back-up met wachtwoord</li></ul><a class="button" href="#download">Kies Plus</a></article>
+      <article class="pricing-card"><h3>Pro</h3><div class="plan-price">Abonnement</div><p class="plan-note">Bekijk de prijs en betaalperiode in je appstore.</p><ul class="check-list"><li>Alles van Plus</li><li>Gescheiden bedrijfsgegevens en overzicht van alle bedrijven</li><li>Onbeperkt OCR-scans</li></ul><a class="button button-secondary" href="#download">Kies Pro</a></article>
+    </div><p class="pricing-disclaimer">De uiteindelijke prijs en valuta worden in de App Store of Google Play getoond en kunnen per regio verschillen.</p></section>
 
-    <section class="container section-block">
-      <h2>App Store-beschrijving</h2>
-      <div class="feature">
-        <p>
-          Billero is een eenvoudige factuurapp ontworpen voor zzp'ers, coaches,
-          instructeurs en consultants die snel facturen willen maken en
-          betaald willen worden zonder ingewikkelde boekhoudingssoftware.
-        </p>
-        <p>
-          Maak in seconden professionele facturen en stuur deze rechtstreeks naar
-          je klant of accountant.
-        </p>
-        <ul>
-          <li>Facturen in seconden maken</li>
-          <li>Automatische btw-berekening</li>
-          <li>QR-betaling voor snelle bankoverschrijvingen</li>
-          <li>Eenvoudig klantenbeheer</li>
-          <li>Professionele PDF-facturen</li>
-          <li>Facturen rechtstreeks naar je accountant sturen</li>
-          <li>Ontworpen voor zelfstandigen en kleine bedrijven</li>
-        </ul>
-      </div>
-    </section>
+    <section class="container landing-section" id="security"><div class="security-panel"><div><span class="section-kicker">Privacy by design</span><h2>Je facturen zijn niet ons verdienmodel.</h2><p>Facturen, klanten, afbeeldingen en instellingen staan in een lokale database op je apparaat. Billero gebruikt geen advertentie-SDK's. OCR en crashdiagnostiek gebruiken externe diensten die in het privacybeleid staan beschreven. De App Store en Google Play verwerken abonnementen.</p><a class="text-link" href="/nl/privacy-policy">Lees het privacybeleid →</a></div><ul class="privacy-points"><li><strong>Geen gebruikersaccount</strong>Begin zonder registratie.</li><li><strong>Lokale SQLite-database</strong>Je bedrijfsdocumenten blijven onder jouw controle.</li><li><strong>Back-ups met wachtwoord</strong>Vanaf versie 1.8.0 worden de gegevens in automatische back-ups versleuteld met AES-256. Bij het inschakelen stel je een wachtwoord in. Billero bewaart dit in de beveiligde opslag van je apparaat. De app maakt bij het openen maximaal één back-up per week. Handmatige exports worden versleuteld als je een wachtwoord instelt. Exports vanaf het abonnementenscherm zijn onversleuteld.</li><li><strong>Biometrische vergrendeling</strong>Beveilig de app extra met de bescherming van je apparaat.</li></ul></div></section>
 
-    <footer class="container">
-      <p>© 2026 Billero</p>
-      <div>
-        <a href="privacy-policy.html">Privacybeleid</a>
-        &nbsp; | &nbsp;
-        <a href="terms-of-use.html">Gebruiksvoorwaarden</a>
-        &nbsp; | &nbsp;
-        <a href="user-guide.html">Handleiding</a>
-        &nbsp; | &nbsp;
-        <a href="../release-notes-nl.html">Release notes</a>
-        &nbsp; | &nbsp;
-        <a href="contact.html">Contact</a>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
-    <script>
-    (function () {
-      var countries = {
-        SI:['Slovenië','Btw 22%'], AT:['Oostenrijk','MwSt 20%'], BE:['België','Btw 21%'],
-        BA:['Bosnië & Herz.','PDV 17%'], CY:['Cyprus','Btw 19%'], CZ:['Tsjechië','DPH 21%'],
-        DK:['Denemarken','MOMS 25%'], EE:['Estland','KM 22%'], FI:['Finland','ALV 25,5%'],
-        DE:['Duitsland','MwSt 19%'], GR:['Griekenland','ΦΠΑ 24%'], HR:['Kroatië','PDV 25%'],
-        HU:['Hongarije','ÁFA 27%'], IE:['Ierland','Btw 23%'], LV:['Letland','PVN 21%'],
-        LT:['Litouwen','PVM 21%'], LU:['Luxemburg','TVA 17%'], MT:['Malta','Btw 18%'],
-        NL:['Nederland','Btw 21%'], NO:['Noorwegen','MVA 25%'], PL:['Polen','Btw 23%'],
-        PT:['Portugal','IVA 23%'], RO:['Roemenië','TVA 19%'], RS:['Servië','PDV 20%'],
-        SK:['Slowakije','DPH 23%'], ES:['Spanje','IVA 21%'], SE:['Zweden','MOMS 25%'],
-        GB:['Verenigd Koninkrijk','Btw 20%'], US:['Verenigde Staten','Verkoopsbelasting'], CA:['Canada','GST 5%'],
-        AU:['Australië','GST 10%'], SG:['Singapore','GST 9%'], TH:['Thailand','Btw 7%'],
-        MX:['Mexico','IVA 16%'], CL:['Chili','IVA 19%'], CO:['Colombia','IVA 19%'],
-        PE:['Peru','IGV 18%'], ID:['Indonesië','PPN 11%'], PH:['Filipijnen','VAT 12%'],
-        VN:['Vietnam','VAT 10%'], IL:['Israël','VAT 17%'], AE:['VAE','VAT 5%'],
-        HK:['Hongkong','Geen Btw'], NZ:['Nieuw-Zeeland','GST 15%'], ZA:['Zuid-Afrika','VAT 15%'],
-        KE:['Kenia','VAT 16%'], GH:['Ghana','VAT 15%']
-      };
+    <section class="container landing-section" id="markets"><div class="section-heading"><h2>53 landen in de catalogus. 12 interfacetalen.</h2><p class="section-intro">Het land van je bedrijf bepaalt de valuta, belastingvelden en documentopmaak. Ook de Verenigde Staten, Canada en Mexico staan in de catalogus; de beschikbare opties verschillen per land.</p></div><p class="compliance-note">Billero maakt PDF-documenten. Het verstuurt geen facturen naar belastingdiensten en biedt geen fiscale registratie of gestructureerde e-facturatie. Een Mexicaans document is geen CFDI en heeft geen fiscale geldigheid.</p></section>
 
-      new jsVectorMap({
-        selector: '#world-map',
-        map: 'world',
-        backgroundColor: 'transparent',
-        zoomOnScroll: false,
-        zoomButtons: false,
-        regionStyle: {
-          initial: { fill: '#1f3a4f', stroke: '#254563', strokeWidth: 0.5, strokeOpacity: 1 },
-          hover:   { fill: '#0e7490', cursor: 'pointer' },
-          selected: { fill: '#22d3ee' },
-          selectedHover: { fill: '#06b6d4' }
-        },
-        selectedRegions: Object.keys(countries),
-        onRegionTooltipShow: function (event, tooltip, code) {
-          var c = countries[code];
-          if (c) {
-            tooltip.text(
-              '<span class="fi fi-' + code.toLowerCase() + ' fis" style="width:14px;height:14px;border-radius:2px;display:inline-block;vertical-align:middle;margin-right:6px;"></span>' +
-              c[0] + ' <span style="color:#94a3b8;margin-left:4px;">' + c[1] + '</span>',
-              true
-            );
-          } else {
-            event.preventDefault();
-          }
-        }
-      });
+    <section class="container landing-section" id="faq"><div class="section-heading centered"><span class="section-kicker">Veelgestelde vragen</span><h2>Voor je eerste factuur.</h2></div><div class="faq-list"><details><summary>Hoe maak ik een factuur op mijn telefoon?</summary><p>Vul je bedrijfsgegevens in, kies een klant en voeg de dienst en het bedrag toe. Billero maakt een PDF die je via de deelopties van je telefoon verstuurt.</p></details>
+<details><summary>Heb ik een account of registratie nodig?</summary><p>Nee. Je kunt de basisfuncties gebruiken zonder een gebruikersaccount te maken.</p></details>
+<details><summary>Waar staan mijn gegevens?</summary><p>Facturen, klanten en instellingen staan lokaal op je apparaat. Optionele OCR verstuurt het gekozen document naar een externe aanbieder; het privacybeleid beschrijft diagnostiek en aankopen.</p></details>
+<details><summary>Hoeveel documenten zijn gratis?</summary><p>In versie 1.8.1 omvat Free de eerste 10 facturen en offertes samen, maximaal 5 klanten en 5 OCR-scans per maand. Een offerte omzetten naar een factuur kost geen extra plaats; PDF’s hebben het watermerk Created with Billero.</p></details>
+<details><summary>Verstuurt Billero facturen naar de belastingdienst?</summary><p>Nee. Billero maakt PDF’s en biedt geen fiscale registratie of gestructureerde e-facturatie. Je blijft verantwoordelijk voor de verplichtingen van je bedrijf.</p></details>
+<details><summary>Hoe werkt een betaal-QR?</summary><p>UPN QR is beschikbaar voor Slovenië en SEPA EPC QR voor ondersteunde Europese overschrijvingen. Je kunt ook een QR naar je eigen betaallink toevoegen; de gekozen aanbieder verwerkt de betaling.</p></details>
+<details><summary>Kan ik meerdere bedrijven beheren?</summary><p>Ja. Pro houdt de gegevens per bedrijf gescheiden en laat je ertussen wisselen. Begin voor één bedrijf met Free of kies Plus voor onbeperkte documenten.</p></details></div></section>
 
-      requestAnimationFrame(function placeFlags() {
-        var svg = document.querySelector('#world-map svg');
-        if (!svg) { requestAnimationFrame(placeFlags); return; }
-        var vb = svg.viewBox.baseVal;
-        if (!vb || vb.width === 0) { requestAnimationFrame(placeFlags); return; }
-        var overlay = document.getElementById('flag-overlay');
-        Object.keys(countries).forEach(function (code) {
-          var path = svg.querySelector('[data-code="' + code + '"]');
-          if (!path) return;
-          try {
-            var bb = path.getBBox();
-            if (bb.width === 0 && bb.height === 0) return;
-            var cx = (bb.x + bb.width / 2) / vb.width * 100;
-            var cy = (bb.y + bb.height / 2) / vb.height * 100;
-            var el = document.createElement('span');
-            el.className = 'fi fi-' + code.toLowerCase() + ' country-map-flag';
-            el.style.left = cx + '%';
-            el.style.top = cy + '%';
-            el.title = countries[code][0];
-            overlay.appendChild(el);
-          } catch (e) {}
-        });
-      });
-    })();
-    </script>
+    <section class="container landing-section" id="download"><div class="download-panel"><h2>Minder tijd aan administratie. Meer tijd voor je werk.</h2><p>Maak je eerste factuur in een paar minuten.</p><div class="store-badges" aria-label="Download de app"><a class="store-link" href="https://apps.apple.com/app/apple-store/id6760204857" target="_blank" rel="noopener"><span class="store-mark" aria-hidden="true">●</span> App Store</a><a class="store-link" href="https://play.google.com/store/apps/details?id=com.billero.app" target="_blank" rel="noopener"><span class="store-mark" aria-hidden="true">▶</span> Google Play</a></div></div></section>
+
+    </main>
+    <footer class="container site-footer"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="/nl/"><img src="/img/icons/billero_256.png" alt="" width="256" height="256"><span>Billero</span></a><p>Eenvoudig factureren voor zzp'ers en kleine ondernemers.</p></div><nav class="footer-links" aria-label="Links in de voettekst"><a href="/nl/user-guide">Handleiding</a><a href="/nl/release-notes">Wat is nieuw</a><a href="/nl/contact">Contact</a><a href="/nl/privacy-policy">Privacybeleid</a><a href="/nl/terms-of-use">Gebruiksvoorwaarden</a><a href="/nl/donate">Steun ons</a></nav></div><div class="footer-meta"><span>© 2026 Billero</span><span>B-DataFit, Matej Leban s.p., Slovenië</span></div></footer>
+    <script src="/js/landing.js" defer></script>
   </body>
 </html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Release notes – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+  </style>
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+    <link rel="canonical" href="https://billero.app/en/release-notes">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes">
+    <link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes">
+    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes">
+    <link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes">
+    <link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes">
+    <link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes">
+    <link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes">
+    <link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes">
+    <link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes">
+    <link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes">
+  </head>
+<body>
+<nav class="locale-nav" aria-label="Choose language">
+<a href="/sl/release-notes" lang="sl" hreflang="sl" data-lang="sl">SL</a>
+<a href="/en/release-notes" lang="en" hreflang="en" data-lang="en" aria-current="page">EN</a>
+<a href="/de/release-notes" lang="de" hreflang="de" data-lang="de">DE</a>
+<a href="/es/release-notes" lang="es" hreflang="es" data-lang="es">ES</a>
+<a href="/nl/release-notes" lang="nl" hreflang="nl" data-lang="nl">NL</a>
+<a href="/th/release-notes" lang="th" hreflang="th" data-lang="th">TH</a>
+<a href="/cs/release-notes" lang="cs" hreflang="cs" data-lang="cs">CS</a>
+<a href="/hr/release-notes" lang="hr" hreflang="hr" data-lang="hr">HR</a>
+<a href="/ja/release-notes" lang="ja" hreflang="ja" data-lang="ja">JA</a>
+<a href="/pl/release-notes" lang="pl" hreflang="pl" data-lang="pl">PL</a>
+<a href="/pt/release-notes" lang="pt" hreflang="pt" data-lang="pt">PT</a>
+<a href="/sk/release-notes" lang="sk" hreflang="sk" data-lang="sk">SK</a>
+</nav>
+  <h1>Billero – Release notes</h1>
+  <p class="updated">Last updated: June 2026</p>
+
+  <p>Summary of new features and fixes by version.</p>
+
+  <hr>
+
+  <h2>Version 1.8.0 (November 2026)</h2>
+  <p class="updated"><em>Several companies in one app, an encrypted automatic backup and a fix for documents of older invoices after an update.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 New</h3>
+  <ul>
+    <li><strong>Several companies in one app (Pro plan)</strong> — under Business → Companies you add a new company (name and country; currency and VAT follow the country); you switch between companies with the chip on the Overview or in the Companies list. Each company has its own invoices, customers, quotes, numbering, documents and profile; on the Overview and in the new invoice form a chip shows which company you are issuing as. The overview of all companies shows open and overdue amounts per currency (no conversion), a card for each company and one list of open invoices by due date. The plan, the app lock and the free limit apply to the device: the first 10 invoices are counted together for all companies. Without the Pro plan only one company can issue new invoices; the others stay available for viewing, sharing, export and cancellation. With several companies the automatic backup includes all of them; on restore the app shows which company goes where. A backup of another company replaces the data of the selected company only after you confirm “Replace everything” in the window that shows both company names; the selected company stays the same company, so later backups belong to it too. A backup that belongs to another company on this device cannot be restored into the selected company: the app offers “Restore into …” the company it belongs to. If restoring a company was interrupted and could not be finished, the company is marked “Interrupted restore not resolved” in the Companies list: until this is sorted out, its data cannot be changed, while the other companies keep working. You can choose “Try again” or “Restore from backup”; if no company can be used, this screen appears at startup, before the Overview. No data is lost: if this restore is interrupted too, the app returns it at the next start to the state before it (database and documents), so you choose the backup and password again; a restore that was already confirmed is finished. Nothing moves for existing users: your current data stays the first company.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Improvements</h3>
+  <ul>
+    <li><strong>The automatic backup is encrypted</strong> — the automatic backup is now encrypted with the password you set when you switch it on under Business → Backup; without a password no backup is created. If you already used the automatic backup, the app asks you once a day to set a password and says under the switch that the backup is waiting for one. The password is stored only on this phone, not in the backup; after confirming with your phone lock you can show or change it (older backups still need the old password). For a manual export or a restore you can choose “Use the automatic backup password”. The export on the plans screen before a purchase stays without a password.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Fixes</h3>
+  <ul>
+    <li><strong>Documents of older invoices that would not open after an update</strong> — on iPhone and iPad the system can change the internal file path during an update, so the app looks the document up by file name. If two older invoices carried a document with the same name (for example the numbers 2026/001 and 2026-001), neither would open — each looked like the other one’s document — and the app said “PDF file no longer exists”, even though the document was on the device. Documents that older versions kept in a different folder were not looked for at all. Sending to the accountant, sending invoices to a customer in Customers and archiving did not look for the document: sending reported “Error: PDF files do not exist” or did not attach the document, and archiving reported “The invoices were archived” but did not move the document. Now the app also looks in the folder of older versions, and sending and archiving look for the document the same way. When a document that is found may belong to more than one invoice, it goes to the invoice whose number is on the document, no matter which invoice you open first; if the invoices had the same number (for example before one of them got the suffix -1), it goes to the one whose customer is on the document. If the document does not tell (for example with the same number and the same customer, or with an imported invoice), the app assigns it to neither invoice. An invoice that so far opened another invoice’s document after an update no longer opens it on iPhone and iPad once the system changes the internal path again. In the invoice list, an invoice without a document still shows “PDF file no longer exists”.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Version 1.7.1 (October 2026)</h2>
+  <p class="updated"><em>Fixes after 1.7.0: clearer messages when AI reading is unavailable, quotes in the document language, Thai and Austrian labels on documents, a more reliable backup restore and invoice numbers that are unique in the database too (duplicate numbers are renumbered by the app itself).</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Improvements</h3>
+  <ul>
+    <li><strong>Clear message when AI reading is unavailable</strong> — instead of the generic “could not read the invoice”, the app now says what is going on: AI reading is currently unavailable (the key built into the app was rejected or has expired, or the provider no longer offers the model this version uses; updating the app may restore it), your own API key was rejected (check it under Business → AI Keys), there are too many requests or a usage limit has been reached (try again later), or the file is too large for AI reading. The form stays open and you can always enter the data by hand.</li>
+    <li><strong>Quote in the document language, Thai and Austrian labels</strong> — a quote, and an invoice you create from a quote, are now in the document language by the same rule as the invoices the app issues by itself (recurring invoices): if the app language is one of the document languages of the issuer’s country (the country’s own language or English), the document is in the app language; otherwise it is in the country’s document language, which is English where the app has no local document language for the country. A Slovenian issuer with the app in German therefore gets a Slovenian quote, with the app in English an English one, and an issuer from the USA with the app in Slovenian gets an English one. For a Thai issuer, quotes, invoices created from a quote and recurring invoices carry Thai labels; with the app in English the labels are English, some of them (for example the title, the recipient and the date of issue) with a Thai line above them. On German-language documents of an Austrian issuer (invoices, recurring invoices, quotes) the VAT ID and the registration number are labelled “UID-Nr.” and “FN”: these two labels follow the issuer’s country, not the app language; an issuer from Germany keeps “USt-IdNr.” and “HR-Nr.”. On an invoice from the invoice form, the line with the date or period of service (“Date of service”) is now in the document language too; before, it was in the app language. The title (“Quote no.”) and the validity label (“Valid until:”) are translated into all 13 languages; before, they were always in Slovenian. You cannot choose the language of an individual quote; in the invoice form the language starts as the country’s own language and you can switch it for a single invoice. After you set or change your business country, the invoice form uses that country’s document language straight away; before, only after you restarted the app. A quote you have already sent is built again in the document language the next time you share it; the subject and text of the e-mail stay in the app language. Invoice PDFs you have already issued are not changed; when you edit an unpaid invoice, the app builds a new PDF that follows these rules.</li>
+    <li><strong>Restore does not replace your keys without your choice</strong> — keys for AI reading and CoinGate that the device already has are not overwritten by a restore. If the backup holds a different key, the app asks before restoring (“Keys in the backup”) whether to keep this device’s keys or use the keys from the backup. A device without a key gets the one from the backup; a backup without keys does not delete the device’s keys. The plan and the app lock stay with the device, as before (the exception is the permanent Pro plan of early subscribers).</li>
+    <li><strong>A restore stopped by the system</strong> — if the system stops the app during a restore, the next start puts the data back into the state before the restore (or completes a restore the database had already committed), so the database and the documents always belong to the same state. If the restore was undone, the Business screen tells you to repeat it. A backup whose data has the wrong shape is rejected before anything is changed.</li>
+    <li><strong>Backup status on the Business screen</strong> — under the automatic-backup switch the app tells a backup that was only prepared from one that you handed over (shared or saved). It shows whether the last backup is protected with your password or not encrypted, whether it was incomplete (a document file was missing), whether the last attempt failed and whether a prepared backup was not handed over.</li>
+    <li><strong>Clear about encryption and the automatic backup</strong> — the automatic backup and the export offered on the plans screen before a purchase are not encrypted; export a backup with a password under Business → Backup. The automatic backup is prepared when you open the app (at most once a week) and offered for sharing; it does not run in the background. It is available from the Plus plan up: on the Free plan it is not prepared even if the switch is on.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Fixes</h3>
+  <ul>
+    <li><strong>Invoice numbers are unique in the database, and duplicates are renumbered</strong> — besides the check in the app, the database itself now protects the invoice number: it does not accept a second invoice with the same number. If your records contained several invoices with the same number (from older versions or from a restored backup), the app renumbers them: one keeps its number and the others get the suffix -1, -2 and so on. Only the number changes, and every change is written to the audit log. This happens at the first start after the update and after a restore of a backup that contains such invoices; if renumbering fails, nothing is changed and the app tries again at the next start. A dialog shows you which invoices got a new number (button “Got it”). The PDF documents already issued for these invoices still show the previous number: where it matters, send the customer a corrected document or tell them the new number. The list of renumbered invoices stays available under Documents → Issued invoices → “More options” → “Check invoice numbers” (section “Renumbered invoices”). If you had no invoices with the same number, you will notice no change.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Version 1.7.0 (October 2026)</h2>
+  <p class="updated"><em>Major update: new navigation, more reliable invoicing and backup, and access to your invoices even after the free invoices are used up.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 New</h3>
+  <ul>
+    <li><strong>New navigation</strong> — four sections: Overview, Documents, Customers and Business. You start on a short overview with a “New invoice” button instead of the form; issued and received invoices, quotes and recurring invoices are under Documents. The former “My profile” is now Business.</li>
+    <li><strong>Invoicing in three steps</strong> — a new invoice now takes three steps: the customer first, then the items, and finally a review with the issue button. The chosen recipient stays visible while you type, and missing data is reported in its own step instead of at the end. Going back keeps what you entered. Editing an issued invoice stays on one screen.</li>
+    <li><strong>Confirmation after issuing, sharing kept separate</strong> — after issuing you now see an "Invoice issued" screen with the number, recipient and amount. Sharing the PDF is a separate action: cancelling it leaves the invoice issued and you can share it again. The invoice is saved permanently before anything is shared, and a double tap cannot create two invoices.</li>
+    <li><strong>Access to invoices after the free limit</strong> — on the Free plan, the first 10 issued invoices in total are free, not 10 per year; cancelled and imported invoices do not count. When you use them up or your trial period ends, the app stays accessible: you can still open, share, export and cancel existing invoices, but you can no longer edit them. To edit them or to issue a new invoice, including from a quote, you choose a subscription.</li>
+    <li><strong>Consent before AI reading of invoices</strong> — before the first AI reading of an invoice, the app asks for your consent. The selected or photographed document is sent in full to the provider Anthropic (USA). Without consent nothing is sent, and you can still enter the data by hand. You can withdraw your consent under Business → AI document reading.</li>
+    <li><strong>Recurring invoices with the real customer</strong> — a recurring invoice now carries the full customer details (name, address, tax number) and is written in the document language of your country. The screen is translated into all app languages. Recurring invoices are issued on Plus or higher; without it, a due invoice waits in the queue. The notice about a due recurring invoice appears when you open the invoice list and when you return to the app.</li>
+    <li><strong>Overdue invoice reminders</strong> — an invoice counts as overdue the day after the payment term printed on it. Paid, cancelled and imported invoices are not counted. Turn notifications on under Business → Settings or on the Recurring invoices screen; the app no longer asks for permission at startup.</li>
+    <li><strong>Business screen in your language</strong> — the screen is fully translated. You can now also choose Spanish, Portuguese and Japanese as the app language.</li>
+    <li><strong>User guide in Dutch</strong> — Dutch users used to get the Croatian guide.</li>
+    <li><strong>Business country at first launch</strong> — on first launch you choose your business country yourself: the app suggests the country from your phone settings where it can, which you confirm with one tap, or you pick another from the list. The country determines the VAT rates, the payment code and the payment due date on your invoices. Before, with a supported phone language the country was silently set to Slovenia. If your country is not listed, you choose it under Business.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Improvements</h3>
+  <ul>
+    <li><strong>A clearer new-invoice form</strong> — under the “Amount includes VAT” switch, a note says whether the tax is already included. With several items, the form says that the unit price excludes tax. If something is missing, the form jumps to the first field with an error. The “Issue invoice” button is easier to read in the light and dark themes.</li>
+    <li><strong>Safer app lock</strong> — the lock is turned on only after you confirm with biometrics or your device PIN. If the device cannot do this check, for example because it has no screen lock, the app tells you. When you turn it on, the app explains the consequences and offers to export a backup.</li>
+    <li><strong>Safer backup</strong> — a restore does not change the plan or the lock on the device; the one exception is the permanent Pro plan of early subscribers, which travels with the backup. The app rejects damaged, oversized or suspicious backups and leaves your existing data unchanged. The AI reading key built into the app is never in a backup. Before sharing, the app warns you if the backup is incomplete and you choose “Share anyway” or “Cancel”, also when exporting from the plans screen. The automatic weekly backup (Plus) counts as done only once you save or share it; if you dismiss the notice, the app offers it again a week later.</li>
+    <li><strong>More reliable backup</strong> — the backup now also includes quotes, and reliably includes the logo, signature and all received invoice files (previously some could be missing). A failed restore leaves your existing data unchanged, and a backup from a newer app version restores without losing invoices. Received invoices find their files again after an app update.</li>
+    <li><strong>Faster work with customers and lists</strong> — search customers by name, city, tax number or e-mail, and start an invoice from a customer with the recipient already filled in. Lists now tell loading, an error, an empty archive and a search without results apart. CSV export, PDF import and recurring invoices are in the “More options” menu. Invoices in different currencies are no longer added into a single amount.</li>
+    <li><strong>Plans screen and terms of use</strong> — every price shows its billing period. The screen explains automatic renewal and cancellation in the store, and has links to the privacy policy and terms of use in the app language. The in-app terms of use are updated: Plus and Pro plans, the first 10 invoices free, AI reading included, and a precise description of which data leaves the device.</li>
+    <li><strong>Business screen without overflow</strong> — on narrower phones and at larger font sizes, text no longer overflows or gets cut off. The “Rate the app” button opens the right store on iOS too, and the privacy policy link opens the page in the app language.</li>
+    <li><strong>Cancelling in every language</strong> — the dialog, labels and messages shown when cancelling an invoice, and the subject of the CSV export, are translated into all app languages.</li>
+    <li><strong>Smaller backups</strong> — photos of received invoices are saved scaled down (longer side at most 2400 px), so backups are smaller.</li>
+    <li><strong>More reliable startup</strong> — the language you choose on first launch now stays after a restart. If you chose it earlier and the app stayed in the language of your country (for example English in the Netherlands, Spain or Portugal), it switches to your chosen language after the update. If the app cannot read its data at startup, it shows a message with a “Try again” button instead of loading endlessly. Startup no longer stops when the device’s secure storage is unavailable.</li>
+    <li><strong>AI reading of invoices</strong> — if reading fails, the app suggests trying again or entering the data by hand. The request has a time limit, so the app does not wait forever.</li>
+    <li><strong>Quotes in every language</strong> — the quote list and form, menus, messages, dialogs, and the e-mail subject and text are translated into all app languages. The title and the validity label on the quote PDF are still in Slovenian for now.</li>
+    <li><strong>No overflow on other screens either</strong> — on narrower phones and at larger font sizes, text is no longer cut off or overflowing on the new-invoice form, the issued-invoice screen, the lists of invoices, received invoices, customers and quotes, recurring invoices, the plans screen, legal information, and the welcome, startup and lock screens. The totals of selected invoices are now in a row under the toolbar, there is room under the end of lists for the floating button, and you choose how often a recurring invoice repeats with chips.</li>
+    <li><strong>Updated in-app guide</strong> — the user guide now matches version 1.7.0 in all 12 languages: the free invoice limit and access after it, consent for AI reading, backup, reminders, recurring invoices, the business country and the app lock. The entry for version 1.6.0 is corrected too: the new plans are only Plus and Pro.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Fixes</h3>
+  <ul>
+    <li><strong>Company country determines the invoice rules</strong> — the country chosen under Business now sets the payment code, payment term, tax name and rates correctly for all supported countries. Before, some countries, for example the Netherlands, Poland, Spain, France and Japan, got Slovenian rules. The interface language no longer changes the country, and an explicitly chosen Slovenia stays selected. A saved country that is not in the list is no longer silently replaced with Australia; you choose one. If an older version changed your country to the Netherlands or Germany when you switched language, the Business screen asks you after the update to check the country; confirm it with “The country is correct”. With a Slovenian IBAN or tax number the app first returns it to Slovenia by itself, and the notice stays. For invoices already issued, the due date in reminders may differ from the term on the document.</li>
+    <li><strong>Clause for tax not charged</strong> — the clause on the invoice now follows the issuer’s country, not the document language. A Slovenian issuer who is not VAT-registered also gets the reference to Article 94 of ZDDV-1 on an English invoice; countries without their own wording (for example the USA and Canada) get a general sentence. Invoices already issued do not change.</li>
+    <li><strong>No duplicate invoice numbers</strong> — the app does not accept an invoice number that already exists in the app: not when you enter it manually, not when you import an invoice (PDF or photo), and not when you set the next number (Business → “Set invoice numbering”). Converting a quote and recurring invoices go through the same check: if the invoice cannot be issued, the quote stays unchanged and the recurring invoice remains due. When the number is taken, they no longer overwrite the PDF of an already issued invoice. After restoring a backup, the next number is raised if needed, never lowered. You can find existing duplicates in Documents → Issued invoices → “More options” → “Check invoice numbers”.</li>
+    <li><strong>Invoice documents are no longer overwritten</strong> — two invoices with similar numbers (e.g. 2026/001 and 2026-001) each have their own PDF; the second one gets a suffix, e.g. racun_2026_001-2.pdf. Editing an issued invoice keeps the previous document and saves a new version (-v2). Archiving, restoring a backup and a rejected attempt to issue no longer overwrite another document, and an interruption while saving does not leave an incomplete PDF. This change does not recover documents the bug had already overwritten.</li>
+    <li><strong>Archived invoices are now in the backup</strong> — invoices you archived after sending them to the accountant were previously left out of the backup. When you switched phones or reinstalled the app, their PDFs were lost even though the invoices stayed in the list. They are now in the backup, and a restore puts them back into the archive.</li>
+    <li><strong>More reliable accountant marking</strong> — if you cancel sending, the invoice stays unsent; previously it was marked as sent and silently dropped out of later batches. A wrong mark can now be removed (select invoices → menu → "Mark as not submitted"). Archiving is a separate action and no longer moves files just because you opened the share sheet. The app no longer claims delivery — it only says the invoice was submitted for sending.</li>
+    <li><strong>Monthly AI reading quota</strong> — the quota starts again every month (Free 5, Plus 50, Pro unlimited). Before, it could stay exhausted for good, even for Plus subscribers.</li>
+    <li><strong>VAT on an invoice to a private person</strong> — fixed a bug where the second consecutive invoice to a private person had VAT added on top of the entered amount.</li>
+    <li><strong>App lock on Android</strong> — fixed a bug that stopped the unlock prompt from working on Android. If the check fails, the content stays hidden.</li>
+    <li><strong>Higher plan is kept</strong> — buying a lower plan no longer downgrades a higher one you already have, for example the permanent Pro plan of an early subscriber.</li>
+    <li><strong>Recurring invoices without duplicates</strong> — if the next date of a recurring invoice cannot be moved after it is issued, the app says the invoice has been issued and does not issue it twice for the same period.</li>
+    <li><strong>PDFs with several fonts</strong> — a character the main font does not have is now drawn by another font. For a Japanese issuer, an English invoice now shows the clause for tax not charged; a document with a Japanese font no longer loses the letters č, š and ž; Thai labels on Thai documents used to be empty boxes and are now drawn (without bold). An ordinary Slovenian document stays the same.</li>
+    <li><strong>App language on the Business screen</strong> — the “App language” field now shows the language the app actually runs in, even if you never chose one explicitly; before, it could show English while the app ran in another language.</li>
+    <li><strong>Legal information for Singapore and New Zealand</strong> — two entries in the list of mandatory invoice data showed an internal label instead of text; they are now written in the app language.</li>
+    <li><strong>An invoice carries the date and number of the moment it is issued</strong> — the new invoice form stays open until you close the app, so an invoice issued a day or more later could carry the date and number from the moment you opened the form, while the database recorded today's date (a gap in the series). Now the PDF, the record and the counter share the same moment of issue: the form refreshes the date and the suggested number when it is shown and when you return to the app, and checks the number once more just before issuing. If it has changed (a new period, or another way of issuing used it in the meantime), it replaces the number, shows a notice and you issue the invoice again. A number you typed yourself is never changed.</li>
+    <li><strong>An issuer who is not VAT-registered does not charge VAT</strong> — items, quotes, conversions of a quote into an invoice and recurring invoices could get the default VAT rate next to the clause “VAT not charged”. Now the rate is 0 and there is no rate choice. Editing an issued invoice keeps the tax treatment it was issued with.</li>
+    <li><strong>Unknown buyer, editing and the customer limit</strong> — for an invoice to an unknown buyer the PDF now prints the name you typed with a label in the document language (before, it printed a built-in Slovenian label without the name). Editing an invoice keeps the buyer: it is found by customer, name or label in any app language, otherwise the buyer stays as written on the invoice. The Free limit of 5 customers also applies to “New customer” in the invoice form.</li>
+    <li><strong>The country at first start also sets the currency</strong> — the country you choose at first start now also sets the currency and the default VAT rate. Before, issuers from Poland, the Czech Republic, the USA, the United Kingdom, Japan, Thailand and other countries outside the euro area invoiced in euros. Existing profiles with a country outside the euro area and the euro as the default currency are corrected after the update (the correction is written to the audit log); issued invoices and quotes keep their currency, also when edited. If you choose “My country isn't listed”, the Business screen shows an empty required country field instead of Slovenia.</li>
+    <li><strong>Bulgaria in euros</strong> — Bulgaria joined the euro on 1 January 2026: invoices of Bulgarian issuers are now issued in EUR (before, in BGN). Issued invoices stay as they are.</li>
+    <li><strong>No placeholder crypto page</strong> — a new profile no longer has placeholder crypto addresses or a crypto page; an old placeholder address is cleared after the update and is never printed on an invoice. The crypto page appears on an invoice only when you enter your own wallet address (Business → Crypto payment) and turn on “Show crypto payments” (Business → Show on invoice).</li>
+    <li><strong>The plans screen can be closed</strong> — the plans screen now has a visible exit (the ✕ “Close” button or the back arrow) and closes by itself after a successful purchase or restore; before, there was no exit on iPhone. Plan descriptions no longer promise a “PDF in customer's language (12 languages)” or a pro-forma document: the PDF is in the language of the issuer's country or in English, and quotes are converted into an invoice.</li>
+    <li><strong>Restoring a backup: warning, document and numbering</strong> — before restoring, the app tells you how many issued invoices on the device the backup does not contain (the restore removes them); you confirm with “Restore” or cancel. A restore no longer attaches another invoice's document to a restored invoice: if the document is not in the backup, the row shows a missing PDF (before, the invoice of one customer could show or send the document of another). Restoring an older backup does not turn the numbering back, so the device does not issue a number your customers already have.</li>
+  </ul>
+
+  <hr>
+  <h2>1.6.2 (September 2026)</h2>
+  <ul>
+    <li><strong>Updated payment system</strong> — the app now uses Google Play Billing Library 8, which Google requires for all updates from 31 August 2026.</li>
+    <li><strong>Intro screen in your language</strong> — the welcome screen and the Invoices / Quotes tab labels were previously always in Slovenian.</li>
+    <li><strong>More readable status labels</strong> — the VOID and IMPORTED labels in the invoice list now have enough contrast to read in sunlight.</li>
+    <li><strong>Clearer navigation icons</strong> — the Customers and My profile tabs used almost identical icons.</li>
+    <li><strong>Missing company details</strong> — instead of a message that disappears, you now get a button that takes you straight to My profile.</li>
+    <li><strong>App is 1.7 MB smaller</strong> — faster download and install.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.1 (June 2026)</h2>
+  <ul>
+    <li><strong>More reliable subscription purchase</strong> — fixed the loading spinner hanging during purchase and restore (30-second timeout plus an extra safety watchdog and a clear error message).</li>
+    <li><strong>Backups include received invoices</strong> — your backup now also contains received-invoice files (fix for iOS after upgrade).</li>
+    <li><strong>Localized paywall</strong> — paywall (Monthly / Yearly / POPULAR / plan descriptions) now translated into all interface languages (13 languages).</li>
+    <li><strong>Release notes in your language</strong> — the "Release notes" button now opens notes in the app's language.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.0 (May 2026)</h2>
+  <p class="updated"><em>Major release with freemium model and stability improvements.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Subscriptions — 2 new plans (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (€3.99/mo or €29/yr) — unlimited invoices, no "Created with Billero" label, multi-language PDF, ARES/VIES auto-fill, discounts, recurring invoices, auto-backup, 50 OCR scans/mo</li>
+    <li><strong>Pro</strong> (€7.99/mo or €59/yr) — everything in Plus + Quote/Proforma, reminders, dashboard, unlimited OCR</li>
+    <li><strong>Existing subscribers</strong> receive <strong>Pro lifetime free</strong> as compensation</li>
+    <li><strong>All existing users</strong> get a <strong>3-month Plus trial</strong> on upgrade</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 Security and stability</h3>
+  <ul>
+    <li><strong>Encrypted backup</strong> — backups can now be AES-256 password-protected (recommended when sharing).</li>
+    <li><strong>Opt-in API keys in backup</strong> — third-party API keys (e.g. Anthropic) are NOT included in backup by default.</li>
+    <li><strong>Crash reporting</strong> — Firebase Crashlytics integrated (release builds only).</li>
+    <li><strong>Faster database</strong> — 14 new indexes for common queries.</li>
+    <li><strong>Foreign key protection</strong> — DB now enforces referential integrity.</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. All rights reserved.</p>
+</body>
+</html>

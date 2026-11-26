@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Billero</title>
+    <meta name="description" content="Kontaktiraj ekipo Billero – vprašanja o aplikaciji za izdajanje računov, podpori in naročninah.">
+    <link rel="stylesheet" href="/css/style.css">
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+    <link rel="canonical" href="https://billero.app/sl/contact">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/contact">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/contact">
+    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/contact">
+    <link rel="alternate" hreflang="th" href="https://billero.app/th/contact">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/contact">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <img src="/img/icons/billero_256.png" alt="Billero logo">
+        <span>Billero</span>
+      </div>
+      <nav>
+        <a href="/sl/">Domov</a>
+        <a href="/sl/donate">Podpri nas</a>
+        <a href="/sl/user-guide">Navodila</a>
+        <a href="/sl/release-notes">Release notes</a>
+        <a href="/sl/privacy-policy">Zasebnost</a>
+      </nav>
+      <nav class="locale-nav" aria-label="Izberi jezik">
+<a href="/sl/contact" lang="sl" hreflang="sl" data-lang="sl" aria-current="page">SL</a>
+<a href="/en/contact" lang="en" hreflang="en" data-lang="en">EN</a>
+<a href="/nl/contact" lang="nl" hreflang="nl" data-lang="nl">NL</a>
+<a href="/th/contact" lang="th" hreflang="th" data-lang="th">TH</a>
+</nav>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Kontakt</h1>
+        <p class="lead">
+          Če imaš vprašanje glede Billera ali želiš preizkusiti aplikacijo,
+          nam pošlji sporočilo. Odgovorili bomo v najkrajšem možnem času.
+        </p>
+
+        <!-- Formspree endpoint: formspree.io/f/mojkpnvy -->
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/mojkpnvy"
+          data-human-error="Prosim, pravilno odgovori na vprašanje za preverjanje."
+          data-send-error="Napaka pri pošiljanju. Poskusi znova ali piši na info@billero.app."
+        >
+          <div class="field">
+            <label for="name">Ime</label>
+            <input id="name" type="text" name="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+
+          <div class="field">
+            <label for="message">Sporočilo</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="human">Potrditev, da nisi robot</label>
+            <div class="human-check">
+              <span id="human-question"></span>
+              <input id="human" type="text" name="human" inputmode="numeric" required>
+            </div>
+            <p class="small-text">
+              Preprost vnos pomaga zmanjšati spam brez uporabe sledilnikov ali
+              zunanjih CAPTCHA storitev.
+            </p>
+          </div>
+
+          <button class="button" type="submit">Pošlji sporočilo</button>
+          <p class="small-text" style="margin-top:12px;">
+            Lahko nam pišeš tudi neposredno na
+            <a href="mailto:info@billero.app">info@billero.app</a>.
+          </p>
+        </form>
+
+        <div id="form-success" style="display:none; margin-top:24px;">
+          <p><strong>Sporočilo je bilo poslano!</strong> Odgovorili bomo v najkrajšem možnem času.</p>
+        </div>
+        <div id="form-error" style="display:none; margin-top:12px; color:#e74c3c;"></div>
+      </div>
+    </main>
+
+    <script src="/js/contact.js"></script>
+  </body>
+</html>

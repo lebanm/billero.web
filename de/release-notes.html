@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Versionshinweise – Billero</title>
+  <style>
+    :root {
+      --color-primary: #00897b;
+      --color-text: #212121;
+      --color-text-muted: #616161;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; }
+    .updated { color: var(--color-text-muted); font-size: 0.9rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+  </style>
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+    <link rel="canonical" href="https://billero.app/de/release-notes">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes">
+    <link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes">
+    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes">
+    <link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes">
+    <link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes">
+    <link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes">
+    <link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes">
+    <link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes">
+    <link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes">
+    <link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes">
+  </head>
+<body>
+<nav class="locale-nav" aria-label="Sprache wählen">
+<a href="/sl/release-notes" lang="sl" hreflang="sl" data-lang="sl">SL</a>
+<a href="/en/release-notes" lang="en" hreflang="en" data-lang="en">EN</a>
+<a href="/de/release-notes" lang="de" hreflang="de" data-lang="de" aria-current="page">DE</a>
+<a href="/es/release-notes" lang="es" hreflang="es" data-lang="es">ES</a>
+<a href="/nl/release-notes" lang="nl" hreflang="nl" data-lang="nl">NL</a>
+<a href="/th/release-notes" lang="th" hreflang="th" data-lang="th">TH</a>
+<a href="/cs/release-notes" lang="cs" hreflang="cs" data-lang="cs">CS</a>
+<a href="/hr/release-notes" lang="hr" hreflang="hr" data-lang="hr">HR</a>
+<a href="/ja/release-notes" lang="ja" hreflang="ja" data-lang="ja">JA</a>
+<a href="/pl/release-notes" lang="pl" hreflang="pl" data-lang="pl">PL</a>
+<a href="/pt/release-notes" lang="pt" hreflang="pt" data-lang="pt">PT</a>
+<a href="/sk/release-notes" lang="sk" hreflang="sk" data-lang="sk">SK</a>
+</nav>
+  <h1>Billero – Versionshinweise</h1>
+  <p class="updated">Letzte Aktualisierung: Juni 2026</p>
+
+  <p>Zusammenfassung der Neuerungen und Korrekturen nach Version.</p>
+
+  <hr>
+
+  <h2>Version 1.8.0 (November 2026)</h2>
+  <p class="updated"><em>Mehrere Unternehmen in einer App, verschlüsselte automatische Datensicherung und eine Korrektur für Dokumente älterer Rechnungen nach einem Update.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Neu</h3>
+  <ul>
+    <li><strong>Mehrere Unternehmen in einer App (Paket Pro)</strong> — unter Unternehmen → Unternehmen fügen Sie ein neues Unternehmen hinzu (Name und Land; Währung und USt richten sich nach dem Land); zwischen Unternehmen wechseln Sie mit dem Chip in der Übersicht oder in der Liste Unternehmen. Jedes Unternehmen hat eigene Rechnungen, Kunden, Angebote, Nummerierung, Dokumente und Profil; in der Übersicht und im Formular für eine neue Rechnung zeigt ein Chip, als welches Unternehmen Sie ausstellen. Die Übersicht aller Unternehmen zeigt offene und überfällige Beträge je Währung (ohne Umrechnung), eine Karte je Unternehmen und eine gemeinsame Liste offener Rechnungen nach Fälligkeit. Paket, App-Sperre und Gratisgrenze gelten für das Gerät: die ersten 10 Rechnungen werden für alle Unternehmen zusammen gezählt. Ohne Paket Pro kann nur ein Unternehmen neue Rechnungen ausstellen; die anderen bleiben zum Ansehen, Teilen, Exportieren und Stornieren verfügbar. Bei mehreren Unternehmen umfasst die automatische Datensicherung alle; bei der Wiederherstellung zeigt die App, welches Unternehmen wohin geht. Eine Sicherung eines anderen Unternehmens ersetzt die Daten des gewählten Unternehmens erst, wenn Sie im Fenster mit den Namen beider Unternehmen „Alles ersetzen“ bestätigen; das gewählte Unternehmen bleibt dasselbe Unternehmen, spätere Sicherungen gehören also weiter zu ihm. Eine Sicherung, die zu einem anderen Unternehmen auf diesem Gerät gehört, kann nicht in das gewählte Unternehmen wiederhergestellt werden: Die App bietet „In … wiederherstellen“ für das Unternehmen an, zu dem sie gehört. Wurde die Wiederherstellung eines Unternehmens unterbrochen und konnte nicht abgeschlossen werden, ist es in der Liste Unternehmen mit „Unterbrochene Wiederherstellung nicht abgeschlossen“ markiert: Bis dies geklärt ist, können seine Daten nicht geändert werden; die anderen Unternehmen funktionieren weiter. Sie können „Erneut versuchen“ oder „Aus Datensicherung wiederherstellen“ wählen; ist kein Unternehmen nutzbar, erscheint dieser Bildschirm schon beim Start, vor der Übersicht. Es gehen keine Daten verloren: Wird auch diese Wiederherstellung unterbrochen, setzt die App sie beim nächsten Start auf den Stand davor zurück (Datenbank und Dokumente), Sie wählen Sicherung und Passwort also erneut; eine bereits bestätigte Wiederherstellung wird abgeschlossen. Für bestehende Nutzer wird nichts verschoben: Ihre bisherigen Daten bleiben das erste Unternehmen.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Verbesserungen</h3>
+  <ul>
+    <li><strong>Die automatische Datensicherung ist verschlüsselt</strong> — die automatische Datensicherung ist jetzt mit dem Passwort verschlüsselt, das Sie beim Einschalten unter Unternehmen → Datensicherung festlegen; ohne Passwort wird keine Sicherung erstellt. Haben Sie die automatische Datensicherung schon bisher genutzt, bittet die App Sie einmal täglich, ein Passwort festzulegen, und zeigt unter dem Schalter an, dass die Sicherung auf ein Passwort wartet. Das Passwort ist nur auf diesem Telefon gespeichert, nicht in der Sicherung; nach Bestätigung mit der Displaysperre können Sie es anzeigen oder ändern (ältere Sicherungen benötigen weiterhin das alte Passwort). Beim manuellen Export und bei der Wiederherstellung können Sie „Passwort der automatischen Datensicherung verwenden“ wählen. Der Export von der Paketübersicht vor einem Kauf bleibt ohne Passwort.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Korrekturen</h3>
+  <ul>
+    <li><strong>Dokumente älterer Rechnungen, die sich nach einem Update nicht öffnen ließen</strong> — auf iPhone und iPad kann das System beim Update den internen Dateipfad ändern, daher sucht die App das Dokument über den Dateinamen. Trugen zwei ältere Rechnungen ein Dokument mit demselben Namen (zum Beispiel die Nummern 2026/001 und 2026-001), ließ sich keines öffnen — jedes sah wie das Dokument der anderen aus — und die App meldete „PDF-Datei existiert nicht mehr“, obwohl das Dokument auf dem Gerät lag. Dokumente, die ältere Versionen in einem anderen Ordner aufbewahrten, suchte die App gar nicht. Das Senden an den Buchhalter, das Senden von Rechnungen an einen Kunden unter Kunden und das Archivieren suchten das Dokument nicht: Beim Senden erschien „Fehler: PDF-Dateien existieren nicht“ oder das Dokument fehlte im Anhang, beim Archivieren erschien „Die Rechnungen wurden archiviert“, das Dokument wurde aber nicht verschoben. Jetzt sucht die App auch im Ordner älterer Versionen, und Senden und Archivieren suchen das Dokument auf dieselbe Weise. Kann ein gefundenes Dokument zu mehr als einer Rechnung gehören, erhält es die Rechnung, deren Nummer auf dem Dokument steht, egal welche Rechnung Sie zuerst öffnen; hatten die Rechnungen dieselbe Nummer (zum Beispiel bevor eine davon den Zusatz -1 erhielt), erhält es die, deren Kunde auf dem Dokument steht. Lässt sich das am Dokument nicht erkennen (zum Beispiel bei gleicher Nummer und gleichem Kunden oder bei einer importierten Rechnung), ordnet die App es keiner der beiden zu. Eine Rechnung, die bisher nach einem Update das Dokument einer anderen Rechnung öffnete, öffnet es auf iPhone und iPad nicht mehr, sobald das System den internen Pfad erneut ändert. In der Rechnungsliste zeigt eine Rechnung ohne Dokument weiterhin „PDF-Datei existiert nicht mehr“.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Version 1.7.1 (Oktober 2026)</h2>
+  <p class="updated"><em>Korrekturen nach 1.7.0: klarere Meldungen, wenn das KI-Lesen nicht verfügbar ist, Angebote in der Dokumentensprache, thailändische und österreichische Bezeichnungen auf Dokumenten, eine zuverlässigere Wiederherstellung der Datensicherung und Rechnungsnummern, die auch in der Datenbank eindeutig sind (doppelte Nummern nummeriert die App selbst neu).</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Verbesserungen</h3>
+  <ul>
+    <li><strong>Klare Meldung, wenn das KI-Lesen nicht verfügbar ist</strong> — statt der allgemeinen Meldung, dass die Rechnung nicht gelesen werden konnte, sagt die App jetzt, was los ist: Das KI-Lesen ist derzeit nicht verfügbar (der in die App eingebaute Schlüssel wurde abgelehnt oder ist abgelaufen, oder der Anbieter bietet das Modell dieser Version nicht mehr an; ein App-Update kann es wieder ermöglichen), Ihr eigener API-Schlüssel wurde abgelehnt (prüfen Sie ihn unter Unternehmen → KI-Schlüssel), es gibt zu viele Anfragen oder ein Nutzungslimit ist erreicht (versuchen Sie es später erneut) oder die Datei ist für das KI-Lesen zu groß. Das Formular bleibt offen, und die Daten können Sie immer von Hand eingeben.</li>
+    <li><strong>Angebot in der Dokumentensprache, thailändische und österreichische Bezeichnungen</strong> — ein Angebot und eine Rechnung, die Sie aus einem Angebot erstellen, stehen jetzt nach derselben Regel in der Dokumentensprache wie die Rechnungen, die die App selbst ausstellt (wiederkehrende Rechnungen): Ist die App-Sprache eine der Dokumentensprachen des Landes des Ausstellers (die Landessprache oder Englisch), steht das Dokument in der App-Sprache, andernfalls in der Dokumentensprache des Landes; wo die App für das Land keine lokale Dokumentensprache hat, ist das Englisch. Ein slowenischer Aussteller mit der App auf Deutsch erhält also ein slowenisches Angebot, mit der App auf Englisch ein englisches, und ein Aussteller aus den USA mit der App auf Slowenisch ein englisches. Bei einem thailändischen Aussteller tragen Angebote, daraus erstellte Rechnungen und wiederkehrende Rechnungen thailändische Bezeichnungen; mit der App auf Englisch sind die Bezeichnungen englisch, einige davon (zum Beispiel Titel, Empfänger und Ausstellungsdatum) mit einer thailändischen Zeile darüber. Auf deutschsprachigen Dokumenten eines österreichischen Ausstellers (Rechnungen, wiederkehrende Rechnungen, Angebote) sind die Umsatzsteuer-Identifikationsnummer und die Firmenbuchnummer mit „UID-Nr.“ und „FN“ bezeichnet: Diese beiden Bezeichnungen richten sich nach dem Land des Ausstellers, nicht nach der App-Sprache; bei einem Aussteller aus Deutschland bleibt es bei „USt-IdNr.“ und „HR-Nr.“. Auf einer Rechnung aus dem Rechnungsformular steht die Zeile mit dem Leistungsdatum oder dem Leistungszeitraum („Leistungsdatum“) jetzt ebenfalls in der Dokumentensprache; bisher stand sie in der App-Sprache. Der Titel („Angebot Nr.“) und die Gültigkeitsbezeichnung („Gültig bis:“) sind in alle 13 Sprachen übersetzt; bisher standen sie immer auf Slowenisch. Die Sprache eines einzelnen Angebots lässt sich nicht wählen; im Rechnungsformular ist zunächst die Landessprache eingestellt, und Sie können sie für eine einzelne Rechnung ändern. Wenn Sie das Land Ihres Unternehmens festlegen oder ändern, verwendet das Rechnungsformular sofort die Dokumentensprache dieses Landes; bisher erst nach einem Neustart der App. Ein Angebot, das Sie schon verschickt haben, wird beim nächsten Teilen in der Dokumentensprache neu erstellt; Betreff und Text der E-Mail bleiben in der App-Sprache. Bereits ausgestellte Rechnungs-PDFs werden nicht geändert; wenn Sie eine unbezahlte Rechnung bearbeiten, erstellt die App ein neues PDF nach diesen Regeln.</li>
+    <li><strong>Die Wiederherstellung ersetzt Ihre Schlüssel nicht ohne Ihre Wahl</strong> — Schlüssel für das KI-Lesen und für CoinGate, die das Gerät schon hat, überschreibt eine Wiederherstellung nicht von selbst. Enthält die Datensicherung einen anderen Schlüssel, fragt die App vor der Wiederherstellung („Schlüssel in der Datensicherung“), ob die Schlüssel des Geräts behalten oder die Schlüssel aus der Sicherung verwendet werden sollen. Ein Gerät ohne Schlüssel erhält den aus der Sicherung; eine Sicherung ohne Schlüssel löscht die Schlüssel des Geräts nicht. Tarif und App-Sperre bleiben wie bisher auf dem Gerät (Ausnahme ist der dauerhafte Pro-Tarif früher Abonnenten).</li>
+    <li><strong>Wiederherstellung, die das System abbricht</strong> — beendet das System die App während einer Wiederherstellung, setzt die App beim nächsten Start die Daten auf den Stand vor der Wiederherstellung zurück (oder schließt eine Wiederherstellung ab, die die Datenbank schon bestätigt hatte), sodass Datenbank und Dokumente immer zum selben Stand gehören. Wurde die Wiederherstellung rückgängig gemacht, weist Sie der Bereich Unternehmen darauf hin, sie zu wiederholen. Eine Datensicherung, deren Daten die falsche Form haben, wird abgelehnt, bevor etwas geändert wird.</li>
+    <li><strong>Stand der Datensicherung im Bereich Unternehmen</strong> — unter dem Schalter für die automatische Sicherung unterscheidet die App eine nur vorbereitete Sicherung von einer, die Sie übergeben haben (geteilt oder gespeichert). Sie zeigt, ob die letzte Sicherung mit Ihrem Passwort geschützt oder nicht verschlüsselt ist, ob sie unvollständig war (eine Dokumentdatei fehlte), ob der letzte Versuch fehlgeschlagen ist und ob eine vorbereitete Sicherung nicht übergeben wurde.</li>
+    <li><strong>Klar zu Verschlüsselung und automatischer Sicherung</strong> — die automatische Sicherung und der Export, der vor einem Kauf auf dem Tarif-Bildschirm angeboten wird, sind nicht verschlüsselt; eine Sicherung mit Passwort exportieren Sie unter Unternehmen → Datensicherung. Die automatische Sicherung wird beim Öffnen der App erstellt (höchstens einmal pro Woche) und zum Teilen angeboten; im Hintergrund läuft sie nicht. Es gibt sie ab dem Tarif Plus: Im Tarif Free wird sie nicht erstellt, auch wenn der Schalter eingeschaltet ist.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Fehlerbehebungen</h3>
+  <ul>
+    <li><strong>Rechnungsnummern sind auch in der Datenbank eindeutig, doppelte werden neu nummeriert</strong> — zusätzlich zur Prüfung in der App schützt jetzt auch die Datenbank die Rechnungsnummer: Eine zweite Rechnung mit derselben Nummer nimmt sie nicht an. Hatten in Ihren Unterlagen mehrere Rechnungen dieselbe Nummer (aus älteren Versionen oder aus einer wiederhergestellten Datensicherung), nummeriert die App sie neu: Eine behält ihre Nummer, die übrigen erhalten den Zusatz -1, -2 und so weiter. Nur die Nummer ändert sich, und jede Änderung wird im Prüfprotokoll vermerkt. Das geschieht beim ersten Start nach dem Update und nach der Wiederherstellung einer Datensicherung, die solche Rechnungen enthält; gelingt die Neunummerierung nicht, wird nichts geändert, und die App versucht es beim nächsten Start erneut. In einem Dialog zeigt Ihnen die App, welche Rechnungen eine neue Nummer erhalten haben (Schaltfläche „Verstanden“). Die bereits ausgestellten PDF-Dokumente dieser Rechnungen tragen weiterhin die bisherige Nummer: Senden Sie dem Kunden, wo es darauf ankommt, ein korrigiertes Dokument oder teilen Sie ihm die neue Nummer mit. Die Liste der neu nummerierten Rechnungen bleibt unter Dokumente → Ausgestellte Rechnungen → „Weitere Optionen“ → „Rechnungsnummern prüfen“ (Abschnitt „Neu nummerierte Rechnungen“) verfügbar. Wer keine Rechnungen mit gleicher Nummer hat, bemerkt keine Änderung.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Version 1.7.0 (Oktober 2026)</h2>
+  <p class="updated"><em>Großes Update: neue Navigation, zuverlässigeres Ausstellen von Rechnungen und Datensichern sowie Zugriff auf Ihre Rechnungen auch nach den kostenlosen Rechnungen.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Neu</h3>
+  <ul>
+    <li><strong>Neue Navigation</strong> — vier Bereiche: Übersicht, Dokumente, Kunden und Unternehmen. Beim Start sehen Sie eine kurze Übersicht mit der Schaltfläche „Neue Rechnung“ statt des Formulars; Ausgangs- und Eingangsrechnungen, Angebote und wiederkehrende Rechnungen finden Sie unter Dokumente. Das frühere „Mein Profil“ heißt jetzt Unternehmen.</li>
+    <li><strong>Rechnung in drei Schritten</strong> — eine neue Rechnung entsteht in drei Schritten: zuerst der Kunde, dann die Positionen und zuletzt die Prüfung mit der Schaltfläche zum Ausstellen. Der gewählte Empfänger bleibt während der Eingabe sichtbar, fehlende Angaben werden im jeweiligen Schritt gemeldet statt erst am Ende. Zurückgehen löscht die Eingabe nicht. Das Bearbeiten einer ausgestellten Rechnung bleibt auf einem Bildschirm.</li>
+    <li><strong>Bestätigung nach dem Ausstellen, Teilen getrennt</strong> — nach dem Ausstellen erscheint der Bildschirm „Rechnung ausgestellt“ mit Nummer, Empfänger und Betrag. Das Teilen des PDFs ist ein eigener Schritt: Brechen Sie es ab, bleibt die Rechnung ausgestellt und kann erneut geteilt werden. Die Rechnung wird dauerhaft gespeichert, bevor etwas geteilt wird; ein Doppeltippen erzeugt keine zwei Rechnungen.</li>
+    <li><strong>Zugriff auf Rechnungen auch nach dem kostenlosen Limit</strong> — im Tarif Free sind die ersten 10 ausgestellten Rechnungen insgesamt kostenlos, nicht 10 pro Jahr; stornierte und importierte Rechnungen zählen nicht. Sind sie aufgebraucht oder endet Ihre Testphase, bleibt die App nutzbar: Vorhandene Rechnungen können Sie weiterhin öffnen, teilen, exportieren und stornieren, aber nicht mehr bearbeiten. Zum Bearbeiten und für eine neue Rechnung, auch aus einem Angebot, wählen Sie ein Abo.</li>
+    <li><strong>Einwilligung vor dem KI-Lesen von Rechnungen</strong> — vor dem ersten Lesen einer Rechnung mit KI fragt die App nach Ihrer Einwilligung. Das ausgewählte oder fotografierte Dokument wird vollständig an den Anbieter Anthropic (USA) gesendet. Ohne Einwilligung wird nichts gesendet, und Sie können die Daten weiterhin von Hand eingeben. Die Einwilligung widerrufen Sie unter Unternehmen → KI-Dokumentenerkennung.</li>
+    <li><strong>Wiederkehrende Rechnungen mit dem echten Kunden</strong> — eine wiederkehrende Rechnung enthält jetzt die vollständigen Kundendaten (Name, Adresse, Steuernummer) und wird in der Dokumentensprache Ihres Landes erstellt. Der Bildschirm ist in alle App-Sprachen übersetzt. Wiederkehrende Rechnungen werden mit Plus oder höher ausgestellt; ohne warten fällige Rechnungen in der Warteschlange. Der Hinweis auf eine fällige wiederkehrende Rechnung erscheint beim Öffnen der Rechnungsliste und bei der Rückkehr in die App.</li>
+    <li><strong>Erinnerungen an überfällige Rechnungen</strong> — eine Rechnung gilt am Tag nach der aufgedruckten Zahlungsfrist als überfällig. Bezahlte, stornierte und importierte Rechnungen werden nicht gezählt. Benachrichtigungen aktivieren Sie unter Unternehmen → Einstellungen oder auf dem Bildschirm Wiederkehrende Rechnungen; die App fragt beim Start nicht mehr nach der Berechtigung.</li>
+    <li><strong>Bildschirm Unternehmen in Ihrer Sprache</strong> — der Bildschirm ist vollständig übersetzt. Als App-Sprache können Sie jetzt auch Spanisch, Portugiesisch und Japanisch wählen.</li>
+    <li><strong>Anleitung auf Niederländisch</strong> — niederländische Nutzer erhielten bisher die kroatische Anleitung.</li>
+    <li><strong>Land des Unternehmens beim ersten Start</strong> — beim ersten Start wählen Sie das Land Ihres Unternehmens selbst: Die App schlägt das Land, wenn möglich, aus den Telefoneinstellungen vor, das Sie mit einem Tipp bestätigen, oder Sie wählen ein anderes aus der Liste. Vom Land hängen Steuersätze, Zahlungscode und Zahlungsfrist auf Ihren Rechnungen ab. Zuvor wurde bei einer unterstützten Telefonsprache stillschweigend Slowenien eingestellt. Ist Ihr Land nicht aufgeführt, wählen Sie es unter Unternehmen aus.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">✨ Verbesserungen</h3>
+  <ul>
+    <li><strong>Verständlicheres Formular für neue Rechnungen</strong> — unter dem Schalter „Betrag inkl. MwSt.“ erklärt ein Hinweis, ob die Steuer bereits enthalten ist. Bei mehreren Positionen weist das Formular darauf hin, dass der Einzelpreis ohne Steuer ist. Fehlt etwas, springt das Formular zum ersten Feld mit einem Fehler. Die Schaltfläche „Rechnung ausstellen“ ist im hellen und dunklen Design besser lesbar.</li>
+    <li><strong>Sicherere App-Sperre</strong> — die Sperre wird erst nach erfolgreicher Bestätigung per Biometrie oder Geräte-PIN aktiviert. Kann das Gerät die Prüfung nicht durchführen, zum Beispiel ohne Displaysperre, weist die App darauf hin. Beim Aktivieren erklärt sie die Folgen und bietet den Export einer Sicherung an.</li>
+    <li><strong>Sicherere Datensicherung</strong> — eine Wiederherstellung ändert weder den Tarif noch die Sperre auf dem Gerät; die Ausnahme ist der dauerhafte Pro-Tarif früher Abonnenten, der mit der Sicherung mitwandert. Beschädigte, zu große oder verdächtige Sicherungen lehnt die App ab, vorhandene Daten bleiben unverändert. Der in die App eingebaute Schlüssel für das KI-Lesen ist nie in einer Sicherung enthalten. Vor dem Teilen warnt die App, wenn die Sicherung unvollständig ist; Sie wählen „Trotzdem teilen“ oder „Abbrechen“, auch beim Export vom Tarif-Bildschirm. Die automatische wöchentliche Sicherung (Plus) gilt erst als erledigt, wenn Sie sie speichern oder teilen; schließen Sie den Hinweis, bietet die App sie nach einer Woche erneut an.</li>
+    <li><strong>Zuverlässigere Datensicherung</strong> — die Sicherung enthält jetzt auch Angebote sowie zuverlässig Logo, Unterschrift und alle Dateien der Eingangsrechnungen (bisher konnten einige fehlen). Eine fehlgeschlagene Wiederherstellung lässt vorhandene Daten unverändert, und eine Sicherung aus einer neueren App-Version wird ohne Verlust von Rechnungen wiederhergestellt. Eingangsrechnungen finden ihre Dateien nach einem App-Update wieder.</li>
+    <li><strong>Schnelleres Arbeiten mit Kunden und Listen</strong> — Suchen Sie Kunden nach Name, Ort, Steuernummer oder E-Mail und starten Sie aus einem Kunden eine Rechnung mit bereits ausgefülltem Empfänger. Listen unterscheiden jetzt Laden, Fehler, leeres Archiv und Suche ohne Treffer. CSV-Export, PDF-Import und wiederkehrende Rechnungen sind im Menü „Weitere Optionen“. Rechnungen in verschiedenen Währungen werden nicht mehr zu einem Betrag addiert.</li>
+    <li><strong>Tarif-Bildschirm und Nutzungsbedingungen</strong> — bei jedem Preis steht der Abrechnungszeitraum. Der Bildschirm erklärt die automatische Verlängerung und die Kündigung im Store und enthält Links zu Datenschutzerklärung und Nutzungsbedingungen in der App-Sprache. Die Nutzungsbedingungen in der App sind aktualisiert: Tarife Plus und Pro, die ersten 10 Rechnungen kostenlos, KI-Lesen inbegriffen und eine genaue Beschreibung, welche Daten das Gerät verlassen.</li>
+    <li><strong>Bildschirm Unternehmen ohne Überlauf</strong> — auf schmalen Telefonen und bei größerer Schrift läuft der Text nicht mehr über und wird nicht abgeschnitten. Die Schaltfläche „App bewerten“ öffnet auch unter iOS den richtigen Store, und der Link zur Datenschutzerklärung öffnet die Seite in der App-Sprache.</li>
+    <li><strong>Stornieren in allen Sprachen</strong> — Dialog, Bezeichnungen und Meldungen beim Stornieren einer Rechnung sowie der Betreff des CSV-Exports sind in alle App-Sprachen übersetzt.</li>
+    <li><strong>Kleinere Sicherungen</strong> — Fotos von Eingangsrechnungen werden verkleinert gespeichert (längere Seite höchstens 2400 Pixel), daher sind Sicherungen kleiner.</li>
+    <li><strong>Zuverlässigerer Start</strong> — die beim ersten Start gewählte Sprache bleibt auch nach einem Neustart erhalten. Haben Sie sie früher gewählt und die App blieb in der Sprache des Landes (zum Beispiel Englisch in den Niederlanden, in Spanien oder Portugal), wechselt sie nach dem Update zur gewählten Sprache. Kann die App beim Start ihre Daten nicht lesen, zeigt sie statt endlosem Laden eine Meldung mit der Schaltfläche „Erneut versuchen“. Der Start bleibt auch nicht mehr hängen, wenn der sichere Speicher des Geräts nicht erreichbar ist.</li>
+    <li><strong>KI-Lesen von Rechnungen</strong> — schlägt das Lesen fehl, empfiehlt die App, es erneut zu versuchen oder die Daten von Hand einzugeben. Die Anfrage hat ein Zeitlimit, die App wartet also nicht endlos.</li>
+    <li><strong>Angebote in allen Sprachen</strong> — Angebotsliste und -formular, Menüs, Meldungen, Dialoge sowie Betreff und Text der E-Mail sind in alle App-Sprachen übersetzt. Der Titel und die Gültigkeitsbezeichnung auf dem Angebots-PDF sind vorerst noch auf Slowenisch.</li>
+    <li><strong>Kein Überlaufen auch auf weiteren Bildschirmen</strong> — auf schmalen Telefonen und bei größerer Schrift wird der Text nicht mehr abgeschnitten und läuft nicht über: im Formular für neue Rechnungen, auf dem Bildschirm der ausgestellten Rechnung, in den Listen der Rechnungen, Eingangsrechnungen, Kunden und Angebote, bei wiederkehrenden Rechnungen, im Tarif-Bildschirm, in den rechtlichen Informationen sowie auf den Bildschirmen für Willkommen, Start und Sperre. Die Summen ausgewählter Rechnungen stehen jetzt in einer Zeile unter der Werkzeugleiste, unter dem Ende der Listen ist Platz für die schwebende Schaltfläche, und die Häufigkeit einer wiederkehrenden Rechnung wählen Sie mit Chips.</li>
+    <li><strong>Aktualisierte Anleitung in der App</strong> — die Anleitung entspricht jetzt in allen 12 Sprachen der Version 1.7.0: Limit für kostenlose Rechnungen und Zugriff danach, Einwilligung für das KI-Lesen, Datensicherung, Erinnerungen, wiederkehrende Rechnungen, Land des Unternehmens und App-Sperre. Auch der Eintrag zu Version 1.6.0 ist korrigiert: Die neuen Tarife sind nur Plus und Pro.</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🛠️ Fehlerbehebungen</h3>
+  <ul>
+    <li><strong>Das Land des Unternehmens bestimmt die Rechnungsregeln</strong> — das unter Unternehmen gewählte Land legt jetzt für alle unterstützten Länder Zahlungscode, Zahlungsfrist, Steuerbezeichnung und Steuersätze richtig fest. Zuvor erhielten einige Länder, zum Beispiel die Niederlande, Polen, Spanien, Frankreich und Japan, slowenische Regeln. Die Oberflächensprache ändert das Land nicht mehr, und ein ausdrücklich gewähltes Slowenien bleibt gewählt. Ein gespeichertes Land, das nicht in der Liste steht, ersetzt der Bildschirm nicht mehr stillschweigend durch Australien; Sie wählen eines aus. Hat eine ältere Version Ihr Land beim Sprachwechsel auf die Niederlande oder Deutschland gesetzt, fordert Sie der Bildschirm Unternehmen nach dem Update auf, das Land zu prüfen; bestätigen Sie es mit „Das Land stimmt“. Bei slowenischer IBAN oder Steuernummer setzt die App es zuvor selbst auf Slowenien zurück, der Hinweis bleibt. Bei bereits ausgestellten Rechnungen kann die Frist in den Erinnerungen von der Frist auf dem Dokument abweichen.</li>
+    <li><strong>Klausel zur nicht berechneten Steuer</strong> — die Klausel auf der Rechnung richtet sich jetzt nach dem Land des Rechnungstellers, nicht nach der Dokumentensprache. Ein slowenischer Aussteller ohne Umsatzsteuerpflicht hat auch auf einer englischen Rechnung den Verweis auf Artikel 94 ZDDV-1; Länder ohne eigenen Wortlaut (zum Beispiel die USA und Kanada) erhalten einen allgemeinen Satz. Bereits ausgestellte Rechnungen ändern sich nicht.</li>
+    <li><strong>Keine doppelten Rechnungsnummern</strong> — die App akzeptiert keine Nummer, die in ihr bereits existiert: weder bei der manuellen Eingabe noch beim Import einer Rechnung (PDF oder Foto) noch beim Festlegen der nächsten Nummer (Unternehmen → „Rechnungsnummerierung festlegen“). Die Umwandlung eines Angebots in eine Rechnung und wiederkehrende Rechnungen durchlaufen dieselbe Prüfung: Kann die Rechnung nicht ausgestellt werden, bleibt das Angebot unverändert und die wiederkehrende Rechnung in der Warteschlange. Dabei überschreiben beide bei einer belegten Nummer nicht mehr das PDF einer bereits ausgestellten Rechnung. Nach der Wiederherstellung einer Datensicherung wird die nächste Nummer bei Bedarf erhöht, nie gesenkt. Vorhandene doppelte Nummern finden Sie unter Dokumente → Ausgestellte Rechnungen → „Weitere Optionen“ → „Rechnungsnummern prüfen“.</li>
+    <li><strong>Rechnungsdokumente werden nicht mehr überschrieben</strong> — zwei Rechnungen mit ähnlicher Nummer (z. B. 2026/001 und 2026-001) haben jeweils ein eigenes PDF; die zweite erhält einen Zusatz, z. B. racun_2026_001-2.pdf. Beim Bearbeiten einer ausgestellten Rechnung bleibt das vorherige Dokument erhalten, und eine neue Version (-v2) wird gespeichert. Das Archivieren, die Wiederherstellung einer Datensicherung und eine abgelehnte Ausstellung überschreiben kein anderes Dokument mehr, und eine Unterbrechung beim Speichern hinterlässt kein unvollständiges PDF. Dokumente, die der Fehler schon früher überschrieben hat, stellt diese Änderung nicht wieder her.</li>
+    <li><strong>Archivierte Rechnungen sind jetzt in der Datensicherung</strong> — Rechnungen, die Sie nach dem Senden an die Buchhaltung archiviert haben, waren bisher nicht Teil der Sicherung. Bei einem Telefonwechsel oder einer Neuinstallation gingen ihre PDFs verloren, obwohl die Rechnungen in der Liste blieben. Jetzt sind sie in der Sicherung und kehren bei der Wiederherstellung ins Archiv zurück.</li>
+    <li><strong>Zuverlässigere Markierung für die Buchhaltung</strong> — brechen Sie das Senden ab, bleibt die Rechnung ungesendet; bisher galt sie als gesendet und fiel still aus späteren Sendungen heraus. Eine falsche Markierung lässt sich jetzt entfernen (Rechnungen auswählen → Menü → „Als nicht übergeben markieren“). Das Archivieren ist ein eigener Schritt und verschiebt keine Dateien mehr, nur weil das Teilen geöffnet wurde. Die App behauptet keine Zustellung mehr.</li>
+    <li><strong>Monatliches Kontingent für KI-Lesen</strong> — das Kontingent beginnt jeden Monat neu (Free 5, Plus 50, Pro unbegrenzt). Zuvor konnte es dauerhaft erschöpft bleiben, auch bei Plus-Abonnenten.</li>
+    <li><strong>MwSt. bei Rechnung an Privatperson</strong> — behoben: Die zweite Rechnung in Folge an eine Privatperson bekam die MwSt. auf den eingegebenen Betrag aufgeschlagen.</li>
+    <li><strong>App-Sperre unter Android</strong> — ein Fehler wurde behoben, durch den die Entsperraufforderung unter Android nicht funktionierte. Schlägt die Prüfung fehl, bleibt der Inhalt verborgen.</li>
+    <li><strong>Höherer Tarif bleibt erhalten</strong> — der Kauf eines niedrigeren Tarifs stuft einen höheren, den Sie bereits haben, nicht mehr herab, zum Beispiel den dauerhaften Pro-Tarif eines früheren Abonnenten.</li>
+    <li><strong>Wiederkehrende Rechnungen ohne Dubletten</strong> — lässt sich das nächste Datum einer wiederkehrenden Rechnung nach dem Ausstellen nicht verschieben, sagt die App, dass die Rechnung ausgestellt wurde, und stellt sie für denselben Zeitraum nicht doppelt aus.</li>
+    <li><strong>PDF mit mehreren Schriftarten</strong> — ein Zeichen, das die Hauptschrift nicht hat, zeichnet jetzt eine andere Schrift. Bei einem japanischen Aussteller erscheint auf einer englischen Rechnung jetzt die Klausel zur nicht berechneten Steuer; ein Dokument mit japanischer Schrift verliert die Buchstaben č, š und ž nicht mehr; thailändische Bezeichnungen auf thailändischen Dokumenten waren bisher leere Kästchen und werden jetzt gezeichnet (ohne Fettdruck). Ein gewöhnliches slowenisches Dokument bleibt gleich.</li>
+    <li><strong>App-Sprache im Bereich Unternehmen</strong> — das Feld „App-Sprache“ zeigt jetzt die Sprache, in der die App tatsächlich läuft, auch wenn Sie keine ausdrücklich gewählt haben; zuvor konnte es Englisch anzeigen, obwohl die App in einer anderen Sprache lief.</li>
+    <li><strong>Rechtliche Informationen für Singapur und Neuseeland</strong> — zwei Einträge in der Liste der Pflichtangaben auf der Rechnung zeigten statt Text eine interne Bezeichnung; sie stehen jetzt in der App-Sprache.</li>
+    <li><strong>Die Rechnung trägt Datum und Nummer des Ausstellungsmoments</strong> — das Formular für eine neue Rechnung bleibt offen, bis Sie die App schließen; eine Rechnung, die einen Tag oder länger später ausgestellt wurde, konnte daher Datum und Nummer vom Öffnen des Formulars tragen, während in der Datenbank das heutige Datum stand (Lücke in der Nummernfolge). Jetzt erhalten PDF, Eintrag und Zähler denselben Ausstellungsmoment: Das Formular aktualisiert Datum und vorgeschlagene Nummer bei der Anzeige und bei der Rückkehr in die App und prüft die Nummer unmittelbar vor der Ausstellung noch einmal. Hat sie sich geändert (neuer Zeitraum oder zwischenzeitlich anderweitig vergeben), ersetzt es die Nummer, zeigt einen Hinweis und Sie stellen die Rechnung erneut aus. Eine selbst eingegebene Nummer ändert das Formular nie.</li>
+    <li><strong>Aussteller ohne MwSt berechnet keine MwSt</strong> — Positionen, Angebote, Umwandlungen eines Angebots in eine Rechnung und wiederkehrende Rechnungen konnten bei einem Aussteller ohne MwSt-Pflicht den Standard-MwSt-Satz neben dem Hinweis „MwSt nicht berechnet“ erhalten. Jetzt gilt der Satz 0 und es gibt keine Satzauswahl. Das Bearbeiten einer ausgestellten Rechnung behält die steuerliche Behandlung bei, mit der sie ausgestellt wurde.</li>
+    <li><strong>Unbekannter Kunde, Bearbeiten und Kundenlimit</strong> — bei einer Rechnung an einen unbekannten Kunden druckt das PDF jetzt den eingegebenen Namen mit einer Bezeichnung in der Dokumentsprache (vorher eine eingebaute slowenische Bezeichnung ohne den Namen). Das Bearbeiten einer Rechnung behält den Kunden: Er wird über Kunde, Namen oder Bezeichnung in jeder App-Sprache gefunden, sonst bleibt der Kunde, wie er auf der Rechnung steht. Das Limit von 5 Kunden im Tarif Free gilt auch für „Neuer Kunde“ im Rechnungsformular.</li>
+    <li><strong>Das Land beim ersten Start legt auch die Währung fest</strong> — das Land, das Sie beim ersten Start wählen, legt jetzt auch die Währung und den Standard-MwSt-Satz fest. Vorher stellten Aussteller aus Polen, Tschechien, den USA, dem Vereinigten Königreich, Japan, Thailand und anderen Ländern außerhalb des Euroraums ihre Rechnungen in Euro aus. Bestehende Profile mit einem Land außerhalb des Euroraums und dem Euro als Standardwährung werden nach dem Update korrigiert (die Korrektur wird im Prüfprotokoll vermerkt); ausgestellte Rechnungen und Angebote behalten ihre Währung, auch beim Bearbeiten. Wählen Sie „Mein Land ist nicht aufgeführt“, zeigt der Bildschirm Unternehmen statt Slowenien ein leeres Pflichtfeld für das Land.</li>
+    <li><strong>Bulgarien in Euro</strong> — Bulgarien hat am 1. Januar 2026 den Euro eingeführt: Rechnungen bulgarischer Aussteller werden jetzt in EUR ausgestellt (vorher in BGN). Bereits ausgestellte Rechnungen bleiben unverändert.</li>
+    <li><strong>Keine Platzhalter-Kryptoseite mehr</strong> — ein neues Profil hat keine Platzhalter-Kryptoadressen und keine Krypto-Seite mehr; eine alte Platzhalteradresse wird nach dem Update gelöscht und nie auf eine Rechnung gedruckt. Die Krypto-Seite erscheint auf der Rechnung erst, wenn Sie Ihre eigene Wallet-Adresse eintragen (Unternehmen → Krypto-Zahlung) und „Krypto-Zahlungen anzeigen“ einschalten (Unternehmen → Anzeige auf Rechnung).</li>
+    <li><strong>Die Paketübersicht lässt sich schließen</strong> — die Paketübersicht hat jetzt einen sichtbaren Ausgang (Schaltfläche ✕ „Schließen“ oder Zurück-Pfeil) und schließt sich nach einem erfolgreichen Kauf oder einer Wiederherstellung von selbst; vorher gab es auf dem iPhone keinen Ausgang. Die Paketbeschreibungen versprechen kein „PDF in der Sprache des Kunden (12 Sprachen)“ und keine Proforma-Rechnung mehr: Das PDF erscheint in der Sprache des Landes des Ausstellers oder auf Englisch, Angebote werden in eine Rechnung umgewandelt.</li>
+    <li><strong>Wiederherstellung: Warnung, Dokument und Nummerierung</strong> — vor der Wiederherstellung sagt Ihnen die App, wie viele ausgestellte Rechnungen auf dem Gerät nicht in der Sicherung enthalten sind (die Wiederherstellung entfernt sie); Sie bestätigen mit „Wiederherstellen“ oder brechen ab. Eine Wiederherstellung hängt einer wiederhergestellten Rechnung nicht mehr das Dokument einer anderen an: Fehlt das Dokument in der Sicherung, zeigt die Zeile ein fehlendes PDF (vorher konnte die Rechnung eines Kunden das Dokument eines anderen zeigen oder versenden). Die Wiederherstellung einer älteren Sicherung setzt die Nummerierung nicht zurück, damit das Gerät keine Nummer vergibt, die Ihre Kunden schon haben.</li>
+  </ul>
+
+  <hr>
+  <h2>1.6.2 (September 2026)</h2>
+  <ul>
+    <li><strong>Aktualisiertes Zahlungssystem</strong> — die App verwendet jetzt die Google Play Billing Library 8, die Google ab dem 31. August 2026 für alle Updates verlangt.</li>
+    <li><strong>Startbildschirm in Ihrer Sprache</strong> — der Willkommensbildschirm und die Tab-Bezeichnungen Rechnungen / Angebote waren bisher immer auf Slowenisch.</li>
+    <li><strong>Besser lesbare Statuskennzeichen</strong> — die Kennzeichen STORNO und IMPORTIERT in der Rechnungsliste haben jetzt genug Kontrast, auch bei Sonnenlicht.</li>
+    <li><strong>Deutlichere Navigationssymbole</strong> — die Tabs Kunden und Mein Profil hatten fast identische Symbole.</li>
+    <li><strong>Fehlende Firmendaten</strong> — statt einer Meldung, die verschwindet, erhalten Sie jetzt eine Schaltfläche direkt zu Mein Profil.</li>
+    <li><strong>App ist 1,7 MB kleiner</strong> — schnellerer Download und Installation.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.1 (Juni 2026)</h2>
+  <ul>
+    <li><strong>Zuverlässigerer Abo-Kauf</strong> — das endlose Ladesymbol beim Kauf und bei der Wiederherstellung behoben (30-Sekunden-Timeout plus zusätzlicher Sicherheits-Watchdog und klare Fehlermeldung).</li>
+    <li><strong>Backups mit Eingangsrechnungen</strong> — die Datensicherung enthält jetzt auch die Dateien der Eingangsrechnungen (Korrektur für iOS nach dem Upgrade).</li>
+    <li><strong>Lokalisierte Paywall</strong> — Paywall (Monatlich / Jährlich / BELIEBT / Tarifbeschreibungen) jetzt in alle Oberflächensprachen übersetzt (13 Sprachen).</li>
+    <li><strong>Versionshinweise in Ihrer Sprache</strong> — der Button „Versionshinweise" öffnet die Hinweise jetzt in der App-Sprache.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1.6.0 (Mai 2026)</h2>
+  <p class="updated"><em>Großes Release mit Freemium-Modell und Stabilitätsverbesserungen.</em></p>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🆕 Abos — 2 neue Tarife (Plus / Pro)</h3>
+  <ul>
+    <li><strong>Plus</strong> (€3,99/Monat oder €29/Jahr) — unbegrenzte Rechnungen, kein „Created with Billero"-Hinweis, mehrsprachiges PDF, ARES/VIES-Autofill, Rabatte, wiederkehrende Rechnungen, Auto-Backup, 50 OCR-Scans/Monat</li>
+    <li><strong>Pro</strong> (€7,99/Monat oder €59/Jahr) — alles aus Plus + Kostenvoranschlag, Mahnungen, Dashboard, unbegrenzte OCR-Scans</li>
+    <li><strong>Bestehende Abonnenten</strong> erhalten <strong>Pro Lifetime kostenlos</strong> als Kompensation</li>
+    <li><strong>Alle bestehenden Nutzer</strong> erhalten eine <strong>3-monatige Plus-Testphase</strong> beim Upgrade</li>
+  </ul>
+
+  <h3 style="font-size:1rem;color:#555;margin-top:1rem;">🔒 Sicherheit und Stabilität</h3>
+  <ul>
+    <li><strong>Verschlüsseltes Backup</strong> — Backups können jetzt mit AES-256-Passwort geschützt werden (empfohlen beim Teilen).</li>
+    <li><strong>Opt-in API-Schlüssel im Backup</strong> — Drittanbieter-API-Schlüssel (z. B. Anthropic) sind standardmäßig NICHT im Backup enthalten.</li>
+    <li><strong>Crash-Reporting</strong> — Firebase Crashlytics integriert (nur in Release-Builds).</li>
+    <li><strong>Schnellere Datenbank</strong> — 14 neue Indizes für häufige Abfragen.</li>
+    <li><strong>Foreign-Key-Schutz</strong> — DB erzwingt jetzt referentielle Integrität.</li>
+  </ul>
+
+  <hr>
+  <p class="updated">© Billero. Alle Rechte vorbehalten.</p>
+</body>
+</html>

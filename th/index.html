@@ -3,275 +3,202 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Billero – การออกใบแจ้งหนี้ที่เรียบง่ายสำหรับอิสระ</title>
-    <meta name="description" content="Billero เป็นแอปการออกใบแจ้งหนี้ที่เรียบง่ายสำหรับอิสระ โค้ช และธุรกิจเล็ก ๆ สร้างใบแจ้งหนี้ PDF อย่างมืออาชีพในไม่กี่วินาที ทำงานใน 47 ประเทศ — ภาษีมูลค่าเพิ่ม GST ภาษีการขาย">
-    <meta property="og:title" content="Billero – การออกใบแจ้งหนี้ที่เรียบง่ายสำหรับอิสระ">
-    <meta property="og:description" content="สร้างใบแจ้งหนี้อย่างมืออาชีพในไม่กี่วินาที ไม่ต้องสมัครสมาชิก ไม่มีเซิร์ฟเวอร์ ทำงานใน 47 ประเทศ มีภาษีมูลค่าเพิ่ม GST และภาษีการขายที่เป็นไปตามกฎหมายในท้องถิ่น">
-    <meta property="og:image" content="https://billero.app/img/icons/billero_512.png">
+    <title>Billero – ใบแจ้งหนี้บนมือถือสำหรับผู้ประกอบการรายบุคคล</title>
+    <meta name="description" content="ใบแจ้งหนี้และใบเสนอราคาสำหรับผู้ประกอบการรายบุคคล สร้าง PDF บนมือถือ ไม่ต้องลงทะเบียน เก็บข้อมูลในอุปกรณ์ พร้อมตัวเลือก QR ชำระเงิน">
+    <meta name="theme-color" content="#050b18">
+    <meta property="og:title" content="Billero – ใบแจ้งหนี้บนมือถือสำหรับผู้ประกอบการรายบุคคล">
+    <meta property="og:description" content="ใบแจ้งหนี้และใบเสนอราคาสำหรับผู้ประกอบการรายบุคคล สร้าง PDF บนมือถือ ไม่ต้องลงทะเบียน เก็บข้อมูลในอุปกรณ์ พร้อมตัวเลือก QR ชำระเงิน">
+    <meta property="og:image" content="https://billero.app/img/web008/og-th.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://billero.app/th/">
     <meta property="og:locale" content="th_TH">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Billero – ใบแจ้งหนี้บนมือถือสำหรับผู้ประกอบการรายบุคคล">
+    <meta name="twitter:description" content="ใบแจ้งหนี้และใบเสนอราคาสำหรับผู้ประกอบการรายบุคคล สร้าง PDF บนมือถือ ไม่ต้องลงทะเบียน เก็บข้อมูลในอุปกรณ์ พร้อมตัวเลือก QR ชำระเงิน">
+    <meta name="twitter:image" content="https://billero.app/img/web008/og-th.jpg">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/landing.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/billero_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/billero_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/billero_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/icons/billero_192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/img/icons/billero_512.png">
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://billero.app/#organization",
+      "name": "B-DataFit, Matej Leban s.p.",
+      "url": "https://billero.app/",
+      "logo": "https://billero.app/img/icons/billero_512.png"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://billero.app/#app",
+      "name": "Billero",
+      "url": "https://billero.app/th/",
+      "description": "ใบแจ้งหนี้และใบเสนอราคาสำหรับผู้ประกอบการรายบุคคล สร้าง PDF บนมือถือ ไม่ต้องลงทะเบียน เก็บข้อมูลในอุปกรณ์ พร้อมตัวเลือก QR ชำระเงิน",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "iOS, Android",
+      "image": "https://billero.app/img/web008/og-th.jpg",
+      "downloadUrl": [
+        "https://apps.apple.com/app/billero/id6760204857",
+        "https://play.google.com/store/apps/details?id=com.billero.app"
+      ],
+      "publisher": {
+        "@id": "https://billero.app/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Free",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://billero.app/th/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "สร้างใบแจ้งหนี้บนมือถืออย่างไร",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "กรอกข้อมูลธุรกิจ เลือกลูกค้า แล้วเพิ่มบริการและจำนวนเงิน Billero สร้าง PDF ให้แชร์ผ่านตัวเลือกของมือถือ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ต้องสร้างบัญชีหรือลงทะเบียนหรือไม่",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ไม่ต้อง คุณเริ่มใช้ฟีเจอร์หลักได้โดยไม่ต้องสร้างบัญชีผู้ใช้"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ข้อมูลของฉันเก็บไว้ที่ไหน",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ใบแจ้งหนี้ ลูกค้า และการตั้งค่าเก็บในอุปกรณ์ OCR เป็นตัวเลือกที่ส่งเอกสารที่เลือกให้ผู้ให้บริการภายนอก นโยบายความเป็นส่วนตัวอธิบายการวินิจฉัยและการซื้อ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ใช้เอกสารได้ฟรีกี่ฉบับ",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ในเวอร์ชัน 1.8.1 Free รวมใบแจ้งหนี้และใบเสนอราคา 10 ฉบับแรก ลูกค้าสูงสุด 5 ราย และ OCR 5 ครั้งต่อเดือน การแปลงใบเสนอราคาเป็นใบแจ้งหนี้ไม่นับเพิ่มอีกฉบับ PDF มีลายน้ำ Created with Billero"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Billero ส่งใบแจ้งหนี้ให้หน่วยงานภาษีหรือไม่",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ไม่ส่ง Billero สร้าง PDF แต่ไม่ให้บริการรับรองเอกสารทางภาษีหรือใบแจ้งหนี้อิเล็กทรอนิกส์แบบมีโครงสร้าง คุณยังรับผิดชอบหน้าที่ของธุรกิจตนเอง"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "QR ชำระเงินทำงานอย่างไร",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UPN QR ใช้สำหรับสโลวีเนีย และ SEPA EPC QR สำหรับการโอนเงินในยุโรปที่รองรับ คุณเพิ่ม QR ของลิงก์ชำระเงินตนเองได้ โดยผู้ให้บริการที่เลือกเป็นผู้ดำเนินการชำระเงิน"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "จัดการหลายกิจการได้หรือไม่",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ได้ แพ็กเกจ Pro แยกข้อมูลแต่ละกิจการและสลับระหว่างกิจการได้ สำหรับกิจการเดียว เริ่มด้วย Free หรือเลือก Plus เพื่อใช้เอกสารไม่จำกัด"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
     <link rel="canonical" href="https://billero.app/th/">
-    <link rel="alternate" hreflang="sl" href="https://billero.app/">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/">
     <link rel="alternate" hreflang="en" href="https://billero.app/en/">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/">
+    <link rel="alternate" hreflang="es" href="https://billero.app/es/">
     <link rel="alternate" hreflang="nl" href="https://billero.app/nl/">
     <link rel="alternate" hreflang="th" href="https://billero.app/th/">
-    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/billero_16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/billero_32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/billero_180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../img/icons/billero_192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="../img/icons/billero_512.png">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/">
   </head>
-  <body>
-    <header class="container">
-      <div class="logo">
-        <img src="../img/icons/billero_256.png" alt="Billero logo">
-        <span>Billero</span>
-      </div>
-      <nav>
-        <a href="contact.html">ติดต่อ</a>
-        <a href="donate.html">สนับสนุนเรา</a>
-        <a href="user-guide.html">คู่มือผู้ใช้</a>
-        <a href="../release-notes-th.html">Release notes</a>
-        <a href="privacy-policy.html">ความเป็นส่วนตัว</a>
-      </nav>
-      <div class="lang-links">
-        <a href="../index.html">SL</a>
-        <span>|</span>
-        <a href="../en/index.html">EN</a>
-        <span>|</span>
-        <a href="../nl/index.html">NL</a>
-        <span>|</span>
-        <a href="index.html" class="active">TH</a>
+  <body class="landing">
+    <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/th/" aria-label="หน้าแรก Billero"><img src="/img/icons/billero_256.png" alt="" width="256" height="256"><span>Billero</span></a>
+        <nav class="primary-nav" id="primary-nav" aria-label="เมนูหลัก"><a href="#features">ฟีเจอร์</a><a href="#how">วิธีใช้งาน</a><a href="#pricing">ราคา</a><a href="#security">ความเป็นส่วนตัว</a><a href="#faq">คำถามที่พบบ่อย</a></nav>
+        <div class="header-actions"><details class="language-picker"><summary aria-label="เลือกภาษา">TH</summary><div class="language-menu">
+<a href="/sl/" lang="sl" hreflang="sl" data-lang="sl">Slovenščina</a>
+<a href="/en/" lang="en" hreflang="en" data-lang="en">English</a>
+<a href="/de/" lang="de" hreflang="de" data-lang="de">Deutsch</a>
+<a href="/es/" lang="es" hreflang="es" data-lang="es">Español</a>
+<a href="/nl/" lang="nl" hreflang="nl" data-lang="nl">Nederlands</a>
+<a href="/th/" lang="th" hreflang="th" data-lang="th" aria-current="page">ไทย</a>
+</div></details><a class="button button-small" href="#download">ดาวน์โหลด</a></div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="เปิดเมนู"><span></span></button>
       </div>
     </header>
 
+    <main id="main">
     <section class="hero container">
-      <div class="hero-grid">
+      <div class="hero-layout">
         <div class="hero-copy">
-          <div class="hero-note">การออกใบแจ้งหนี้ที่เรียบง่ายและการชำระเงินที่เร็วขึ้น</div>
-          <h1>สร้างใบแจ้งหนี้อย่างรวดเร็ว ไม่ต้องใช้ซอฟต์แวร์บัญชีที่ซับซ้อน</h1>
-          <p>
-            Billero เป็นแอปการออกใบแจ้งหนี้ที่ออกแบบมาสำหรับอิสระ โค้ช
-            ผู้สอน ที่ปรึกษา และธุรกิจเล็ก ๆ ที่ต้องการวิธีที่สะอาดและใช้งานได้จริง
-            ในการออกใบแจ้งหนี้
-          </p>
-          <p>
-            สร้างใบแจ้งหนี้อย่างมืออาชีพในไม่กี่วินาที ส่งไปยังลูกค้าหรือ
-            บัญชีตรวจสอบโดยตรง และเปิดใช้งานการชำระเงินที่เร็วขึ้นด้วย QR code
-          </p>
-          <br>
-          <a class="button" href="#screenshots">ดูแอป</a>
-          <div class="store-badges" style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
-            <a href="https://apps.apple.com/si/app/billero/id6760204857" target="_blank" rel="noopener"
-               style="display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;border:1px solid #333;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;"> App Store</a>
-            <a href="https://play.google.com/store/apps/details?id=com.billero.app" target="_blank" rel="noopener"
-               style="display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;border:1px solid #333;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;">▶ Google Play</a>
-          </div>
+          <span class="eyebrow">สร้าง ส่ง รับชำระเงิน</span>
+          <h1>ธุรกิจของคุณ ใบแจ้งหนี้ของคุณ บนมือถือ</h1>
+          <p class="hero-lead">สำหรับผู้ประกอบการรายบุคคลและธุรกิจที่ดำเนินงานคนเดียว เลือกลูกค้า เพิ่มบริการ แล้วแชร์ PDF ไม่ต้องลงทะเบียน เก็บข้อมูลในมือถือ และใช้ QR ตามประเทศหรือลิงก์ชำระเงินของคุณ</p>
+          <div class="hero-actions"><a class="button" href="#download">ดาวน์โหลด Billero ฟรี</a><a class="button button-secondary" href="#how">ดูวิธีใช้งาน</a></div>
+          <div class="store-badges" aria-label="ดาวน์โหลดแอป"><a class="store-link" href="https://apps.apple.com/app/apple-store/id6760204857" target="_blank" rel="noopener"><span class="store-mark" aria-hidden="true">●</span> App Store</a><a class="store-link" href="https://play.google.com/store/apps/details?id=com.billero.app" target="_blank" rel="noopener"><span class="store-mark" aria-hidden="true">▶</span> Google Play</a></div>
+          <p class="hero-microcopy">แพ็กเกจฟรี · ไม่ต้องมีบัญชีผู้ใช้</p>
         </div>
-        <aside class="hero-panel">
-          <h3>Billero สั้น ๆ</h3>
-          <p>
-            ออกแบบสำหรับผู้ใช้ที่ต้องการใบแจ้งหนี้อย่างมืออาชีพโดยไม่มีการตั้งค่าที่ซับซ้อน
-            โมดูลที่ไม่จำเป็น หรือชุดบัญชีที่สมบูรณ์
-          </p>
-          <ul>
-            <li>การสร้างใบแจ้งหนี้ที่รวดเร็ว</li>
-            <li>การคำนวณภาษีมูลค่าเพิ่มโดยอัตโนมัติ</li>
-            <li>ใบแจ้งหนี้ PDF และการชำระเงิน QR</li>
-            <li>การแบ่งปันโดยตรงกับลูกค้าหรือบัญชีตรวจสอบ</li>
-          </ul>
-        </aside>
+        <div class="hero-visual" aria-label="หน้าจอสร้างใบแจ้งหนี้ใน Billero"><div class="hero-glow" aria-hidden="true"></div><div class="phone-stage"><img src="/img/screenshots/nov_racun_ddv.png" alt="สร้างใบแจ้งหนี้ใหม่ใน Billero" width="1242" height="2688" fetchpriority="high" decoding="async"></div><span class="floating-pill floating-pill-top">UPN และ SEPA QR</span><span class="floating-pill floating-pill-bottom">PDF พร้อมส่ง</span></div>
       </div>
+      <ul class="trust-strip" aria-label="จุดเด่น"><li>ไม่ต้องลงทะเบียน</li><li>ใบแจ้งหนี้และลูกค้าอยู่บนอุปกรณ์ของคุณ</li><li>UPN และ SEPA QR</li><li>รายชื่อ 53 ประเทศ อินเทอร์เฟซ 12 ภาษา</li></ul>
     </section>
 
-    <section class="container features">
-      <div class="feature">
-        <h3>สร้างใบแจ้งหนี้ในไม่กี่วินาที</h3>
-        <p>
-          ป้อนลูกค้า บริการ และจำนวนเงิน Billero เตรียมใบแจ้งหนี้อย่างมืออาชีพ
-          โดยไม่ต้องกรอกแบบฟอร์มที่ยาวและงานจัดเก็บข้อมูลที่ไม่จำเป็น
-        </p>
-      </div>
-      <div class="feature">
-        <h3>ภาษีมูลค่าเพิ่มอัตโนมัติและการชำระเงิน QR</h3>
-        <p>
-          แอปจะคำนวณภาษีมูลค่าเพิ่มโดยอัตโนมัติและเตรียม QR code
-          สำหรับการโอนเงินทางธนาคารที่เร็วขึ้น
-        </p>
-      </div>
-      <div class="feature">
-        <h3>ออกแบบมาสำหรับผู้ประกอบการอิสระ</h3>
-        <p>
-          Billero สร้างมาสำหรับผู้ที่ต้องการเครื่องมือการออกใบแจ้งหนี้ที่ใช้งานได้จริง
-          และการไหลการทำงานที่เรียบง่ายกับบัญชีตรวจสอบของพวกเขา
-        </p>
-      </div>
-    </section>
+    <section class="container landing-section" id="how"><div class="section-heading"><span class="section-kicker">วิธีใช้งาน</span><h2>จากข้อมูลไปถึงการชำระเงินในสามขั้นตอน</h2><p class="section-intro">ไม่ต้องตั้งค่าที่ยุ่งยาก และไม่มีโมดูลที่ไม่จำเป็นสำหรับการออกใบแจ้งหนี้ในแต่ละวัน</p></div><div class="steps-grid"><article class="step-card"><span class="step-number">01</span><h3>สร้างใบแจ้งหนี้</h3><p>เลือกลูกค้า เพิ่มบริการและจำนวนเงิน Billero จะจัดทำใบแจ้งหนี้ PDF ที่อ่านง่าย</p></article><article class="step-card"><span class="step-number">02</span><h3>ส่งไฟล์ PDF</h3><p>แชร์เอกสารให้ลูกค้าหรือส่งตรงให้นักบัญชีของคุณ</p></article><article class="step-card"><span class="step-number">03</span><h3>รับชำระเงิน</h3><p>ลูกค้าสแกน UPN หรือ SEPA QR และข้อมูลสำหรับการโอนเงินก็พร้อมใช้งาน</p></article></div></section>
 
-    <section class="container section-block">
-      <h2>Billero เหมาะสำหรับใคร</h2>
-      <p>
-        Billero เหมาะสำหรับครูสอนโยคะ โค้ชว่ายน้ำ ผู้ฝึกส่วนตัว
-        อิสระ ที่ปรึกษา นักบำบัด และเจ้าของธุรกิจเล็ก ๆ
-      </p>
-      <div class="features">
-        <div class="feature">
-          <h3>สร้างใบแจ้งหนี้</h3>
-          <p>ป้อนลูกค้า รายละเอียดบริการ และจำนวนเงินในไม่กี่ขั้นตอน</p>
-        </div>
-        <div class="feature">
-          <h3>ส่งเอกสาร</h3>
-          <p>แบ่งปันใบแจ้งหนี้โดยตรงกับลูกค้าหรือบัญชีตรวจสอบของคุณ</p>
-        </div>
-        <div class="feature">
-          <h3>รับชำระเงิน</h3>
-          <p>ลูกค้าของคุณสามารถชำระเงินได้เร็วขึ้นโดยใช้ QR code</p>
-        </div>
-      </div>
-    </section>
+    <section class="container landing-section showcase-section" id="screenshots"><div class="section-heading"><span class="section-kicker">Billero ในการใช้งานจริง</span><h2>ทุกอย่างที่ต้องใช้สำหรับใบแจ้งหนี้ฉบับถัดไป</h2><p class="section-intro">หน้าจอจริงของแอป ตั้งแต่ข้อมูลธุรกิจไปจนถึงเอกสารที่พร้อมส่ง</p></div><div class="screenshot-rail" aria-label="ภาพหน้าจอแอป Billero"><figure><img src="/img/screenshots/moji_podatki.png" alt="ข้อมูลธุรกิจใน Billero" width="1242" height="2688" loading="lazy" decoding="async"><figcaption>ข้อมูลธุรกิจ</figcaption></figure><figure><img src="/img/screenshots/nov_racun_ddv.png" alt="สร้างใบแจ้งหนี้ใหม่ใน Billero" width="1242" height="2688" loading="lazy" decoding="async"><figcaption>ใบแจ้งหนี้ใหม่</figcaption></figure><figure><img src="/img/screenshots/dodaj_stranko.png" alt="เพิ่มลูกค้าใน Billero" width="1242" height="2688" loading="lazy" decoding="async"><figcaption>เพิ่มลูกค้า</figcaption></figure><figure><img src="/img/screenshots/qr.png" alt="QR สำหรับชำระเงินใน Billero" width="1242" height="2688" loading="lazy" decoding="async"><figcaption>ชำระเงินด้วย QR</figcaption></figure><figure><img src="/img/screenshots/racuni_racunovodji.png" alt="ภาพรวมใบแจ้งหนี้ใน Billero" width="1242" height="2688" loading="lazy" decoding="async"><figcaption>ภาพรวมใบแจ้งหนี้</figcaption></figure></div></section>
 
-    <section class="container" id="screenshots">
-      <h2>Billero ในการใช้งาน</h2>
-      <p>
-        หน้าจอแอปจริงแสดงรายละเอียดบริษัท การสร้างใบแจ้งหนี้ การเพิ่มลูกค้า
-        QR การชำระเงิน และภาพรวมใบแจ้งหนี้
-      </p>
-      <div class="screenshots">
-        <img src="../img/screenshots/moji_podatki.png" alt="Billero – รายละเอียดบริษัท" loading="lazy" decoding="async">
-        <img src="../img/screenshots/nov_racun_ddv.png" alt="Billero – สร้างใบแจ้งหนี้ใหม่" loading="lazy" decoding="async">
-        <img src="../img/screenshots/dodaj_stranko.png" alt="Billero – เพิ่มลูกค้า" loading="lazy" decoding="async">
-        <img src="../img/screenshots/qr.png" alt="Billero – QR การชำระเงิน" loading="lazy" decoding="async">
-        <img src="../img/screenshots/racuni_racunovodji.png" alt="Billero – ภาพรวมใบแจ้งหนี้" loading="lazy" decoding="async">
-      </div>
-    </section>
+    <section class="container landing-section" id="features"><div class="section-heading centered"><span class="section-kicker">ฟีเจอร์</span><h2>ลดงานเอกสาร เพิ่มเวลาให้กับงานของคุณ</h2><p class="section-intro">Billero สร้างขึ้นสำหรับฟรีแลนซ์และธุรกิจขนาดเล็กที่ต้องการออกใบแจ้งหนี้อย่างรวดเร็วและเป็นมืออาชีพ</p></div><div class="feature-grid">
+      <article class="feature-card"><span class="feature-index">01</span><h3>สร้างใบแจ้งหนี้ได้รวดเร็ว</h3><p>กรอกลูกค้า รายการ และจำนวนเงินได้อย่างชัดเจนโดยไม่ต้องใช้แบบฟอร์มยาว</p></article><article class="feature-card"><span class="feature-index">02</span><h3>คำนวณภาษีมูลค่าเพิ่ม</h3><p>คำนวณภาษีตามอัตราที่เลือกและการตั้งค่าของใบแจ้งหนี้</p></article><article class="feature-card"><span class="feature-index">03</span><h3>UPN และ SEPA QR</h3><p>UPN QR สำหรับสโลวีเนีย และ SEPA EPC GiroCode สำหรับการโอนเงินในยุโรปที่รองรับ</p></article><article class="feature-card"><span class="feature-index">04</span><h3>PDF หลายภาษา</h3><p>แพ็กเกจ Plus และ Pro ให้เลือกภาษาเอกสารตามประเทศของผู้ออกเอกสารหรือภาษาอังกฤษ</p></article><article class="feature-card"><span class="feature-index">05</span><h3>จัดการลูกค้า</h3><p>เก็บข้อมูลลูกค้าไว้ในอุปกรณ์และนำกลับมาใช้กับใบแจ้งหนี้ฉบับถัดไป</p></article><article class="feature-card"><span class="feature-index">06</span><h3>แชร์ให้นักบัญชี</h3><p>แชร์เอกสารที่ออกและเอกสารที่ได้รับให้นักบัญชีของคุณ</p></article><article class="feature-card payment-card"><div><span class="feature-index">เพิ่มเติม</span><h3>ลิงก์ชำระเงินในรูปแบบ QR บนใบแจ้งหนี้</h3><p>เพิ่ม QR ของวิธีชำระเงินที่เลือกลงใน PDF ลูกค้าสแกนแล้วดำเนินการต่อกับผู้ให้บริการชำระเงิน</p></div><div class="payment-brands" aria-label="ลิงก์ชำระเงินที่รองรับ"><span>Stripe</span><span>PayPal</span><span>Revolut</span><span>Wise</span></div></article>
+    </div></section>
 
-    <section class="container section-block">
-      <h2>ทำงานใน 47 ประเทศ</h2>
-      <p>อัตราภาษีและกฎการออกใบแจ้งหนี้ที่เป็นไปตามกฎหมายในท้องถิ่นสำหรับแต่ละประเทศที่สนับสนุน — ภาษีมูลค่าเพิ่ม GST ภาษีการขาย Billero ปรับตัวโดยอัตโนมัติ</p>
-      <div class="map-wrap">
-        <div id="world-map"></div>
-        <div id="flag-overlay" aria-hidden="true"></div>
-      </div>
-      <p class="country-more">ไฮไลต์ = สนับสนุน วางเคอร์เซอร์ไว้เหนือรายละเอียด เพิ่มประเทศใหม่เป็นระยะ ๆ</p>
-    </section>
+    <section class="container landing-section" id="pricing"><div class="section-heading centered"><span class="section-kicker">ราคา</span><h2>เริ่มใช้ฟรี แล้วอัปเกรดเมื่อคุณต้องการมากขึ้น</h2><p class="section-intro">สามแพ็กเกจที่เข้าใจง่าย จัดการการสมัครสมาชิกผ่าน App Store หรือ Google Play</p></div><div class="pricing-grid">
+      <article class="pricing-card"><h3>Free</h3><div class="plan-price">ฟรี</div><p class="plan-note">ตรวจสอบราคาและรอบการเรียกเก็บเงินในร้านค้าแอปของคุณ</p><ul class="check-list"><li>เอกสาร 10 ฉบับแรก รวมใบแจ้งหนี้และใบเสนอราคา</li><li>ใบเสนอราคาและการแปลงเป็นใบแจ้งหนี้</li><li>ลูกค้าสูงสุด 5 ราย</li><li>OCR 5 ครั้งต่อเดือน</li><li>ข้อความ “Created with Billero” บน PDF</li></ul><a class="button button-secondary" href="#download">ทดลองใช้ฟรี</a></article>
+      <article class="pricing-card recommended"><span class="plan-badge">แนะนำ</span><h3>Plus</h3><div class="plan-price">สมัครสมาชิก</div><p class="plan-note">ตรวจสอบราคาและรอบการเรียกเก็บเงินในร้านค้าแอปของคุณ</p><ul class="check-list"><li>ใบแจ้งหนี้ ใบเสนอราคา และลูกค้าไม่จำกัด</li><li>ไม่มีลายน้ำบน PDF</li><li>ภาษา PDF ตามประเทศผู้ออกเอกสารและภาษาอังกฤษ</li><li>ใบแจ้งหนี้แบบทำซ้ำ</li><li>OCR 50 ครั้งต่อเดือน</li><li>สำรองข้อมูลอัตโนมัติรายสัปดาห์แบบมีรหัสผ่าน</li></ul><a class="button" href="#download">เลือก Plus</a></article>
+      <article class="pricing-card"><h3>Pro</h3><div class="plan-price">สมัครสมาชิก</div><p class="plan-note">ตรวจสอบราคาและรอบการเรียกเก็บเงินในร้านค้าแอปของคุณ</p><ul class="check-list"><li>ทุกอย่างใน Plus</li><li>แยกข้อมูลแต่ละกิจการและดูภาพรวมทุกกิจการ</li><li>OCR ไม่จำกัด</li></ul><a class="button button-secondary" href="#download">เลือก Pro</a></article>
+    </div><p class="pricing-disclaimer">ราคาและสกุลเงินจริงจะแสดงใน App Store หรือ Google Play และอาจแตกต่างกันตามภูมิภาค</p></section>
 
-    <section class="container section-block">
-      <h2>คำอธิบายสำหรับ App Store</h2>
-      <div class="feature">
-        <p>
-          Billero เป็นแอปการออกใบแจ้งหนี้ที่เรียบง่ายออกแบบมาสำหรับอิสระ
-          โค้ช ผู้สอน และที่ปรึกษา ที่ต้องการสร้างใบแจ้งหนี้อย่างรวดเร็ว
-          และรับชำระเงินโดยไม่ต้องใช้ซอฟต์แวร์บัญชีที่ซับซ้อน
-        </p>
-        <p>
-          สร้างใบแจ้งหนี้อย่างมืออาชีพในไม่กี่วินาที และส่งไปยัง
-          ลูกค้าหรือบัญชีตรวจสอบของคุณโดยตรง
-        </p>
-        <ul>
-          <li>สร้างใบแจ้งหนี้ในไม่กี่วินาที</li>
-          <li>การคำนวณภาษีมูลค่าเพิ่มโดยอัตโนมัติ</li>
-          <li>QR การชำระเงินสำหรับการโอนเงินทางธนาคารที่รวดเร็ว</li>
-          <li>การจัดการลูกค้าที่เรียบง่าย</li>
-          <li>ใบแจ้งหนี้ PDF อย่างมืออาชีพ</li>
-          <li>ส่งใบแจ้งหนี้ไปยังบัญชีตรวจสอบของคุณโดยตรง</li>
-          <li>ออกแบบมาสำหรับอิสระและธุรกิจเล็ก ๆ</li>
-        </ul>
-      </div>
-    </section>
+    <section class="container landing-section" id="security"><div class="security-panel"><div><span class="section-kicker">ความเป็นส่วนตัวตั้งแต่การออกแบบ</span><h2>ใบแจ้งหนี้ของคุณไม่ใช่โมเดลธุรกิจของเรา</h2><p>ใบแจ้งหนี้ ลูกค้า รูปภาพ และการตั้งค่าจะเก็บไว้ในฐานข้อมูลภายในอุปกรณ์ Billero ไม่มี SDK โฆษณา OCR และการวินิจฉัยข้อผิดพลาดใช้บริการภายนอกตามที่ระบุในนโยบายความเป็นส่วนตัว App Store และ Google Play เป็นผู้ดำเนินการสมัครสมาชิก</p><a class="text-link" href="/th/privacy-policy">อ่านนโยบายความเป็นส่วนตัว →</a></div><ul class="privacy-points"><li><strong>ไม่ต้องมีบัญชีผู้ใช้</strong>เริ่มใช้ฟีเจอร์หลักได้โดยไม่ต้องลงทะเบียน</li><li><strong>ฐานข้อมูล SQLite ในอุปกรณ์</strong>เอกสารธุรกิจอยู่ภายใต้การควบคุมของคุณ</li><li><strong>สำรองข้อมูลแบบมีรหัสผ่าน</strong>ตั้งแต่เวอร์ชัน 1.8.0 ข้อมูลสำรองอัตโนมัติจะเข้ารหัสด้วย AES-256 คุณตั้งรหัสผ่านเมื่อเปิดใช้ฟีเจอร์นี้ และ Billero เก็บรหัสผ่านไว้ในพื้นที่จัดเก็บที่ปลอดภัยของอุปกรณ์ แอปจะเตรียมสำเนาเมื่อคุณเปิดแอป ไม่เกินสัปดาห์ละครั้ง การส่งออกด้วยตนเองจะเข้ารหัสเมื่อคุณตั้งรหัสผ่าน ส่วนการส่งออกจากหน้าแพ็กเกจจะไม่เข้ารหัส</li><li><strong>ล็อกด้วยไบโอเมตริก</strong>เพิ่มการป้องกันของอุปกรณ์ให้กับแอป</li></ul></div></section>
 
-    <footer class="container">
-      <p>© 2026 Billero</p>
-      <div>
-        <a href="privacy-policy.html">นโยบายความเป็นส่วนตัว</a>
-        &nbsp; | &nbsp;
-        <a href="terms-of-use.html">เงื่อนไขการใช้</a>
-        &nbsp; | &nbsp;
-        <a href="user-guide.html">คู่มือผู้ใช้</a>
-        &nbsp; | &nbsp;
-        <a href="../release-notes-th.html">Release notes</a>
-        &nbsp; | &nbsp;
-        <a href="contact.html">ติดต่อ</a>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
-    <script>
-    (function () {
-      var countries = {
-        SI:['โซโลเวเนีย','ภาษีมูลค่าเพิ่ม 22%'], AT:['ออสเตรีย','MwSt 20%'], BE:['เบลเยียม','BTW 21%'],
-        BA:['บอสเนีย & เฮิร์ซ.','PDV 17%'], CY:['ไซปรัส','ภาษีมูลค่าเพิ่ม 19%'], CZ:['เช็กโกสโลวะเกีย','DPH 21%'],
-        DK:['เดนมาร์ก','MOMS 25%'], EE:['เอสโตเนีย','KM 22%'], FI:['ฟินแลนด์','ALV 25.5%'],
-        DE:['เยอรมนี','MwSt 19%'], GR:['กรีซ','ΦΠΑ 24%'], HR:['โครเอเชีย','PDV 25%'],
-        HU:['ฮังการี','ÁFA 27%'], IE:['ไอร์แลนด์','ภาษีมูลค่าเพิ่ม 23%'], LV:['ลัตเวีย','PVN 21%'],
-        LT:['ลิทัวเนีย','PVM 21%'], LU:['ลักเซมเบิร์ก','TVA 17%'], MT:['มอลตา','ภาษีมูลค่าเพิ่ม 18%'],
-        NL:['เนเธอร์แลนด์','BTW 21%'], NO:['นอร์เวย์','MVA 25%'], PL:['โปแลนด์','ภาษีมูลค่าเพิ่ม 23%'],
-        PT:['โปรตุเกส','IVA 23%'], RO:['โรมาเนีย','TVA 19%'], RS:['เซอร์เบีย','PDV 20%'],
-        SK:['สโลวะเกีย','DPH 23%'], ES:['สเปน','IVA 21%'], SE:['สวีเดน','MOMS 25%'],
-        GB:['สหราชอาณาจักร','ภาษีมูลค่าเพิ่ม 20%'], US:['สหรัฐอเมริกา','ภาษีการขาย'], CA:['แคนาดา','GST 5%'],
-        AU:['ออสเตรเลีย','GST 10%'], SG:['สิงคโปร์','GST 9%'], TH:['ไทย','ภาษีมูลค่าเพิ่ม 7%'],
-        MX:['เม็กซิโก','IVA 16%'], CL:['ชิลี','IVA 19%'], CO:['โคลอมเบีย','IVA 19%'],
-        PE:['เปรู','IGV 18%'], ID:['อินโดนีเซีย','PPN 11%'], PH:['ฟิลิปปินส์','VAT 12%'],
-        VN:['เวียดนาม','VAT 10%'], IL:['อิสราเอล','VAT 17%'], AE:['สหรัฐอาหรับเอมิเรตส์','VAT 5%'],
-        HK:['ฮ่องกง','ไม่มี VAT'], NZ:['นิวซีแลนด์','GST 15%'], ZA:['แอฟริกาใต้','VAT 15%'],
-        KE:['เคนยา','VAT 16%'], GH:['กานา','VAT 15%']
-      };
+    <section class="container landing-section" id="markets"><div class="section-heading"><h2>รายชื่อ 53 ประเทศ อินเทอร์เฟซ 12 ภาษา</h2><p class="section-intro">ประเทศของธุรกิจกำหนดสกุลเงิน ช่องข้อมูลภาษี และรูปแบบเอกสาร รวมถึงสหรัฐอเมริกา แคนาดา และเม็กซิโก ตัวเลือกที่ใช้ได้แตกต่างกันตามประเทศ</p></div><p class="compliance-note">Billero สร้างเอกสาร PDF ไม่ส่งใบแจ้งหนี้ให้หน่วยงานภาษี ไม่รับรองเอกสารทางภาษี และไม่ออกใบแจ้งหนี้อิเล็กทรอนิกส์แบบมีโครงสร้าง เอกสารของเม็กซิโกไม่ใช่ CFDI และไม่มีผลทางภาษี</p></section>
 
-      new jsVectorMap({
-        selector: '#world-map',
-        map: 'world',
-        backgroundColor: 'transparent',
-        zoomOnScroll: false,
-        zoomButtons: false,
-        regionStyle: {
-          initial: { fill: '#1f3a4f', stroke: '#254563', strokeWidth: 0.5, strokeOpacity: 1 },
-          hover:   { fill: '#0e7490', cursor: 'pointer' },
-          selected: { fill: '#22d3ee' },
-          selectedHover: { fill: '#06b6d4' }
-        },
-        selectedRegions: Object.keys(countries),
-        onRegionTooltipShow: function (event, tooltip, code) {
-          var c = countries[code];
-          if (c) {
-            tooltip.text(
-              '<span class="fi fi-' + code.toLowerCase() + ' fis" style="width:14px;height:14px;border-radius:2px;display:inline-block;vertical-align:middle;margin-right:6px;"></span>' +
-              c[0] + ' <span style="color:#94a3b8;margin-left:4px;">' + c[1] + '</span>',
-              true
-            );
-          } else {
-            event.preventDefault();
-          }
-        }
-      });
+    <section class="container landing-section" id="faq"><div class="section-heading centered"><span class="section-kicker">คำถามที่พบบ่อย</span><h2>ก่อนสร้างใบแจ้งหนี้ฉบับแรก</h2></div><div class="faq-list"><details><summary>สร้างใบแจ้งหนี้บนมือถืออย่างไร</summary><p>กรอกข้อมูลธุรกิจ เลือกลูกค้า แล้วเพิ่มบริการและจำนวนเงิน Billero สร้าง PDF ให้แชร์ผ่านตัวเลือกของมือถือ</p></details>
+<details><summary>ต้องสร้างบัญชีหรือลงทะเบียนหรือไม่</summary><p>ไม่ต้อง คุณเริ่มใช้ฟีเจอร์หลักได้โดยไม่ต้องสร้างบัญชีผู้ใช้</p></details>
+<details><summary>ข้อมูลของฉันเก็บไว้ที่ไหน</summary><p>ใบแจ้งหนี้ ลูกค้า และการตั้งค่าเก็บในอุปกรณ์ OCR เป็นตัวเลือกที่ส่งเอกสารที่เลือกให้ผู้ให้บริการภายนอก นโยบายความเป็นส่วนตัวอธิบายการวินิจฉัยและการซื้อ</p></details>
+<details><summary>ใช้เอกสารได้ฟรีกี่ฉบับ</summary><p>ในเวอร์ชัน 1.8.1 Free รวมใบแจ้งหนี้และใบเสนอราคา 10 ฉบับแรก ลูกค้าสูงสุด 5 ราย และ OCR 5 ครั้งต่อเดือน การแปลงใบเสนอราคาเป็นใบแจ้งหนี้ไม่นับเพิ่มอีกฉบับ PDF มีลายน้ำ Created with Billero</p></details>
+<details><summary>Billero ส่งใบแจ้งหนี้ให้หน่วยงานภาษีหรือไม่</summary><p>ไม่ส่ง Billero สร้าง PDF แต่ไม่ให้บริการรับรองเอกสารทางภาษีหรือใบแจ้งหนี้อิเล็กทรอนิกส์แบบมีโครงสร้าง คุณยังรับผิดชอบหน้าที่ของธุรกิจตนเอง</p></details>
+<details><summary>QR ชำระเงินทำงานอย่างไร</summary><p>UPN QR ใช้สำหรับสโลวีเนีย และ SEPA EPC QR สำหรับการโอนเงินในยุโรปที่รองรับ คุณเพิ่ม QR ของลิงก์ชำระเงินตนเองได้ โดยผู้ให้บริการที่เลือกเป็นผู้ดำเนินการชำระเงิน</p></details>
+<details><summary>จัดการหลายกิจการได้หรือไม่</summary><p>ได้ แพ็กเกจ Pro แยกข้อมูลแต่ละกิจการและสลับระหว่างกิจการได้ สำหรับกิจการเดียว เริ่มด้วย Free หรือเลือก Plus เพื่อใช้เอกสารไม่จำกัด</p></details></div></section>
 
-      requestAnimationFrame(function placeFlags() {
-        var svg = document.querySelector('#world-map svg');
-        if (!svg) { requestAnimationFrame(placeFlags); return; }
-        var vb = svg.viewBox.baseVal;
-        if (!vb || vb.width === 0) { requestAnimationFrame(placeFlags); return; }
-        var overlay = document.getElementById('flag-overlay');
-        Object.keys(countries).forEach(function (code) {
-          var path = svg.querySelector('[data-code="' + code + '"]');
-          if (!path) return;
-          try {
-            var bb = path.getBBox();
-            if (bb.width === 0 && bb.height === 0) return;
-            var cx = (bb.x + bb.width / 2) / vb.width * 100;
-            var cy = (bb.y + bb.height / 2) / vb.height * 100;
-            var el = document.createElement('span');
-            el.className = 'fi fi-' + code.toLowerCase() + ' country-map-flag';
-            el.style.left = cx + '%';
-            el.style.top = cy + '%';
-            el.title = countries[code][0];
-            overlay.appendChild(el);
-          } catch (e) {}
-        });
-      });
-    })();
-    </script>
+    <section class="container landing-section" id="download"><div class="download-panel"><h2>ลดเวลางานเอกสาร เพิ่มเวลาให้กับงานของคุณ</h2><p>สร้างใบแจ้งหนี้ฉบับแรกได้ภายในไม่กี่นาที</p><div class="store-badges" aria-label="ดาวน์โหลดแอป"><a class="store-link" href="https://apps.apple.com/app/apple-store/id6760204857" target="_blank" rel="noopener"><span class="store-mark" aria-hidden="true">●</span> App Store</a><a class="store-link" href="https://play.google.com/store/apps/details?id=com.billero.app" target="_blank" rel="noopener"><span class="store-mark" aria-hidden="true">▶</span> Google Play</a></div></div></section>
+
+    </main>
+    <footer class="container site-footer"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="/th/"><img src="/img/icons/billero_256.png" alt="" width="256" height="256"><span>Billero</span></a><p>การออกใบแจ้งหนี้ที่เรียบง่ายสำหรับฟรีแลนซ์และธุรกิจขนาดเล็ก</p></div><nav class="footer-links" aria-label="ลิงก์ส่วนท้าย"><a href="/th/user-guide">คู่มือผู้ใช้</a><a href="/th/release-notes">มีอะไรใหม่</a><a href="/th/contact">ติดต่อ</a><a href="/th/privacy-policy">นโยบายความเป็นส่วนตัว</a><a href="/th/terms-of-use">เงื่อนไขการใช้</a><a href="/th/donate">สนับสนุนเรา</a></nav></div><div class="footer-meta"><span>© 2026 Billero</span><span>B-DataFit, Matej Leban s.p., Slovenia</span></div></footer>
+    <script src="/js/landing.js" defer></script>
   </body>
 </html>

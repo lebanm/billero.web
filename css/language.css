@@ -1,0 +1,4 @@
+.locale-nav { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-block: 12px; }
+.locale-nav a { display: inline-flex; min-width: 44px; min-height: 48px; align-items: center; justify-content: center; padding: 4px 8px; color: inherit; text-decoration: underline; border-radius: 6px; }
+.locale-nav a[aria-current="page"] { font-weight: 800; text-decoration-thickness: 3px; }
+.locale-nav a:focus-visible { outline: 3px solid #009688; outline-offset: 2px; }

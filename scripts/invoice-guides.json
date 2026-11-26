@@ -1,0 +1,1382 @@
+{
+  "sources": {
+    "siLaw": {
+      "label": "ZDDV-1, 82. in 94. člen",
+      "url": "https://pisrs.si/pregledPredpisa?id=ZAKO4701"
+    },
+    "siRules": {
+      "label": "Pravilnik ZDDV-1, 141. člen",
+      "url": "https://pisrs.si/pregledPredpisa?id=PRAV7542"
+    },
+    "siVat": {
+      "label": "FURS — Identifikacija za DDV",
+      "url": "https://www.fu.gov.si/poslovni_dogodki_podjetja/identifikacija_za_ddv"
+    },
+    "siCash": {
+      "label": "GOV.SI — Davčno potrjevanje računov",
+      "url": "https://www.gov.si/teme/davcni-postopek-in-davcno-potrjevanje-racunov/"
+    },
+    "irsRecords": {
+      "label": "IRS — What kind of records should I keep?",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep"
+    },
+    "irsW9": {
+      "label": "IRS — Form W-9 and instructions (March 2024)",
+      "url": "https://www.irs.gov/pub/irs-pdf/fw9.pdf"
+    },
+    "irsContractors": {
+      "label": "IRS — Forms and taxes for independent contractors",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/forms-and-associated-taxes-for-independent-contractors"
+    },
+    "sbaNexus": {
+      "label": "SBA — Grow your business: taxes for online sales",
+      "url": "https://www.sba.gov/counseling/grow-your-business/"
+    },
+    "nyTax": {
+      "label": "New York — Recordkeeping for sales tax vendors",
+      "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/record-keeping_requirements_for_sales_tax_vendors.htm"
+    },
+    "de14": {
+      "label": "§ 14 UStG — Ausstellung von Rechnungen",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__14.html"
+    },
+    "de19": {
+      "label": "§ 19 UStG — Kleinunternehmer",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__19.html"
+    },
+    "de34a": {
+      "label": "§ 34a UStDV — Rechnungen von Kleinunternehmern",
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__34a.html"
+    },
+    "de27": {
+      "label": "§ 27 Abs. 38 UStG — Übergangsregeln",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__27.html"
+    },
+    "deBmf": {
+      "label": "BMF — E-Rechnung FAQ (März 2026)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html"
+    },
+    "deStart": {
+      "label": "Bundesportal — Kleinunternehmer, Gründungsjahr",
+      "url": "https://verwaltung.bund.de/leistungsverzeichnis/DE/leistung/99102187261000/herausgeber/HH-S1000020010000009742/region/020000000000"
+    },
+    "siFiscal": {
+      "label": "ZDavPR, 2. in 3. člen",
+      "url": "https://pisrs.si/pregledPredpisa?id=ZAKO7195"
+    },
+    "irs583": {
+      "label": "IRS — Publication 583: recordkeeping",
+      "url": "https://www.irs.gov/publications/p583"
+    },
+    "irsIdentity": {
+      "label": "IRS — Identity protection tips (archived guidance)",
+      "url": "https://www.irs.gov/identity-theft-fraud-scams/identity-protection-tips"
+    },
+    "siProcedure": {
+      "label": "ZDavP-2, 35. člen — davčna številka",
+      "url": "https://pisrs.si/pregledPredpisa?id=ZAKO4703"
+    },
+    "siBusiness": {
+      "label": "ZGD-1, 72. člen — podatki podjetnika",
+      "url": "https://pisrs.si/pregledPredpisa?id=ZAKO4291"
+    },
+    "siEinvoice": {
+      "label": "ZIERDED (Uradni list RS, št. 85/2025) — e-računi od 1. 1. 2028",
+      "url": "https://pisrs.si/pregledPredpisa?id=ZAKO9033"
+    }
+  },
+  "pages": [
+    {
+      "file": "sl/racun-vsebina.html",
+      "country": "slovenia",
+      "lang": "sl",
+      "market": "Slovenija",
+      "title": "Kaj mora vsebovati račun s.p. v Sloveniji?",
+      "description": "Podatki na računu z DDV ali brez, prag 60.000 €, davčno potrjevanje in UPN QR. Uradni viri ter jasne omejitve Billera.",
+      "answer": "Račun s.p. mora vsebovati identifikacijske podatke in podatke o prodaji; natančen seznam je odvisen tudi od identifikacije za DDV. Pri računih, za katere velja davčno potrjevanje, štejejo med gotovinska plačila tudi kartice — Billero davčnega potrjevanja ne izvaja.",
+      "answerRefs": [
+        "siLaw",
+        "siRules",
+        "siFiscal"
+      ],
+      "scope": "Za običajne domače dobave slovenskega s.p. Posebne ureditve, poenostavljeni računi, čezmejne dobave in računi javnemu sektorju zahtevajo dodatno preverbo.",
+      "noteTitle": "Billero za neposredna nakazila na račun",
+      "note": "Billero uporabljaj za račune, plačane z neposrednim nakazilom na transakcijski račun: za potrošnike in tuje kupce, za slovenska podjetja pa do 31. 12. 2027. Od 1. 1. 2028 si slovenska podjetja, tudi s.p., domače račune izmenjujejo samo kot strukturirane e-račune (ZIERDED), zato PDF iz Billera zanje ne bo več zadoščal. Za gotovino ali kartice, kjer je potrebno davčno potrjevanje, potrebuješ drugo ustrezno rešitev.",
+      "noteRefs": [
+        "siCash",
+        "siEinvoice"
+      ],
+      "sections": [
+        {
+          "id": "podatki",
+          "title": "Kateri podatki sodijo na račun?",
+          "blocks": [
+            {
+              "type": "h3",
+              "text": "Če si identificiran za DDV"
+            },
+            {
+              "type": "p",
+              "text": "Za običajen račun po 82. členu ZDDV-1 preveri naslednje podatke:",
+              "refs": [
+                "siLaw"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Datum izdaje in zaporedna številka, ki račun enolično identificira.",
+                "Ime in naslov izdajatelja ter kupca; identifikacijska številka za DDV izdajatelja.",
+                "Kupčeva ID za DDV, kadar je kupec dolžan plačati DDV ali gre za ustrezno dobavo znotraj EU po 46. členu.",
+                "Količina in vrsta blaga oziroma obseg in vrsta storitev.",
+                "Datum dobave, zaključka storitve oziroma ustreznega predplačila, če je določljiv in drugačen od datuma izdaje.",
+                "Davčna osnova po stopnjah oziroma oprostitvah, cena na enoto brez DDV ter popusti, ki niso vključeni v ceno.",
+                "Stopnja in znesek DDV; pri oprostitvi ustrezna podlaga. Posebni primeri zahtevajo dodatne navedbe, npr. obrnjena davčna obveznost."
+              ],
+              "refs": [
+                "siLaw"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "Če nisi identificiran za DDV"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Datum izdaje in zaporedna številka računa.",
+                "Firma oziroma ime izdajatelja ter sedež oziroma stalno prebivališče.",
+                "Prodajna cena in skupna vrednost brez DDV.",
+                "Pri računu drugemu davčnemu zavezancu tudi količina in vrsta blaga oziroma obseg in vrsta storitev."
+              ],
+              "refs": [
+                "siRules"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "To je minimum po 141. členu pravilnika. Za pregleden račun dodaj tudi stranko, opis dela, datum izvedbe, rok plačila in bančne podatke. Teh priporočil ne zamenjuj z enakim zakonskim seznamom za vse izdajatelje.",
+              "refs": [
+                "siRules"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "Davčna in matična številka s.p."
+            },
+            {
+              "type": "p",
+              "text": "Poleg pravil DDV mora izdajatelj na knjigovodski listini navesti svojo davčno številko po 35. členu ZDavP-2. To velja tudi, če ni identificiran za DDV.",
+              "refs": [
+                "siProcedure"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "ZGD-1 za sporočila s.p. posameznemu naslovniku določa firmo, sedež in matično številko; pri obstoječih poslovnih stikih določa izjemo za matično številko. Zato preveri tudi te podatke in jih vključi glede na svoj primer.",
+              "refs": [
+                "siBusiness"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ddv",
+          "title": "Oprostitev DDV in prag",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Za domačega malega davčnega zavezanca je osnovni prag 60.000 € letnega prometa v Sloveniji: preverjata se prejšnje in tekoče koledarsko leto. Če v tekočem letu presežeš 60.000 €, vendar ne 66.000 €, lahko oprostitev uporabljaš do konca leta; identifikacija je potrebna z začetkom naslednjega leta. Ob preseganju 66.000 € je potrebna že v mesecu preseganja.",
+              "refs": [
+                "siLaw",
+                "siVat"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "To ni splošno pravilo »pod pragom nikoli ne potrebujem DDV številke«. Čezmejne storitve in pridobitve lahko sprožijo obveznost identifikacije posebej; upoštevaj tudi morebitno prostovoljno vključitev.",
+              "refs": [
+                "siVat"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Če zate dejansko velja oprostitev po prvem odstavku 94. člena, lahko podlago na računu pojasniš s tem zapisom:",
+              "refs": []
+            },
+            {
+              "type": "quote",
+              "text": "DDV ni obračunan na podlagi 1. odstavka 94. člena ZDDV-1."
+            },
+            {
+              "type": "p",
+              "text": "To je tudi klavzula Billera za slovenskega izdajatelja brez obračunanega DDV. Sama izključitev DDV v aplikaciji ne potrjuje upravičenosti do oprostitve. Seznam iz 141. člena pravilnika te klavzule ne našteva kot ločeno minimalno postavko.",
+              "refs": [
+                "siLaw",
+                "siRules"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "placilo",
+          "title": "Gotovina, kartice in UPN QR",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Ko velja obveznost davčnega potrjevanja, gotovina vključuje tudi kreditne in debetne kartice. Neposredno nakazilo na transakcijski račun je iz te opredelitve izključeno. Ne predpostavljaj, da je vsako spletno plačilo ali plačilo prek posrednika enako neposrednemu nakazilu.",
+              "refs": [
+                "siFiscal"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "UPN QR v Billeru pripravi podatke za bančno nakazilo. QR ne nadomesti obveznih podatkov računa in ne opravi davčnega potrjevanja; odločilen je dejanski način plačila.",
+              "refs": [
+                "siLaw",
+                "siFiscal"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "billero",
+          "title": "Kako to narediš v Billeru",
+          "blocks": [
+            {
+              "type": "ul",
+              "items": [
+                "V podatkih podjetja izberi Slovenijo in preveri naslov, davčne podatke ter nastavitev DDV.",
+                "Izberi stranko, dodaj opis in postavke, datume ter preveri številko računa.",
+                "Za nakazilo vnesi IBAN in vključi UPN QR, če ga želiš na PDF-ju.",
+                "Preveri zneske in morebitno klavzulo, nato PDF deli prek telefona."
+              ],
+              "refs": []
+            }
+          ]
+        },
+        {
+          "id": "omejitve",
+          "title": "Česa Billero ne naredi",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Billero 1.8.1 pripravi PDF. Ne potrjuje gotovinskih računov pri FURS, ne oddaja davčnih obračunov in ne izdaja strukturiranih e-računov, ki so od 1. 1. 2028 obvezni za račune med slovenskimi podjetji (ZIERDED). Ne preveri tvoje upravičenosti do oprostitve ali vseh posebnosti posla. Za gotovinske račune, kjer je potrjevanje obvezno, sam PDF iz Billera ne zadostuje.",
+              "refs": [
+                "siFiscal",
+                "siEinvoice"
+              ]
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Ali je seznam podatkov enak z DDV in brez njega?",
+          "a": "Ne. Običajen račun identificiranega izdajatelja ureja 82. člen ZDDV-1; minimum za izdajatelja brez identifikacije določa 141. člen pravilnika. Poleg pravil DDV mora izdajatelj navesti tudi svojo davčno številko po ZDavP-2.",
+          "refs": [
+            "siLaw",
+            "siRules",
+            "siProcedure"
+          ]
+        },
+        {
+          "q": "Ali je prag za oprostitev DDV še 50.000 €?",
+          "a": "Ne. Osnovni letni prag je 60.000 €. Meja 66.000 € omogoča le nadaljevanje oprostitve v tekočem letu pod pogoji iz 94. člena; ne nadomesti osnovnega praga.",
+          "refs": [
+            "siLaw",
+            "siVat"
+          ]
+        },
+        {
+          "q": "Ali lahko z Billerom izdam davčno potrjen račun?",
+          "a": "Ne. Billero ne izvaja davčnega potrjevanja. Za slovenske račune z neposrednim nakazilom lahko pripraviš PDF (slovenskim podjetjem do 31. 12. 2027, nato samo potrošnikom in tujim kupcem); za gotovino in kartice preveri obveznost potrjevanja in uporabi ustrezno rešitev.",
+          "refs": [
+            "siFiscal",
+            "siEinvoice"
+          ]
+        },
+        {
+          "q": "Ali UPN QR potrdi račun pri FURS?",
+          "a": "Ne. UPN QR pomaga izpolniti podatke za bančno nakazilo. Ne pošlje računa FURS in ne nadomesti davčnega potrjevanja.",
+          "refs": [
+            "siFiscal"
+          ]
+        },
+        {
+          "q": "Katero klavzulo doda Billero, kadar ne obračunam DDV?",
+          "a": "Pri Sloveniji uporabi sklic na prvi odstavek 94. člena ZDDV-1. Pred izdajo preveri, da je prav ta oprostitev ustrezna za tvoje podjetje in posel.",
+          "refs": [
+            "siLaw"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "en/invoice-requirements/slovenia.html",
+      "country": "slovenia",
+      "lang": "en",
+      "market": "Slovenia",
+      "title": "What must an invoice contain in Slovenia?",
+      "description": "Invoice details for Slovenian sole proprietors, VAT exemption thresholds, cash fiscalization and UPN QR. Official sources and Billero’s limits.",
+      "answer": "A Slovenian sole proprietor’s invoice needs identifying details and sale information; the exact requirements depend on VAT identification. Where fiscal confirmation is required, card payments count as cash payments too — Billero does not perform fiscal confirmation.",
+      "answerRefs": [
+        "siLaw",
+        "siRules",
+        "siFiscal"
+      ],
+      "scope": "For ordinary domestic supplies by a Slovenian sole proprietor. Special schemes, simplified invoices, cross-border transactions and public-sector invoices need separate checks.",
+      "noteTitle": "Use Billero for direct bank transfers",
+      "note": "Use Billero for invoices paid directly into a transaction account: for consumers and foreign customers, and for Slovenian businesses until 31 December 2027. From 1 January 2028, Slovenian businesses, sole proprietors included, must exchange domestic invoices with each other only as structured e-invoices (ZIERDED), so a Billero PDF will no longer be enough for them. Cash or card invoices that require fiscal confirmation need a suitable separate solution.",
+      "noteRefs": [
+        "siCash",
+        "siEinvoice"
+      ],
+      "sections": [
+        {
+          "id": "details",
+          "title": "Which details belong on the invoice?",
+          "blocks": [
+            {
+              "type": "h3",
+              "text": "If you are identified for VAT"
+            },
+            {
+              "type": "p",
+              "text": "For a standard invoice under Article 82 of ZDDV-1, check:",
+              "refs": [
+                "siLaw"
+              ]
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Issue date and a sequential number identifying the invoice.",
+                "Supplier and customer names and addresses; the supplier’s VAT identification number.",
+                "The customer’s VAT ID where the customer owes VAT or receives the relevant intra-EU supply under Article 46.",
+                "Quantity and type of goods, or extent and type of services.",
+                "Supply, completion or relevant advance-payment date, if known and different from the issue date.",
+                "Taxable amount by rate or exemption, unit prices excluding VAT and discounts not included in those prices.",
+                "VAT rate and amount, or the applicable exemption reference. Special cases need further wording, such as reverse charge."
+              ],
+              "refs": [
+                "siLaw"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "If you are not identified for VAT"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Issue date and sequential invoice number.",
+                "Supplier’s business/name and registered office or permanent address.",
+                "Selling price and total value excluding VAT.",
+                "For an invoice to another taxable person, the quantity and type of goods or extent and type of services."
+              ],
+              "refs": [
+                "siRules"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "This is the minimum under Article 141 of the implementing rules. Customer details, a clear work description, service date, payment deadline and bank details are useful additions, rather than one identical statutory checklist for every supplier.",
+              "refs": [
+                "siRules"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "Tax and registration numbers"
+            },
+            {
+              "type": "p",
+              "text": "Beyond the VAT rules, Article 35 of ZDavP-2 requires the issuer’s tax number on accounting documents, including when the issuer is not identified for VAT.",
+              "refs": [
+                "siProcedure"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "ZGD-1 requires a sole proprietor’s business name, registered office and registration number on communications to an individual recipient, with an exception for the registration number in existing business relationships. Check these details for your case too.",
+              "refs": [
+                "siBusiness"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vat",
+          "title": "VAT exemption and thresholds",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "For a domestic small business, the basic threshold is €60,000 of annual Slovenian turnover, considering both the previous and current calendar year. If current-year turnover exceeds €60,000 but not €66,000, the exemption can continue until year-end, with identification from the next year. Exceeding €66,000 requires identification during the month of crossing.",
+              "refs": [
+                "siLaw",
+                "siVat"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Being below the threshold does not rule out VAT identification: cross-border services or acquisitions can trigger separate requirements, and voluntary registration also matters.",
+              "refs": [
+                "siVat"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "If Article 94(1) actually applies, you can explain the exemption with this Slovenian wording:",
+              "refs": []
+            },
+            {
+              "type": "quote",
+              "text": "DDV ni obračunan na podlagi 1. odstavka 94. člena ZDDV-1."
+            },
+            {
+              "type": "p",
+              "text": "Billero uses this clause for a Slovenian issuer without charged VAT, including on an English PDF. Switching VAT off does not establish eligibility. Article 141 does not list this clause as a separate minimum field.",
+              "refs": [
+                "siLaw",
+                "siRules"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "payment",
+          "title": "Cash, cards and UPN QR",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Where fiscal confirmation is required, cash includes debit and credit cards. Direct transfers into a transaction account are excluded from that definition. Do not assume every online payment or intermediary payment is a direct bank transfer.",
+              "refs": [
+                "siFiscal"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Billero’s UPN QR supplies bank-transfer details. It does not replace invoice information or fiscal confirmation; the actual payment method matters.",
+              "refs": [
+                "siLaw",
+                "siFiscal"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "billero",
+          "title": "How to do it in Billero",
+          "blocks": [
+            {
+              "type": "ul",
+              "items": [
+                "Select Slovenia in your business profile and check the address, tax details and VAT setting.",
+                "Choose the customer, add descriptions and line items, and check dates and invoice number.",
+                "Enter your IBAN for direct transfers and enable UPN QR if you want it on the PDF.",
+                "Review totals and any exemption clause, then share the PDF from your phone."
+              ],
+              "refs": []
+            }
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "What Billero does not do",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Billero 1.8.1 creates PDFs. It does not fiscally confirm cash invoices with FURS, file tax returns or issue structured e-invoices, which are mandatory for invoices between Slovenian businesses from 1 January 2028 (ZIERDED). It does not determine exemption eligibility or every transaction-specific requirement. A Billero PDF alone is insufficient for an invoice requiring fiscal confirmation.",
+              "refs": [
+                "siFiscal",
+                "siEinvoice"
+              ]
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Are invoice requirements identical with and without VAT?",
+          "a": "No. Article 82 of ZDDV-1 covers standard invoices for VAT-identified suppliers; Article 141 of the implementing rules sets the minimum for suppliers without VAT identification. Beyond the VAT rules, ZDavP-2 also requires the issuer’s tax number.",
+          "refs": [
+            "siLaw",
+            "siRules",
+            "siProcedure"
+          ]
+        },
+        {
+          "q": "Is the Slovenian exemption threshold still €50,000?",
+          "a": "No. The basic annual threshold is €60,000. The €66,000 limit only allows the exemption to continue during the current year under Article 94; it does not replace the basic threshold.",
+          "refs": [
+            "siLaw",
+            "siVat"
+          ]
+        },
+        {
+          "q": "Can Billero issue a fiscally confirmed invoice?",
+          "a": "No. Billero does not perform fiscal confirmation. It can prepare a PDF for direct bank transfers (to Slovenian businesses until 31 December 2027, after that only to consumers and foreign customers); for cash and card payments, check the fiscal-confirmation obligation and use a suitable solution.",
+          "refs": [
+            "siFiscal",
+            "siEinvoice"
+          ]
+        },
+        {
+          "q": "Does UPN QR confirm the invoice with FURS?",
+          "a": "No. UPN QR helps fill in bank-transfer details. It does not send the invoice to FURS or replace fiscal confirmation.",
+          "refs": [
+            "siFiscal"
+          ]
+        },
+        {
+          "q": "Which exemption clause does Billero use for Slovenia?",
+          "a": "It refers to Article 94(1) of ZDDV-1. Check that this specific exemption applies to your business and transaction before issuing the invoice.",
+          "refs": [
+            "siLaw"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "en/invoice-requirements/united-states.html",
+      "country": "united-states",
+      "lang": "en",
+      "market": "United States",
+      "title": "What should a sole proprietor put on a U.S. invoice?",
+      "description": "A practical U.S. invoice checklist: business and customer details, EIN, sales tax, W-9 and 1099. English Letter PDFs and Billero’s limits.",
+      "answer": "For an ordinary U.S. sole proprietor’s domestic service invoice, there is no single federal invoice template: IRS guidance focuses on records that clearly show income and expenses. Include the parties, dates, work, amounts and payment terms, then check any state, industry and customer requirements.",
+      "answerRefs": [
+        "irsRecords",
+        "irs583",
+        "nyTax"
+      ],
+      "scope": "For ordinary domestic invoicing by U.S. sole proprietors. Government contracts, regulated industries, international work and entity-specific tax rules need separate checks.",
+      "noteTitle": "A useful checklist, not one nationwide legal minimum",
+      "note": "Sales tax and invoice-detail rules can vary by jurisdiction. For example, New York sales-tax vendors must identify taxable and nontaxable items and show sales tax separately.",
+      "noteRefs": [
+        "nyTax"
+      ],
+      "sections": [
+        {
+          "id": "details",
+          "title": "A practical invoice checklist",
+          "blocks": [
+            {
+              "type": "ul",
+              "items": [
+                "Your business or legal name, mailing address and contact details.",
+                "The customer’s name and billing address.",
+                "A unique invoice number, issue date and service date or period.",
+                "A clear description of work or goods, quantities, rates and line totals.",
+                "Subtotal, discounts, any applicable sales tax and total due, with currency.",
+                "Payment deadline, agreed terms and payment instructions."
+              ],
+              "refs": []
+            },
+            {
+              "type": "p",
+              "text": "This is a practical billing checklist, not a claim that federal law requires every listed field on every invoice. Keep invoices with supporting records so your income and expenses can be traced; an invoice alone is not proof that it was paid.",
+              "refs": [
+                "irsRecords",
+                "irs583"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Where sales tax applies, check the state’s required invoice details. New York’s separate tax disclosure is one example, not a rule we can generalize to all states.",
+              "refs": [
+                "nyTax"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ein",
+          "title": "EIN, SSN and Form W-9",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "As a privacy practice, keep your Social Security number off routine customer invoices. If a business tax identifier is needed and you have an appropriate EIN, use it rather than exposing your SSN. An EIN is not a universal mandatory invoice field.",
+              "refs": [
+                "irsIdentity",
+                "irs583"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Form W-9 is a separate request for your correct name and taxpayer identification number. Its instructions allow a sole proprietor who has an EIN to use either that EIN or an SSN; a disregarded single-member LLC follows the owner’s TIN rules. Give a requested W-9 to the requester through a secure channel, not as a public invoice attachment.",
+              "refs": [
+                "irsW9",
+                "irsIdentity"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "In Billero’s U.S. business profile, use the EIN field for an EIN or leave it blank. Do not enter an SSN: the value can appear on your customer PDFs.",
+              "refs": []
+            }
+          ]
+        },
+        {
+          "id": "tax",
+          "title": "Sales tax depends on where you do business",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "A physical or economic connection to a state, called nexus, may create state and local sales-tax collection duties. Nexus standards differ. Check the relevant state authority for registration, whether the product or service is taxable, and the applicable location and rate.",
+              "refs": [
+                "sbaNexus"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Billero lets you enter a sales-tax rate and calculates from your invoice settings. It does not determine nexus, decide taxability, look up the correct jurisdiction rate, register you or file sales-tax returns.",
+              "refs": []
+            }
+          ]
+        },
+        {
+          "id": "forms",
+          "title": "W-9 and 1099 are separate from your invoice",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "A business customer may request Form W-9 and may need to report contractor payments on Form 1099-NEC when the current reporting rules apply. Thresholds and exceptions must be checked for the payment year. Issuing an invoice does not replace either form, and Billero does not prepare or file them.",
+              "refs": [
+                "irsContractors"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "billero",
+          "title": "How to do it in Billero",
+          "blocks": [
+            {
+              "type": "ul",
+              "items": [
+                "Choose United States in the business profile; check your name, address and optional EIN.",
+                "Select the client and add the service, amounts and payment due date.",
+                "Enter your own sales-tax rate when applicable; check the resulting total.",
+                "Create and share an English PDF in Letter format. You can use the app interface in English or U.S. Spanish.",
+                "Add bank details or a QR code for your own payment link. You can also create an estimate and convert it into an invoice."
+              ],
+              "refs": []
+            }
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "What Billero does not do",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Billero 1.8.1 creates PDFs. It does not certify legal compliance, determine sales-tax obligations or send tax forms to the IRS. The U.S. document is in English even when the app interface is Spanish; it does not use Slovenia’s UPN or Europe’s SEPA bank-transfer QR. A payment-link QR opens your chosen payment provider.",
+              "refs": []
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Is there a mandatory federal invoice format for sole proprietors?",
+          "a": "There is no single federal template for ordinary domestic service invoices. IRS recordkeeping guidance allows a system that clearly records income and expenses. State, industry or contract requirements may add obligations.",
+          "refs": [
+            "irsRecords"
+          ]
+        },
+        {
+          "q": "Do I have to put my SSN on a customer invoice?",
+          "a": "Do not put your SSN into Billero’s EIN field. Keep routine invoices separate from tax-ID requests. If a customer requests Form W-9, supply the appropriate TIN according to the IRS instructions through a secure channel.",
+          "refs": [
+            "irsW9",
+            "irsIdentity"
+          ]
+        },
+        {
+          "q": "Does Billero work out my sales-tax rate or nexus?",
+          "a": "No. You determine the applicable tax treatment and enter the rate. Nexus and state or local requirements need checking with the relevant tax authority.",
+          "refs": [
+            "sbaNexus"
+          ]
+        },
+        {
+          "q": "Does a Billero invoice replace a W-9 or 1099?",
+          "a": "No. W-9 identifies the payee for tax purposes; 1099-NEC reports qualifying payments. Billero does not prepare or file either form.",
+          "refs": [
+            "irsContractors"
+          ]
+        },
+        {
+          "q": "Can I use Spanish and send an English invoice?",
+          "a": "Yes. With United States selected as the issuer country, Billero produces an English PDF in Letter format while the app interface can be U.S. Spanish.",
+          "refs": []
+        }
+      ]
+    },
+    {
+      "file": "es/factura-requisitos/estados-unidos.html",
+      "country": "united-states",
+      "lang": "es",
+      "market": "Estados Unidos",
+      "title": "¿Qué debe incluir una factura en Estados Unidos?",
+      "description": "Guía para trabajadores independientes: datos de la factura, EIN, sales tax, W-9 y 1099. App en español, PDF en inglés y límites de Billero.",
+      "answer": "Para una factura común por servicios nacionales de un trabajador independiente en Estados Unidos, no existe una plantilla federal única: el IRS exige registros que reflejen los ingresos y gastos. Incluye las partes, fechas, trabajo, montos y condiciones de pago, y revisa los requisitos estatales, del sector y del cliente.",
+      "answerRefs": [
+        "irsRecords",
+        "irs583",
+        "nyTax"
+      ],
+      "scope": "Para facturación nacional habitual de propietarios únicos en EE. UU. Los contratos públicos, sectores regulados, operaciones internacionales y reglas según el tipo de entidad requieren una revisión aparte.",
+      "noteTitle": "Una lista práctica, no un mínimo legal nacional",
+      "note": "Las reglas de sales tax y los datos exigidos pueden variar. Por ejemplo, Nueva York exige que los vendedores sujetos a ese impuesto identifiquen los artículos gravados y exentos y muestren el impuesto por separado.",
+      "noteRefs": [
+        "nyTax"
+      ],
+      "sections": [
+        {
+          "id": "datos",
+          "title": "Lista práctica para tu factura",
+          "blocks": [
+            {
+              "type": "ul",
+              "items": [
+                "Nombre legal o comercial, dirección y datos de contacto de tu negocio.",
+                "Nombre y dirección de facturación del cliente.",
+                "Número único de factura, fecha de emisión y fecha o periodo del servicio.",
+                "Descripción clara del trabajo o los productos, cantidades, tarifas y montos por concepto.",
+                "Subtotal, descuentos, sales tax si corresponde, total a pagar y moneda.",
+                "Fecha de vencimiento, condiciones acordadas e instrucciones de pago."
+              ],
+              "refs": []
+            },
+            {
+              "type": "p",
+              "text": "Esta lista ayuda a facturar; no significa que la ley federal exija cada dato en todas las facturas. Guarda las facturas y los comprobantes que permitan seguir tus ingresos y gastos. La factura por sí sola no demuestra que ya se pagó.",
+              "refs": [
+                "irsRecords",
+                "irs583"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Si cobras sales tax, consulta los datos que exige el estado. La presentación separada del impuesto en Nueva York es un ejemplo, no una regla que podamos extender a todos los estados.",
+              "refs": [
+                "nyTax"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ein",
+          "title": "EIN, SSN y formulario W-9",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Para proteger tu privacidad, evita incluir tu número de Seguro Social (SSN) en facturas habituales. Si necesitas mostrar un identificador fiscal comercial y tienes un EIN apropiado, úsalo en lugar del SSN. El EIN no es un campo obligatorio universal en las facturas.",
+              "refs": [
+                "irsIdentity",
+                "irs583"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "El W-9 solicita por separado tu nombre y número de identificación fiscal correctos. Sus instrucciones permiten que un propietario único con EIN use ese EIN o su SSN; una LLC de un solo dueño no considerada entidad separada sigue las reglas del identificador del dueño. Entrega el W-9 solicitado por un medio seguro, no como adjunto público de una factura.",
+              "refs": [
+                "irsW9",
+                "irsIdentity"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "En el perfil estadounidense de Billero, ingresa un EIN o deja ese campo vacío. No ingreses un SSN: el dato puede aparecer en los PDF que envías a tus clientes.",
+              "refs": []
+            }
+          ]
+        },
+        {
+          "id": "impuesto",
+          "title": "Sales tax según dónde haces negocios",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "La presencia física o económica en un estado, llamada nexus, puede generar obligaciones de recaudar impuestos estatales y locales sobre las ventas. Los criterios varían. Consulta a la autoridad estatal sobre registro, servicios o productos gravados, lugar y tasa aplicable.",
+              "refs": [
+                "sbaNexus"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "En Billero ingresas la tasa de sales tax y la app calcula el monto según la configuración de la factura. No determina nexus, decide qué está gravado, busca la tasa correcta, registra tu negocio ni presenta declaraciones.",
+              "refs": []
+            }
+          ]
+        },
+        {
+          "id": "formularios",
+          "title": "W-9 y 1099 son distintos de la factura",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Un cliente comercial puede pedirte un W-9 y tener que declarar pagos a contratistas en el formulario 1099-NEC. Revisa los umbrales y excepciones vigentes para el año del pago. La factura no reemplaza esos formularios; Billero no los prepara ni presenta.",
+              "refs": [
+                "irsContractors"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "billero",
+          "title": "Cómo hacerlo en Billero",
+          "blocks": [
+            {
+              "type": "ul",
+              "items": [
+                "Elige Estados Unidos como país del negocio y revisa nombre, dirección y EIN opcional.",
+                "Selecciona al cliente y agrega el servicio, los montos y la fecha de vencimiento.",
+                "Ingresa tu tasa de sales tax si corresponde y revisa el total.",
+                "Crea y comparte un PDF en inglés y tamaño Letter, aunque uses la app en español de Estados Unidos.",
+                "Agrega datos bancarios o un QR con tu propio enlace de pago. También puedes crear un estimado y convertirlo en factura."
+              ],
+              "refs": []
+            }
+          ]
+        },
+        {
+          "id": "limites",
+          "title": "Lo que Billero no hace",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Billero 1.8.1 crea PDF. No certifica el cumplimiento legal, determina tus obligaciones de sales tax ni envía formularios al IRS. Los documentos de un emisor estadounidense salen en inglés, aunque la app esté en español; no usan UPN ni SEPA para transferencias bancarias. El QR de enlace de pago abre el proveedor que elegiste.",
+              "refs": []
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Hay un formato federal obligatorio para la factura?",
+          "a": "No hay una plantilla federal única para facturas comunes por servicios nacionales. El IRS permite un sistema que refleje ingresos y gastos. Las reglas estatales, del sector o del contrato pueden agregar obligaciones.",
+          "refs": [
+            "irsRecords"
+          ]
+        },
+        {
+          "q": "¿Debo poner mi SSN en la factura?",
+          "a": "No lo ingreses en el campo EIN de Billero. Separa las facturas habituales de las solicitudes de identificación fiscal. Si te piden un W-9, proporciona el identificador correspondiente según el IRS por un medio seguro.",
+          "refs": [
+            "irsW9",
+            "irsIdentity"
+          ]
+        },
+        {
+          "q": "¿Billero determina el nexus o la tasa de sales tax?",
+          "a": "No. Tú determinas el tratamiento fiscal e ingresas la tasa. Consulta el nexus y los requisitos estatales o locales con la autoridad correspondiente.",
+          "refs": [
+            "sbaNexus"
+          ]
+        },
+        {
+          "q": "¿La factura de Billero reemplaza el W-9 o el 1099?",
+          "a": "No. El W-9 identifica al beneficiario para fines fiscales; el 1099-NEC declara pagos que cumplen las condiciones. Billero no prepara ni presenta esos formularios.",
+          "refs": [
+            "irsContractors"
+          ]
+        },
+        {
+          "q": "¿Puedo usar la app en español y enviar la factura en inglés?",
+          "a": "Sí. Con Estados Unidos como país del emisor, Billero genera un PDF en inglés y tamaño Letter. La interfaz puede estar en español de Estados Unidos.",
+          "refs": []
+        }
+      ]
+    },
+    {
+      "file": "de/rechnung-pflichtangaben.html",
+      "country": "germany",
+      "lang": "de",
+      "market": "Deutschland",
+      "title": "Was muss auf einer Rechnung in Deutschland stehen?",
+      "description": "Pflichtangaben für Kleinunternehmer und Regelbesteuerte, § 19 UStG, E-Rechnung und Übergangsfristen. Amtliche Quellen und die PDF-Grenzen von Billero.",
+      "answer": "Für Kleinunternehmer nach § 19 UStG nennt § 34a UStDV einen eigenen Mindestumfang; für reguläre Rechnungen gelten die Angaben nach § 14 UStG. Billero erstellt einfache PDFs, keine strukturierten E-Rechnungen — prüfe deshalb neben den Angaben auch das zulässige Format.",
+      "answerRefs": [
+        "de34a",
+        "de14"
+      ],
+      "scope": "Für gewöhnliche Inlandsumsätze eines in Deutschland ansässigen Unternehmens. Kleinbetragsrechnungen, Sonderfälle, Auslandsgeschäfte und Rechnungen an Behörden sind gesondert zu prüfen.",
+      "noteTitle": "Kleinunternehmer: Ausstellung und Empfang unterscheiden",
+      "note": "Die Ausnahme für Kleinunternehmer betrifft die Ausstellung von E-Rechnungen. Seit 2025 müssen auch sie E-Rechnungen empfangen können; diese Aufgabe übernimmt Billero nicht.",
+      "noteRefs": [
+        "de34a",
+        "deBmf"
+      ],
+      "sections": [
+        {
+          "id": "angaben",
+          "title": "Pflichtangaben auf der Rechnung",
+          "blocks": [
+            {
+              "type": "h3",
+              "text": "Kleinunternehmer: Mindestangaben nach § 34a UStDV"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Vollständiger Name und vollständige Anschrift von Aussteller und Leistungsempfänger.",
+                "Steuernummer, Umsatzsteuer-Identifikationsnummer oder Kleinunternehmer-Identifikationsnummer des Ausstellers.",
+                "Ausstellungsdatum.",
+                "Menge und Art der Waren oder Umfang und Art der Leistung.",
+                "Entgelt in einer Summe sowie ein Hinweis auf die Steuerbefreiung für Kleinunternehmer nach § 19 UStG.",
+                "Bei Abrechnung durch den Leistungsempfänger: die Angabe „Gutschrift“."
+              ],
+              "refs": [
+                "de34a"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Eine Rechnungsnummer und das Leistungsdatum sind in diesem besonderen Mindestkatalog nicht genannt. Für eine nachvollziehbare Zuordnung empfehlen wir sie dennoch, ebenso wie Zahlungsfrist und Bankverbindung.",
+              "refs": [
+                "de34a"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "Reguläre Rechnung mit Umsatzsteuer"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Namen und Anschriften beider Parteien sowie Steuernummer oder USt-IdNr. des Ausstellers.",
+                "Ausstellungsdatum und einmalig vergebene fortlaufende Rechnungsnummer.",
+                "Menge und Art der Waren beziehungsweise Umfang und Art der Leistung sowie Liefer- oder Leistungszeitpunkt.",
+                "Nach Steuersätzen aufgeschlüsseltes Entgelt, vereinbarte Minderungen, Steuersatz und Steuerbetrag."
+              ],
+              "refs": [
+                "de14"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Bei Steuerbefreiungen und Sonderfällen gelten weitere oder abweichende Angaben, etwa ein Befreiungshinweis oder „Gutschrift“. Diese Übersicht ersetzt nicht die Prüfung des konkreten Umsatzes nach §§ 14 und 14a UStG.",
+              "refs": [
+                "de14"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kleinunternehmer",
+          "title": "§ 19: Grenzen und Befreiungshinweis",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Seit 2025 gilt für die inländische Kleinunternehmerbefreiung: Gesamtumsatz im Vorjahr höchstens 25.000 € und im laufenden Kalenderjahr höchstens 100.000 €. Im Gründungsjahr ist die Grenze von 25.000 € maßgeblich. Es geht um Umsatz, nicht Gewinn; ein Verzicht auf die Regelung ist zu berücksichtigen.",
+              "refs": [
+                "de19",
+                "deStart"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Bereits der Umsatz, mit dem die laufende Grenze von 100.000 € beziehungsweise 25.000 € im Gründungsjahr überschritten wird, ist nicht mehr von dieser Befreiung erfasst. Die vorherigen befreiten Umsätze bleiben steuerfrei.",
+              "refs": [
+                "deStart"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Wer die Befreiung tatsächlich anwendet, weist keine Umsatzsteuer gesondert aus und nennt die Kleinunternehmerbefreiung auf der Rechnung. Ein möglicher Hinweis lautet:",
+              "refs": [
+                "de19",
+                "de34a"
+              ]
+            },
+            {
+              "type": "quote",
+              "text": "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet."
+            },
+            {
+              "type": "p",
+              "text": "Ein solcher Hinweis begründet die Befreiung nicht selbst. Prüfe deine Voraussetzungen und die im PDF ausgegebene Klausel vor dem Versand.",
+              "refs": [
+                "de19"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e-rechnung",
+          "title": "Wann reicht ein PDF noch aus?",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Seit 2025 ist die strukturierte E-Rechnung bei erfassten Umsätzen zwischen inländischen Unternehmen das Regelformat. Ein einfaches PDF zählt als „sonstige Rechnung“. Für eine solche elektronisch übermittelte Rechnung ist die Zustimmung des Empfängers erforderlich.",
+              "refs": [
+                "de14"
+              ]
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Fall",
+                "Einfaches PDF"
+              ],
+              "rows": [
+                [
+                  "Kleinunternehmer nach § 19",
+                  "Die Ausnahme nach § 34a UStDV gilt auch über die Übergangsfristen hinaus; PDF mit Zustimmung des Empfängers."
+                ],
+                [
+                  "Andere Aussteller, Umsätze 2025–2026",
+                  "Bis 31.12.2026 erlaubt, mit Zustimmung des Empfängers."
+                ],
+                [
+                  "Andere Aussteller, Umsätze 2027",
+                  "Bis 31.12.2027 nur bei Vorjahresgesamtumsatz bis 800.000 € im Rahmen dieser Übergangsregel; PDF mit Zustimmung."
+                ],
+                [
+                  "Ab 2028",
+                  "Für erfasste inländische B2B-Umsätze genügt ein einfaches PDF nicht mehr, soweit keine Ausnahme greift. Die Kleinunternehmerausnahme bleibt bestehen."
+                ]
+              ],
+              "refs": [
+                "de34a",
+                "de27"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Die Tabelle betrifft einfache PDFs; für bestimmte EDI-Verfahren gibt es eine eigene Übergangsregel. Privatkunden fallen nicht unter die inländische B2B-Pflicht, und für Behörden gelten gesonderte Regeln.",
+              "refs": [
+                "de27",
+                "deBmf"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Empfang seit 2025: Auch Kleinunternehmer müssen E-Rechnungen annehmen können. Laut BMF genügt für den Empfang ein E-Mail-Postfach; damit sind weitere Verarbeitungs- und Aufbewahrungspflichten noch nicht erledigt.",
+              "refs": [
+                "deBmf"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "billero",
+          "title": "So geht es in Billero",
+          "blocks": [
+            {
+              "type": "ul",
+              "items": [
+                "Wähle Deutschland als Unternehmensland und prüfe Namen, Anschrift und Steuerangaben.",
+                "Lege den Kunden und die Positionen an; kontrolliere Rechnungsnummer, Leistungsdatum und Zahlungsziel.",
+                "Stelle den Umsatzsteuerstatus passend zu deinem Unternehmen ein und prüfe den Befreiungshinweis oder die ausgewiesene Steuer.",
+                "Erstelle und teile das PDF. Mit Plus oder Pro kannst du zwischen Deutsch und Englisch als Dokumentsprache wählen.",
+                "Für Überweisungen kannst du Bankdaten und einen SEPA-EPC-Zahlungs-QR ergänzen."
+              ],
+              "refs": []
+            }
+          ]
+        },
+        {
+          "id": "grenzen",
+          "title": "Was Billero nicht leistet",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Billero 1.8.1 erzeugt einfache PDFs, weder XRechnung noch ZUGFeRD mit strukturierten Rechnungsdaten. Es stellt auch keinen Empfangs- oder Archivierungsprozess für E-Rechnungen bereit und gibt keine Steuererklärungen ab. Wenn du eine strukturierte E-Rechnung ausstellen musst, benötigst du eine andere Lösung. Billero prüft weder deine Kleinunternehmereigenschaft noch die Zustimmung deines Kunden.",
+              "refs": []
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Brauchen Kleinunternehmer eine fortlaufende Rechnungsnummer?",
+          "a": "§ 34a UStDV führt sie im besonderen Mindestkatalog nicht auf. Für eine nachvollziehbare Zuordnung ist sie trotzdem sinnvoll. Bei regulären Rechnungen nach § 14 Abs. 4 UStG gehört sie zu den Pflichtangaben.",
+          "refs": [
+            "de34a",
+            "de14"
+          ]
+        },
+        {
+          "q": "Welche Umsatzgrenzen gelten für Kleinunternehmer?",
+          "a": "Für inländische Unternehmen gelten seit 2025 höchstens 25.000 € Vorjahresumsatz und höchstens 100.000 € im laufenden Jahr. Im Gründungsjahr ist die Grenze von 25.000 € maßgeblich; weitere Voraussetzungen und ein möglicher Verzicht sind zu beachten.",
+          "refs": [
+            "de19",
+            "deStart"
+          ]
+        },
+        {
+          "q": "Müssen Kleinunternehmer E-Rechnungen ausstellen?",
+          "a": "Für nach § 19 UStG steuerfreie Leistungen erlaubt § 34a UStDV weiterhin sonstige Rechnungen. Ein PDF setzt die Zustimmung des Empfängers voraus. Die Ausnahme betrifft die Ausstellung, nicht den seit 2025 erforderlichen Empfang.",
+          "refs": [
+            "de34a",
+            "de14",
+            "deBmf"
+          ]
+        },
+        {
+          "q": "Ist ein per E-Mail versandtes PDF eine E-Rechnung?",
+          "a": "Ein einfaches PDF ist seit 2025 keine E-Rechnung im Sinne des UStG, weil die strukturierten Daten fehlen. Billero erzeugt solche einfachen PDFs.",
+          "refs": [
+            "de14"
+          ]
+        },
+        {
+          "q": "Kann ich Billero während der Übergangszeit verwenden?",
+          "a": "Für einfache PDFs gelten bis Ende 2026 die allgemeine Übergangsfrist und für 2027 die Grenze von 800.000 € Vorjahresumsatz; der Empfänger muss zustimmen. Für Kleinunternehmer gilt die eigene Ausnahme auch danach. Prüfe, welche Regel auf deinen Umsatz zutrifft.",
+          "refs": [
+            "de27",
+            "de34a"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "en/invoice-requirements/germany.html",
+      "country": "germany",
+      "lang": "en",
+      "market": "Germany",
+      "title": "What must an invoice contain in Germany?",
+      "description": "German invoice details for Kleinunternehmer and VAT businesses, § 19 thresholds, E-Rechnung and transition dates. Official sources and Billero’s PDF limits.",
+      "answer": "German Kleinunternehmer using § 19 UStG have a specific minimum invoice checklist under § 34a UStDV; standard invoices follow § 14 UStG. Billero creates ordinary PDFs, not structured E-Rechnungen, so check the permitted format as well as the invoice details.",
+      "answerRefs": [
+        "de34a",
+        "de14"
+      ],
+      "scope": "For ordinary domestic supplies by a business established in Germany. Small-value invoices, special schemes, cross-border transactions and public-sector invoices need separate checks.",
+      "noteTitle": "Kleinunternehmer: issuing and receiving are different",
+      "note": "The small-business exception covers issuing E-Rechnungen. Kleinunternehmer still need to be able to receive them from 2025; Billero does not provide that process.",
+      "noteRefs": [
+        "de34a",
+        "deBmf"
+      ],
+      "sections": [
+        {
+          "id": "details",
+          "title": "Required invoice details",
+          "blocks": [
+            {
+              "type": "h3",
+              "text": "Kleinunternehmer: the § 34a UStDV minimum"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Full names and addresses of supplier and customer.",
+                "Supplier’s tax number, VAT identification number or small-business identification number.",
+                "Issue date.",
+                "Quantity and type of goods, or extent and type of services.",
+                "Consideration as one total and a notice of the small-business exemption under § 19 UStG.",
+                "For self-billing by the customer: the designation “Gutschrift”."
+              ],
+              "refs": [
+                "de34a"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "A sequential invoice number and supply date are not listed in this special minimum. We still recommend them for traceability, together with payment terms and bank details.",
+              "refs": [
+                "de34a"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "Standard invoice charging VAT"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Names and addresses of both parties and the supplier’s tax number or VAT ID.",
+                "Issue date and a unique sequential invoice number.",
+                "Quantity and type of goods or extent and type of services, plus the supply date.",
+                "Consideration broken down by tax rate, agreed reductions, and the VAT rate and amount."
+              ],
+              "refs": [
+                "de14"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Exemptions and special cases require further or different wording, such as an exemption notice or “Gutschrift”. Check the specific transaction under §§ 14 and 14a UStG.",
+              "refs": [
+                "de14"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "small-business",
+          "title": "§ 19 thresholds and the exemption notice",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "From 2025, the domestic small-business exemption requires previous-year turnover of no more than €25,000 and current-calendar-year turnover of no more than €100,000. In the year a business starts, the relevant limit is €25,000. These are turnover, not profit, limits; opting out of the scheme also matters.",
+              "refs": [
+                "de19",
+                "deStart"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "The transaction that crosses the current-year limit of €100,000, or €25,000 in the start-up year, is already outside this exemption. Earlier exempt transactions remain exempt.",
+              "refs": [
+                "deStart"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "If you actually use the exemption, do not separately charge VAT and include a small-business exemption notice. One possible wording is:",
+              "refs": [
+                "de19",
+                "de34a"
+              ]
+            },
+            {
+              "type": "quote",
+              "text": "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet."
+            },
+            {
+              "type": "p",
+              "text": "The wording does not itself establish eligibility. Check your circumstances and the clause shown in the PDF before sending it.",
+              "refs": [
+                "de19"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e-invoice",
+          "title": "When is an ordinary PDF still allowed?",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Since 2025, structured E-Rechnung is the default format for covered transactions between domestic businesses. An ordinary PDF is an “other invoice” (sonstige Rechnung). Sending such an electronic invoice requires the recipient’s consent.",
+              "refs": [
+                "de14"
+              ]
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Case",
+                "Ordinary PDF"
+              ],
+              "rows": [
+                [
+                  "Kleinunternehmer under § 19",
+                  "The § 34a UStDV exception continues beyond the transition periods; PDF requires recipient consent."
+                ],
+                [
+                  "Other issuers, 2025–2026 supplies",
+                  "Allowed through December 31, 2026, with recipient consent."
+                ],
+                [
+                  "Other issuers, 2027 supplies",
+                  "Allowed through December 31, 2027 under this transition rule only if previous-year turnover is no more than €800,000; recipient consent required."
+                ],
+                [
+                  "From 2028",
+                  "An ordinary PDF is insufficient for covered domestic B2B supplies unless an exception applies. The small-business exception continues."
+                ]
+              ],
+              "refs": [
+                "de34a",
+                "de27"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "This table concerns ordinary PDFs. Certain EDI procedures have a separate transition rule. Private consumers are outside the domestic B2B mandate; public-sector invoices have separate rules.",
+              "refs": [
+                "de27",
+                "deBmf"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Receiving from 2025: Kleinunternehmer must also be able to accept E-Rechnungen. BMF says an email inbox suffices for receipt; this alone does not discharge further processing and retention obligations.",
+              "refs": [
+                "deBmf"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "billero",
+          "title": "How to do it in Billero",
+          "blocks": [
+            {
+              "type": "ul",
+              "items": [
+                "Select Germany as your business country and check names, address and tax details.",
+                "Choose the customer and line items; check invoice number, supply date and payment deadline.",
+                "Set the VAT status to match your business and review either the exemption clause or charged VAT.",
+                "Create and share the PDF. Plus and Pro allow German or English as the document language.",
+                "For bank transfers, add bank details and an optional SEPA EPC payment QR."
+              ],
+              "refs": []
+            }
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "What Billero does not do",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Billero 1.8.1 creates ordinary PDFs, not XRechnung or ZUGFeRD with structured invoice data. It does not provide an E-Rechnung receipt or archiving workflow or file tax returns. If you must issue a structured e-invoice, you need another solution. Billero does not determine small-business eligibility or check recipient consent.",
+              "refs": []
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Do Kleinunternehmer need a sequential invoice number?",
+          "a": "The special minimum in § 34a UStDV does not list one, though it is useful for traceability. It is mandatory on standard invoices under § 14(4) UStG.",
+          "refs": [
+            "de34a",
+            "de14"
+          ]
+        },
+        {
+          "q": "What are the Kleinunternehmer turnover limits?",
+          "a": "From 2025, domestic businesses must have no more than €25,000 of previous-year turnover and no more than €100,000 in the current year. In the start-up year, the relevant limit is €25,000. Other conditions and any opt-out also matter.",
+          "refs": [
+            "de19",
+            "deStart"
+          ]
+        },
+        {
+          "q": "Must Kleinunternehmer issue E-Rechnungen?",
+          "a": "For supplies exempt under § 19 UStG, § 34a UStDV still permits other invoices. An ordinary PDF needs recipient consent. The exception covers issuing, not the ability to receive e-invoices required since 2025.",
+          "refs": [
+            "de34a",
+            "de14",
+            "deBmf"
+          ]
+        },
+        {
+          "q": "Is a PDF sent by email an E-Rechnung?",
+          "a": "An ordinary PDF is not an E-Rechnung under the UStG definition applying since 2025 because it lacks structured data. Billero creates these ordinary PDFs.",
+          "refs": [
+            "de14"
+          ]
+        },
+        {
+          "q": "Can I use Billero during the transition period?",
+          "a": "Ordinary PDFs are covered by the general transition through 2026 and, for 2027, the €800,000 previous-year turnover limit; recipient consent is needed. Kleinunternehmer have their own continuing exception. Check which rule applies to your transaction.",
+          "refs": [
+            "de27",
+            "de34a"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+/* Country guides: quiet reading layout, native links and disclosure controls. */
+.invoice-guide { background: #050b18; color: #e7edf7; }
+.invoice-guide .container { max-width: 1120px; padding: 24px; }
+.invoice-guide a { text-underline-offset: .2em; }
+.invoice-guide a:focus-visible, .invoice-guide summary:focus-visible { outline: 3px solid #67e8f9; outline-offset: 4px; }
+.guide-skip { position: absolute; left: 16px; top: -100px; z-index: 10; padding: 12px; background: #050b18; }
+.guide-skip:focus { top: 8px; }
+.invoice-guide header { border-bottom: 1px solid #263246; padding-block: 8px 20px; }
+.invoice-guide .logo a { text-decoration: none; }
+.invoice-guide .locale-nav { margin: 0; }
+.invoice-guide .locale-nav a { margin: 0; color: #c5d5ea; }
+.guide-hero { max-width: 850px; padding: 50px 0 36px; }
+.guide-eyebrow { color: #67e8f9; font-size: 13px; letter-spacing: .13em; text-transform: uppercase; }
+.invoice-guide h1 { margin: 14px 0 24px; font-size: clamp(32px, 4.5vw, 54px); line-height: 1.1; letter-spacing: -.035em; text-wrap: balance; }
+.guide-answer { font-size: 20px; line-height: 1.6; color: #e1eaf7; }
+.guide-meta, .guide-scope { color: #acbdd2; font-size: 14px; }
+.guide-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 56px; align-items: start; }
+.guide-toc { position: sticky; top: 24px; border-left: 1px solid #34435a; padding-left: 18px; }
+.guide-toc strong { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
+.guide-toc a { display: block; margin: 8px 0 0; padding: 6px 0; border: 0; border-radius: 0; font-size: 14px; color: #b8c8dc; }
+.guide-article { min-width: 0; max-width: 760px; }
+.guide-article section { scroll-margin-top: 24px; margin-bottom: 44px; }
+.guide-article h2 { font-size: 27px; line-height: 1.25; letter-spacing: -.025em; margin: 0 0 20px; }
+.guide-article h3 { font-size: 19px; margin: 28px 0 12px; }
+.guide-article p, .guide-article li { line-height: 1.75; }
+.guide-article ul, .guide-article ol { padding-left: 23px; }
+.guide-article li { margin-bottom: 10px; padding-left: 4px; }
+.guide-article li::marker { color: #67e8f9; }
+.guide-source { display: block; font-size: 13px; color: #a5bad4; margin: 10px 0 20px; line-height: 1.7; }
+.guide-source a, .guide-sources a { color: #8dddeb; overflow-wrap: anywhere; }
+.guide-note { padding: 22px; margin-bottom: 32px; background: #101e2e; border-left: 3px solid #67e8f9; border-radius: 0 12px 12px 0; }
+.guide-note p { margin: 8px 0 0; }
+.guide-article blockquote { margin: 20px 0; border-left: 3px solid #47637f; padding: 12px 20px; background: #101a2a; }
+.guide-article table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px; }
+.guide-article th:first-child { width: 36%; }
+.guide-article th, .guide-article td { overflow-wrap: anywhere; hyphens: auto; }
+.guide-article th, .guide-article td { text-align: left; vertical-align: top; padding: 14px 10px; border-bottom: 1px solid #34435a; }
+.guide-article th { color: #a9dbe6; }
+.guide-article .faq-list { border-top: 1px solid #34435a; }
+.guide-article details { border-bottom: 1px solid #34435a; }
+.guide-article summary { cursor: pointer; padding: 20px 4px; font-weight: 650; }
+.guide-article details p { padding: 0 4px; margin-top: 0; }
+.guide-article details .guide-source { padding-inline: 4px; }
+.guide-sources { font-size: 14px; }
+.guide-disclaimer { color: #b6c7dc; border-top: 1px solid #34435a; padding-top: 24px; font-size: 14px; }
+.guide-footer { border-top: 1px solid #263246; margin-top: 36px; color: #acbdd2; font-size: 14px; }
+.guide-footer nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.guide-footer nav a { display: inline-flex; align-items: center; margin: 0; min-height: 44px; padding: 4px 0; }
+@media (max-width: 780px) {
+  .guide-layout { grid-template-columns: 1fr; gap: 32px; }
+  .guide-toc { position: static; }
+  .guide-toc a { display: inline-block; margin: 4px 20px 0 0; }
+  .guide-toc strong { display: block; }
+  .guide-hero { padding-top: 32px; }
+}
+@media (max-width: 480px) {
+  .invoice-guide .container { padding: 20px; }
+  .invoice-guide header { flex-direction: row; align-items: center; gap: 12px; }
+  .guide-answer { font-size: 18px; }
+  .guide-article h2 { font-size: 25px; }
+  .guide-note { padding: 18px; }
+}
+@media print {
+  .invoice-guide { background: white; color: black; }
+  .guide-layout { display: block; }
+  .guide-toc, .guide-skip, .locale-nav { display: none; }
+  .guide-article { max-width: none; }
+  .invoice-guide a, .guide-source, .guide-meta, .guide-scope { color: #333; }
+}

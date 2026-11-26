@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravne informacije – Billero</title>
+    <meta name="description" content="Pravne informacije o izdajanju računov in davčnih stopnjah po državah za uporabnike Billero.">
+    <link rel="stylesheet" href="/css/style.css">
+      <script src="/js/language.js" defer></script>
+      <link rel="stylesheet" href="/css/language.css">
+    <link rel="canonical" href="https://billero.app/sl/legal-info">
+    <link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info">
+    <link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info">
+    <link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info">
+    <link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info">
+    <link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info">
+    <link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info">
+    <link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info">
+    <link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info">
+    <link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info">
+    <link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info">
+    <link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info">
+    <link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info">
+    <link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="/sl/"><img src="/img/icons/billero_256.png" alt="Billero logo"></a>
+        <a href="/sl/"><span>Billero</span></a>
+      </div>
+      <nav>
+        <a href="/sl/">Domov</a>
+        <a href="/sl/user-guide">Navodila</a>
+        <a href="/sl/legal-info" class="active">Zakonodaja</a>
+        <a href="/sl/release-notes">Release notes</a>
+        <a href="/sl/contact">Kontakt</a>
+      </nav>
+      <nav class="locale-nav" aria-label="Izberi jezik">
+<a href="/sl/legal-info" lang="sl" hreflang="sl" data-lang="sl" aria-current="page">SL</a>
+<a href="/en/legal-info" lang="en" hreflang="en" data-lang="en">EN</a>
+<a href="/de/legal-info" lang="de" hreflang="de" data-lang="de">DE</a>
+<a href="/es/legal-info" lang="es" hreflang="es" data-lang="es">ES</a>
+<a href="/nl/legal-info" lang="nl" hreflang="nl" data-lang="nl">NL</a>
+<a href="/th/legal-info" lang="th" hreflang="th" data-lang="th">TH</a>
+<a href="/cs/legal-info" lang="cs" hreflang="cs" data-lang="cs">CS</a>
+<a href="/hr/legal-info" lang="hr" hreflang="hr" data-lang="hr">HR</a>
+<a href="/ja/legal-info" lang="ja" hreflang="ja" data-lang="ja">JA</a>
+<a href="/pl/legal-info" lang="pl" hreflang="pl" data-lang="pl">PL</a>
+<a href="/pt/legal-info" lang="pt" hreflang="pt" data-lang="pt">PT</a>
+<a href="/sk/legal-info" lang="sk" hreflang="sk" data-lang="sk">SK</a>
+</nav>
+    </header>
+
+    <main class="container">
+      <div class="page-card">
+        <h1>Pravne informacije po državah</h1>
+        <p class="lead">Pregled zakonodaje o izdajanju računov, davčnih organov, stopenj DDV in obveznih postavk za 31 držav. Podatki so informativne narave — vedno preverite pri pristojnem davčnem organu.</p>
+
+        <div id="world-map" style="height:340px;margin-bottom:28px;border-radius:10px;overflow:hidden;"></div>
+
+        <div class="li-search-wrap">
+          <input class="li-search" type="search" id="searchInput" placeholder="Iskanje države …" oninput="filterCards()">
+        </div>
+
+        <div class="li-grid" id="countryGrid"></div>
+        <p class="li-none" id="noResults" style="display:none">Ni rezultatov.</p>
+
+        <p class="li-disclaimer">
+          <strong>Opomba:</strong> Te informacije so zgolj informativne narave in morda ne odražajo zadnjih sprememb zakonodaje. Pred izdajo računov vedno preverite pri pristojnem davčnem organu ali usposobljenem računovodji. Stopnje DDV in pragovi se redno spreminjajo.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Billero · <a href="/sl/privacy-policy">Zasebnost</a> · <a href="/sl/terms-of-use">Pogoji</a></p>
+    </footer>
+
+    <script src="/js/legal-info-data.js"></script>
+    <script>
+      const L = {
+        taxAuthority: 'Davčni organ',
+        law: 'Zakonodaja',
+        currency: 'Valuta',
+        vat: 'Stopnje DDV',
+        threshold: 'Prag DDV',
+        retention: 'Hramba',
+        years: 'let',
+        notes: 'Opombe',
+        lastVerified: 'Nazadnje preverjeno',
+        mandatoryItems: 'Obvezne postavke',
+        showItems: '▸ Prikaži obvezne postavke',
+        hideItems: '▾ Skrij obvezne postavke',
+        miDateOfIssue: 'Datum izdaje',
+        miInvoiceNumber: 'Zaporedna številka računa',
+        miSellerInfo: 'Ime, naslov in davčna številka prodajalca',
+        miBuyerInfo: 'Ime in naslov kupca',
+        miBuyerVatId: 'Davčna številka kupca (DDV)',
+        miDescription: 'Opis blaga ali storitve',
+        miDateOfSupply: 'Datum dobave',
+        miNetAmount: 'Davčna osnova (neto znesek)',
+        miVatRate: 'Stopnja DDV',
+        miVatAmount: 'Znesek DDV',
+        miTotalAmount: 'Skupni znesek (bruto)',
+        miUsSellerInfo: 'Ime, naslov in EIN prodajalca',
+        miAmountDue: 'Znesek za plačilo',
+        miPaymentTerms: 'Pogoji plačila',
+        miSalesTaxIfApplicable: 'Prometni davek (če velja)',
+        miAuTaxInvoiceWords: 'Besedilo "Tax Invoice"',
+        miAuSellerAbn: 'ABN prodajalca',
+        miAuGstAmount: 'Znesek GST',
+        miAuBuyerAbn: 'ABN kupca (za transakcije ≥ AUD 1.000)',
+        miCaSellerBn: 'Business Number (BN) prodajalca',
+        miCaGstHstAmount: 'Znesek GST/HST',
+        miCaGstHstNumber: 'GST/HST registracijska številka',
+      };
+    </script>
+    <script src="/js/legal-info.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+    <script>
+      new jsVectorMap({
+        selector: '#world-map',
+        map: 'world',
+        backgroundColor: '#0b1120',
+        series: {
+          regions: [{
+            attribute: 'fill',
+            values: {
+              MX:'#eab308',CL:'#eab308',CO:'#eab308',PE:'#eab308',
+              ID:'#eab308',PH:'#eab308',VN:'#eab308',IL:'#eab308',
+              AE:'#eab308',NZ:'#eab308',ZA:'#eab308',KE:'#eab308',
+              GH:'#eab308',
+              IN:'#a855f7'
+            }
+          }]
+        },
+        regionStyle: {
+          initial:{fill:'#1e293b',stroke:'#0f172a',strokeWidth:0.3},
+          hover:{fillOpacity:0.75}
+        },
+        zoomOnScroll: false,
+      });
+    </script>
+  </body>
+</html>

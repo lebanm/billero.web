@@ -1,436 +1,1052 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://billero.app/contact.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/cs/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/cs/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/cs/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/cs/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/de/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/de/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/de/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/de/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/donate.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/en/contact.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/en/donate.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/en/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/en/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/en/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/en/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/en/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/es/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/es/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/es/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/es/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/hr/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/hr/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/hr/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/hr/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/ja/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/ja/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/ja/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/ja/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/nl/contact.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/nl/donate.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/nl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/nl/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/nl/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/nl/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/nl/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/pl/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/pl/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/pl/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/pl/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/pt/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/pt/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/pt/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/pt/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-cs.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-de.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-en.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-es.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-hr.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-ja.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-nl.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-pl.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-pt.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-sk.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes-th.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/release-notes.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/sk/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/sk/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/sk/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/sk/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/th/contact.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/th/donate.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/th/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/th/legal-info.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/th/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/th/terms-of-use.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/th/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://billero.app/user-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://billero.app/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/" />
+  </url>
+  <url><loc>https://billero.app/sl/contact</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/contact" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/contact" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/contact" />
+  </url>
+  <url><loc>https://billero.app/sl/donate</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/donate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/donate" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/donate" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/donate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/donate" />
+  </url>
+  <url><loc>https://billero.app/sl/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/" />
+  </url>
+  <url><loc>https://billero.app/sl/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/sl/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/sl/racun-vsebina</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/racun-vsebina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/invoice-requirements/slovenia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/invoice-requirements/slovenia" />
+  </url>
+  <url><loc>https://billero.app/sl/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/sl/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/sl/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/contact" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/contact" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/contact" />
+  </url>
+  <url><loc>https://billero.app/en/donate</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/donate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/donate" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/donate" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/donate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/donate" />
+  </url>
+  <url><loc>https://billero.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/" />
+  </url>
+  <url><loc>https://billero.app/en/invoice-requirements/germany</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/invoice-requirements/germany" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/rechnung-pflichtangaben" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/invoice-requirements/germany" />
+  </url>
+  <url><loc>https://billero.app/en/invoice-requirements/slovenia</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/racun-vsebina" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/invoice-requirements/slovenia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/invoice-requirements/slovenia" />
+  </url>
+  <url><loc>https://billero.app/en/invoice-requirements/united-states</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/invoice-requirements/united-states" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/factura-requisitos/estados-unidos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/invoice-requirements/united-states" />
+  </url>
+  <url><loc>https://billero.app/en/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/en/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/en/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/en/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/de/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/" />
+  </url>
+  <url><loc>https://billero.app/de/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/de/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/de/rechnung-pflichtangaben</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/invoice-requirements/germany" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/rechnung-pflichtangaben" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/invoice-requirements/germany" />
+  </url>
+  <url><loc>https://billero.app/de/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/de/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/de/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/es/factura-requisitos/estados-unidos</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/invoice-requirements/united-states" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/factura-requisitos/estados-unidos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/invoice-requirements/united-states" />
+  </url>
+  <url><loc>https://billero.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/" />
+  </url>
+  <url><loc>https://billero.app/es/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/es/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/es/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/es/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/es/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/nl/contact</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/contact" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/contact" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/contact" />
+  </url>
+  <url><loc>https://billero.app/nl/donate</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/donate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/donate" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/donate" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/donate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/donate" />
+  </url>
+  <url><loc>https://billero.app/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/" />
+  </url>
+  <url><loc>https://billero.app/nl/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/nl/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/nl/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/nl/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/nl/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/th/contact</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/contact" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/contact" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/contact" />
+  </url>
+  <url><loc>https://billero.app/th/donate</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/donate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/donate" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/donate" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/donate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/donate" />
+  </url>
+  <url><loc>https://billero.app/th/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/" />
+  </url>
+  <url><loc>https://billero.app/th/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/th/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/th/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/th/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/th/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/cs/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/cs/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/cs/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/cs/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/cs/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/hr/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/hr/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/hr/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/hr/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/hr/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/ja/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/ja/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/ja/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/ja/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/ja/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/pl/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/pl/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/pl/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/pl/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/pl/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/pt/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/pt/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/pt/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/pt/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/pt/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
+  <url><loc>https://billero.app/sk/legal-info</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/legal-info" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/legal-info" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/legal-info" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/legal-info" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/legal-info" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/legal-info" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/legal-info" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/legal-info" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/legal-info" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/legal-info" />
+  </url>
+  <url><loc>https://billero.app/sk/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/privacy-policy" />
+  </url>
+  <url><loc>https://billero.app/sk/release-notes</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/release-notes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/release-notes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/release-notes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/release-notes" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/release-notes" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/release-notes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/release-notes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/release-notes" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/release-notes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/release-notes" />
+  </url>
+  <url><loc>https://billero.app/sk/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/terms-of-use" />
+  </url>
+  <url><loc>https://billero.app/sk/user-guide</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://billero.app/sl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://billero.app/en/user-guide" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://billero.app/de/user-guide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://billero.app/es/user-guide" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://billero.app/nl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://billero.app/th/user-guide" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://billero.app/cs/user-guide" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://billero.app/hr/user-guide" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://billero.app/ja/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://billero.app/pl/user-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://billero.app/pt/user-guide" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://billero.app/sk/user-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billero.app/en/user-guide" />
+  </url>
 </urlset>

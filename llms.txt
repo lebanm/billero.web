@@ -1,0 +1,65 @@
+# Billero
+
+> Mobile invoicing for sole proprietors, freelancers and one-person businesses,
+> including single-owner LLCs. Version scope of this page: Billero 1.8.1.
+
+Billero creates PDF invoices and quotes on iOS and Android. Basic use requires
+no Billero account. Invoices, customers and settings are stored locally on the
+device. Optional OCR sends the selected document to an external AI provider;
+crash diagnostics and app-store purchases also use external services. See the
+privacy policy for details.
+
+## Product facts
+
+- Free in version 1.8.1: the first 10 invoices and quotes combined, up to five
+  customers and five OCR scans per month. Converting a quote to an invoice does
+  not use an additional slot. Free PDFs have a Created with Billero watermark.
+- Plus: unlimited documents and customers, no PDF watermark, recurring invoices,
+  50 OCR scans per month and a weekly automatic backup protected by a password.
+- Pro: Plus features, multiple companies with separate data and a combined
+  company overview, and unlimited OCR scans.
+- The app has 12 interface languages and 53 entries in its country catalog.
+  These counts do not imply legal compliance or identical features everywhere.
+  Italy is present in the catalog but is not selectable in the business profile.
+- The issuer's country determines the available document fields and formats.
+  United States and Canadian issuers use English PDF documents; the app interface
+  can use another language, including Spanish for the United States.
+- Payment QR options include UPN for Slovenia, SEPA EPC for supported European
+  transfers and a QR code for the user's own payment link. Payment providers
+  process payments; Billero does not operate a payment service.
+- Billero does not submit invoices to tax authorities, perform fiscalization or
+  issue structured e-invoices. A Mexican PDF is not a CFDI and has no tax validity.
+- Billero does not replace an accountant or tax adviser. Prices and subscription
+  billing periods are shown in the user's app store.
+
+## Website languages
+
+- [English](https://billero.app/en/)
+- [Slovenščina](https://billero.app/sl/)
+- [Deutsch](https://billero.app/de/)
+- [Español](https://billero.app/es/)
+- [Nederlands](https://billero.app/nl/)
+- [ไทย](https://billero.app/th/)
+
+## Invoice requirements by country
+
+Practical guides checked against official sources on November 23, 2026.
+The guides distinguish legal requirements from useful additions and explain
+Billero’s limits. They are general information, not legal or tax advice.
+
+- [Kaj mora vsebovati račun v Sloveniji](https://billero.app/sl/racun-vsebina)
+- [Invoice requirements: Slovenia](https://billero.app/en/invoice-requirements/slovenia)
+- [Invoice requirements: United States](https://billero.app/en/invoice-requirements/united-states)
+- [Invoice requirements: Germany](https://billero.app/en/invoice-requirements/germany)
+- [Pflichtangaben auf Rechnungen](https://billero.app/de/rechnung-pflichtangaben)
+- [Requisitos de facturas en EE. UU.](https://billero.app/es/factura-requisitos/estados-unidos)
+
+## Reference pages and stores
+
+- [Privacy policy](https://billero.app/en/privacy-policy)
+- [Terms of use](https://billero.app/en/terms-of-use)
+- [User guide](https://billero.app/en/user-guide)
+- [Release notes](https://billero.app/en/release-notes)
+- [Contact](https://billero.app/en/contact)
+- [App Store](https://apps.apple.com/app/billero/id6760204857)
+- [Google Play](https://play.google.com/store/apps/details?id=com.billero.app)
