@@ -7,6 +7,12 @@ export const campaigns = Object.freeze({
   'meta-keramicar': { source: 'meta', campaign: 'meta-ads-keramicar' },
   'meta-excel': { source: 'meta', campaign: 'meta-ads-excel' },
   'meta-monter': { source: 'meta', campaign: 'meta-ads-monter' },
+  'meta-zenska': { source: 'meta', campaign: 'meta-ads-zenska' },
+  'meta-vrtnar': { source: 'meta', campaign: 'meta-ads-vrtnar' },
+  'meta-selitve': { source: 'meta', campaign: 'meta-ads-selitve' },
+  'meta-handyman': { source: 'meta', campaign: 'meta-ads-handyman' },
+  'meta-tla': { source: 'meta', campaign: 'meta-ads-tla' },
+  'meta-vodovodar': { source: 'meta', campaign: 'meta-ads-vodovodar' },
   'web-es': { source: 'web', campaign: 'web-es' },
   'web-en': { source: 'web', campaign: 'web-en' },
 });

@@ -8,11 +8,12 @@ const expected = [
   ['tt', 'tt', 'tt-ugc'], ['ig', 'ig', 'ig-ugc'], ['fb', 'fb', 'fb-ugc'],
   ['meta-pleskar', 'meta', 'meta-ads-pleskar'], ['meta-keramicar', 'meta', 'meta-ads-keramicar'],
   ['meta-excel', 'meta', 'meta-ads-excel'], ['meta-monter', 'meta', 'meta-ads-monter'],
+  ['meta-zenska', 'meta', 'meta-ads-zenska'], ['meta-vrtnar', 'meta', 'meta-ads-vrtnar'], ['meta-selitve', 'meta', 'meta-ads-selitve'], ['meta-handyman', 'meta', 'meta-ads-handyman'], ['meta-tla', 'meta', 'meta-ads-tla'], ['meta-vodovodar', 'meta', 'meta-ads-vodovodar'],
   ['web-es', 'web', 'web-es'], ['web-en', 'web', 'web-en'],
   ['unknown', 'web', 'web'], [null, 'web', 'web'],
 ];
 test('campaign allowlist contains exactly the approved codes', () => {
-  assert.deepEqual(Object.keys(campaigns).sort(), expected.slice(0, 9).map(([code]) => code).sort());
+  assert.deepEqual(Object.keys(campaigns).sort(), expected.slice(0, 15).map(([code]) => code).sort());
 });
 for (const [code, source, campaign] of expected) {
   for (const agent of agents) {
