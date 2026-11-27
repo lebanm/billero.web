@@ -1,5 +1,7 @@
 // Existing origin stays responsible for content. Only entry/legacy URLs redirect.
+// /app/ visits are counted anonymously on the server (app-stats.mjs, WEB-012).
 import { homeLanguages, pageLanguages, legacyPaths, pagePaths } from './routes.mjs';
+import { countVisit } from './app-stats.mjs';
 
 export function selectLanguage(cookie, acceptLanguage) {
   const saved = (cookie || '').split(';').map(value => value.trim()).find(value => value.startsWith('lang='));
@@ -34,7 +36,8 @@ function redirect(request, path, status, languageChoice = false) {
   return new Response(null, { status, headers });
 }
 
-export async function handleRequest(request, originFetch = fetch) {
+// runtime: { env, ctx } of the Worker; env.STATS (D1) is optional and only used for /app counting.
+export async function handleRequest(request, originFetch = fetch, runtime = {}) {
   const url = new URL(request.url);
   if (!['GET', 'HEAD'].includes(request.method)) return originFetch(request);
   if (url.pathname === '/') {
@@ -52,7 +55,8 @@ export async function handleRequest(request, originFetch = fetch) {
     if (pagePaths.includes(clean)) return redirect(request, clean, 301);
   }
   if (homeLanguages.some(lang => url.pathname === `/${lang}`)) return redirect(request, `${url.pathname}/`, 301);
+  countVisit(request, url, runtime);
   return originFetch(request);
 }
 
-export default { fetch: request => handleRequest(request) };
+export default { fetch: (request, env, ctx) => handleRequest(request, fetch, { env, ctx }) };

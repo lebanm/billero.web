@@ -113,6 +113,9 @@ try {
   // A 204 response leaves the page visible, modeling a handoff that does not navigate.
   const blocked = await browser.newContext({ userAgent: agents[0].userAgent, viewport: { width: 390, height: 844 } });
   const attempts = [];
+  // WEB-012: /app is counted on the server only; the page itself must never send anything else.
+  const extra = [];
+  blocked.on('request', request => { if (request.method() !== 'GET') extra.push(`${request.method()} ${request.url()}`); });
   await blocked.route(storePattern, route => { attempts.push(route.request().url()); return route.fulfill({ status: 204 }); });
   const fallback = await blocked.newPage();
   await fallback.goto(`${base}/app/?c=ig&l=en`, { waitUntil: 'networkidle' });
@@ -125,7 +128,8 @@ try {
   const manual = new URL((await nextRequest).url());
   assert.equal(manual.hostname, 'play.google.com');
   assert.equal(new URLSearchParams(manual.searchParams.get('referrer')).get('utm_campaign'), 'ig-ugc');
-  result.fallbacks.push({ blockedHandoff: true, manualOtherStore: manual.href });
+  assert.deepEqual(extra, [], 'the download page sends no beacon or other non-GET request');
+  result.fallbacks.push({ blockedHandoff: true, manualOtherStore: manual.href, nonGetRequests: extra.length });
   await blocked.close();
   assert.deepEqual(result.errors, []);
 } finally {
